@@ -914,5 +914,21 @@ Un lot est termine seulement si :
 - les echecs restants, s'il y en a, sont bloques ou explicitement exclus avant validation.
 
 Etat actuel : cette phase ne cree pas encore le scaffold applicatif et ne peut donc pas executer ces commandes.
+## 16. Noyau métier central
 
+Le noyau métier ne dépend pas de React. Les contrats sont centralisés dans `src/core/types` et les validations JSON dans `src/core/schemas`.
+
+Types ajoutés ou stabilisés :
+
+- `Player`, `PlayerId` pour les trois joueurs fixes ;
+- `GameConfig`, `GameMode`, `GameStatus`, `GameState` pour la configuration et la machine d'état ;
+- `RoundDefinition`, `RoundState`, `GameRound` pour imposer une interface commune aux manches ;
+- `Question` et ses variantes `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` ;
+- `Joker`, `JokerType`, `JokerState` ;
+- `ScoreBreakdown`, `AnswerResult` ;
+- `GameEvent`, `GameAction`.
+
+`GameRound` impose a chaque manche d'initialiser/restaurer son etat, selectionner ses questions, gerer une reponse, calculer son score, determiner sa fin et produire un resume. Les calculs restent purs et testables.
+
+Les schemas Zod correspondants valident les donnees externes avant usage : joueurs, questions, score, jokers, manches, config, etat, actions et evenements.
 

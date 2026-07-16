@@ -4,6 +4,7 @@
     {
       "id": "duplicate",
       "kind": "pressure-choice",
+      "type": "multiple_choice",
       "categoryId": "demo",
       "categoryLabel": "Démo",
       "subCategoryId": "demo",

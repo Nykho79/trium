@@ -39,6 +39,23 @@ C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd install
 C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd dev
 ```
 
+
+## Noyau métier
+
+Le noyau métier central est défini dans `src/core/types` et validé par les schémas Zod de `src/core/schemas`.
+
+Contrats principaux :
+
+- `Player`, `PlayerId` : joueurs fixes de la partie, exactement trois dans `GameConfig` ;
+- `GameConfig`, `GameMode`, `GameStatus`, `GameState` : configuration et états du moteur ;
+- `RoundDefinition`, `RoundState`, `GameRound` : contrat commun de toutes les manches ;
+- `Question`, `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` : formats de questions validables depuis JSON ;
+- `Joker`, `JokerType`, `JokerState` : inventaire partagé des jokers ;
+- `ScoreBreakdown`, `AnswerResult` : résultat pur et détail du score ;
+- `GameEvent`, `GameAction` : entrées et événements du moteur.
+
+La commande `npm run check` exécute lint, TypeScript strict et tests unitaires. Sur cette machine, `npm` n'est pas disponible sur le PATH global ; la validation équivalente peut être lancée avec `pnpm check` via le runtime Node local.
+
 ## Architecture
 
 Les decisions structurantes sont documentees dans `ARCHITECTURE.md`.
@@ -75,4 +92,5 @@ git remote -v
 ```
 
 Le push peut necessiter une authentification GitHub locale.
+
 

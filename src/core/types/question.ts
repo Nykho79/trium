@@ -1,10 +1,19 @@
 import type { CategoryId, Difficulty, QuestionId, RoundKind } from "./game";
 
 export type QuestionEditorialStatus = "draft" | "review" | "approved" | "rejected";
+export type QuestionType =
+  | "multiple_choice"
+  | "progressive_clues"
+  | "connection"
+  | "chronology"
+  | "analogy"
+  | "memory"
+  | "sequence";
 
 export interface BaseQuestion {
   id: QuestionId;
   kind: RoundKind;
+  type: QuestionType;
   categoryId: CategoryId;
   categoryLabel: string;
   subCategoryId: string;
@@ -29,69 +38,93 @@ export interface MultipleChoiceOption {
   label: string;
 }
 
-export interface KnowledgeGridQuestion extends BaseQuestion {
-  kind: "knowledge-grid";
-  value: 100 | 200 | 300 | 400 | 500;
-  answer: AnswerPayload;
+export interface MultipleChoiceQuestion extends BaseQuestion {
+  type: "multiple_choice";
+  options: [MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption];
+  correctOptionId: string;
+  answer?: AnswerPayload | undefined;
+  timeLimitSeconds?: number | undefined;
+  value?: 100 | 200 | 300 | 400 | 500 | undefined;
 }
 
-export interface ClueRaceQuestion extends BaseQuestion {
-  kind: "clue-race";
+export interface ProgressiveCluesQuestion extends BaseQuestion {
+  type: "progressive_clues";
   clues: string[];
   answer: AnswerPayload;
   pointsByClueIndex: number[];
 }
 
-export interface PressureChoiceQuestion extends BaseQuestion {
-  kind: "pressure-choice";
-  options: [MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption];
-  correctOptionId: string;
-  timeLimitSeconds: number;
-}
-
-export type SynapseTaskKind = "sequence" | "analogy" | "ranking" | "memory" | "categorization";
-
-export interface SynapseQuestion extends BaseQuestion {
-  kind: "synapse";
-  taskKind: SynapseTaskKind;
-  items: string[];
-  expectedOrder?: string[] | undefined;
-  expectedPairs?: Array<{ left: string; right: string }> | undefined;
-  expectedCategories?: Array<{ label: string; itemIds: string[] }> | undefined;
-}
-
-export interface ConnectionsQuestion extends BaseQuestion {
-  kind: "connections";
+export interface ConnectionQuestion extends BaseQuestion {
+  type: "connection";
   items: [string, string, string, string];
-  connection: AnswerPayload;
+  answer: AnswerPayload;
 }
 
-export interface WagerQuestion extends BaseQuestion {
-  kind: "wager";
-  answer: AnswerPayload;
-  minWager: number;
-  maxWager: number;
+export interface ChronologyItem {
+  id: string;
+  label: string;
 }
 
-export interface FinalConvergenceQuestion extends BaseQuestion {
-  kind: "final-convergence";
-  step: 1 | 2 | 3 | 4 | 5;
+export interface ChronologyQuestion extends BaseQuestion {
+  type: "chronology";
+  items: ChronologyItem[];
+  correctOrderIds: string[];
+}
+
+export interface AnalogyQuestion extends BaseQuestion {
+  type: "analogy";
+  left: string;
+  right: string;
+  relation: string;
+  missing: string;
+  options?: [MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption] | undefined;
   answer: AnswerPayload;
-  basePoints: number;
+}
+
+export interface MemoryQuestion extends BaseQuestion {
+  type: "memory";
+  items: string[];
+  recallPrompt: string;
+  answer: AnswerPayload;
+}
+
+export interface SequenceQuestion extends BaseQuestion {
+  type: "sequence";
+  items: string[];
+  correctOrder?: string[] | undefined;
+  nextItem?: string | undefined;
+  answer: AnswerPayload;
 }
 
 export type Question =
-  | KnowledgeGridQuestion
-  | ClueRaceQuestion
-  | PressureChoiceQuestion
-  | SynapseQuestion
-  | ConnectionsQuestion
-  | WagerQuestion
-  | FinalConvergenceQuestion;
+  | MultipleChoiceQuestion
+  | ProgressiveCluesQuestion
+  | ConnectionQuestion
+  | ChronologyQuestion
+  | AnalogyQuestion
+  | MemoryQuestion
+  | SequenceQuestion;
+
+export type KnowledgeGridQuestion = MultipleChoiceQuestion & {
+  kind: "knowledge-grid";
+  value: 100 | 200 | 300 | 400 | 500;
+};
+
+export type PressureChoiceQuestion = MultipleChoiceQuestion & {
+  kind: "pressure-choice";
+  timeLimitSeconds: number;
+};
+
+export type ClueRaceQuestion = ProgressiveCluesQuestion & {
+  kind: "clue-race";
+};
+
+export type ConnectionsQuestion = ConnectionQuestion & {
+  kind: "connections";
+};
 
 export interface QuestionBank {
   version: 1;
   questions: Question[];
 }
-
 

@@ -4,6 +4,7 @@
     {
       "id": "kg-fr-001",
       "kind": "knowledge-grid",
+      "type": "multiple_choice",
       "categoryId": "culture-generale",
       "categoryLabel": "Culture générale",
       "subCategoryId": "geographie-france",
@@ -15,14 +16,37 @@
       "editorialStatus": "approved",
       "version": 1,
       "value": 200,
-      "answer": {
-        "accepted": ["nancy"],
-        "display": "Nancy"
-      }
+      "options": [
+        { "id": "a", "label": "Nancy" },
+        { "id": "b", "label": "Metz" },
+        { "id": "c", "label": "Dijon" },
+        { "id": "d", "label": "Besançon" }
+      ],
+      "correctOptionId": "a",
+      "answer": { "accepted": ["nancy"], "display": "Nancy" }
+    },
+    {
+      "id": "cl-fr-001",
+      "kind": "clue-race",
+      "type": "progressive_clues",
+      "categoryId": "histoire",
+      "categoryLabel": "Histoire",
+      "subCategoryId": "france",
+      "subCategoryLabel": "France",
+      "difficulty": 3,
+      "prompt": "Trouvez le personnage historique.",
+      "explanation": "Jeanne d'Arc est associée à Orléans et au sacre de Charles VII.",
+      "tags": ["histoire", "indices"],
+      "editorialStatus": "approved",
+      "version": 1,
+      "clues": ["Je suis née vers 1412.", "Je suis associée à Orléans.", "J'ai accompagné Charles VII à Reims."],
+      "pointsByClueIndex": [300, 200, 100],
+      "answer": { "accepted": ["jeanne d'arc", "jeanne darc"], "display": "Jeanne d'Arc" }
     },
     {
       "id": "pc-fr-001",
       "kind": "pressure-choice",
+      "type": "multiple_choice",
       "categoryId": "sciences",
       "categoryLabel": "Sciences",
       "subCategoryId": "astronomie",
@@ -40,11 +64,13 @@
         { "id": "d", "label": "Mercure" }
       ],
       "correctOptionId": "a",
-      "timeLimitSeconds": 30
+      "timeLimitSeconds": 30,
+      "answer": { "accepted": ["mars"], "display": "Mars" }
     },
     {
       "id": "co-fr-001",
       "kind": "connections",
+      "type": "connection",
       "categoryId": "arts",
       "categoryLabel": "Arts",
       "subCategoryId": "musique",
@@ -56,10 +82,84 @@
       "editorialStatus": "review",
       "version": 1,
       "items": ["Violon", "Guitare", "Harpe", "Violoncelle"],
-      "connection": {
-        "accepted": ["instruments a cordes", "instruments à cordes"],
-        "display": "Instruments à cordes"
-      }
+      "answer": { "accepted": ["instruments a cordes", "instruments à cordes"], "display": "Instruments à cordes" }
+    },
+    {
+      "id": "ch-fr-001",
+      "kind": "synapse",
+      "type": "chronology",
+      "categoryId": "histoire",
+      "categoryLabel": "Histoire",
+      "subCategoryId": "chronologie",
+      "subCategoryLabel": "Chronologie",
+      "difficulty": 3,
+      "prompt": "Classez ces événements du plus ancien au plus récent.",
+      "explanation": "La prise de la Bastille précède le sacre de Napoléon, puis la Libération de Paris.",
+      "tags": ["histoire", "chronologie"],
+      "editorialStatus": "approved",
+      "version": 1,
+      "items": [
+        { "id": "bastille", "label": "Prise de la Bastille" },
+        { "id": "napoleon", "label": "Sacre de Napoléon Ier" },
+        { "id": "liberation", "label": "Libération de Paris" }
+      ],
+      "correctOrderIds": ["bastille", "napoleon", "liberation"]
+    },
+    {
+      "id": "an-fr-001",
+      "kind": "synapse",
+      "type": "analogy",
+      "categoryId": "langue",
+      "categoryLabel": "Langue",
+      "subCategoryId": "analogies",
+      "subCategoryLabel": "Analogies",
+      "difficulty": 2,
+      "prompt": "Complétez l'analogie.",
+      "explanation": "Un auteur écrit un livre comme un compositeur écrit une partition.",
+      "tags": ["langue", "logique"],
+      "editorialStatus": "approved",
+      "version": 1,
+      "left": "Auteur",
+      "right": "Livre",
+      "relation": "créateur vers œuvre",
+      "missing": "Partition",
+      "answer": { "accepted": ["partition"], "display": "Partition" }
+    },
+    {
+      "id": "me-fr-001",
+      "kind": "synapse",
+      "type": "memory",
+      "categoryId": "memoire",
+      "categoryLabel": "Mémoire",
+      "subCategoryId": "liste",
+      "subCategoryLabel": "Liste",
+      "difficulty": 2,
+      "prompt": "Mémorisez cette liste puis restituez l'élément demandé.",
+      "explanation": "Le deuxième élément de la liste est Rivière.",
+      "tags": ["memoire"],
+      "editorialStatus": "approved",
+      "version": 1,
+      "items": ["Montagne", "Rivière", "Forêt"],
+      "recallPrompt": "Quel était le deuxième élément ?",
+      "answer": { "accepted": ["riviere", "rivière"], "display": "Rivière" }
+    },
+    {
+      "id": "se-fr-001",
+      "kind": "synapse",
+      "type": "sequence",
+      "categoryId": "logique",
+      "categoryLabel": "Logique",
+      "subCategoryId": "suites",
+      "subCategoryLabel": "Suites",
+      "difficulty": 2,
+      "prompt": "Trouvez l'élément suivant de la suite.",
+      "explanation": "Chaque nombre double le précédent.",
+      "tags": ["suite", "logique"],
+      "editorialStatus": "approved",
+      "version": 1,
+      "items": ["2", "4", "8"],
+      "nextItem": "16",
+      "answer": { "accepted": ["16", "seize"], "display": "16" }
     }
   ]
 }
