@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "kg-fr-001",
+      "kind": "knowledge-grid",
+      "categoryId": "culture-generale",
+      "categoryLabel": "Culture générale",
+      "subCategoryId": "geographie-france",
+      "subCategoryLabel": "Géographie française",
+      "difficulty": 2,
+      "prompt": "Dans quelle ville française se trouve la Place Stanislas ?",
+      "explanation": "La Place Stanislas se situe à Nancy, en Meurthe-et-Moselle.",
+      "tags": ["france", "geographie", "ville"],
+      "editorialStatus": "approved",
+      "version": 1,
+      "value": 200,
+      "answer": {
+        "accepted": ["nancy"],
+        "display": "Nancy"
+      }
+    },
+    {
+      "id": "pc-fr-001",
+      "kind": "pressure-choice",
+      "categoryId": "sciences",
+      "categoryLabel": "Sciences",
+      "subCategoryId": "astronomie",
+      "subCategoryLabel": "Astronomie",
+      "difficulty": 1,
+      "prompt": "Quelle planète est surnommée la planète rouge ?",
+      "explanation": "Mars est surnommée la planète rouge en raison de l'oxyde de fer présent à sa surface.",
+      "tags": ["espace", "planetes"],
+      "editorialStatus": "approved",
+      "version": 1,
+      "options": [
+        { "id": "a", "label": "Mars" },
+        { "id": "b", "label": "Vénus" },
+        { "id": "c", "label": "Jupiter" },
+        { "id": "d", "label": "Mercure" }
+      ],
+      "correctOptionId": "a",
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "co-fr-001",
+      "kind": "connections",
+      "categoryId": "arts",
+      "categoryLabel": "Arts",
+      "subCategoryId": "musique",
+      "subCategoryLabel": "Musique",
+      "difficulty": 3,
+      "prompt": "Quel lien commun unit ces quatre éléments ?",
+      "explanation": "Ces éléments peuvent être associés à des instruments à cordes.",
+      "tags": ["musique", "instruments"],
+      "editorialStatus": "review",
+      "version": 1,
+      "items": ["Violon", "Guitare", "Harpe", "Violoncelle"],
+      "connection": {
+        "accepted": ["instruments a cordes", "instruments à cordes"],
+        "display": "Instruments à cordes"
+      }
+    }
+  ]
+}

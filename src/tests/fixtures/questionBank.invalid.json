@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "duplicate",
+      "kind": "pressure-choice",
+      "categoryId": "demo",
+      "categoryLabel": "Démo",
+      "subCategoryId": "demo",
+      "subCategoryLabel": "Démo",
+      "difficulty": 1,
+      "prompt": "Question invalide ?",
+      "explanation": "Le bon identifiant d'option est absent.",
+      "tags": ["demo"],
+      "editorialStatus": "approved",
+      "version": 1,
+      "options": [
+        { "id": "a", "label": "A" },
+        { "id": "b", "label": "B" },
+        { "id": "c", "label": "C" },
+        { "id": "d", "label": "D" }
+      ],
+      "correctOptionId": "z",
+      "timeLimitSeconds": 30
+    }
+  ]
+}

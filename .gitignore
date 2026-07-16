@@ -1,0 +1,14 @@
+﻿node_modules
+dist
+playwright-report
+test-results
+.env
+.env.*
+!.env.example
+.DS_Store
+*.local
+.git.broken-*
+*.log
+tsconfig.tsbuildinfo
+.pnpm-store
+.gitdir
