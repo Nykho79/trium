@@ -45,6 +45,7 @@ pnpm typecheck
 pnpm test
 pnpm test:e2e
 pnpm build
+pnpm build:checked
 ```
 
 Le script `pnpm questions` valide les fichiers de `src/data/questions` et affiche le rapport de couverture, de statuts et de doublons. `pnpm questions:json` produit le meme rapport au format JSON.
@@ -71,7 +72,7 @@ Contrats principaux :
 - `ScoreBreakdown`, `AnswerResult` : resultat pur et detail du score ;
 - `GameEvent`, `GameAction` : entrees et evenements du moteur.
 
-La commande `npm run check` execute lint, TypeScript strict et tests unitaires. Sur cette machine, `npm` n'est pas disponible sur le PATH global ; la validation equivalente peut etre lancee avec `pnpm check` via le runtime Node local.
+La commande `npm run check` execute lint, TypeScript strict et tests unitaires. La commande `npm run build` reste volontairement limitee a `vite build` pour Cloudflare Pages, qui peut installer uniquement les dependances de production ; utiliser `npm run build:checked` pour enchainer TypeScript puis build en local. Sur cette machine, `npm` n'est pas disponible sur le PATH global ; la validation equivalente peut etre lancee avec `pnpm check` via le runtime Node local.
 
 ## Banque de questions
 
@@ -199,14 +200,15 @@ Le manifest est publie depuis `public/manifest.webmanifest`. Le service worker `
 
 ### Deploiement
 
-Le premier deploiement se lance automatiquement apres connexion du depot. Pour verifier localement avant de pousser :
+Le premier deploiement se lance automatiquement apres connexion du depot. Pour verifier localement avant de pousser, lancer le controle complet puis le build de production :
 
 ```bash
+npm run check
 npm run build
 npm run preview
 ```
 
-Sur cette machine Windows, `npm` peut etre absent du PATH ; utiliser alors `pnpm build` puis `pnpm preview`, ce qui execute les memes scripts du projet.
+Sur cette machine Windows, `npm` peut etre absent du PATH ; utiliser alors `pnpm check`, `pnpm build` puis `pnpm preview`, ce qui execute les memes scripts du projet.
 
 ### Mise a jour par git push
 

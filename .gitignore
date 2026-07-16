@@ -1,4 +1,4 @@
-﻿node_modules
+node_modules
 dist
 playwright-report
 test-results
@@ -12,3 +12,4 @@ test-results
 tsconfig.tsbuildinfo
 .pnpm-store
 .gitdir
+.vite
