@@ -117,6 +117,16 @@ describe("gameEngine clue-race", () => {
     expect(second.captainPlayerId).toBe("player-2");
   });
 
+  it("ouvre une fenetre de reponse meme apres une longue lecture des indices", () => {
+    const game = activeClueGame();
+    const answering = showClueRaceAnswers(game, 30_004);
+    const locked = submitAnswer(answering, { answer: "a", now: 30_005 });
+
+    expect(answering.timer?.startedAt).toBe(30_004);
+    expect((answering.timer?.expiresAt ?? 0) - 30_004).toBe(config.defaultQuestionTimeMs);
+    expect(locked.status).toBe("answer_locked");
+  });
+
   it("autorise extra_time pendant la manche", () => {
     const game = activeClueGame();
     const extended = applyJoker(game, "extra_time", 4);

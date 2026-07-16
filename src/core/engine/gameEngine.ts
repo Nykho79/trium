@@ -177,6 +177,13 @@ function questionDurationMs(question: Question, config: GameConfig, stepIndex = 
   return config.defaultQuestionTimeMs;
 }
 
+function answerWindowTimer(state: GameState, now: number): GameTimerState {
+  const defaultDurationMs = state.config.defaultQuestionTimeMs;
+  const remainingMs = state.timer ? Math.max(0, state.timer.expiresAt - now) : 0;
+  const durationMs = Math.max(defaultDurationMs, remainingMs);
+  return { startedAt: now, expiresAt: now + durationMs };
+}
+
 function isAnswerCorrect(question: Question, answer: string | string[]): boolean {
   if (question.type === "multiple_choice") {
     return typeof answer === "string" && answer === question.correctOptionId;
@@ -773,6 +780,7 @@ export function showClueRaceAnswers(state: GameState, now = 0): GameState {
   return withEvent({
     ...cloneState(state),
     currentRoundState: showAnswersInState(roundState),
+    timer: answerWindowTimer(state, now),
   }, "status_changed", now, { questionId: state.activeQuestionId, message: "Propositions affichees." });
 }
 export function revealNextConnectionItem(state: GameState, now = 0): GameState {
