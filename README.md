@@ -139,11 +139,105 @@ Validation locale executee le 2026-07-16 :
 - `pnpm check` : OK, lint + TypeScript + 127 tests unitaires ;
 - `pnpm playwright test src/tests/e2e/tv-runtime.spec.ts` : OK, 12 tests Playwright sur 1920 x 1080, 1366 x 768 et 1280 x 720, avec zoom interface 125 % et zoom navigateur simule 125 % ;
 - `pnpm test:e2e` : derniere validation complete connue OK, 32 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
-- `pnpm build` : derniere validation connue OK, avec avertissement Vite de chunk superieur a 500 kB ;
+- `pnpm build` : OK, build production Vite vers `dist`, avec avertissement Vite de chunk superieur a 500 kB ;
+- `pnpm preview --port 4178` : OK, verification locale de `/`, `/manifest.webmanifest`, `/sw.js` et fallback SPA ;
+- controle navigateur Playwright sur la preview production : OK, titre `TRIUM`, accueil visible, manifest detecte, service worker actif, aucune erreur console ;
 - `pnpm questions:json` : execute, mais les fichiers JSON non verifies presents localement produisent un rapport de rejet et un code de sortie non nul.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.
 
+## Deploiement Cloudflare Pages
+
+TRIUM est deployable comme site statique Cloudflare Pages, sans backend et sans cle API.
+
+### Creation du depot
+
+1. Creer le depot GitHub `Nykho79/trium`.
+2. Depuis le dossier local du projet, verifier le remote :
+
+```bash
+git remote -v
+```
+
+3. Publier les commits locaux :
+
+```bash
+git push origin master
+```
+
+### Connexion a Cloudflare Pages
+
+1. Ouvrir le tableau de bord Cloudflare.
+2. Aller dans `Workers & Pages` puis `Create application`.
+3. Choisir `Pages` puis `Connect to Git`.
+4. Autoriser Cloudflare a lire le depot GitHub `Nykho79/trium`.
+5. Selectionner la branche de production, actuellement `master`.
+
+### Configuration Pages
+
+Utiliser la configuration suivante :
+
+- framework preset : `Vite` ;
+- build command : `npm run build` ;
+- build output directory : `dist` ;
+- root directory : laisser vide ;
+- Node.js version : `20.19.0` minimum, ou une version 22 LTS.
+
+Aucune variable d'environnement n'est requise pour la V1. Ne pas ajouter de cle API, token ou secret dans Cloudflare Pages : l'application fonctionne avec une banque JSON locale et `localStorage`.
+
+### Routage SPA et assets
+
+Le fichier `public/_redirects` contient :
+
+```text
+/* /index.html 200
+```
+
+Il permet a Cloudflare Pages de renvoyer `index.html` pour les routes SPA. Le build Vite utilise `base: "./"` afin de produire des chemins d'assets relatifs et compatibles avec les previews Cloudflare.
+
+Le manifest est publie depuis `public/manifest.webmanifest`. Le service worker `public/sw.js` est enregistre uniquement en production et reste limite au cache statique same-origin. Le fichier `public/_headers` force notamment `sw.js` a rester revalidable.
+
+### Deploiement
+
+Le premier deploiement se lance automatiquement apres connexion du depot. Pour verifier localement avant de pousser :
+
+```bash
+npm run build
+npm run preview
+```
+
+Sur cette machine Windows, `npm` peut etre absent du PATH ; utiliser alors `pnpm build` puis `pnpm preview`, ce qui execute les memes scripts du projet.
+
+### Mise a jour par git push
+
+Chaque commit pousse sur la branche de production declenche un nouveau build Cloudflare Pages :
+
+```bash
+git add .
+git commit -m "feat: description courte"
+git push origin master
+```
+
+Verifier ensuite le statut du deploiement dans Cloudflare Pages. Les previews de branche permettent de tester une version avant fusion ou promotion.
+
+### Restauration d'une version
+
+Dans Cloudflare Pages, ouvrir le projet, aller dans `Deployments`, choisir une version anterieure valide, puis utiliser `Rollback to this deployment` ou promouvoir ce deploiement en production. Si la correction doit etre historisee dans Git, creer aussi un commit de revert :
+
+```bash
+git revert <sha-du-commit>
+git push origin master
+```
+
+### Erreurs frequentes
+
+- `npm: command not found` localement : utiliser `pnpm build` sur cette machine, ou installer Node/npm localement.
+- `Node version is not supported` : configurer Cloudflare Pages avec Node `20.19.0` minimum ou une version 22 LTS.
+- Page blanche apres deploiement : verifier que le dossier de sortie est bien `dist` et que `public/_redirects` est present dans le build.
+- Erreur 404 sur rafraichissement d'une URL : verifier le contenu de `_redirects` dans `dist`.
+- Ancienne version servie : vider le cache navigateur ou attendre la mise a jour du service worker ; `sw.js` est configure en `no-cache` pour limiter ce risque.
+- Variable manquante : aucune variable n'est necessaire en V1 ; si une fonctionnalite future en exige une, elle doit commencer par `VITE_` et ne jamais contenir de secret.
+- Build trop ancien : verifier que le dernier commit a bien ete pousse et que Cloudflare a construit la bonne branche.
 ## GitHub
 
 Le depot local est initialise et le remote est configure :
