@@ -7,17 +7,20 @@ import { ErrorBoundary } from "../ui/components/ErrorBoundary";
 import { setGlobalAudioEnabled } from "../ui/audio/soundManager";
 import { DesignSystemScreen } from "../ui/screens/DesignSystemScreen";
 import { DevQuestionBankScreen } from "../ui/screens/DevQuestionBankScreen";
+import { ErrorScreen } from "../ui/screens/ErrorScreen";
 import { FinaleScreen } from "../ui/screens/FinaleScreen";
-import { FormatSelectionScreen } from "../ui/screens/FormatSelectionScreen";
 import { GameIntroScreen } from "../ui/screens/GameIntroScreen";
+import { GameModeScreen } from "../ui/screens/GameModeScreen";
+import { GameResultScreen } from "../ui/screens/GameResultScreen";
 import { GameScreen } from "../ui/screens/GameScreen";
 import { HomeScreen } from "../ui/screens/HomeScreen";
 import { PlayerSetupScreen } from "../ui/screens/PlayerSetupScreen";
 import { QuestionTransitionScreen } from "../ui/screens/QuestionTransitionScreen";
+import { ResumeGameScreen } from "../ui/screens/ResumeGameScreen";
+import { RoundIntroScreen } from "../ui/screens/RoundIntroScreen";
 import { RoundResultScreen } from "../ui/screens/RoundResultScreen";
 import { RulesScreen } from "../ui/screens/RulesScreen";
 import { SettingsScreen } from "../ui/screens/SettingsScreen";
-import { SummaryScreen } from "../ui/screens/SummaryScreen";
 
 export function App() {
   const screen = useGameStore((state) => state.screen);
@@ -38,15 +41,18 @@ export function App() {
             {currentScreen === "home" && <HomeScreen />}
             {currentScreen === "rules" && <RulesScreen />}
             {currentScreen === "player-setup" && <PlayerSetupScreen />}
-            {currentScreen === "format-selection" && <FormatSelectionScreen />}
+            {(currentScreen === "format-selection" || currentScreen === "game-mode") && <GameModeScreen />}
+            {currentScreen === "resume-game" && <ResumeGameScreen />}
             {currentScreen === "game-intro" && <GameIntroScreen />}
+            {currentScreen === "round-intro" && <RoundIntroScreen />}
             {currentScreen === "game" && <GameScreen />}
             {currentScreen === "question-transition" && <QuestionTransitionScreen />}
             {currentScreen === "round-result" && <RoundResultScreen />}
             {currentScreen === "finale" && <FinaleScreen />}
-            {currentScreen === "summary" && <SummaryScreen />}
+            {(currentScreen === "summary" || currentScreen === "game-result") && <GameResultScreen />}
             {currentScreen === "settings" && <SettingsScreen />}
             {currentScreen === "dev-question-bank" && <DevQuestionBankScreen />}
+            {currentScreen === "error" && <ErrorScreen />}
             {import.meta.env.DEV && currentScreen === "design-system" && <DesignSystemScreen />}
           </div>
         </AnimatePresence>

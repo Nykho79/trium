@@ -1158,3 +1158,204 @@ body {
     transform: none !important;
   }
 }
+/* General game screens */
+.general-screen {
+  width: min(100%, 1320px);
+}
+
+.general-home .brand-stage {
+  align-items: stretch;
+}
+
+.home-primary-actions {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.home-status-panel {
+  align-self: stretch;
+  align-content: center;
+}
+
+.home-team-list,
+.intro-team-list {
+  grid-template-columns: 1fr;
+}
+
+.general-card-grid,
+.mode-grid,
+.result-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.general-card-grid .ds-card,
+.mode-grid .ds-card,
+.result-metrics-grid .ds-card {
+  align-content: start;
+}
+
+.general-card-grid strong,
+.result-metrics-grid span {
+  color: var(--color-muted);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.general-card-grid p,
+.mode-grid p {
+  color: var(--color-text);
+  font-size: 24px;
+  line-height: 1.32;
+}
+
+.mode-card-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.mode-card-head h2,
+.round-score-card h2 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.mode-grid .ds-card > strong,
+.result-metrics-grid strong {
+  color: var(--color-cyan);
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.mode-grid .is-disabled {
+  opacity: 0.62;
+}
+
+.form-error,
+.form-success {
+  margin: 0;
+  border: 1px solid rgba(159, 178, 196, 0.3);
+  border-radius: var(--radius-control);
+  padding: 16px 20px;
+  font-size: 24px;
+  font-weight: 850;
+}
+
+.form-error {
+  color: var(--color-danger);
+  border-color: rgba(255, 95, 109, 0.5);
+  background: rgba(255, 95, 109, 0.08);
+}
+
+.form-success {
+  color: var(--color-success);
+  border-color: rgba(114, 242, 162, 0.44);
+  background: rgba(114, 242, 162, 0.08);
+}
+
+.settings-panel {
+  gap: 14px;
+}
+
+.setting-row {
+  display: grid;
+  gap: 12px;
+  border: 1px solid rgba(159, 178, 196, 0.25);
+  border-radius: var(--radius-control);
+  padding: 18px 22px;
+  background: rgba(3, 7, 13, 0.35);
+}
+
+.setting-row span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  color: var(--color-text);
+  font-size: 22px;
+  font-weight: 850;
+}
+
+.setting-row strong {
+  color: var(--color-cyan);
+}
+
+.setting-row input[type="range"] {
+  width: 100%;
+  min-height: 44px;
+  accent-color: var(--color-cyan);
+}
+
+.resume-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.resume-summary div,
+.round-score-list div {
+  display: grid;
+  gap: 8px;
+  border: 1px solid rgba(159, 178, 196, 0.26);
+  border-radius: var(--radius-control);
+  padding: 16px;
+  background: rgba(3, 7, 13, 0.42);
+}
+
+.resume-summary span,
+.round-score-list span {
+  color: var(--color-muted);
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.resume-summary strong,
+.round-score-list strong {
+  color: var(--color-cyan);
+  font-size: 28px;
+}
+
+.intro-brief,
+.round-intro-card {
+  text-align: center;
+}
+
+.round-intro-screen {
+  align-content: center;
+}
+
+.game-result-screen {
+  align-content: start;
+}
+
+.result-metrics-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.round-score-card {
+  gap: 20px;
+}
+
+.round-score-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 1200px) {
+  .home-primary-actions,
+  .general-card-grid,
+  .mode-grid,
+  .result-metrics-grid,
+  .resume-summary,
+  .round-score-list {
+    grid-template-columns: 1fr;
+  }
+}

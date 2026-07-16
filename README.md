@@ -9,8 +9,9 @@ Le projet contient maintenant :
 - une base React + TypeScript strict + Vite ;
 - Tailwind CSS, Framer Motion, Zustand, Zod, Howler.js, Vitest et Playwright ;
 - une interface TV-first en francais ;
+- les ecrans generaux : accueil, reprise, regles, joueurs, modes, parametres, intros, resultats et erreur ;
 - un design system TRIUM documente dans `DESIGN.md` ;
-- un flux local accueil -> joueurs -> format -> intro -> jeu -> resultats ;
+- un flux local accueil -> joueurs -> mode -> intro -> manche -> jeu -> resultats ;
 - une banque de questions JSON locale d'exemple ;
 - des schemas Zod pour valider les questions ;
 - un generateur aleatoire seedable et une selection anti-repetition ;
@@ -94,7 +95,7 @@ Validation locale executee le 2026-07-16 :
 - `pnpm typecheck` : OK ;
 - `pnpm test` : OK, 37 tests unitaires ;
 - `pnpm build` : OK ;
-- `pnpm test:e2e` : OK, 8 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
+- `pnpm test:e2e` : OK, 16 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
 - verification console navigateur : OK sur les parcours Playwright.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.

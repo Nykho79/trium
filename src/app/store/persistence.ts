@@ -18,6 +18,8 @@ const appScreenSchema = z.enum([
   "rules",
   "player-setup",
   "format-selection",
+  "game-mode",
+  "resume-game",
   "game-intro",
   "round-intro",
   "game",
@@ -25,9 +27,11 @@ const appScreenSchema = z.enum([
   "round-result",
   "finale",
   "summary",
+  "game-result",
   "settings",
   "dev-question-bank",
   "design-system",
+  "error",
 ]);
 
 export const savedGameEnvelopeSchema = z.object({

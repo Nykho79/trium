@@ -1,77 +1,54 @@
+import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
 import { Icon } from "../components/Icon";
 import { Panel } from "../components/Panel";
+import { PlayerBadge } from "../components/PlayerBadge";
 import { ScreenFrame } from "../components/ScreenFrame";
 import { useGameStore } from "../../app/store/gameStore";
-import type { Player } from "../../core/types";
-
-function PlayerCard({ player, index }: { player: Player; index: number }) {
-  return (
-    <div className={`player-card player-${player.color}`}>
-      <span className="player-number">{index + 1}</span>
-      <div className="player-avatar" aria-hidden="true"><Icon name="team" /></div>
-      <strong>{player.name}</strong>
-      <span>Prêt</span>
-    </div>
-  );
-}
 
 export function HomeScreen() {
   const navigate = useGameStore((state) => state.navigate);
   const session = useGameStore((state) => state.session);
+  const hasSavedGame = useGameStore((state) => state.hasSavedGame);
 
   return (
     <ScreenFrame title="Accueil TRIUM">
-      <div className="home-grid">
+      <div className="home-grid general-home">
         <section className="brand-stage" aria-labelledby="home-title">
           <div className="orbital-mark" aria-hidden="true" />
           <div className="brand-crown" aria-hidden="true"><Icon name="spark" /></div>
+          <Badge tone="cyan">Quiz cooperatif local</Badge>
           <h1 id="home-title">TRIUM</h1>
-          <p className="brand-subtitle">Le quiz coopératif local à 3 joueurs</p>
-          <div className="team-row" aria-label="Équipe de trois joueurs">
-            {session.players.map((player, index) => <PlayerCard key={player.id} player={player} index={index} />)}
+          <p className="brand-subtitle">Trois joueurs. Un ecran. Une equipe.</p>
+          <div className="home-primary-actions">
+            <Button variant="primary" icon="play" onClick={() => navigate("player-setup")} data-testid="start-button">Nouvelle partie</Button>
+            <Button variant="secondary" icon="shield" onClick={() => navigate("resume-game")}>Reprendre</Button>
           </div>
-          <Button variant="primary" onClick={() => navigate("player-setup")} data-testid="start-button">
-            <Icon name="play" /> Commencer
-          </Button>
           <div className="home-actions">
-            <Button variant="secondary" onClick={() => navigate("rules")}><Icon name="book" /> Règles</Button>
-            <Button variant="secondary" onClick={() => navigate("settings")}><Icon name="settings" /> Paramètres</Button>
+            <Button variant="secondary" icon="book" onClick={() => navigate("rules")}>Règles</Button>
+            <Button variant="secondary" icon="settings" onClick={() => navigate("settings")}>Paramètres</Button>
           </div>
         </section>
 
-        <Panel className="stage-panel" labelledBy="stage-preview-title">
+        <Panel className="stage-panel home-status-panel" labelledBy="home-status-title">
           <div className="stage-topline">
-            <span>Mode classique</span>
-            <span><Icon name="team" /> 3 joueurs</span>
+            <span id="home-status-title">Partie locale</span>
+            <span>{hasSavedGame ? "Sauvegarde disponible" : "Aucune reprise"}</span>
           </div>
-          <div className="score-strip">
-            <div><span>Manche</span><strong>2 / 5</strong></div>
-            <div><span>Score équipe</span><strong>{session.score.teamScore.toLocaleString("fr-FR")}</strong></div>
-            <div><span>Thème</span><strong>Culture générale</strong></div>
+          <div className="score-strip compact">
+            <div><span>Format V1</span><strong>Classique</strong></div>
+            <div><span>Score equipe</span><strong>{session.score.teamScore.toLocaleString("fr-FR")}</strong></div>
+            <div><span>Joueurs</span><strong>3</strong></div>
           </div>
-          <div className="progress-rail" aria-label="Progression de la manche">
-            {[1, 2, 3, 4, 5].map((step) => <span key={step} className={step <= 2 ? "active" : ""}>{step === 1 ? <Icon name="check" /> : step}</span>)}
+          <div className="team-list home-team-list" aria-label="Equipe configuree">
+            {session.players.map((player) => <PlayerBadge key={player.id} player={player} />)}
           </div>
-          <section className="question-preview" aria-labelledby="preview-question">
-            <h2 id="stage-preview-title">Scène de jeu</h2>
-            <p id="preview-question">Dans quelle ville française se trouve la Place Stanislas ?</p>
-            <div className="answer-grid">
-              {([ ["a", "Nancy"], ["b", "Metz"], ["c", "Dijon"], ["d", "Besançon"] ] as const).map(([id, label]) => (
-                <button key={id} className={`preview-answer ${id === "a" ? "preview-selected" : ""}`} type="button">
-                  <span>{id.toUpperCase()}</span>{label}
-                </button>
-              ))}
-            </div>
+          <section className="question-preview" aria-labelledby="home-preview-title">
+            <h2 id="home-preview-title">Prochaine experience</h2>
+            <p>Des manches courtes, des jokers partagés et une finale en convergence.</p>
           </section>
-          <div className="joker-row" aria-label="Jokers de l'équipe">
-            <span>50:50</span>
-            <span>Deuxième chance</span>
-            <span>Indice</span>
-          </div>
         </Panel>
       </div>
     </ScreenFrame>
   );
 }
-

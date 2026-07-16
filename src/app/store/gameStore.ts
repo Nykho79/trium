@@ -143,6 +143,7 @@ interface GameStoreState {
   selectAnswer: (answerId: string) => void;
   revealAnswer: () => void;
   resetDemo: () => void;
+  clearRecentQuestions: () => void;
   startNewGame: (seed?: string | undefined) => void;
   startConfiguredGame: () => void;
   startCurrentRound: (roundIndex?: number | undefined) => void;
@@ -282,7 +283,7 @@ export const useGameStore = create<GameStoreState>()((set) => ({
   }),
   updatePlayerName: (playerIndex, name) => set((state) => {
     const players = [...state.session.players] as [Player, Player, Player];
-    players[playerIndex] = { ...players[playerIndex], name: name.trim() || `Joueur ${playerIndex + 1}` };
+    players[playerIndex] = { ...players[playerIndex], name: name.slice(0, 14) };
     const config = state.gameState ? { ...state.gameState.config, players } : undefined;
     const gameState = state.gameState && config ? { ...state.gameState, config } : state.gameState;
     const session = { ...state.session, players };
@@ -319,6 +320,17 @@ export const useGameStore = create<GameStoreState>()((set) => ({
       hasSavedGame: false,
       persistenceError: cleared.ok ? undefined : cleared.error,
       engineError: undefined,
+    };
+  }),
+  clearRecentQuestions: () => set((state) => {
+    const saved = saveRecentQuestionIds([]);
+    const gameState = state.gameState ? { ...state.gameState, recentlyPlayedQuestionIds: [] } : null;
+    const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+    return {
+      gameState,
+      recentQuestionIds: [],
+      persistenceError: saved.ok ? patch.persistenceError : saved.error,
+      hasSavedGame: patch.hasSavedGame,
     };
   }),
   startNewGame: (seed) => set((state) => {
@@ -425,7 +437,7 @@ export const useGameStore = create<GameStoreState>()((set) => ({
     }
     try {
       const gameState = advanceRound(state.gameState, now ?? Date.now());
-      const screen: AppScreen = gameState.status === "game_result" ? "summary" : "round-intro";
+      const screen: AppScreen = gameState.status === "game_result" ? "game-result" : "round-intro";
       const patch = persistencePatch({ gameState, screen, selectedAnswerId: undefined });
       return { gameState, screen, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {
@@ -438,8 +450,8 @@ export const useGameStore = create<GameStoreState>()((set) => ({
     }
     try {
       const gameState = completeGame(state.gameState, now ?? Date.now());
-      const patch = persistencePatch({ gameState, screen: "summary", selectedAnswerId: undefined });
-      return { gameState, screen: "summary", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+      const patch = persistencePatch({ gameState, screen: "game-result", selectedAnswerId: undefined });
+      return { gameState, screen: "game-result", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {
       return { engineError: errorMessage(error) };
     }

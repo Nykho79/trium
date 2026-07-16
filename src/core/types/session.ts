@@ -7,6 +7,8 @@ export type AppScreen =
   | "rules"
   | "player-setup"
   | "format-selection"
+  | "game-mode"
+  | "resume-game"
   | "game-intro"
   | "round-intro"
   | "game"
@@ -14,9 +16,11 @@ export type AppScreen =
   | "round-result"
   | "finale"
   | "summary"
+  | "game-result"
   | "settings"
   | "dev-question-bank"
-  | "design-system";
+  | "design-system"
+  | "error";
 
 export interface GameSessionPreview {
   players: [Player, Player, Player];
