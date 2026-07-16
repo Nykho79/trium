@@ -36,3 +36,16 @@ test("revele une reponse depuis une case de grille", async ({ page }) => {
   await expect(page.getByText(/Score .quipe/)).toBeVisible();
   await expect(page.getByRole("button", { name: /Retour . la grille|Retour a la grille/ })).toBeVisible();
 });
+
+test("confirme et applique le joker 50/50", async ({ page }) => {
+  await openKnowledgeGrid(page);
+  await page.getByRole("button", { name: /Culture g.n.rale 200/ }).click();
+  await expect(page.getByRole("heading", { name: /Place Stanislas/ })).toBeVisible();
+
+  await page.getByTestId("joker-fifty_fifty").click();
+  await expect(page.getByRole("dialog", { name: /Utiliser 50\/50/ })).toBeVisible();
+  await page.getByRole("button", { name: "Utiliser" }).click();
+
+  await expect(page.locator("button.answer-state-disabled")).toHaveCount(2);
+  await expect(page.getByTestId("joker-fifty_fifty")).toBeDisabled();
+});

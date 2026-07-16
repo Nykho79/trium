@@ -1,6 +1,6 @@
 import type { Player } from "./player";
 import type { RoundDefinition, RoundState } from "./round";
-import type { AnswerResult, JokerState, ScoreBreakdown } from "./scoring";
+import type { AnswerResult, JokerEffectState, JokerState, ScoreBreakdown } from "./scoring";
 import type { GameEvent } from "./event";
 
 export type RoundKind =
@@ -72,6 +72,7 @@ export interface GameState {
   usedQuestionIds: QuestionId[];
   recentlyPlayedQuestionIds: QuestionId[];
   jokers: JokerState;
+  jokerEffects: JokerEffectState;
   score: ScoreBreakdown;
   eventLog: GameEvent[];
   error?: string | undefined;

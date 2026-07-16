@@ -13,6 +13,7 @@ Le projet contient maintenant :
 - un design system TRIUM documente dans `DESIGN.md` ;
 - un flux local accueil -> joueurs -> mode -> intro -> manche -> jeu -> resultats ;
 - la manche jouable `Grille des savoirs` avec grille 5 categories x 4 niveaux, verrouillage, revelation, score et retour grille ;
+- un systeme complet de jokers : 50/50, deuxieme chance, changement de question, indice contextuel, temps supplementaire et vote equipe ;
 - une banque de questions JSON locale dans `src/data/questions` ;
 - un chargeur local qui valide les fichiers JSON avec Zod, filtre les questions jouables et produit un rapport qualite ;
 - une selection de questions seedable avec exclusion des questions deja jouees et ponderation categories/difficultes ;
@@ -60,7 +61,7 @@ Contrats principaux :
 - `GameConfig`, `GameMode`, `GameStatus`, `GameState` : configuration et etats du moteur ;
 - `RoundDefinition`, `RoundState`, `GameRound` : contrat commun de toutes les manches ;
 - `Question`, `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` : formats de questions validables depuis JSON ;
-- `Joker`, `JokerType`, `JokerState` : inventaire partage des jokers ;
+- `Joker`, `JokerType`, `JokerState`, `JokerEffectState` : inventaire partage des jokers et effets temporaires de question ;
 - `ScoreBreakdown`, `AnswerResult` : resultat pur et detail du score ;
 - `GameEvent`, `GameAction` : entrees et evenements du moteur.
 
@@ -117,9 +118,9 @@ Principes actifs :
 Validation locale executee le 2026-07-16 :
 
 - `pnpm questions` : OK, 350 questions analysees ;
-- `pnpm check` : OK, lint + TypeScript + 47 tests unitaires ;
+- `pnpm check` : OK, lint + TypeScript + 56 tests unitaires ;
 - `pnpm build` : OK, avec avertissement Vite de chunk superieur a 500 kB ;
-- `pnpm test:e2e` : OK, 18 tests Playwright sur 1920 x 1080 et 1366 x 768.
+- `pnpm test:e2e` : OK, 20 tests Playwright sur 1920 x 1080 et 1366 x 768.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.
 

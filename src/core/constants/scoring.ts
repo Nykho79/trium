@@ -1,10 +1,10 @@
 import type { JokerInventory } from "../types";
 
 export const INITIAL_JOKERS: JokerInventory = {
-  "fifty-fifty": 1,
-  "second-chance": 1,
-  "question-swap": 1,
-  "contextual-clue": 1,
-  "extra-time": 1,
-  "three-player-vote": 1,
+  fifty_fifty: 1,
+  second_chance: 1,
+  change_question: 0,
+  contextual_hint: 0,
+  extra_time: 1,
+  team_vote: 0,
 };

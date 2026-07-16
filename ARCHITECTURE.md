@@ -1019,3 +1019,27 @@ Regles implementees :
 - erreur explicite si aucune question n'existe pour une categorie/difficulte.
 
 Le moteur conserve maintenant `answerResults` dans `RoundState` afin de calculer les series de bonnes reponses de maniere pure et restaurable. L'ecran `GameScreen` branche cette manche sur le moteur : choix de case, affichage QCM, verrouillage, revelation, explication et retour a la grille.
+## 23. Systeme complet de jokers
+
+Le systeme de jokers est porte par le moteur pur dans `src/core/engine/gameEngine.ts`, sans dependance React. Les types sont centralises dans `src/core/types/scoring.ts` et valides par `src/core/schemas/scoringSchemas.ts`.
+
+Jokers disponibles :
+
+- `fifty_fifty` : retire deux mauvaises reponses d'un QCM par selection deterministe seedee, sans jamais retirer la bonne reponse ;
+- `second_chance` : apres une erreur, remet la question en etat actif et permet une seconde reponse ; une bonne reponse au second essai rapporte 50 % du score calcule ;
+- `change_question` : remplace la question active par une question de meme manche, type, categorie et difficulte ; l'ancienne question reste bloquee pour la partie ;
+- `contextual_hint` : affiche un indice prepare via `contextualHint`, ou a defaut une partie de l'explication ; aucune generation IA n'est appelee pendant la partie ;
+- `extra_time` : ajoute 20 secondes au timer actif et est refuse apres expiration ;
+- `team_vote` : ouvre un etat de vote d'equipe. L'interface collecte les trois votes successivement, masque les votes precedents puis revele la majorite avant la reponse finale du capitaine.
+
+Regles globales implementees :
+
+- l'inventaire initial contient exactement trois jokers : `fifty_fifty`, `second_chance` et `extra_time` ;
+- les autres jokers commencent a zero et peuvent etre ajoutes par `awardJoker` ;
+- chaque joker est consomme une seule fois par partie via `JokerState.used` ;
+- les effets de question sont serialisables dans `JokerEffectState` pour la sauvegarde locale ;
+- l'utilisation est journalisee dans `eventLog` ;
+- les jokers indisponibles sont desactives dans `GameScreen` ;
+- certains jokers peuvent etre interdits par manche, par exemple `fifty_fifty` et `team_vote` dans `clue-race`, et `change_question` et `team_vote` dans `final-convergence`.
+
+L'interface `GameScreen` ajoute une confirmation avant consommation, un feedback visible pour l'indice et la seconde chance, l'etat 50/50 directement sur les reponses, le panneau de vote equipe et un retour sonore centralise dans `src/ui/audio/soundManager.ts`.

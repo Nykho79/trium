@@ -1626,3 +1626,22 @@ body {
     min-height: 74px;
   }
 }
+
+.team-vote-panel {
+  display: grid;
+  gap: 18px;
+  border-color: rgba(148, 105, 255, 0.42);
+  background: rgba(25, 16, 48, 0.72);
+}
+
+.team-vote-panel strong {
+  color: var(--color-cyan);
+  font-size: 30px;
+}
+
+.team-vote-panel p {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 22px;
+  line-height: 1.32;
+}

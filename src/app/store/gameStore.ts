@@ -155,7 +155,7 @@ interface GameStoreState {
   finishGame: (now?: number | undefined) => void;
   pauseCurrentGame: (now?: number | undefined) => void;
   resumeCurrentGame: (now?: number | undefined) => void;
-  applyGameJoker: (joker: JokerType, now?: number | undefined) => void;
+  applyGameJoker: (joker: JokerType, questions?: readonly Question[] | undefined, now?: number | undefined) => void;
   resumeSavedGame: () => void;
   clearSavedGame: () => void;
   setEngineState: (gameState: GameState) => void;
@@ -480,14 +480,15 @@ export const useGameStore = create<GameStoreState>()((set) => ({
       return { engineError: errorMessage(error) };
     }
   }),
-  applyGameJoker: (joker, now) => set((state) => {
+  applyGameJoker: (joker, questions, now) => set((state) => {
     if (!state.gameState) {
       return { engineError: "Aucune partie active." };
     }
     try {
-      const gameState = applyJoker(state.gameState, joker, now ?? Date.now());
-      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
-      return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+      const gameState = applyJoker(state.gameState, { joker, questions, now: now ?? Date.now() });
+      const selectedAnswerId = joker === "change_question" ? undefined : state.selectedAnswerId;
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId });
+      return { gameState, selectedAnswerId, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {
       return { engineError: errorMessage(error) };
     }

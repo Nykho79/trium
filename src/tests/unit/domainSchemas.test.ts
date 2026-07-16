@@ -47,7 +47,7 @@ const roundDefinition: RoundDefinition = {
   id: "round-pressure",
   kind: "pressure-choice",
   label: "Choix sous pression",
-  description: "QCM chronomÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©trÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©.",
+  description: "QCM chronomÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©trÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©.",
   questionTypes: ["multiple_choice"],
   questionCount: 1,
   maxScore: 500,
@@ -76,12 +76,12 @@ const config: GameConfig = {
 };
 
 const jokerInventory = {
-  "fifty-fifty": 1,
-  "second-chance": 1,
-  "question-swap": 1,
-  "contextual-clue": 1,
-  "extra-time": 1,
-  "three-player-vote": 1,
+  "fifty_fifty": 1,
+  "second_chance": 1,
+  "change_question": 1,
+  "contextual_hint": 1,
+  "extra_time": 1,
+  "team_vote": 1,
 };
 
 const question: MultipleChoiceQuestion = {
@@ -93,14 +93,14 @@ const question: MultipleChoiceQuestion = {
   subCategoryId: "space",
   subCategoryLabel: "Espace",
   difficulty: 1,
-  prompt: "Quelle planÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨te est surnommÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©e la planÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨te rouge ?",
-  explanation: "Mars est rouge ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â  cause des oxydes de fer prÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©sents ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â  sa surface.",
+  prompt: "Quelle planÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨te est surnommÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©e la planÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨te rouge ?",
+  explanation: "Mars est rouge ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â  cause des oxydes de fer prÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©sents ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â  sa surface.",
   tags: ["astronomie"],
   editorialStatus: "approved",
   version: 1,
   options: [
     { id: "a", label: "Mars" },
-    { id: "b", label: "VÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©nus" },
+    { id: "b", label: "VÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©nus" },
     { id: "c", label: "Jupiter" },
     { id: "d", label: "Mercure" },
   ],
@@ -142,12 +142,12 @@ describe("schemas metier centraux", () => {
 
   it("valide Joker, JokerState, ScoreBreakdown et AnswerResult", () => {
     expect(jokerSchema.parse({
-      type: "fifty-fifty",
+      type: "fifty_fifty",
       label: "50/50",
-      description: "Retire deux mauvaises rÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ponses.",
+      description: "Retire deux mauvaises rÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ponses.",
       maxUses: 1,
-    }).type).toBe("fifty-fifty");
-    expect(jokerStateSchema.parse({ available: jokerInventory, used: jokerInventory, disabled: [] }).available["extra-time"]).toBe(1);
+    }).type).toBe("fifty_fifty");
+    expect(jokerStateSchema.parse({ available: jokerInventory, used: jokerInventory, disabled: [] }).available["extra_time"]).toBe(1);
     expect(scoreBreakdownSchema.parse(score).total).toBe(175);
     expect(answerResultSchema.parse({
       questionId: "q-1",
@@ -171,6 +171,7 @@ describe("schemas metier centraux", () => {
       usedQuestionIds: [],
       recentlyPlayedQuestionIds: [],
       jokers: { available: jokerInventory, used: jokerInventory, disabled: [] },
+      jokerEffects: { eliminatedOptionIds: [], secondChanceActive: false, secondChanceConsumed: false, changedQuestionIds: [] },
       score,
       eventLog: [],
     };

@@ -1,12 +1,12 @@
 import { z } from "zod";
 
 export const jokerTypeSchema = z.union([
-  z.literal("fifty-fifty"),
-  z.literal("second-chance"),
-  z.literal("question-swap"),
-  z.literal("contextual-clue"),
-  z.literal("extra-time"),
-  z.literal("three-player-vote"),
+  z.literal("fifty_fifty"),
+  z.literal("second_chance"),
+  z.literal("change_question"),
+  z.literal("contextual_hint"),
+  z.literal("extra_time"),
+  z.literal("team_vote"),
 ]);
 
 export const jokerInventorySchema = z.record(jokerTypeSchema, z.number().int().min(0));
@@ -16,6 +16,21 @@ export const jokerSchema = z.object({
   label: z.string().min(1),
   description: z.string().min(1),
   maxUses: z.number().int().min(0),
+});
+
+export const teamVoteStateSchema = z.object({
+  active: z.boolean(),
+  votes: z.partialRecord(z.union([z.literal("player-1"), z.literal("player-2"), z.literal("player-3")]), z.string().min(1)),
+  revealedMajority: z.string().min(1).optional(),
+});
+
+export const jokerEffectStateSchema = z.object({
+  eliminatedOptionIds: z.array(z.string().min(1)),
+  secondChanceActive: z.boolean(),
+  secondChanceConsumed: z.boolean(),
+  changedQuestionIds: z.array(z.string().min(1)),
+  contextualHint: z.string().min(1).optional(),
+  teamVote: teamVoteStateSchema.optional(),
 });
 
 export const jokerStateSchema = z.object({

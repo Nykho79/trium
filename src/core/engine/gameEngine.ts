@@ -1,7 +1,7 @@
 import type { GameConfig, GameState, GameStatus, GameTimerState, QuestionId } from "../types/game";
 import type { KnowledgeGridQuestion, Question } from "../types/question";
 import type { RoundDefinition, RoundState } from "../types/round";
-import type { AnswerResult, JokerInventory, JokerType, ScoreBreakdown } from "../types/scoring";
+import type { AnswerResult, JokerEffectState, JokerInventory, JokerType, ScoreBreakdown } from "../types/scoring";
 import type { GameEvent, GameEventType } from "../types/event";
 import { INITIAL_JOKERS } from "../constants/scoring";
 import { gameStateSchema } from "../schemas/gameSchemas";
@@ -37,6 +37,12 @@ export interface RevealAnswerInput {
   now: number;
 }
 
+export interface ApplyJokerInput {
+  joker: JokerType;
+  questions?: readonly Question[] | undefined;
+  now?: number | undefined;
+}
+
 const emptyScore: ScoreBreakdown = {
   basePoints: 0,
   timeBonus: 0,
@@ -48,12 +54,21 @@ const emptyScore: ScoreBreakdown = {
 
 function zeroJokers(): JokerInventory {
   return {
-    "fifty-fifty": 0,
-    "second-chance": 0,
-    "question-swap": 0,
-    "contextual-clue": 0,
-    "extra-time": 0,
-    "three-player-vote": 0,
+    fifty_fifty: 0,
+    second_chance: 0,
+    change_question: 0,
+    contextual_hint: 0,
+    extra_time: 0,
+    team_vote: 0,
+  };
+}
+
+function emptyJokerEffects(): JokerEffectState {
+  return {
+    eliminatedOptionIds: [],
+    secondChanceActive: false,
+    secondChanceConsumed: false,
+    changedQuestionIds: [],
   };
 }
 
@@ -69,6 +84,15 @@ function cloneState(state: GameState): GameState {
       available: { ...state.jokers.available },
       used: { ...state.jokers.used },
       disabled: [...state.jokers.disabled],
+    },
+    jokerEffects: {
+      ...state.jokerEffects,
+      eliminatedOptionIds: [...state.jokerEffects.eliminatedOptionIds],
+      changedQuestionIds: [...state.jokerEffects.changedQuestionIds],
+      teamVote: state.jokerEffects.teamVote ? {
+        ...state.jokerEffects.teamVote,
+        votes: { ...state.jokerEffects.teamVote.votes },
+      } : undefined,
     },
     score: { ...state.score },
     eventLog: [...state.eventLog],
@@ -243,6 +267,98 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
   return selected;
 }
 
+
+const FORBIDDEN_JOKERS_BY_ROUND: Partial<Record<GameConfig["rounds"][number]["kind"], readonly JokerType[]>> = {
+  "clue-race": ["fifty_fifty", "team_vote"],
+  "final-convergence": ["change_question", "team_vote"],
+};
+
+function resetQuestionJokerEffects(effects: JokerEffectState): JokerEffectState {
+  return {
+    ...effects,
+    eliminatedOptionIds: [],
+    secondChanceActive: false,
+    secondChanceConsumed: false,
+    contextualHint: undefined,
+    teamVote: undefined,
+  };
+}
+
+function halveScore(score: ScoreBreakdown): ScoreBreakdown {
+  const basePoints = Math.floor(score.basePoints / 2);
+  const timeBonus = Math.floor(score.timeBonus / 2);
+  const streakBonus = Math.floor(score.streakBonus / 2);
+  const wagerDelta = Math.floor(score.wagerDelta / 2);
+  return {
+    basePoints,
+    timeBonus,
+    streakBonus,
+    jokerPenalty: score.jokerPenalty,
+    wagerDelta,
+    total: basePoints + timeBonus + streakBonus + wagerDelta - score.jokerPenalty,
+  };
+}
+
+function activeMultipleChoiceQuestion(state: GameState, questions: readonly Question[] | undefined): Extract<Question, { type: "multiple_choice" }> {
+  if (!questions) {
+    throw new GameEngineError("Ce joker exige la banque de questions active.");
+  }
+  const question = findActiveQuestion(state, questions);
+  if (question.type !== "multiple_choice") {
+    throw new GameEngineError("Ce joker exige une question a choix multiples.");
+  }
+  return question;
+}
+
+function deterministicWrongOptions(question: Extract<Question, { type: "multiple_choice" }>, seed: string): string[] {
+  const wrongOptionIds = question.options.filter((option) => option.id !== question.correctOptionId).map((option) => option.id);
+  return shuffleWithSeed(wrongOptionIds, `${seed}:${question.id}:fifty_fifty`).slice(0, 2);
+}
+
+function hintFor(question: Question): string {
+  if (question.contextualHint) {
+    return question.contextualHint;
+  }
+  const explanation = question.explanation ?? "Indice indisponible pour cette question.";
+  const firstSentence = explanation.split(/[.!?]/).find((part) => part.trim().length > 0)?.trim();
+  return firstSentence ? `${firstSentence}.` : explanation.slice(0, 140);
+}
+
+function replacementQuestion(state: GameState, questions: readonly Question[] | undefined): Question {
+  if (!questions) {
+    throw new GameEngineError("Le changement de question exige la banque de questions active.");
+  }
+  const active = findActiveQuestion(state, questions);
+  const candidates = questions.filter((question) => (
+    question.id !== active.id
+    && question.kind === active.kind
+    && question.type === active.type
+    && question.categoryId === active.categoryId
+    && question.difficulty === active.difficulty
+    && !state.usedQuestionIds.includes(question.id)
+  ));
+  const selected = shuffleWithSeed(candidates, `${state.config.seed}:${active.id}:change_question`)[0];
+  if (!selected) {
+    throw new GameEngineError("Aucune question de remplacement disponible pour cette categorie et cette difficulte.");
+  }
+  return selected;
+}
+
+function assertJokerAllowed(state: GameState, joker: JokerType, now: number): void {
+  const round = currentRoundDefinition(state);
+  if (FORBIDDEN_JOKERS_BY_ROUND[round.kind]?.includes(joker)) {
+    throw new GameEngineError(`Joker interdit dans cette manche: ${joker}.`);
+  }
+  if (state.jokers.disabled.includes(joker)) {
+    throw new GameEngineError(`Joker desactive: ${joker}.`);
+  }
+  if (state.jokers.used[joker] > 0 || state.jokers.available[joker] <= 0) {
+    throw new GameEngineError(`Joker indisponible: ${joker}.`);
+  }
+  if (joker === "extra_time" && (!state.timer || isTimerExpired(state.timer, now))) {
+    throw new GameEngineError("Le temps supplementaire est impossible apres expiration.");
+  }
+}
 export function rotateCaptain(state: GameState): GameState {
   const currentIndex = state.config.players.findIndex((player) => player.id === state.captainPlayerId);
   const nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % state.config.players.length;
@@ -266,6 +382,7 @@ export function createGame(input: CreateGameInput): GameState {
     usedQuestionIds: [],
     recentlyPlayedQuestionIds: input.recentlyPlayedQuestionIds ?? [],
     jokers: { available: { ...INITIAL_JOKERS }, used: zeroJokers(), disabled: [] },
+    jokerEffects: emptyJokerEffects(),
     score: { ...emptyScore },
     eventLog: [],
   };
@@ -353,7 +470,17 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
   const question = findActiveQuestion(state, input.questions);
   const isCorrect = isAnswerCorrect(question, state.lockedAnswer);
   const roundState = requireRound(state);
-  const score = calculateAnswerScore(question, isCorrect, state.timer, input.now, roundState);
+  const initialScore = calculateAnswerScore(question, isCorrect, state.timer, input.now, roundState);
+  const score = state.jokerEffects.secondChanceConsumed && isCorrect ? halveScore(initialScore) : initialScore;
+
+  if (!isCorrect && state.jokerEffects.secondChanceActive && !state.jokerEffects.secondChanceConsumed) {
+    return withEvent({
+      ...cloneState(state),
+      status: "question_active",
+      lockedAnswer: undefined,
+      jokerEffects: { ...state.jokerEffects, secondChanceActive: false, secondChanceConsumed: true },
+    }, "joker_used", input.now, { joker: "second_chance", questionId: question.id, message: "Seconde chance activee." });
+  }
   const result: AnswerResult = {
     questionId: question.id,
     isCorrect,
@@ -361,7 +488,7 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
     correctAnswer: displayCorrectAnswer(question),
     explanation: question.explanation,
     score,
-    usedJokers: [],
+    usedJokers: Object.entries(state.jokers.used).filter(([, count]) => count > 0).map(([joker]) => joker as JokerType),
   };
   const nextRoundState: RoundState = {
     ...roundState,
@@ -374,6 +501,7 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
     ...cloneState(state),
     currentRoundState: nextRoundState,
     lastAnswerResult: result,
+    jokerEffects: resetQuestionJokerEffects(state.jokerEffects),
     score: addScore(state.score, score),
   }, "answer_reveal", input.now, "answer_revealed");
 }
@@ -426,22 +554,88 @@ export function resumeGame(state: GameState, now = 0): GameState {
   return transition({ ...cloneState(state), timer }, previousStatus, now, "game_resumed");
 }
 
-export function applyJoker(state: GameState, joker: JokerType, now = 0): GameState {
+export function applyJoker(state: GameState, input: ApplyJokerInput | JokerType, now = 0): GameState {
+  const request: ApplyJokerInput = typeof input === "string" ? { joker: input, now } : input;
+  const appliedAt = request.now ?? now;
+  const joker = request.joker;
   requireStatus(state, ["question_active", "answer_locked"], "applyJoker");
-  if (state.jokers.disabled.includes(joker)) {
-    throw new GameEngineError(`Joker desactive: ${joker}.`);
-  }
-  if (state.jokers.available[joker] <= 0) {
-    throw new GameEngineError(`Joker indisponible: ${joker}.`);
-  }
+  assertJokerAllowed(state, joker, appliedAt);
+
   const available = { ...state.jokers.available, [joker]: state.jokers.available[joker] - 1 };
   const used = { ...state.jokers.used, [joker]: state.jokers.used[joker] + 1 };
-  const timer = joker === "extra-time" && state.timer
-    ? { ...state.timer, expiresAt: state.timer.expiresAt + 10_000 }
-    : state.timer;
-  return withEvent({ ...cloneState(state), jokers: { ...state.jokers, available, used }, timer }, "joker_used", now, { joker });
+  const baseState = cloneState(state);
+  const nextJokers = { ...state.jokers, available, used };
+
+  if (joker === "fifty_fifty") {
+    const question = activeMultipleChoiceQuestion(state, request.questions);
+    const eliminatedOptionIds = deterministicWrongOptions(question, state.config.seed);
+    return withEvent({
+      ...baseState,
+      jokers: nextJokers,
+      jokerEffects: { ...state.jokerEffects, eliminatedOptionIds },
+    }, "joker_used", appliedAt, { joker, questionId: question.id });
+  }
+
+  if (joker === "second_chance") {
+    return withEvent({
+      ...baseState,
+      jokers: nextJokers,
+      jokerEffects: { ...state.jokerEffects, secondChanceActive: true, secondChanceConsumed: false },
+    }, "joker_used", appliedAt, { joker, questionId: state.activeQuestionId });
+  }
+
+  if (joker === "change_question") {
+    const replacement = replacementQuestion(state, request.questions);
+    const roundState = requireRound(state);
+    return withEvent({
+      ...baseState,
+      jokers: nextJokers,
+      activeQuestionId: replacement.id,
+      lockedAnswer: undefined,
+      lastAnswerResult: undefined,
+      usedQuestionIds: [...state.usedQuestionIds, replacement.id],
+      currentRoundState: {
+        ...roundState,
+        selectedQuestionIds: [...roundState.selectedQuestionIds, replacement.id],
+      },
+      jokerEffects: {
+        ...resetQuestionJokerEffects(state.jokerEffects),
+        changedQuestionIds: [...state.jokerEffects.changedQuestionIds, state.activeQuestionId ?? "", replacement.id].filter((id) => id.length > 0),
+      },
+      timer: { startedAt: appliedAt, expiresAt: appliedAt + questionDurationMs(replacement, state.config) },
+    }, "joker_used", appliedAt, { joker, questionId: replacement.id });
+  }
+
+  if (joker === "contextual_hint") {
+    const question = findActiveQuestion(state, request.questions ?? []);
+    return withEvent({
+      ...baseState,
+      jokers: nextJokers,
+      jokerEffects: { ...state.jokerEffects, contextualHint: hintFor(question) },
+    }, "joker_used", appliedAt, { joker, questionId: question.id });
+  }
+
+  if (joker === "extra_time") {
+    const timer = state.timer ? { ...state.timer, expiresAt: state.timer.expiresAt + 20_000 } : state.timer;
+    return withEvent({ ...baseState, jokers: nextJokers, timer }, "joker_used", appliedAt, { joker, questionId: state.activeQuestionId });
+  }
+
+  return withEvent({
+    ...baseState,
+    jokers: nextJokers,
+    jokerEffects: { ...state.jokerEffects, teamVote: { active: true, votes: {} } },
+  }, "joker_used", appliedAt, { joker, questionId: state.activeQuestionId });
 }
 
+export function awardJoker(state: GameState, joker: JokerType, now = 0): GameState {
+  if (state.jokers.used[joker] > 0 || state.jokers.available[joker] > 0) {
+    return state;
+  }
+  return withEvent({
+    ...cloneState(state),
+    jokers: { ...state.jokers, available: { ...state.jokers.available, [joker]: 1 } },
+  }, "joker_awarded", now, { joker, message: `Joker gagne: ${joker}` });
+}
 export function restoreGame(savedState: unknown, now = 0): GameState {
   const restored = gameStateSchema.parse(savedState);
   return withEvent(restored, "game_restored", now, { toStatus: restored.status });

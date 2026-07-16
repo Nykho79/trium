@@ -26,6 +26,7 @@ export type GameEventType =
   | "answer_locked"
   | "answer_revealed"
   | "joker_used"
+  | "joker_awarded"
   | "round_completed"
   | "round_advanced"
   | "game_completed"

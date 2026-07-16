@@ -1,10 +1,10 @@
 export type JokerKind =
-  | "fifty-fifty"
-  | "second-chance"
-  | "question-swap"
-  | "contextual-clue"
-  | "extra-time"
-  | "three-player-vote";
+  | "fifty_fifty"
+  | "second_chance"
+  | "change_question"
+  | "contextual_hint"
+  | "extra_time"
+  | "team_vote";
 
 export type JokerType = JokerKind;
 export type JokerInventory = Record<JokerKind, number>;
@@ -14,6 +14,21 @@ export interface Joker {
   label: string;
   description: string;
   maxUses: number;
+}
+
+export interface TeamVoteState {
+  active: boolean;
+  votes: Partial<Record<"player-1" | "player-2" | "player-3", string>>;
+  revealedMajority?: string | undefined;
+}
+
+export interface JokerEffectState {
+  eliminatedOptionIds: string[];
+  secondChanceActive: boolean;
+  secondChanceConsumed: boolean;
+  changedQuestionIds: string[];
+  contextualHint?: string | undefined;
+  teamVote?: TeamVoteState | undefined;
 }
 
 export interface JokerState {

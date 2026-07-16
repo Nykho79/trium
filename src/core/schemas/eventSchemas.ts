@@ -30,6 +30,7 @@ export const gameEventSchema = z.object({
     z.literal("answer_locked"),
     z.literal("answer_revealed"),
     z.literal("joker_used"),
+    z.literal("joker_awarded"),
     z.literal("round_completed"),
     z.literal("round_advanced"),
     z.literal("game_completed"),
@@ -45,5 +46,3 @@ export const gameEventSchema = z.object({
   joker: jokerTypeSchema.optional(),
   message: z.string().min(1).optional(),
 });
-
-

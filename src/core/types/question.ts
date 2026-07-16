@@ -21,6 +21,7 @@ export interface BaseQuestion {
   difficulty: Difficulty;
   prompt: string;
   explanation?: string | undefined;
+  contextualHint?: string | undefined;
   tags: string[];
   editorialStatus: QuestionEditorialStatus;
   version: number;
@@ -127,4 +128,3 @@ export interface QuestionBank {
   version: 1;
   questions: Question[];
 }
-

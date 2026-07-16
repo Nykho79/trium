@@ -4,6 +4,7 @@ import { AnswerButton } from "../components/AnswerButton";
 import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
 import { CaptainIndicator } from "../components/CaptainIndicator";
+import { ConfirmationDialog } from "../components/ConfirmationDialog";
 import { FeedbackBanner } from "../components/FeedbackBanner";
 import { JokerButton } from "../components/JokerButton";
 import { Panel } from "../components/Panel";
@@ -12,10 +13,29 @@ import { RoundHeader } from "../components/RoundHeader";
 import { ScoreBoard } from "../components/ScoreBoard";
 import { ScreenFrame } from "../components/ScreenFrame";
 import { Timer } from "../components/Timer";
+import { useAudioStore } from "../../app/store/audioStore";
 import { useGameStore } from "../../app/store/gameStore";
+import { useSettingsStore } from "../../app/store/settingsStore";
+import { playJokerSound } from "../audio/soundManager";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
-import type { KnowledgeGridQuestion, Question } from "../../core/types";
+import type { JokerType, KnowledgeGridQuestion, Question } from "../../core/types";
 import { buildKnowledgeGrid, selectKnowledgeGridQuestion } from "../../rounds/knowledge-grid";
+
+type VoteState = {
+  active: boolean;
+  currentIndex: number;
+  votes: string[];
+  majority?: string | undefined;
+};
+
+const jokerLabels: Record<JokerType, string> = {
+  fifty_fifty: "50/50",
+  second_chance: "Deuxieme chance",
+  change_question: "Changer",
+  contextual_hint: "Indice",
+  extra_time: "Temps +",
+  team_vote: "Vote equipe",
+};
 
 function isKnowledgeGridQuestion(question: Question): question is KnowledgeGridQuestion {
   return question.kind === "knowledge-grid" && question.type === "multiple_choice" && question.editorialStatus === "approved";
@@ -23,6 +43,14 @@ function isKnowledgeGridQuestion(question: Question): question is KnowledgeGridQ
 
 function correctLabel(question: KnowledgeGridQuestion): string {
   return question.options.find((option) => option.id === question.correctOptionId)?.label ?? question.correctOptionId.toUpperCase();
+}
+
+function majorityOf(votes: readonly string[]): string | undefined {
+  const counts = new Map<string, number>();
+  for (const vote of votes) {
+    counts.set(vote, (counts.get(vote) ?? 0) + 1);
+  }
+  return [...counts.entries()].sort((left, right) => right[1] - left[1])[0]?.[0];
 }
 
 export function GameScreen() {
@@ -35,9 +63,14 @@ export function GameScreen() {
   const submitCurrentAnswer = useGameStore((state) => state.submitCurrentAnswer);
   const revealCurrentAnswer = useGameStore((state) => state.revealCurrentAnswer);
   const completeCurrentRound = useGameStore((state) => state.completeCurrentRound);
+  const applyGameJoker = useGameStore((state) => state.applyGameJoker);
   const navigate = useGameStore((state) => state.navigate);
+  const soundEnabled = useSettingsStore((state) => state.soundEnabled);
+  const masterMuted = useAudioStore((state) => state.masterMuted);
   const [questions, setQuestions] = useState<KnowledgeGridQuestion[]>([]);
   const [loadError, setLoadError] = useState<string | undefined>(undefined);
+  const [pendingJoker, setPendingJoker] = useState<JokerType | undefined>(undefined);
+  const [voteState, setVoteState] = useState<VoteState>({ active: false, currentIndex: 0, votes: [] });
 
   useEffect(() => {
     let cancelled = false;
@@ -58,6 +91,10 @@ export function GameScreen() {
     };
   }, []);
 
+  useEffect(() => {
+    setVoteState({ active: false, currentIndex: 0, votes: [] });
+  }, [gameState?.activeQuestionId]);
+
   const round = gameState?.config.rounds[gameState.currentRoundIndex];
   const answeredCount = gameState?.currentRoundState?.answeredQuestionIds.length ?? 0;
   const targetCount = round?.questionCount ?? 8;
@@ -65,6 +102,7 @@ export function GameScreen() {
   const captain = gameState?.config.players.find((player) => player.id === gameState.captainPlayerId) ?? session.players[0];
   const isQuestionActive = gameState?.status === "question_active" || gameState?.status === "answer_locked";
   const isLocked = gameState?.status === "answer_locked";
+  const canUseJoker = gameState?.status === "question_active" && activeQuestion !== undefined;
   const board = useMemo(() => buildKnowledgeGrid({
     questions,
     usedQuestionIds: gameState?.usedQuestionIds ?? [],
@@ -85,6 +123,36 @@ export function GameScreen() {
       submitCurrentAnswer(selectedAnswerId);
     }
   };
+
+  const requestJoker = (joker: JokerType) => {
+    setPendingJoker(joker);
+  };
+
+  const confirmJoker = () => {
+    if (!pendingJoker) {
+      return;
+    }
+    applyGameJoker(pendingJoker, questions);
+    if (pendingJoker === "team_vote") {
+      setVoteState({ active: true, currentIndex: 0, votes: [] });
+    }
+    playJokerSound(soundEnabled && !masterMuted);
+    setPendingJoker(undefined);
+  };
+
+  const castVote = (answerId: string) => {
+    setVoteState((state) => {
+      const votes = [...state.votes, answerId];
+      if (votes.length >= 3) {
+        return { active: true, currentIndex: 3, votes, majority: majorityOf(votes) };
+      }
+      return { active: true, currentIndex: state.currentIndex + 1, votes };
+    });
+  };
+
+  const jokerRemaining = (joker: JokerType): number => gameState?.jokers.available[joker] ?? 0;
+  const jokerUsed = (joker: JokerType): boolean => (gameState?.jokers.used[joker] ?? 0) > 0;
+  const jokerDisabled = (joker: JokerType): boolean => !canUseJoker || jokerRemaining(joker) <= 0 || jokerUsed(joker) || (gameState?.jokers.disabled.includes(joker) ?? false);
 
   if (!gameState || !round) {
     return (
@@ -109,6 +177,8 @@ export function GameScreen() {
 
           {loadError ? <FeedbackBanner tone="warning" title="Banque indisponible" message={loadError} /> : null}
           {engineError ? <FeedbackBanner tone="warning" title="Action impossible" message={engineError} /> : null}
+          {gameState.jokerEffects.contextualHint ? <FeedbackBanner tone="info" title="Indice contextuel" message={gameState.jokerEffects.contextualHint} /> : null}
+          {gameState.jokerEffects.secondChanceConsumed && gameState.status === "question_active" ? <FeedbackBanner tone="warning" title="Seconde chance" message="Premiere reponse incorrecte. La prochaine bonne reponse vaudra 50 % des points." /> : null}
 
           {!isQuestionActive ? (
             <div className="knowledge-grid-board" role="grid" aria-label="Grille des savoirs">
@@ -141,18 +211,41 @@ export function GameScreen() {
                 <span>{activeQuestion.categoryLabel} - difficulte {activeQuestion.difficulty}</span>
               </div>
               <h1>{activeQuestion.prompt}</h1>
+              {voteState.active ? (
+                <Panel className="team-vote-panel">
+                  {voteState.majority ? (
+                    <>
+                      <Badge tone="success">Majorite revelee</Badge>
+                      <strong>{activeQuestion.options.find((option) => option.id === voteState.majority)?.label ?? voteState.majority}</strong>
+                      <p>Le capitaine choisit maintenant la reponse finale.</p>
+                    </>
+                  ) : (
+                    <>
+                      <Badge tone="violet">Vote masque</Badge>
+                      <strong>{session.players[voteState.currentIndex]?.name ?? "Joueur"}</strong>
+                      <p>{voteState.votes.length} vote(s) enregistres. Les choix precedents restent masques.</p>
+                      <div className="answer-grid live">
+                        {activeQuestion.options.map((answer) => <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} onClick={() => castVote(answer.id)} />)}
+                      </div>
+                    </>
+                  )}
+                </Panel>
+              ) : null}
               <div className="answer-grid live">
                 {activeQuestion.options.map((answer) => {
-                  const state = isLocked
-                    ? answer.id === activeQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
-                    : selectedAnswerId === answer.id ? "selected" : "idle";
+                  const eliminated = gameState.jokerEffects.eliminatedOptionIds.includes(answer.id);
+                  const state = eliminated
+                    ? "disabled"
+                    : isLocked
+                      ? answer.id === activeQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
+                      : selectedAnswerId === answer.id ? "selected" : "idle";
                   return (
                     <AnswerButton
                       key={answer.id}
                       answerId={answer.id}
                       label={answer.label}
                       state={state}
-                      disabled={isLocked}
+                      disabled={isLocked || eliminated}
                       onClick={() => selectAnswer(answer.id)}
                     />
                   );
@@ -174,10 +267,12 @@ export function GameScreen() {
           <Panel>
             <h2>Jokers</h2>
             <div className="joker-list">
-              <JokerButton label="50/50" remaining={session.score.jokers["fifty-fifty"]} icon="target" />
-              <JokerButton label="Deuxieme chance" remaining={session.score.jokers["second-chance"]} icon="shield" />
-              <JokerButton label="Indice" remaining={session.score.jokers["contextual-clue"]} icon="spark" />
-              <JokerButton label="Temps +" remaining={session.score.jokers["extra-time"]} icon="timer" />
+              <JokerButton label="50/50" remaining={jokerRemaining("fifty_fifty")} icon="target" disabled={jokerDisabled("fifty_fifty")} onClick={() => requestJoker("fifty_fifty")} data-testid="joker-fifty_fifty" />
+              <JokerButton label="Deuxieme chance" remaining={jokerRemaining("second_chance")} icon="shield" disabled={jokerDisabled("second_chance")} onClick={() => requestJoker("second_chance")} data-testid="joker-second_chance" />
+              <JokerButton label="Changer" remaining={jokerRemaining("change_question")} icon="arrow" disabled={jokerDisabled("change_question")} onClick={() => requestJoker("change_question")} data-testid="joker-change_question" />
+              <JokerButton label="Indice" remaining={jokerRemaining("contextual_hint")} icon="spark" disabled={jokerDisabled("contextual_hint")} onClick={() => requestJoker("contextual_hint")} data-testid="joker-contextual_hint" />
+              <JokerButton label="Temps +" remaining={jokerRemaining("extra_time")} icon="timer" disabled={jokerDisabled("extra_time")} onClick={() => requestJoker("extra_time")} data-testid="joker-extra_time" />
+              <JokerButton label="Vote equipe" remaining={jokerRemaining("team_vote")} icon="captain" disabled={jokerDisabled("team_vote")} onClick={() => requestJoker("team_vote")} data-testid="joker-team_vote" />
             </div>
           </Panel>
           <Panel>
@@ -195,6 +290,14 @@ export function GameScreen() {
           </Panel>
         </aside>
       </section>
+      <ConfirmationDialog
+        isOpen={pendingJoker !== undefined}
+        title={pendingJoker ? `Utiliser ${jokerLabels[pendingJoker]}` : "Utiliser un joker"}
+        message="Ce joker sera consomme pour le reste de la partie. Confirmer son utilisation ?"
+        confirmLabel="Utiliser"
+        onConfirm={confirmJoker}
+        onCancel={() => setPendingJoker(undefined)}
+      />
     </ScreenFrame>
   );
 }

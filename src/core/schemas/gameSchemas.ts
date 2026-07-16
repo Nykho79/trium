@@ -2,7 +2,7 @@ import { z } from "zod";
 import { gameModeSchema, gameStatusSchema } from "./baseSchemas";
 import { playerSchema, playersSchema } from "./playerSchemas";
 import { roundDefinitionSchema, roundStateSchema } from "./roundSchemas";
-import { answerResultSchema, jokerStateSchema, scoreBreakdownSchema } from "./scoringSchemas";
+import { answerResultSchema, jokerEffectStateSchema, jokerStateSchema, scoreBreakdownSchema } from "./scoringSchemas";
 import { gameEventSchema } from "./eventSchemas";
 
 export const gameFormatSchema = z.object({
@@ -48,6 +48,7 @@ export const gameStateSchema = z.object({
   usedQuestionIds: z.array(z.string().min(1)),
   recentlyPlayedQuestionIds: z.array(z.string().min(1)),
   jokers: jokerStateSchema,
+  jokerEffects: jokerEffectStateSchema,
   score: scoreBreakdownSchema,
   eventLog: z.array(gameEventSchema),
   error: z.string().min(1).optional(),
