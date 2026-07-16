@@ -7,6 +7,7 @@ import { useGameStore } from "../../app/store/gameStore";
 
 export function RoundResultScreen() {
   const navigate = useGameStore((state) => state.navigate);
+  const advanceToNextRound = useGameStore((state) => state.advanceToNextRound);
   const session = useGameStore((state) => state.session);
   const gameState = useGameStore((state) => state.gameState);
   const round = gameState?.config.rounds[gameState.currentRoundIndex];
@@ -23,7 +24,7 @@ export function RoundResultScreen() {
           <ProgressBar value={Math.min(answered, total)} max={total} label="Questions traitees" tone="amber" />
           <div className="screen-actions">
             <Button variant="secondary" onClick={() => navigate("game")}>Revoir la scène</Button>
-            <Button variant="secondary" onClick={() => navigate("round-intro")}>Manche suivante</Button>
+            <Button variant="secondary" onClick={() => advanceToNextRound()}>Manche suivante</Button>
             <Button variant="primary" onClick={() => navigate("game-result")}>Bilan complet</Button>
           </div>
         </Card>
