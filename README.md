@@ -181,6 +181,7 @@ Utiliser la configuration suivante :
 - framework preset : `Vite` ;
 - build command : `npm run build` ;
 - build output directory : `dist` ;
+- deploy command : laisser vide pour Cloudflare Pages classique ; si un deploy command existe deja avec `npx wrangler deploy`, conserver `wrangler.jsonc` dans le depot ;
 - root directory : laisser vide ;
 - Node.js version : `20.19.0` minimum, ou une version 22 LTS.
 
@@ -188,15 +189,9 @@ Aucune variable d'environnement n'est requise pour la V1. Ne pas ajouter de cle 
 
 ### Routage SPA et assets
 
-Le fichier `public/_redirects` contient :
+Le routage SPA est configure dans `wrangler.jsonc` avec `assets.not_found_handling: "single-page-application"`. Cette configuration evite la boucle detectee par Wrangler avec un fichier `_redirects` pointant vers `/index.html`.
 
-```text
-/* /index.html 200
-```
-
-Il permet a Cloudflare Pages de renvoyer `index.html` pour les routes SPA. Le build Vite utilise `base: "./"` afin de produire des chemins d'assets relatifs et compatibles avec les previews Cloudflare.
-
-Le manifest est publie depuis `public/manifest.webmanifest`. Le service worker `public/sw.js` est enregistre uniquement en production et reste limite au cache statique same-origin. Le fichier `public/_headers` force notamment `sw.js` a rester revalidable.
+Le build Vite utilise `base: "./"` afin de produire des chemins d'assets relatifs et compatibles avec les previews Cloudflare. Le manifest est publie depuis `public/manifest.webmanifest`. Le service worker `public/sw.js` est enregistre uniquement en production et reste limite au cache statique same-origin. Le fichier `public/_headers` force notamment `sw.js` a rester revalidable.
 
 ### Deploiement
 
@@ -235,8 +230,8 @@ git push origin master
 
 - `npm: command not found` localement : utiliser `pnpm build` sur cette machine, ou installer Node/npm localement.
 - `Node version is not supported` : configurer Cloudflare Pages avec Node `20.19.0` minimum ou une version 22 LTS.
-- Page blanche apres deploiement : verifier que le dossier de sortie est bien `dist` et que `public/_redirects` est present dans le build.
-- Erreur 404 sur rafraichissement d'une URL : verifier le contenu de `_redirects` dans `dist`.
+- Page blanche apres deploiement : verifier que le dossier de sortie est bien `dist` et que `wrangler.jsonc` pointe vers `./dist`.
+- Erreur 404 sur rafraichissement d'une URL : verifier `assets.not_found_handling: "single-page-application"` dans `wrangler.jsonc`.
 - Ancienne version servie : vider le cache navigateur ou attendre la mise a jour du service worker ; `sw.js` est configure en `no-cache` pour limiter ce risque.
 - Variable manquante : aucune variable n'est necessaire en V1 ; si une fonctionnalite future en exige une, elle doit commencer par `VITE_` et ne jamais contenir de secret.
 - Build trop ancien : verifier que le dernier commit a bien ete pousse et que Cloudflare a construit la bonne branche.
