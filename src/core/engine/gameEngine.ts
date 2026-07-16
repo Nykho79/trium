@@ -1,11 +1,12 @@
 import type { GameConfig, GameState, GameStatus, GameTimerState, QuestionId } from "../types/game";
-import type { KnowledgeGridQuestion, Question } from "../types/question";
+import type { ClueRaceQuestion, KnowledgeGridQuestion, MultipleChoiceOption, Question } from "../types/question";
 import type { RoundDefinition, RoundState } from "../types/round";
 import type { AnswerResult, JokerEffectState, JokerInventory, JokerType, ScoreBreakdown } from "../types/scoring";
 import type { GameEvent, GameEventType } from "../types/event";
 import { INITIAL_JOKERS } from "../constants/scoring";
 import { gameStateSchema } from "../schemas/gameSchemas";
 import { calculateKnowledgeGridScore } from "../../rounds/knowledge-grid";
+import { calculateClueRaceScore, revealNextClueInState, showAnswersInState } from "../../rounds/clue-race";
 import { shuffleWithSeed } from "./random";
 
 export class GameEngineError extends Error {
@@ -41,6 +42,12 @@ export interface ApplyJokerInput {
   joker: JokerType;
   questions?: readonly Question[] | undefined;
   now?: number | undefined;
+}
+
+interface AnswerOptionQuestion {
+  id: QuestionId;
+  options: readonly MultipleChoiceOption[];
+  correctOptionId: string;
 }
 
 const emptyScore: ScoreBreakdown = {
@@ -157,6 +164,9 @@ function isAnswerCorrect(question: Question, answer: string | string[]): boolean
   if (question.type === "multiple_choice") {
     return typeof answer === "string" && answer === question.correctOptionId;
   }
+  if (question.type === "progressive_clues" && question.correctOptionId !== undefined) {
+    return typeof answer === "string" && answer === question.correctOptionId;
+  }
   if (question.type === "chronology") {
     return Array.isArray(answer) && answer.join("|") === question.correctOrderIds.join("|");
   }
@@ -169,6 +179,9 @@ function isAnswerCorrect(question: Question, answer: string | string[]): boolean
 function displayCorrectAnswer(question: Question): string | string[] {
   if (question.type === "multiple_choice") {
     return question.correctOptionId;
+  }
+  if (question.type === "progressive_clues") {
+    return question.correctOptionId ?? question.answer.display;
   }
   if (question.type === "chronology") {
     return question.correctOrderIds;
@@ -207,6 +220,14 @@ function calculateAnswerScore(question: Question, isCorrect: boolean, timer: Gam
       answeredInMs,
       timeLimitMs,
       currentCorrectStreak: currentCorrectStreak(roundState),
+    });
+  }
+
+  if (question.kind === "clue-race" && question.type === "progressive_clues") {
+    return calculateClueRaceScore({
+      question: question as ClueRaceQuestion,
+      isCorrect,
+      clueIndex: roundState.clueIndex ?? 0,
     });
   }
 
@@ -269,7 +290,7 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
 
 
 const FORBIDDEN_JOKERS_BY_ROUND: Partial<Record<GameConfig["rounds"][number]["kind"], readonly JokerType[]>> = {
-  "clue-race": ["fifty_fifty", "team_vote"],
+  "clue-race": ["second_chance", "change_question", "contextual_hint", "team_vote"],
   "final-convergence": ["change_question", "team_vote"],
 };
 
@@ -299,18 +320,24 @@ function halveScore(score: ScoreBreakdown): ScoreBreakdown {
   };
 }
 
-function activeMultipleChoiceQuestion(state: GameState, questions: readonly Question[] | undefined): Extract<Question, { type: "multiple_choice" }> {
+function activeAnswerOptionQuestion(state: GameState, questions: readonly Question[] | undefined): AnswerOptionQuestion {
   if (!questions) {
     throw new GameEngineError("Ce joker exige la banque de questions active.");
   }
   const question = findActiveQuestion(state, questions);
-  if (question.type !== "multiple_choice") {
-    throw new GameEngineError("Ce joker exige une question a choix multiples.");
+  if (question.type === "multiple_choice") {
+    return question;
   }
-  return question;
+  if (question.type === "progressive_clues" && question.options !== undefined && question.correctOptionId !== undefined) {
+    if (currentRoundDefinition(state).kind === "clue-race" && state.currentRoundState?.answersVisible !== true) {
+      throw new GameEngineError("Le 50/50 est disponible seulement apres affichage des reponses.");
+    }
+    return { id: question.id, options: question.options, correctOptionId: question.correctOptionId };
+  }
+  throw new GameEngineError("Ce joker exige une question avec quatre propositions.");
 }
 
-function deterministicWrongOptions(question: Extract<Question, { type: "multiple_choice" }>, seed: string): string[] {
+function deterministicWrongOptions(question: AnswerOptionQuestion, seed: string): string[] {
   const wrongOptionIds = question.options.filter((option) => option.id !== question.correctOptionId).map((option) => option.id);
   return shuffleWithSeed(wrongOptionIds, `${seed}:${question.id}:fifty_fifty`).slice(0, 2);
 }
@@ -354,6 +381,9 @@ function assertJokerAllowed(state: GameState, joker: JokerType, now: number): vo
   }
   if (state.jokers.used[joker] > 0 || state.jokers.available[joker] <= 0) {
     throw new GameEngineError(`Joker indisponible: ${joker}.`);
+  }
+  if (joker === "fifty_fifty" && round.kind === "clue-race" && state.currentRoundState?.answersVisible !== true) {
+    throw new GameEngineError("Le 50/50 est disponible seulement apres affichage des reponses.");
   }
   if (joker === "extra_time" && (!state.timer || isTimerExpired(state.timer, now))) {
     throw new GameEngineError("Le temps supplementaire est impossible apres expiration.");
@@ -409,6 +439,8 @@ export function startRound(state: GameState, roundIndex = state.currentRoundInde
     answeredQuestionIds: [],
     answerResults: [],
     score: { ...emptyScore },
+    clueIndex: definition.kind === "clue-race" ? 0 : undefined,
+    answersVisible: definition.kind === "clue-race" ? false : undefined,
   };
   const next = transition({
     ...cloneState(state),
@@ -435,6 +467,8 @@ export function loadQuestion(state: GameState, input: LoadQuestionInput): GameSt
   const nextRoundState: RoundState = {
     ...roundState,
     selectedQuestionIds: [...roundState.selectedQuestionIds, selected.id],
+    clueIndex: selected.kind === "clue-race" ? 0 : roundState.clueIndex,
+    answersVisible: selected.kind === "clue-race" ? false : roundState.answersVisible,
   };
   let next = transition({
     ...cloneState(state),
@@ -451,8 +485,36 @@ export function loadQuestion(state: GameState, input: LoadQuestionInput): GameSt
   return next;
 }
 
+export function revealNextClue(state: GameState, now = 0): GameState {
+  requireStatus(state, ["question_active"], "revealNextClue");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "clue-race") {
+    throw new GameEngineError("Cette action est reservee a Course aux indices.");
+  }
+  const roundState = requireRound(state);
+  return withEvent({
+    ...cloneState(state),
+    currentRoundState: revealNextClueInState(roundState),
+  }, "status_changed", now, { questionId: state.activeQuestionId, message: "Indice suivant revele." });
+}
+
+export function showClueRaceAnswers(state: GameState, now = 0): GameState {
+  requireStatus(state, ["question_active"], "showClueRaceAnswers");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "clue-race") {
+    throw new GameEngineError("Cette action est reservee a Course aux indices.");
+  }
+  const roundState = requireRound(state);
+  return withEvent({
+    ...cloneState(state),
+    currentRoundState: showAnswersInState(roundState),
+  }, "status_changed", now, { questionId: state.activeQuestionId, message: "Propositions affichees." });
+}
 export function submitAnswer(state: GameState, input: SubmitAnswerInput): GameState {
   requireStatus(state, ["question_active"], "submitAnswer");
+  if (currentRoundDefinition(state).kind === "clue-race" && state.currentRoundState?.answersVisible !== true) {
+    throw new GameEngineError("Les propositions doivent etre affichees avant de repondre.");
+  }
   if (isTimerExpired(state.timer, input.now)) {
     throw new GameEngineError("La reponse ne peut pas etre soumise apres expiration du temps.");
   }
@@ -567,7 +629,7 @@ export function applyJoker(state: GameState, input: ApplyJokerInput | JokerType,
   const nextJokers = { ...state.jokers, available, used };
 
   if (joker === "fifty_fifty") {
-    const question = activeMultipleChoiceQuestion(state, request.questions);
+    const question = activeAnswerOptionQuestion(state, request.questions);
     const eliminatedOptionIds = deterministicWrongOptions(question, state.config.seed);
     return withEvent({
       ...baseState,

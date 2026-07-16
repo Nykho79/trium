@@ -53,6 +53,8 @@ export interface ProgressiveCluesQuestion extends BaseQuestion {
   clues: string[];
   answer: AnswerPayload;
   pointsByClueIndex: number[];
+  options?: [MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption] | undefined;
+  correctOptionId?: string | undefined;
 }
 
 export interface ConnectionQuestion extends BaseQuestion {

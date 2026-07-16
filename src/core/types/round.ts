@@ -28,6 +28,8 @@ export interface RoundState {
   answeredQuestionIds: QuestionId[];
   answerResults: RoundAnswerHistoryEntry[];
   score: ScoreBreakdown;
+  clueIndex?: number | undefined;
+  answersVisible?: boolean | undefined;
 }
 
 export interface RoundQuestionSelectionInput<TQuestion extends Question = Question> {

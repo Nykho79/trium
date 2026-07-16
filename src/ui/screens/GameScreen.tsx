@@ -18,8 +18,9 @@ import { useGameStore } from "../../app/store/gameStore";
 import { useSettingsStore } from "../../app/store/settingsStore";
 import { playJokerSound } from "../audio/soundManager";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
-import type { JokerType, KnowledgeGridQuestion, Question } from "../../core/types";
+import type { ClueRaceQuestion, JokerType, KnowledgeGridQuestion, MultipleChoiceOption, Question } from "../../core/types";
 import { buildKnowledgeGrid, selectKnowledgeGridQuestion } from "../../rounds/knowledge-grid";
+import { isClueRaceQuestion, pointsForClueIndex, visibleClues } from "../../rounds/clue-race";
 
 type VoteState = {
   active: boolean;
@@ -41,16 +42,31 @@ function isKnowledgeGridQuestion(question: Question): question is KnowledgeGridQ
   return question.kind === "knowledge-grid" && question.type === "multiple_choice" && question.editorialStatus === "approved";
 }
 
-function correctLabel(question: KnowledgeGridQuestion): string {
-  return question.options.find((option) => option.id === question.correctOptionId)?.label ?? question.correctOptionId.toUpperCase();
-}
-
 function majorityOf(votes: readonly string[]): string | undefined {
   const counts = new Map<string, number>();
   for (const vote of votes) {
     counts.set(vote, (counts.get(vote) ?? 0) + 1);
   }
   return [...counts.entries()].sort((left, right) => right[1] - left[1])[0]?.[0];
+}
+
+function optionLabel(options: readonly MultipleChoiceOption[] | undefined, optionId: string | string[] | undefined): string {
+  if (optionId === undefined) {
+    return "Reponse indisponible";
+  }
+  if (Array.isArray(optionId)) {
+    return optionId.join(", ");
+  }
+  return options?.find((option) => option.id === optionId)?.label ?? optionId;
+}
+
+function clueAnswerOptions(question: ClueRaceQuestion): readonly MultipleChoiceOption[] {
+  return question.options ?? [
+    { id: question.answer.display, label: question.answer.display },
+    { id: "option-b", label: "Proposition B" },
+    { id: "option-c", label: "Proposition C" },
+    { id: "option-d", label: "Proposition D" },
+  ];
 }
 
 export function GameScreen() {
@@ -64,10 +80,12 @@ export function GameScreen() {
   const revealCurrentAnswer = useGameStore((state) => state.revealCurrentAnswer);
   const completeCurrentRound = useGameStore((state) => state.completeCurrentRound);
   const applyGameJoker = useGameStore((state) => state.applyGameJoker);
+  const revealNextClueForCurrentQuestion = useGameStore((state) => state.revealNextClueForCurrentQuestion);
+  const showClueRaceAnswerOptions = useGameStore((state) => state.showClueRaceAnswerOptions);
   const navigate = useGameStore((state) => state.navigate);
   const soundEnabled = useSettingsStore((state) => state.soundEnabled);
   const masterMuted = useAudioStore((state) => state.masterMuted);
-  const [questions, setQuestions] = useState<KnowledgeGridQuestion[]>([]);
+  const [questions, setQuestions] = useState<Question[]>([]);
   const [loadError, setLoadError] = useState<string | undefined>(undefined);
   const [pendingJoker, setPendingJoker] = useState<JokerType | undefined>(undefined);
   const [voteState, setVoteState] = useState<VoteState>({ active: false, currentIndex: 0, votes: [] });
@@ -77,7 +95,7 @@ export function GameScreen() {
     void loadQuestionBank()
       .then((bank) => {
         if (!cancelled) {
-          setQuestions(bank.questions.filter(isKnowledgeGridQuestion));
+          setQuestions(bank.questions.filter((question) => question.editorialStatus === "approved"));
           setLoadError(undefined);
         }
       })
@@ -99,33 +117,40 @@ export function GameScreen() {
   const answeredCount = gameState?.currentRoundState?.answeredQuestionIds.length ?? 0;
   const targetCount = round?.questionCount ?? 8;
   const activeQuestion = questions.find((question) => question.id === gameState?.activeQuestionId);
+  const activeKnowledgeQuestion = activeQuestion && isKnowledgeGridQuestion(activeQuestion) ? activeQuestion : undefined;
+  const activeClueQuestion = activeQuestion && isClueRaceQuestion(activeQuestion) ? activeQuestion : undefined;
+  const knowledgeQuestions = useMemo(() => questions.filter(isKnowledgeGridQuestion), [questions]);
+  const clueQuestions = useMemo(() => questions.filter(isClueRaceQuestion), [questions]);
   const captain = gameState?.config.players.find((player) => player.id === gameState.captainPlayerId) ?? session.players[0];
   const isQuestionActive = gameState?.status === "question_active" || gameState?.status === "answer_locked";
   const isLocked = gameState?.status === "answer_locked";
+  const isClueRace = round?.kind === "clue-race";
+  const clueIndex = gameState?.currentRoundState?.clueIndex ?? 0;
+  const answersVisible = gameState?.currentRoundState?.answersVisible === true || isLocked;
   const canUseJoker = gameState?.status === "question_active" && activeQuestion !== undefined;
   const board = useMemo(() => buildKnowledgeGrid({
-    questions,
+    questions: knowledgeQuestions,
     usedQuestionIds: gameState?.usedQuestionIds ?? [],
     seed: gameState?.config.seed ?? "trium-grid",
-  }), [gameState?.config.seed, gameState?.usedQuestionIds, questions]);
+  }), [gameState?.config.seed, gameState?.usedQuestionIds, knowledgeQuestions]);
 
   const chooseCell = (cellId: string) => {
     try {
       const questionId = selectKnowledgeGridQuestion(board, cellId);
-      loadCurrentQuestion({ questions, questionId });
+      loadCurrentQuestion({ questions: knowledgeQuestions, questionId });
     } catch {
       // Invalid selections are normally prevented by disabled cell states.
     }
+  };
+
+  const loadNextClueQuestion = () => {
+    loadCurrentQuestion({ questions: clueQuestions });
   };
 
   const submitAnswer = () => {
     if (selectedAnswerId) {
       submitCurrentAnswer(selectedAnswerId);
     }
-  };
-
-  const requestJoker = (joker: JokerType) => {
-    setPendingJoker(joker);
   };
 
   const confirmJoker = () => {
@@ -152,7 +177,12 @@ export function GameScreen() {
 
   const jokerRemaining = (joker: JokerType): number => gameState?.jokers.available[joker] ?? 0;
   const jokerUsed = (joker: JokerType): boolean => (gameState?.jokers.used[joker] ?? 0) > 0;
-  const jokerDisabled = (joker: JokerType): boolean => !canUseJoker || jokerRemaining(joker) <= 0 || jokerUsed(joker) || (gameState?.jokers.disabled.includes(joker) ?? false);
+  const jokerDisabled = (joker: JokerType): boolean => {
+    if (!canUseJoker || jokerRemaining(joker) <= 0 || jokerUsed(joker) || (gameState?.jokers.disabled.includes(joker) ?? false)) {
+      return true;
+    }
+    return isClueRace && joker === "fifty_fifty" && !answersVisible;
+  };
 
   if (!gameState || !round) {
     return (
@@ -170,9 +200,9 @@ export function GameScreen() {
 
   return (
     <ScreenFrame title="Ecran de jeu">
-      <section className="game-layout knowledge-grid-layout">
-        <Panel className="game-stage knowledge-grid-stage">
-          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel="Le capitaine choisit une case" />
+      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""}`}>
+        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""}`}>
+          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : "Le capitaine choisit une case"} />
           <ScoreBoard score={session.score.teamScore} streak={session.score.streak} roundLabel={`Question ${Math.min(answeredCount + 1, targetCount)}`} />
 
           {loadError ? <FeedbackBanner tone="warning" title="Banque indisponible" message={loadError} /> : null}
@@ -180,7 +210,7 @@ export function GameScreen() {
           {gameState.jokerEffects.contextualHint ? <FeedbackBanner tone="info" title="Indice contextuel" message={gameState.jokerEffects.contextualHint} /> : null}
           {gameState.jokerEffects.secondChanceConsumed && gameState.status === "question_active" ? <FeedbackBanner tone="warning" title="Seconde chance" message="Premiere reponse incorrecte. La prochaine bonne reponse vaudra 50 % des points." /> : null}
 
-          {!isQuestionActive ? (
+          {!isClueRace && !isQuestionActive ? (
             <div className="knowledge-grid-board" role="grid" aria-label="Grille des savoirs">
               {board.columns.map((column) => (
                 <section key={column.categoryId} className="knowledge-grid-column" aria-label={column.categoryLabel}>
@@ -203,20 +233,29 @@ export function GameScreen() {
             </div>
           ) : null}
 
-          {isQuestionActive && activeQuestion ? (
+          {isClueRace && !isQuestionActive ? (
+            <div className="clue-race-empty-state">
+              <Badge tone="cyan">Course aux indices</Badge>
+              <h1>{answeredCount >= targetCount ? "Manche terminee" : "Nouvelle enigme"}</h1>
+              <p>{answeredCount >= targetCount ? "Les cinq enigmes sont jouees." : "Le capitaine lance l'enigme suivante. Le premier indice vaut 500 points."}</p>
+              {answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : <Button variant="primary" onClick={loadNextClueQuestion} disabled={clueQuestions.length === 0} data-testid="start-clue-question">Afficher l'indice 1</Button>}
+            </div>
+          ) : null}
+
+          {isQuestionActive && activeKnowledgeQuestion ? (
             <div className="question-live knowledge-question-live">
               <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
               <div className="question-value-strip">
-                <Badge tone="amber">{activeQuestion.value} points</Badge>
-                <span>{activeQuestion.categoryLabel} - difficulte {activeQuestion.difficulty}</span>
+                <Badge tone="amber">{activeKnowledgeQuestion.value} points</Badge>
+                <span>{activeKnowledgeQuestion.categoryLabel} - difficulte {activeKnowledgeQuestion.difficulty}</span>
               </div>
-              <h1>{activeQuestion.prompt}</h1>
+              <h1>{activeKnowledgeQuestion.prompt}</h1>
               {voteState.active ? (
                 <Panel className="team-vote-panel">
                   {voteState.majority ? (
                     <>
                       <Badge tone="success">Majorite revelee</Badge>
-                      <strong>{activeQuestion.options.find((option) => option.id === voteState.majority)?.label ?? voteState.majority}</strong>
+                      <strong>{optionLabel(activeKnowledgeQuestion.options, voteState.majority)}</strong>
                       <p>Le capitaine choisit maintenant la reponse finale.</p>
                     </>
                   ) : (
@@ -225,40 +264,69 @@ export function GameScreen() {
                       <strong>{session.players[voteState.currentIndex]?.name ?? "Joueur"}</strong>
                       <p>{voteState.votes.length} vote(s) enregistres. Les choix precedents restent masques.</p>
                       <div className="answer-grid live">
-                        {activeQuestion.options.map((answer) => <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} onClick={() => castVote(answer.id)} />)}
+                        {activeKnowledgeQuestion.options.map((answer) => <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} onClick={() => castVote(answer.id)} />)}
                       </div>
                     </>
                   )}
                 </Panel>
               ) : null}
               <div className="answer-grid live">
-                {activeQuestion.options.map((answer) => {
+                {activeKnowledgeQuestion.options.map((answer) => {
                   const eliminated = gameState.jokerEffects.eliminatedOptionIds.includes(answer.id);
                   const state = eliminated
                     ? "disabled"
                     : isLocked
-                      ? answer.id === activeQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
+                      ? answer.id === activeKnowledgeQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
                       : selectedAnswerId === answer.id ? "selected" : "idle";
-                  return (
-                    <AnswerButton
-                      key={answer.id}
-                      answerId={answer.id}
-                      label={answer.label}
-                      state={state}
-                      disabled={isLocked || eliminated}
-                      onClick={() => selectAnswer(answer.id)}
-                    />
-                  );
+                  return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => selectAnswer(answer.id)} />;
                 })}
               </div>
-              {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message={`Revelation prete. Bonne reponse attendue : ${correctLabel(activeQuestion)}.`} /> : null}
+              {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message={`Revelation prete. Bonne reponse attendue : ${optionLabel(activeKnowledgeQuestion.options, activeKnowledgeQuestion.correctOptionId)}.`} /> : null}
+            </div>
+          ) : null}
+
+          {isQuestionActive && activeClueQuestion ? (
+            <div className="question-live clue-race-live">
+              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
+              <div className="question-value-strip">
+                <Badge tone="amber">{pointsForClueIndex(clueIndex)} points</Badge>
+                <span>Indice {clueIndex + 1} / 5</span>
+              </div>
+              <h1>{activeClueQuestion.prompt}</h1>
+              <motion.ol className="clue-list" initial={false}>
+                {visibleClues(activeClueQuestion, clueIndex).map((clue, index) => (
+                  <motion.li key={`${activeClueQuestion.id}-${index}`} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22 }}>
+                    <span>{index + 1}</span>
+                    <p>{clue}</p>
+                  </motion.li>
+                ))}
+              </motion.ol>
+              {answersVisible ? (
+                <div className="answer-grid live" data-testid="clue-answer-options">
+                  {clueAnswerOptions(activeClueQuestion).map((answer) => {
+                    const eliminated = gameState.jokerEffects.eliminatedOptionIds.includes(answer.id);
+                    const state = eliminated
+                      ? "disabled"
+                      : isLocked
+                        ? answer.id === activeClueQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
+                        : selectedAnswerId === answer.id ? "selected" : "idle";
+                    return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => selectAnswer(answer.id)} />;
+                  })}
+                </div>
+              ) : null}
+              <div className="screen-actions clue-actions">
+                <Button variant="secondary" onClick={() => revealNextClueForCurrentQuestion()} disabled={isLocked || clueIndex >= 4}>Indice suivant</Button>
+                <Button variant="primary" onClick={() => showClueRaceAnswerOptions()} disabled={isLocked || answersVisible}>Repondre maintenant</Button>
+              </div>
+              {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message={`Revelation prete. Bonne reponse attendue : ${activeClueQuestion.answer.display}.`} /> : null}
             </div>
           ) : null}
 
           <div className="screen-actions in-stage knowledge-actions">
             <Button variant="secondary" onClick={() => navigate("home")}>Quitter</Button>
             {!isQuestionActive && answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : null}
-            {gameState.status === "question_active" ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
+            {gameState.status === "question_active" && answersVisible ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
+            {gameState.status === "question_active" && !isClueRace ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
             {gameState.status === "answer_locked" ? <Button variant="primary" onClick={() => revealCurrentAnswer(questions)} data-testid="reveal-answer-button">Reveler la reponse</Button> : null}
           </div>
         </Panel>
@@ -267,19 +335,19 @@ export function GameScreen() {
           <Panel>
             <h2>Jokers</h2>
             <div className="joker-list">
-              <JokerButton label="50/50" remaining={jokerRemaining("fifty_fifty")} icon="target" disabled={jokerDisabled("fifty_fifty")} onClick={() => requestJoker("fifty_fifty")} data-testid="joker-fifty_fifty" />
-              <JokerButton label="Deuxieme chance" remaining={jokerRemaining("second_chance")} icon="shield" disabled={jokerDisabled("second_chance")} onClick={() => requestJoker("second_chance")} data-testid="joker-second_chance" />
-              <JokerButton label="Changer" remaining={jokerRemaining("change_question")} icon="arrow" disabled={jokerDisabled("change_question")} onClick={() => requestJoker("change_question")} data-testid="joker-change_question" />
-              <JokerButton label="Indice" remaining={jokerRemaining("contextual_hint")} icon="spark" disabled={jokerDisabled("contextual_hint")} onClick={() => requestJoker("contextual_hint")} data-testid="joker-contextual_hint" />
-              <JokerButton label="Temps +" remaining={jokerRemaining("extra_time")} icon="timer" disabled={jokerDisabled("extra_time")} onClick={() => requestJoker("extra_time")} data-testid="joker-extra_time" />
-              <JokerButton label="Vote equipe" remaining={jokerRemaining("team_vote")} icon="captain" disabled={jokerDisabled("team_vote")} onClick={() => requestJoker("team_vote")} data-testid="joker-team_vote" />
+              <JokerButton label="50/50" remaining={jokerRemaining("fifty_fifty")} icon="target" disabled={jokerDisabled("fifty_fifty")} onClick={() => setPendingJoker("fifty_fifty")} data-testid="joker-fifty_fifty" />
+              <JokerButton label="Deuxieme chance" remaining={jokerRemaining("second_chance")} icon="shield" disabled={jokerDisabled("second_chance")} onClick={() => setPendingJoker("second_chance")} data-testid="joker-second_chance" />
+              <JokerButton label="Changer" remaining={jokerRemaining("change_question")} icon="arrow" disabled={jokerDisabled("change_question")} onClick={() => setPendingJoker("change_question")} data-testid="joker-change_question" />
+              <JokerButton label="Indice" remaining={jokerRemaining("contextual_hint")} icon="spark" disabled={jokerDisabled("contextual_hint")} onClick={() => setPendingJoker("contextual_hint")} data-testid="joker-contextual_hint" />
+              <JokerButton label="Temps +" remaining={jokerRemaining("extra_time")} icon="timer" disabled={jokerDisabled("extra_time")} onClick={() => setPendingJoker("extra_time")} data-testid="joker-extra_time" />
+              <JokerButton label="Vote equipe" remaining={jokerRemaining("team_vote")} icon="captain" disabled={jokerDisabled("team_vote")} onClick={() => setPendingJoker("team_vote")} data-testid="joker-team_vote" />
             </div>
           </Panel>
           <Panel>
             <h2>Progression</h2>
             <div className="knowledge-progress-card">
               <strong>{answeredCount} / {targetCount}</strong>
-              <span>questions selectionnees</span>
+              <span>{isClueRace ? "enigmes jouees" : "questions selectionnees"}</span>
             </div>
           </Panel>
           <Panel>

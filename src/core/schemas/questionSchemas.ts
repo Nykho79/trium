@@ -22,6 +22,7 @@ const baseQuestionSchema = z.object({
   version: z.number().int().positive(),
   source: z.string().min(1).optional(),
   author: z.string().min(1).optional(),
+  contextualHint: z.string().min(1).optional(),
 });
 
 const answerSchema = z.object({
@@ -59,9 +60,11 @@ export const multipleChoiceQuestionSchema = baseQuestionSchema.extend({
 
 export const progressiveCluesQuestionSchema = baseQuestionSchema.extend({
   type: z.literal("progressive_clues"),
-  clues: z.array(z.string().min(1)).min(3).max(6),
+  clues: z.array(z.string().min(1)).length(5),
   answer: answerSchema,
-  pointsByClueIndex: z.array(z.number().int().positive()).min(3).max(6),
+  pointsByClueIndex: z.array(z.number().int().positive()).length(5),
+  options: z.tuple([optionSchema, optionSchema, optionSchema, optionSchema]).optional(),
+  correctOptionId: z.string().min(1).optional(),
 }).superRefine((question, ctx) => {
   if (question.clues.length !== question.pointsByClueIndex.length) {
     ctx.addIssue({
@@ -69,6 +72,16 @@ export const progressiveCluesQuestionSchema = baseQuestionSchema.extend({
       path: ["pointsByClueIndex"],
       message: "Le nombre de scores doit correspondre au nombre d'indices.",
     });
+  }
+  if (question.options !== undefined || question.correctOptionId !== undefined) {
+    if (question.options === undefined || question.correctOptionId === undefined) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["options"], message: "Les propositions et correctOptionId doivent etre fournis ensemble." });
+      return;
+    }
+    const optionIds = new Set(question.options.map((option) => option.id));
+    if (!optionIds.has(question.correctOptionId)) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["correctOptionId"], message: "correctOptionId doit correspondre a une proposition existante." });
+    }
   }
 });
 

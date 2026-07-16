@@ -1043,3 +1043,22 @@ Regles globales implementees :
 - certains jokers peuvent etre interdits par manche, par exemple `fifty_fifty` et `team_vote` dans `clue-race`, et `change_question` et `team_vote` dans `final-convergence`.
 
 L'interface `GameScreen` ajoute une confirmation avant consommation, un feedback visible pour l'indice et la seconde chance, l'etat 50/50 directement sur les reponses, le panneau de vote equipe et un retour sonore centralise dans `src/ui/audio/soundManager.ts`.
+
+## 24. Manche Course aux indices
+
+La manche `clue-race` est implementee dans `src/rounds/clue-race`. Elle respecte l'interface `GameRound` et expose des fonctions pures pour selectionner les enigmes, reveler les indices, afficher les propositions, calculer le score et determiner la fin de manche.
+
+Regles implementees :
+
+- cinq enigmes par manche ;
+- cinq indices par enigme ;
+- score decroissant par indice : 500, 400, 300, 200, 100 ;
+- aucune penalite lorsqu'un indice supplementaire est demande ;
+- les quatre propositions ne sont affichees que lorsque l'equipe choisit `Repondre maintenant` ;
+- une mauvaise reponse termine l'enigme avec 0 point ;
+- changement automatique de capitaine a chaque nouvelle enigme ;
+- `extra_time` est autorise pendant l'enigme ;
+- `fifty_fifty` est autorise uniquement apres affichage des propositions ;
+- `second_chance`, `change_question`, `contextual_hint` et `team_vote` sont interdits dans cette manche.
+
+Le format `progressive_clues` exige maintenant cinq indices et cinq valeurs de score dans le schema Zod. Il peut contenir quatre propositions et un `correctOptionId`, necessaires pour l'interface TV et le joker 50/50. L'ecran `GameScreen` affiche un grand panneau central avec compteur d'indices, points encore disponibles, bouton `Indice suivant`, bouton `Repondre maintenant`, verrouillage et revelation.

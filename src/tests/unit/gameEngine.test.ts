@@ -294,5 +294,5 @@ describe("gameEngine", () => {
     const created = createGame({ config: createConfig([clueRound]), now: 0 });
     const loaded = loadQuestion(startRound(startGame(created, 1), 0, 2), { questions: [clueQuestion], questionId: "clue-1", now: 3 });
 
-    expect(() => applyJoker(loaded, { joker: "fifty_fifty", questions: [clueQuestion], now: 4 })).toThrow("interdit");
+    expect(() => applyJoker(loaded, { joker: "team_vote", questions: [clueQuestion], now: 4 })).toThrow("interdit");
   });

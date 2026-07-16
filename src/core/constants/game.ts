@@ -17,7 +17,7 @@ export const STANDARD_FORMAT: GameFormat = {
   ],
   questionCountByRound: {
     "knowledge-grid": 8,
-    "clue-race": 3,
+    "clue-race": 5,
     "pressure-choice": 5,
     synapse: 4,
     connections: 3,

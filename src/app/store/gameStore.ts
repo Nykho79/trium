@@ -11,6 +11,8 @@ import {
   loadQuestion,
   pauseGame,
   resumeGame,
+  revealNextClue,
+  showClueRaceAnswers,
   revealAnswer as revealEngineAnswer,
   restoreGame,
   startGame,
@@ -58,8 +60,8 @@ const DEFAULT_ROUNDS: RoundDefinition[] = [
     label: "Course aux indices",
     description: "Indices progressifs et score decroissant.",
     questionTypes: ["progressive_clues"],
-    questionCount: 3,
-    maxScore: 900,
+    questionCount: 5,
+    maxScore: 2_500,
   },
   {
     id: "pressure-choice",
@@ -85,8 +87,8 @@ const DEFAULT_ROUNDS: RoundDefinition[] = [
     label: "Connexions",
     description: "Trouver le lien commun entre plusieurs elements.",
     questionTypes: ["connection"],
-    questionCount: 3,
-    maxScore: 900,
+    questionCount: 5,
+    maxScore: 2_500,
   },
   {
     id: "wager",
@@ -156,6 +158,8 @@ interface GameStoreState {
   pauseCurrentGame: (now?: number | undefined) => void;
   resumeCurrentGame: (now?: number | undefined) => void;
   applyGameJoker: (joker: JokerType, questions?: readonly Question[] | undefined, now?: number | undefined) => void;
+  revealNextClueForCurrentQuestion: (now?: number | undefined) => void;
+  showClueRaceAnswerOptions: (now?: number | undefined) => void;
   resumeSavedGame: () => void;
   clearSavedGame: () => void;
   setEngineState: (gameState: GameState) => void;
@@ -489,6 +493,30 @@ export const useGameStore = create<GameStoreState>()((set) => ({
       const selectedAnswerId = joker === "change_question" ? undefined : state.selectedAnswerId;
       const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId });
       return { gameState, selectedAnswerId, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  revealNextClueForCurrentQuestion: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = revealNextClue(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+      return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  showClueRaceAnswerOptions: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = showClueRaceAnswers(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: undefined });
+      return { gameState, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {
       return { engineError: errorMessage(error) };
     }
