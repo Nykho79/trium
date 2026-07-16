@@ -6,12 +6,12 @@
                           "kind":  "knowledge-grid",
                           "type":  "multiple_choice",
                           "categoryId":  "culture-generale",
-                          "categoryLabel":  "Culture générale",
+                          "categoryLabel":  "Culture gÃ©nÃ©rale",
                           "subCategoryId":  "geographie-france",
-                          "subCategoryLabel":  "Géographie française",
+                          "subCategoryLabel":  "GÃ©ographie franÃ§aise",
                           "difficulty":  2,
-                          "prompt":  "Dans quelle ville française se trouve la Place Stanislas ?",
-                          "explanation":  "La Place Stanislas se situe à Nancy, en Meurthe-et-Moselle.",
+                          "prompt":  "Dans quelle ville franÃ§aise se trouve la Place Stanislas ?",
+                          "explanation":  "La Place Stanislas se situe Ã  Nancy, en Meurthe-et-Moselle.",
                           "tags":  [
                                        "france",
                                        "geographie",
@@ -35,7 +35,7 @@
                                           },
                                           {
                                               "id":  "d",
-                                              "label":  "Besançon"
+                                              "label":  "BesanÃ§on"
                                           }
                                       ],
                           "correctOptionId":  "a",
@@ -84,7 +84,7 @@
                                           },
                                           {
                                               "id":  "b",
-                                              "label":  "Ali�nor d\u0027Aquitaine"
+                                              "label":  "Aliénor d\u0027Aquitaine"
                                           },
                                           {
                                               "id":  "c",
@@ -345,14 +345,15 @@
                           "subCategoryId":  "astronomie",
                           "subCategoryLabel":  "Astronomie",
                           "difficulty":  1,
-                          "prompt":  "Quelle planète est surnommée la planète rouge ?",
-                          "explanation":  "Mars est surnommée la planète rouge en raison de l\u0027oxyde de fer présent à sa surface.",
+                          "prompt":  "Quelle planete est surnommee la planete rouge ?",
+                          "explanation":  "Mars est surnommee la planete rouge en raison de l oxyde de fer present a sa surface.",
                           "tags":  [
                                        "espace",
                                        "planetes"
                                    ],
                           "editorialStatus":  "approved",
                           "version":  1,
+                          "value":  100,
                           "options":  [
                                           {
                                               "id":  "a",
@@ -360,7 +361,7 @@
                                           },
                                           {
                                               "id":  "b",
-                                              "label":  "Vénus"
+                                              "label":  "Venus"
                                           },
                                           {
                                               "id":  "c",
@@ -372,12 +373,192 @@
                                           }
                                       ],
                           "correctOptionId":  "a",
-                          "timeLimitSeconds":  30,
+                          "timeLimitSeconds":  35,
                           "answer":  {
                                          "accepted":  [
                                                           "mars"
                                                       ],
                                          "display":  "Mars"
+                                     }
+                      },
+                      {
+                          "id":  "pc-fr-002",
+                          "kind":  "pressure-choice",
+                          "type":  "multiple_choice",
+                          "categoryId":  "histoire",
+                          "categoryLabel":  "Histoire",
+                          "subCategoryId":  "france",
+                          "subCategoryLabel":  "France",
+                          "difficulty":  2,
+                          "prompt":  "Quel roi de France est associe a Versailles ?",
+                          "explanation":  "Louis XIV a fait de Versailles le centre du pouvoir royal francais.",
+                          "tags":  [
+                                       "histoire",
+                                       "france"
+                                   ],
+                          "editorialStatus":  "approved",
+                          "version":  1,
+                          "value":  200,
+                          "options":  [
+                                          {
+                                              "id":  "a",
+                                              "label":  "Henri IV"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "label":  "Louis XIV"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "label":  "Louis XVI"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "label":  "Francois Ier"
+                                          }
+                                      ],
+                          "correctOptionId":  "b",
+                          "timeLimitSeconds":  30,
+                          "answer":  {
+                                         "accepted":  [
+                                                          "louis xiv"
+                                                      ],
+                                         "display":  "Louis XIV"
+                                     }
+                      },
+                      {
+                          "id":  "pc-fr-003",
+                          "kind":  "pressure-choice",
+                          "type":  "multiple_choice",
+                          "categoryId":  "geographie",
+                          "categoryLabel":  "Geographie",
+                          "subCategoryId":  "capitales",
+                          "subCategoryLabel":  "Capitales",
+                          "difficulty":  3,
+                          "prompt":  "Quelle est la capitale du Canada ?",
+                          "explanation":  "Ottawa est la capitale federale du Canada, tandis que Toronto est la plus grande ville du pays.",
+                          "tags":  [
+                                       "geographie",
+                                       "capitales"
+                                   ],
+                          "editorialStatus":  "approved",
+                          "version":  1,
+                          "value":  300,
+                          "options":  [
+                                          {
+                                              "id":  "a",
+                                              "label":  "Toronto"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "label":  "Montreal"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "label":  "Ottawa"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "label":  "Vancouver"
+                                          }
+                                      ],
+                          "correctOptionId":  "c",
+                          "timeLimitSeconds":  25,
+                          "answer":  {
+                                         "accepted":  [
+                                                          "ottawa"
+                                                      ],
+                                         "display":  "Ottawa"
+                                     }
+                      },
+                      {
+                          "id":  "pc-fr-004",
+                          "kind":  "pressure-choice",
+                          "type":  "multiple_choice",
+                          "categoryId":  "arts-literature",
+                          "categoryLabel":  "Arts et litterature",
+                          "subCategoryId":  "litterature",
+                          "subCategoryLabel":  "Litterature",
+                          "difficulty":  4,
+                          "prompt":  "Qui a ecrit Le Rouge et le Noir ?",
+                          "explanation":  "Le Rouge et le Noir est un roman de Stendhal publie en 1830.",
+                          "tags":  [
+                                       "litterature",
+                                       "roman"
+                                   ],
+                          "editorialStatus":  "approved",
+                          "version":  1,
+                          "value":  400,
+                          "options":  [
+                                          {
+                                              "id":  "a",
+                                              "label":  "Balzac"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "label":  "Flaubert"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "label":  "Victor Hugo"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "label":  "Stendhal"
+                                          }
+                                      ],
+                          "correctOptionId":  "d",
+                          "timeLimitSeconds":  20,
+                          "answer":  {
+                                         "accepted":  [
+                                                          "stendhal"
+                                                      ],
+                                         "display":  "Stendhal"
+                                     }
+                      },
+                      {
+                          "id":  "pc-fr-005",
+                          "kind":  "pressure-choice",
+                          "type":  "multiple_choice",
+                          "categoryId":  "science-nature",
+                          "categoryLabel":  "Science et nature",
+                          "subCategoryId":  "physique",
+                          "subCategoryLabel":  "Physique",
+                          "difficulty":  5,
+                          "prompt":  "Quelle particule porte une charge electrique negative ?",
+                          "explanation":  "L electron est une particule elementaire portant une charge electrique negative.",
+                          "tags":  [
+                                       "physique",
+                                       "particules"
+                                   ],
+                          "editorialStatus":  "approved",
+                          "version":  1,
+                          "value":  500,
+                          "options":  [
+                                          {
+                                              "id":  "a",
+                                              "label":  "Proton"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "label":  "Neutron"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "label":  "Photon"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "label":  "Electron"
+                                          }
+                                      ],
+                          "correctOptionId":  "d",
+                          "timeLimitSeconds":  15,
+                          "answer":  {
+                                         "accepted":  [
+                                                          "electron"
+                                                      ],
+                                         "display":  "Electron"
                                      }
                       },
                       {
@@ -389,8 +570,8 @@
                           "subCategoryId":  "musique",
                           "subCategoryLabel":  "Musique",
                           "difficulty":  3,
-                          "prompt":  "Quel lien commun unit ces quatre éléments ?",
-                          "explanation":  "Ces éléments peuvent être associés à des instruments à cordes.",
+                          "prompt":  "Quel lien commun unit ces quatre Ã©lÃ©ments ?",
+                          "explanation":  "Ces Ã©lÃ©ments peuvent Ãªtre associÃ©s Ã  des instruments Ã  cordes.",
                           "tags":  [
                                        "musique",
                                        "instruments"
@@ -406,9 +587,9 @@
                           "answer":  {
                                          "accepted":  [
                                                           "instruments a cordes",
-                                                          "instruments à cordes"
+                                                          "instruments Ã  cordes"
                                                       ],
-                                         "display":  "Instruments à cordes"
+                                         "display":  "Instruments Ã  cordes"
                                      }
                       },
                       {
@@ -420,8 +601,8 @@
                           "subCategoryId":  "chronologie",
                           "subCategoryLabel":  "Chronologie",
                           "difficulty":  3,
-                          "prompt":  "Classez ces événements du plus ancien au plus récent.",
-                          "explanation":  "La prise de la Bastille précède le sacre de Napoléon, puis la Libération de Paris.",
+                          "prompt":  "Classez ces Ã©vÃ©nements du plus ancien au plus rÃ©cent.",
+                          "explanation":  "La prise de la Bastille prÃ©cÃ¨de le sacre de NapolÃ©on, puis la LibÃ©ration de Paris.",
                           "tags":  [
                                        "histoire",
                                        "chronologie"
@@ -435,11 +616,11 @@
                                         },
                                         {
                                             "id":  "napoleon",
-                                            "label":  "Sacre de Napoléon Ier"
+                                            "label":  "Sacre de NapolÃ©on Ier"
                                         },
                                         {
                                             "id":  "liberation",
-                                            "label":  "Libération de Paris"
+                                            "label":  "LibÃ©ration de Paris"
                                         }
                                     ],
                           "correctOrderIds":  [
@@ -457,8 +638,8 @@
                           "subCategoryId":  "analogies",
                           "subCategoryLabel":  "Analogies",
                           "difficulty":  2,
-                          "prompt":  "Complétez l\u0027analogie.",
-                          "explanation":  "Un auteur écrit un livre comme un compositeur écrit une partition.",
+                          "prompt":  "ComplÃ©tez l\u0027analogie.",
+                          "explanation":  "Un auteur Ã©crit un livre comme un compositeur Ã©crit une partition.",
                           "tags":  [
                                        "langue",
                                        "logique"
@@ -467,7 +648,7 @@
                           "version":  1,
                           "left":  "Auteur",
                           "right":  "Livre",
-                          "relation":  "créateur vers œuvre",
+                          "relation":  "crÃ©ateur vers Å“uvre",
                           "missing":  "Partition",
                           "answer":  {
                                          "accepted":  [
@@ -481,12 +662,12 @@
                           "kind":  "synapse",
                           "type":  "memory",
                           "categoryId":  "memoire",
-                          "categoryLabel":  "Mémoire",
+                          "categoryLabel":  "MÃ©moire",
                           "subCategoryId":  "liste",
                           "subCategoryLabel":  "Liste",
                           "difficulty":  2,
-                          "prompt":  "Mémorisez cette liste puis restituez l\u0027élément demandé.",
-                          "explanation":  "Le deuxième élément de la liste est Rivière.",
+                          "prompt":  "MÃ©morisez cette liste puis restituez l\u0027Ã©lÃ©ment demandÃ©.",
+                          "explanation":  "Le deuxiÃ¨me Ã©lÃ©ment de la liste est RiviÃ¨re.",
                           "tags":  [
                                        "memoire"
                                    ],
@@ -494,16 +675,16 @@
                           "version":  1,
                           "items":  [
                                         "Montagne",
-                                        "Rivière",
-                                        "Forêt"
+                                        "RiviÃ¨re",
+                                        "ForÃªt"
                                     ],
-                          "recallPrompt":  "Quel était le deuxième élément ?",
+                          "recallPrompt":  "Quel Ã©tait le deuxiÃ¨me Ã©lÃ©ment ?",
                           "answer":  {
                                          "accepted":  [
                                                           "riviere",
-                                                          "rivière"
+                                                          "riviÃ¨re"
                                                       ],
-                                         "display":  "Rivière"
+                                         "display":  "RiviÃ¨re"
                                      }
                       },
                       {
@@ -515,8 +696,8 @@
                           "subCategoryId":  "suites",
                           "subCategoryLabel":  "Suites",
                           "difficulty":  2,
-                          "prompt":  "Trouvez l\u0027élément suivant de la suite.",
-                          "explanation":  "Chaque nombre double le précédent.",
+                          "prompt":  "Trouvez l\u0027Ã©lÃ©ment suivant de la suite.",
+                          "explanation":  "Chaque nombre double le prÃ©cÃ©dent.",
                           "tags":  [
                                        "suite",
                                        "logique"

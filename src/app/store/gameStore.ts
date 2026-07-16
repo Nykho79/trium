@@ -8,11 +8,13 @@ import {
   completeGame,
   completeRound,
   createGame,
+  expirePressureChoiceQuestion,
   loadQuestion,
   pauseGame,
   resumeGame,
   revealNextClue,
   showClueRaceAnswers,
+  securePressureChoicePoints,
   revealAnswer as revealEngineAnswer,
   restoreGame,
   startGame,
@@ -70,7 +72,7 @@ const DEFAULT_ROUNDS: RoundDefinition[] = [
     description: "QCM chronometres avec jokers.",
     questionTypes: ["multiple_choice"],
     questionCount: 5,
-    maxScore: 1_500,
+    maxScore: 4_700,
   },
   {
     id: "synapse",
@@ -160,6 +162,8 @@ interface GameStoreState {
   applyGameJoker: (joker: JokerType, questions?: readonly Question[] | undefined, now?: number | undefined) => void;
   revealNextClueForCurrentQuestion: (now?: number | undefined) => void;
   showClueRaceAnswerOptions: (now?: number | undefined) => void;
+  securePressureChoiceRisk: (now?: number | undefined) => void;
+  expireCurrentPressureChoiceQuestion: (questions: readonly Question[], now?: number | undefined) => void;
   resumeSavedGame: () => void;
   clearSavedGame: () => void;
   setEngineState: (gameState: GameState) => void;
@@ -517,6 +521,30 @@ export const useGameStore = create<GameStoreState>()((set) => ({
       const gameState = showClueRaceAnswers(state.gameState, now ?? Date.now());
       const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: undefined });
       return { gameState, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  securePressureChoiceRisk: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = securePressureChoicePoints(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: "round-result", selectedAnswerId: undefined });
+      return { gameState, screen: "round-result", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  expireCurrentPressureChoiceQuestion: (questions, now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = expirePressureChoiceQuestion(state.gameState, { questions, now: now ?? Date.now() });
+      const patch = persistencePatch({ gameState, screen: "question-transition", selectedAnswerId: undefined });
+      return { gameState, screen: "question-transition", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {
       return { engineError: errorMessage(error) };
     }

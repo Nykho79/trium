@@ -113,7 +113,7 @@ describe("gameEngine", () => {
   it("rejette une reponse apres expiration", () => {
     const game = activeGame();
 
-    expect(() => submitAnswer(game, { answer: "a", now: 30_004 })).toThrow("expiration");
+    expect(() => submitAnswer(game, { answer: "a", now: 35_004 })).toThrow("expiration");
   });
 
   it("rejette une transition invalide", () => {
@@ -128,7 +128,7 @@ describe("gameEngine", () => {
     const revealed = revealAnswer(locked, { questions, now: 5 });
 
     expect(() => revealAnswer(revealed, { questions, now: 6 })).toThrow(GameEngineError);
-    expect(revealed.score.total).toBeGreaterThan(0);
+    expect(revealed.lastAnswerResult?.score.total).toBeGreaterThan(0);
   });
 
   it("restaure une partie sauvegardee", () => {

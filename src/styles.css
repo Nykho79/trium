@@ -1753,3 +1753,101 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Pressure choice round */
+.pressure-choice-layout {
+  gap: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.pressure-choice-stage {
+  background: linear-gradient(145deg, rgba(12, 20, 48, 0.92), rgba(42, 18, 68, 0.78));
+}
+
+.pressure-choice-empty-state,
+.pressure-choice-live {
+  display: grid;
+  gap: 1.1rem;
+  align-content: center;
+  min-height: min(64vh, 680px);
+}
+
+.pressure-choice-empty-state h1,
+.pressure-choice-live h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4.8rem);
+  line-height: 1.05;
+}
+
+.pressure-choice-empty-state p {
+  max-width: 70ch;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: clamp(1.2rem, 1.5vw, 1.55rem);
+}
+
+.pressure-bank-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.pressure-bank-grid div {
+  border: 1px solid rgba(125, 211, 252, 0.24);
+  background: rgba(8, 13, 32, 0.58);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.pressure-bank-grid span {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.pressure-bank-grid strong {
+  color: var(--color-amber);
+  font-size: clamp(1.5rem, 2.4vw, 2.4rem);
+}
+
+.pressure-bank-grid.compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pressure-step-track {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.pressure-step-track span {
+  display: grid;
+  place-items: center;
+  min-height: 3.3rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  background: rgba(15, 23, 42, 0.68);
+  color: var(--color-text-muted);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.pressure-step-track span.is-passed {
+  border-color: rgba(52, 211, 153, 0.68);
+  color: rgb(187, 247, 208);
+}
+
+.pressure-step-track span.is-current {
+  border-color: rgba(251, 191, 36, 0.85);
+  background: rgba(251, 191, 36, 0.16);
+  color: var(--color-amber);
+  box-shadow: 0 0 28px rgba(251, 191, 36, 0.18);
+}
+
+@media (max-width: 900px) {
+  .pressure-bank-grid,
+  .pressure-bank-grid.compact {
+    grid-template-columns: 1fr;
+  }
+}

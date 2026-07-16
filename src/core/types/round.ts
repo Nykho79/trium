@@ -30,6 +30,8 @@ export interface RoundState {
   score: ScoreBreakdown;
   clueIndex?: number | undefined;
   answersVisible?: boolean | undefined;
+  securedPoints?: number | undefined;
+  riskPoints?: number | undefined;
 }
 
 export interface RoundQuestionSelectionInput<TQuestion extends Question = Question> {

@@ -6,8 +6,12 @@ import { Panel } from "../components/Panel";
 import { ScreenFrame } from "../components/ScreenFrame";
 import { useGameStore } from "../../app/store/gameStore";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
-import type { Question } from "../../core/types";
+import type { PressureChoiceQuestion, Question } from "../../core/types";
 
+
+function isPressureChoiceQuestion(question: Question): question is PressureChoiceQuestion {
+  return question.kind === "pressure-choice" && question.type === "multiple_choice" && question.editorialStatus === "approved";
+}
 function displayAnswer(question: Question | undefined, correctAnswer: string | string[] | undefined): string {
   if (!question || correctAnswer === undefined) {
     return Array.isArray(correctAnswer) ? correctAnswer.join(", ") : correctAnswer ?? "Reponse indisponible";
@@ -29,6 +33,8 @@ export function QuestionTransitionScreen() {
   const gameState = useGameStore((state) => state.gameState);
   const session = useGameStore((state) => state.session);
   const completeCurrentRound = useGameStore((state) => state.completeCurrentRound);
+  const loadCurrentQuestion = useGameStore((state) => state.loadCurrentQuestion);
+  const securePressureChoiceRisk = useGameStore((state) => state.securePressureChoiceRisk);
   const [questions, setQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
@@ -51,11 +57,19 @@ export function QuestionTransitionScreen() {
   const isRoundComplete = answeredCount >= targetCount;
   const answer = displayAnswer(question, result?.correctAnswer);
   const points = result?.score.total ?? 0;
-  const returnLabel = round?.kind === "knowledge-grid" ? "Retour a la grille" : "Enigme suivante";
+  const isPressureChoice = round?.kind === "pressure-choice";
+  const pressureQuestions = questions.filter(isPressureChoiceQuestion);
+  const pressureEndedByFailure = isPressureChoice && result?.isCorrect === false;
+  const returnLabel = round?.kind === "knowledge-grid" ? "Retour a la grille" : isPressureChoice ? "Continuer" : "Enigme suivante";
 
   const continueRound = () => {
-    if (isRoundComplete) {
+    if (pressureEndedByFailure || isRoundComplete) {
       completeCurrentRound();
+      return;
+    }
+    if (isPressureChoice) {
+      loadCurrentQuestion({ questions: pressureQuestions });
+      navigate("game");
       return;
     }
     navigate("game");
@@ -81,7 +95,8 @@ export function QuestionTransitionScreen() {
           <strong>Score equipe : {session.score.teamScore.toLocaleString("fr-FR")}</strong>
           <div className="screen-actions">
             <Button variant="secondary" onClick={() => navigate("home")}>Quitter</Button>
-            <Button variant="primary" onClick={continueRound}>{isRoundComplete ? "Resultat de manche" : returnLabel}</Button>
+            {isPressureChoice && result?.isCorrect && !isRoundComplete ? <Button variant="secondary" onClick={() => securePressureChoiceRisk()} data-testid="secure-pressure-button">Securiser</Button> : null}
+            <Button variant="primary" onClick={continueRound}>{pressureEndedByFailure || isRoundComplete ? "Resultat de manche" : returnLabel}</Button>
           </div>
         </Panel>
       </section>

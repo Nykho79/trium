@@ -21,9 +21,10 @@ describe("selectNextQuestion", () => {
       questions: bank.questions,
       roundKind: "pressure-choice",
       usedQuestionIds: [],
-      recentlyPlayedQuestionIds: ["kg-fr-001"],
+      recentlyPlayedQuestionIds: ["pc-fr-001"],
       seed: "demo",
     });
-    expect(question.id).toBe("pc-fr-001");
+    expect(question.kind).toBe("pressure-choice");
+    expect(question.id).not.toBe("pc-fr-001");
   });
 });

@@ -1,5 +1,5 @@
 import type { GameConfig, GameState, GameStatus, GameTimerState, QuestionId } from "../types/game";
-import type { ClueRaceQuestion, KnowledgeGridQuestion, MultipleChoiceOption, Question } from "../types/question";
+import type { ClueRaceQuestion, KnowledgeGridQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question } from "../types/question";
 import type { RoundDefinition, RoundState } from "../types/round";
 import type { AnswerResult, JokerEffectState, JokerInventory, JokerType, ScoreBreakdown } from "../types/scoring";
 import type { GameEvent, GameEventType } from "../types/event";
@@ -7,6 +7,7 @@ import { INITIAL_JOKERS } from "../constants/scoring";
 import { gameStateSchema } from "../schemas/gameSchemas";
 import { calculateKnowledgeGridScore } from "../../rounds/knowledge-grid";
 import { calculateClueRaceScore, revealNextClueInState, showAnswersInState } from "../../rounds/clue-race";
+import { calculatePressureChoiceScore, isPressureChoiceComplete, loseRiskPoints, pressureStepIndex, secureRiskPoints, timeLimitForPressureStep } from "../../rounds/pressure-choice";
 import { shuffleWithSeed } from "./random";
 
 export class GameEngineError extends Error {
@@ -153,7 +154,10 @@ function isTimerExpired(timer: GameTimerState | undefined, now: number): boolean
   return timer !== undefined && timer.pausedAt === undefined && now > timer.expiresAt;
 }
 
-function questionDurationMs(question: Question, config: GameConfig): number {
+function questionDurationMs(question: Question, config: GameConfig, stepIndex = 0): number {
+  if (question.kind === "pressure-choice") {
+    return timeLimitForPressureStep(stepIndex) * 1000;
+  }
   if (question.type === "multiple_choice" && question.timeLimitSeconds !== undefined) {
     return question.timeLimitSeconds * 1000;
   }
@@ -231,6 +235,14 @@ function calculateAnswerScore(question: Question, isCorrect: boolean, timer: Gam
     });
   }
 
+
+  if (question.kind === "pressure-choice" && question.type === "multiple_choice") {
+    return calculatePressureChoiceScore({
+      question: question as PressureChoiceQuestion,
+      isCorrect,
+      stepIndex: pressureStepIndex(roundState),
+    });
+  }
   const basePoints = basePointsFor(question);
   const remainingMs = timer ? Math.max(0, timer.expiresAt - now) : 0;
   const timeBonus = Math.floor(remainingMs / 1000) * 2;
@@ -258,6 +270,16 @@ function addScore(left: ScoreBreakdown, right: ScoreBreakdown): ScoreBreakdown {
   };
 }
 
+function scoreFromPoints(points: number): ScoreBreakdown {
+  return {
+    basePoints: points,
+    timeBonus: 0,
+    streakBonus: 0,
+    jokerPenalty: 0,
+    wagerDelta: 0,
+    total: points,
+  };
+}
 function findActiveQuestion(state: GameState, questions: readonly Question[]): Question {
   if (!state.activeQuestionId) {
     throw new GameEngineError("Aucune question active.");
@@ -272,8 +294,12 @@ function findActiveQuestion(state: GameState, questions: readonly Question[]): Q
 function selectQuestion(state: GameState, questions: readonly Question[], questionId: QuestionId | undefined): Question {
   const definition = currentRoundDefinition(state);
   const roundState = requireRound(state);
-  const candidates = questions.filter((question) => question.kind === definition.kind && definition.questionTypes.includes(question.type));
+  let candidates = questions.filter((question) => question.kind === definition.kind && definition.questionTypes.includes(question.type));
   const explicitQuestion = questionId ? candidates.find((question) => question.id === questionId) : undefined;
+  if (!explicitQuestion && definition.kind === "pressure-choice") {
+    const expectedDifficulty = Math.min(5, roundState.currentQuestionIndex + 1);
+    candidates = candidates.filter((question) => question.difficulty === expectedDifficulty);
+  }
   const selected = explicitQuestion ?? shuffleWithSeed(
     candidates.filter((question) => !state.usedQuestionIds.includes(question.id)),
     `${state.config.seed}:${definition.id}:${roundState.currentQuestionIndex}`,
@@ -385,6 +411,9 @@ function assertJokerAllowed(state: GameState, joker: JokerType, now: number): vo
   if (joker === "fifty_fifty" && round.kind === "clue-race" && state.currentRoundState?.answersVisible !== true) {
     throw new GameEngineError("Le 50/50 est disponible seulement apres affichage des reponses.");
   }
+  if (joker === "change_question" && round.kind === "pressure-choice" && pressureStepIndex(requireRound(state)) >= 4) {
+    throw new GameEngineError("Le changement de question est interdit sur la derniere question.");
+  }
   if (joker === "extra_time" && (!state.timer || isTimerExpired(state.timer, now))) {
     throw new GameEngineError("Le temps supplementaire est impossible apres expiration.");
   }
@@ -441,6 +470,8 @@ export function startRound(state: GameState, roundIndex = state.currentRoundInde
     score: { ...emptyScore },
     clueIndex: definition.kind === "clue-race" ? 0 : undefined,
     answersVisible: definition.kind === "clue-race" ? false : undefined,
+    securedPoints: definition.kind === "pressure-choice" ? 0 : undefined,
+    riskPoints: definition.kind === "pressure-choice" ? 0 : undefined,
   };
   const next = transition({
     ...cloneState(state),
@@ -463,7 +494,7 @@ export function loadQuestion(state: GameState, input: LoadQuestionInput): GameSt
   if (!captain) {
     throw new GameEngineError("Capitaine introuvable.");
   }
-  const durationMs = questionDurationMs(selected, state.config);
+  const durationMs = questionDurationMs(selected, state.config, pressureStepIndex(roundState));
   const nextRoundState: RoundState = {
     ...roundState,
     selectedQuestionIds: [...roundState.selectedQuestionIds, selected.id],
@@ -552,35 +583,113 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
     score,
     usedJokers: Object.entries(state.jokers.used).filter(([, count]) => count > 0).map(([joker]) => joker as JokerType),
   };
-  const nextRoundState: RoundState = {
+  const baseRoundState: RoundState = {
     ...roundState,
     currentQuestionIndex: roundState.currentQuestionIndex + 1,
     answeredQuestionIds: [...roundState.answeredQuestionIds, question.id],
     answerResults: [...roundState.answerResults, { questionId: question.id, isCorrect }],
-    score: addScore(roundState.score, score),
   };
+  const isPressureChoice = currentRoundDefinition(state).kind === "pressure-choice";
+  const nextRoundState = isPressureChoice
+    ? isCorrect
+      ? { ...baseRoundState, riskPoints: (roundState.riskPoints ?? 0) + score.total }
+      : loseRiskPoints(baseRoundState)
+    : { ...baseRoundState, score: addScore(roundState.score, score) };
+  const nextScore = isPressureChoice ? state.score : addScore(state.score, score);
+
   return transition({
     ...cloneState(state),
     currentRoundState: nextRoundState,
     lastAnswerResult: result,
     jokerEffects: resetQuestionJokerEffects(state.jokerEffects),
-    score: addScore(state.score, score),
+    score: nextScore,
   }, "answer_reveal", input.now, "answer_revealed");
 }
 
+export function securePressureChoicePoints(state: GameState, now = 0): GameState {
+  requireStatus(state, ["answer_reveal"], "securePressureChoicePoints");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "pressure-choice") {
+    throw new GameEngineError("Cette action est reservee a Choix sous pression.");
+  }
+  const roundState = requireRound(state);
+  const riskPoints = roundState.riskPoints ?? 0;
+  if (riskPoints <= 0) {
+    throw new GameEngineError("Aucun point a risque a securiser.");
+  }
+  const securedScore = scoreFromPoints(riskPoints);
+  const securedRoundState = secureRiskPoints({
+    ...roundState,
+    score: addScore(roundState.score, securedScore),
+  });
+  return transition({
+    ...cloneState(state),
+    currentRoundState: securedRoundState,
+    activeQuestionId: undefined,
+    lockedAnswer: undefined,
+    timer: undefined,
+    score: addScore(state.score, securedScore),
+  }, "round_result", now, "round_completed");
+}
+
+export function expirePressureChoiceQuestion(state: GameState, input: RevealAnswerInput): GameState {
+  requireStatus(state, ["question_active"], "expirePressureChoiceQuestion");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "pressure-choice") {
+    throw new GameEngineError("Cette action est reservee a Choix sous pression.");
+  }
+  if (!isTimerExpired(state.timer, input.now)) {
+    throw new GameEngineError("Le chrono n'est pas encore expire.");
+  }
+  const question = findActiveQuestion(state, input.questions);
+  const roundState = requireRound(state);
+  const result: AnswerResult = {
+    questionId: question.id,
+    isCorrect: false,
+    lockedAnswer: "temps-ecoule",
+    correctAnswer: displayCorrectAnswer(question),
+    explanation: question.explanation,
+    score: { ...emptyScore },
+    usedJokers: Object.entries(state.jokers.used).filter(([, count]) => count > 0).map(([joker]) => joker as JokerType),
+  };
+  const nextRoundState = loseRiskPoints({
+    ...roundState,
+    currentQuestionIndex: roundState.currentQuestionIndex + 1,
+    answeredQuestionIds: [...roundState.answeredQuestionIds, question.id],
+    answerResults: [...roundState.answerResults, { questionId: question.id, isCorrect: false }],
+  });
+  return transition({
+    ...cloneState(state),
+    currentRoundState: nextRoundState,
+    lockedAnswer: "temps-ecoule",
+    lastAnswerResult: result,
+    jokerEffects: resetQuestionJokerEffects(state.jokerEffects),
+  }, "answer_reveal", input.now, "answer_revealed");
+}
 export function completeRound(state: GameState, now = 0): GameState {
   requireStatus(state, ["answer_reveal"], "completeRound");
   const roundState = requireRound(state);
   const definition = currentRoundDefinition(state);
-  if (roundState.answeredQuestionIds.length < definition.questionCount) {
+  const isPressureChoice = definition.kind === "pressure-choice";
+  const canCompletePressureChoice = isPressureChoice && isPressureChoiceComplete(roundState, state.config);
+  if (roundState.answeredQuestionIds.length < definition.questionCount && !canCompletePressureChoice) {
     throw new GameEngineError("La manche ne peut pas etre terminee avant son quota de questions.");
   }
+
+  const riskPoints = isPressureChoice ? roundState.riskPoints ?? 0 : 0;
+  const securedScore = scoreFromPoints(riskPoints);
+  const completedRoundState = isPressureChoice && riskPoints > 0
+    ? secureRiskPoints({ ...roundState, score: addScore(roundState.score, securedScore) })
+    : { ...roundState, status: "complete" as const };
+  const completedScore = riskPoints > 0 ? addScore(state.score, securedScore) : state.score;
+
   return transition({
     ...cloneState(state),
-    currentRoundState: { ...roundState, status: "complete" },
+    currentRoundState: completedRoundState,
     activeQuestionId: undefined,
     lockedAnswer: undefined,
     timer: undefined,
+    score: completedScore,
   }, "round_result", now, "round_completed");
 }
 
@@ -664,7 +773,7 @@ export function applyJoker(state: GameState, input: ApplyJokerInput | JokerType,
         ...resetQuestionJokerEffects(state.jokerEffects),
         changedQuestionIds: [...state.jokerEffects.changedQuestionIds, state.activeQuestionId ?? "", replacement.id].filter((id) => id.length > 0),
       },
-      timer: { startedAt: appliedAt, expiresAt: appliedAt + questionDurationMs(replacement, state.config) },
+      timer: { startedAt: appliedAt, expiresAt: appliedAt + questionDurationMs(replacement, state.config, pressureStepIndex(roundState)) },
     }, "joker_used", appliedAt, { joker, questionId: replacement.id });
   }
 

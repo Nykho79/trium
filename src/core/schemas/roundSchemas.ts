@@ -28,6 +28,8 @@ export const roundStateSchema = z.object({
   score: scoreBreakdownSchema,
   clueIndex: z.number().int().min(0).max(4).optional(),
   answersVisible: z.boolean().optional(),
+  securedPoints: z.number().int().min(0).optional(),
+  riskPoints: z.number().int().min(0).optional(),
 });
 
 export const roundSummarySchema = z.object({

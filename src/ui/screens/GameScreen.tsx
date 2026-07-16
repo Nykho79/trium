@@ -18,9 +18,10 @@ import { useGameStore } from "../../app/store/gameStore";
 import { useSettingsStore } from "../../app/store/settingsStore";
 import { playJokerSound } from "../audio/soundManager";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
-import type { ClueRaceQuestion, JokerType, KnowledgeGridQuestion, MultipleChoiceOption, Question } from "../../core/types";
+import type { ClueRaceQuestion, JokerType, KnowledgeGridQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question } from "../../core/types";
 import { buildKnowledgeGrid, selectKnowledgeGridQuestion } from "../../rounds/knowledge-grid";
 import { isClueRaceQuestion, pointsForClueIndex, visibleClues } from "../../rounds/clue-race";
+import { multiplierForPressureStep, timeLimitForPressureStep } from "../../rounds/pressure-choice";
 
 type VoteState = {
   active: boolean;
@@ -38,6 +39,10 @@ const jokerLabels: Record<JokerType, string> = {
   team_vote: "Vote equipe",
 };
 
+
+function isPressureChoiceQuestion(question: Question): question is PressureChoiceQuestion {
+  return question.kind === "pressure-choice" && question.type === "multiple_choice" && question.editorialStatus === "approved";
+}
 function isKnowledgeGridQuestion(question: Question): question is KnowledgeGridQuestion {
   return question.kind === "knowledge-grid" && question.type === "multiple_choice" && question.editorialStatus === "approved";
 }
@@ -119,14 +124,22 @@ export function GameScreen() {
   const activeQuestion = questions.find((question) => question.id === gameState?.activeQuestionId);
   const activeKnowledgeQuestion = activeQuestion && isKnowledgeGridQuestion(activeQuestion) ? activeQuestion : undefined;
   const activeClueQuestion = activeQuestion && isClueRaceQuestion(activeQuestion) ? activeQuestion : undefined;
+  const activePressureQuestion = activeQuestion && isPressureChoiceQuestion(activeQuestion) ? activeQuestion : undefined;
   const knowledgeQuestions = useMemo(() => questions.filter(isKnowledgeGridQuestion), [questions]);
   const clueQuestions = useMemo(() => questions.filter(isClueRaceQuestion), [questions]);
+  const pressureQuestions = useMemo(() => questions.filter(isPressureChoiceQuestion), [questions]);
   const captain = gameState?.config.players.find((player) => player.id === gameState.captainPlayerId) ?? session.players[0];
   const isQuestionActive = gameState?.status === "question_active" || gameState?.status === "answer_locked";
   const isLocked = gameState?.status === "answer_locked";
   const isClueRace = round?.kind === "clue-race";
+  const isPressureChoice = round?.kind === "pressure-choice";
   const clueIndex = gameState?.currentRoundState?.clueIndex ?? 0;
   const answersVisible = gameState?.currentRoundState?.answersVisible === true || isLocked;
+  const pressureStep = Math.min(4, gameState?.currentRoundState?.currentQuestionIndex ?? 0);
+  const pressureMultiplier = multiplierForPressureStep(pressureStep);
+  const pressureTimeLimitMs = timeLimitForPressureStep(pressureStep) * 1000;
+  const securedPoints = gameState?.currentRoundState?.securedPoints ?? 0;
+  const riskPoints = gameState?.currentRoundState?.riskPoints ?? 0;
   const canUseJoker = gameState?.status === "question_active" && activeQuestion !== undefined;
   const board = useMemo(() => buildKnowledgeGrid({
     questions: knowledgeQuestions,
@@ -145,6 +158,10 @@ export function GameScreen() {
 
   const loadNextClueQuestion = () => {
     loadCurrentQuestion({ questions: clueQuestions });
+  };
+
+  const loadNextPressureQuestion = () => {
+    loadCurrentQuestion({ questions: pressureQuestions });
   };
 
   const submitAnswer = () => {
@@ -181,7 +198,10 @@ export function GameScreen() {
     if (!canUseJoker || jokerRemaining(joker) <= 0 || jokerUsed(joker) || (gameState?.jokers.disabled.includes(joker) ?? false)) {
       return true;
     }
-    return isClueRace && joker === "fifty_fifty" && !answersVisible;
+    if (isClueRace && joker === "fifty_fifty" && !answersVisible) {
+      return true;
+    }
+    return isPressureChoice && joker === "change_question" && pressureStep >= 4;
   };
 
   if (!gameState || !round) {
@@ -200,9 +220,9 @@ export function GameScreen() {
 
   return (
     <ScreenFrame title="Ecran de jeu">
-      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""}`}>
-        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""}`}>
-          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : "Le capitaine choisit une case"} />
+      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""} ${isPressureChoice ? "pressure-choice-layout" : ""}`}>
+        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""} ${isPressureChoice ? "pressure-choice-stage" : ""}`}>
+          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : isPressureChoice ? "Continuer ou securiser" : "Le capitaine choisit une case"} />
           <ScoreBoard score={session.score.teamScore} streak={session.score.streak} roundLabel={`Question ${Math.min(answeredCount + 1, targetCount)}`} />
 
           {loadError ? <FeedbackBanner tone="warning" title="Banque indisponible" message={loadError} /> : null}
@@ -210,7 +230,7 @@ export function GameScreen() {
           {gameState.jokerEffects.contextualHint ? <FeedbackBanner tone="info" title="Indice contextuel" message={gameState.jokerEffects.contextualHint} /> : null}
           {gameState.jokerEffects.secondChanceConsumed && gameState.status === "question_active" ? <FeedbackBanner tone="warning" title="Seconde chance" message="Premiere reponse incorrecte. La prochaine bonne reponse vaudra 50 % des points." /> : null}
 
-          {!isClueRace && !isQuestionActive ? (
+          {!isClueRace && !isPressureChoice && !isQuestionActive ? (
             <div className="knowledge-grid-board" role="grid" aria-label="Grille des savoirs">
               {board.columns.map((column) => (
                 <section key={column.categoryId} className="knowledge-grid-column" aria-label={column.categoryLabel}>
@@ -239,6 +259,20 @@ export function GameScreen() {
               <h1>{answeredCount >= targetCount ? "Manche terminee" : "Nouvelle enigme"}</h1>
               <p>{answeredCount >= targetCount ? "Les cinq enigmes sont jouees." : "Le capitaine lance l'enigme suivante. Le premier indice vaut 500 points."}</p>
               {answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : <Button variant="primary" onClick={loadNextClueQuestion} disabled={clueQuestions.length === 0} data-testid="start-clue-question">Afficher l'indice 1</Button>}
+            </div>
+          ) : null}
+
+          {isPressureChoice && !isQuestionActive ? (
+            <div className="pressure-choice-empty-state">
+              <Badge tone="amber">Choix sous pression</Badge>
+              <h1>{answeredCount >= targetCount ? "Dernier palier atteint" : `Palier ${pressureStep + 1}`}</h1>
+              <p>Chaque bonne reponse ajoute des points a risque. L'equipe peut continuer ou securiser apres une bonne reponse.</p>
+              <div className="pressure-bank-grid">
+                <div><span>Points securises</span><strong>{securedPoints.toLocaleString("fr-FR")}</strong></div>
+                <div><span>Points a risque</span><strong>{riskPoints.toLocaleString("fr-FR")}</strong></div>
+                <div><span>Multiplicateur</span><strong>x{pressureMultiplier.toLocaleString("fr-FR")}</strong></div>
+              </div>
+              {answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : <Button variant="primary" onClick={loadNextPressureQuestion} disabled={pressureQuestions.length === 0} data-testid="start-pressure-question">Lancer le palier</Button>}
             </div>
           ) : null}
 
@@ -285,6 +319,58 @@ export function GameScreen() {
             </div>
           ) : null}
 
+          {isQuestionActive && activePressureQuestion ? (
+            <div className="question-live pressure-choice-live">
+              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={pressureTimeLimitMs} />
+              <div className="pressure-step-track" aria-label="Progression Choix sous pression">
+                {[1, 2, 3, 4, 5].map((step) => (
+                  <span key={step} className={step - 1 < pressureStep ? "is-passed" : step - 1 === pressureStep ? "is-current" : ""}>{step}</span>
+                ))}
+              </div>
+              <div className="question-value-strip">
+                <Badge tone="amber">x{pressureMultiplier.toLocaleString("fr-FR")}</Badge>
+                <span>Difficulte {activePressureQuestion.difficulty} - {timeLimitForPressureStep(pressureStep)} s</span>
+              </div>
+              <div className="pressure-bank-grid compact">
+                <div><span>Securises</span><strong>{securedPoints.toLocaleString("fr-FR")}</strong></div>
+                <div><span>A risque</span><strong>{riskPoints.toLocaleString("fr-FR")}</strong></div>
+                <div><span>Bonne reponse</span><strong>{Math.round((activePressureQuestion.value ?? activePressureQuestion.difficulty * 100) * pressureMultiplier).toLocaleString("fr-FR")}</strong></div>
+              </div>
+              <h1>{activePressureQuestion.prompt}</h1>
+              {voteState.active ? (
+                <Panel className="team-vote-panel">
+                  {voteState.majority ? (
+                    <>
+                      <Badge tone="success">Majorite revelee</Badge>
+                      <strong>{optionLabel(activePressureQuestion.options, voteState.majority)}</strong>
+                      <p>Le capitaine choisit maintenant la reponse finale.</p>
+                    </>
+                  ) : (
+                    <>
+                      <Badge tone="violet">Vote masque</Badge>
+                      <strong>{session.players[voteState.currentIndex]?.name ?? "Joueur"}</strong>
+                      <p>{voteState.votes.length} vote(s) enregistres. Les choix precedents restent masques.</p>
+                      <div className="answer-grid live">
+                        {activePressureQuestion.options.map((answer) => <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} onClick={() => castVote(answer.id)} />)}
+                      </div>
+                    </>
+                  )}
+                </Panel>
+              ) : null}
+              <div className="answer-grid live" data-testid="pressure-answer-options">
+                {activePressureQuestion.options.map((answer) => {
+                  const eliminated = gameState.jokerEffects.eliminatedOptionIds.includes(answer.id);
+                  const state = eliminated
+                    ? "disabled"
+                    : isLocked
+                      ? answer.id === activePressureQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
+                      : selectedAnswerId === answer.id ? "selected" : "idle";
+                  return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => selectAnswer(answer.id)} />;
+                })}
+              </div>
+              {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message={`Revelation prete. Bonne reponse attendue : ${optionLabel(activePressureQuestion.options, activePressureQuestion.correctOptionId)}.`} /> : null}
+            </div>
+          ) : null}
           {isQuestionActive && activeClueQuestion ? (
             <div className="question-live clue-race-live">
               <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
@@ -347,7 +433,7 @@ export function GameScreen() {
             <h2>Progression</h2>
             <div className="knowledge-progress-card">
               <strong>{answeredCount} / {targetCount}</strong>
-              <span>{isClueRace ? "enigmes jouees" : "questions selectionnees"}</span>
+              <span>{isClueRace ? "enigmes jouees" : isPressureChoice ? "paliers joues" : "questions selectionnees"}</span>
             </div>
           </Panel>
           <Panel>

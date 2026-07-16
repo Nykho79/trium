@@ -1062,3 +1062,22 @@ Regles implementees :
 - `second_chance`, `change_question`, `contextual_hint` et `team_vote` sont interdits dans cette manche.
 
 Le format `progressive_clues` exige maintenant cinq indices et cinq valeurs de score dans le schema Zod. Il peut contenir quatre propositions et un `correctOptionId`, necessaires pour l'interface TV et le joker 50/50. L'ecran `GameScreen` affiche un grand panneau central avec compteur d'indices, points encore disponibles, bouton `Indice suivant`, bouton `Repondre maintenant`, verrouillage et revelation.
+
+## 25. Manche Choix sous pression
+
+La manche `pressure-choice` est implementee dans `src/rounds/pressure-choice`. Elle respecte l'interface `GameRound` et expose des fonctions pures pour les multiplicateurs, les durees, le score multiplie, les points a risque et la securisation.
+
+Regles implementees :
+
+- cinq questions de difficulte croissante, de 1 a 5 ;
+- selection automatique filtree par difficulte attendue pour les paliers 1, 2, 3, 4 et 5 ;
+- multiplicateurs : x1, x1,5, x2, x3, x5 ;
+- chronometres : 35 s, 30 s, 25 s, 20 s, 15 s ;
+- une bonne reponse ajoute le score multiplie aux points a risque ;
+- les points a risque ne sont ajoutes au score global qu'a la securisation ou a la fin reussie de la manche ;
+- une erreur ou une expiration fait perdre les points a risque et termine la manche ;
+- le bouton `Securiser` termine volontairement la manche en conservant les points a risque ;
+- tous les jokers restent autorises, sauf `change_question` sur la derniere question ;
+- les actions de securisation et d'expiration sont exposees par le moteur et branchees dans `gameStore`.
+
+L'ecran `GameScreen` affiche l'echelle de progression, les points securises, les points a risque, le multiplicateur, le chronometre et les QCM. L'ecran de transition propose `Continuer` ou `Securiser` apres une bonne reponse.

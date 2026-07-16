@@ -26,7 +26,7 @@ test("parcourt le flux principal jusqu'a la grille de jeu", async ({ page }) => 
 
 test("revele une reponse depuis une case de grille", async ({ page }) => {
   await openKnowledgeGrid(page);
-  await page.getByRole("button", { name: /Culture g.n.rale 200/ }).click();
+  await page.getByRole("button", { name: "200" }).first().click();
   await expect(page.getByRole("heading", { name: /Place Stanislas/ })).toBeVisible();
   await page.getByRole("button", { name: /Nancy/ }).click();
   await page.getByTestId("lock-answer-button").click();
@@ -39,7 +39,7 @@ test("revele une reponse depuis une case de grille", async ({ page }) => {
 
 test("confirme et applique le joker 50/50", async ({ page }) => {
   await openKnowledgeGrid(page);
-  await page.getByRole("button", { name: /Culture g.n.rale 200/ }).click();
+  await page.getByRole("button", { name: "200" }).first().click();
   await expect(page.getByRole("heading", { name: /Place Stanislas/ })).toBeVisible();
 
   await page.getByTestId("joker-fifty_fifty").click();
@@ -135,4 +135,82 @@ test("joue une enigme de Course aux indices avec 50/50 apres les propositions", 
   await expect(page.getByRole("heading", { name: /Jeanne d.Arc/ })).toBeVisible();
   await expect(page.getByText("400").first()).toBeVisible();
   await expect(page.getByRole("button", { name: "Enigme suivante" })).toBeVisible();
+});
+
+async function openPressureChoice(page: import("@playwright/test").Page) {
+  const players = [
+    { id: "player-1", name: "Alice", color: "amber", ready: true },
+    { id: "player-2", name: "Benoit", color: "cyan", ready: true },
+    { id: "player-3", name: "Camille", color: "magenta", ready: true },
+  ];
+  const score = { basePoints: 0, timeBonus: 0, streakBonus: 0, jokerPenalty: 0, wagerDelta: 0, total: 0 };
+  const jokerInventory = { fifty_fifty: 1, second_chance: 1, change_question: 0, contextual_hint: 0, extra_time: 1, team_vote: 0 };
+  const zeroJokers = { fifty_fifty: 0, second_chance: 0, change_question: 0, contextual_hint: 0, extra_time: 0, team_vote: 0 };
+  const rounds = [
+    { id: "knowledge-grid", kind: "knowledge-grid", label: "Grille des savoirs", description: "Choix libre.", questionTypes: ["multiple_choice"], questionCount: 8, maxScore: 4100 },
+    { id: "clue-race", kind: "clue-race", label: "Course aux indices", description: "Indices progressifs.", questionTypes: ["progressive_clues"], questionCount: 5, maxScore: 2500 },
+    { id: "pressure-choice", kind: "pressure-choice", label: "Choix sous pression", description: "QCM sous pression.", questionTypes: ["multiple_choice"], questionCount: 5, maxScore: 4700 },
+  ];
+  await page.addInitScript(({ players, score, jokerInventory, zeroJokers, rounds }) => {
+    window.localStorage.setItem("trium.saved-game.v1", JSON.stringify({
+      version: 1,
+      savedAt: "2026-07-16T12:00:00.000Z",
+      screen: "game",
+      gameState: {
+        status: "round_intro",
+        config: {
+          id: "e2e-pressure-choice",
+          mode: "standard",
+          seed: "e2e-pressure-seed",
+          players,
+          rounds,
+          questionBankVersion: 1,
+          allowRecentlyPlayedFallback: true,
+          defaultQuestionTimeMs: 30000,
+        },
+        currentRoundIndex: 2,
+        currentRoundState: {
+          id: "round-state-3",
+          definitionId: "pressure-choice",
+          status: "active",
+          currentQuestionIndex: 0,
+          selectedQuestionIds: [],
+          answeredQuestionIds: [],
+          answerResults: [],
+          score,
+          securedPoints: 0,
+          riskPoints: 0,
+        },
+        captainPlayerId: "player-1",
+        usedQuestionIds: [],
+        recentlyPlayedQuestionIds: [],
+        jokers: { available: jokerInventory, used: zeroJokers, disabled: [] },
+        jokerEffects: { eliminatedOptionIds: [], secondChanceActive: false, secondChanceConsumed: false, changedQuestionIds: [] },
+        score,
+        eventLog: [{ id: "event-1-game_created", type: "game_created", at: "2026-07-16T12:00:00.000Z", toStatus: "round_intro" }],
+      },
+      recentQuestionIds: [],
+    }));
+  }, { players, score, jokerInventory, zeroJokers, rounds });
+  await page.goto("/");
+}
+
+test("joue et securise le premier palier de Choix sous pression", async ({ page }) => {
+  await openPressureChoice(page);
+  await expect(page.getByTestId("start-pressure-question")).toBeVisible();
+  await page.getByTestId("start-pressure-question").click();
+
+  await expect(page.getByRole("heading", { name: /planete rouge/ })).toBeVisible();
+  await expect(page.getByText("x1")).toBeVisible();
+  await expect(page.getByText("35 s")).toBeVisible();
+
+  await page.getByRole("button", { name: "Mars" }).click();
+  await page.getByTestId("lock-answer-button").click();
+  await page.getByTestId("reveal-answer-button").click();
+
+  await expect(page.getByRole("heading", { name: "Mars" })).toBeVisible();
+  await expect(page.getByTestId("secure-pressure-button")).toBeVisible();
+  await page.getByTestId("secure-pressure-button").click();
+
+  await expect(page.getByRole("heading", { name: /100 points/ })).toBeVisible();
 });

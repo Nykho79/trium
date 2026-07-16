@@ -14,6 +14,7 @@ Le projet contient maintenant :
 - un flux local accueil -> joueurs -> mode -> intro -> manche -> jeu -> resultats ;
 - la manche jouable `Grille des savoirs` avec grille 5 categories x 4 niveaux, verrouillage, revelation, score et retour grille ;
 - la manche jouable `Course aux indices` avec cinq indices progressifs, propositions sur demande et score decroissant ;
+- la manche jouable `Choix sous pression` avec cinq paliers, chrono decroissant, multiplicateurs et points a securiser ;
 - un systeme complet de jokers : 50/50, deuxieme chance, changement de question, indice contextuel, temps supplementaire et vote equipe ;
 - une banque de questions JSON locale dans `src/data/questions` ;
 - un chargeur local qui valide les fichiers JSON avec Zod, filtre les questions jouables et produit un rapport qualite ;
@@ -119,9 +120,9 @@ Principes actifs :
 Validation locale executee le 2026-07-16 :
 
 - `pnpm questions` : OK, 350 questions analysees ;
-- `pnpm check` : OK, lint + TypeScript + 69 tests unitaires ;
+- `pnpm check` : OK, lint + TypeScript + 80 tests unitaires ;
 - `pnpm build` : OK, avec avertissement Vite de chunk superieur a 500 kB ;
-- `pnpm test:e2e` : OK, 22 tests Playwright sur 1920 x 1080 et 1366 x 768.
+- `pnpm test:e2e` : OK, 24 tests Playwright sur 1920 x 1080 et 1366 x 768.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.
 
