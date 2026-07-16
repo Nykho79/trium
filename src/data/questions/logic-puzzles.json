@@ -1,0 +1,1790 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "logic-puzzles-001",
+  "title": "Énigmes logiques — Lot 1",
+  "category": "logic-puzzles",
+  "questionType": "logic_puzzle",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "LOG-0001",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "positions-relative",
+      "difficulty": 1,
+      "prompt": "Alice, Benoît, Clara et David occupent quatre chaises aligné(e)s. Qui est en deuxième position ?",
+      "clues": [
+        "Clara est tout à gauche.",
+        "Benoît est tout à droite.",
+        "Alice est immédiatement à gauche de David."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Alice"
+        },
+        {
+          "id": "b",
+          "text": "Benoît"
+        },
+        {
+          "id": "c",
+          "text": "Clara"
+        },
+        {
+          "id": "d",
+          "text": "David"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Clara est en position 1 et Benoît en position 4.",
+        "Les positions 2 et 3 reviennent à Alice et David.",
+        "Alice étant immédiatement à gauche de David, Alice est deuxième."
+      ],
+      "explanation": "Clara est en position 1 et Benoît en position 4. Les positions 2 et 3 reviennent à Alice et David. Alice étant immédiatement à gauche de David, Alice est deuxième.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "positions-relative"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0002",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "correspondence",
+      "difficulty": 1,
+      "prompt": "Quatre contenants renferment chacun un élément différent (rouge, bleu, vert, jaune). Où se trouve « vert » ?",
+      "clues": [
+        "Rouge est dans la boîte A.",
+        "Bleu est dans la boîte D.",
+        "Jaune n’est pas dans la boîte C."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Boîte A"
+        },
+        {
+          "id": "b",
+          "text": "Boîte C"
+        },
+        {
+          "id": "c",
+          "text": "Boîte B"
+        },
+        {
+          "id": "d",
+          "text": "Boîte D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "La boîte A contient rouge et la boîte D contient bleu.",
+        "Il reste vert et jaune pour B et C.",
+        "Comme jaune n’est pas dans C, C contient vert."
+      ],
+      "explanation": "La boîte A contient rouge et la boîte D contient bleu. Il reste vert et jaune pour B et C. Comme jaune n’est pas dans C, C contient vert.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "correspondence"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0003",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "constraints",
+      "difficulty": 1,
+      "prompt": "Un code utilise une seule fois chacun des signes 2, 5, 8. Quel est le code ?",
+      "clues": [
+        "5 est placé avant 2.",
+        "8 est placé après 2."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "258"
+        },
+        {
+          "id": "b",
+          "text": "285"
+        },
+        {
+          "id": "c",
+          "text": "528"
+        },
+        {
+          "id": "d",
+          "text": "852"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "5 doit précéder 2.",
+        "8 doit suivre 2.",
+        "L’ordre unique est donc 528."
+      ],
+      "explanation": "5 doit précéder 2. 8 doit suivre 2. L’ordre unique est donc 528.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "constraints"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0004",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "movement",
+      "difficulty": 1,
+      "prompt": "Trois interrupteurs A, B et C sont éteints. On actionne A, puis B, puis A. Lequel reste allumé ?",
+      "clues": [
+        "Actionner inverse l’état."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "A seulement"
+        },
+        {
+          "id": "b",
+          "text": "C seulement"
+        },
+        {
+          "id": "c",
+          "text": "A et B"
+        },
+        {
+          "id": "d",
+          "text": "B seulement"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "A s’allume.",
+        "B s’allume.",
+        "A s’éteint : seul B reste allumé."
+      ],
+      "explanation": "A s’allume. B s’allume. A s’éteint : seul B reste allumé.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0005",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "truth-lie",
+      "difficulty": 1,
+      "prompt": "Une seule affirmation est vraie et une seule personne possède le badge. Qui le possède ?",
+      "clues": [
+        "Alice : « Benoît possède le badge. »",
+        "Benoît : « David possède le badge. »",
+        "Clara : « Je ne possède pas le badge. »",
+        "David : « Benoît ne possède pas le badge. »"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Clara"
+        },
+        {
+          "id": "b",
+          "text": "Alice"
+        },
+        {
+          "id": "c",
+          "text": "Benoît"
+        },
+        {
+          "id": "d",
+          "text": "David"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Tester les quatre détenteurs possibles.",
+        "Si Clara possède le badge, les trois premières affirmations sont fausses.",
+        "Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies."
+      ],
+      "explanation": "Tester les quatre détenteurs possibles. Si Clara possède le badge, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "truth-lie"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0006",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "reasoned-counting",
+      "difficulty": 1,
+      "prompt": "Un sac contient des jetons rouges et bleus. Combien faut-il en tirer pour garantir deux jetons de même couleur ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "On peut prendre au maximum 1 élément(s) de chacune des 2 catégories sans atteindre le seuil.",
+        "Cela représente 2 éléments.",
+        "Le suivant, soit le 3e, garantit la répétition demandée."
+      ],
+      "explanation": "On peut prendre au maximum 1 élément(s) de chacune des 2 catégories sans atteindre le seuil. Cela représente 2 éléments. Le suivant, soit le 3e, garantit la répétition demandée.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "reasoned-counting"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0007",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "order",
+      "difficulty": 1,
+      "prompt": "Alice arrive avant Benoît. Clara arrive après Alice mais avant Benoît. David arrive avant Alice. Qui arrive en position première ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Alice"
+        },
+        {
+          "id": "b",
+          "text": "Benoît"
+        },
+        {
+          "id": "c",
+          "text": "David"
+        },
+        {
+          "id": "d",
+          "text": "Clara"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "David précède Alice.",
+        "Alice précède Clara, qui précède Benoît.",
+        "L’ordre est donc David – Alice – Clara – Benoît ; la réponse est David."
+      ],
+      "explanation": "David précède Alice. Alice précède Clara, qui précède Benoît. L’ordre est donc David – Alice – Clara – Benoît ; la réponse est David.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "order"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0008",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "verbal-logic",
+      "difficulty": 1,
+      "prompt": "Quatre livres A, B, C et D sont empilés. A est au-dessus de C, D est sous C et B est au-dessus de A. Quel livre est tout en haut ?",
+      "clues": [
+        "Chaque relation « au-dessus » impose un ordre."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "C"
+        },
+        {
+          "id": "c",
+          "text": "D"
+        },
+        {
+          "id": "d",
+          "text": "B"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "B est au-dessus de A.",
+        "A est au-dessus de C, lui-même au-dessus de D.",
+        "B est donc tout en haut."
+      ],
+      "explanation": "B est au-dessus de A. A est au-dessus de C, lui-même au-dessus de D. B est donc tout en haut.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "verbal-logic"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0009",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "positions-relative",
+      "difficulty": 2,
+      "prompt": "Élise, Farid, Gina et Hugo occupent quatre cases aligné(e)s. Qui est en deuxième position ?",
+      "clues": [
+        "Gina est tout à gauche.",
+        "Farid est tout à droite.",
+        "Élise est immédiatement à gauche de Hugo."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Élise"
+        },
+        {
+          "id": "b",
+          "text": "Farid"
+        },
+        {
+          "id": "c",
+          "text": "Gina"
+        },
+        {
+          "id": "d",
+          "text": "Hugo"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Gina est en position 1 et Farid en position 4.",
+        "Les positions 2 et 3 reviennent à Élise et Hugo.",
+        "Élise étant immédiatement à gauche de Hugo, Élise est deuxième."
+      ],
+      "explanation": "Gina est en position 1 et Farid en position 4. Les positions 2 et 3 reviennent à Élise et Hugo. Élise étant immédiatement à gauche de Hugo, Élise est deuxième.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "positions-relative"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0010",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "correspondence",
+      "difficulty": 2,
+      "prompt": "Quatre contenants renferment chacun un élément différent (rond, carré, triangle, étoile). Où se trouve « triangle » ?",
+      "clues": [
+        "Rond est dans la boîte A.",
+        "Carré est dans la boîte D.",
+        "Étoile n’est pas dans la boîte C."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Boîte A"
+        },
+        {
+          "id": "b",
+          "text": "Boîte C"
+        },
+        {
+          "id": "c",
+          "text": "Boîte B"
+        },
+        {
+          "id": "d",
+          "text": "Boîte D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "La boîte A contient rond et la boîte D contient carré.",
+        "Il reste triangle et étoile pour B et C.",
+        "Comme étoile n’est pas dans C, C contient triangle."
+      ],
+      "explanation": "La boîte A contient rond et la boîte D contient carré. Il reste triangle et étoile pour B et C. Comme étoile n’est pas dans C, C contient triangle.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "correspondence"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0011",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "constraints",
+      "difficulty": 2,
+      "prompt": "Un code utilise une seule fois chacun des signes 1, 4, 9. Quel est le code ?",
+      "clues": [
+        "4 est placé avant 1.",
+        "9 est placé après 1."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "149"
+        },
+        {
+          "id": "b",
+          "text": "194"
+        },
+        {
+          "id": "c",
+          "text": "419"
+        },
+        {
+          "id": "d",
+          "text": "941"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "4 doit précéder 1.",
+        "9 doit suivre 1.",
+        "L’ordre unique est donc 419."
+      ],
+      "explanation": "4 doit précéder 1. 9 doit suivre 1. L’ordre unique est donc 419.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "constraints"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0012",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "movement",
+      "difficulty": 2,
+      "prompt": "Quatre cartes sont dans l’ordre 1-2-3-4. On échange les positions 1 et 3, puis 2 et 4. Quel ordre obtient-on ?",
+      "clues": [
+        "Effectue les échanges successivement."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "3-2-1-4"
+        },
+        {
+          "id": "b",
+          "text": "4-3-2-1"
+        },
+        {
+          "id": "c",
+          "text": "2-1-4-3"
+        },
+        {
+          "id": "d",
+          "text": "3-4-1-2"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "Après le premier échange : 3-2-1-4.",
+        "Après le second : 3-4-1-2.",
+        "Cet ordre est définitif."
+      ],
+      "explanation": "Après le premier échange : 3-2-1-4. Après le second : 3-4-1-2. Cet ordre est définitif.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0013",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "truth-lie",
+      "difficulty": 2,
+      "prompt": "Une seule affirmation est vraie et une seule personne possède le clé. Qui le possède ?",
+      "clues": [
+        "Élise : « Farid possède le clé. »",
+        "Farid : « Hugo possède le clé. »",
+        "Gina : « Je ne possède pas le clé. »",
+        "Hugo : « Farid ne possède pas le clé. »"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Gina"
+        },
+        {
+          "id": "b",
+          "text": "Élise"
+        },
+        {
+          "id": "c",
+          "text": "Farid"
+        },
+        {
+          "id": "d",
+          "text": "Hugo"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Tester les quatre détenteurs possibles.",
+        "Si Gina possède le clé, les trois premières affirmations sont fausses.",
+        "Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies."
+      ],
+      "explanation": "Tester les quatre détenteurs possibles. Si Gina possède le clé, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "truth-lie"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0014",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "reasoned-counting",
+      "difficulty": 2,
+      "prompt": "Un tiroir contient des chaussettes de trois couleurs. Combien faut-il en prendre pour garantir une paire de même couleur ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "On peut prendre au maximum 1 élément(s) de chacune des 3 catégories sans atteindre le seuil.",
+        "Cela représente 3 éléments.",
+        "Le suivant, soit le 4e, garantit la répétition demandée."
+      ],
+      "explanation": "On peut prendre au maximum 1 élément(s) de chacune des 3 catégories sans atteindre le seuil. Cela représente 3 éléments. Le suivant, soit le 4e, garantit la répétition demandée.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "reasoned-counting"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0015",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "order",
+      "difficulty": 2,
+      "prompt": "Élise arrive avant Farid. Gina arrive après Élise mais avant Farid. Hugo arrive avant Élise. Qui arrive en position deuxième ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Farid"
+        },
+        {
+          "id": "b",
+          "text": "Gina"
+        },
+        {
+          "id": "c",
+          "text": "Élise"
+        },
+        {
+          "id": "d",
+          "text": "Hugo"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "Hugo précède Élise.",
+        "Élise précède Gina, qui précède Farid.",
+        "L’ordre est donc Hugo – Élise – Gina – Farid ; la réponse est Élise."
+      ],
+      "explanation": "Hugo précède Élise. Élise précède Gina, qui précède Farid. L’ordre est donc Hugo – Élise – Gina – Farid ; la réponse est Élise.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "order"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0016",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "verbal-logic",
+      "difficulty": 2,
+      "prompt": "Un atelier produit une pièce en trois étapes : couper, percer, polir. Le perçage doit suivre la coupe et le polissage vient en dernier. Quel ordre convient ?",
+      "clues": [
+        "Respecte les dépendances entre les opérations."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Percer-couper-polir"
+        },
+        {
+          "id": "b",
+          "text": "Polir-couper-percer"
+        },
+        {
+          "id": "c",
+          "text": "Couper-polir-percer"
+        },
+        {
+          "id": "d",
+          "text": "Couper-percer-polir"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "Le perçage ne peut précéder la coupe.",
+        "Le polissage est imposé en dernier.",
+        "Il reste couper, percer, polir."
+      ],
+      "explanation": "Le perçage ne peut précéder la coupe. Le polissage est imposé en dernier. Il reste couper, percer, polir.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "verbal-logic"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0017",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "positions-relative",
+      "difficulty": 3,
+      "prompt": "Iris, Jules, Kamel et Lola occupent quatre pupitres aligné(e)s. Qui est en deuxième position ?",
+      "clues": [
+        "Kamel est tout à gauche.",
+        "Jules est tout à droite.",
+        "Iris est immédiatement à gauche de Lola."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Iris"
+        },
+        {
+          "id": "b",
+          "text": "Jules"
+        },
+        {
+          "id": "c",
+          "text": "Kamel"
+        },
+        {
+          "id": "d",
+          "text": "Lola"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Kamel est en position 1 et Jules en position 4.",
+        "Les positions 2 et 3 reviennent à Iris et Lola.",
+        "Iris étant immédiatement à gauche de Lola, Iris est deuxième."
+      ],
+      "explanation": "Kamel est en position 1 et Jules en position 4. Les positions 2 et 3 reviennent à Iris et Lola. Iris étant immédiatement à gauche de Lola, Iris est deuxième.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "positions-relative"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0018",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "correspondence",
+      "difficulty": 3,
+      "prompt": "Quatre contenants renferment chacun un élément différent (pomme, poire, prune, pêche). Où se trouve « prune » ?",
+      "clues": [
+        "Pomme est dans la boîte A.",
+        "Poire est dans la boîte D.",
+        "Pêche n’est pas dans la boîte C."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Boîte A"
+        },
+        {
+          "id": "b",
+          "text": "Boîte C"
+        },
+        {
+          "id": "c",
+          "text": "Boîte B"
+        },
+        {
+          "id": "d",
+          "text": "Boîte D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "La boîte A contient pomme et la boîte D contient poire.",
+        "Il reste prune et pêche pour B et C.",
+        "Comme pêche n’est pas dans C, C contient prune."
+      ],
+      "explanation": "La boîte A contient pomme et la boîte D contient poire. Il reste prune et pêche pour B et C. Comme pêche n’est pas dans C, C contient prune.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "correspondence"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0019",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "constraints",
+      "difficulty": 3,
+      "prompt": "Un code utilise une seule fois chacun des signes 3, 6, 7. Quel est le code ?",
+      "clues": [
+        "6 est placé avant 3.",
+        "7 est placé après 3."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "367"
+        },
+        {
+          "id": "b",
+          "text": "376"
+        },
+        {
+          "id": "c",
+          "text": "637"
+        },
+        {
+          "id": "d",
+          "text": "763"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "6 doit précéder 3.",
+        "7 doit suivre 3.",
+        "L’ordre unique est donc 637."
+      ],
+      "explanation": "6 doit précéder 3. 7 doit suivre 3. L’ordre unique est donc 637.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "constraints"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0020",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "movement",
+      "difficulty": 3,
+      "prompt": "Une flèche pointe au nord. Elle tourne de 90° à droite, de 180° à gauche, puis de 90° à droite. Où pointe-t-elle ?",
+      "clues": [
+        "Traduis chaque rotation sur les quatre points cardinaux."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Est"
+        },
+        {
+          "id": "b",
+          "text": "Sud"
+        },
+        {
+          "id": "c",
+          "text": "Ouest"
+        },
+        {
+          "id": "d",
+          "text": "Nord"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "Nord devient Est.",
+        "Est tourné de 180° à gauche devient Ouest.",
+        "Ouest tourné de 90° à droite redevient Nord."
+      ],
+      "explanation": "Nord devient Est. Est tourné de 180° à gauche devient Ouest. Ouest tourné de 90° à droite redevient Nord.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0021",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "truth-lie",
+      "difficulty": 3,
+      "prompt": "Une seule affirmation est vraie et une seule personne possède le jeton. Qui le possède ?",
+      "clues": [
+        "Iris : « Jules possède le jeton. »",
+        "Jules : « Lola possède le jeton. »",
+        "Kamel : « Je ne possède pas le jeton. »",
+        "Lola : « Jules ne possède pas le jeton. »"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Kamel"
+        },
+        {
+          "id": "b",
+          "text": "Iris"
+        },
+        {
+          "id": "c",
+          "text": "Jules"
+        },
+        {
+          "id": "d",
+          "text": "Lola"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Tester les quatre détenteurs possibles.",
+        "Si Kamel possède le jeton, les trois premières affirmations sont fausses.",
+        "Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies."
+      ],
+      "explanation": "Tester les quatre détenteurs possibles. Si Kamel possède le jeton, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "truth-lie"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0022",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "reasoned-counting",
+      "difficulty": 3,
+      "prompt": "Des billes existent en quatre couleurs. Combien faut-il en choisir pour garantir trois billes de même couleur ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "On peut prendre au maximum 2 élément(s) de chacune des 4 catégories sans atteindre le seuil.",
+        "Cela représente 8 éléments.",
+        "Le suivant, soit le 9e, garantit la répétition demandée."
+      ],
+      "explanation": "On peut prendre au maximum 2 élément(s) de chacune des 4 catégories sans atteindre le seuil. Cela représente 8 éléments. Le suivant, soit le 9e, garantit la répétition demandée.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "reasoned-counting"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0023",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "order",
+      "difficulty": 3,
+      "prompt": "Iris arrive avant Jules. Kamel arrive après Iris mais avant Jules. Lola arrive avant Iris. Qui arrive en position troisième ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Iris"
+        },
+        {
+          "id": "b",
+          "text": "Jules"
+        },
+        {
+          "id": "c",
+          "text": "Kamel"
+        },
+        {
+          "id": "d",
+          "text": "Lola"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "Lola précède Iris.",
+        "Iris précède Kamel, qui précède Jules.",
+        "L’ordre est donc Lola – Iris – Kamel – Jules ; la réponse est Kamel."
+      ],
+      "explanation": "Lola précède Iris. Iris précède Kamel, qui précède Jules. L’ordre est donc Lola – Iris – Kamel – Jules ; la réponse est Kamel.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "order"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0024",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "verbal-logic",
+      "difficulty": 3,
+      "prompt": "Quatre équipes jouent à 9 h, 10 h, 11 h et 12 h. L’équipe C joue à 9 h, A avant B, et D après B. À quelle heure joue B ?",
+      "clues": [
+        "Chaque horaire n’est utilisé qu’une fois."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "9 h"
+        },
+        {
+          "id": "b",
+          "text": "10 h"
+        },
+        {
+          "id": "c",
+          "text": "12 h"
+        },
+        {
+          "id": "d",
+          "text": "11 h"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "C occupe 9 h.",
+        "Pour avoir A avant B et D après B, B ne peut être ni 10 h ni 12 h.",
+        "B joue donc à 11 h."
+      ],
+      "explanation": "C occupe 9 h. Pour avoir A avant B et D après B, B ne peut être ni 10 h ni 12 h. B joue donc à 11 h.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "verbal-logic"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0025",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "positions-relative",
+      "difficulty": 4,
+      "prompt": "Maya, Nino, Olga et Pablo occupent quatre cabines aligné(e)s. Qui est en deuxième position ?",
+      "clues": [
+        "Olga est tout à gauche.",
+        "Nino est tout à droite.",
+        "Maya est immédiatement à gauche de Pablo."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Maya"
+        },
+        {
+          "id": "b",
+          "text": "Nino"
+        },
+        {
+          "id": "c",
+          "text": "Olga"
+        },
+        {
+          "id": "d",
+          "text": "Pablo"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Olga est en position 1 et Nino en position 4.",
+        "Les positions 2 et 3 reviennent à Maya et Pablo.",
+        "Maya étant immédiatement à gauche de Pablo, Maya est deuxième."
+      ],
+      "explanation": "Olga est en position 1 et Nino en position 4. Les positions 2 et 3 reviennent à Maya et Pablo. Maya étant immédiatement à gauche de Pablo, Maya est deuxième.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "positions-relative"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0026",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "correspondence",
+      "difficulty": 4,
+      "prompt": "Quatre contenants renferment chacun un élément différent (Rome, Lima, Oslo, Kyoto). Où se trouve « Oslo » ?",
+      "clues": [
+        "Rome est dans la boîte A.",
+        "Lima est dans la boîte D.",
+        "Kyoto n’est pas dans la boîte C."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Boîte A"
+        },
+        {
+          "id": "b",
+          "text": "Boîte C"
+        },
+        {
+          "id": "c",
+          "text": "Boîte B"
+        },
+        {
+          "id": "d",
+          "text": "Boîte D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "La boîte A contient Rome et la boîte D contient Lima.",
+        "Il reste Oslo et Kyoto pour B et C.",
+        "Comme Kyoto n’est pas dans C, C contient Oslo."
+      ],
+      "explanation": "La boîte A contient Rome et la boîte D contient Lima. Il reste Oslo et Kyoto pour B et C. Comme Kyoto n’est pas dans C, C contient Oslo.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "correspondence"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0027",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "constraints",
+      "difficulty": 4,
+      "prompt": "Un code utilise une seule fois chacun des signes A, D, F. Quel est le code ?",
+      "clues": [
+        "D est placé avant A.",
+        "F est placé après A."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "ADF"
+        },
+        {
+          "id": "b",
+          "text": "AFD"
+        },
+        {
+          "id": "c",
+          "text": "DAF"
+        },
+        {
+          "id": "d",
+          "text": "FDA"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "D doit précéder A.",
+        "F doit suivre A.",
+        "L’ordre unique est donc DAF."
+      ],
+      "explanation": "D doit précéder A. F doit suivre A. L’ordre unique est donc DAF.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "constraints"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0028",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "movement",
+      "difficulty": 4,
+      "prompt": "Un pion est sur la case 2 d’un cercle de cinq cases numérotées. Il avance de 2, recule de 1 puis avance de 2. Où arrive-t-il ?",
+      "clues": [
+        "Après la case 5, on revient à la case 1."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Case 1"
+        },
+        {
+          "id": "b",
+          "text": "Case 2"
+        },
+        {
+          "id": "c",
+          "text": "Case 4"
+        },
+        {
+          "id": "d",
+          "text": "Case 5"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "2 + 2 mène à 4.",
+        "Reculer d’une case mène à 3.",
+        "Avancer de deux mène à 5."
+      ],
+      "explanation": "2 + 2 mène à 4. Reculer d’une case mène à 3. Avancer de deux mène à 5.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0029",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "truth-lie",
+      "difficulty": 4,
+      "prompt": "Une seule affirmation est vraie et une seule personne possède le médaillon. Qui le possède ?",
+      "clues": [
+        "Maya : « Nino possède le médaillon. »",
+        "Nino : « Pablo possède le médaillon. »",
+        "Olga : « Je ne possède pas le médaillon. »",
+        "Pablo : « Nino ne possède pas le médaillon. »"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Olga"
+        },
+        {
+          "id": "b",
+          "text": "Maya"
+        },
+        {
+          "id": "c",
+          "text": "Nino"
+        },
+        {
+          "id": "d",
+          "text": "Pablo"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Tester les quatre détenteurs possibles.",
+        "Si Olga possède le médaillon, les trois premières affirmations sont fausses.",
+        "Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies."
+      ],
+      "explanation": "Tester les quatre détenteurs possibles. Si Olga possède le médaillon, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "truth-lie"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0030",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "reasoned-counting",
+      "difficulty": 4,
+      "prompt": "Une boîte contient des cartes de cinq symboles différents. Combien faut-il en prendre pour garantir deux symboles identiques ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "On peut prendre au maximum 1 élément(s) de chacune des 5 catégories sans atteindre le seuil.",
+        "Cela représente 5 éléments.",
+        "Le suivant, soit le 6e, garantit la répétition demandée."
+      ],
+      "explanation": "On peut prendre au maximum 1 élément(s) de chacune des 5 catégories sans atteindre le seuil. Cela représente 5 éléments. Le suivant, soit le 6e, garantit la répétition demandée.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "reasoned-counting"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0031",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "order",
+      "difficulty": 4,
+      "prompt": "Maya arrive avant Nino. Olga arrive après Maya mais avant Nino. Pablo arrive avant Maya. Qui arrive en position dernière ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Maya"
+        },
+        {
+          "id": "b",
+          "text": "Olga"
+        },
+        {
+          "id": "c",
+          "text": "Nino"
+        },
+        {
+          "id": "d",
+          "text": "Pablo"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "Pablo précède Maya.",
+        "Maya précède Olga, qui précède Nino.",
+        "L’ordre est donc Pablo – Maya – Olga – Nino ; la réponse est Nino."
+      ],
+      "explanation": "Pablo précède Maya. Maya précède Olga, qui précède Nino. L’ordre est donc Pablo – Maya – Olga – Nino ; la réponse est Nino.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "order"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0032",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "verbal-logic",
+      "difficulty": 4,
+      "prompt": "Un robot part de (0,0), avance de 2 cases vers l’est, de 1 vers le nord, puis de 3 vers l’ouest. Où se trouve-t-il ?",
+      "clues": [
+        "Est augmente la première coordonnée ; nord augmente la seconde."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "(1,1)"
+        },
+        {
+          "id": "b",
+          "text": "(-1,-1)"
+        },
+        {
+          "id": "c",
+          "text": "(3,1)"
+        },
+        {
+          "id": "d",
+          "text": "(-1,1)"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "Après l’est : (2,0).",
+        "Après le nord : (2,1).",
+        "Après trois cases à l’ouest : (-1,1)."
+      ],
+      "explanation": "Après l’est : (2,0). Après le nord : (2,1). Après trois cases à l’ouest : (-1,1).",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "verbal-logic"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0033",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "positions-relative",
+      "difficulty": 5,
+      "prompt": "Rania, Sami, Tania et Ugo occupent quatre places de train aligné(e)s. Qui est en deuxième position ?",
+      "clues": [
+        "Tania est tout à gauche.",
+        "Sami est tout à droite.",
+        "Rania est immédiatement à gauche de Ugo."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Rania"
+        },
+        {
+          "id": "b",
+          "text": "Sami"
+        },
+        {
+          "id": "c",
+          "text": "Tania"
+        },
+        {
+          "id": "d",
+          "text": "Ugo"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Tania est en position 1 et Sami en position 4.",
+        "Les positions 2 et 3 reviennent à Rania et Ugo.",
+        "Rania étant immédiatement à gauche de Ugo, Rania est deuxième."
+      ],
+      "explanation": "Tania est en position 1 et Sami en position 4. Les positions 2 et 3 reviennent à Rania et Ugo. Rania étant immédiatement à gauche de Ugo, Rania est deuxième.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "positions-relative"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0034",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "correspondence",
+      "difficulty": 5,
+      "prompt": "Quatre contenants renferment chacun un élément différent (chat, chien, loutre, lynx). Où se trouve « loutre » ?",
+      "clues": [
+        "Chat est dans la boîte A.",
+        "Chien est dans la boîte D.",
+        "Lynx n’est pas dans la boîte C."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Boîte A"
+        },
+        {
+          "id": "b",
+          "text": "Boîte C"
+        },
+        {
+          "id": "c",
+          "text": "Boîte B"
+        },
+        {
+          "id": "d",
+          "text": "Boîte D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "La boîte A contient chat et la boîte D contient chien.",
+        "Il reste loutre et lynx pour B et C.",
+        "Comme lynx n’est pas dans C, C contient loutre."
+      ],
+      "explanation": "La boîte A contient chat et la boîte D contient chien. Il reste loutre et lynx pour B et C. Comme lynx n’est pas dans C, C contient loutre.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "correspondence"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0035",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "constraints",
+      "difficulty": 5,
+      "prompt": "Un code utilise une seule fois chacun des signes K, M, R. Quel est le code ?",
+      "clues": [
+        "M est placé avant K.",
+        "R est placé après K."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "KMR"
+        },
+        {
+          "id": "b",
+          "text": "KRM"
+        },
+        {
+          "id": "c",
+          "text": "MKR"
+        },
+        {
+          "id": "d",
+          "text": "RMK"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "M doit précéder K.",
+        "R doit suivre K.",
+        "L’ordre unique est donc MKR."
+      ],
+      "explanation": "M doit précéder K. R doit suivre K. L’ordre unique est donc MKR.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "constraints"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0036",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "movement",
+      "difficulty": 5,
+      "prompt": "Une lampe suit le cycle rouge → vert → bleu → rouge. Elle est rouge et reçoit cinq impulsions. Quelle couleur affiche-t-elle ?",
+      "clues": [
+        "Chaque impulsion avance d’une couleur."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Rouge"
+        },
+        {
+          "id": "b",
+          "text": "Vert"
+        },
+        {
+          "id": "c",
+          "text": "Éteinte"
+        },
+        {
+          "id": "d",
+          "text": "Bleu"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "Après trois impulsions, la lampe revient au rouge.",
+        "La quatrième la rend verte.",
+        "La cinquième la rend bleue."
+      ],
+      "explanation": "Après trois impulsions, la lampe revient au rouge. La quatrième la rend verte. La cinquième la rend bleue.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0037",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "truth-lie",
+      "difficulty": 5,
+      "prompt": "Une seule affirmation est vraie et une seule personne possède le ticket doré. Qui le possède ?",
+      "clues": [
+        "Rania : « Sami possède le ticket doré. »",
+        "Sami : « Ugo possède le ticket doré. »",
+        "Tania : « Je ne possède pas le ticket doré. »",
+        "Ugo : « Sami ne possède pas le ticket doré. »"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Tania"
+        },
+        {
+          "id": "b",
+          "text": "Rania"
+        },
+        {
+          "id": "c",
+          "text": "Sami"
+        },
+        {
+          "id": "d",
+          "text": "Ugo"
+        }
+      ],
+      "correctAnswerId": "a",
+      "reasoningSteps": [
+        "Tester les quatre détenteurs possibles.",
+        "Si Tania possède le ticket doré, les trois premières affirmations sont fausses.",
+        "Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies."
+      ],
+      "explanation": "Tester les quatre détenteurs possibles. Si Tania possède le ticket doré, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "truth-lie"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0038",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "reasoned-counting",
+      "difficulty": 5,
+      "prompt": "Des cubes existent en trois couleurs. Combien faut-il en prendre pour garantir quatre cubes de même couleur ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctAnswerId": "b",
+      "reasoningSteps": [
+        "On peut prendre au maximum 3 élément(s) de chacune des 3 catégories sans atteindre le seuil.",
+        "Cela représente 9 éléments.",
+        "Le suivant, soit le 10e, garantit la répétition demandée."
+      ],
+      "explanation": "On peut prendre au maximum 3 élément(s) de chacune des 3 catégories sans atteindre le seuil. Cela représente 9 éléments. Le suivant, soit le 10e, garantit la répétition demandée.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "reasoned-counting"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0039",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "order",
+      "difficulty": 5,
+      "prompt": "Rania arrive avant Sami. Tania arrive après Rania mais avant Sami. Ugo arrive avant Rania. Qui arrive en position troisième ?",
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Rania"
+        },
+        {
+          "id": "b",
+          "text": "Sami"
+        },
+        {
+          "id": "c",
+          "text": "Tania"
+        },
+        {
+          "id": "d",
+          "text": "Ugo"
+        }
+      ],
+      "correctAnswerId": "c",
+      "reasoningSteps": [
+        "Ugo précède Rania.",
+        "Rania précède Tania, qui précède Sami.",
+        "L’ordre est donc Ugo – Rania – Tania – Sami ; la réponse est Tania."
+      ],
+      "explanation": "Ugo précède Rania. Rania précède Tania, qui précède Sami. L’ordre est donc Ugo – Rania – Tania – Sami ; la réponse est Tania.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "order"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "LOG-0040",
+      "type": "logic_puzzle",
+      "category": "logic-puzzles",
+      "subcategory": "verbal-logic",
+      "difficulty": 5,
+      "prompt": "Une réunion doit placer quatre sujets : budget, sécurité, design, lancement. Le budget précède le design, la sécurité suit le design et le lancement est dernier. Quel ordre est possible ?",
+      "clues": [
+        "Transforme chaque contrainte en relation d’ordre."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Design-budget-sécurité-lancement"
+        },
+        {
+          "id": "b",
+          "text": "Budget-sécurité-design-lancement"
+        },
+        {
+          "id": "c",
+          "text": "Sécurité-budget-lancement-design"
+        },
+        {
+          "id": "d",
+          "text": "Budget-design-sécurité-lancement"
+        }
+      ],
+      "correctAnswerId": "d",
+      "reasoningSteps": [
+        "Le lancement doit être quatrième.",
+        "Le budget doit précéder le design.",
+        "La sécurité doit suivre le design : seul le premier ordre convient."
+      ],
+      "explanation": "Le lancement doit être quatrième. Le budget doit précéder le design. La sécurité doit suivre le design : seul le premier ordre convient.",
+      "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "verbal-logic"
+      ],
+      "estimatedTimeSeconds": 90,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

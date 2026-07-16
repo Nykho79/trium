@@ -1,0 +1,2427 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "synapse-symbol-rules-001",
+  "title": "Associations symbole-règle — Lot 1",
+  "category": "synapse",
+  "questionType": "symbol_rule",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "SYM-0001",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 1,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "◆"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "3"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "4"
+          ]
+        },
+        {
+          "input": [
+            "7"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "8"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "11"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "12"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "10"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "13"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "11"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le symbole ajoute 1.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole ajoute 1. Elle donne ici la sortie « 12 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0002",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 1,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "○"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "8"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "6"
+          ]
+        },
+        {
+          "input": [
+            "13"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "11"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "19"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "21"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "17"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "16"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le symbole retire 2.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole retire 2. Elle donne ici la sortie « 17 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0003",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "order-transformation",
+      "difficulty": 1,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "△"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "rouge",
+            "vert"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "vert",
+            "rouge"
+          ]
+        },
+        {
+          "input": [
+            "rouge",
+            "vert",
+            "bleu"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "bleu",
+            "vert",
+            "rouge"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "x1",
+          "y1",
+          "z1"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "x1",
+            "y1",
+            "z1"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "y1",
+            "z1",
+            "x1"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "z1",
+            "y1",
+            "x1"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "z1",
+            "x1",
+            "y1"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le symbole inverse complètement l’ordre des éléments.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse complètement l’ordre des éléments. Elle donne ici la sortie « z1, y1, x1 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "order-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0004",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "rotation",
+      "difficulty": 1,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "□"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "triangle:0°"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "triangle:90°"
+          ]
+        },
+        {
+          "input": [
+            "flèche:45°"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "flèche:135°"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "losange:135°"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "losange:135°"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "losange:315°"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "losange:45°"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "losange:225°"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le symbole effectue une rotation de 90° dans le sens horaire.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole effectue une rotation de 90° dans le sens horaire. Elle donne ici la sortie « losange:225° ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rotation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0005",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "color-transformation",
+      "difficulty": 1,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "✦"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "primary"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "secondary"
+          ]
+        },
+        {
+          "input": [
+            "secondary"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "accent"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "accent"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "primary"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "secondary"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "accent"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "neutral"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le symbole fait avancer la couleur dans le cycle montré par les exemples.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole fait avancer la couleur dans le cycle montré par les exemples. Elle donne ici la sortie « primary ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "color-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0006",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "shape-replacement",
+      "difficulty": 1,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "◇"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "circle"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "square"
+          ]
+        },
+        {
+          "input": [
+            "square"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "triangle"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "triangle"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "square"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "circle"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "triangle"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "diamond"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples. Elle donne ici la sortie « circle ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "shape-replacement"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0007",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "movement",
+      "difficulty": 2,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "⬡"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "gauche"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "centre"
+          ]
+        },
+        {
+          "input": [
+            "centre"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "droite"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "droite"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "centre"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "droite"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "gauche"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "haut"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le symbole déplace l’élément vers la position suivante du cycle montré.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole déplace l’élément vers la position suivante du cycle montré. Elle donne ici la sortie « gauche ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0008",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 2,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "➜"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "6"
+          ]
+        },
+        {
+          "input": [
+            "4"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "12"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "5"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "8"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "10"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "18"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "15"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le symbole multiplie la valeur par 3.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie la valeur par 3. Elle donne ici la sortie « 15 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0009",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "combined-transformation",
+      "difficulty": 2,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "◎"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "5"
+          ]
+        },
+        {
+          "input": [
+            "4"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "9"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "7"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "15"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "14"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "10"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "16"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le symbole multiplie par 2, puis ajoute 1.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie par 2, puis ajoute 1. Elle donne ici la sortie « 15 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "combined-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0010",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "combined-transformation",
+      "difficulty": 2,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "▣"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "A",
+            "B"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "B",
+            "A",
+            "A"
+          ]
+        },
+        {
+          "input": [
+            "1",
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "2",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "rouge",
+          "bleu"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "rouge",
+            "bleu",
+            "bleu"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "bleu",
+            "rouge",
+            "rouge"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "bleu",
+            "rouge"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "rouge",
+            "rouge",
+            "rouge"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le symbole inverse les deux éléments puis répète 1 fois le premier élément d’origine.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse les deux éléments puis répète 1 fois le premier élément d’origine. Elle donne ici la sortie « bleu, rouge, rouge ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "combined-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0011",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 2,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "◈"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "4"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "6"
+          ]
+        },
+        {
+          "input": [
+            "8"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "10"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "12"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "10"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "15"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "14"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "24"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le symbole ajoute 2.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole ajoute 2. Elle donne ici la sortie « 14 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0012",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 2,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "⬢"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "9"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "6"
+          ]
+        },
+        {
+          "input": [
+            "14"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "11"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "20"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "23"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "16"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "3"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "17"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le symbole retire 3.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole retire 3. Elle donne ici la sortie « 17 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0013",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "order-transformation",
+      "difficulty": 3,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "◉"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "lune",
+            "soleil"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "soleil",
+            "lune"
+          ]
+        },
+        {
+          "input": [
+            "lune",
+            "soleil",
+            "étoile"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "étoile",
+            "soleil",
+            "lune"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "x2",
+          "y2",
+          "z2"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "z2",
+            "y2",
+            "x2"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "x2",
+            "y2",
+            "z2"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "y2",
+            "z2",
+            "x2"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "z2",
+            "x2",
+            "y2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le symbole inverse complètement l’ordre des éléments.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse complètement l’ordre des éléments. Elle donne ici la sortie « z2, y2, x2 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "order-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0014",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "rotation",
+      "difficulty": 3,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "▽"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "triangle:0°"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "triangle:180°"
+          ]
+        },
+        {
+          "input": [
+            "flèche:45°"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "flèche:225°"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "losange:90°"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "losange:90°"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "losange:270°"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "losange:180°"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "losange:0°"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le symbole effectue une rotation de 180° dans le sens horaire.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole effectue une rotation de 180° dans le sens horaire. Elle donne ici la sortie « losange:270° ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rotation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0015",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "color-transformation",
+      "difficulty": 3,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "▱"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "secondary"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "accent"
+          ]
+        },
+        {
+          "input": [
+            "accent"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "neutral"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "neutral"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "primary"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "accent"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "secondary"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "neutral"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le symbole fait avancer la couleur dans le cycle montré par les exemples.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole fait avancer la couleur dans le cycle montré par les exemples. Elle donne ici la sortie « secondary ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "color-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0016",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "shape-replacement",
+      "difficulty": 3,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "✧"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "diamond"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "star"
+          ]
+        },
+        {
+          "input": [
+            "star"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "hexagon"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "hexagon"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "circle"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "square"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "triangle"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "diamond"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples. Elle donne ici la sortie « diamond ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "shape-replacement"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0017",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "movement",
+      "difficulty": 3,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "⬟"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "haut"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "centre"
+          ]
+        },
+        {
+          "input": [
+            "centre"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "bas"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "bas"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "haut"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "gauche"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "centre"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "droite"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le symbole déplace l’élément vers la position suivante du cycle montré.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole déplace l’élément vers la position suivante du cycle montré. Elle donne ici la sortie « haut ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0018",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 3,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "➤"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "8"
+          ]
+        },
+        {
+          "input": [
+            "4"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "16"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "5"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "9"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "20"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "15"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "24"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le symbole multiplie la valeur par 4.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie la valeur par 4. Elle donne ici la sortie « 20 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0019",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "combined-transformation",
+      "difficulty": 4,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "◍"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "8"
+          ]
+        },
+        {
+          "input": [
+            "4"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "14"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "7"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "21"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "12"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "23"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "27"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le symbole multiplie par 3, puis ajoute 2.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie par 3, puis ajoute 2. Elle donne ici la sortie « 23 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "combined-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0020",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "combined-transformation",
+      "difficulty": 4,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "▤"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "A",
+            "B"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "B",
+            "A",
+            "A",
+            "A"
+          ]
+        },
+        {
+          "input": [
+            "1",
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "2",
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "rouge",
+          "bleu"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "rouge",
+            "bleu",
+            "bleu",
+            "bleu"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "bleu",
+            "rouge"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "rouge",
+            "rouge",
+            "rouge",
+            "rouge"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "bleu",
+            "rouge",
+            "rouge",
+            "rouge"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le symbole inverse les deux éléments puis répète 2 fois le premier élément d’origine.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse les deux éléments puis répète 2 fois le premier élément d’origine. Elle donne ici la sortie « bleu, rouge, rouge, rouge ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "combined-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0021",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 4,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "❖"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "5"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "8"
+          ]
+        },
+        {
+          "input": [
+            "9"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "12"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "13"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "16"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "10"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "17"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "39"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le symbole ajoute 3.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole ajoute 3. Elle donne ici la sortie « 16 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0022",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 4,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "◌"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "10"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "6"
+          ]
+        },
+        {
+          "input": [
+            "15"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "11"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "21"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "25"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "17"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "16"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "4"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le symbole retire 4.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole retire 4. Elle donne ici la sortie « 17 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0023",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "order-transformation",
+      "difficulty": 4,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "▲"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "A",
+            "B"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "B",
+            "A"
+          ]
+        },
+        {
+          "input": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "D",
+            "C",
+            "B",
+            "A"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "x3",
+          "y3",
+          "z3"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "x3",
+            "y3",
+            "z3"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "y3",
+            "z3",
+            "x3"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "z3",
+            "y3",
+            "x3"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "z3",
+            "x3",
+            "y3"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le symbole inverse complètement l’ordre des éléments.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse complètement l’ordre des éléments. Elle donne ici la sortie « z3, y3, x3 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "order-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0024",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "rotation",
+      "difficulty": 4,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "■"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "triangle:0°"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "triangle:270°"
+          ]
+        },
+        {
+          "input": [
+            "flèche:45°"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "flèche:315°"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "losange:45°"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "losange:45°"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "losange:135°"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "losange:225°"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "losange:315°"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le symbole effectue une rotation de 270° dans le sens horaire.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole effectue une rotation de 270° dans le sens horaire. Elle donne ici la sortie « losange:315° ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rotation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0025",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "color-transformation",
+      "difficulty": 5,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "✶"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "accent"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "neutral"
+          ]
+        },
+        {
+          "input": [
+            "neutral"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "primary"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "primary"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "accent"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "primary"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "secondary"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "neutral"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le symbole fait avancer la couleur dans le cycle montré par les exemples.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole fait avancer la couleur dans le cycle montré par les exemples. Elle donne ici la sortie « accent ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "color-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0026",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "shape-replacement",
+      "difficulty": 5,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "◊"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "triangle"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "diamond"
+          ]
+        },
+        {
+          "input": [
+            "diamond"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "circle"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "circle"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "circle"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "triangle"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "square"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "diamond"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples. Elle donne ici la sortie « triangle ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "shape-replacement"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0027",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "movement",
+      "difficulty": 5,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "⬣"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "nord"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "est"
+          ]
+        },
+        {
+          "input": [
+            "est"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "sud"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "ouest"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "gauche"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "centre"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "nord"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "droite"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le symbole déplace l’élément vers la position suivante du cycle montré.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole déplace l’élément vers la position suivante du cycle montré. Elle donne ici la sortie « nord ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0028",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "numeric-transformation",
+      "difficulty": 5,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "➠"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "10"
+          ]
+        },
+        {
+          "input": [
+            "4"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "20"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "5"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "10"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "20"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "30"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "25"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le symbole multiplie la valeur par 5.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie la valeur par 5. Elle donne ici la sortie « 25 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0029",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "combined-transformation",
+      "difficulty": 5,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "⊙"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "11"
+          ]
+        },
+        {
+          "input": [
+            "4"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "19"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "7"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "31"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "28"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "14"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "40"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le symbole multiplie par 4, puis ajoute 3.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie par 4, puis ajoute 3. Elle donne ici la sortie « 31 ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "combined-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SYM-0030",
+      "type": "symbol_rule",
+      "category": "synapse",
+      "subcategory": "combined-transformation",
+      "difficulty": 5,
+      "prompt": "Applique la règle associée au symbole.",
+      "symbols": [
+        {
+          "id": "symbol-1",
+          "glyph": "▦"
+        }
+      ],
+      "examples": [
+        {
+          "input": [
+            "A",
+            "B"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "B",
+            "A",
+            "A",
+            "A",
+            "A"
+          ]
+        },
+        {
+          "input": [
+            "1",
+            "2"
+          ],
+          "operatorSymbolId": "symbol-1",
+          "output": [
+            "2",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "challenge": {
+        "input": [
+          "rouge",
+          "bleu"
+        ],
+        "operatorSymbolId": "symbol-1"
+      },
+      "answers": [
+        {
+          "id": "a",
+          "output": [
+            "rouge",
+            "bleu",
+            "bleu",
+            "bleu",
+            "bleu"
+          ]
+        },
+        {
+          "id": "b",
+          "output": [
+            "bleu",
+            "rouge",
+            "rouge",
+            "rouge",
+            "rouge"
+          ]
+        },
+        {
+          "id": "c",
+          "output": [
+            "bleu",
+            "rouge"
+          ]
+        },
+        {
+          "id": "d",
+          "output": [
+            "rouge",
+            "rouge",
+            "rouge",
+            "rouge",
+            "rouge"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le symbole inverse les deux éléments puis répète 3 fois le premier élément d’origine.",
+      "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse les deux éléments puis répète 3 fois le premier élément d’origine. Elle donne ici la sortie « bleu, rouge, rouge, rouge, rouge ».",
+      "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "combined-transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

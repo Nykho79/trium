@@ -8,13 +8,16 @@ export const playerSchema = z.object({
   ready: z.boolean(),
 });
 
-export const playersSchema = z.tuple([playerSchema, playerSchema, playerSchema]).superRefine((players, ctx) => {
+export const playersSchema = z.union([
+  z.tuple([playerSchema]),
+  z.tuple([playerSchema, playerSchema, playerSchema]),
+]).superRefine((players, ctx) => {
   const ids = new Set(players.map((player) => player.id));
-  if (ids.size !== 3) {
+  if (ids.size !== players.length) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
       path: ["id"],
-      message: "Une partie TRIUM doit contenir exactement trois joueurs distincts.",
+      message: "Les joueurs d'une partie TRIUM doivent etre distincts.",
     });
   }
 });

@@ -47,23 +47,23 @@ describe("localQuestionBank", () => {
     const bank = loadLocalQuestionBank();
 
     expect(bank.report.fileCount).toBeGreaterThan(0);
-    expect(bank.report.totalCount).toBeGreaterThanOrEqual(350);
-    expect(bank.report.verifiedCount).toBe(0);
-    expect(bank.report.playableCount).toBe(0);
-    expect(bank.report.rejectedCount).toBe(bank.report.totalCount);
+    expect(bank.report.totalCount).toBeGreaterThanOrEqual(1_000);
+    expect(bank.report.verifiedCount).toBe(bank.report.totalCount);
+    expect(bank.report.playableCount).toBe(bank.report.totalCount);
+    expect(bank.report.rejectedCount).toBe(0);
     expect(bank.report.byCategory.geography).toBeGreaterThan(0);
   });
 
-  it("normalise uniquement les questions verified et approved", () => {
+  it("normalise les questions structurellement valides et exclut les rejets explicites", () => {
     const bank = compileQuestionBankFromSources([sourceWithQuestions([
       approvedQuestion,
-      { ...approvedQuestion, id: "TEST-002", verificationStatus: "to_verify", status: "generated" },
+      { ...approvedQuestion, id: "TEST-002", verificationStatus: "rejected", status: "rejected" },
     ])]);
 
     expect(bank.report.totalCount).toBe(2);
     expect(bank.report.playableCount).toBe(1);
     expect(bank.playableQuestions[0]?.id).toBe("TEST-001");
-    expect(bank.playableQuestions[0]?.kind).toBe("pressure-choice");
+    expect(bank.playableQuestions[0]?.kind).toBe("knowledge-grid");
   });
 
   it("detecte les doublons exacts et probables", () => {

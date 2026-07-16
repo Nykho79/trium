@@ -33,6 +33,8 @@ import type {
   GameState,
   JokerType,
   Player,
+  PlayerMode,
+  PlayerRoster,
   Question,
   RoundDefinition,
 } from "../../core/types";
@@ -45,11 +47,17 @@ import {
   saveRecentQuestionIds,
 } from "./persistence";
 
-export const DEFAULT_PLAYERS: [Player, Player, Player] = [
+export const DEFAULT_TRIO_PLAYERS: [Player, Player, Player] = [
   { id: "player-1", name: "Joueur 1", color: "amber", ready: true },
   { id: "player-2", name: "Joueur 2", color: "cyan", ready: true },
   { id: "player-3", name: "Joueur 3", color: "magenta", ready: true },
 ];
+
+export const DEFAULT_SOLO_PLAYERS: [Player] = [
+  { id: "player-1", name: "Joueur solo", color: "cyan", ready: true },
+];
+
+const DEFAULT_PLAYERS: PlayerRoster = DEFAULT_TRIO_PLAYERS;
 
 const DEFAULT_ROUNDS: RoundDefinition[] = [
   {
@@ -148,7 +156,8 @@ interface GameStoreState {
   recentQuestionIds: string[];
   saveVersion: number;
   navigate: (screen: AppScreen) => void;
-  updatePlayerName: (playerIndex: 0 | 1 | 2, name: string) => void;
+  setPlayerMode: (mode: PlayerMode) => void;
+  updatePlayerName: (playerIndex: number, name: string) => void;
   selectAnswer: (answerId: string) => void;
   revealAnswer: () => void;
   resetDemo: () => void;
@@ -179,11 +188,12 @@ interface GameStoreState {
   setEngineState: (gameState: GameState) => void;
 }
 
-function createDefaultConfig(players: [Player, Player, Player], seed = `trium-${Date.now()}`): GameConfig {
+function createDefaultConfig(players: PlayerRoster, seed = `trium-${Date.now()}`): GameConfig {
   return {
     id: "trium-standard-local",
     mode: "standard",
     seed,
+    playerMode: players.length === 1 ? "solo" : "trio",
     players,
     rounds: DEFAULT_ROUNDS,
     questionBankVersion: 1,
@@ -299,10 +309,24 @@ export const useGameStore = create<GameStoreState>()((set) => ({
     const patch = persistencePatch({ gameState: state.gameState, screen, selectedAnswerId: state.selectedAnswerId });
     return { previousScreen: state.screen, screen, ...patch };
   }),
+  setPlayerMode: (mode) => set((state) => {
+    const players: PlayerRoster = mode === "solo" ? DEFAULT_SOLO_PLAYERS : DEFAULT_TRIO_PLAYERS;
+    const config = state.gameState ? { ...state.gameState.config, playerMode: mode, players } : undefined;
+    const gameState = state.gameState && config ? { ...state.gameState, config, captainPlayerId: players[0].id } : state.gameState;
+    const session = { ...state.session, players };
+    const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+    return { session, gameState, ...patch };
+  }),
   updatePlayerName: (playerIndex, name) => set((state) => {
-    const players = [...state.session.players] as [Player, Player, Player];
-    players[playerIndex] = { ...players[playerIndex], name: name.slice(0, 14) };
-    const config = state.gameState ? { ...state.gameState.config, players } : undefined;
+    const current = state.session.players[playerIndex];
+    if (!current) {
+      return {};
+    }
+    const players = state.session.players.map((player, index) => (
+      index === playerIndex ? { ...player, name: name.slice(0, 14) } : player
+    )) as PlayerRoster;
+    const playerMode: PlayerMode = players.length === 1 ? "solo" : "trio";
+    const config = state.gameState ? { ...state.gameState.config, playerMode, players } : undefined;
     const gameState = state.gameState && config ? { ...state.gameState, config } : state.gameState;
     const session = { ...state.session, players };
     const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });

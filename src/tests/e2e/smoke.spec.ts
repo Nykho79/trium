@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 async function openKnowledgeGrid(page: import("@playwright/test").Page) {
   await page.goto("/");
   await page.getByTestId("start-button").click();
-  await page.getByRole("button", { name: "Choisir le mode" }).click();
+  await page.getByRole("button", { name: "Choisir le format" }).click();
   await page.getByRole("button", { name: "Choisir le mode classique" }).click();
   await page.getByRole("button", { name: /Entrer dans la premi.re manche/ }).click();
   await page.getByRole("button", { name: /Afficher la grille/ }).click();
@@ -74,7 +74,7 @@ async function openClueRace(page: import("@playwright/test").Page) {
           id: "e2e-clue-race",
           mode: "standard",
           seed: "e2e-clue-seed",
-          players,
+          playerMode: "trio", players,
           rounds,
           questionBankVersion: 1,
           allowRecentlyPlayedFallback: true,
@@ -162,7 +162,7 @@ async function openPressureChoice(page: import("@playwright/test").Page) {
           id: "e2e-pressure-choice",
           mode: "standard",
           seed: "e2e-pressure-seed",
-          players,
+          playerMode: "trio", players,
           rounds,
           questionBankVersion: 1,
           allowRecentlyPlayedFallback: true,
@@ -241,7 +241,7 @@ async function openSynapse(page: import("@playwright/test").Page) {
           id: "e2e-synapse",
           mode: "standard",
           seed: "e2e-synapse-seed",
-          players,
+          playerMode: "trio", players,
           rounds,
           questionBankVersion: 1,
           allowRecentlyPlayedFallback: true,
@@ -316,7 +316,7 @@ async function openConnections(page: import("@playwright/test").Page) {
           id: "e2e-connections",
           mode: "standard",
           seed: "e2e-connections-seed",
-          players,
+          playerMode: "trio", players,
           rounds,
           questionBankVersion: 1,
           allowRecentlyPlayedFallback: true,
@@ -405,7 +405,7 @@ async function openWager(page: import("@playwright/test").Page) {
           id: "e2e-wager",
           mode: "standard",
           seed: "e2e-wager-seed",
-          players,
+          playerMode: "trio", players,
           rounds,
           questionBankVersion: 1,
           allowRecentlyPlayedFallback: true,
@@ -491,7 +491,7 @@ async function openFinalConvergence(page: import("@playwright/test").Page) {
       screen: "game",
       gameState: {
         status: "round_intro",
-        config: { id: "e2e-final", mode: "standard", seed: "e2e-final-seed", players, rounds, questionBankVersion: 1, allowRecentlyPlayedFallback: true, defaultQuestionTimeMs: 30000 },
+        config: { id: "e2e-final", mode: "standard", seed: "e2e-final-seed", playerMode: "trio", players, rounds, questionBankVersion: 1, allowRecentlyPlayedFallback: true, defaultQuestionTimeMs: 30000 },
         currentRoundIndex: 6,
         currentRoundState: { id: "round-state-7", definitionId: "final-convergence", status: "active", currentQuestionIndex: 0, selectedQuestionIds: [], answeredQuestionIds: [], answerResults: [], score: roundScore, finalPurchasedAdvantageIds: [], finalUsedAdvantageIds: [] },
         captainPlayerId: "player-1",

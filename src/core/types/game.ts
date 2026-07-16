@@ -1,4 +1,4 @@
-import type { Player } from "./player";
+import type { Player, PlayerMode, PlayerRoster } from "./player";
 import type { RoundDefinition, RoundState } from "./round";
 import type { AnswerResult, JokerEffectState, JokerState, ScoreBreakdown } from "./scoring";
 import type { GameEvent } from "./event";
@@ -45,7 +45,8 @@ export interface GameConfig {
   id: string;
   mode: GameMode;
   seed: GameSeed;
-  players: [Player, Player, Player];
+  playerMode: PlayerMode;
+  players: PlayerRoster;
   rounds: RoundDefinition[];
   questionBankVersion: number;
   allowRecentlyPlayedFallback: boolean;

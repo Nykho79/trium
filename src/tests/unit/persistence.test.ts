@@ -32,7 +32,7 @@ const config: GameConfig = {
   id: "config-store-test",
   mode: "standard",
   seed: "seed-store-test",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,

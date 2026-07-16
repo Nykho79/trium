@@ -32,7 +32,7 @@ const config: GameConfig = {
   id: "connections-config",
   mode: "standard",
   seed: "connections-seed",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,
@@ -59,7 +59,7 @@ describe("connections round", () => {
     expect(visibleConnectionItems(question, 3)).toHaveLength(4);
   });
 
-  it("applique le barème selon le nombre d'elements affiches", () => {
+  it("applique le barÃ¨me selon le nombre d'elements affiches", () => {
     expect(pointsForConnectionItemIndex(0)).toBe(500);
     expect(pointsForConnectionItemIndex(1)).toBe(400);
     expect(pointsForConnectionItemIndex(2)).toBe(250);

@@ -80,7 +80,7 @@ describe("pressure-choice round", () => {
       riskPoints: 0,
     };
 
-    expect(isPressureChoiceComplete(failedState, { id: "cfg", mode: "standard", seed: "s", players: [
+    expect(isPressureChoiceComplete(failedState, { id: "cfg", mode: "standard", seed: "s", playerMode: "trio", players: [
       { id: "player-1", name: "A", color: "cyan", ready: true },
       { id: "player-2", name: "B", color: "amber", ready: true },
       { id: "player-3", name: "C", color: "magenta", ready: true },

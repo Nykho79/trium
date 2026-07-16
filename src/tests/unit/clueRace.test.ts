@@ -32,7 +32,7 @@ const config: GameConfig = {
   id: "clue-config",
   mode: "standard",
   seed: "clue-seed",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,

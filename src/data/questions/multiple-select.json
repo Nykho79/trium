@@ -1,0 +1,1690 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "multiple-select-001",
+  "title": "Deux bonnes réponses — Lot 1",
+  "category": "multiple-select",
+  "questionType": "multiple_select",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "MUL-0001",
+      "type": "multiple_select",
+      "category": "geography",
+      "subcategory": "countries",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux pays se trouvent en Amérique du Sud ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pérou"
+        },
+        {
+          "id": "b",
+          "text": "Espagne"
+        },
+        {
+          "id": "c",
+          "text": "Chili"
+        },
+        {
+          "id": "d",
+          "text": "Maroc"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Pérou » et « Chili ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "countries"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0002",
+      "type": "multiple_select",
+      "category": "science-nature",
+      "subcategory": "astronomy",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux planètes sont des géantes gazeuses ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Jupiter"
+        },
+        {
+          "id": "b",
+          "text": "Mars"
+        },
+        {
+          "id": "c",
+          "text": "Saturne"
+        },
+        {
+          "id": "d",
+          "text": "Mercure"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Jupiter » et « Saturne ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "astronomy"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0003",
+      "type": "multiple_select",
+      "category": "history",
+      "subcategory": "antiquity",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux civilisations se sont développées en Mésoamérique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mayas"
+        },
+        {
+          "id": "b",
+          "text": "Romains"
+        },
+        {
+          "id": "c",
+          "text": "Aztèques"
+        },
+        {
+          "id": "d",
+          "text": "Vikings"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Mayas » et « Aztèques ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "antiquity"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0004",
+      "type": "multiple_select",
+      "category": "arts-literature",
+      "subcategory": "authors",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux auteurs ont écrit en français ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Victor Hugo"
+        },
+        {
+          "id": "b",
+          "text": "William Shakespeare"
+        },
+        {
+          "id": "c",
+          "text": "Émile Zola"
+        },
+        {
+          "id": "d",
+          "text": "Miguel de Cervantès"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Victor Hugo » et « Émile Zola ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "authors"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0005",
+      "type": "multiple_select",
+      "category": "music",
+      "subcategory": "instruments",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux instruments appartiennent aux cordes frottées ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Violon"
+        },
+        {
+          "id": "b",
+          "text": "Flûte"
+        },
+        {
+          "id": "c",
+          "text": "Violoncelle"
+        },
+        {
+          "id": "d",
+          "text": "Trompette"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Violon » et « Violoncelle ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "instruments"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0006",
+      "type": "multiple_select",
+      "category": "sports",
+      "subcategory": "ball-sports",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux sports se jouent avec un ballon principalement au pied ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Football"
+        },
+        {
+          "id": "b",
+          "text": "Basket-ball"
+        },
+        {
+          "id": "c",
+          "text": "Futsal"
+        },
+        {
+          "id": "d",
+          "text": "Volley-ball"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Football » et « Futsal ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ball-sports"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0007",
+      "type": "multiple_select",
+      "category": "technology",
+      "subcategory": "web",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux éléments sont des langages du Web côté navigateur ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "HTML"
+        },
+        {
+          "id": "b",
+          "text": "SQL uniquement"
+        },
+        {
+          "id": "c",
+          "text": "JavaScript"
+        },
+        {
+          "id": "d",
+          "text": "Bash"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « HTML » et « JavaScript ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "W3C",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "web"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0008",
+      "type": "multiple_select",
+      "category": "french-language",
+      "subcategory": "grammar",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux mots sont des verbes à l’infinitif ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Courir"
+        },
+        {
+          "id": "b",
+          "text": "Rapide"
+        },
+        {
+          "id": "c",
+          "text": "Écrire"
+        },
+        {
+          "id": "d",
+          "text": "Maison"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Courir » et « Écrire ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0009",
+      "type": "multiple_select",
+      "category": "gastronomy",
+      "subcategory": "ingredients",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux ingrédients sont des légumineuses ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pois chiche"
+        },
+        {
+          "id": "b",
+          "text": "Riz"
+        },
+        {
+          "id": "c",
+          "text": "Lentille"
+        },
+        {
+          "id": "d",
+          "text": "Blé"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Pois chiche » et « Lentille ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Larousse Gastronomique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ingredients"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0010",
+      "type": "multiple_select",
+      "category": "mythologies",
+      "subcategory": "greek",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux personnages appartiennent à la mythologie grecque ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Athéna"
+        },
+        {
+          "id": "b",
+          "text": "Thor"
+        },
+        {
+          "id": "c",
+          "text": "Hermès"
+        },
+        {
+          "id": "d",
+          "text": "Odin"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Athéna » et « Hermès ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "greek"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0011",
+      "type": "multiple_select",
+      "category": "popular-culture",
+      "subcategory": "comics",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux personnages viennent de bandes dessinées franco-belges ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Tintin"
+        },
+        {
+          "id": "b",
+          "text": "Batman"
+        },
+        {
+          "id": "c",
+          "text": "Astérix"
+        },
+        {
+          "id": "d",
+          "text": "Spider-Man"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Tintin » et « Astérix ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Bibliothèque nationale de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "comics"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0012",
+      "type": "multiple_select",
+      "category": "world-cultures",
+      "subcategory": "arts",
+      "difficulty": 2,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux pratiques sont japonaises ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Origami"
+        },
+        {
+          "id": "b",
+          "text": "Flamenco"
+        },
+        {
+          "id": "c",
+          "text": "Ikebana"
+        },
+        {
+          "id": "d",
+          "text": "Tango"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Origami » et « Ikebana ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "arts"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0013",
+      "type": "multiple_select",
+      "category": "society-institutions",
+      "subcategory": "france",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux institutions composent le Parlement français ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Assemblée nationale"
+        },
+        {
+          "id": "b",
+          "text": "Conseil constitutionnel"
+        },
+        {
+          "id": "c",
+          "text": "Sénat"
+        },
+        {
+          "id": "d",
+          "text": "Conseil d’État"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Assemblée nationale » et « Sénat ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "france"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0014",
+      "type": "multiple_select",
+      "category": "cinema-series",
+      "subcategory": "directors",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux réalisateurs ont signé des films de science-fiction majeurs ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ridley Scott"
+        },
+        {
+          "id": "b",
+          "text": "Molière"
+        },
+        {
+          "id": "c",
+          "text": "James Cameron"
+        },
+        {
+          "id": "d",
+          "text": "Mozart"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Ridley Scott » et « James Cameron ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "directors"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0015",
+      "type": "multiple_select",
+      "category": "science-nature",
+      "subcategory": "biology",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux organites possèdent leur propre ADN chez les eucaryotes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mitochondrie"
+        },
+        {
+          "id": "b",
+          "text": "Lysosome"
+        },
+        {
+          "id": "c",
+          "text": "Chloroplaste"
+        },
+        {
+          "id": "d",
+          "text": "Appareil de Golgi"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Mitochondrie » et « Chloroplaste ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "biology"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0016",
+      "type": "multiple_select",
+      "category": "geography",
+      "subcategory": "rivers",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux fleuves se jettent dans la mer Noire ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Danube"
+        },
+        {
+          "id": "b",
+          "text": "Loire"
+        },
+        {
+          "id": "c",
+          "text": "Dniepr"
+        },
+        {
+          "id": "d",
+          "text": "Tage"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Danube » et « Dniepr ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rivers"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0017",
+      "type": "multiple_select",
+      "category": "history",
+      "subcategory": "modern-era",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux événements appartiennent au XVIe siècle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Réforme de Luther"
+        },
+        {
+          "id": "b",
+          "text": "Révolution française"
+        },
+        {
+          "id": "c",
+          "text": "Concile de Trente"
+        },
+        {
+          "id": "d",
+          "text": "Chute du mur de Berlin"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Réforme de Luther » et « Concile de Trente ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "modern-era"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0018",
+      "type": "multiple_select",
+      "category": "arts-literature",
+      "subcategory": "movements",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux artistes sont liés au cubisme ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pablo Picasso"
+        },
+        {
+          "id": "b",
+          "text": "Claude Monet"
+        },
+        {
+          "id": "c",
+          "text": "Georges Braque"
+        },
+        {
+          "id": "d",
+          "text": "Gustav Klimt"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Pablo Picasso » et « Georges Braque ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movements"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0019",
+      "type": "multiple_select",
+      "category": "music",
+      "subcategory": "theory",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux termes concernent l’intensité sonore ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Crescendo"
+        },
+        {
+          "id": "b",
+          "text": "Tonalité"
+        },
+        {
+          "id": "c",
+          "text": "Decrescendo"
+        },
+        {
+          "id": "d",
+          "text": "Mesure"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Crescendo » et « Decrescendo ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "theory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0020",
+      "type": "multiple_select",
+      "category": "sports",
+      "subcategory": "olympics",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux sports figurent aux Jeux olympiques d’été ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Escrime"
+        },
+        {
+          "id": "b",
+          "text": "Skeleton"
+        },
+        {
+          "id": "c",
+          "text": "Aviron"
+        },
+        {
+          "id": "d",
+          "text": "Saut à ski"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Escrime » et « Aviron ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "olympics"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0021",
+      "type": "multiple_select",
+      "category": "technology",
+      "subcategory": "networks",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux protocoles servent à transférer ou consulter des ressources en réseau ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "HTTP"
+        },
+        {
+          "id": "b",
+          "text": "JPEG"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "PNG"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « HTTP » et « FTP ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "W3C",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "networks"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0022",
+      "type": "multiple_select",
+      "category": "french-language",
+      "subcategory": "figures",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux expressions sont des figures de style ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Métaphore"
+        },
+        {
+          "id": "b",
+          "text": "Adjectif"
+        },
+        {
+          "id": "c",
+          "text": "Anaphore"
+        },
+        {
+          "id": "d",
+          "text": "Préposition"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Métaphore » et « Anaphore ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "figures"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0023",
+      "type": "multiple_select",
+      "category": "gastronomy",
+      "subcategory": "techniques",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux techniques utilisent une forte chaleur pour colorer rapidement ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Saisir"
+        },
+        {
+          "id": "b",
+          "text": "Pocher"
+        },
+        {
+          "id": "c",
+          "text": "Griller"
+        },
+        {
+          "id": "d",
+          "text": "Confire"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Saisir » et « Griller ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Larousse Gastronomique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "techniques"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0024",
+      "type": "multiple_select",
+      "category": "mythologies",
+      "subcategory": "norse",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux éléments appartiennent à la mythologie nordique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Yggdrasil"
+        },
+        {
+          "id": "b",
+          "text": "Olympe"
+        },
+        {
+          "id": "c",
+          "text": "Mjöllnir"
+        },
+        {
+          "id": "d",
+          "text": "Minotaure"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Yggdrasil » et « Mjöllnir ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "norse"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0025",
+      "type": "multiple_select",
+      "category": "popular-culture",
+      "subcategory": "video-games",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux personnages appartiennent à Nintendo ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mario"
+        },
+        {
+          "id": "b",
+          "text": "Sonic"
+        },
+        {
+          "id": "c",
+          "text": "Link"
+        },
+        {
+          "id": "d",
+          "text": "Lara Croft"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Mario » et « Link ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Bibliothèque nationale de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "video-games"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0026",
+      "type": "multiple_select",
+      "category": "world-cultures",
+      "subcategory": "festivals",
+      "difficulty": 3,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux célébrations sont fortement associées à l’Inde ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Diwali"
+        },
+        {
+          "id": "b",
+          "text": "Oktoberfest"
+        },
+        {
+          "id": "c",
+          "text": "Holi"
+        },
+        {
+          "id": "d",
+          "text": "Hanami"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Diwali » et « Holi ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "festivals"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0027",
+      "type": "multiple_select",
+      "category": "science-nature",
+      "subcategory": "chemistry",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux éléments sont des gaz nobles ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Hélium"
+        },
+        {
+          "id": "b",
+          "text": "Oxygène"
+        },
+        {
+          "id": "c",
+          "text": "Néon"
+        },
+        {
+          "id": "d",
+          "text": "Hydrogène"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Hélium » et « Néon ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "chemistry"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0028",
+      "type": "multiple_select",
+      "category": "geography",
+      "subcategory": "islands",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux îles appartiennent à l’archipel japonais principal ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Honshū"
+        },
+        {
+          "id": "b",
+          "text": "Sicile"
+        },
+        {
+          "id": "c",
+          "text": "Hokkaidō"
+        },
+        {
+          "id": "d",
+          "text": "Crète"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Honshū » et « Hokkaidō ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "islands"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0029",
+      "type": "multiple_select",
+      "category": "history",
+      "subcategory": "documents",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux textes ont limité ou encadré le pouvoir politique en Angleterre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Magna Carta"
+        },
+        {
+          "id": "b",
+          "text": "Code d’Hammurabi"
+        },
+        {
+          "id": "c",
+          "text": "Bill of Rights de 1689"
+        },
+        {
+          "id": "d",
+          "text": "Édit de Nantes"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Magna Carta » et « Bill of Rights de 1689 ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "documents"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0030",
+      "type": "multiple_select",
+      "category": "arts-literature",
+      "subcategory": "works",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux œuvres sont de Shakespeare ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Hamlet"
+        },
+        {
+          "id": "b",
+          "text": "Germinal"
+        },
+        {
+          "id": "c",
+          "text": "Macbeth"
+        },
+        {
+          "id": "d",
+          "text": "Madame Bovary"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Hamlet » et « Macbeth ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "works"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0031",
+      "type": "multiple_select",
+      "category": "music",
+      "subcategory": "jazz",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux musiciens sont des saxophonistes de jazz ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "John Coltrane"
+        },
+        {
+          "id": "b",
+          "text": "Louis Armstrong"
+        },
+        {
+          "id": "c",
+          "text": "Charlie Parker"
+        },
+        {
+          "id": "d",
+          "text": "Duke Ellington"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « John Coltrane » et « Charlie Parker ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "jazz"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0032",
+      "type": "multiple_select",
+      "category": "society-institutions",
+      "subcategory": "eu",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux institutions participent directement à l’adoption ordinaire des lois de l’Union ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Parlement européen"
+        },
+        {
+          "id": "b",
+          "text": "Conseil européen uniquement"
+        },
+        {
+          "id": "c",
+          "text": "Conseil de l’Union européenne"
+        },
+        {
+          "id": "d",
+          "text": "Banque centrale européenne"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Parlement européen » et « Conseil de l’Union européenne ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "eu"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0033",
+      "type": "multiple_select",
+      "category": "sports",
+      "subcategory": "combined",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux sports combinent plusieurs disciplines distinctes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Décathlon"
+        },
+        {
+          "id": "b",
+          "text": "Football"
+        },
+        {
+          "id": "c",
+          "text": "Biathlon"
+        },
+        {
+          "id": "d",
+          "text": "Tennis"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Décathlon » et « Biathlon ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "combined"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0034",
+      "type": "multiple_select",
+      "category": "technology",
+      "subcategory": "programming",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux langages sont compilés couramment en code machine ou intermédiaire avant exécution ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "C"
+        },
+        {
+          "id": "b",
+          "text": "HTML"
+        },
+        {
+          "id": "c",
+          "text": "Rust"
+        },
+        {
+          "id": "d",
+          "text": "CSS"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « C » et « Rust ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "W3C",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "programming"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0035",
+      "type": "multiple_select",
+      "category": "french-language",
+      "subcategory": "etymology",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux mots français viennent de l’arabe ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Algèbre"
+        },
+        {
+          "id": "b",
+          "text": "Robot"
+        },
+        {
+          "id": "c",
+          "text": "Zéro"
+        },
+        {
+          "id": "d",
+          "text": "Kimono"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Algèbre » et « Zéro ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "etymology"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0036",
+      "type": "multiple_select",
+      "category": "gastronomy",
+      "subcategory": "fermentation",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux aliments sont obtenus par fermentation ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Miso"
+        },
+        {
+          "id": "b",
+          "text": "Caramel"
+        },
+        {
+          "id": "c",
+          "text": "Yaourt"
+        },
+        {
+          "id": "d",
+          "text": "Sucre glace"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Miso » et « Yaourt ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Larousse Gastronomique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fermentation"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0037",
+      "type": "multiple_select",
+      "category": "mythologies",
+      "subcategory": "egyptian",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux dieux appartiennent au panthéon égyptien ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Anubis"
+        },
+        {
+          "id": "b",
+          "text": "Apollon"
+        },
+        {
+          "id": "c",
+          "text": "Horus"
+        },
+        {
+          "id": "d",
+          "text": "Odin"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Anubis » et « Horus ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "egyptian"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0038",
+      "type": "multiple_select",
+      "category": "popular-culture",
+      "subcategory": "franchises",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux franchises mettent en scène des combats au sabre ou à l’épée d’énergie/fantastique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Star Wars"
+        },
+        {
+          "id": "b",
+          "text": "Les Sims"
+        },
+        {
+          "id": "c",
+          "text": "The Legend of Zelda"
+        },
+        {
+          "id": "d",
+          "text": "Tetris"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Star Wars » et « The Legend of Zelda ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "Bibliothèque nationale de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "franchises"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0039",
+      "type": "multiple_select",
+      "category": "world-cultures",
+      "subcategory": "writing",
+      "difficulty": 4,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quels deux systèmes d’écriture ont été conçus ou standardisés pour faciliter l’alphabétisation nationale ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Hangeul"
+        },
+        {
+          "id": "b",
+          "text": "Hiéroglyphes égyptiens"
+        },
+        {
+          "id": "c",
+          "text": "Alphabet turc latin réformé"
+        },
+        {
+          "id": "d",
+          "text": "Cunéiforme"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Hangeul » et « Alphabet turc latin réformé ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "writing"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUL-0040",
+      "type": "multiple_select",
+      "category": "science-nature",
+      "subcategory": "physics",
+      "difficulty": 5,
+      "prompt": "Sélectionnez exactement deux réponses.",
+      "question": "Quelles deux grandeurs sont vectorielles en mécanique classique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Force"
+        },
+        {
+          "id": "b",
+          "text": "Température"
+        },
+        {
+          "id": "c",
+          "text": "Vitesse"
+        },
+        {
+          "id": "d",
+          "text": "Énergie"
+        }
+      ],
+      "correctAnswerIds": [
+        "a",
+        "c"
+      ],
+      "contextualHint": "Cherche deux éléments répondant exactement au même critère.",
+      "explanation": "Les réponses correctes sont « Force » et « Vitesse ». Les deux autres ne satisfont pas le critère demandé.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "physics"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

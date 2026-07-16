@@ -28,7 +28,7 @@ const config: GameConfig = {
   id: "grid-test",
   mode: "standard",
   seed: "grid-seed",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,

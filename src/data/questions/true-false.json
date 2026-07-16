@@ -1,0 +1,1210 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "true-false-001",
+  "title": "Vrai ou faux — Lot 1",
+  "category": "true-false",
+  "questionType": "true_false",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "VOF-0001",
+      "type": "true_false",
+      "category": "history",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "La lumière voyage plus vite que le son.",
+      "correctAnswer": true,
+      "contextualHint": "Compare les vitesses de propagation.",
+      "explanation": "Dans l’air, la lumière se propage immensément plus vite que les ondes sonores.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0002",
+      "type": "true_false",
+      "category": "geography",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Le cœur humain possède quatre cavités.",
+      "correctAnswer": true,
+      "contextualHint": "Pense aux oreillettes et aux ventricules.",
+      "explanation": "Deux oreillettes et deux ventricules composent le cœur humain.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0003",
+      "type": "true_false",
+      "category": "science-nature",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "Vénus est la planète la plus proche du Soleil.",
+      "correctAnswer": false,
+      "contextualHint": "Revois l’ordre des planètes internes.",
+      "explanation": "Mercure est la planète la plus proche du Soleil ; Vénus vient ensuite.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0004",
+      "type": "true_false",
+      "category": "arts-literature",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "Les chauves-souris sont des oiseaux.",
+      "correctAnswer": false,
+      "contextualHint": "Observe leur reproduction et leur pelage.",
+      "explanation": "Les chauves-souris sont des mammifères capables de vol actif.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0005",
+      "type": "true_false",
+      "category": "cinema-series",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Le Danube se jette dans la mer Noire.",
+      "correctAnswer": true,
+      "contextualHint": "Suis le fleuve vers l’est.",
+      "explanation": "Le delta du Danube se situe principalement en Roumanie et en Ukraine.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0006",
+      "type": "true_false",
+      "category": "music",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "Le mont Fuji se trouve en Chine.",
+      "correctAnswer": false,
+      "contextualHint": "Pense à un symbole japonais.",
+      "explanation": "Le mont Fuji se situe au Japon, sur l’île de Honshū.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0007",
+      "type": "true_false",
+      "category": "society-institutions",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "La Magna Carta date du Moyen Âge.",
+      "correctAnswer": true,
+      "contextualHint": "Situe le règne de Jean sans Terre.",
+      "explanation": "Elle fut scellée en Angleterre en 1215.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0008",
+      "type": "true_false",
+      "category": "sports",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "La Révolution française commence conventionnellement en 1789.",
+      "correctAnswer": true,
+      "contextualHint": "Associe l’événement au 14 juillet.",
+      "explanation": "1789 marque notamment la réunion des États généraux et la prise de la Bastille.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0009",
+      "type": "true_false",
+      "category": "technology",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "Shakespeare a écrit Les Misérables.",
+      "correctAnswer": false,
+      "contextualHint": "Distingue théâtre anglais et roman français.",
+      "explanation": "Les Misérables est un roman de Victor Hugo.",
+      "sourceLabel": "W3C",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0010",
+      "type": "true_false",
+      "category": "french-language",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Le cubisme est associé à Picasso et Braque.",
+      "correctAnswer": true,
+      "contextualHint": "Pense à la décomposition géométrique.",
+      "explanation": "Les deux artistes ont développé le cubisme au début du XXe siècle.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0011",
+      "type": "true_false",
+      "category": "gastronomy",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "Un octave musicale contient toujours exactement huit demi-tons.",
+      "correctAnswer": false,
+      "contextualHint": "Compte les touches entre deux notes identiques.",
+      "explanation": "Dans le système occidental chromatique, une octave comprend douze demi-tons.",
+      "sourceLabel": "Larousse Gastronomique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0012",
+      "type": "true_false",
+      "category": "mythologies",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Le violoncelle se joue habituellement avec un archet.",
+      "correctAnswer": true,
+      "contextualHint": "Regarde la famille instrumentale.",
+      "explanation": "Le violoncelle appartient aux cordes frottées, même s’il peut aussi être pincé.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0013",
+      "type": "true_false",
+      "category": "popular-culture",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "HTTPS chiffre généralement la communication web.",
+      "correctAnswer": true,
+      "contextualHint": "Cherche le rôle du cadenas du navigateur.",
+      "explanation": "HTTPS utilise TLS pour protéger les échanges entre client et serveur.",
+      "sourceLabel": "Bibliothèque nationale de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0014",
+      "type": "true_false",
+      "category": "world-cultures",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "La RAM conserve normalement ses données après extinction.",
+      "correctAnswer": false,
+      "contextualHint": "Distingue mémoire vive et stockage.",
+      "explanation": "La RAM est une mémoire volatile qui perd son contenu sans alimentation.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0015",
+      "type": "true_false",
+      "category": "history",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Un référendum permet un vote direct sur une question.",
+      "correctAnswer": true,
+      "contextualHint": "Oppose démocratie directe et représentation.",
+      "explanation": "Les citoyens répondent directement à une question ou à un texte soumis au vote.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0016",
+      "type": "true_false",
+      "category": "geography",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "L’ONU a son siège principal à Genève.",
+      "correctAnswer": false,
+      "contextualHint": "Distingue siège principal et offices.",
+      "explanation": "Le siège principal de l’ONU est à New York, même si Genève accueille un grand office.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0017",
+      "type": "true_false",
+      "category": "science-nature",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Le houmous est principalement préparé avec des pois chiches.",
+      "correctAnswer": true,
+      "contextualHint": "Pense à une légumineuse.",
+      "explanation": "Les pois chiches sont mixés avec tahini, citron et autres ingrédients selon les recettes.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0018",
+      "type": "true_false",
+      "category": "arts-literature",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "La pâte à choux sert à faire des éclairs.",
+      "correctAnswer": true,
+      "contextualHint": "La même pâte sert aux profiteroles.",
+      "explanation": "Elle gonfle à la cuisson grâce à la vapeur et peut être garnie.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0019",
+      "type": "true_false",
+      "category": "cinema-series",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "Poséidon est un dieu romain.",
+      "correctAnswer": false,
+      "contextualHint": "Distingue les deux panthéons.",
+      "explanation": "Poséidon appartient à la mythologie grecque ; son équivalent romain est Neptune.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0020",
+      "type": "true_false",
+      "category": "music",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Yggdrasil est un arbre cosmique nordique.",
+      "correctAnswer": true,
+      "contextualHint": "Ce n’est ni une arme ni un pont.",
+      "explanation": "Il relie symboliquement les mondes de la cosmologie nordique.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0021",
+      "type": "true_false",
+      "category": "society-institutions",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "Tintin a été créé par Hergé.",
+      "correctAnswer": true,
+      "contextualHint": "Pense à la bande dessinée belge.",
+      "explanation": "Hergé est le nom de plume du dessinateur belge Georges Remi.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0022",
+      "type": "true_false",
+      "category": "sports",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Mario est un personnage créé par Sega.",
+      "correctAnswer": false,
+      "contextualHint": "Compare deux grandes entreprises japonaises.",
+      "explanation": "Mario appartient à Nintendo ; Sega est notamment associé à Sonic.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0023",
+      "type": "true_false",
+      "category": "technology",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "Diwali est souvent appelée fête des lumières.",
+      "correctAnswer": true,
+      "contextualHint": "Observe le rôle des lampes.",
+      "explanation": "La célébration utilise notamment lampes et illuminations dans plusieurs traditions.",
+      "sourceLabel": "W3C",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0024",
+      "type": "true_false",
+      "category": "french-language",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "Le hangeul est un système d’écriture coréen.",
+      "correctAnswer": true,
+      "contextualHint": "Ses lettres forment des blocs syllabiques.",
+      "explanation": "Il fut conçu au XVe siècle sous le roi Sejong.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0025",
+      "type": "true_false",
+      "category": "gastronomy",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Le flamenco est originaire de Scandinavie.",
+      "correctAnswer": false,
+      "contextualHint": "Pense à la guitare et à l’Andalousie.",
+      "explanation": "Le flamenco est associé à l’Andalousie, dans le sud de l’Espagne.",
+      "sourceLabel": "Larousse Gastronomique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0026",
+      "type": "true_false",
+      "category": "mythologies",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "Le Nil traverse l’Égypte.",
+      "correctAnswer": true,
+      "contextualHint": "Pense aux crues antiques.",
+      "explanation": "Le fleuve structure depuis l’Antiquité la vallée et le delta égyptiens.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0027",
+      "type": "true_false",
+      "category": "popular-culture",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "La Lune est une planète.",
+      "correctAnswer": false,
+      "contextualHint": "Distingue planète et satellite.",
+      "explanation": "La Lune est le satellite naturel de la Terre.",
+      "sourceLabel": "Bibliothèque nationale de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0028",
+      "type": "true_false",
+      "category": "world-cultures",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "Le sodium a pour symbole Na.",
+      "correctAnswer": true,
+      "contextualHint": "Le symbole ne reprend pas le mot français.",
+      "explanation": "Na vient du nom latin natrium.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0029",
+      "type": "true_false",
+      "category": "history",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "L’eau pure est neutre autour de pH 7 à température ambiante.",
+      "correctAnswer": true,
+      "contextualHint": "Place le milieu de l’échelle acide-base.",
+      "explanation": "Une solution neutre présente des concentrations égales en ions hydrogène et hydroxyde.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0030",
+      "type": "true_false",
+      "category": "geography",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Les araignées possèdent six pattes.",
+      "correctAnswer": false,
+      "contextualHint": "Compare insectes et arachnides.",
+      "explanation": "Les araignées sont des arachnides à huit pattes.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0031",
+      "type": "true_false",
+      "category": "science-nature",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "La capitale du Canada est Toronto.",
+      "correctAnswer": false,
+      "contextualHint": "Distingue capitale et plus grande ville.",
+      "explanation": "Ottawa est la capitale fédérale, même si Toronto est plus peuplée.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0032",
+      "type": "true_false",
+      "category": "arts-literature",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Le détroit de Gibraltar relie Atlantique et Méditerranée.",
+      "correctAnswer": true,
+      "contextualHint": "Repère l’entrée occidentale de la Méditerranée.",
+      "explanation": "Il sépare aussi l’Espagne du Maroc.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0033",
+      "type": "true_false",
+      "category": "cinema-series",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "La Tour Eiffel a été construite au Moyen Âge.",
+      "correctAnswer": false,
+      "contextualHint": "Pense à la révolution industrielle.",
+      "explanation": "Elle fut achevée pour l’Exposition universelle de 1889.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0034",
+      "type": "true_false",
+      "category": "music",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "La bataille d’Hastings a eu lieu en 1066.",
+      "correctAnswer": true,
+      "contextualHint": "Associe la conquête normande.",
+      "explanation": "Elle permit à Guillaume le Conquérant de prendre le trône anglais.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0035",
+      "type": "true_false",
+      "category": "society-institutions",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Un sonnet français classique compte généralement quatorze vers.",
+      "correctAnswer": true,
+      "contextualHint": "Additionne quatrains et tercets.",
+      "explanation": "Il comprend souvent deux quatrains et deux tercets.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0036",
+      "type": "true_false",
+      "category": "sports",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "Une métaphore utilise toujours le mot « comme ».",
+      "correctAnswer": false,
+      "contextualHint": "Distingue comparaison et métaphore.",
+      "explanation": "La comparaison utilise un outil comme « comme » ; la métaphore établit le rapprochement sans outil explicite.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0037",
+      "type": "true_false",
+      "category": "technology",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Un routeur dirige des paquets entre réseaux.",
+      "correctAnswer": true,
+      "contextualHint": "Pense au trafic réseau.",
+      "explanation": "Il choisit un chemin à partir des adresses et tables de routage.",
+      "sourceLabel": "W3C",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0038",
+      "type": "true_false",
+      "category": "french-language",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "Le langage C a été créé après Python.",
+      "correctAnswer": false,
+      "contextualHint": "Compare les générations de langages.",
+      "explanation": "C date du début des années 1970 ; Python apparaît au début des années 1990.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0039",
+      "type": "true_false",
+      "category": "gastronomy",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "Le tennis utilise un score appelé « égalité » à 40-40.",
+      "correctAnswer": true,
+      "contextualHint": "Pense au terme anglais deuce.",
+      "explanation": "Un joueur doit alors généralement gagner deux points consécutifs.",
+      "sourceLabel": "Larousse Gastronomique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0040",
+      "type": "true_false",
+      "category": "mythologies",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Le décathlon comporte douze épreuves.",
+      "correctAnswer": false,
+      "contextualHint": "Utilise le sens du préfixe.",
+      "explanation": "Le préfixe déca- indique dix épreuves.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0041",
+      "type": "true_false",
+      "category": "popular-culture",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "L’origami est l’art japonais du pliage du papier.",
+      "correctAnswer": true,
+      "contextualHint": "La matière principale est une feuille.",
+      "explanation": "La forme classique repose sur des pliages successifs.",
+      "sourceLabel": "Bibliothèque nationale de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0042",
+      "type": "true_false",
+      "category": "world-cultures",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Pétra se trouve en Égypte.",
+      "correctAnswer": false,
+      "contextualHint": "Pense au pays du Proche-Orient qui abrite le site.",
+      "explanation": "Pétra est une cité nabatéenne située en Jordanie, et non en Égypte.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0043",
+      "type": "true_false",
+      "category": "history",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "Le miso est une pâte sucrée principalement fabriquée avec du cacao.",
+      "correctAnswer": false,
+      "contextualHint": "Pense à une préparation fermentée et salée.",
+      "explanation": "Le miso est une pâte fermentée, souvent à base de soja, utilisée dans la cuisine japonaise.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0044",
+      "type": "true_false",
+      "category": "geography",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "La réaction de Maillard se produit uniquement à froid.",
+      "correctAnswer": false,
+      "contextualHint": "Pense à la croûte du pain.",
+      "explanation": "Elle est favorisée par la chaleur et contribue au brunissement des aliments.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0045",
+      "type": "true_false",
+      "category": "science-nature",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Amaterasu est associée au Soleil.",
+      "correctAnswer": true,
+      "contextualHint": "Son retrait provoque l’obscurité.",
+      "explanation": "Cette déesse occupe une place centrale dans le shinto japonais.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0046",
+      "type": "true_false",
+      "category": "arts-literature",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "Anubis est représenté avec une tête de faucon.",
+      "correctAnswer": false,
+      "contextualHint": "Distingue deux dieux égyptiens.",
+      "explanation": "Anubis est généralement représenté avec une tête de chacal ; Horus a une tête de faucon.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0047",
+      "type": "true_false",
+      "category": "cinema-series",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Le plan Marshall concernait la reconstruction européenne après 1945.",
+      "correctAnswer": true,
+      "contextualHint": "Pense à l’après-guerre.",
+      "explanation": "L’aide américaine fut annoncée en 1947.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0048",
+      "type": "true_false",
+      "category": "music",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "Tombouctou se trouve en Amérique du Sud.",
+      "correctAnswer": false,
+      "contextualHint": "Pense aux routes transsahariennes.",
+      "explanation": "Tombouctou se situe au Mali, en Afrique de l’Ouest.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0049",
+      "type": "true_false",
+      "category": "society-institutions",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "Le principe de Bernoulli concerne les fluides en mouvement.",
+      "correctAnswer": true,
+      "contextualHint": "Pense à l’écoulement autour d’une aile.",
+      "explanation": "Il relie notamment pression, vitesse et hauteur dans un écoulement idéal.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0050",
+      "type": "true_false",
+      "category": "sports",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Les stomates sont des racines microscopiques.",
+      "correctAnswer": false,
+      "contextualHint": "Observe la surface d’une feuille.",
+      "explanation": "Les stomates sont des ouvertures de l’épiderme des feuilles et tiges.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0051",
+      "type": "true_false",
+      "category": "technology",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "Studio Ghibli a produit Princesse Mononoké.",
+      "correctAnswer": true,
+      "contextualHint": "Associe le studio à Miyazaki.",
+      "explanation": "Le film fut réalisé par Hayao Miyazaki.",
+      "sourceLabel": "W3C",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0052",
+      "type": "true_false",
+      "category": "french-language",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Doctor Who est une série américaine créée en 1999.",
+      "correctAnswer": false,
+      "contextualHint": "Pense à la BBC.",
+      "explanation": "Doctor Who est une série britannique lancée en 1963.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0053",
+      "type": "true_false",
+      "category": "gastronomy",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "Le thérémine se joue sans contact direct.",
+      "correctAnswer": true,
+      "contextualHint": "Le musicien ne touche pas l’instrument.",
+      "explanation": "Les mouvements des mains autour des antennes contrôlent hauteur et volume.",
+      "sourceLabel": "Larousse Gastronomique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0054",
+      "type": "true_false",
+      "category": "mythologies",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "A Love Supreme est un album de musique baroque.",
+      "correctAnswer": false,
+      "contextualHint": "Pense au saxophone ténor.",
+      "explanation": "C’est une suite majeure de jazz enregistrée par John Coltrane.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0055",
+      "type": "true_false",
+      "category": "popular-culture",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "La Commission européenne possède généralement l’initiative législative dans l’Union.",
+      "correctAnswer": true,
+      "contextualHint": "Distingue proposition et adoption.",
+      "explanation": "Elle propose les textes ensuite examinés par le Parlement et le Conseil.",
+      "sourceLabel": "Bibliothèque nationale de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0056",
+      "type": "true_false",
+      "category": "world-cultures",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "statement": "Un monopole désigne un marché avec de nombreux vendeurs égaux.",
+      "correctAnswer": false,
+      "contextualHint": "Compare mono- et oligo-.",
+      "explanation": "Un monopole se caractérise par un seul vendeur dominant ou unique.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0057",
+      "type": "true_false",
+      "category": "history",
+      "subcategory": "general-knowledge",
+      "difficulty": 2,
+      "statement": "Le kilt est traditionnellement associé au Japon.",
+      "correctAnswer": false,
+      "contextualHint": "Pense à l’origine géographique du vêtement.",
+      "explanation": "Le kilt est un vêtement traditionnellement associé à l’Écosse, et non au Japon.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0058",
+      "type": "true_false",
+      "category": "geography",
+      "subcategory": "general-knowledge",
+      "difficulty": 3,
+      "statement": "Les torii sont des tours funéraires bouddhiques.",
+      "correctAnswer": false,
+      "contextualHint": "Pense à la fonction de ces structures japonaises.",
+      "explanation": "Les torii sont des portiques marquant souvent l’entrée des sanctuaires shinto au Japon.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0059",
+      "type": "true_false",
+      "category": "science-nature",
+      "subcategory": "general-knowledge",
+      "difficulty": 4,
+      "statement": "Le Cluedo demande de construire des routes et des villes.",
+      "correctAnswer": false,
+      "contextualHint": "Distingue enquête et construction.",
+      "explanation": "Cluedo est un jeu de déduction criminelle ; Carcassonne utilise des tuiles de routes et villes.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "VOF-0060",
+      "type": "true_false",
+      "category": "arts-literature",
+      "subcategory": "general-knowledge",
+      "difficulty": 5,
+      "statement": "Un mème numérique reste toujours identique lors de sa diffusion.",
+      "correctAnswer": false,
+      "contextualHint": "Pense aux transformations successives.",
+      "explanation": "Les mèmes se propagent souvent par variations, détournements et réappropriations.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "vrai-faux"
+      ],
+      "estimatedTimeSeconds": 20,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

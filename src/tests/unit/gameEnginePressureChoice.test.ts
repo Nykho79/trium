@@ -34,7 +34,7 @@ const config: GameConfig = {
   id: "pressure-engine-config",
   mode: "standard",
   seed: "pressure-engine-seed",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,

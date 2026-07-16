@@ -41,7 +41,7 @@ describe("zustand stores", () => {
   });
 
   it("signale une sauvegarde invalide sans bloquer le store", () => {
-    localStorage.setItem(STORAGE_KEYS.savedSession, "{cassé");
+    localStorage.setItem(STORAGE_KEYS.savedSession, "{cassÃ©");
 
     useGameStore.getState().resumeSavedGame();
     const state = useGameStore.getState();
@@ -76,5 +76,16 @@ describe("zustand stores", () => {
 
     expect(useAudioStore.getState().uiVolume).toBe(1);
     expect(useAudioStore.getState().musicVolume).toBe(0);
+  });
+
+  it("cree une partie solo quand le mode joueur solo est selectionne", () => {
+    useGameStore.getState().setPlayerMode("solo");
+    useGameStore.getState().updatePlayerName(0, "Nicolas");
+    useGameStore.getState().startNewGame("seed-solo");
+    const state = useGameStore.getState();
+
+    expect(state.gameState?.config.playerMode).toBe("solo");
+    expect(state.gameState?.config.players).toHaveLength(1);
+    expect(state.gameState?.captainPlayerId).toBe("player-1");
   });
 });

@@ -46,7 +46,7 @@ function createConfig(rounds: RoundDefinition[] = [pressureRound]): GameConfig {
     id: "config-test",
     mode: "standard",
     seed: "seed-test",
-    players,
+    playerMode: "trio", players,
     rounds,
     questionBankVersion: 1,
     allowRecentlyPlayedFallback: true,
@@ -296,3 +296,16 @@ describe("gameEngine", () => {
 
     expect(() => applyJoker(loaded, { joker: "team_vote", questions: [clueQuestion], now: 4 })).toThrow("interdit");
   });
+
+it("gere une partie solo sans rotation de capitaine ni vote equipe", () => {
+  const soloConfig: GameConfig = { ...createConfig([twoQuestionRound]), playerMode: "solo", players: [players[0]] };
+  const firstQuestion = activeGame(soloConfig);
+  const firstRevealed = revealAnswer(submitAnswer(firstQuestion, { answer: "a", now: 4 }), { questions, now: 5 });
+  const secondQuestion = loadQuestion(firstRevealed, { questions, questionId: "q-2", now: 6 });
+  const withVote = awardJoker(secondQuestion, "team_vote", 7);
+
+  expect(firstQuestion.captainPlayerId).toBe("player-1");
+  expect(secondQuestion.captainPlayerId).toBe("player-1");
+  expect(rotateCaptain(secondQuestion).captainPlayerId).toBe("player-1");
+  expect(() => applyJoker(withVote, { joker: "team_vote", questions, now: 8 })).toThrow("solo");
+});

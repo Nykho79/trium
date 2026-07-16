@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { gameModeSchema, gameStatusSchema } from "./baseSchemas";
+import { gameModeSchema, gameStatusSchema, playerModeSchema } from "./baseSchemas";
 import { playerSchema, playersSchema } from "./playerSchemas";
 import { roundDefinitionSchema, roundStateSchema } from "./roundSchemas";
 import { answerResultSchema, jokerEffectStateSchema, jokerStateSchema, scoreBreakdownSchema } from "./scoringSchemas";
@@ -17,6 +17,7 @@ export const gameConfigSchema = z.object({
   id: z.string().min(1),
   mode: gameModeSchema,
   seed: z.string().min(1),
+  playerMode: playerModeSchema,
   players: playersSchema,
   rounds: z.array(roundDefinitionSchema).min(1),
   questionBankVersion: z.number().int().positive(),
@@ -53,6 +54,9 @@ export const gameStateSchema = z.object({
   eventLog: z.array(gameEventSchema),
   error: z.string().min(1).optional(),
 }).superRefine((state, ctx) => {
+  if ((state.config.playerMode === "solo" && state.config.players.length !== 1) || (state.config.playerMode === "trio" && state.config.players.length !== 3)) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["config", "players"], message: "Le nombre de joueurs doit correspondre au mode choisi." });
+  }
   if (state.status === "error" && state.error === undefined) {
     ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["error"], message: "Un etat error doit porter un message." });
   }

@@ -2,7 +2,7 @@
 
 ## 1. Synthese de la specification
 
-TRIUM est une application web locale de quiz cooperatif pour exactement trois joueurs, pensee pour un ordinateur branche en HDMI sur une television 16:9. La V1 doit fonctionner sans authentification, sans multijoueur en ligne, sans API externe pendant la partie et avec une banque de questions locale en JSON.
+TRIUM est une application web locale de quiz jouable en solo ou en trio cooperatif, pensee pour un ordinateur branche en HDMI sur une television 16:9. La V1 doit fonctionner sans authentification, sans multijoueur en ligne, sans API externe pendant la partie et avec une banque de questions locale en JSON.
 
 Le produit doit combiner :
 
@@ -242,7 +242,8 @@ export interface GameSettings {
 export interface GameSession {
   id: string;
   seed: GameSeed;
-  players: [Player, Player, Player];
+  playerMode: PlayerMode;
+  players: PlayerRoster;
   format: GameFormat;
   state: GameState;
   score: ScoreState;
@@ -568,7 +569,7 @@ export type GameEvent =
   | { type: "OPEN_SETTINGS" }
   | { type: "OPEN_DEV_QUESTION_BANK" }
   | { type: "START_PLAYER_SETUP" }
-  | { type: "SET_PLAYERS"; players: [Player, Player, Player] }
+  | { type: "SET_PLAYERS"; playerMode: PlayerMode; players: PlayerRoster }
   | { type: "SELECT_FORMAT"; format: GameFormat }
   | { type: "START_GAME"; seed: GameSeed }
   | { type: "START_ROUND" }
@@ -636,7 +637,7 @@ settings/dev-question-bank
 
 Regles d'integrite :
 
-- Une session valide contient toujours exactement trois joueurs.
+- Une session valide contient un joueur en solo ou exactement trois joueurs en trio.
 - Une question deja presente dans `usedQuestionIds` ne peut pas etre selectionnee.
 - Les questions presentes dans `recentlyPlayedQuestionIds` sont evitees si une alternative existe.
 - Les transitions invalides retournent une erreur typable ou ignorent l'evenement selon le contexte UI.
@@ -783,7 +784,7 @@ Tests attendus :
 
 - transitions valides du debut de partie ;
 - rejet ou neutralisation des transitions invalides ;
-- exactement trois joueurs requis ;
+- un joueur requis en solo ou exactement trois joueurs requis en trio ;
 - sauvegarde/restauration d'une session valide ;
 - fallback sain sur `localStorage` corrompu ;
 - reprise de partie visible depuis l'accueil.
@@ -921,7 +922,7 @@ Le noyau metier ne depend pas de React. Les contrats sont centralises dans `src/
 
 Types ajoutes ou stabilises :
 
-- `Player`, `PlayerId` pour les trois joueurs fixes ;
+- `Player`, `PlayerId`, `PlayerMode`, `PlayerRoster` pour le mode solo ou trio ;
 - `GameConfig`, `GameMode`, `GameStatus`, `GameState` pour la configuration et la machine d'etat ;
 - `RoundDefinition`, `RoundState`, `GameRound` pour imposer une interface commune aux manches ;
 - `Question` et ses variantes `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` ;
@@ -941,7 +942,7 @@ Fonctions publiques : `createGame`, `startGame`, `startRound`, `loadQuestion`, `
 
 Garanties actuelles :
 
-- exactement trois joueurs dans la configuration ;
+- une configuration valide contient un joueur en mode solo ou exactement trois joueurs en mode trio ;
 - progression explicite entre les etats ;
 - rejet des transitions invalides par `GameEngineError` ;
 - verrouillage d'une reponse avant revelation ;

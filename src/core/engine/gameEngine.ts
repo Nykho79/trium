@@ -549,6 +549,9 @@ function assertJokerAllowed(state: GameState, joker: JokerType, now: number): vo
   if (state.jokers.used[joker] > 0 || state.jokers.available[joker] <= 0) {
     throw new GameEngineError(`Joker indisponible: ${joker}.`);
   }
+  if (joker === "team_vote" && state.config.playerMode === "solo") {
+    throw new GameEngineError("Le vote des trois joueurs est indisponible en mode solo.");
+  }
   if (joker === "fifty_fifty" && round.kind === "clue-race" && state.currentRoundState?.answersVisible !== true) {
     throw new GameEngineError("Le 50/50 est disponible seulement apres affichage des reponses.");
   }
@@ -570,8 +573,11 @@ export function rotateCaptain(state: GameState): GameState {
 }
 
 export function createGame(input: CreateGameInput): GameState {
-  if (input.config.players.length !== 3) {
-    throw new GameEngineError("Une partie TRIUM exige exactement trois joueurs.");
+  if (input.config.playerMode === "solo" && input.config.players.length !== 1) {
+    throw new GameEngineError("Une partie TRIUM en solo exige exactement un joueur.");
+  }
+  if (input.config.playerMode === "trio" && input.config.players.length !== 3) {
+    throw new GameEngineError("Une partie TRIUM en trio exige exactement trois joueurs.");
   }
   const now = input.now ?? 0;
   const initial: GameState = {

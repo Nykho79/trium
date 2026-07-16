@@ -1,0 +1,3154 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "synapse-logical-ranking-001",
+  "title": "Classements logiques — Lot 1",
+  "category": "synapse",
+  "questionType": "logical_ranking",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "RAN-0001",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "size",
+      "difficulty": 1,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus petit au plus grand.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Fourmi"
+        },
+        {
+          "id": "item-2",
+          "text": "Chat"
+        },
+        {
+          "id": "item-3",
+          "text": "Cheval"
+        },
+        {
+          "id": "item-4",
+          "text": "Éléphant"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Une fourmi est plus petite qu’un chat, lui-même plus petit qu’un cheval, puis vient l’éléphant.",
+      "contextualHint": "Compare les tailles typiques adultes.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "size"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0002",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "duration",
+      "difficulty": 1,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la durée la plus courte à la plus longue.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Minute"
+        },
+        {
+          "id": "item-2",
+          "text": "Heure"
+        },
+        {
+          "id": "item-3",
+          "text": "Jour"
+        },
+        {
+          "id": "item-4",
+          "text": "Semaine"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "60 minutes font une heure, 24 heures un jour et 7 jours une semaine.",
+      "contextualHint": "Convertis toutes les durées dans la même unité.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "duration"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0003",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "alphabetical",
+      "difficulty": 1,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Dans l’ordre alphabétique français.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Abricot"
+        },
+        {
+          "id": "item-2",
+          "text": "Banane"
+        },
+        {
+          "id": "item-3",
+          "text": "Cerise"
+        },
+        {
+          "id": "item-4",
+          "text": "Datte"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les initiales A, B, C et D donnent directement l’ordre.",
+      "contextualHint": "Observe d’abord la première lettre.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "alphabetical"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0004",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "numeric",
+      "difficulty": 1,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du nombre le plus petit au plus grand.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "-3"
+        },
+        {
+          "id": "item-2",
+          "text": "0"
+        },
+        {
+          "id": "item-3",
+          "text": "2"
+        },
+        {
+          "id": "item-4",
+          "text": "7"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Un nombre négatif précède zéro, puis viennent les nombres positifs croissants.",
+      "contextualHint": "Place d’abord le nombre négatif.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0005",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "geographic",
+      "difficulty": 2,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "D’ouest en est.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Lisbonne"
+        },
+        {
+          "id": "item-2",
+          "text": "Madrid"
+        },
+        {
+          "id": "item-3",
+          "text": "Rome"
+        },
+        {
+          "id": "item-4",
+          "text": "Athènes"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Lisbonne est la plus occidentale, puis Madrid, Rome et enfin Athènes.",
+      "contextualHint": "Imagine une carte de l’Europe du Sud.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "geographic"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0006",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "historical",
+      "difficulty": 2,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus ancien au plus récent.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Antiquité"
+        },
+        {
+          "id": "item-2",
+          "text": "Moyen Âge"
+        },
+        {
+          "id": "item-3",
+          "text": "Époque moderne"
+        },
+        {
+          "id": "item-4",
+          "text": "Époque contemporaine"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Ces quatre grandes périodes se succèdent dans cet ordre conventionnel.",
+      "contextualHint": "Utilise la chronologie scolaire classique.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "historical"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0007",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "intensity",
+      "difficulty": 2,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la température la plus basse à la plus élevée.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Glace fondante"
+        },
+        {
+          "id": "item-2",
+          "text": "Eau tiède"
+        },
+        {
+          "id": "item-3",
+          "text": "Eau bouillante"
+        },
+        {
+          "id": "item-4",
+          "text": "Flamme de bougie"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La glace fond vers 0 °C, l’eau tiède reste sous l’ébullition, l’eau bout vers 100 °C et une flamme est bien plus chaude.",
+      "contextualHint": "Compare des ordres de grandeur.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "intensity"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0008",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "process",
+      "difficulty": 2,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Dans l’ordre logique de préparation d’un thé.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Faire chauffer l’eau"
+        },
+        {
+          "id": "item-2",
+          "text": "Placer le thé"
+        },
+        {
+          "id": "item-3",
+          "text": "Verser l’eau"
+        },
+        {
+          "id": "item-4",
+          "text": "Laisser infuser"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "On chauffe l’eau, place le thé, verse l’eau puis laisse les arômes se diffuser.",
+      "contextualHint": "Suis la séquence d’une préparation réelle.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "process"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0009",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "transformation",
+      "difficulty": 2,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du moins transformé au plus transformé.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Grain de blé"
+        },
+        {
+          "id": "item-2",
+          "text": "Farine"
+        },
+        {
+          "id": "item-3",
+          "text": "Pâte"
+        },
+        {
+          "id": "item-4",
+          "text": "Pain cuit"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le grain est moulu en farine, mélangé en pâte puis cuit en pain.",
+      "contextualHint": "Repère les étapes de fabrication.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0010",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "size",
+      "difficulty": 2,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus petit diamètre au plus grand.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Pièce de 1 centime"
+        },
+        {
+          "id": "item-2",
+          "text": "Balle de ping-pong"
+        },
+        {
+          "id": "item-3",
+          "text": "Ballon de football"
+        },
+        {
+          "id": "item-4",
+          "text": "Roue de vélo"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Chaque objet a un diamètre nettement supérieur au précédent.",
+      "contextualHint": "Compare des dimensions usuelles.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "size"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0011",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "duration",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la période la plus courte à la plus longue.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Décennie"
+        },
+        {
+          "id": "item-2",
+          "text": "Siècle"
+        },
+        {
+          "id": "item-3",
+          "text": "Millénaire"
+        },
+        {
+          "id": "item-4",
+          "text": "Éon"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Une décennie vaut 10 ans, un siècle 100, un millénaire 1 000 ; un éon couvre une immense durée géologique.",
+      "contextualHint": "Convertis les trois premières en années.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "duration"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0012",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "alphabetical",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Dans l’ordre alphabétique.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Éclair"
+        },
+        {
+          "id": "item-2",
+          "text": "École"
+        },
+        {
+          "id": "item-3",
+          "text": "Écran"
+        },
+        {
+          "id": "item-4",
+          "text": "Écureuil"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’ordre est Éclair, École, Écran, puis Écureuil lorsque les mots sont comparés lettre par lettre.",
+      "contextualHint": "Compare lettre par lettre, accents ignorés pour le tri.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "alphabetical"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0013",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "numeric",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus petit au plus grand.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "3/4"
+        },
+        {
+          "id": "item-2",
+          "text": "0,6"
+        },
+        {
+          "id": "item-3",
+          "text": "2/3"
+        },
+        {
+          "id": "item-4",
+          "text": "0,8"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-2",
+            "item-3",
+            "item-1",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-4",
+            "item-1",
+            "item-3",
+            "item-2"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-2",
+            "item-4",
+            "item-1"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-4",
+            "item-2",
+            "item-3"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "0,6 < 2/3≈0,667 < 3/4=0,75 < 0,8.",
+      "contextualHint": "Convertis les fractions en décimaux.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0014",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "geographic",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du nord au sud.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Oslo"
+        },
+        {
+          "id": "item-2",
+          "text": "Berlin"
+        },
+        {
+          "id": "item-3",
+          "text": "Rome"
+        },
+        {
+          "id": "item-4",
+          "text": "Tunis"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Oslo se situe le plus au nord, puis Berlin, Rome et Tunis.",
+      "contextualHint": "Visualise les latitudes européennes et nord-africaines.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "geographic"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0015",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "historical",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus ancien au plus récent.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Pyramides de Gizeh"
+        },
+        {
+          "id": "item-2",
+          "text": "Colisée"
+        },
+        {
+          "id": "item-3",
+          "text": "Notre-Dame de Paris"
+        },
+        {
+          "id": "item-4",
+          "text": "Tour Eiffel"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les pyramides datent de l’Antiquité égyptienne, le Colisée du Ier siècle, Notre-Dame du Moyen Âge et la Tour Eiffel de 1889.",
+      "contextualHint": "Associe chaque monument à sa période.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "historical"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0016",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "intensity",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du son le plus doux au plus fort.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Chuchotement"
+        },
+        {
+          "id": "item-2",
+          "text": "Conversation"
+        },
+        {
+          "id": "item-3",
+          "text": "Aspirateur"
+        },
+        {
+          "id": "item-4",
+          "text": "Concert amplifié"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les niveaux sonores typiques augmentent nettement de la voix chuchotée au concert amplifié.",
+      "contextualHint": "Pense aux décibels approximatifs.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "intensity"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0017",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "process",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Dans l’ordre d’un cycle de développement du papillon.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Œuf"
+        },
+        {
+          "id": "item-2",
+          "text": "Chenille"
+        },
+        {
+          "id": "item-3",
+          "text": "Chrysalide"
+        },
+        {
+          "id": "item-4",
+          "text": "Papillon adulte"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’œuf donne une chenille, qui devient chrysalide avant l’émergence de l’adulte.",
+      "contextualHint": "Suis la métamorphose complète.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "process"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0018",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "transformation",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du matériau brut au produit fini.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Minerai de fer"
+        },
+        {
+          "id": "item-2",
+          "text": "Fonte"
+        },
+        {
+          "id": "item-3",
+          "text": "Acier"
+        },
+        {
+          "id": "item-4",
+          "text": "Outil"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le minerai est traité en fonte, affinée en acier, puis façonnée en outil.",
+      "contextualHint": "Suis la chaîne métallurgique simplifiée.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0019",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "deductive-ranking",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la première à la dernière place.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Lina"
+        },
+        {
+          "id": "item-2",
+          "text": "Marc"
+        },
+        {
+          "id": "item-3",
+          "text": "Nora"
+        },
+        {
+          "id": "item-4",
+          "text": "Paul"
+        }
+      ],
+      "clues": [
+        "Nora est avant Lina.",
+        "Marc est dernier.",
+        "Paul est après Lina."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-2",
+            "item-4",
+            "item-1",
+            "item-3"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-3",
+            "item-2",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-1",
+            "item-4",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-4",
+            "item-2",
+            "item-3",
+            "item-1"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Nora doit être première, Lina deuxième, Paul troisième et Marc quatrième.",
+      "contextualHint": "Place d’abord la personne explicitement dernière.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "deductive-ranking"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0020",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "deductive-ranking",
+      "difficulty": 3,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus jeune au plus âgé.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Ariane"
+        },
+        {
+          "id": "item-2",
+          "text": "Benoît"
+        },
+        {
+          "id": "item-3",
+          "text": "Chloé"
+        },
+        {
+          "id": "item-4",
+          "text": "Dorian"
+        }
+      ],
+      "clues": [
+        "Chloé est plus jeune qu’Ariane.",
+        "Dorian est plus âgé qu’Ariane.",
+        "Benoît est le plus âgé."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-2",
+            "item-4",
+            "item-1",
+            "item-3"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-3",
+            "item-2",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-4",
+            "item-2",
+            "item-3",
+            "item-1"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-1",
+            "item-4",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Chloé < Ariane < Dorian < Benoît satisfait tous les indices.",
+      "contextualHint": "Construis une chaîne d’inégalités.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "deductive-ranking"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0021",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "size",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus petit au plus grand rayon moyen.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Lune"
+        },
+        {
+          "id": "item-2",
+          "text": "Mercure"
+        },
+        {
+          "id": "item-3",
+          "text": "Mars"
+        },
+        {
+          "id": "item-4",
+          "text": "Terre"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Lune est plus petite que Mercure, puis viennent Mars et la Terre.",
+      "contextualHint": "Compare les rayons des corps telluriques.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "size"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0022",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "duration",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la demi-vie la plus courte à la plus longue.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Carbone 11"
+        },
+        {
+          "id": "item-2",
+          "text": "Fluor 18"
+        },
+        {
+          "id": "item-3",
+          "text": "Carbone 14"
+        },
+        {
+          "id": "item-4",
+          "text": "Uranium 238"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le carbone 11 dure environ 20 min, le fluor 18 environ 110 min, le carbone 14 des millénaires et l’uranium 238 des milliards d’années.",
+      "contextualHint": "Les usages médicaux impliquent souvent des demi-vies courtes.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "duration"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0023",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "alphabetical",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Dans l’ordre alphabétique.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Chrysanthème"
+        },
+        {
+          "id": "item-2",
+          "text": "Chronique"
+        },
+        {
+          "id": "item-3",
+          "text": "Chrysalide"
+        },
+        {
+          "id": "item-4",
+          "text": "Chrome"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-1",
+            "item-3",
+            "item-2",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-4",
+            "item-1",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-4",
+            "item-2",
+            "item-3",
+            "item-1"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-1",
+            "item-4",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Chrome précède chronique, puis chrysalide et chrysanthème selon la comparaison lettre par lettre.",
+      "contextualHint": "Compare les lettres après « chr » ou « chry » avec soin.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "alphabetical"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0024",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "numeric",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus petit au plus grand.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "√2"
+        },
+        {
+          "id": "item-2",
+          "text": "1,4"
+        },
+        {
+          "id": "item-3",
+          "text": "π/2"
+        },
+        {
+          "id": "item-4",
+          "text": "1,7"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "1,4 < √2≈1,414 < π/2≈1,571 < 1,7.",
+      "contextualHint": "Utilise des approximations simples.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0025",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "geographic",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De l’embouchure la plus occidentale à la plus orientale.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Tage"
+        },
+        {
+          "id": "item-2",
+          "text": "Loire"
+        },
+        {
+          "id": "item-3",
+          "text": "Rhin"
+        },
+        {
+          "id": "item-4",
+          "text": "Danube"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Tage se jette près de Lisbonne, la Loire dans l’Atlantique français, le Rhin en mer du Nord et le Danube en mer Noire.",
+      "contextualHint": "Repère les façades maritimes européennes.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "geographic"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0026",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "historical",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus ancien au plus récent.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Code d’Hammurabi"
+        },
+        {
+          "id": "item-2",
+          "text": "République romaine"
+        },
+        {
+          "id": "item-3",
+          "text": "Magna Carta"
+        },
+        {
+          "id": "item-4",
+          "text": "Déclaration des droits de l’homme"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le code est mésopotamien, la République romaine antique, la Magna Carta date de 1215 et la Déclaration de 1789.",
+      "contextualHint": "Associe chaque texte ou régime à une date repère.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "historical"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0027",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "intensity",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du pH le plus acide au plus basique.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Jus de citron"
+        },
+        {
+          "id": "item-2",
+          "text": "Café"
+        },
+        {
+          "id": "item-3",
+          "text": "Eau pure"
+        },
+        {
+          "id": "item-4",
+          "text": "Eau savonneuse"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le jus de citron est très acide, le café légèrement acide, l’eau neutre et l’eau savonneuse basique.",
+      "contextualHint": "Place la neutralité au milieu de l’échelle.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "intensity"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0028",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "process",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Dans l’ordre d’une division cellulaire simplifiée.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Réplication de l’ADN"
+        },
+        {
+          "id": "item-2",
+          "text": "Condensation des chromosomes"
+        },
+        {
+          "id": "item-3",
+          "text": "Séparation des chromatides"
+        },
+        {
+          "id": "item-4",
+          "text": "Cytocinèse"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’ADN est d’abord copié, les chromosomes se condensent, les chromatides se séparent puis la cellule se divise.",
+      "contextualHint": "Distingue préparation, séparation et division finale.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "process"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0029",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "deductive-ranking",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la gauche vers la droite.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Boîte rouge"
+        },
+        {
+          "id": "item-2",
+          "text": "Boîte bleue"
+        },
+        {
+          "id": "item-3",
+          "text": "Boîte verte"
+        },
+        {
+          "id": "item-4",
+          "text": "Boîte jaune"
+        }
+      ],
+      "clues": [
+        "La bleue est tout à gauche.",
+        "La verte est tout à droite.",
+        "La jaune est immédiatement à gauche de la rouge."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-2",
+            "item-4",
+            "item-1",
+            "item-3"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-3",
+            "item-1",
+            "item-4",
+            "item-2"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-4",
+            "item-2",
+            "item-3",
+            "item-1"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-3",
+            "item-2",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La bleue occupe la première place, la verte la quatrième ; jaune puis rouge remplissent les deux places centrales.",
+      "contextualHint": "Commence par les positions fixes.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "deductive-ranking"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0030",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "deductive-ranking",
+      "difficulty": 4,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la note la plus basse à la plus haute.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Élise"
+        },
+        {
+          "id": "item-2",
+          "text": "Farid"
+        },
+        {
+          "id": "item-3",
+          "text": "Gina"
+        },
+        {
+          "id": "item-4",
+          "text": "Hugo"
+        }
+      ],
+      "clues": [
+        "Farid a moins qu’Hugo.",
+        "Élise a plus qu’Hugo.",
+        "Gina a la meilleure note."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-3",
+            "item-1",
+            "item-4",
+            "item-2"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-4",
+            "item-1",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-4",
+            "item-2",
+            "item-3",
+            "item-1"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-3",
+            "item-2",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Farid < Hugo < Élise < Gina est la seule chaîne compatible.",
+      "contextualHint": "Transforme chaque indice en comparaison.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "deductive-ranking"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0031",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "size",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus petit au plus grand diamètre approximatif.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Cérès"
+        },
+        {
+          "id": "item-2",
+          "text": "Lune"
+        },
+        {
+          "id": "item-3",
+          "text": "Mercure"
+        },
+        {
+          "id": "item-4",
+          "text": "Mars"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Cérès mesure moins de 1 000 km, la Lune environ 3 475 km, Mercure 4 880 km et Mars 6 780 km.",
+      "contextualHint": "Compare planète naine, satellite et planètes telluriques.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "size"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0032",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "duration",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la période orbitale la plus courte à la plus longue.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Mercure"
+        },
+        {
+          "id": "item-2",
+          "text": "Vénus"
+        },
+        {
+          "id": "item-3",
+          "text": "Terre"
+        },
+        {
+          "id": "item-4",
+          "text": "Mars"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Plus une planète est éloignée du Soleil, plus sa période orbitale est généralement longue dans cet ensemble.",
+      "contextualHint": "L’ordre suit ici la distance au Soleil.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "duration"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0033",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "numeric",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus petit au plus grand.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "log10(10)"
+        },
+        {
+          "id": "item-2",
+          "text": "√3"
+        },
+        {
+          "id": "item-3",
+          "text": "e"
+        },
+        {
+          "id": "item-4",
+          "text": "π"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "log10(10)=1, √3≈1,732, e≈2,718 et π≈3,142.",
+      "contextualHint": "Remplace chaque expression par une valeur approchée.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "numeric"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0034",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "historical",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du plus ancien au plus récent.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Bataille de Marathon"
+        },
+        {
+          "id": "item-2",
+          "text": "Bataille d’Actium"
+        },
+        {
+          "id": "item-3",
+          "text": "Bataille d’Hastings"
+        },
+        {
+          "id": "item-4",
+          "text": "Bataille de Waterloo"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Marathon date de 490 av. J.-C., Actium de 31 av. J.-C., Hastings de 1066 et Waterloo de 1815.",
+      "contextualHint": "Deux batailles sont antiques, deux beaucoup plus tardives.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "historical"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0035",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "geographic",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du nord au sud.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Reykjavik"
+        },
+        {
+          "id": "item-2",
+          "text": "Helsinki"
+        },
+        {
+          "id": "item-3",
+          "text": "Paris"
+        },
+        {
+          "id": "item-4",
+          "text": "Le Caire"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Reykjavik est la plus septentrionale, puis Helsinki, Paris et Le Caire.",
+      "contextualHint": "Compare les latitudes approximatives.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "geographic"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0036",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "process",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Dans l’ordre logique d’une recherche scientifique.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Formuler une hypothèse"
+        },
+        {
+          "id": "item-2",
+          "text": "Concevoir un protocole"
+        },
+        {
+          "id": "item-3",
+          "text": "Recueillir les données"
+        },
+        {
+          "id": "item-4",
+          "text": "Interpréter les résultats"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’hypothèse guide le protocole, qui produit des données ensuite analysées et interprétées.",
+      "contextualHint": "Sépare conception, observation et analyse.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "process"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0037",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "deductive-ranking",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "De la première à la quatrième arrivée.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Iris"
+        },
+        {
+          "id": "item-2",
+          "text": "Jules"
+        },
+        {
+          "id": "item-3",
+          "text": "Kamel"
+        },
+        {
+          "id": "item-4",
+          "text": "Lola"
+        }
+      ],
+      "clues": [
+        "Lola arrive avant Jules.",
+        "Iris arrive après Jules mais avant Kamel.",
+        "Kamel n’est pas deuxième."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-2",
+            "item-1",
+            "item-3"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-3",
+            "item-1",
+            "item-2",
+            "item-4"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-2",
+            "item-4",
+            "item-3",
+            "item-1"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-3",
+            "item-4",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Lola est première, Jules deuxième, Iris troisième et Kamel quatrième.",
+      "contextualHint": "Construis une chaîne avec l’indice central.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "deductive-ranking"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0038",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "deductive-ranking",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du moins cher au plus cher.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Objet A"
+        },
+        {
+          "id": "item-2",
+          "text": "Objet B"
+        },
+        {
+          "id": "item-3",
+          "text": "Objet C"
+        },
+        {
+          "id": "item-4",
+          "text": "Objet D"
+        }
+      ],
+      "clues": [
+        "C coûte moins que A.",
+        "B est le plus cher.",
+        "D coûte plus que A."
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-2",
+            "item-4",
+            "item-1",
+            "item-3"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-3",
+            "item-1",
+            "item-4",
+            "item-2"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-3",
+            "item-2",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-4",
+            "item-2",
+            "item-3",
+            "item-1"
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "C < A < D < B est l’unique ordre qui satisfait les trois contraintes.",
+      "contextualHint": "Repère d’abord l’extrême explicitement donné.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "deductive-ranking"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0039",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "transformation",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Du stade initial au stade final.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Précurseur ARN"
+        },
+        {
+          "id": "item-2",
+          "text": "ARN messager mature"
+        },
+        {
+          "id": "item-3",
+          "text": "Chaîne polypeptidique"
+        },
+        {
+          "id": "item-4",
+          "text": "Protéine repliée"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le précurseur est maturé en ARN messager, traduit en polypeptide puis replié en protéine fonctionnelle.",
+      "contextualHint": "Suis l’expression d’un gène eucaryote simplifiée.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "transformation"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "RAN-0040",
+      "type": "logical_ranking",
+      "category": "synapse",
+      "subcategory": "alphabetical",
+      "difficulty": 5,
+      "prompt": "Quel est le bon ordre ?",
+      "orderingRule": "Dans l’ordre alphabétique.",
+      "items": [
+        {
+          "id": "item-1",
+          "text": "Psammite"
+        },
+        {
+          "id": "item-2",
+          "text": "Psaume"
+        },
+        {
+          "id": "item-3",
+          "text": "Psyché"
+        },
+        {
+          "id": "item-4",
+          "text": "Pylône"
+        }
+      ],
+      "clues": [],
+      "answers": [
+        {
+          "id": "a",
+          "itemOrder": [
+            "item-4",
+            "item-3",
+            "item-2",
+            "item-1"
+          ]
+        },
+        {
+          "id": "b",
+          "itemOrder": [
+            "item-2",
+            "item-1",
+            "item-4",
+            "item-3"
+          ]
+        },
+        {
+          "id": "c",
+          "itemOrder": [
+            "item-3",
+            "item-4",
+            "item-1",
+            "item-2"
+          ]
+        },
+        {
+          "id": "d",
+          "itemOrder": [
+            "item-1",
+            "item-2",
+            "item-3",
+            "item-4"
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Psammite précède psaume ; les mots en psa- précèdent psy-, puis py-.",
+      "contextualHint": "Compare les troisième et quatrième lettres.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "alphabetical"
+      ],
+      "estimatedTimeSeconds": 50,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

@@ -157,11 +157,12 @@ export function GameScreen() {
   const knowledgeQuestions = useMemo(() => questions.filter(isKnowledgeGridQuestion), [questions]);
   const clueQuestions = useMemo(() => questions.filter(isClueRaceQuestion), [questions]);
   const pressureQuestions = useMemo(() => questions.filter(isPressureChoiceQuestion), [questions]);
-  const approvedSynapseQuestions = useMemo(() => synapseQuestions.filter(isSynapseQuestion), [synapseQuestions]);
+  const approvedSynapseQuestions = useMemo(() => [...questions.filter(isSynapseQuestion), ...synapseQuestions.filter(isSynapseQuestion)], [questions, synapseQuestions]);
   const connectionQuestions = useMemo(() => [...questions.filter(isConnectionsQuestion), ...generatedConnectionQuestions], [questions, generatedConnectionQuestions]);
-  const wagerQuestions = useMemo(() => generatedWagerQuestions.filter(isWagerQuestion), [generatedWagerQuestions]);
-  const finalQuestions = useMemo(() => generatedFinalQuestions.filter(isFinalConvergenceQuestion), [generatedFinalQuestions]);
+  const wagerQuestions = useMemo(() => [...questions.filter(isWagerQuestion), ...generatedWagerQuestions.filter(isWagerQuestion)], [questions, generatedWagerQuestions]);
+  const finalQuestions = useMemo(() => [...questions.filter(isFinalConvergenceQuestion), ...generatedFinalQuestions.filter(isFinalConvergenceQuestion)], [questions, generatedFinalQuestions]);
   const captain = gameState?.config.players.find((player) => player.id === gameState.captainPlayerId) ?? session.players[0];
+  const isSoloMode = (gameState?.config.playerMode ?? (session.players.length === 1 ? "solo" : "trio")) === "solo";
   const isQuestionActive = gameState?.status === "question_active" || gameState?.status === "answer_locked";
   const isLocked = gameState?.status === "answer_locked";
   const isClueRace = round?.kind === "clue-race";
@@ -251,8 +252,8 @@ export function GameScreen() {
   const castVote = (answerId: string) => {
     setVoteState((state) => {
       const votes = [...state.votes, answerId];
-      if (votes.length >= 3) {
-        return { active: true, currentIndex: 3, votes, majority: majorityOf(votes) };
+      if (votes.length >= session.players.length) {
+        return { active: true, currentIndex: session.players.length, votes, majority: majorityOf(votes) };
       }
       return { active: true, currentIndex: state.currentIndex + 1, votes };
     });
@@ -262,6 +263,9 @@ export function GameScreen() {
   const jokerUsed = (joker: JokerType): boolean => (gameState?.jokers.used[joker] ?? 0) > 0;
   const jokerDisabled = (joker: JokerType): boolean => {
     if (!canUseJoker || jokerRemaining(joker) <= 0 || jokerUsed(joker) || (gameState?.jokers.disabled.includes(joker) ?? false)) {
+      return true;
+    }
+    if (isSoloMode && joker === "team_vote") {
       return true;
     }
     if (isClueRace && joker === "fifty_fifty" && !answersVisible) {
@@ -629,7 +633,7 @@ export function GameScreen() {
               <JokerButton label="Changer" remaining={jokerRemaining("change_question")} icon="arrow" disabled={jokerDisabled("change_question")} onClick={() => setPendingJoker("change_question")} data-testid="joker-change_question" />
               <JokerButton label="Indice" remaining={jokerRemaining("contextual_hint")} icon="spark" disabled={jokerDisabled("contextual_hint")} onClick={() => setPendingJoker("contextual_hint")} data-testid="joker-contextual_hint" />
               <JokerButton label="Temps +" remaining={jokerRemaining("extra_time")} icon="timer" disabled={jokerDisabled("extra_time")} onClick={() => setPendingJoker("extra_time")} data-testid="joker-extra_time" />
-              <JokerButton label="Vote equipe" remaining={jokerRemaining("team_vote")} icon="captain" disabled={jokerDisabled("team_vote")} onClick={() => setPendingJoker("team_vote")} data-testid="joker-team_vote" />
+              <JokerButton label={isSoloMode ? "Vote trio" : "Vote equipe"} remaining={jokerRemaining("team_vote")} icon="captain" disabled={jokerDisabled("team_vote")} onClick={() => setPendingJoker("team_vote")} data-testid="joker-team_vote" />
             </div>
           </Panel>
           <Panel>

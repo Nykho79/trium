@@ -34,7 +34,7 @@ const config: GameConfig = {
   id: "final-engine-config",
   mode: "standard",
   seed: "final-engine-seed",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,

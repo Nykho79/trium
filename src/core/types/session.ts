@@ -1,4 +1,4 @@
-import type { Player } from "./player";
+import type { PlayerRoster } from "./player";
 import type { GameFormat, QuestionId, RoundKind } from "./game";
 import type { ScoreState } from "./scoring";
 
@@ -23,7 +23,7 @@ export type AppScreen =
   | "error";
 
 export interface GameSessionPreview {
-  players: [Player, Player, Player];
+  players: PlayerRoster;
   format: GameFormat;
   currentRoundKind: RoundKind;
   currentQuestionId?: QuestionId;

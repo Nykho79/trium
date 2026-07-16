@@ -32,7 +32,7 @@ const config: GameConfig = {
   id: "synapse-engine-config",
   mode: "standard",
   seed: "synapse-engine-seed",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,

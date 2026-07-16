@@ -1,0 +1,5417 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "final-convergence-001",
+  "title": "Convergence finale — Lot 1",
+  "category": "final-convergence",
+  "questionType": "final_path",
+  "generatedAt": null,
+  "paths": [
+    {
+      "id": "FIN-0001",
+      "title": "Parcours final 1",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0001-S1",
+            "type": "multiple_choice",
+            "category": "sports",
+            "subcategory": "cycling",
+            "difficulty": 3,
+            "question": "Quel type de départ consiste à lancer les coureurs un par un contre le chronomètre ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le départ neutralisé"
+              },
+              {
+                "id": "b",
+                "text": "Le contre-la-montre individuel"
+              },
+              {
+                "id": "c",
+                "text": "La course à l’élimination"
+              },
+              {
+                "id": "d",
+                "text": "Le sprint massif"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Chaque participant lutte surtout contre le temps.",
+            "explanation": "Chaque coureur parcourt seul le même itinéraire, et le classement dépend du temps réalisé.",
+            "sourceLabel": "Encyclopædia Britannica",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "cycling"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0001-S2",
+            "type": "progressive_clues",
+            "category": "geography",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un fleuve."
+              },
+              {
+                "order": 2,
+                "text": "Je traverse le nord-est de l’Afrique."
+              },
+              {
+                "order": 3,
+                "text": "Je me jette dans la Méditerranée."
+              },
+              {
+                "order": 4,
+                "text": "L’Égypte ancienne dépendait de mes crues."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le Congo"
+              },
+              {
+                "id": "b",
+                "text": "Le Nil"
+              },
+              {
+                "id": "c",
+                "text": "Le Niger"
+              },
+              {
+                "id": "d",
+                "text": "Le Zambèze"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le Nil.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0001-S3",
+            "type": "connection",
+            "category": "history",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Athènes"
+              },
+              {
+                "id": "item-2",
+                "text": "Sparte"
+              },
+              {
+                "id": "item-3",
+                "text": "Corinthe"
+              },
+              {
+                "id": "item-4",
+                "text": "Thèbes"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "Des cités grecques antiques"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "c",
+            "connection": "Des cités grecques antiques",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des cités grecques antiques.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0001-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "2",
+              "10",
+              "4",
+              "20",
+              "6",
+              "30",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "7"
+              },
+              {
+                "id": "b",
+                "text": "10"
+              },
+              {
+                "id": "c",
+                "text": "40"
+              },
+              {
+                "id": "d",
+                "text": "8"
+              }
+            ],
+            "correctAnswerId": "d",
+            "rule": "Deux suites imbriquées : 2, 4, 6, 8 et 10, 20, 30.",
+            "explanation": "Les positions impaires donnent 2, 4, 6, 8 ; les positions paires donnent 10, 20, 30.",
+            "contextualHint": "Sépare les positions paires et impaires.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0001-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "truth-lie",
+            "difficulty": 5,
+            "prompt": "Une seule affirmation est vraie et une seule personne possède le jeton. Qui le possède ?",
+            "clues": [
+              "Iris : « Jules possède le jeton. »",
+              "Jules : « Lola possède le jeton. »",
+              "Kamel : « Je ne possède pas le jeton. »",
+              "Lola : « Jules ne possède pas le jeton. »"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Kamel"
+              },
+              {
+                "id": "b",
+                "text": "Iris"
+              },
+              {
+                "id": "c",
+                "text": "Jules"
+              },
+              {
+                "id": "d",
+                "text": "Lola"
+              }
+            ],
+            "correctAnswerId": "a",
+            "reasoningSteps": [
+              "Tester les quatre détenteurs possibles.",
+              "Si Kamel possède le jeton, les trois premières affirmations sont fausses.",
+              "Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies."
+            ],
+            "explanation": "Tester les quatre détenteurs possibles. Si Kamel possède le jeton, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "truth-lie"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0002",
+      "title": "Parcours final 2",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0002-S1",
+            "type": "multiple_choice",
+            "category": "sports",
+            "subcategory": "tennis",
+            "difficulty": 3,
+            "question": "Comment appelle-t-on un service que l’adversaire ne touche pas ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Un let"
+              },
+              {
+                "id": "b",
+                "text": "Un ace"
+              },
+              {
+                "id": "c",
+                "text": "Un lob"
+              },
+              {
+                "id": "d",
+                "text": "Un passing-shot"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Le point se termine dès la mise en jeu.",
+            "explanation": "Un ace est un service gagnant directement, sans contact de la raquette adverse.",
+            "sourceLabel": "Encyclopædia Britannica",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "tennis"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0002-S2",
+            "type": "progressive_clues",
+            "category": "world-cultures",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un pays insulaire."
+              },
+              {
+                "order": 2,
+                "text": "Je me situe en Asie orientale."
+              },
+              {
+                "order": 3,
+                "text": "Mon écriture combine plusieurs systèmes."
+              },
+              {
+                "order": 4,
+                "text": "Tokyo est ma capitale."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "La Corée du Sud"
+              },
+              {
+                "id": "b",
+                "text": "L’Indonésie"
+              },
+              {
+                "id": "c",
+                "text": "Le Japon"
+              },
+              {
+                "id": "d",
+                "text": "Les Philippines"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le Japon.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0002-S3",
+            "type": "connection",
+            "category": "language",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Français"
+              },
+              {
+                "id": "item-2",
+                "text": "Espagnol"
+              },
+              {
+                "id": "item-3",
+                "text": "Italien"
+              },
+              {
+                "id": "item-4",
+                "text": "Portugais"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "Des objets fabriqués en métal"
+              },
+              {
+                "id": "d",
+                "text": "Des langues romanes"
+              }
+            ],
+            "correctAnswerId": "d",
+            "connection": "Des langues romanes",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des langues romanes.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0002-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "3",
+              "8",
+              "18",
+              "38",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "78"
+              },
+              {
+                "id": "b",
+                "text": "58"
+              },
+              {
+                "id": "c",
+                "text": "76"
+              },
+              {
+                "id": "d",
+                "text": "80"
+              }
+            ],
+            "correctAnswerId": "a",
+            "rule": "Multiplier par 2 puis ajouter 2.",
+            "explanation": "Chaque terme est le double du précédent, augmenté de 2.",
+            "contextualHint": "Teste une opération identique entre deux termes.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0002-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "reasoned-counting",
+            "difficulty": 5,
+            "prompt": "Des billes existent en quatre couleurs. Combien faut-il en choisir pour garantir trois billes de même couleur ?",
+            "clues": [],
+            "answers": [
+              {
+                "id": "a",
+                "text": "7"
+              },
+              {
+                "id": "b",
+                "text": "9"
+              },
+              {
+                "id": "c",
+                "text": "8"
+              },
+              {
+                "id": "d",
+                "text": "10"
+              }
+            ],
+            "correctAnswerId": "b",
+            "reasoningSteps": [
+              "On peut prendre au maximum 2 élément(s) de chacune des 4 catégories sans atteindre le seuil.",
+              "Cela représente 8 éléments.",
+              "Le suivant, soit le 9e, garantit la répétition demandée."
+            ],
+            "explanation": "On peut prendre au maximum 2 élément(s) de chacune des 4 catégories sans atteindre le seuil. Cela représente 8 éléments. Le suivant, soit le 9e, garantit la répétition demandée.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "reasoned-counting"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0003",
+      "title": "Parcours final 3",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0003-S1",
+            "type": "multiple_choice",
+            "category": "technology",
+            "subcategory": "cybersecurity",
+            "difficulty": 3,
+            "question": "Comment appelle-t-on une attaque qui cherche à tromper un utilisateur pour obtenir ses identifiants ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "L’hameçonnage"
+              },
+              {
+                "id": "b",
+                "text": "La défragmentation"
+              },
+              {
+                "id": "c",
+                "text": "La virtualisation"
+              },
+              {
+                "id": "d",
+                "text": "La compilation"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "L’attaque exploite surtout la confiance humaine.",
+            "explanation": "L’hameçonnage imite souvent un message légitime pour pousser la victime à cliquer ou transmettre des données.",
+            "sourceLabel": "W3C",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "cybersecurity"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0003-S2",
+            "type": "progressive_clues",
+            "category": "music",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un instrument."
+              },
+              {
+                "order": 2,
+                "text": "Je possède quatre cordes."
+              },
+              {
+                "order": 3,
+                "text": "On me joue avec un archet."
+              },
+              {
+                "order": 4,
+                "text": "Je suis le plus aigu de ma famille orchestrale courante."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "L’alto"
+              },
+              {
+                "id": "b",
+                "text": "Le violoncelle"
+              },
+              {
+                "id": "c",
+                "text": "La contrebasse"
+              },
+              {
+                "id": "d",
+                "text": "Le violon"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le violon.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0003-S3",
+            "type": "connection",
+            "category": "mythologies",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Rê"
+              },
+              {
+                "id": "item-2",
+                "text": "Isis"
+              },
+              {
+                "id": "item-3",
+                "text": "Osiris"
+              },
+              {
+                "id": "item-4",
+                "text": "Anubis"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Des divinités de l’Égypte antique"
+              },
+              {
+                "id": "b",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "a",
+            "connection": "Des divinités de l’Égypte antique",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des divinités de l’Égypte antique.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0003-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "A2",
+              "C4",
+              "F7",
+              "J11",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "N15"
+              },
+              {
+                "id": "b",
+                "text": "O16"
+              },
+              {
+                "id": "c",
+                "text": "O15"
+              },
+              {
+                "id": "d",
+                "text": "P16"
+              }
+            ],
+            "correctAnswerId": "b",
+            "rule": "Ajouter successivement 2, 3, 4 puis 5 aux lettres et aux nombres.",
+            "explanation": "A→C (+2), C→F (+3), F→J (+4), donc J→O (+5), et 11→16.",
+            "contextualHint": "Compare séparément lettres et nombres.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0003-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "order",
+            "difficulty": 5,
+            "prompt": "Iris arrive avant Jules. Kamel arrive après Iris mais avant Jules. Lola arrive avant Iris. Qui arrive en position troisième ?",
+            "clues": [],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Iris"
+              },
+              {
+                "id": "b",
+                "text": "Jules"
+              },
+              {
+                "id": "c",
+                "text": "Kamel"
+              },
+              {
+                "id": "d",
+                "text": "Lola"
+              }
+            ],
+            "correctAnswerId": "c",
+            "reasoningSteps": [
+              "Lola précède Iris.",
+              "Iris précède Kamel, qui précède Jules.",
+              "L’ordre est donc Lola – Iris – Kamel – Jules ; la réponse est Kamel."
+            ],
+            "explanation": "Lola précède Iris. Iris précède Kamel, qui précède Jules. L’ordre est donc Lola – Iris – Kamel – Jules ; la réponse est Kamel.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "order"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0004",
+      "title": "Parcours final 4",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0004-S1",
+            "type": "multiple_choice",
+            "category": "world-cultures",
+            "subcategory": "clothing",
+            "difficulty": 3,
+            "question": "Quel vêtement traditionnel écossais est associé à un tissu tartan ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le sari"
+              },
+              {
+                "id": "b",
+                "text": "Le hanbok"
+              },
+              {
+                "id": "c",
+                "text": "Le poncho"
+              },
+              {
+                "id": "d",
+                "text": "Le kilt"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Le motif à carreaux varie selon les tartans.",
+            "explanation": "Le kilt est une jupe plissée portée dans différents contextes cérémoniels et culturels en Écosse.",
+            "sourceLabel": "UNESCO",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "clothing"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0004-S2",
+            "type": "progressive_clues",
+            "category": "science-nature",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un processus biologique."
+              },
+              {
+                "order": 2,
+                "text": "J’utilise l’énergie lumineuse."
+              },
+              {
+                "order": 3,
+                "text": "Je transforme eau et dioxyde de carbone."
+              },
+              {
+                "order": 4,
+                "text": "Je produis de la matière organique."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "La photosynthèse"
+              },
+              {
+                "id": "b",
+                "text": "La respiration"
+              },
+              {
+                "id": "c",
+                "text": "La fermentation"
+              },
+              {
+                "id": "d",
+                "text": "La transpiration"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers La photosynthèse.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0004-S3",
+            "type": "connection",
+            "category": "cinema-series",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Cadrage"
+              },
+              {
+                "id": "item-2",
+                "text": "Montage"
+              },
+              {
+                "id": "item-3",
+                "text": "Éclairage"
+              },
+              {
+                "id": "item-4",
+                "text": "Mixage"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des composantes de la fabrication audiovisuelle"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "b",
+            "connection": "Des composantes de la fabrication audiovisuelle",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des composantes de la fabrication audiovisuelle.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0004-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "A",
+              "D",
+              "H",
+              "M",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "R"
+              },
+              {
+                "id": "b",
+                "text": "T"
+              },
+              {
+                "id": "c",
+                "text": "S"
+              },
+              {
+                "id": "d",
+                "text": "U"
+              }
+            ],
+            "correctAnswerId": "c",
+            "rule": "Avancer de 3, puis 4, puis 5, puis 6 lettres.",
+            "explanation": "Les intervalles augmentent d’une unité : 3, 4, 5 puis 6.",
+            "contextualHint": "Mesure les écarts alphabétiques.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0004-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "verbal-logic",
+            "difficulty": 5,
+            "prompt": "Quatre équipes jouent à 9 h, 10 h, 11 h et 12 h. L’équipe C joue à 9 h, A avant B, et D après B. À quelle heure joue B ?",
+            "clues": [
+              "Chaque horaire n’est utilisé qu’une fois."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "9 h"
+              },
+              {
+                "id": "b",
+                "text": "10 h"
+              },
+              {
+                "id": "c",
+                "text": "12 h"
+              },
+              {
+                "id": "d",
+                "text": "11 h"
+              }
+            ],
+            "correctAnswerId": "d",
+            "reasoningSteps": [
+              "C occupe 9 h.",
+              "Pour avoir A avant B et D après B, B ne peut être ni 10 h ni 12 h.",
+              "B joue donc à 11 h."
+            ],
+            "explanation": "C occupe 9 h. Pour avoir A avant B et D après B, B ne peut être ni 10 h ni 12 h. B joue donc à 11 h.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "verbal-logic"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0005",
+      "title": "Parcours final 5",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0005-S1",
+            "type": "multiple_choice",
+            "category": "science-nature",
+            "subcategory": "astronomy",
+            "difficulty": 3,
+            "question": "Quelle planète possède la Grande Tache rouge ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Saturne"
+              },
+              {
+                "id": "b",
+                "text": "Mars"
+              },
+              {
+                "id": "c",
+                "text": "Jupiter"
+              },
+              {
+                "id": "d",
+                "text": "Neptune"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Cherche la plus grande planète du Système solaire.",
+            "explanation": "La Grande Tache rouge est une immense tempête persistante observée dans l’atmosphère de Jupiter.",
+            "sourceLabel": "CNRS",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "astronomy"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0005-S2",
+            "type": "progressive_clues",
+            "category": "history",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis associé au XVe siècle européen."
+              },
+              {
+                "order": 2,
+                "text": "Mon activité concerne la reproduction des textes."
+              },
+              {
+                "order": 3,
+                "text": "J’ai perfectionné l’usage de caractères mobiles métalliques."
+              },
+              {
+                "order": 4,
+                "text": "Une célèbre Bible porte mon nom."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Copernic"
+              },
+              {
+                "id": "b",
+                "text": "Gutenberg"
+              },
+              {
+                "id": "c",
+                "text": "Érasme"
+              },
+              {
+                "id": "d",
+                "text": "Galilée"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Gutenberg.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0005-S3",
+            "type": "connection",
+            "category": "world-cultures",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Kimono"
+              },
+              {
+                "id": "item-2",
+                "text": "Hanbok"
+              },
+              {
+                "id": "item-3",
+                "text": "Sari"
+              },
+              {
+                "id": "item-4",
+                "text": "Kilt"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "Des vêtements traditionnels associés à différentes cultures"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "c",
+            "connection": "Des vêtements traditionnels associés à différentes cultures",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des vêtements traditionnels associés à différentes cultures.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0005-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "A",
+              "Z",
+              "C",
+              "X",
+              "E",
+              "V",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "F"
+              },
+              {
+                "id": "b",
+                "text": "H"
+              },
+              {
+                "id": "c",
+                "text": "T"
+              },
+              {
+                "id": "d",
+                "text": "G"
+              }
+            ],
+            "correctAnswerId": "d",
+            "rule": "Deux suites alphabétiques imbriquées.",
+            "explanation": "Les positions impaires donnent A, C, E, G ; les positions paires donnent Z, X, V.",
+            "contextualHint": "Sépare les positions impaires et paires.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0005-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "positions-relative",
+            "difficulty": 5,
+            "prompt": "Maya, Nino, Olga et Pablo occupent quatre cabines aligné(e)s. Qui est en deuxième position ?",
+            "clues": [
+              "Olga est tout à gauche.",
+              "Nino est tout à droite.",
+              "Maya est immédiatement à gauche de Pablo."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Maya"
+              },
+              {
+                "id": "b",
+                "text": "Nino"
+              },
+              {
+                "id": "c",
+                "text": "Olga"
+              },
+              {
+                "id": "d",
+                "text": "Pablo"
+              }
+            ],
+            "correctAnswerId": "a",
+            "reasoningSteps": [
+              "Olga est en position 1 et Nino en position 4.",
+              "Les positions 2 et 3 reviennent à Maya et Pablo.",
+              "Maya étant immédiatement à gauche de Pablo, Maya est deuxième."
+            ],
+            "explanation": "Olga est en position 1 et Nino en position 4. Les positions 2 et 3 reviennent à Maya et Pablo. Maya étant immédiatement à gauche de Pablo, Maya est deuxième.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "positions-relative"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0006",
+      "title": "Parcours final 6",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0006-S1",
+            "type": "multiple_choice",
+            "category": "society-institutions",
+            "subcategory": "law",
+            "difficulty": 3,
+            "question": "Quel principe impose que nul ne soit puni pour un acte qui n’était pas interdit au moment où il a été commis ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "La séparation des pouvoirs"
+              },
+              {
+                "id": "b",
+                "text": "La non-rétroactivité de la loi pénale plus sévère"
+              },
+              {
+                "id": "c",
+                "text": "La présomption de majorité"
+              },
+              {
+                "id": "d",
+                "text": "La publicité des débats"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Il concerne le rapport entre une loi nouvelle et des faits passés.",
+            "explanation": "Ce principe protège la sécurité juridique et empêche l’application rétroactive d’une incrimination plus sévère.",
+            "sourceLabel": "Vie publique",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "law"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0006-S2",
+            "type": "progressive_clues",
+            "category": "geography",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je forme une longue chaîne montagneuse."
+              },
+              {
+                "order": 2,
+                "text": "Je longe la façade occidentale d’un continent."
+              },
+              {
+                "order": 3,
+                "text": "Je traverse plusieurs pays sud-américains."
+              },
+              {
+                "order": 4,
+                "text": "L’Aconcagua est l’un de mes sommets."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Les Alpes"
+              },
+              {
+                "id": "b",
+                "text": "L’Himalaya"
+              },
+              {
+                "id": "c",
+                "text": "Les Andes"
+              },
+              {
+                "id": "d",
+                "text": "Les Rocheuses"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Les Andes.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0006-S3",
+            "type": "connection",
+            "category": "science-nature",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Mercure"
+              },
+              {
+                "id": "item-2",
+                "text": "Vénus"
+              },
+              {
+                "id": "item-3",
+                "text": "Terre"
+              },
+              {
+                "id": "item-4",
+                "text": "Mars"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "Des objets fabriqués en métal"
+              },
+              {
+                "id": "d",
+                "text": "Les planètes telluriques"
+              }
+            ],
+            "correctAnswerId": "d",
+            "connection": "Les planètes telluriques",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Les planètes telluriques.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0006-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "10",
+              "9",
+              "18",
+              "17",
+              "34",
+              "33",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "66"
+              },
+              {
+                "id": "b",
+                "text": "32"
+              },
+              {
+                "id": "c",
+                "text": "64"
+              },
+              {
+                "id": "d",
+                "text": "67"
+              }
+            ],
+            "correctAnswerId": "a",
+            "rule": "Alterner −1 puis ×2.",
+            "explanation": "10→9 (−1), 9→18 (×2), puis le motif recommence.",
+            "contextualHint": "Cherche deux opérations alternées.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0006-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "correspondence",
+            "difficulty": 5,
+            "prompt": "Quatre contenants renferment chacun un élément différent (Rome, Lima, Oslo, Kyoto). Où se trouve « Oslo » ?",
+            "clues": [
+              "Rome est dans la boîte A.",
+              "Lima est dans la boîte D.",
+              "Kyoto n’est pas dans la boîte C."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Boîte A"
+              },
+              {
+                "id": "b",
+                "text": "Boîte C"
+              },
+              {
+                "id": "c",
+                "text": "Boîte B"
+              },
+              {
+                "id": "d",
+                "text": "Boîte D"
+              }
+            ],
+            "correctAnswerId": "b",
+            "reasoningSteps": [
+              "La boîte A contient Rome et la boîte D contient Lima.",
+              "Il reste Oslo et Kyoto pour B et C.",
+              "Comme Kyoto n’est pas dans C, C contient Oslo."
+            ],
+            "explanation": "La boîte A contient Rome et la boîte D contient Lima. Il reste Oslo et Kyoto pour B et C. Comme Kyoto n’est pas dans C, C contient Oslo.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "correspondence"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0007",
+      "title": "Parcours final 7",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0007-S1",
+            "type": "multiple_choice",
+            "category": "popular-culture",
+            "subcategory": "superheroes",
+            "difficulty": 3,
+            "question": "Quel héros de DC Comics est aussi Bruce Wayne ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Batman"
+              },
+              {
+                "id": "b",
+                "text": "Superman"
+              },
+              {
+                "id": "c",
+                "text": "Flash"
+              },
+              {
+                "id": "d",
+                "text": "Green Lantern"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "Il protège Gotham sans super-pouvoir surnaturel.",
+            "explanation": "Bruce Wayne combat le crime à Gotham grâce à son entraînement, sa technologie et son identité secrète.",
+            "sourceLabel": "Bibliothèque nationale de France",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "superheroes"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0007-S2",
+            "type": "progressive_clues",
+            "category": "science-nature",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis une molécule."
+              },
+              {
+                "order": 2,
+                "text": "Je porte une information héréditaire."
+              },
+              {
+                "order": 3,
+                "text": "Ma structure comporte une double hélice."
+              },
+              {
+                "order": 4,
+                "text": "Mes bases incluent adénine et thymine."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "L’ATP"
+              },
+              {
+                "id": "b",
+                "text": "Le glucose"
+              },
+              {
+                "id": "c",
+                "text": "Le collagène"
+              },
+              {
+                "id": "d",
+                "text": "L’ADN"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers L’ADN.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0007-S3",
+            "type": "connection",
+            "category": "technology",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Debian"
+              },
+              {
+                "id": "item-2",
+                "text": "Fedora"
+              },
+              {
+                "id": "item-3",
+                "text": "Ubuntu"
+              },
+              {
+                "id": "item-4",
+                "text": "Arch Linux"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Des distributions Linux"
+              },
+              {
+                "id": "b",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "a",
+            "connection": "Des distributions Linux",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des distributions Linux.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0007-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "1",
+              "3",
+              "2",
+              "6",
+              "3",
+              "9",
+              "4",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "10"
+              },
+              {
+                "id": "b",
+                "text": "12"
+              },
+              {
+                "id": "c",
+                "text": "13"
+              },
+              {
+                "id": "d",
+                "text": "16"
+              }
+            ],
+            "correctAnswerId": "b",
+            "rule": "Deux suites imbriquées : 1,2,3,4 et 3,6,9,12.",
+            "explanation": "Les termes impairs augmentent de 1 ; les termes pairs sont leurs triples.",
+            "contextualHint": "Sépare les deux positions.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0007-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "constraints",
+            "difficulty": 5,
+            "prompt": "Un code utilise une seule fois chacun des signes A, D, F. Quel est le code ?",
+            "clues": [
+              "D est placé avant A.",
+              "F est placé après A."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "ADF"
+              },
+              {
+                "id": "b",
+                "text": "AFD"
+              },
+              {
+                "id": "c",
+                "text": "DAF"
+              },
+              {
+                "id": "d",
+                "text": "FDA"
+              }
+            ],
+            "correctAnswerId": "c",
+            "reasoningSteps": [
+              "D doit précéder A.",
+              "F doit suivre A.",
+              "L’ordre unique est donc DAF."
+            ],
+            "explanation": "D doit précéder A. F doit suivre A. L’ordre unique est donc DAF.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "constraints"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0008",
+      "title": "Parcours final 8",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0008-S1",
+            "type": "multiple_choice",
+            "category": "society-institutions",
+            "subcategory": "public-services",
+            "difficulty": 3,
+            "question": "Où dépose-t-on généralement une demande de passeport en France ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "À la caisse d’allocations familiales"
+              },
+              {
+                "id": "b",
+                "text": "Au tribunal judiciaire"
+              },
+              {
+                "id": "c",
+                "text": "Dans une mairie équipée d’un dispositif de recueil"
+              },
+              {
+                "id": "d",
+                "text": "À la chambre de commerce"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "La démarche passe par l’état civil et l’identification.",
+            "explanation": "La demande est généralement déposée dans une mairie équipée d’un dispositif de recueil, indépendamment du domicile, puis instruite par l’administration compétente.",
+            "sourceLabel": "Vie publique",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "public-services"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0008-S2",
+            "type": "progressive_clues",
+            "category": "arts-literature",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un dramaturge français."
+              },
+              {
+                "order": 2,
+                "text": "J’ai vécu au XVIIe siècle."
+              },
+              {
+                "order": 3,
+                "text": "J’ai créé Harpagon et Tartuffe."
+              },
+              {
+                "order": 4,
+                "text": "Le Malade imaginaire est l’une de mes pièces."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Molière"
+              },
+              {
+                "id": "b",
+                "text": "Racine"
+              },
+              {
+                "id": "c",
+                "text": "Corneille"
+              },
+              {
+                "id": "d",
+                "text": "Beaumarchais"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Molière.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0008-S3",
+            "type": "connection",
+            "category": "science-nature",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Pin"
+              },
+              {
+                "id": "item-2",
+                "text": "Sapin"
+              },
+              {
+                "id": "item-3",
+                "text": "Épicéa"
+              },
+              {
+                "id": "item-4",
+                "text": "Mélèze"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des conifères"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "b",
+            "connection": "Des conifères",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des conifères.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0008-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "A",
+              "BB",
+              "CCC",
+              "DDDD",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "EEEE"
+              },
+              {
+                "id": "b",
+                "text": "FFFFF"
+              },
+              {
+                "id": "c",
+                "text": "EEEEE"
+              },
+              {
+                "id": "d",
+                "text": "ABCDE"
+              }
+            ],
+            "correctAnswerId": "c",
+            "rule": "La lettre avance et son nombre de répétitions augmente de 1.",
+            "explanation": "Après quatre D vient cinq E.",
+            "contextualHint": "Observe simultanément la lettre et sa répétition.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0008-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "movement",
+            "difficulty": 5,
+            "prompt": "Un pion est sur la case 2 d’un cercle de cinq cases numérotées. Il avance de 2, recule de 1 puis avance de 2. Où arrive-t-il ?",
+            "clues": [
+              "Après la case 5, on revient à la case 1."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Case 1"
+              },
+              {
+                "id": "b",
+                "text": "Case 2"
+              },
+              {
+                "id": "c",
+                "text": "Case 4"
+              },
+              {
+                "id": "d",
+                "text": "Case 5"
+              }
+            ],
+            "correctAnswerId": "d",
+            "reasoningSteps": [
+              "2 + 2 mène à 4.",
+              "Reculer d’une case mène à 3.",
+              "Avancer de deux mène à 5."
+            ],
+            "explanation": "2 + 2 mène à 4. Reculer d’une case mène à 3. Avancer de deux mène à 5.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "movement"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0009",
+      "title": "Parcours final 9",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0009-S1",
+            "type": "multiple_choice",
+            "category": "popular-culture",
+            "subcategory": "franchises",
+            "difficulty": 3,
+            "question": "Dans Star Wars, quelle arme est associée aux Jedi ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le sabre laser"
+              },
+              {
+                "id": "b",
+                "text": "Le tricordeur"
+              },
+              {
+                "id": "c",
+                "text": "Le phaser"
+              },
+              {
+                "id": "d",
+                "text": "Le Batarang"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "La lame est faite d’énergie lumineuse.",
+            "explanation": "Le sabre laser est utilisé par les Jedi et les Sith et symbolise leur lien avec la Force.",
+            "sourceLabel": "Bibliothèque nationale de France",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "franchises"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0009-S2",
+            "type": "progressive_clues",
+            "category": "science-nature",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis une planète géante."
+              },
+              {
+                "order": 2,
+                "text": "Je me situe au-delà de Jupiter."
+              },
+              {
+                "order": 3,
+                "text": "Ma densité moyenne est faible."
+              },
+              {
+                "order": 4,
+                "text": "Mon système d’anneaux est très visible."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Uranus"
+              },
+              {
+                "id": "b",
+                "text": "Saturne"
+              },
+              {
+                "id": "c",
+                "text": "Neptune"
+              },
+              {
+                "id": "d",
+                "text": "Jupiter"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Saturne.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0009-S3",
+            "type": "connection",
+            "category": "geography",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Sicile"
+              },
+              {
+                "id": "item-2",
+                "text": "Sardaigne"
+              },
+              {
+                "id": "item-3",
+                "text": "Crète"
+              },
+              {
+                "id": "item-4",
+                "text": "Chypre"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "De grandes îles de la Méditerranée"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "c",
+            "connection": "De grandes îles de la Méditerranée",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : De grandes îles de la Méditerranée.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0009-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "flèche haut",
+              "flèche bas",
+              "flèche droite",
+              "flèche gauche",
+              "flèche bas",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "flèche droite"
+              },
+              {
+                "id": "b",
+                "text": "flèche gauche"
+              },
+              {
+                "id": "c",
+                "text": "flèche bas"
+              },
+              {
+                "id": "d",
+                "text": "flèche haut"
+              }
+            ],
+            "correctAnswerId": "d",
+            "rule": "Deux rotations imbriquées.",
+            "explanation": "Les positions impaires et les positions paires forment deux suites séparées, chacune tournant de 90° dans le sens horaire.",
+            "contextualHint": "Sépare les positions paires et impaires.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0009-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "truth-lie",
+            "difficulty": 5,
+            "prompt": "Une seule affirmation est vraie et une seule personne possède le médaillon. Qui le possède ?",
+            "clues": [
+              "Maya : « Nino possède le médaillon. »",
+              "Nino : « Pablo possède le médaillon. »",
+              "Olga : « Je ne possède pas le médaillon. »",
+              "Pablo : « Nino ne possède pas le médaillon. »"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Olga"
+              },
+              {
+                "id": "b",
+                "text": "Maya"
+              },
+              {
+                "id": "c",
+                "text": "Nino"
+              },
+              {
+                "id": "d",
+                "text": "Pablo"
+              }
+            ],
+            "correctAnswerId": "a",
+            "reasoningSteps": [
+              "Tester les quatre détenteurs possibles.",
+              "Si Olga possède le médaillon, les trois premières affirmations sont fausses.",
+              "Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies."
+            ],
+            "explanation": "Tester les quatre détenteurs possibles. Si Olga possède le médaillon, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "truth-lie"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0010",
+      "title": "Parcours final 10",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0010-S1",
+            "type": "multiple_choice",
+            "category": "cinema-series",
+            "subcategory": "french-cinema",
+            "difficulty": 3,
+            "question": "Quel réalisateur français a tourné Les Quatre Cents Coups ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Jean-Luc Godard"
+              },
+              {
+                "id": "b",
+                "text": "Claude Chabrol"
+              },
+              {
+                "id": "c",
+                "text": "Louis Malle"
+              },
+              {
+                "id": "d",
+                "text": "François Truffaut"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Le héros s’appelle Antoine Doinel.",
+            "explanation": "Sorti en 1959, le film suit Antoine Doinel et constitue une œuvre emblématique de la Nouvelle Vague.",
+            "sourceLabel": "BFI",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "french-cinema"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0010-S2",
+            "type": "progressive_clues",
+            "category": "music",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un genre musical."
+              },
+              {
+                "order": 2,
+                "text": "Je me développe aux États-Unis."
+              },
+              {
+                "order": 3,
+                "text": "L’improvisation occupe souvent une place centrale."
+              },
+              {
+                "order": 4,
+                "text": "La Nouvelle-Orléans est liée à mes origines."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le flamenco"
+              },
+              {
+                "id": "b",
+                "text": "Le reggae"
+              },
+              {
+                "id": "c",
+                "text": "Le jazz"
+              },
+              {
+                "id": "d",
+                "text": "Le baroque"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le jazz.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0010-S3",
+            "type": "connection",
+            "category": "technology",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "HTTP"
+              },
+              {
+                "id": "item-2",
+                "text": "FTP"
+              },
+              {
+                "id": "item-3",
+                "text": "SMTP"
+              },
+              {
+                "id": "item-4",
+                "text": "DNS"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "Des objets fabriqués en métal"
+              },
+              {
+                "id": "d",
+                "text": "Des protocoles ou services fondamentaux d’Internet"
+              }
+            ],
+            "correctAnswerId": "d",
+            "connection": "Des protocoles ou services fondamentaux d’Internet",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des protocoles ou services fondamentaux d’Internet.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0010-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "cercle primaire",
+              "carré secondaire",
+              "triangle accent",
+              "cercle primaire",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "carré secondaire"
+              },
+              {
+                "id": "b",
+                "text": "triangle primaire"
+              },
+              {
+                "id": "c",
+                "text": "cercle accent"
+              },
+              {
+                "id": "d",
+                "text": "carré accent"
+              }
+            ],
+            "correctAnswerId": "a",
+            "rule": "Répéter un cycle de trois associations forme-couleur.",
+            "explanation": "Le cycle cercle primaire, carré secondaire, triangle accent recommence.",
+            "contextualHint": "Cherche un motif complet de trois termes.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0010-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "reasoned-counting",
+            "difficulty": 5,
+            "prompt": "Une boîte contient des cartes de cinq symboles différents. Combien faut-il en prendre pour garantir deux symboles identiques ?",
+            "clues": [],
+            "answers": [
+              {
+                "id": "a",
+                "text": "5"
+              },
+              {
+                "id": "b",
+                "text": "6"
+              },
+              {
+                "id": "c",
+                "text": "7"
+              },
+              {
+                "id": "d",
+                "text": "10"
+              }
+            ],
+            "correctAnswerId": "b",
+            "reasoningSteps": [
+              "On peut prendre au maximum 1 élément(s) de chacune des 5 catégories sans atteindre le seuil.",
+              "Cela représente 5 éléments.",
+              "Le suivant, soit le 6e, garantit la répétition demandée."
+            ],
+            "explanation": "On peut prendre au maximum 1 élément(s) de chacune des 5 catégories sans atteindre le seuil. Cela représente 5 éléments. Le suivant, soit le 6e, garantit la répétition demandée.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "reasoned-counting"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0011",
+      "title": "Parcours final 11",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0011-S1",
+            "type": "multiple_choice",
+            "category": "geography",
+            "subcategory": "physical-geography",
+            "difficulty": 3,
+            "question": "Quel détroit sépare l’Espagne du Maroc ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le Bosphore"
+              },
+              {
+                "id": "b",
+                "text": "Le détroit de Béring"
+              },
+              {
+                "id": "c",
+                "text": "Le détroit de Gibraltar"
+              },
+              {
+                "id": "d",
+                "text": "Le détroit de Messine"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Il commande l’entrée occidentale de la Méditerranée.",
+            "explanation": "Ce passage relie l’océan Atlantique à la mer Méditerranée et sépare l’Europe de l’Afrique.",
+            "sourceLabel": "National Geographic",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "physical-geography"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0011-S2",
+            "type": "progressive_clues",
+            "category": "mythologies",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis une créature composite."
+              },
+              {
+                "order": 2,
+                "text": "Je garde parfois un passage ou un lieu sacré."
+              },
+              {
+                "order": 3,
+                "text": "Une énigme me lie au destin d’Œdipe."
+              },
+              {
+                "order": 4,
+                "text": "Je possède un corps de lion."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le Minotaure"
+              },
+              {
+                "id": "b",
+                "text": "Cerbère"
+              },
+              {
+                "id": "c",
+                "text": "Le Cyclope"
+              },
+              {
+                "id": "d",
+                "text": "Le Sphinx"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le Sphinx.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0011-S3",
+            "type": "connection",
+            "category": "arts-literature",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Hugo"
+              },
+              {
+                "id": "item-2",
+                "text": "Balzac"
+              },
+              {
+                "id": "item-3",
+                "text": "Zola"
+              },
+              {
+                "id": "item-4",
+                "text": "Flaubert"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Des écrivains français du XIXe siècle"
+              },
+              {
+                "id": "b",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "a",
+            "connection": "Des écrivains français du XIXe siècle",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des écrivains français du XIXe siècle.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0011-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "2",
+              "6",
+              "12",
+              "20",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "24"
+              },
+              {
+                "id": "b",
+                "text": "30"
+              },
+              {
+                "id": "c",
+                "text": "28"
+              },
+              {
+                "id": "d",
+                "text": "32"
+              }
+            ],
+            "correctAnswerId": "b",
+            "rule": "Former les produits n × (n + 1).",
+            "explanation": "1×2=2, 2×3=6, 3×4=12, 4×5=20, puis 5×6=30.",
+            "contextualHint": "Relie chaque terme à deux entiers consécutifs.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0011-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "order",
+            "difficulty": 5,
+            "prompt": "Maya arrive avant Nino. Olga arrive après Maya mais avant Nino. Pablo arrive avant Maya. Qui arrive en position dernière ?",
+            "clues": [],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Maya"
+              },
+              {
+                "id": "b",
+                "text": "Olga"
+              },
+              {
+                "id": "c",
+                "text": "Nino"
+              },
+              {
+                "id": "d",
+                "text": "Pablo"
+              }
+            ],
+            "correctAnswerId": "c",
+            "reasoningSteps": [
+              "Pablo précède Maya.",
+              "Maya précède Olga, qui précède Nino.",
+              "L’ordre est donc Pablo – Maya – Olga – Nino ; la réponse est Nino."
+            ],
+            "explanation": "Pablo précède Maya. Maya précède Olga, qui précède Nino. L’ordre est donc Pablo – Maya – Olga – Nino ; la réponse est Nino.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "order"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0012",
+      "title": "Parcours final 12",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0012-S1",
+            "type": "multiple_choice",
+            "category": "gastronomy",
+            "subcategory": "world-cuisine",
+            "difficulty": 3,
+            "question": "Quel ingrédient constitue la base du houmous ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "La lentille corail"
+              },
+              {
+                "id": "b",
+                "text": "Le haricot rouge"
+              },
+              {
+                "id": "c",
+                "text": "Le pois chiche"
+              },
+              {
+                "id": "d",
+                "text": "Le riz"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Il s’agit d’une légumineuse beige.",
+            "explanation": "Le houmous mélange pois chiches, tahini, citron, ail et huile selon de nombreuses variantes régionales.",
+            "sourceLabel": "Larousse Gastronomique",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "world-cuisine"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0012-S2",
+            "type": "progressive_clues",
+            "category": "technology",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un réseau de réseaux."
+              },
+              {
+                "order": 2,
+                "text": "Je repose sur des protocoles de communication."
+              },
+              {
+                "order": 3,
+                "text": "Le Web est l’un des services qui m’utilisent."
+              },
+              {
+                "order": 4,
+                "text": "TCP/IP structure une grande partie de mes échanges."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Internet"
+              },
+              {
+                "id": "b",
+                "text": "Le Bluetooth"
+              },
+              {
+                "id": "c",
+                "text": "Le BIOS"
+              },
+              {
+                "id": "d",
+                "text": "Le GPS"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Internet.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0012-S3",
+            "type": "connection",
+            "category": "sports",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Judo"
+              },
+              {
+                "id": "item-2",
+                "text": "Lutte"
+              },
+              {
+                "id": "item-3",
+                "text": "Boxe"
+              },
+              {
+                "id": "item-4",
+                "text": "Taekwondo"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des sports de combat olympiques"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "b",
+            "connection": "Des sports de combat olympiques",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des sports de combat olympiques.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0012-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "1",
+              "100",
+              "2",
+              "90",
+              "3",
+              "80",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "70"
+              },
+              {
+                "id": "b",
+                "text": "5"
+              },
+              {
+                "id": "c",
+                "text": "4"
+              },
+              {
+                "id": "d",
+                "text": "40"
+              }
+            ],
+            "correctAnswerId": "c",
+            "rule": "Deux suites imbriquées : +1 et −10.",
+            "explanation": "Les positions impaires donnent 1,2,3,4 ; les positions paires 100,90,80.",
+            "contextualHint": "Sépare les positions.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0012-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "verbal-logic",
+            "difficulty": 5,
+            "prompt": "Un robot part de (0,0), avance de 2 cases vers l’est, de 1 vers le nord, puis de 3 vers l’ouest. Où se trouve-t-il ?",
+            "clues": [
+              "Est augmente la première coordonnée ; nord augmente la seconde."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "(1,1)"
+              },
+              {
+                "id": "b",
+                "text": "(-1,-1)"
+              },
+              {
+                "id": "c",
+                "text": "(3,1)"
+              },
+              {
+                "id": "d",
+                "text": "(-1,1)"
+              }
+            ],
+            "correctAnswerId": "d",
+            "reasoningSteps": [
+              "Après l’est : (2,0).",
+              "Après le nord : (2,1).",
+              "Après trois cases à l’ouest : (-1,1)."
+            ],
+            "explanation": "Après l’est : (2,0). Après le nord : (2,1). Après trois cases à l’ouest : (-1,1).",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "verbal-logic"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0013",
+      "title": "Parcours final 13",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0013-S1",
+            "type": "multiple_choice",
+            "category": "technology",
+            "subcategory": "networks",
+            "difficulty": 3,
+            "question": "Quel appareil relie plusieurs réseaux et dirige les paquets entre eux ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Un routeur"
+              },
+              {
+                "id": "b",
+                "text": "Un clavier"
+              },
+              {
+                "id": "c",
+                "text": "Un projecteur"
+              },
+              {
+                "id": "d",
+                "text": "Un onduleur"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "Il oriente le trafic entre réseaux.",
+            "explanation": "Un routeur examine les adresses réseau et choisit un chemin pour transmettre les paquets.",
+            "sourceLabel": "W3C",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "networks"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0013-S2",
+            "type": "progressive_clues",
+            "category": "gastronomy",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis une matière grasse."
+              },
+              {
+                "order": 2,
+                "text": "Je proviens d’un fruit méditerranéen."
+              },
+              {
+                "order": 3,
+                "text": "Je suis obtenue par extraction mécanique ou procédés apparentés."
+              },
+              {
+                "order": 4,
+                "text": "Je suis centrale dans de nombreuses cuisines du bassin méditerranéen."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le beurre"
+              },
+              {
+                "id": "b",
+                "text": "L’huile d’olive"
+              },
+              {
+                "id": "c",
+                "text": "L’huile de sésame"
+              },
+              {
+                "id": "d",
+                "text": "La crème"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers L’huile d’olive.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0013-S3",
+            "type": "connection",
+            "category": "music",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Violon"
+              },
+              {
+                "id": "item-2",
+                "text": "Alto"
+              },
+              {
+                "id": "item-3",
+                "text": "Violoncelle"
+              },
+              {
+                "id": "item-4",
+                "text": "Contrebasse"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "La famille orchestrale des cordes frottées"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "c",
+            "connection": "La famille orchestrale des cordes frottées",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : La famille orchestrale des cordes frottées.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0013-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "2",
+              "3",
+              "5",
+              "9",
+              "17",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "25"
+              },
+              {
+                "id": "b",
+                "text": "31"
+              },
+              {
+                "id": "c",
+                "text": "35"
+              },
+              {
+                "id": "d",
+                "text": "33"
+              }
+            ],
+            "correctAnswerId": "d",
+            "rule": "Doubler puis retirer 1 à partir du deuxième terme.",
+            "explanation": "3=2×2−1, 5=3×2−1, puis 9,17 et 33.",
+            "contextualHint": "Compare un terme au double du précédent.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0013-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "positions-relative",
+            "difficulty": 5,
+            "prompt": "Rania, Sami, Tania et Ugo occupent quatre places de train aligné(e)s. Qui est en deuxième position ?",
+            "clues": [
+              "Tania est tout à gauche.",
+              "Sami est tout à droite.",
+              "Rania est immédiatement à gauche de Ugo."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Rania"
+              },
+              {
+                "id": "b",
+                "text": "Sami"
+              },
+              {
+                "id": "c",
+                "text": "Tania"
+              },
+              {
+                "id": "d",
+                "text": "Ugo"
+              }
+            ],
+            "correctAnswerId": "a",
+            "reasoningSteps": [
+              "Tania est en position 1 et Sami en position 4.",
+              "Les positions 2 et 3 reviennent à Rania et Ugo.",
+              "Rania étant immédiatement à gauche de Ugo, Rania est deuxième."
+            ],
+            "explanation": "Tania est en position 1 et Sami en position 4. Les positions 2 et 3 reviennent à Rania et Ugo. Rania étant immédiatement à gauche de Ugo, Rania est deuxième.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "positions-relative"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0014",
+      "title": "Parcours final 14",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0014-S1",
+            "type": "multiple_choice",
+            "category": "music",
+            "subcategory": "music-theory",
+            "difficulty": 3,
+            "question": "Que signifie l’indication crescendo ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Ralentir progressivement"
+              },
+              {
+                "id": "b",
+                "text": "Jouer très détaché"
+              },
+              {
+                "id": "c",
+                "text": "Revenir au tempo initial"
+              },
+              {
+                "id": "d",
+                "text": "Augmenter progressivement l’intensité"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Observe l’évolution du volume, pas de la vitesse.",
+            "explanation": "Un crescendo demande d’accroître graduellement le volume sonore sur une durée donnée.",
+            "sourceLabel": "Philharmonie de Paris",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "music-theory"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0014-S2",
+            "type": "progressive_clues",
+            "category": "world-cultures",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis associé au Japon féodal."
+              },
+              {
+                "order": 2,
+                "text": "J’appartiens à une classe guerrière."
+              },
+              {
+                "order": 3,
+                "text": "Le bushidō est lié à mon image culturelle."
+              },
+              {
+                "order": 4,
+                "text": "Le katana est souvent associé à mon équipement."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le viking"
+              },
+              {
+                "id": "b",
+                "text": "Le janissaire"
+              },
+              {
+                "id": "c",
+                "text": "Le samouraï"
+              },
+              {
+                "id": "d",
+                "text": "Le hoplite"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le samouraï.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0014-S3",
+            "type": "connection",
+            "category": "science-nature",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Hélium"
+              },
+              {
+                "id": "item-2",
+                "text": "Néon"
+              },
+              {
+                "id": "item-3",
+                "text": "Argon"
+              },
+              {
+                "id": "item-4",
+                "text": "Krypton"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "Des objets fabriqués en métal"
+              },
+              {
+                "id": "d",
+                "text": "Des gaz nobles"
+              }
+            ],
+            "correctAnswerId": "d",
+            "connection": "Des gaz nobles",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des gaz nobles.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0014-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "7",
+              "10",
+              "16",
+              "28",
+              "52",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "100"
+              },
+              {
+                "id": "b",
+                "text": "76"
+              },
+              {
+                "id": "c",
+                "text": "96"
+              },
+              {
+                "id": "d",
+                "text": "104"
+              }
+            ],
+            "correctAnswerId": "a",
+            "rule": "Ajouter 3, 6, 12, 24 puis 48.",
+            "explanation": "Les écarts doublent à chaque étape.",
+            "contextualHint": "Observe les différences successives.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0014-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "correspondence",
+            "difficulty": 5,
+            "prompt": "Quatre contenants renferment chacun un élément différent (chat, chien, loutre, lynx). Où se trouve « loutre » ?",
+            "clues": [
+              "Chat est dans la boîte A.",
+              "Chien est dans la boîte D.",
+              "Lynx n’est pas dans la boîte C."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Boîte A"
+              },
+              {
+                "id": "b",
+                "text": "Boîte C"
+              },
+              {
+                "id": "c",
+                "text": "Boîte B"
+              },
+              {
+                "id": "d",
+                "text": "Boîte D"
+              }
+            ],
+            "correctAnswerId": "b",
+            "reasoningSteps": [
+              "La boîte A contient chat et la boîte D contient chien.",
+              "Il reste loutre et lynx pour B et C.",
+              "Comme lynx n’est pas dans C, C contient loutre."
+            ],
+            "explanation": "La boîte A contient chat et la boîte D contient chien. Il reste loutre et lynx pour B et C. Comme lynx n’est pas dans C, C contient loutre.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "correspondence"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0015",
+      "title": "Parcours final 15",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0015-S1",
+            "type": "multiple_choice",
+            "category": "arts-literature",
+            "subcategory": "art-movements",
+            "difficulty": 3,
+            "question": "Quel mouvement pictural décompose les sujets en formes géométriques et points de vue multiples ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "L’impressionnisme"
+              },
+              {
+                "id": "b",
+                "text": "Le cubisme"
+              },
+              {
+                "id": "c",
+                "text": "Le fauvisme"
+              },
+              {
+                "id": "d",
+                "text": "Le symbolisme"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Picasso et Braque en sont des figures centrales.",
+            "explanation": "Le cubisme, développé notamment par Picasso et Braque, rompt avec la perspective traditionnelle.",
+            "sourceLabel": "BnF",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "art-movements"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0015-S2",
+            "type": "progressive_clues",
+            "category": "geography",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis une vaste région naturelle."
+              },
+              {
+                "order": 2,
+                "text": "Je me situe en Amérique du Sud."
+              },
+              {
+                "order": 3,
+                "text": "Un immense bassin fluvial me structure."
+              },
+              {
+                "order": 4,
+                "text": "La plus grande forêt tropicale humide du monde me caractérise."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "La Sibérie"
+              },
+              {
+                "id": "b",
+                "text": "Le Sahel"
+              },
+              {
+                "id": "c",
+                "text": "La Patagonie"
+              },
+              {
+                "id": "d",
+                "text": "L’Amazonie"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers L’Amazonie.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0015-S3",
+            "type": "connection",
+            "category": "world-cultures",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Brésil"
+              },
+              {
+                "id": "item-2",
+                "text": "Colombie"
+              },
+              {
+                "id": "item-3",
+                "text": "Éthiopie"
+              },
+              {
+                "id": "item-4",
+                "text": "Vietnam"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "De grands pays producteurs de café"
+              },
+              {
+                "id": "b",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "a",
+            "connection": "De grands pays producteurs de café",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : De grands pays producteurs de café.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0015-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "1",
+              "2",
+              "6",
+              "24",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "48"
+              },
+              {
+                "id": "b",
+                "text": "120"
+              },
+              {
+                "id": "c",
+                "text": "96"
+              },
+              {
+                "id": "d",
+                "text": "144"
+              }
+            ],
+            "correctAnswerId": "b",
+            "rule": "Multiplier successivement par 2, 3, 4 puis 5.",
+            "explanation": "1×2=2, ×3=6, ×4=24, puis ×5=120.",
+            "contextualHint": "Le multiplicateur change à chaque étape.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0015-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "constraints",
+            "difficulty": 5,
+            "prompt": "Un code utilise une seule fois chacun des signes K, M, R. Quel est le code ?",
+            "clues": [
+              "M est placé avant K.",
+              "R est placé après K."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "KMR"
+              },
+              {
+                "id": "b",
+                "text": "KRM"
+              },
+              {
+                "id": "c",
+                "text": "MKR"
+              },
+              {
+                "id": "d",
+                "text": "RMK"
+              }
+            ],
+            "correctAnswerId": "c",
+            "reasoningSteps": [
+              "M doit précéder K.",
+              "R doit suivre K.",
+              "L’ordre unique est donc MKR."
+            ],
+            "explanation": "M doit précéder K. R doit suivre K. L’ordre unique est donc MKR.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "constraints"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0016",
+      "title": "Parcours final 16",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0016-S1",
+            "type": "multiple_choice",
+            "category": "cinema-series",
+            "subcategory": "series",
+            "difficulty": 3,
+            "question": "Dans Breaking Bad, quelle matière Walter White enseigne-t-il au début de la série ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "La chimie"
+              },
+              {
+                "id": "b",
+                "text": "La physique"
+              },
+              {
+                "id": "c",
+                "text": "Les mathématiques"
+              },
+              {
+                "id": "d",
+                "text": "La biologie"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "Son expertise devient centrale dans l’intrigue.",
+            "explanation": "Walter White est professeur de lycée avant de mettre ses compétences scientifiques au service d’une activité criminelle.",
+            "sourceLabel": "BFI",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "series"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0016-S2",
+            "type": "progressive_clues",
+            "category": "arts-literature",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un monument parisien."
+              },
+              {
+                "order": 2,
+                "text": "J’ai été une résidence royale."
+              },
+              {
+                "order": 3,
+                "text": "Je suis aujourd’hui un musée."
+              },
+              {
+                "order": 4,
+                "text": "La Joconde fait partie de mes collections."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le Louvre"
+              },
+              {
+                "id": "b",
+                "text": "Le Prado"
+              },
+              {
+                "id": "c",
+                "text": "Le Rijksmuseum"
+              },
+              {
+                "id": "d",
+                "text": "Les Offices"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le Louvre.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0016-S3",
+            "type": "connection",
+            "category": "science-nature",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Mètre"
+              },
+              {
+                "id": "item-2",
+                "text": "Kilogramme"
+              },
+              {
+                "id": "item-3",
+                "text": "Seconde"
+              },
+              {
+                "id": "item-4",
+                "text": "Kelvin"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des unités de base du Système international"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "b",
+            "connection": "Des unités de base du Système international",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des unités de base du Système international.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0016-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "5",
+              "11",
+              "23",
+              "47",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "93"
+              },
+              {
+                "id": "b",
+                "text": "96"
+              },
+              {
+                "id": "c",
+                "text": "95"
+              },
+              {
+                "id": "d",
+                "text": "99"
+              }
+            ],
+            "correctAnswerId": "c",
+            "rule": "Multiplier par 2 puis ajouter 1.",
+            "explanation": "5→11→23→47→95 avec la même opération.",
+            "contextualHint": "Teste le double augmenté d’une unité.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0016-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "movement",
+            "difficulty": 5,
+            "prompt": "Une lampe suit le cycle rouge → vert → bleu → rouge. Elle est rouge et reçoit cinq impulsions. Quelle couleur affiche-t-elle ?",
+            "clues": [
+              "Chaque impulsion avance d’une couleur."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Rouge"
+              },
+              {
+                "id": "b",
+                "text": "Vert"
+              },
+              {
+                "id": "c",
+                "text": "Éteinte"
+              },
+              {
+                "id": "d",
+                "text": "Bleu"
+              }
+            ],
+            "correctAnswerId": "d",
+            "reasoningSteps": [
+              "Après trois impulsions, la lampe revient au rouge.",
+              "La quatrième la rend verte.",
+              "La cinquième la rend bleue."
+            ],
+            "explanation": "Après trois impulsions, la lampe revient au rouge. La quatrième la rend verte. La cinquième la rend bleue.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "movement"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0017",
+      "title": "Parcours final 17",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0017-S1",
+            "type": "multiple_choice",
+            "category": "french-language",
+            "subcategory": "figures-of-speech",
+            "difficulty": 3,
+            "question": "Quelle figure rapproche deux éléments avec un outil comme « tel » ou « comme » ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "La métaphore"
+              },
+              {
+                "id": "b",
+                "text": "L’oxymore"
+              },
+              {
+                "id": "c",
+                "text": "La métonymie"
+              },
+              {
+                "id": "d",
+                "text": "La comparaison"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "La relation est signalée par un mot-outil.",
+            "explanation": "La comparaison met explicitement en relation un comparé et un comparant grâce à un outil comparatif.",
+            "sourceLabel": "Académie française",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "figures-of-speech"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0017-S2",
+            "type": "progressive_clues",
+            "category": "science-nature",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis une structure géologique."
+              },
+              {
+                "order": 2,
+                "text": "Je peux émettre des gaz et des matériaux."
+              },
+              {
+                "order": 3,
+                "text": "Je suis alimenté par du magma."
+              },
+              {
+                "order": 4,
+                "text": "Mon activité peut produire des coulées de lave."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Un glacier"
+              },
+              {
+                "id": "b",
+                "text": "Un volcan"
+              },
+              {
+                "id": "c",
+                "text": "Un estuaire"
+              },
+              {
+                "id": "d",
+                "text": "Un canyon"
+              }
+            ],
+            "correctAnswerId": "b",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Un volcan.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0017-S3",
+            "type": "connection",
+            "category": "arts-literature",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Hamlet"
+              },
+              {
+                "id": "item-2",
+                "text": "Macbeth"
+              },
+              {
+                "id": "item-3",
+                "text": "Othello"
+              },
+              {
+                "id": "item-4",
+                "text": "Le Roi Lear"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "Des tragédies de Shakespeare"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "c",
+            "connection": "Des tragédies de Shakespeare",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des tragédies de Shakespeare.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0017-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "B",
+              "E",
+              "I",
+              "N",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "S"
+              },
+              {
+                "id": "b",
+                "text": "U"
+              },
+              {
+                "id": "c",
+                "text": "V"
+              },
+              {
+                "id": "d",
+                "text": "T"
+              }
+            ],
+            "correctAnswerId": "d",
+            "rule": "Avancer de 3, 4, 5 puis 6 lettres.",
+            "explanation": "B→E (+3), E→I (+4), I→N (+5), donc N→T (+6).",
+            "contextualHint": "Les intervalles augmentent.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0017-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "truth-lie",
+            "difficulty": 5,
+            "prompt": "Une seule affirmation est vraie et une seule personne possède le ticket doré. Qui le possède ?",
+            "clues": [
+              "Rania : « Sami possède le ticket doré. »",
+              "Sami : « Ugo possède le ticket doré. »",
+              "Tania : « Je ne possède pas le ticket doré. »",
+              "Ugo : « Sami ne possède pas le ticket doré. »"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Tania"
+              },
+              {
+                "id": "b",
+                "text": "Rania"
+              },
+              {
+                "id": "c",
+                "text": "Sami"
+              },
+              {
+                "id": "d",
+                "text": "Ugo"
+              }
+            ],
+            "correctAnswerId": "a",
+            "reasoningSteps": [
+              "Tester les quatre détenteurs possibles.",
+              "Si Tania possède le ticket doré, les trois premières affirmations sont fausses.",
+              "Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies."
+            ],
+            "explanation": "Tester les quatre détenteurs possibles. Si Tania possède le ticket doré, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "truth-lie"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0018",
+      "title": "Parcours final 18",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0018-S1",
+            "type": "multiple_choice",
+            "category": "science-nature",
+            "subcategory": "animals",
+            "difficulty": 3,
+            "question": "Quel groupe de vertébrés possède des plumes ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Les reptiles"
+              },
+              {
+                "id": "b",
+                "text": "Les amphibiens"
+              },
+              {
+                "id": "c",
+                "text": "Les oiseaux"
+              },
+              {
+                "id": "d",
+                "text": "Les mammifères"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Cette structure sert au vol, à l’isolation ou au signalement.",
+            "explanation": "Les plumes sont une caractéristique propre aux oiseaux actuels, même si certains dinosaures en possédaient aussi.",
+            "sourceLabel": "CNRS",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "animals"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0018-S2",
+            "type": "progressive_clues",
+            "category": "music",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis à la fois musique et danse."
+              },
+              {
+                "order": 2,
+                "text": "Je me développe autour du Río de la Plata."
+              },
+              {
+                "order": 3,
+                "text": "Buenos Aires est fortement liée à mon histoire."
+              },
+              {
+                "order": 4,
+                "text": "Le bandonéon est emblématique de mon son."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "La samba"
+              },
+              {
+                "id": "b",
+                "text": "La valse"
+              },
+              {
+                "id": "c",
+                "text": "Le tango"
+              },
+              {
+                "id": "d",
+                "text": "Le fado"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le tango.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0018-S3",
+            "type": "connection",
+            "category": "gastronomy",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Basilic"
+              },
+              {
+                "id": "item-2",
+                "text": "Pignons"
+              },
+              {
+                "id": "item-3",
+                "text": "Parmesan"
+              },
+              {
+                "id": "item-4",
+                "text": "Huile d’olive"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "c",
+                "text": "Des objets fabriqués en métal"
+              },
+              {
+                "id": "d",
+                "text": "Des ingrédients classiques du pesto génois"
+              }
+            ],
+            "correctAnswerId": "d",
+            "connection": "Des ingrédients classiques du pesto génois",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des ingrédients classiques du pesto génois.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0018-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "64",
+              "32",
+              "16",
+              "8",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "4"
+              },
+              {
+                "id": "b",
+                "text": "2"
+              },
+              {
+                "id": "c",
+                "text": "6"
+              },
+              {
+                "id": "d",
+                "text": "12"
+              }
+            ],
+            "correctAnswerId": "a",
+            "rule": "Diviser par 2.",
+            "explanation": "Chaque terme est la moitié du précédent.",
+            "contextualHint": "Observe un rapport constant.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0018-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "reasoned-counting",
+            "difficulty": 5,
+            "prompt": "Des cubes existent en trois couleurs. Combien faut-il en prendre pour garantir quatre cubes de même couleur ?",
+            "clues": [],
+            "answers": [
+              {
+                "id": "a",
+                "text": "8"
+              },
+              {
+                "id": "b",
+                "text": "10"
+              },
+              {
+                "id": "c",
+                "text": "9"
+              },
+              {
+                "id": "d",
+                "text": "12"
+              }
+            ],
+            "correctAnswerId": "b",
+            "reasoningSteps": [
+              "On peut prendre au maximum 3 élément(s) de chacune des 3 catégories sans atteindre le seuil.",
+              "Cela représente 9 éléments.",
+              "Le suivant, soit le 10e, garantit la répétition demandée."
+            ],
+            "explanation": "On peut prendre au maximum 3 élément(s) de chacune des 3 catégories sans atteindre le seuil. Cela représente 9 éléments. Le suivant, soit le 10e, garantit la répétition demandée.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "reasoned-counting"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0019",
+      "title": "Parcours final 19",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0019-S1",
+            "type": "multiple_choice",
+            "category": "gastronomy",
+            "subcategory": "beverages",
+            "difficulty": 3,
+            "question": "Quel processus transforme les sucres du raisin en alcool lors de la vinification ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "La distillation"
+              },
+              {
+                "id": "b",
+                "text": "La pasteurisation"
+              },
+              {
+                "id": "c",
+                "text": "La fermentation alcoolique"
+              },
+              {
+                "id": "d",
+                "text": "La macération carbonique uniquement"
+              }
+            ],
+            "correctAnswerId": "c",
+            "contextualHint": "Des levures réalisent la transformation.",
+            "explanation": "Les levures consomment les sucres et produisent principalement éthanol et dioxyde de carbone.",
+            "sourceLabel": "Larousse Gastronomique",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "beverages"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0019-S2",
+            "type": "progressive_clues",
+            "category": "science-nature",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis une relation géométrique."
+              },
+              {
+                "order": 2,
+                "text": "Je concerne un triangle particulier."
+              },
+              {
+                "order": 3,
+                "text": "Je relie les carrés des longueurs de trois côtés."
+              },
+              {
+                "order": 4,
+                "text": "L’hypoténuse est au cœur de ma formulation."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le théorème de Thalès"
+              },
+              {
+                "id": "b",
+                "text": "La loi des cosinus"
+              },
+              {
+                "id": "c",
+                "text": "La formule de Héron"
+              },
+              {
+                "id": "d",
+                "text": "Le théorème de Pythagore"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Le théorème de Pythagore.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0019-S3",
+            "type": "connection",
+            "category": "history",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Magna Carta"
+              },
+              {
+                "id": "item-2",
+                "text": "Habeas Corpus"
+              },
+              {
+                "id": "item-3",
+                "text": "Bill of Rights"
+              },
+              {
+                "id": "item-4",
+                "text": "Petition of Right"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Des textes majeurs de l’histoire constitutionnelle anglaise"
+              },
+              {
+                "id": "b",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "a",
+            "connection": "Des textes majeurs de l’histoire constitutionnelle anglaise",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des textes majeurs de l’histoire constitutionnelle anglaise.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0019-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "2",
+              "4",
+              "3",
+              "9",
+              "4",
+              "16",
+              "5",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "20"
+              },
+              {
+                "id": "b",
+                "text": "25"
+              },
+              {
+                "id": "c",
+                "text": "24"
+              },
+              {
+                "id": "d",
+                "text": "30"
+              }
+            ],
+            "correctAnswerId": "b",
+            "rule": "Associer chaque entier à son carré.",
+            "explanation": "Les paires sont 2/4, 3/9, 4/16, 5/25.",
+            "contextualHint": "Regroupe les termes deux par deux.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0019-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "order",
+            "difficulty": 5,
+            "prompt": "Rania arrive avant Sami. Tania arrive après Rania mais avant Sami. Ugo arrive avant Rania. Qui arrive en position troisième ?",
+            "clues": [],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Rania"
+              },
+              {
+                "id": "b",
+                "text": "Sami"
+              },
+              {
+                "id": "c",
+                "text": "Tania"
+              },
+              {
+                "id": "d",
+                "text": "Ugo"
+              }
+            ],
+            "correctAnswerId": "c",
+            "reasoningSteps": [
+              "Ugo précède Rania.",
+              "Rania précède Tania, qui précède Sami.",
+              "L’ordre est donc Ugo – Rania – Tania – Sami ; la réponse est Tania."
+            ],
+            "explanation": "Ugo précède Rania. Rania précède Tania, qui précède Sami. L’ordre est donc Ugo – Rania – Tania – Sami ; la réponse est Tania.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "order"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FIN-0020",
+      "title": "Parcours final 20",
+      "difficulty": 4,
+      "steps": [
+        {
+          "order": 1,
+          "stepType": "multiple_choice",
+          "content": {
+            "id": "FIN-0020-S1",
+            "type": "multiple_choice",
+            "category": "french-language",
+            "subcategory": "word-formation",
+            "difficulty": 3,
+            "question": "Dans « impossible », quel élément exprime la négation ?",
+            "answers": [
+              {
+                "id": "a",
+                "text": "Le suffixe -ible"
+              },
+              {
+                "id": "b",
+                "text": "La racine poss"
+              },
+              {
+                "id": "c",
+                "text": "La terminaison -e"
+              },
+              {
+                "id": "d",
+                "text": "Le préfixe im-"
+              }
+            ],
+            "correctAnswerId": "d",
+            "contextualHint": "Il se place avant la base du mot.",
+            "explanation": "Le préfixe in- prend la forme im- devant certaines consonnes, comme dans impossible ou immobile.",
+            "sourceLabel": "Académie française",
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "word-formation"
+            ],
+            "estimatedTimeSeconds": 30,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 2,
+          "stepType": "progressive_clues",
+          "content": {
+            "id": "FIN-0020-S2",
+            "type": "progressive_clues",
+            "category": "science-nature",
+            "subcategory": "progressive-identification",
+            "difficulty": 3,
+            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
+            "clues": [
+              {
+                "order": 1,
+                "text": "Je suis un phénomène lumineux."
+              },
+              {
+                "order": 2,
+                "text": "Je suis visible surtout aux hautes latitudes."
+              },
+              {
+                "order": 3,
+                "text": "Je résulte d’interactions entre particules solaires et atmosphère."
+              },
+              {
+                "order": 4,
+                "text": "On me qualifie de boréale dans l’hémisphère Nord."
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une aurore polaire"
+              },
+              {
+                "id": "b",
+                "text": "Un mirage"
+              },
+              {
+                "id": "c",
+                "text": "Un halo lunaire"
+              },
+              {
+                "id": "d",
+                "text": "Un arc-en-ciel"
+              }
+            ],
+            "correctAnswerId": "a",
+            "contextualHint": "Les indices vont du général au particulier.",
+            "explanation": "Les quatre indices convergent vers Une aurore polaire.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "indices-progressifs"
+            ],
+            "estimatedTimeSeconds": 50,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 3,
+          "stepType": "connection",
+          "content": {
+            "id": "FIN-0020-S3",
+            "type": "connection",
+            "category": "arts-literature",
+            "subcategory": "common-link",
+            "difficulty": 4,
+            "prompt": "Quel lien précis unit ces quatre éléments ?",
+            "items": [
+              {
+                "id": "item-1",
+                "text": "Monet"
+              },
+              {
+                "id": "item-2",
+                "text": "Renoir"
+              },
+              {
+                "id": "item-3",
+                "text": "Pissarro"
+              },
+              {
+                "id": "item-4",
+                "text": "Sisley"
+              }
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Une suite chronologique"
+              },
+              {
+                "id": "b",
+                "text": "Des peintres impressionnistes"
+              },
+              {
+                "id": "c",
+                "text": "Des lieux portant le même nom"
+              },
+              {
+                "id": "d",
+                "text": "Des objets fabriqués en métal"
+              }
+            ],
+            "correctAnswerId": "b",
+            "connection": "Des peintres impressionnistes",
+            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des peintres impressionnistes.",
+            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
+            "sourceLabel": null,
+            "sourceUrl": null,
+            "verificationStatus": "to_verify",
+            "tags": [
+              "connexion"
+            ],
+            "estimatedTimeSeconds": 60,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 4,
+          "stepType": "analogy_or_sequence",
+          "content": {
+            "id": "FIN-0020-S4",
+            "type": "logical_sequence",
+            "category": "synapse",
+            "subcategory": "advanced-sequence",
+            "difficulty": 4,
+            "prompt": "Quel élément complète cette suite ?",
+            "sequence": [
+              "3",
+              "6",
+              "5",
+              "10",
+              "9",
+              "18",
+              "17",
+              "?"
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "26"
+              },
+              {
+                "id": "b",
+                "text": "35"
+              },
+              {
+                "id": "c",
+                "text": "34"
+              },
+              {
+                "id": "d",
+                "text": "36"
+              }
+            ],
+            "correctAnswerId": "c",
+            "rule": "Alterner ×2 puis −1.",
+            "explanation": "3→6 (×2), 6→5 (−1), puis le cycle se répète jusqu’à 17→34.",
+            "contextualHint": "Cherche deux opérations alternées.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "suite-logique"
+            ],
+            "estimatedTimeSeconds": 55,
+            "status": "generated",
+            "version": 1
+          }
+        },
+        {
+          "order": 5,
+          "stepType": "logic_puzzle",
+          "content": {
+            "id": "FIN-0020-S5",
+            "type": "logic_puzzle",
+            "category": "logic-puzzles",
+            "subcategory": "verbal-logic",
+            "difficulty": 5,
+            "prompt": "Une réunion doit placer quatre sujets : budget, sécurité, design, lancement. Le budget précède le design, la sécurité suit le design et le lancement est dernier. Quel ordre est possible ?",
+            "clues": [
+              "Transforme chaque contrainte en relation d’ordre."
+            ],
+            "answers": [
+              {
+                "id": "a",
+                "text": "Design-budget-sécurité-lancement"
+              },
+              {
+                "id": "b",
+                "text": "Budget-sécurité-design-lancement"
+              },
+              {
+                "id": "c",
+                "text": "Sécurité-budget-lancement-design"
+              },
+              {
+                "id": "d",
+                "text": "Budget-design-sécurité-lancement"
+              }
+            ],
+            "correctAnswerId": "d",
+            "reasoningSteps": [
+              "Le lancement doit être quatrième.",
+              "Le budget doit précéder le design.",
+              "La sécurité doit suivre le design : seul le premier ordre convient."
+            ],
+            "explanation": "Le lancement doit être quatrième. Le budget doit précéder le design. La sécurité doit suivre le design : seul le premier ordre convient.",
+            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
+            "verificationStatus": "to_verify",
+            "tags": [
+              "verbal-logic"
+            ],
+            "estimatedTimeSeconds": 110,
+            "status": "generated",
+            "version": 1
+          }
+        }
+      ],
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

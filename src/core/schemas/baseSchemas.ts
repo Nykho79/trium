@@ -34,6 +34,11 @@ export const questionTypeSchema = z.union([
   z.literal("symbol_rule"),
 ]);
 
+export const playerModeSchema = z.union([
+  z.literal("solo"),
+  z.literal("trio"),
+]);
+
 export const gameModeSchema = z.union([
   z.literal("short"),
   z.literal("standard"),

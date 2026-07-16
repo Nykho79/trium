@@ -42,7 +42,7 @@ const config: GameConfig = {
   id: "wager-engine-config",
   mode: "standard",
   seed: "wager-engine-seed",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,

@@ -34,7 +34,7 @@ const config: GameConfig = {
   id: "connections-engine-config",
   mode: "standard",
   seed: "connections-engine-seed",
-  players,
+  playerMode: "trio", players,
   rounds: [round],
   questionBankVersion: 1,
   allowRecentlyPlayedFallback: true,

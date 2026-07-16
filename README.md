@@ -1,6 +1,6 @@
 # TRIUM
 
-TRIUM est un jeu de quiz cooperatif en francais pour exactement trois joueurs, pense pour un ordinateur branche en HDMI sur une television.
+TRIUM est un jeu de quiz en francais jouable en solo ou en trio cooperatif, pense pour un ordinateur branche en HDMI sur une television.
 
 ## Statut actuel
 
@@ -63,7 +63,7 @@ Le noyau metier central est defini dans `src/core/types` et valide par les schem
 
 Contrats principaux :
 
-- `Player`, `PlayerId` : joueurs fixes de la partie, exactement trois dans `GameConfig` ;
+- `Player`, `PlayerId`, `PlayerMode`, `PlayerRoster` : configuration solo ou trio dans `GameConfig` ;
 - `GameConfig`, `GameMode`, `GameStatus`, `GameState` : configuration et etats du moteur ;
 - `RoundDefinition`, `RoundState`, `GameRound` : contrat commun de toutes les manches ;
 - `Question`, `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` : formats de questions validables depuis JSON ;
@@ -80,13 +80,13 @@ Les fichiers sources sont places dans `src/data/questions/*.json`. Le module `sr
 - importe tous les fichiers JSON locaux avec `import.meta.glob` ;
 - valide chaque fichier avec Zod ;
 - expose les questions sources, les questions jouables normalisees et un rapport ;
-- ne rend jouables que les questions `verificationStatus: "verified"` et `status: "approved"` ;
+- normalise les questions structurellement valides vers les types metier jouables ;
 - detecte les doublons exacts et les doublons probables ;
 - prepare une selection deterministe par graine, sans repetition dans une partie ;
 - evite les questions recemment jouees quand une alternative existe ;
 - equilibre categorie et difficulte selon l'historique de la partie.
 
-Etat actuel de la banque locale : le nombre depend des fichiers presents dans `src/data/questions`. Seules les questions `verificationStatus: "verified"` et `status: "approved"` sont jouables ; les autres restent chargees pour inspection mais sont rejetees du tirage.
+Etat actuel de la banque locale : `pnpm questions` charge 28 fichiers de donnees, ignore la copie de developpement `conceptual-intruders - Copie.json`, valide 1000 entrees structurellement jouables et rapporte les doublons exacts/probables pour inspection. Cette validation est applicative et ne remplace pas une revue factuelle editoriale source par source.
 
 La page developpement `DevQuestionBankScreen` permet d'inspecter le rapport, les repartitions et un echantillon des questions chargees depuis l'application.
 
