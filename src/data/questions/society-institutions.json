@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-society-institutions-001",
+  "title": "Société et institutions — Lot 1",
+  "category": "society-institutions",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "SOC-0001",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "french-institutions",
+      "difficulty": 1,
+      "question": "Quel pouvoir vote les lois en France ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le pouvoir législatif"
+        },
+        {
+          "id": "b",
+          "text": "Le pouvoir judiciaire"
+        },
+        {
+          "id": "c",
+          "text": "Le pouvoir exécutif"
+        },
+        {
+          "id": "d",
+          "text": "Le pouvoir réglementaire seul"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Parlement, composé de l’Assemblée nationale et du Sénat, exerce principalement le pouvoir législatif.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "France",
+        "pouvoir législatif",
+        "Parlement"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0002",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "european-union",
+      "difficulty": 1,
+      "question": "Quelle institution européenne est élue directement par les citoyens de l’Union ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Commission européenne"
+        },
+        {
+          "id": "b",
+          "text": "Le Parlement européen"
+        },
+        {
+          "id": "c",
+          "text": "Le Conseil européen"
+        },
+        {
+          "id": "d",
+          "text": "La Cour des comptes européenne"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les députés européens sont élus au suffrage universel direct tous les cinq ans.",
+      "sourceLabel": "Union européenne",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Parlement européen",
+        "élections",
+        "Union européenne"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0003",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "international-organizations",
+      "difficulty": 1,
+      "question": "Quelle organisation a pour mission centrale le maintien de la paix et de la sécurité internationales ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’OCDE"
+        },
+        {
+          "id": "b",
+          "text": "L’OPEP"
+        },
+        {
+          "id": "c",
+          "text": "L’ONU"
+        },
+        {
+          "id": "d",
+          "text": "L’OMC"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La Charte des Nations unies confie au système onusien un rôle central dans la paix, la coopération et les droits humains.",
+      "sourceLabel": "Nations unies",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ONU",
+        "paix",
+        "organisation internationale"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0004",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "law-and-citizenship",
+      "difficulty": 1,
+      "question": "À partir de quel âge la majorité civile est-elle fixée en France ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "16 ans"
+        },
+        {
+          "id": "b",
+          "text": "20 ans"
+        },
+        {
+          "id": "c",
+          "text": "21 ans"
+        },
+        {
+          "id": "d",
+          "text": "18 ans"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Depuis 1974, la majorité civile en France est fixée à 18 ans.",
+      "sourceLabel": "Service-Public.fr",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "majorité",
+        "France",
+        "citoyenneté"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0005",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "economics-basics",
+      "difficulty": 2,
+      "question": "Que mesure principalement l’inflation ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La hausse générale des prix"
+        },
+        {
+          "id": "b",
+          "text": "La baisse des salaires"
+        },
+        {
+          "id": "c",
+          "text": "La hausse des exportations"
+        },
+        {
+          "id": "d",
+          "text": "La diminution des impôts"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’inflation correspond à une augmentation durable du niveau général des prix, et non à la hausse d’un seul produit.",
+      "sourceLabel": "Banque de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "inflation",
+        "prix",
+        "économie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0006",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "symbols-and-democracy",
+      "difficulty": 2,
+      "question": "Quelle devise figure sur les bâtiments publics français ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Travail, Famille, Patrie"
+        },
+        {
+          "id": "b",
+          "text": "Liberté, Égalité, Fraternité"
+        },
+        {
+          "id": "c",
+          "text": "Unité, Justice, Paix"
+        },
+        {
+          "id": "d",
+          "text": "Honneur et Nation"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La devise républicaine apparaît dans la Constitution et sur de nombreux édifices publics.",
+      "sourceLabel": "Élysée",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "devise",
+        "République",
+        "France"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0007",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "media",
+      "difficulty": 2,
+      "question": "Qu’est-ce qu’une source primaire en journalisme ou en recherche ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un résumé de plusieurs articles"
+        },
+        {
+          "id": "b",
+          "text": "Une opinion anonyme"
+        },
+        {
+          "id": "c",
+          "text": "Un témoignage ou document direct"
+        },
+        {
+          "id": "d",
+          "text": "Une publicité institutionnelle"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Une source primaire fournit une information de première main, qui doit néanmoins être contextualisée et vérifiée.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "source primaire",
+        "journalisme",
+        "information"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0008",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "sociology",
+      "difficulty": 2,
+      "question": "Que désigne la socialisation ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La privatisation d’un service"
+        },
+        {
+          "id": "b",
+          "text": "La création d’une association"
+        },
+        {
+          "id": "c",
+          "text": "La diffusion d’une rumeur"
+        },
+        {
+          "id": "d",
+          "text": "L’apprentissage des normes et valeurs sociales"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La socialisation se déroule tout au long de la vie par la famille, l’école, les pairs, le travail et d’autres institutions.",
+      "sourceLabel": "Encyclopædia Universalis",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "socialisation",
+        "sociologie",
+        "normes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0009",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "french-institutions",
+      "difficulty": 2,
+      "question": "Quel texte est au sommet de la hiérarchie des normes internes en France ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Constitution"
+        },
+        {
+          "id": "b",
+          "text": "Une circulaire"
+        },
+        {
+          "id": "c",
+          "text": "Un décret"
+        },
+        {
+          "id": "d",
+          "text": "Un arrêté municipal"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Constitution organise les pouvoirs publics et garantit des droits fondamentaux.",
+      "sourceLabel": "Conseil constitutionnel",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Constitution",
+        "France",
+        "normes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0010",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "european-union",
+      "difficulty": 2,
+      "question": "Quel traité signé en 1992 a créé l’Union européenne ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le traité de Versailles"
+        },
+        {
+          "id": "b",
+          "text": "Le traité de Maastricht"
+        },
+        {
+          "id": "c",
+          "text": "Le traité de Schengen"
+        },
+        {
+          "id": "d",
+          "text": "Le traité de Lisbonne"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le traité de Maastricht institue l’Union européenne et prépare l’union économique et monétaire.",
+      "sourceLabel": "Union européenne",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Maastricht",
+        "Union européenne",
+        "traité"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0011",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "international-organizations",
+      "difficulty": 3,
+      "question": "Où siège la Cour internationale de Justice ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "À Genève"
+        },
+        {
+          "id": "b",
+          "text": "À New York"
+        },
+        {
+          "id": "c",
+          "text": "À La Haye"
+        },
+        {
+          "id": "d",
+          "text": "À Bruxelles"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La Cour internationale de Justice, principal organe judiciaire de l’ONU, siège au Palais de la Paix à La Haye.",
+      "sourceLabel": "Cour internationale de Justice",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "CIJ",
+        "La Haye",
+        "justice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0012",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "economics-basics",
+      "difficulty": 3,
+      "question": "Qu’est-ce que le chômage au sens courant ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Toute période de congé"
+        },
+        {
+          "id": "b",
+          "text": "Le travail à temps partiel"
+        },
+        {
+          "id": "c",
+          "text": "Le départ à la retraite"
+        },
+        {
+          "id": "d",
+          "text": "La situation d’une personne sans emploi qui en recherche un"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les définitions statistiques ajoutent des critères précis de disponibilité et de recherche active.",
+      "sourceLabel": "INSEE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "chômage",
+        "emploi",
+        "économie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0013",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "law-and-citizenship",
+      "difficulty": 3,
+      "question": "Quel principe interdit de condamner une personne avant qu’une infraction soit définie par la loi ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le principe de légalité des délits et des peines"
+        },
+        {
+          "id": "b",
+          "text": "Le droit de grâce"
+        },
+        {
+          "id": "c",
+          "text": "La séparation des pouvoirs"
+        },
+        {
+          "id": "d",
+          "text": "Le secret professionnel"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Nul ne peut être puni pour un acte qui n’était pas légalement défini comme une infraction au moment où il a été commis.",
+      "sourceLabel": "Conseil constitutionnel",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "légalité",
+        "droit",
+        "peines"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0014",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "sociology",
+      "difficulty": 3,
+      "question": "Quel terme désigne une position occupée par un individu dans la société ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un sondage"
+        },
+        {
+          "id": "b",
+          "text": "Un statut social"
+        },
+        {
+          "id": "c",
+          "text": "Une norme juridique"
+        },
+        {
+          "id": "d",
+          "text": "Un patrimoine culturel"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le statut social renvoie à une position à laquelle sont associés des droits, devoirs et attentes.",
+      "sourceLabel": "Encyclopædia Universalis",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "statut social",
+        "sociologie",
+        "position"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0015",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "media",
+      "difficulty": 3,
+      "question": "Quel procédé consiste à vérifier une affirmation à partir de sources fiables ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le placement de produit"
+        },
+        {
+          "id": "b",
+          "text": "Le publireportage"
+        },
+        {
+          "id": "c",
+          "text": "Le fact-checking"
+        },
+        {
+          "id": "d",
+          "text": "Le micro-trottoir"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le fact-checking confronte une déclaration à des données, documents et témoignages vérifiables.",
+      "sourceLabel": "AFP Factuel",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fact-checking",
+        "médias",
+        "vérification"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0016",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "symbols-and-democracy",
+      "difficulty": 3,
+      "question": "Quel principe implique la neutralité de l’État à l’égard des religions ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le fédéralisme"
+        },
+        {
+          "id": "b",
+          "text": "Le corporatisme"
+        },
+        {
+          "id": "c",
+          "text": "Le suffrage censitaire"
+        },
+        {
+          "id": "d",
+          "text": "La laïcité"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La laïcité garantit la liberté de conscience et la neutralité de l’État à l’égard des religions.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "laïcité",
+        "État",
+        "religions"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0017",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "french-institutions",
+      "difficulty": 3,
+      "question": "Quelle chambre du Parlement français peut renverser le gouvernement par une motion de censure ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’Assemblée nationale"
+        },
+        {
+          "id": "b",
+          "text": "Le Sénat"
+        },
+        {
+          "id": "c",
+          "text": "Le Conseil économique, social et environnemental"
+        },
+        {
+          "id": "d",
+          "text": "Le Conseil constitutionnel"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le gouvernement est politiquement responsable devant l’Assemblée nationale, pas devant le Sénat.",
+      "sourceLabel": "Assemblée nationale",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "motion de censure",
+        "Assemblée nationale",
+        "gouvernement"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0018",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "european-union",
+      "difficulty": 4,
+      "question": "Quel principe veut que l’Union n’agisse que si l’échelon européen est plus efficace que l’échelon national ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La présidentialisation"
+        },
+        {
+          "id": "b",
+          "text": "La subsidiarité"
+        },
+        {
+          "id": "c",
+          "text": "La codécision locale"
+        },
+        {
+          "id": "d",
+          "text": "La proportionnalité fiscale"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le principe de subsidiarité encadre l’intervention de l’Union dans les domaines de compétence partagée.",
+      "sourceLabel": "Union européenne",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "subsidiarité",
+        "Union européenne",
+        "compétences"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0019",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "international-organizations",
+      "difficulty": 4,
+      "question": "Quelle agence de l’ONU est spécialisée dans la culture, l’éducation et la science ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’UNICEF"
+        },
+        {
+          "id": "b",
+          "text": "Le FMI"
+        },
+        {
+          "id": "c",
+          "text": "L’UNESCO"
+        },
+        {
+          "id": "d",
+          "text": "L’OMS"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "L’UNESCO développe la coopération internationale en éducation, sciences, culture et communication.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "UNESCO",
+        "culture",
+        "éducation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0020",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "economics-basics",
+      "difficulty": 4,
+      "question": "Que représente le PIB ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le patrimoine total des ménages"
+        },
+        {
+          "id": "b",
+          "text": "Le montant des impôts"
+        },
+        {
+          "id": "c",
+          "text": "Le nombre d’entreprises"
+        },
+        {
+          "id": "d",
+          "text": "La valeur des biens et services produits sur un territoire"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le produit intérieur brut mesure la production réalisée pendant une période donnée.",
+      "sourceLabel": "INSEE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "PIB",
+        "production",
+        "économie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0021",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "law-and-citizenship",
+      "difficulty": 4,
+      "question": "Quel recours permet de contester une décision administrative devant un juge ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un recours contentieux"
+        },
+        {
+          "id": "b",
+          "text": "Un référendum"
+        },
+        {
+          "id": "c",
+          "text": "Une pétition privée"
+        },
+        {
+          "id": "d",
+          "text": "Une médiation commerciale obligatoire"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le recours contentieux demande au juge administratif d’annuler, modifier ou indemniser les effets d’une décision.",
+      "sourceLabel": "Conseil d’État",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "recours",
+        "justice administrative",
+        "droit"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0022",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "sociology",
+      "difficulty": 4,
+      "question": "Que désigne la mobilité sociale ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le déplacement domicile-travail"
+        },
+        {
+          "id": "b",
+          "text": "Le changement de position sociale d’un individu ou d’un groupe"
+        },
+        {
+          "id": "c",
+          "text": "Le tourisme international"
+        },
+        {
+          "id": "d",
+          "text": "La circulation automobile"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Elle peut être ascendante, descendante ou horizontale, et se mesurer entre générations ou au cours d’une vie.",
+      "sourceLabel": "INSEE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "mobilité sociale",
+        "sociologie",
+        "position"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0023",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "media",
+      "difficulty": 5,
+      "question": "Pourquoi croiser plusieurs sources ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pour obtenir le même titre"
+        },
+        {
+          "id": "b",
+          "text": "Pour supprimer toute contradiction"
+        },
+        {
+          "id": "c",
+          "text": "Pour réduire le risque d’erreur ou de biais"
+        },
+        {
+          "id": "d",
+          "text": "Pour éviter de citer les auteurs"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Comparer des sources indépendantes aide à distinguer les faits établis, les interprétations et les informations incertaines.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "sources",
+        "vérification",
+        "médias"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0024",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "symbols-and-democracy",
+      "difficulty": 5,
+      "question": "Que signifie le suffrage universel ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le vote réservé aux contribuables"
+        },
+        {
+          "id": "b",
+          "text": "Le vote des seuls élus"
+        },
+        {
+          "id": "c",
+          "text": "Le vote obligatoire sans exception"
+        },
+        {
+          "id": "d",
+          "text": "Le droit de vote accordé à tous les citoyens remplissant les conditions légales"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le suffrage universel s’oppose notamment au suffrage censitaire fondé sur la fortune.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "suffrage universel",
+        "vote",
+        "démocratie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SOC-0025",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "french-institutions",
+      "difficulty": 5,
+      "question": "Quel organe contrôle notamment la conformité des lois à la Constitution ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Conseil constitutionnel"
+        },
+        {
+          "id": "b",
+          "text": "La Cour de cassation"
+        },
+        {
+          "id": "c",
+          "text": "La Cour des comptes"
+        },
+        {
+          "id": "d",
+          "text": "Le Conseil économique, social et environnemental"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Conseil constitutionnel peut être saisi avant la promulgation d’une loi et, par la QPC, après son entrée en vigueur.",
+      "sourceLabel": "Conseil constitutionnel",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Conseil constitutionnel",
+        "lois",
+        "Constitution"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

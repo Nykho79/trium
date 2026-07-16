@@ -1,0 +1,5815 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "synapse-visual-matrices-001",
+  "title": "Matrices visuelles — Lot 1",
+  "category": "synapse",
+  "questionType": "visual_matrix",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "MAT-0001",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "rotation",
+      "difficulty": 1,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 270,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "explanation": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "contextualHint": "Suis l’orientation de la même forme.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rotation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0002",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "count-progression",
+      "difficulty": 1,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 50,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "explanation": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "contextualHint": "Compte les éléments de chaque cellule.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "count-progression"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0003",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "fill-alternation",
+      "difficulty": 1,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le remplissage alterne en damier entre plein et vide.",
+      "explanation": "Le remplissage alterne en damier entre plein et vide.",
+      "contextualHint": "Observe un motif de damier.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fill-alternation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0004",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "movement",
+      "difficulty": 1,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 75,
+              "y": 25,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "explanation": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "contextualHint": "Compare la position horizontale dans chaque ligne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0005",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "color-cycle",
+      "difficulty": 1,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "neutral",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "explanation": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "contextualHint": "Repère le cycle de trois couleurs.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "color-cycle"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0006",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "superposition",
+      "difficulty": 1,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "explanation": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "contextualHint": "Compare ce qui est ajouté entre la première et la seconde colonne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "superposition"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0007",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "rotation",
+      "difficulty": 2,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 270,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "explanation": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "contextualHint": "Suis l’orientation de la même forme.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rotation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0008",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "count-progression",
+      "difficulty": 2,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 50,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "explanation": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "contextualHint": "Compte les éléments de chaque cellule.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "count-progression"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0009",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "fill-alternation",
+      "difficulty": 2,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le remplissage alterne en damier entre plein et vide.",
+      "explanation": "Le remplissage alterne en damier entre plein et vide.",
+      "contextualHint": "Observe un motif de damier.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fill-alternation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0010",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "movement",
+      "difficulty": 2,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 75,
+              "y": 25,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "explanation": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "contextualHint": "Compare la position horizontale dans chaque ligne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0011",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "color-cycle",
+      "difficulty": 2,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "neutral",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "explanation": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "contextualHint": "Repère le cycle de trois couleurs.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "color-cycle"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0012",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "superposition",
+      "difficulty": 2,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "explanation": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "contextualHint": "Compare ce qui est ajouté entre la première et la seconde colonne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "superposition"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0013",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "rotation",
+      "difficulty": 3,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 270,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "explanation": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "contextualHint": "Suis l’orientation de la même forme.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rotation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0014",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "count-progression",
+      "difficulty": 3,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 50,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "explanation": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "contextualHint": "Compte les éléments de chaque cellule.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "count-progression"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0015",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "fill-alternation",
+      "difficulty": 3,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le remplissage alterne en damier entre plein et vide.",
+      "explanation": "Le remplissage alterne en damier entre plein et vide.",
+      "contextualHint": "Observe un motif de damier.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fill-alternation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0016",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "movement",
+      "difficulty": 3,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 75,
+              "y": 25,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "explanation": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "contextualHint": "Compare la position horizontale dans chaque ligne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0017",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "color-cycle",
+      "difficulty": 3,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "neutral",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "explanation": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "contextualHint": "Repère le cycle de trois couleurs.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "color-cycle"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0018",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "superposition",
+      "difficulty": 3,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "explanation": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "contextualHint": "Compare ce qui est ajouté entre la première et la seconde colonne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "superposition"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0019",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "rotation",
+      "difficulty": 4,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 270,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "explanation": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "contextualHint": "Suis l’orientation de la même forme.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rotation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0020",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "count-progression",
+      "difficulty": 4,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "star",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "explanation": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "contextualHint": "Compte les éléments de chaque cellule.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "count-progression"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0021",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "fill-alternation",
+      "difficulty": 4,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Le remplissage alterne en damier entre plein et vide.",
+      "explanation": "Le remplissage alterne en damier entre plein et vide.",
+      "contextualHint": "Observe un motif de damier.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fill-alternation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0022",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "movement",
+      "difficulty": 4,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 75,
+              "y": 25,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "explanation": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "contextualHint": "Compare la position horizontale dans chaque ligne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0023",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "color-cycle",
+      "difficulty": 4,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "arrow",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "neutral",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "explanation": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "contextualHint": "Repère le cycle de trois couleurs.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "color-cycle"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0024",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "superposition",
+      "difficulty": 4,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "explanation": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "contextualHint": "Compare ce qui est ajouté entre la première et la seconde colonne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "superposition"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0025",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "rotation",
+      "difficulty": 5,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 270,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 90,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "square",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 180,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "explanation": "La forme tourne de 90° vers la droite à chaque déplacement dans l’ordre de lecture.",
+      "contextualHint": "Suis l’orientation de la même forme.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rotation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0026",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "count-progression",
+      "difficulty": 5,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 80,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 35,
+              "y": 75,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 50,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "triangle",
+              "x": 20,
+              "y": 30,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "triangle",
+              "x": 50,
+              "y": 20,
+              "size": 18,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "explanation": "Le nombre de formes augmente de 1 dans l’ordre de lecture.",
+      "contextualHint": "Compte les éléments de chaque cellule.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "count-progression"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0027",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "fill-alternation",
+      "difficulty": 5,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "diamond",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "c",
+      "rule": "Le remplissage alterne en damier entre plein et vide.",
+      "explanation": "Le remplissage alterne en damier entre plein et vide.",
+      "contextualHint": "Observe un motif de damier.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fill-alternation"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0028",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "movement",
+      "difficulty": 5,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 25,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 75,
+              "y": 25,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "star",
+              "x": 75,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "d",
+      "rule": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "explanation": "Dans chaque ligne, la forme se déplace de gauche au centre puis à droite.",
+      "contextualHint": "Compare la position horizontale dans chaque ligne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "movement"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0029",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "color-cycle",
+      "difficulty": 5,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 3,
+        "columns": 3
+      },
+      "missingCell": {
+        "row": 2,
+        "column": 2
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "secondary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "accent",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "hexagon",
+              "x": 50,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "neutral",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "a",
+      "rule": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "explanation": "Les couleurs suivent un cycle primaire, secondaire, accent décalé d’une case à chaque ligne.",
+      "contextualHint": "Repère le cycle de trois couleurs.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "color-cycle"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MAT-0030",
+      "type": "visual_matrix",
+      "category": "synapse",
+      "subcategory": "superposition",
+      "difficulty": 5,
+      "prompt": "Quelle proposition complète la matrice ?",
+      "gridSize": {
+        "rows": 2,
+        "columns": 2
+      },
+      "missingCell": {
+        "row": 1,
+        "column": 1
+      },
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "elements": [
+            {
+              "shape": "line",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "none",
+              "stroke": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "elements": [
+            {
+              "shape": "circle",
+              "x": 40,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            },
+            {
+              "shape": "line",
+              "x": 60,
+              "y": 50,
+              "size": 30,
+              "rotation": 0,
+              "fill": "primary",
+              "stroke": "neutral"
+            }
+          ]
+        }
+      ],
+      "correctAnswerId": "b",
+      "rule": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "explanation": "Dans chaque ligne, la seconde cellule ajoute la forme absente à la première ; les deux lignes aboutissent à la même superposition.",
+      "contextualHint": "Compare ce qui est ajouté entre la première et la seconde colonne.",
+      "verificationStatus": "to_verify",
+      "tags": [
+        "superposition"
+      ],
+      "estimatedTimeSeconds": 60,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

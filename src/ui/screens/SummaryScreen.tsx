@@ -1,0 +1,1 @@
+export { GameResultScreen as SummaryScreen } from "./GameResultScreen";

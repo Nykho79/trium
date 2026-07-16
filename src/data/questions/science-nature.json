@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-science-nature-001",
+  "title": "Sciences et nature — Lot 1",
+  "category": "science-nature",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "SCI-0001",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "biology",
+      "difficulty": 1,
+      "question": "Quelle molécule porte l’information génétique chez la plupart des êtres vivants ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’ADN"
+        },
+        {
+          "id": "b",
+          "text": "L’ATP"
+        },
+        {
+          "id": "c",
+          "text": "Le glucose"
+        },
+        {
+          "id": "d",
+          "text": "La kératine"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’ADN contient des séquences qui peuvent être transcrites et utilisées pour produire des ARN et des protéines.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ADN",
+        "génétique",
+        "biologie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0002",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "human-body",
+      "difficulty": 1,
+      "question": "Quel organe pompe le sang dans l’organisme ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le foie"
+        },
+        {
+          "id": "b",
+          "text": "Le cœur"
+        },
+        {
+          "id": "c",
+          "text": "Le rein"
+        },
+        {
+          "id": "d",
+          "text": "Le pancréas"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le cœur se contracte de façon rythmique pour propulser le sang dans les circulations pulmonaire et générale.",
+      "sourceLabel": "Inserm",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "cœur",
+        "circulation",
+        "corps humain"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0003",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "astronomy",
+      "difficulty": 1,
+      "question": "Quelle planète est la plus proche du Soleil ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Vénus"
+        },
+        {
+          "id": "b",
+          "text": "Mars"
+        },
+        {
+          "id": "c",
+          "text": "Mercure"
+        },
+        {
+          "id": "d",
+          "text": "La Terre"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Mercure parcourt l’orbite la plus proche du Soleil. Malgré cela, Vénus possède une température de surface moyenne plus élevée.",
+      "sourceLabel": "NASA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Mercure",
+        "Soleil",
+        "planète"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0004",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "animals",
+      "difficulty": 1,
+      "question": "Quel animal passe par un stade de chenille ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La libellule"
+        },
+        {
+          "id": "b",
+          "text": "La sauterelle"
+        },
+        {
+          "id": "c",
+          "text": "L’araignée"
+        },
+        {
+          "id": "d",
+          "text": "Le papillon"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Chez les papillons, l’œuf donne une chenille, puis une chrysalide, avant l’émergence de l’adulte ailé.",
+      "sourceLabel": "Muséum national d’Histoire naturelle",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "papillon",
+        "chenille",
+        "métamorphose"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0005",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "physics",
+      "difficulty": 2,
+      "question": "Quelle unité mesure la force dans le Système international ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le newton"
+        },
+        {
+          "id": "b",
+          "text": "Le joule"
+        },
+        {
+          "id": "c",
+          "text": "Le watt"
+        },
+        {
+          "id": "d",
+          "text": "Le pascal"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le newton correspond à la force nécessaire pour accélérer une masse d’un kilogramme d’un mètre par seconde carrée.",
+      "sourceLabel": "BIPM",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "newton",
+        "force",
+        "physique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0006",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "chemistry",
+      "difficulty": 2,
+      "question": "Quel est le symbole chimique de l’oxygène ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ox"
+        },
+        {
+          "id": "b",
+          "text": "O"
+        },
+        {
+          "id": "c",
+          "text": "Og"
+        },
+        {
+          "id": "d",
+          "text": "Oy"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le symbole de l’oxygène est O. Dans l’air, il se trouve principalement sous forme de molécules O₂.",
+      "sourceLabel": "IUPAC",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "oxygène",
+        "symbole",
+        "chimie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0007",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "earth-sciences",
+      "difficulty": 2,
+      "question": "Comment appelle-t-on la roche en fusion située sous la surface terrestre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La lave"
+        },
+        {
+          "id": "b",
+          "text": "Le basalte"
+        },
+        {
+          "id": "c",
+          "text": "Le magma"
+        },
+        {
+          "id": "d",
+          "text": "Le quartz"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le magma est un mélange de roches fondues, de cristaux et de gaz en profondeur. Lorsqu’il atteint la surface, on parle de lave.",
+      "sourceLabel": "USGS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "magma",
+        "lave",
+        "volcan"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0008",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "plants",
+      "difficulty": 2,
+      "question": "Quel processus permet aux plantes vertes de fabriquer de la matière organique grâce à la lumière ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La fermentation"
+        },
+        {
+          "id": "b",
+          "text": "La transpiration"
+        },
+        {
+          "id": "c",
+          "text": "La germination"
+        },
+        {
+          "id": "d",
+          "text": "La photosynthèse"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La photosynthèse utilise l’énergie lumineuse pour transformer l’eau et le dioxyde de carbone en matière organique, avec libération d’oxygène.",
+      "sourceLabel": "INRAE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "photosynthèse",
+        "plantes",
+        "lumière"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0009",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "human-body",
+      "difficulty": 2,
+      "question": "Quel gaz est principalement éliminé par les poumons lors de l’expiration ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le dioxyde de carbone"
+        },
+        {
+          "id": "b",
+          "text": "L’ozone"
+        },
+        {
+          "id": "c",
+          "text": "L’hydrogène"
+        },
+        {
+          "id": "d",
+          "text": "L’hélium"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le dioxyde de carbone produit par le métabolisme est transporté par le sang jusqu’aux poumons, puis expiré.",
+      "sourceLabel": "Inserm",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "dioxyde de carbone",
+        "respiration",
+        "poumons"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0010",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "astronomy",
+      "difficulty": 2,
+      "question": "Quel corps céleste est au centre du Système solaire ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Terre"
+        },
+        {
+          "id": "b",
+          "text": "Le Soleil"
+        },
+        {
+          "id": "c",
+          "text": "Jupiter"
+        },
+        {
+          "id": "d",
+          "text": "La Lune"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le Soleil contient l’essentiel de la masse du Système solaire, et les planètes orbitent autour de lui.",
+      "sourceLabel": "NASA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Soleil",
+        "Système solaire",
+        "astronomie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0011",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "biology",
+      "difficulty": 3,
+      "question": "Quel organite cellulaire est souvent décrit comme la centrale énergétique de la cellule ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le ribosome"
+        },
+        {
+          "id": "b",
+          "text": "Le lysosome"
+        },
+        {
+          "id": "c",
+          "text": "La mitochondrie"
+        },
+        {
+          "id": "d",
+          "text": "Le noyau"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les mitochondries produisent une grande partie de l’ATP utilisé par les cellules eucaryotes grâce à la respiration cellulaire.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "mitochondrie",
+        "cellule",
+        "énergie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0012",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "physics",
+      "difficulty": 3,
+      "question": "Quel phénomène explique la décomposition de la lumière blanche par un prisme ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La conduction"
+        },
+        {
+          "id": "b",
+          "text": "L’induction"
+        },
+        {
+          "id": "c",
+          "text": "La convection"
+        },
+        {
+          "id": "d",
+          "text": "La dispersion"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les différentes longueurs d’onde de la lumière sont réfractées selon des angles légèrement différents, séparant les couleurs du spectre.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "dispersion",
+        "lumière",
+        "prisme"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0013",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "chemistry",
+      "difficulty": 3,
+      "question": "Quel pH caractérise une solution neutre à température ambiante ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Environ 7"
+        },
+        {
+          "id": "b",
+          "text": "Environ 1"
+        },
+        {
+          "id": "c",
+          "text": "Environ 4"
+        },
+        {
+          "id": "d",
+          "text": "Environ 12"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "À température ambiante, une solution neutre possède des concentrations égales en ions hydrogène et hydroxyde, correspondant à un pH proche de 7.",
+      "sourceLabel": "IUPAC",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "pH",
+        "neutre",
+        "chimie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0014",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "animals",
+      "difficulty": 3,
+      "question": "Quel groupe d’animaux actuels possède des plumes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les mammifères"
+        },
+        {
+          "id": "b",
+          "text": "Les oiseaux"
+        },
+        {
+          "id": "c",
+          "text": "Les reptiles"
+        },
+        {
+          "id": "d",
+          "text": "Les amphibiens"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les plumes sont une caractéristique propre aux oiseaux actuels, même si certains dinosaures non aviens en possédaient aussi.",
+      "sourceLabel": "Muséum national d’Histoire naturelle",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "oiseaux",
+        "plumes",
+        "animaux"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0015",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "earth-sciences",
+      "difficulty": 3,
+      "question": "Quelle couche solide externe de la Terre est fragmentée en plaques ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le noyau externe"
+        },
+        {
+          "id": "b",
+          "text": "L’hydrosphère"
+        },
+        {
+          "id": "c",
+          "text": "La lithosphère"
+        },
+        {
+          "id": "d",
+          "text": "L’ionosphère"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La lithosphère comprend la croûte et la partie supérieure rigide du manteau. Elle est divisée en plaques tectoniques.",
+      "sourceLabel": "USGS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "lithosphère",
+        "plaques",
+        "Terre"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0016",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "scientific-history",
+      "difficulty": 3,
+      "question": "Quel savant formula les lois classiques du mouvement et de la gravitation universelle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Michael Faraday"
+        },
+        {
+          "id": "b",
+          "text": "Louis Pasteur"
+        },
+        {
+          "id": "c",
+          "text": "Niels Bohr"
+        },
+        {
+          "id": "d",
+          "text": "Isaac Newton"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Dans les Principia de 1687, Newton établit trois lois du mouvement et une loi de gravitation permettant d’unifier phénomènes terrestres et célestes.",
+      "sourceLabel": "Royal Society",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Newton",
+        "gravitation",
+        "physique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0017",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "biology",
+      "difficulty": 3,
+      "question": "Quelle division cellulaire produit deux cellules filles génétiquement proches de la cellule mère ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La mitose"
+        },
+        {
+          "id": "b",
+          "text": "La méiose"
+        },
+        {
+          "id": "c",
+          "text": "La fécondation"
+        },
+        {
+          "id": "d",
+          "text": "La transcription"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La mitose répartit les chromosomes dupliqués entre deux cellules filles et permet notamment croissance et renouvellement des tissus.",
+      "sourceLabel": "CNRS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "mitose",
+        "cellule",
+        "division"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0018",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "physics",
+      "difficulty": 4,
+      "question": "Quelle grandeur correspond à l’énergie transférée par unité de temps ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La pression"
+        },
+        {
+          "id": "b",
+          "text": "La puissance"
+        },
+        {
+          "id": "c",
+          "text": "La charge électrique"
+        },
+        {
+          "id": "d",
+          "text": "La masse volumique"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La puissance mesure la rapidité d’un transfert d’énergie. Son unité dans le Système international est le watt.",
+      "sourceLabel": "BIPM",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "puissance",
+        "watt",
+        "énergie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0019",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "chemistry",
+      "difficulty": 4,
+      "question": "Quel élément chimique constitue la base des molécules organiques ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le sodium"
+        },
+        {
+          "id": "b",
+          "text": "Le calcium"
+        },
+        {
+          "id": "c",
+          "text": "Le carbone"
+        },
+        {
+          "id": "d",
+          "text": "L’argon"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le carbone peut former quatre liaisons covalentes et construire des chaînes, cycles et structures complexes à la base de la chimie organique.",
+      "sourceLabel": "IUPAC",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "carbone",
+        "chimie organique",
+        "élément"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0020",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "astronomy",
+      "difficulty": 4,
+      "question": "Comment appelle-t-on l’explosion finale de certaines étoiles massives ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une éclipse"
+        },
+        {
+          "id": "b",
+          "text": "Une aurore"
+        },
+        {
+          "id": "c",
+          "text": "Une marée"
+        },
+        {
+          "id": "d",
+          "text": "Une supernova"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Une supernova libère énormément d’énergie et disperse dans l’espace des éléments chimiques formés au cours de la vie de l’étoile.",
+      "sourceLabel": "NASA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "supernova",
+        "étoile",
+        "explosion"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0021",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "earth-sciences",
+      "difficulty": 4,
+      "question": "Quel instrument enregistre les vibrations du sol lors d’un séisme ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un sismomètre"
+        },
+        {
+          "id": "b",
+          "text": "Un baromètre"
+        },
+        {
+          "id": "c",
+          "text": "Un hygromètre"
+        },
+        {
+          "id": "d",
+          "text": "Un spectromètre"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le sismomètre mesure les mouvements du sol. Les enregistrements obtenus, appelés sismogrammes, permettent d’étudier les ondes sismiques.",
+      "sourceLabel": "USGS",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "sismomètre",
+        "séisme",
+        "ondes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0022",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "animals",
+      "difficulty": 4,
+      "question": "Quel mammifère marin utilise l’écholocalisation pour se repérer ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le lamantin"
+        },
+        {
+          "id": "b",
+          "text": "Le dauphin"
+        },
+        {
+          "id": "c",
+          "text": "La loutre de mer"
+        },
+        {
+          "id": "d",
+          "text": "Le phoque moine"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les dauphins émettent des clics et analysent les échos pour localiser des objets, communiquer et chasser.",
+      "sourceLabel": "NOAA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "dauphin",
+        "écholocalisation",
+        "mammifère"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0023",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "plants",
+      "difficulty": 5,
+      "question": "Quelle partie de la fleur produit le pollen ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les sépales"
+        },
+        {
+          "id": "b",
+          "text": "Le pistil"
+        },
+        {
+          "id": "c",
+          "text": "Les étamines"
+        },
+        {
+          "id": "d",
+          "text": "Le pédoncule"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les étamines sont les organes reproducteurs mâles de la fleur. Leurs anthères produisent et libèrent les grains de pollen.",
+      "sourceLabel": "INRAE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "étamines",
+        "pollen",
+        "fleur"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0024",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "scientific-history",
+      "difficulty": 5,
+      "question": "Quelle scientifique contribua de manière décisive à la découverte de la double hélice de l’ADN grâce à la diffraction des rayons X ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Dorothy Hodgkin"
+        },
+        {
+          "id": "b",
+          "text": "Barbara McClintock"
+        },
+        {
+          "id": "c",
+          "text": "Rachel Carson"
+        },
+        {
+          "id": "d",
+          "text": "Rosalind Franklin"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les images de diffraction obtenues par Franklin, notamment la Photo 51, furent essentielles à l’élaboration du modèle de l’ADN.",
+      "sourceLabel": "King’s College London",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Rosalind Franklin",
+        "ADN",
+        "rayons X"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SCI-0025",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "human-body",
+      "difficulty": 5,
+      "question": "Quelle partie du cerveau coordonne notamment l’équilibre et la précision des mouvements ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le cervelet"
+        },
+        {
+          "id": "b",
+          "text": "L’hippocampe"
+        },
+        {
+          "id": "c",
+          "text": "L’hypophyse"
+        },
+        {
+          "id": "d",
+          "text": "Le bulbe olfactif"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le cervelet intervient dans la coordination motrice, l’équilibre et l’apprentissage de gestes précis.",
+      "sourceLabel": "Inserm",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "cervelet",
+        "équilibre",
+        "mouvement"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

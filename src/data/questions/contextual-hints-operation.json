@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "contextual-hints-operation-001",
+  "title": "Ajout d’indices contextuels — sources requises",
+  "category": "maintenance",
+  "questionType": "contextual_hint_patch",
+  "generatedAt": null,
+  "status": "source_files_required",
+  "requiredInput": [
+    "history.json",
+    "geography.json",
+    "science-nature.json",
+    "arts-literature.json",
+    "cinema-series.json",
+    "music.json",
+    "society-institutions.json",
+    "sports.json",
+    "technology.json",
+    "french-language.json",
+    "gastronomy.json",
+    "mythologies.json",
+    "popular-culture.json",
+    "world-cultures.json"
+  ],
+  "outputNamingRule": "Ajouter le suffixe -with-hints avant .json",
+  "modificationRule": "Ajouter uniquement contextualHint aux QCM qui n’en possèdent pas.",
+  "verificationStatus": "to_verify"
+}

@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-sports-001",
+  "title": "Sports — Lot 1",
+  "category": "sports",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "SPO-0001",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "olympic-games",
+      "difficulty": 1,
+      "question": "Quel symbole olympique comporte cinq anneaux entrelacés ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le drapeau olympique"
+        },
+        {
+          "id": "b",
+          "text": "La flamme seule"
+        },
+        {
+          "id": "c",
+          "text": "La couronne de laurier"
+        },
+        {
+          "id": "d",
+          "text": "Le podium"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les cinq anneaux représentent l’universalité du mouvement olympique et l’union des continents.",
+      "sourceLabel": "CIO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "anneaux",
+        "Jeux olympiques",
+        "symbole"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0002",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "football",
+      "difficulty": 1,
+      "question": "Combien de joueurs une équipe de football aligne-t-elle normalement au coup d’envoi ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Une équipe commence avec onze joueurs, gardien compris, sous réserve des règles de la compétition.",
+      "sourceLabel": "IFAB",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "football",
+        "joueurs",
+        "règles"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0003",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "rugby",
+      "difficulty": 1,
+      "question": "Combien de points vaut un essai au rugby à XV ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "3 points"
+        },
+        {
+          "id": "b",
+          "text": "4 points"
+        },
+        {
+          "id": "c",
+          "text": "5 points"
+        },
+        {
+          "id": "d",
+          "text": "7 points"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Un essai vaut cinq points et peut être suivi d’une transformation valant deux points.",
+      "sourceLabel": "World Rugby",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rugby",
+        "essai",
+        "points"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0004",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "tennis",
+      "difficulty": 1,
+      "question": "Comment appelle-t-on un score de 40-40 au tennis ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Avantage"
+        },
+        {
+          "id": "b",
+          "text": "Tie-break"
+        },
+        {
+          "id": "c",
+          "text": "Let"
+        },
+        {
+          "id": "d",
+          "text": "Égalité"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "À 40-40, un joueur doit généralement gagner deux points consécutifs pour remporter le jeu.",
+      "sourceLabel": "ITF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "tennis",
+        "égalité",
+        "score"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0005",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "cycling",
+      "difficulty": 2,
+      "question": "Quelle couleur porte le leader du Tour de France au classement général ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Jaune"
+        },
+        {
+          "id": "b",
+          "text": "Vert"
+        },
+        {
+          "id": "c",
+          "text": "Blanc"
+        },
+        {
+          "id": "d",
+          "text": "Rouge"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le maillot jaune distingue le premier du classement général au temps.",
+      "sourceLabel": "Tour de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Tour de France",
+        "maillot jaune",
+        "cyclisme"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0006",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "athletics",
+      "difficulty": 2,
+      "question": "Quelle distance mesure un marathon ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "40 km"
+        },
+        {
+          "id": "b",
+          "text": "42,195 km"
+        },
+        {
+          "id": "c",
+          "text": "41,5 km"
+        },
+        {
+          "id": "d",
+          "text": "45 km"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La distance officielle fut fixée à 42,195 kilomètres au début du XXe siècle.",
+      "sourceLabel": "World Athletics",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "marathon",
+        "distance",
+        "athlétisme"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0007",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "rules",
+      "difficulty": 2,
+      "question": "Au basket-ball, combien de points vaut un lancer franc réussi ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "2 points"
+        },
+        {
+          "id": "b",
+          "text": "3 points"
+        },
+        {
+          "id": "c",
+          "text": "1 point"
+        },
+        {
+          "id": "d",
+          "text": "4 points"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le lancer franc est accordé après certaines fautes et se tire sans opposition depuis la ligne dédiée.",
+      "sourceLabel": "FIBA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "basket-ball",
+        "lancer franc",
+        "règles"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0008",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "sport-history",
+      "difficulty": 2,
+      "question": "Dans quel pays le judo a-t-il été créé ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Chine"
+        },
+        {
+          "id": "b",
+          "text": "La Corée"
+        },
+        {
+          "id": "c",
+          "text": "La Thaïlande"
+        },
+        {
+          "id": "d",
+          "text": "Le Japon"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Jigoro Kano fonda le judo à la fin du XIXe siècle à partir de techniques de jujutsu.",
+      "sourceLabel": "Kodokan",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "judo",
+        "Japon",
+        "histoire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0009",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "other-sports",
+      "difficulty": 2,
+      "question": "Dans quel sport utilise-t-on un volant ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le badminton"
+        },
+        {
+          "id": "b",
+          "text": "Le squash"
+        },
+        {
+          "id": "c",
+          "text": "Le padel"
+        },
+        {
+          "id": "d",
+          "text": "Le pickleball"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le volant, fait de plumes ou de matière synthétique, est frappé au-dessus d’un filet avec une raquette.",
+      "sourceLabel": "BWF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "badminton",
+        "volant",
+        "sport"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0010",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "football",
+      "difficulty": 2,
+      "question": "Quelle partie du corps un joueur de champ ne peut-il pas utiliser volontairement ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La tête"
+        },
+        {
+          "id": "b",
+          "text": "Les mains et les bras"
+        },
+        {
+          "id": "c",
+          "text": "La poitrine"
+        },
+        {
+          "id": "d",
+          "text": "Les cuisses"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Seul le gardien peut manier le ballon avec les mains dans sa propre surface de réparation.",
+      "sourceLabel": "IFAB",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "football",
+        "mains",
+        "règles"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0011",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "tennis",
+      "difficulty": 3,
+      "question": "Sur quelle surface se joue traditionnellement Roland-Garros ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le gazon"
+        },
+        {
+          "id": "b",
+          "text": "Le dur"
+        },
+        {
+          "id": "c",
+          "text": "La terre battue"
+        },
+        {
+          "id": "d",
+          "text": "La moquette"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La terre battue ralentit la balle et produit des rebonds relativement hauts.",
+      "sourceLabel": "FFT",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Roland-Garros",
+        "terre battue",
+        "tennis"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0012",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "olympic-games",
+      "difficulty": 3,
+      "question": "Quelle cité grecque a donné son nom aux Jeux olympiques ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Athènes"
+        },
+        {
+          "id": "b",
+          "text": "Sparte"
+        },
+        {
+          "id": "c",
+          "text": "Delphes"
+        },
+        {
+          "id": "d",
+          "text": "Olympie"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les Jeux antiques se tenaient à Olympie en l’honneur de Zeus.",
+      "sourceLabel": "CIO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Olympie",
+        "Jeux olympiques",
+        "Antiquité"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0013",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "rugby",
+      "difficulty": 3,
+      "question": "Comment s’appelle la remise en jeu avec les avants après certaines fautes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La mêlée"
+        },
+        {
+          "id": "b",
+          "text": "La touche"
+        },
+        {
+          "id": "c",
+          "text": "Le drop"
+        },
+        {
+          "id": "d",
+          "text": "Le maul"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La mêlée ordonnée oppose les packs des deux équipes pour disputer le ballon.",
+      "sourceLabel": "World Rugby",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rugby",
+        "mêlée",
+        "règles"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0014",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "cycling",
+      "difficulty": 3,
+      "question": "Quel type d’épreuve oppose les coureurs au chronomètre, individuellement ou par équipes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le critérium"
+        },
+        {
+          "id": "b",
+          "text": "Le contre-la-montre"
+        },
+        {
+          "id": "c",
+          "text": "Le sprint intermédiaire"
+        },
+        {
+          "id": "d",
+          "text": "L’omnium"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les départs sont espacés et le classement dépend du temps réalisé.",
+      "sourceLabel": "UCI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "contre-la-montre",
+        "cyclisme",
+        "chronomètre"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0015",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "athletics",
+      "difficulty": 3,
+      "question": "Dans quelle discipline franchit-on une barre à l’aide d’une perche ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le saut en hauteur"
+        },
+        {
+          "id": "b",
+          "text": "Le triple saut"
+        },
+        {
+          "id": "c",
+          "text": "Le saut à la perche"
+        },
+        {
+          "id": "d",
+          "text": "Le lancer du javelot"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "L’athlète utilise une perche flexible pour transformer sa course en élévation.",
+      "sourceLabel": "World Athletics",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "saut à la perche",
+        "athlétisme",
+        "barre"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0016",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "rules",
+      "difficulty": 3,
+      "question": "Combien de sets faut-il gagner dans un match de volley-ball au meilleur des cinq sets ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La première équipe à trois sets remporte le match. Le cinquième set éventuel se joue généralement en 15 points.",
+      "sourceLabel": "FIVB",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "volley-ball",
+        "sets",
+        "règles"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0017",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "sport-history",
+      "difficulty": 3,
+      "question": "Quel baron français a joué un rôle central dans la rénovation des Jeux olympiques modernes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pierre de Coubertin"
+        },
+        {
+          "id": "b",
+          "text": "Jules Rimet"
+        },
+        {
+          "id": "c",
+          "text": "Henri Delaunay"
+        },
+        {
+          "id": "d",
+          "text": "Jean Borotra"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Coubertin participa à la création du Comité international olympique en 1894.",
+      "sourceLabel": "CIO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Coubertin",
+        "Jeux olympiques",
+        "histoire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0018",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "other-sports",
+      "difficulty": 4,
+      "question": "Quel sport se pratique sur une piste glacée avec des pierres et des balais ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le bobsleigh"
+        },
+        {
+          "id": "b",
+          "text": "Le curling"
+        },
+        {
+          "id": "c",
+          "text": "Le skeleton"
+        },
+        {
+          "id": "d",
+          "text": "Le hockey sur glace"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les joueurs font glisser des pierres vers une cible et balaient la glace pour influencer leur trajectoire.",
+      "sourceLabel": "World Curling",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "curling",
+        "glace",
+        "pierres"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0019",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "football",
+      "difficulty": 4,
+      "question": "Quel carton signifie l’exclusion d’un joueur ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le carton jaune"
+        },
+        {
+          "id": "b",
+          "text": "Le carton blanc"
+        },
+        {
+          "id": "c",
+          "text": "Le carton rouge"
+        },
+        {
+          "id": "d",
+          "text": "Le carton bleu"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Un carton rouge impose au joueur de quitter définitivement le terrain et son équipe continue en infériorité numérique.",
+      "sourceLabel": "IFAB",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "football",
+        "carton rouge",
+        "exclusion"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0020",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "tennis",
+      "difficulty": 4,
+      "question": "Qu’est-ce qu’un ace ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un échange de plus de vingt frappes"
+        },
+        {
+          "id": "b",
+          "text": "Une faute de pied"
+        },
+        {
+          "id": "c",
+          "text": "Un point rejoué"
+        },
+        {
+          "id": "d",
+          "text": "Un service gagnant non touché"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Un ace est un service valide que le receveur ne parvient pas à toucher.",
+      "sourceLabel": "ITF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "tennis",
+        "ace",
+        "service"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0021",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "olympic-games",
+      "difficulty": 4,
+      "question": "Quelle épreuve combine ski de fond et tir à la carabine ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le biathlon"
+        },
+        {
+          "id": "b",
+          "text": "Le combiné nordique"
+        },
+        {
+          "id": "c",
+          "text": "Le pentathlon moderne"
+        },
+        {
+          "id": "d",
+          "text": "Le skeleton"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le biathlon alterne effort d’endurance et phases de tir exigeant précision et contrôle respiratoire.",
+      "sourceLabel": "IBU",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "biathlon",
+        "ski",
+        "tir"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0022",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "rugby",
+      "difficulty": 4,
+      "question": "Quel geste permet de marquer trois points en jeu courant au rugby à XV ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La transformation"
+        },
+        {
+          "id": "b",
+          "text": "Le drop"
+        },
+        {
+          "id": "c",
+          "text": "L’essai"
+        },
+        {
+          "id": "d",
+          "text": "La touche rapide"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le drop est réussi lorsque le ballon est lâché, rebondit puis est frappé entre les poteaux.",
+      "sourceLabel": "World Rugby",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "rugby",
+        "drop",
+        "points"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0023",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "cycling",
+      "difficulty": 5,
+      "question": "Sur quelle avenue parisienne se termine traditionnellement le Tour de France ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’avenue de l’Opéra"
+        },
+        {
+          "id": "b",
+          "text": "Le boulevard Saint-Germain"
+        },
+        {
+          "id": "c",
+          "text": "Les Champs-Élysées"
+        },
+        {
+          "id": "d",
+          "text": "L’avenue Foch uniquement"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Depuis 1975, l’étape finale se termine traditionnellement sur l’avenue des Champs-Élysées.",
+      "sourceLabel": "Tour de France",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Tour de France",
+        "Champs-Élysées",
+        "Paris"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0024",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "athletics",
+      "difficulty": 5,
+      "question": "Quel lancer utilise un disque plat et circulaire ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le lancer du poids"
+        },
+        {
+          "id": "b",
+          "text": "Le lancer du marteau"
+        },
+        {
+          "id": "c",
+          "text": "Le lancer du javelot"
+        },
+        {
+          "id": "d",
+          "text": "Le lancer du disque"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’athlète effectue des rotations dans une aire circulaire avant de libérer le disque.",
+      "sourceLabel": "World Athletics",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "lancer du disque",
+        "athlétisme",
+        "disque"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "SPO-0025",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "other-sports",
+      "difficulty": 5,
+      "question": "Dans quel sport réalise-t-on des figures sur une barre fixe, des anneaux ou un cheval d’arçons ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La gymnastique artistique"
+        },
+        {
+          "id": "b",
+          "text": "La gymnastique rythmique"
+        },
+        {
+          "id": "c",
+          "text": "Le plongeon"
+        },
+        {
+          "id": "d",
+          "text": "Le patinage artistique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La gymnastique artistique comporte des agrès différents selon les catégories de compétition.",
+      "sourceLabel": "FIG",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "gymnastique artistique",
+        "agrès",
+        "sport"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

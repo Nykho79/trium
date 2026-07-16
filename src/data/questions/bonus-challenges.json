@@ -1,0 +1,1345 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "bonus-challenges-001",
+  "title": "Défis bonus — Lot 1",
+  "category": "bonus-challenges",
+  "questionType": "bonus_challenge",
+  "generatedAt": null,
+  "challenges": [
+    {
+      "id": "BON-0001",
+      "type": "bonus_challenge",
+      "challengeType": "quick_multiple_choice",
+      "difficulty": 1,
+      "prompt": "Quel métal a pour symbole Fe ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Le fer"
+          },
+          {
+            "id": "b",
+            "text": "Le cuivre"
+          },
+          {
+            "id": "c",
+            "text": "L’étain"
+          },
+          {
+            "id": "d",
+            "text": "Le zinc"
+          }
+        ],
+        "correctAnswerId": "a"
+      },
+      "reward": {
+        "type": "points",
+        "value": 150
+      },
+      "explanation": "Le symbole Fe vient du latin ferrum.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0002",
+      "type": "bonus_challenge",
+      "challengeType": "true_false",
+      "difficulty": 1,
+      "prompt": "Vénus est plus chaude en moyenne que Mercure.",
+      "content": {
+        "correctAnswer": true
+      },
+      "reward": {
+        "type": "time",
+        "value": 15
+      },
+      "explanation": "Son puissant effet de serre élève fortement sa température de surface.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0003",
+      "type": "bonus_challenge",
+      "challengeType": "two_correct",
+      "difficulty": 1,
+      "prompt": "Choisissez exactement deux mammifères.",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Bison"
+          },
+          {
+            "id": "b",
+            "text": "Requin"
+          },
+          {
+            "id": "c",
+            "text": "Chauve-souris"
+          },
+          {
+            "id": "d",
+            "text": "Truite"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c"
+        ]
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Le bison et la chauve-souris sont des mammifères ; requin et truite sont des poissons.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0004",
+      "type": "bonus_challenge",
+      "challengeType": "mini_connection",
+      "difficulty": 1,
+      "prompt": "Quel lien précis unit ces quatre éléments ?",
+      "content": {
+        "items": [
+          "Rome",
+          "Madrid",
+          "Lisbonne",
+          "Athènes"
+        ],
+        "connection": "Des capitales européennes"
+      },
+      "reward": {
+        "type": "protection",
+        "value": 1
+      },
+      "explanation": "Les quatre éléments sont des capitales européennes.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0005",
+      "type": "bonus_challenge",
+      "challengeType": "mini_sequence",
+      "difficulty": 1,
+      "prompt": "Complétez la suite.",
+      "content": {
+        "sequence": [
+          "4",
+          "7",
+          "10",
+          "13",
+          "?"
+        ],
+        "answers": [
+          {
+            "id": "a",
+            "text": "16"
+          },
+          {
+            "id": "b",
+            "text": "14"
+          },
+          {
+            "id": "c",
+            "text": "15"
+          },
+          {
+            "id": "d",
+            "text": "17"
+          }
+        ],
+        "correctAnswerId": "a",
+        "rule": "Ajouter 3."
+      },
+      "reward": {
+        "type": "multiplier",
+        "value": 1.5
+      },
+      "explanation": "La règle est : Ajouter 3.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0006",
+      "type": "bonus_challenge",
+      "challengeType": "quick_order",
+      "difficulty": 1,
+      "prompt": "Du plus petit au plus grand.",
+      "content": {
+        "items": [
+          "Éléphant",
+          "Cheval",
+          "Chat",
+          "Fourmi"
+        ],
+        "correctOrder": [
+          "Fourmi",
+          "Chat",
+          "Cheval",
+          "Éléphant"
+        ]
+      },
+      "reward": {
+        "type": "points",
+        "value": 150
+      },
+      "explanation": "L’ordre correct est : Fourmi → Chat → Cheval → Éléphant.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0007",
+      "type": "bonus_challenge",
+      "challengeType": "bounded_estimation",
+      "difficulty": 1,
+      "prompt": "Dans quelle fourchette se situe le nombre de minutes d’une journée ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "100 à 500"
+          },
+          {
+            "id": "b",
+            "text": "500 à 1 000"
+          },
+          {
+            "id": "c",
+            "text": "1 000 à 2 000"
+          },
+          {
+            "id": "d",
+            "text": "Plus de 3 000"
+          }
+        ],
+        "correctAnswerId": "c",
+        "acceptedRange": [
+          1000,
+          2000
+        ]
+      },
+      "reward": {
+        "type": "time",
+        "value": 15
+      },
+      "explanation": "Une journée compte 1 440 minutes.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0008",
+      "type": "bonus_challenge",
+      "challengeType": "collective_choice",
+      "difficulty": 1,
+      "prompt": "Quel élément est une énergie renouvelable ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Le charbon"
+          },
+          {
+            "id": "b",
+            "text": "Le pétrole"
+          },
+          {
+            "id": "c",
+            "text": "Le gaz naturel"
+          },
+          {
+            "id": "d",
+            "text": "Le vent"
+          }
+        ],
+        "correctAnswerId": "d",
+        "requiresConsensus": true
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Le vent se renouvelle naturellement.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0009",
+      "type": "bonus_challenge",
+      "challengeType": "quick_multiple_choice",
+      "difficulty": 2,
+      "prompt": "Quelle ville est traversée par la Tamise ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Londres"
+          },
+          {
+            "id": "b",
+            "text": "Dublin"
+          },
+          {
+            "id": "c",
+            "text": "Lisbonne"
+          },
+          {
+            "id": "d",
+            "text": "Vienne"
+          }
+        ],
+        "correctAnswerId": "a"
+      },
+      "reward": {
+        "type": "points",
+        "value": 200
+      },
+      "explanation": "La Tamise traverse Londres avant de rejoindre la mer du Nord.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0010",
+      "type": "bonus_challenge",
+      "challengeType": "true_false",
+      "difficulty": 2,
+      "prompt": "Le Danube se jette dans la mer Baltique.",
+      "content": {
+        "correctAnswer": false
+      },
+      "reward": {
+        "type": "time",
+        "value": 20
+      },
+      "explanation": "Le Danube se jette dans la mer Noire.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0011",
+      "type": "bonus_challenge",
+      "challengeType": "two_correct",
+      "difficulty": 2,
+      "prompt": "Choisissez exactement deux capitales européennes.",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Madrid"
+          },
+          {
+            "id": "b",
+            "text": "Sydney"
+          },
+          {
+            "id": "c",
+            "text": "Prague"
+          },
+          {
+            "id": "d",
+            "text": "Toronto"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c"
+        ]
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Madrid et Prague sont des capitales européennes ; Sydney et Toronto ne le sont pas.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0012",
+      "type": "bonus_challenge",
+      "challengeType": "mini_connection",
+      "difficulty": 2,
+      "prompt": "Quel lien précis unit ces quatre éléments ?",
+      "content": {
+        "items": [
+          "Mercure",
+          "Vénus",
+          "Terre",
+          "Mars"
+        ],
+        "connection": "Des planètes telluriques"
+      },
+      "reward": {
+        "type": "protection",
+        "value": 1
+      },
+      "explanation": "Les quatre éléments sont des planètes telluriques.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0013",
+      "type": "bonus_challenge",
+      "challengeType": "mini_sequence",
+      "difficulty": 2,
+      "prompt": "Complétez la suite.",
+      "content": {
+        "sequence": [
+          "2",
+          "4",
+          "8",
+          "16",
+          "?"
+        ],
+        "answers": [
+          {
+            "id": "a",
+            "text": "32"
+          },
+          {
+            "id": "b",
+            "text": "24"
+          },
+          {
+            "id": "c",
+            "text": "30"
+          },
+          {
+            "id": "d",
+            "text": "36"
+          }
+        ],
+        "correctAnswerId": "a",
+        "rule": "Multiplier par 2."
+      },
+      "reward": {
+        "type": "multiplier",
+        "value": 1.5
+      },
+      "explanation": "La règle est : Multiplier par 2.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0014",
+      "type": "bonus_challenge",
+      "challengeType": "quick_order",
+      "difficulty": 2,
+      "prompt": "Du plus court au plus long.",
+      "content": {
+        "items": [
+          "Semaine",
+          "Jour",
+          "Heure",
+          "Minute"
+        ],
+        "correctOrder": [
+          "Minute",
+          "Heure",
+          "Jour",
+          "Semaine"
+        ]
+      },
+      "reward": {
+        "type": "points",
+        "value": 200
+      },
+      "explanation": "L’ordre correct est : Minute → Heure → Jour → Semaine.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0015",
+      "type": "bonus_challenge",
+      "challengeType": "bounded_estimation",
+      "difficulty": 2,
+      "prompt": "Dans quelle fourchette se situe le nombre de secondes d’une heure ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "300 à 900"
+          },
+          {
+            "id": "b",
+            "text": "1 000 à 2 000"
+          },
+          {
+            "id": "c",
+            "text": "3 000 à 4 000"
+          },
+          {
+            "id": "d",
+            "text": "Plus de 10 000"
+          }
+        ],
+        "correctAnswerId": "c",
+        "acceptedRange": [
+          3000,
+          4000
+        ]
+      },
+      "reward": {
+        "type": "time",
+        "value": 20
+      },
+      "explanation": "Une heure compte 60 × 60 = 3 600 secondes.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0016",
+      "type": "bonus_challenge",
+      "challengeType": "collective_choice",
+      "difficulty": 2,
+      "prompt": "Quel comportement protège le mieux un compte en ligne ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Réutiliser le même mot de passe"
+          },
+          {
+            "id": "b",
+            "text": "Partager son code"
+          },
+          {
+            "id": "c",
+            "text": "Désactiver les mises à jour"
+          },
+          {
+            "id": "d",
+            "text": "Utiliser un mot de passe unique et long"
+          }
+        ],
+        "correctAnswerId": "d",
+        "requiresConsensus": true
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Un mot de passe unique limite la propagation d’une compromission.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0017",
+      "type": "bonus_challenge",
+      "challengeType": "quick_multiple_choice",
+      "difficulty": 3,
+      "prompt": "Quel instrument mesure la température ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Le thermomètre"
+          },
+          {
+            "id": "b",
+            "text": "Le baromètre"
+          },
+          {
+            "id": "c",
+            "text": "Le compas"
+          },
+          {
+            "id": "d",
+            "text": "Le chronomètre"
+          }
+        ],
+        "correctAnswerId": "a"
+      },
+      "reward": {
+        "type": "points",
+        "value": 250
+      },
+      "explanation": "Un thermomètre mesure une température.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0018",
+      "type": "bonus_challenge",
+      "challengeType": "true_false",
+      "difficulty": 3,
+      "prompt": "Un hexagone possède six côtés.",
+      "content": {
+        "correctAnswer": true
+      },
+      "reward": {
+        "type": "time",
+        "value": 25
+      },
+      "explanation": "Le préfixe hexa- indique six.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0019",
+      "type": "bonus_challenge",
+      "challengeType": "two_correct",
+      "difficulty": 3,
+      "prompt": "Choisissez exactement deux métaux.",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Cuivre"
+          },
+          {
+            "id": "b",
+            "text": "Soufre"
+          },
+          {
+            "id": "c",
+            "text": "Fer"
+          },
+          {
+            "id": "d",
+            "text": "Carbone"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c"
+        ]
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Le cuivre et le fer sont des métaux ; soufre et carbone sont des non-métaux.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0020",
+      "type": "bonus_challenge",
+      "challengeType": "mini_connection",
+      "difficulty": 3,
+      "prompt": "Quel lien précis unit ces quatre éléments ?",
+      "content": {
+        "items": [
+          "Violon",
+          "Alto",
+          "Violoncelle",
+          "Contrebasse"
+        ],
+        "connection": "Des cordes frottées orchestrales"
+      },
+      "reward": {
+        "type": "protection",
+        "value": 1
+      },
+      "explanation": "Les quatre éléments sont des cordes frottées orchestrales.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0021",
+      "type": "bonus_challenge",
+      "challengeType": "mini_sequence",
+      "difficulty": 3,
+      "prompt": "Complétez la suite.",
+      "content": {
+        "sequence": [
+          "A",
+          "C",
+          "E",
+          "G",
+          "?"
+        ],
+        "answers": [
+          {
+            "id": "a",
+            "text": "I"
+          },
+          {
+            "id": "b",
+            "text": "H"
+          },
+          {
+            "id": "c",
+            "text": "J"
+          },
+          {
+            "id": "d",
+            "text": "K"
+          }
+        ],
+        "correctAnswerId": "a",
+        "rule": "Avancer de deux lettres."
+      },
+      "reward": {
+        "type": "multiplier",
+        "value": 1.5
+      },
+      "explanation": "La règle est : Avancer de deux lettres.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0022",
+      "type": "bonus_challenge",
+      "challengeType": "quick_order",
+      "difficulty": 3,
+      "prompt": "Du plus ancien au plus récent.",
+      "content": {
+        "items": [
+          "Époque contemporaine",
+          "Époque moderne",
+          "Moyen Âge",
+          "Antiquité"
+        ],
+        "correctOrder": [
+          "Antiquité",
+          "Moyen Âge",
+          "Époque moderne",
+          "Époque contemporaine"
+        ]
+      },
+      "reward": {
+        "type": "points",
+        "value": 250
+      },
+      "explanation": "L’ordre correct est : Antiquité → Moyen Âge → Époque moderne → Époque contemporaine.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0023",
+      "type": "bonus_challenge",
+      "challengeType": "bounded_estimation",
+      "difficulty": 3,
+      "prompt": "Dans quelle fourchette se situe la circonférence terrestre en kilomètres ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "1 000 à 5 000"
+          },
+          {
+            "id": "b",
+            "text": "10 000 à 20 000"
+          },
+          {
+            "id": "c",
+            "text": "35 000 à 45 000"
+          },
+          {
+            "id": "d",
+            "text": "80 000 à 100 000"
+          }
+        ],
+        "correctAnswerId": "c",
+        "acceptedRange": [
+          35000,
+          45000
+        ]
+      },
+      "reward": {
+        "type": "time",
+        "value": 25
+      },
+      "explanation": "La circonférence terrestre est proche de 40 000 km.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0024",
+      "type": "bonus_challenge",
+      "challengeType": "collective_choice",
+      "difficulty": 3,
+      "prompt": "Quel choix correspond à une source historique primaire ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Un manuel récent"
+          },
+          {
+            "id": "b",
+            "text": "Un documentaire moderne"
+          },
+          {
+            "id": "c",
+            "text": "Une synthèse encyclopédique"
+          },
+          {
+            "id": "d",
+            "text": "Une lettre écrite à l’époque étudiée"
+          }
+        ],
+        "correctAnswerId": "d",
+        "requiresConsensus": true
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Une source primaire provient directement de la période ou des acteurs étudiés.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0025",
+      "type": "bonus_challenge",
+      "challengeType": "quick_multiple_choice",
+      "difficulty": 4,
+      "prompt": "Qui a écrit Candide ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Voltaire"
+          },
+          {
+            "id": "b",
+            "text": "Rousseau"
+          },
+          {
+            "id": "c",
+            "text": "Diderot"
+          },
+          {
+            "id": "d",
+            "text": "Montesquieu"
+          }
+        ],
+        "correctAnswerId": "a"
+      },
+      "reward": {
+        "type": "points",
+        "value": 300
+      },
+      "explanation": "Voltaire publia ce conte philosophique en 1759.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0026",
+      "type": "bonus_challenge",
+      "challengeType": "true_false",
+      "difficulty": 4,
+      "prompt": "Le saxophone appartient à la famille des cordes.",
+      "content": {
+        "correctAnswer": false
+      },
+      "reward": {
+        "type": "time",
+        "value": 30
+      },
+      "explanation": "Le saxophone est un instrument à vent de la famille des bois.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0027",
+      "type": "bonus_challenge",
+      "challengeType": "two_correct",
+      "difficulty": 4,
+      "prompt": "Choisissez exactement deux œuvres de Molière.",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Tartuffe"
+          },
+          {
+            "id": "b",
+            "text": "Germinal"
+          },
+          {
+            "id": "c",
+            "text": "L’Avare"
+          },
+          {
+            "id": "d",
+            "text": "Madame Bovary"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c"
+        ]
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Tartuffe et L’Avare sont de Molière ; Germinal est de Zola et Madame Bovary de Flaubert.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0028",
+      "type": "bonus_challenge",
+      "challengeType": "mini_connection",
+      "difficulty": 4,
+      "prompt": "Quel lien précis unit ces quatre éléments ?",
+      "content": {
+        "items": [
+          "Hugo",
+          "Balzac",
+          "Zola",
+          "Flaubert"
+        ],
+        "connection": "Des écrivains français du XIXe siècle"
+      },
+      "reward": {
+        "type": "protection",
+        "value": 1
+      },
+      "explanation": "Les quatre éléments sont des écrivains français du xixe siècle.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0029",
+      "type": "bonus_challenge",
+      "challengeType": "mini_sequence",
+      "difficulty": 4,
+      "prompt": "Complétez la suite.",
+      "content": {
+        "sequence": [
+          "20",
+          "17",
+          "14",
+          "11",
+          "?"
+        ],
+        "answers": [
+          {
+            "id": "a",
+            "text": "8"
+          },
+          {
+            "id": "b",
+            "text": "7"
+          },
+          {
+            "id": "c",
+            "text": "9"
+          },
+          {
+            "id": "d",
+            "text": "10"
+          }
+        ],
+        "correctAnswerId": "a",
+        "rule": "Retirer 3."
+      },
+      "reward": {
+        "type": "multiplier",
+        "value": 1.5
+      },
+      "explanation": "La règle est : Retirer 3.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0030",
+      "type": "bonus_challenge",
+      "challengeType": "quick_order",
+      "difficulty": 4,
+      "prompt": "Du plus froid au plus chaud.",
+      "content": {
+        "items": [
+          "Eau bouillante",
+          "Eau tiède",
+          "Eau fraîche",
+          "Glace"
+        ],
+        "correctOrder": [
+          "Glace",
+          "Eau fraîche",
+          "Eau tiède",
+          "Eau bouillante"
+        ]
+      },
+      "reward": {
+        "type": "points",
+        "value": 300
+      },
+      "explanation": "L’ordre correct est : Glace → Eau fraîche → Eau tiède → Eau bouillante.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0031",
+      "type": "bonus_challenge",
+      "challengeType": "bounded_estimation",
+      "difficulty": 4,
+      "prompt": "Dans quelle fourchette se situe le nombre d’os d’un adulte ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "50 à 100"
+          },
+          {
+            "id": "b",
+            "text": "150 à 250"
+          },
+          {
+            "id": "c",
+            "text": "300 à 400"
+          },
+          {
+            "id": "d",
+            "text": "Plus de 500"
+          }
+        ],
+        "correctAnswerId": "b",
+        "acceptedRange": [
+          150,
+          250
+        ]
+      },
+      "reward": {
+        "type": "time",
+        "value": 30
+      },
+      "explanation": "Le squelette adulte comporte généralement 206 os.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0032",
+      "type": "bonus_challenge",
+      "challengeType": "collective_choice",
+      "difficulty": 4,
+      "prompt": "Quel aliment appartient aux légumineuses ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Le riz"
+          },
+          {
+            "id": "b",
+            "text": "La pomme de terre"
+          },
+          {
+            "id": "c",
+            "text": "La pomme"
+          },
+          {
+            "id": "d",
+            "text": "La lentille"
+          }
+        ],
+        "correctAnswerId": "d",
+        "requiresConsensus": true
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "La lentille est une légumineuse.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0033",
+      "type": "bonus_challenge",
+      "challengeType": "quick_multiple_choice",
+      "difficulty": 5,
+      "prompt": "Quel gaz est majoritaire dans l’air terrestre ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "L’azote"
+          },
+          {
+            "id": "b",
+            "text": "L’oxygène"
+          },
+          {
+            "id": "c",
+            "text": "L’argon"
+          },
+          {
+            "id": "d",
+            "text": "Le dioxyde de carbone"
+          }
+        ],
+        "correctAnswerId": "a"
+      },
+      "reward": {
+        "type": "points",
+        "value": 350
+      },
+      "explanation": "L’azote représente environ quatre cinquièmes de l’atmosphère sèche.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0034",
+      "type": "bonus_challenge",
+      "challengeType": "true_false",
+      "difficulty": 5,
+      "prompt": "La fermentation peut produire de l’alcool.",
+      "content": {
+        "correctAnswer": true
+      },
+      "reward": {
+        "type": "time",
+        "value": 35
+      },
+      "explanation": "Certaines levures transforment des sucres en alcool et dioxyde de carbone.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0035",
+      "type": "bonus_challenge",
+      "challengeType": "two_correct",
+      "difficulty": 5,
+      "prompt": "Choisissez exactement deux planètes géantes.",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Jupiter"
+          },
+          {
+            "id": "b",
+            "text": "Mars"
+          },
+          {
+            "id": "c",
+            "text": "Neptune"
+          },
+          {
+            "id": "d",
+            "text": "Mercure"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c"
+        ]
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Jupiter et Neptune sont des planètes géantes ; Mars et Mercure sont telluriques.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0036",
+      "type": "bonus_challenge",
+      "challengeType": "mini_connection",
+      "difficulty": 5,
+      "prompt": "Quel lien précis unit ces quatre éléments ?",
+      "content": {
+        "items": [
+          "HTTP",
+          "FTP",
+          "SMTP",
+          "DNS"
+        ],
+        "connection": "Des protocoles ou services d’Internet"
+      },
+      "reward": {
+        "type": "protection",
+        "value": 1
+      },
+      "explanation": "Les quatre éléments sont des protocoles ou services d’internet.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0037",
+      "type": "bonus_challenge",
+      "challengeType": "mini_sequence",
+      "difficulty": 5,
+      "prompt": "Complétez la suite.",
+      "content": {
+        "sequence": [
+          "1",
+          "4",
+          "9",
+          "16",
+          "?"
+        ],
+        "answers": [
+          {
+            "id": "a",
+            "text": "25"
+          },
+          {
+            "id": "b",
+            "text": "20"
+          },
+          {
+            "id": "c",
+            "text": "24"
+          },
+          {
+            "id": "d",
+            "text": "36"
+          }
+        ],
+        "correctAnswerId": "a",
+        "rule": "Prendre les carrés successifs."
+      },
+      "reward": {
+        "type": "multiplier",
+        "value": 1.5
+      },
+      "explanation": "La règle est : Prendre les carrés successifs.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0038",
+      "type": "bonus_challenge",
+      "challengeType": "quick_order",
+      "difficulty": 5,
+      "prompt": "De la planète la plus proche à la plus éloignée du Soleil.",
+      "content": {
+        "items": [
+          "Mars",
+          "Terre",
+          "Vénus",
+          "Mercure"
+        ],
+        "correctOrder": [
+          "Mercure",
+          "Vénus",
+          "Terre",
+          "Mars"
+        ]
+      },
+      "reward": {
+        "type": "points",
+        "value": 350
+      },
+      "explanation": "L’ordre correct est : Mercure → Vénus → Terre → Mars.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0039",
+      "type": "bonus_challenge",
+      "challengeType": "bounded_estimation",
+      "difficulty": 5,
+      "prompt": "Dans quelle fourchette se situe la durée d’une année en heures ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "500 à 1 000"
+          },
+          {
+            "id": "b",
+            "text": "2 000 à 4 000"
+          },
+          {
+            "id": "c",
+            "text": "8 000 à 9 000"
+          },
+          {
+            "id": "d",
+            "text": "Plus de 20 000"
+          }
+        ],
+        "correctAnswerId": "c",
+        "acceptedRange": [
+          8000,
+          9000
+        ]
+      },
+      "reward": {
+        "type": "time",
+        "value": 35
+      },
+      "explanation": "365 jours correspondent à 8 760 heures.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "BON-0040",
+      "type": "bonus_challenge",
+      "challengeType": "collective_choice",
+      "difficulty": 5,
+      "prompt": "Quel objet convertit principalement la lumière en électricité ?",
+      "content": {
+        "answers": [
+          {
+            "id": "a",
+            "text": "Une chaudière"
+          },
+          {
+            "id": "b",
+            "text": "Un haut-parleur"
+          },
+          {
+            "id": "c",
+            "text": "Un compresseur"
+          },
+          {
+            "id": "d",
+            "text": "Un panneau photovoltaïque"
+          }
+        ],
+        "correctAnswerId": "d",
+        "requiresConsensus": true
+      },
+      "reward": {
+        "type": "joker",
+        "value": 1
+      },
+      "explanation": "Une cellule photovoltaïque transforme l’énergie lumineuse en énergie électrique.",
+      "verificationStatus": "to_verify",
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

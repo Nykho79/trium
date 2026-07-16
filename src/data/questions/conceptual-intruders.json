@@ -1,0 +1,1610 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "synapse-conceptual-intruders-001",
+  "title": "Intrus conceptuels — Lot 1",
+  "category": "synapse",
+  "questionType": "conceptual_intruder",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "INT-0001",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "animals",
+      "difficulty": 1,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Chien"
+        },
+        {
+          "id": "b",
+          "text": "Chat"
+        },
+        {
+          "id": "c",
+          "text": "Cheval"
+        },
+        {
+          "id": "d",
+          "text": "Aigle"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des mammifères domestiques.",
+      "explanation": "Les trois premiers sont des mammifères domestiques ; l’aigle est un oiseau.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "animals",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0002",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "plants",
+      "difficulty": 1,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Chêne"
+        },
+        {
+          "id": "b",
+          "text": "Hêtre"
+        },
+        {
+          "id": "c",
+          "text": "Bouleau"
+        },
+        {
+          "id": "d",
+          "text": "Tulipe"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des arbres.",
+      "explanation": "Les trois premiers sont des arbres ; la tulipe est une plante herbacée.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "plants",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0003",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "geography",
+      "difficulty": 1,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Paris"
+        },
+        {
+          "id": "b",
+          "text": "Rome"
+        },
+        {
+          "id": "c",
+          "text": "Madrid"
+        },
+        {
+          "id": "d",
+          "text": "Sicile"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des capitales nationales.",
+      "explanation": "Les trois premiers sont des capitales nationales ; la Sicile est une île et une région.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "geography",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0004",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "objects",
+      "difficulty": 1,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Fourchette"
+        },
+        {
+          "id": "b",
+          "text": "Cuillère"
+        },
+        {
+          "id": "c",
+          "text": "Couteau"
+        },
+        {
+          "id": "d",
+          "text": "Assiette"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des couverts tenus en main.",
+      "explanation": "Les trois premiers sont des couverts tenus en main ; l’assiette est un récipient.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "objects",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0005",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "language",
+      "difficulty": 1,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Rouge"
+        },
+        {
+          "id": "b",
+          "text": "Bleu"
+        },
+        {
+          "id": "c",
+          "text": "Vert"
+        },
+        {
+          "id": "d",
+          "text": "Triangle"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des couleurs.",
+      "explanation": "Les trois premiers sont des couleurs ; triangle désigne une forme.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "language",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0006",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "science",
+      "difficulty": 2,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Proton"
+        },
+        {
+          "id": "b",
+          "text": "Neutron"
+        },
+        {
+          "id": "c",
+          "text": "Électron"
+        },
+        {
+          "id": "d",
+          "text": "Photon"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des constituants courants de l’atome.",
+      "explanation": "Les trois premiers sont des constituants courants de l’atome ; le photon est un quantum de lumière.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "science",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0007",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "animals",
+      "difficulty": 2,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Saumon"
+        },
+        {
+          "id": "b",
+          "text": "Truite"
+        },
+        {
+          "id": "c",
+          "text": "Carpe"
+        },
+        {
+          "id": "d",
+          "text": "Bison"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des poissons.",
+      "explanation": "Les trois premiers sont des poissons ; le dauphin est un mammifère marin.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "animals",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0008",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "music",
+      "difficulty": 2,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Violon"
+        },
+        {
+          "id": "b",
+          "text": "Alto"
+        },
+        {
+          "id": "c",
+          "text": "Violoncelle"
+        },
+        {
+          "id": "d",
+          "text": "Flûte"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des instruments à cordes frottées.",
+      "explanation": "Les trois premiers sont des instruments à cordes frottées ; la flûte est un instrument à vent.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "music",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0009",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "literature",
+      "difficulty": 2,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Roman"
+        },
+        {
+          "id": "b",
+          "text": "Nouvelle"
+        },
+        {
+          "id": "c",
+          "text": "Conte"
+        },
+        {
+          "id": "d",
+          "text": "Sonnet"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des formes narratives en prose.",
+      "explanation": "Les trois premiers sont des formes narratives en prose ; le sonnet est une forme poétique.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "literature",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0010",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "technology",
+      "difficulty": 2,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Clavier"
+        },
+        {
+          "id": "b",
+          "text": "Souris"
+        },
+        {
+          "id": "c",
+          "text": "Écran"
+        },
+        {
+          "id": "d",
+          "text": "Routeur"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des périphériques directement utilisés par l’usager.",
+      "explanation": "Les trois premiers sont des périphériques directement utilisés par l’usager ; le routeur gère le réseau.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "technology",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0011",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "history",
+      "difficulty": 2,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Athènes"
+        },
+        {
+          "id": "b",
+          "text": "Sparte"
+        },
+        {
+          "id": "c",
+          "text": "Corinthe"
+        },
+        {
+          "id": "d",
+          "text": "Pompéi"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois premières sont des cités grecques antiques.",
+      "explanation": "Les trois premières sont des cités grecques antiques ; Pompéi est une cité romaine.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "history",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0012",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "cinema",
+      "difficulty": 2,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Plan large"
+        },
+        {
+          "id": "b",
+          "text": "Gros plan"
+        },
+        {
+          "id": "c",
+          "text": "Plan moyen"
+        },
+        {
+          "id": "d",
+          "text": "Chapitre"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des cadrages cinématographiques.",
+      "explanation": "Les trois premiers sont des cadrages cinématographiques ; chapitre relève surtout du découpage écrit.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "cinema",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0013",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "logic-abstract",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "2, 3 et 5 sont des nombres premiers.",
+      "explanation": "2, 3 et 5 sont des nombres premiers ; 9 est composé.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "logic-abstract",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0014",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "geography",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Nil"
+        },
+        {
+          "id": "b",
+          "text": "Amazone"
+        },
+        {
+          "id": "c",
+          "text": "Danube"
+        },
+        {
+          "id": "d",
+          "text": "Titicaca"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des fleuves.",
+      "explanation": "Les trois premiers sont des fleuves ; le Titicaca est un lac.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "geography",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0015",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "plants",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Mousse"
+        },
+        {
+          "id": "b",
+          "text": "Fougère"
+        },
+        {
+          "id": "c",
+          "text": "Prêle"
+        },
+        {
+          "id": "d",
+          "text": "Rose"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois premières se reproduisent sans fleurs.",
+      "explanation": "Les trois premières se reproduisent sans fleurs ; la rose est une plante à fleurs.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "plants",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0016",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "science",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Solide"
+        },
+        {
+          "id": "b",
+          "text": "Liquide"
+        },
+        {
+          "id": "c",
+          "text": "Gaz"
+        },
+        {
+          "id": "d",
+          "text": "Énergie"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des états classiques de la matière.",
+      "explanation": "Les trois premiers sont des états classiques de la matière ; l’énergie n’est pas un état de la matière.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "science",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0017",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "music",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Soprano"
+        },
+        {
+          "id": "b",
+          "text": "Alto"
+        },
+        {
+          "id": "c",
+          "text": "Ténor"
+        },
+        {
+          "id": "d",
+          "text": "Tempo"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des registres vocaux.",
+      "explanation": "Les trois premiers sont des registres vocaux ; le tempo désigne la vitesse musicale.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "music",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0018",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "technology",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "HTTP"
+        },
+        {
+          "id": "b",
+          "text": "FTP"
+        },
+        {
+          "id": "c",
+          "text": "SMTP"
+        },
+        {
+          "id": "d",
+          "text": "JPEG"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des protocoles réseau.",
+      "explanation": "Les trois premiers sont des protocoles réseau ; JPEG est un format d’image.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "technology",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0019",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "literature",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Hugo"
+        },
+        {
+          "id": "b",
+          "text": "Balzac"
+        },
+        {
+          "id": "c",
+          "text": "Zola"
+        },
+        {
+          "id": "d",
+          "text": "Debussy"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des écrivains français.",
+      "explanation": "Les trois premiers sont des écrivains français ; Debussy est un compositeur.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "literature",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0020",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "objects",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Marteau"
+        },
+        {
+          "id": "b",
+          "text": "Tournevis"
+        },
+        {
+          "id": "c",
+          "text": "Pince"
+        },
+        {
+          "id": "d",
+          "text": "Thermomètre"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des outils de bricolage.",
+      "explanation": "Les trois premiers sont des outils de bricolage ; le thermomètre mesure une température.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "objects",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0021",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "history",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Renaissance"
+        },
+        {
+          "id": "b",
+          "text": "Baroque"
+        },
+        {
+          "id": "c",
+          "text": "Classicisme"
+        },
+        {
+          "id": "d",
+          "text": "Paléolithique"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs désignent des périodes ou courants des Temps modernes.",
+      "explanation": "Les trois premiers désignent des périodes ou courants des Temps modernes ; le Paléolithique appartient à la Préhistoire.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "history",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0022",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "cinema",
+      "difficulty": 3,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Scénario"
+        },
+        {
+          "id": "b",
+          "text": "Montage"
+        },
+        {
+          "id": "c",
+          "text": "Cadrage"
+        },
+        {
+          "id": "d",
+          "text": "Reliure"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs relèvent de la fabrication d’un film.",
+      "explanation": "Les trois premiers relèvent de la fabrication d’un film ; la reliure concerne le livre.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "cinema",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0023",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "animals",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Ornithorynque"
+        },
+        {
+          "id": "b",
+          "text": "Échidné"
+        },
+        {
+          "id": "c",
+          "text": "Kangourou"
+        },
+        {
+          "id": "d",
+          "text": "Bison"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des mammifères originaires d’Australie.",
+      "explanation": "Les trois premiers sont des mammifères originaires d’Australie ; le bison ne l’est pas.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "animals",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0024",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "geography",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Danemark"
+        },
+        {
+          "id": "b",
+          "text": "Norvège"
+        },
+        {
+          "id": "c",
+          "text": "Suède"
+        },
+        {
+          "id": "d",
+          "text": "Finlande"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des monarchies scandinaves.",
+      "explanation": "Les trois premiers sont des monarchies scandinaves ; la Finlande est une république nordique.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "geography",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0025",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "science",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Mercure"
+        },
+        {
+          "id": "b",
+          "text": "Vénus"
+        },
+        {
+          "id": "c",
+          "text": "Terre"
+        },
+        {
+          "id": "d",
+          "text": "Cérès"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois premières sont des planètes telluriques.",
+      "explanation": "Les trois premières sont des planètes telluriques ; Cérès est une planète naine.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "science",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0026",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "literature",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Alexandrin"
+        },
+        {
+          "id": "b",
+          "text": "Décasyllabe"
+        },
+        {
+          "id": "c",
+          "text": "Octosyllabe"
+        },
+        {
+          "id": "d",
+          "text": "Paragraphe"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des types de vers définis par leur nombre de syllabes.",
+      "explanation": "Les trois premiers sont des types de vers définis par leur nombre de syllabes ; paragraphe est une unité de prose.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "literature",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0027",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "music",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Sonate"
+        },
+        {
+          "id": "b",
+          "text": "Symphonie"
+        },
+        {
+          "id": "c",
+          "text": "Concerto"
+        },
+        {
+          "id": "d",
+          "text": "Perspective"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des formes musicales.",
+      "explanation": "Les trois premiers sont des formes musicales ; perspective est un concept visuel.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "music",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0028",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "technology",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "RAM"
+        },
+        {
+          "id": "b",
+          "text": "ROM"
+        },
+        {
+          "id": "c",
+          "text": "Cache"
+        },
+        {
+          "id": "d",
+          "text": "Pixel"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs désignent des mémoires informatiques.",
+      "explanation": "Les trois premiers désignent des mémoires informatiques ; pixel est une unité d’image.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "technology",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0029",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "history",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Sumer"
+        },
+        {
+          "id": "b",
+          "text": "Akkad"
+        },
+        {
+          "id": "c",
+          "text": "Babylone"
+        },
+        {
+          "id": "d",
+          "text": "Carthage"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs appartiennent à la Mésopotamie antique.",
+      "explanation": "Les trois premiers appartiennent à la Mésopotamie antique ; Carthage se situe en Afrique du Nord.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "history",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0030",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "logic-abstract",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "ABBA"
+        },
+        {
+          "id": "b",
+          "text": "CDDC"
+        },
+        {
+          "id": "c",
+          "text": "EFFE"
+        },
+        {
+          "id": "d",
+          "text": "GHGI"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs suivent le motif 1-2-2-1.",
+      "explanation": "Les trois premiers suivent le motif 1-2-2-1 ; GHGI ne respecte pas cette symétrie.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "logic-abstract",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0031",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "plants",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Séquoia"
+        },
+        {
+          "id": "b",
+          "text": "Pin"
+        },
+        {
+          "id": "c",
+          "text": "Sapin"
+        },
+        {
+          "id": "d",
+          "text": "Baobab"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des conifères.",
+      "explanation": "Les trois premiers sont des conifères ; le baobab est un arbre à fleurs.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "plants",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0032",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "cinema",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Travelling"
+        },
+        {
+          "id": "b",
+          "text": "Panoramique"
+        },
+        {
+          "id": "c",
+          "text": "Zoom"
+        },
+        {
+          "id": "d",
+          "text": "Fondu enchaîné"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs modifient le cadrage au cours d’un plan.",
+      "explanation": "Les trois premiers modifient le cadrage au cours d’un plan ; le fondu enchaîné est une transition de montage.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "cinema",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0033",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "objects",
+      "difficulty": 4,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Boussole"
+        },
+        {
+          "id": "b",
+          "text": "Sextant"
+        },
+        {
+          "id": "c",
+          "text": "Astrolabe"
+        },
+        {
+          "id": "d",
+          "text": "Baromètre"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs servent à l’orientation ou à la navigation astronomique.",
+      "explanation": "Les trois premiers servent à l’orientation ou à la navigation astronomique ; le baromètre mesure la pression.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "objects",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0034",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "science",
+      "difficulty": 5,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Mitose"
+        },
+        {
+          "id": "b",
+          "text": "Méiose"
+        },
+        {
+          "id": "c",
+          "text": "Fission binaire"
+        },
+        {
+          "id": "d",
+          "text": "Osmose"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois premières sont des modes ou processus de division cellulaire.",
+      "explanation": "Les trois premières sont des modes ou processus de division cellulaire ; l’osmose est un transport d’eau.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "science",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0035",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "geography",
+      "difficulty": 5,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Oural"
+        },
+        {
+          "id": "b",
+          "text": "Caucase"
+        },
+        {
+          "id": "c",
+          "text": "Alpes"
+        },
+        {
+          "id": "d",
+          "text": "Sahara"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des chaînes de montagnes.",
+      "explanation": "Les trois premiers sont des chaînes de montagnes ; le Sahara est un désert.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "geography",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0036",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "history",
+      "difficulty": 5,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Hanse"
+        },
+        {
+          "id": "b",
+          "text": "Ligue de Délos"
+        },
+        {
+          "id": "c",
+          "text": "Ligue achéenne"
+        },
+        {
+          "id": "d",
+          "text": "Dynastie Ming"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois premières sont des ligues ou alliances.",
+      "explanation": "Les trois premières sont des ligues ou alliances ; les Ming constituent une dynastie.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "history",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0037",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "literature",
+      "difficulty": 5,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Anaphore"
+        },
+        {
+          "id": "b",
+          "text": "Épiphore"
+        },
+        {
+          "id": "c",
+          "text": "Chiasme"
+        },
+        {
+          "id": "d",
+          "text": "Didascalie"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des figures de style.",
+      "explanation": "Les trois premiers sont des figures de style ; la didascalie est une indication théâtrale.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "literature",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0038",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "technology",
+      "difficulty": 5,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "TCP"
+        },
+        {
+          "id": "b",
+          "text": "UDP"
+        },
+        {
+          "id": "c",
+          "text": "IP"
+        },
+        {
+          "id": "d",
+          "text": "PNG"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des protocoles de communication.",
+      "explanation": "Les trois premiers sont des protocoles de communication ; PNG est un format d’image.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "technology",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0039",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "music",
+      "difficulty": 5,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "Dorien"
+        },
+        {
+          "id": "b",
+          "text": "Phrygien"
+        },
+        {
+          "id": "c",
+          "text": "Lydien"
+        },
+        {
+          "id": "d",
+          "text": "Chromatique"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs sont des modes diatoniques nommés.",
+      "explanation": "Les trois premiers sont des modes diatoniques nommés ; chromatique désigne un système utilisant les douze demi-tons.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "music",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "INT-0040",
+      "type": "conceptual_intruder",
+      "category": "synapse",
+      "subcategory": "logic-abstract",
+      "difficulty": 5,
+      "prompt": "Quel élément est l’intrus ?",
+      "items": [
+        {
+          "id": "a",
+          "text": "121"
+        },
+        {
+          "id": "b",
+          "text": "343"
+        },
+        {
+          "id": "c",
+          "text": "565"
+        },
+        {
+          "id": "d",
+          "text": "782"
+        }
+      ],
+      "correctItemId": "d",
+      "commonRelationship": "Les trois éléments communs se lisent de la même façon dans les deux sens.",
+      "explanation": "Les trois premiers se lisent de la même façon dans les deux sens ; 782 n’est pas un palindrome.",
+      "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
+      "sourceLabel": null,
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "logic-abstract",
+        "intrus"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

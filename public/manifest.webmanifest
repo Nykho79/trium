@@ -1,0 +1,20 @@
+{
+  "name": "TRIUM",
+  "short_name": "TRIUM",
+  "description": "Jeu de quiz cooperatif ou solo en francais pour ecran commun.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#03070d",
+  "theme_color": "#03070d",
+  "icons": [
+    {
+      "src": "./icons/trium-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

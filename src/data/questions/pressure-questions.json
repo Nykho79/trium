@@ -1,0 +1,1970 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "special-pressure-questions-001",
+  "title": "Choix sous pression — Lot 1",
+  "category": "pressure-questions",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "series": [
+    {
+      "id": "pressure-series-001",
+      "title": "Série 1",
+      "questions": [
+        {
+          "id": "PRE-0001",
+          "type": "multiple_choice",
+          "category": "history",
+          "subcategory": "antiquity",
+          "difficulty": 1,
+          "question": "Quel peuple antique a édifié le Colisée ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Les Romains"
+            },
+            {
+              "id": "b",
+              "text": "Les Grecs"
+            },
+            {
+              "id": "c",
+              "text": "Les Étrusques"
+            },
+            {
+              "id": "d",
+              "text": "Les Phéniciens"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Pense à la capitale d’un vaste empire méditerranéen.",
+          "explanation": "Le Colisée fut inauguré à Rome au Ier siècle sous les empereurs flavien et pouvait accueillir des dizaines de milliers de spectateurs.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "antiquity"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0002",
+          "type": "multiple_choice",
+          "category": "geography",
+          "subcategory": "countries",
+          "difficulty": 2,
+          "question": "Quel pays enclavé se trouve entre la France et l’Espagne ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Monaco"
+            },
+            {
+              "id": "b",
+              "text": "Andorre"
+            },
+            {
+              "id": "c",
+              "text": "Liechtenstein"
+            },
+            {
+              "id": "d",
+              "text": "Saint-Marin"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "Cherche une principauté pyrénéenne.",
+          "explanation": "La principauté d’Andorre occupe une vallée des Pyrénées entre ses deux grands voisins.",
+          "sourceLabel": "National Geographic",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "countries"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0003",
+          "type": "multiple_choice",
+          "category": "science-nature",
+          "subcategory": "astronomy",
+          "difficulty": 3,
+          "question": "Quelle planète possède la Grande Tache rouge ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Saturne"
+            },
+            {
+              "id": "b",
+              "text": "Mars"
+            },
+            {
+              "id": "c",
+              "text": "Jupiter"
+            },
+            {
+              "id": "d",
+              "text": "Neptune"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Cherche la plus grande planète du Système solaire.",
+          "explanation": "La Grande Tache rouge est une immense tempête persistante observée dans l’atmosphère de Jupiter.",
+          "sourceLabel": "CNRS",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "astronomy"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0004",
+          "type": "multiple_choice",
+          "category": "arts-literature",
+          "subcategory": "architecture",
+          "difficulty": 4,
+          "question": "Quel architecte conçut la villa Savoye à Poissy ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Walter Gropius"
+            },
+            {
+              "id": "b",
+              "text": "Frank Lloyd Wright"
+            },
+            {
+              "id": "c",
+              "text": "Auguste Perret"
+            },
+            {
+              "id": "d",
+              "text": "Le Corbusier"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Pense aux pilotis et au toit-terrasse.",
+          "explanation": "La villa Savoye illustre les cinq points de l’architecture moderne formulés par Le Corbusier.",
+          "sourceLabel": "BnF",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "architecture"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0005",
+          "type": "multiple_choice",
+          "category": "cinema-series",
+          "subcategory": "film-language",
+          "difficulty": 5,
+          "question": "Comment appelle-t-on un plan filmé sans coupe apparente pendant une longue durée ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Un plan-séquence"
+            },
+            {
+              "id": "b",
+              "text": "Un champ-contrechamp"
+            },
+            {
+              "id": "c",
+              "text": "Un insert"
+            },
+            {
+              "id": "d",
+              "text": "Un raccord regard"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "La caméra peut se déplacer, mais le montage ne coupe pas.",
+          "explanation": "Le plan-séquence conserve la continuité temporelle et spatiale au sein d’une prise prolongée.",
+          "sourceLabel": "BFI",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "film-language"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-002",
+      "title": "Série 2",
+      "questions": [
+        {
+          "id": "PRE-0006",
+          "type": "multiple_choice",
+          "category": "music",
+          "subcategory": "classical-music",
+          "difficulty": 1,
+          "question": "Quel compositeur a écrit Les Quatre Saisons ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Johann Sebastian Bach"
+            },
+            {
+              "id": "b",
+              "text": "Antonio Vivaldi"
+            },
+            {
+              "id": "c",
+              "text": "Georg Friedrich Haendel"
+            },
+            {
+              "id": "d",
+              "text": "Joseph Haydn"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "Le compositeur était un prêtre vénitien surnommé le Prêtre roux.",
+          "explanation": "Ce cycle de quatre concertos pour violon évoque musicalement les saisons et des scènes de la nature.",
+          "sourceLabel": "Philharmonie de Paris",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "classical-music"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0007",
+          "type": "multiple_choice",
+          "category": "society-institutions",
+          "subcategory": "law",
+          "difficulty": 2,
+          "question": "Quel principe impose que nul ne soit puni pour un acte qui n’était pas interdit au moment où il a été commis ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "La séparation des pouvoirs"
+            },
+            {
+              "id": "b",
+              "text": "La présomption de majorité"
+            },
+            {
+              "id": "c",
+              "text": "La non-rétroactivité de la loi pénale plus sévère"
+            },
+            {
+              "id": "d",
+              "text": "La publicité des débats"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Il concerne le rapport entre une loi nouvelle et des faits passés.",
+          "explanation": "Ce principe protège la sécurité juridique et empêche l’application rétroactive d’une incrimination plus sévère.",
+          "sourceLabel": "Vie publique",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "law"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0008",
+          "type": "multiple_choice",
+          "category": "sports",
+          "subcategory": "tennis",
+          "difficulty": 3,
+          "question": "Comment appelle-t-on un service que l’adversaire ne touche pas ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Un let"
+            },
+            {
+              "id": "b",
+              "text": "Un lob"
+            },
+            {
+              "id": "c",
+              "text": "Un passing-shot"
+            },
+            {
+              "id": "d",
+              "text": "Un ace"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Le point se termine dès la mise en jeu.",
+          "explanation": "Un ace est un service gagnant directement, sans contact de la raquette adverse.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "tennis"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0009",
+          "type": "multiple_choice",
+          "category": "technology",
+          "subcategory": "computing-history",
+          "difficulty": 4,
+          "question": "Quel langage fut créé par Dennis Ritchie au début des années 1970 ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le langage C"
+            },
+            {
+              "id": "b",
+              "text": "Pascal"
+            },
+            {
+              "id": "c",
+              "text": "Java"
+            },
+            {
+              "id": "d",
+              "text": "Python"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Il est étroitement lié à Unix.",
+          "explanation": "Le langage C fut développé aux Bell Labs et joua un rôle majeur dans la conception d’Unix.",
+          "sourceLabel": "W3C",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "computing-history"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0010",
+          "type": "multiple_choice",
+          "category": "french-language",
+          "subcategory": "linguistics",
+          "difficulty": 5,
+          "question": "Comment appelle-t-on deux mots de sens opposés ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Des homonymes"
+            },
+            {
+              "id": "b",
+              "text": "Des antonymes"
+            },
+            {
+              "id": "c",
+              "text": "Des paronymes"
+            },
+            {
+              "id": "d",
+              "text": "Des hyperonymes"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "Il s’agit d’une relation de contraste de sens.",
+          "explanation": "Les antonymes s’opposent sémantiquement, comme chaud et froid ou entrer et sortir.",
+          "sourceLabel": "Académie française",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "linguistics"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-003",
+      "title": "Série 3",
+      "questions": [
+        {
+          "id": "PRE-0011",
+          "type": "multiple_choice",
+          "category": "gastronomy",
+          "subcategory": "ingredients",
+          "difficulty": 1,
+          "question": "Quel ingrédient principal donne sa couleur au pesto traditionnel génois ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le persil"
+            },
+            {
+              "id": "b",
+              "text": "La roquette"
+            },
+            {
+              "id": "c",
+              "text": "Le basilic"
+            },
+            {
+              "id": "d",
+              "text": "La menthe"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Pense à une herbe très utilisée en Ligurie.",
+          "explanation": "Le pesto génois associe basilic, pignons, ail, fromage et huile d’olive.",
+          "sourceLabel": "Larousse Gastronomique",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "ingredients"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0012",
+          "type": "multiple_choice",
+          "category": "mythologies",
+          "subcategory": "roman",
+          "difficulty": 2,
+          "question": "Quel est l’équivalent romain du dieu grec Zeus ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Mars"
+            },
+            {
+              "id": "b",
+              "text": "Mercure"
+            },
+            {
+              "id": "c",
+              "text": "Neptune"
+            },
+            {
+              "id": "d",
+              "text": "Jupiter"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Il partage la foudre et la souveraineté céleste.",
+          "explanation": "Jupiter est le dieu souverain du panthéon romain, maître du ciel et de la foudre.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "roman"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0013",
+          "type": "multiple_choice",
+          "category": "popular-culture",
+          "subcategory": "franchises",
+          "difficulty": 3,
+          "question": "Dans Star Wars, quelle arme est associée aux Jedi ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le sabre laser"
+            },
+            {
+              "id": "b",
+              "text": "Le tricordeur"
+            },
+            {
+              "id": "c",
+              "text": "Le phaser"
+            },
+            {
+              "id": "d",
+              "text": "Le Batarang"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "La lame est faite d’énergie lumineuse.",
+          "explanation": "Le sabre laser est utilisé par les Jedi et les Sith et symbolise leur lien avec la Force.",
+          "sourceLabel": "Bibliothèque nationale de France",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "franchises"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0014",
+          "type": "multiple_choice",
+          "category": "world-cultures",
+          "subcategory": "architecture",
+          "difficulty": 4,
+          "question": "Comment appelle-t-on les portes monumentales marquant l’entrée d’un sanctuaire shinto ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Les stupas"
+            },
+            {
+              "id": "b",
+              "text": "Les torii"
+            },
+            {
+              "id": "c",
+              "text": "Les minarets"
+            },
+            {
+              "id": "d",
+              "text": "Les ziggourats"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "Elles sont souvent peintes en rouge vermillon.",
+          "explanation": "Les torii signalent symboliquement le passage de l’espace ordinaire vers l’espace sacré.",
+          "sourceLabel": "UNESCO",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "architecture"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0015",
+          "type": "multiple_choice",
+          "category": "history",
+          "subcategory": "world-history",
+          "difficulty": 5,
+          "question": "Quel empire africain médiéval eut Tombouctou comme grand centre intellectuel et commercial ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "L’Empire songhaï uniquement"
+            },
+            {
+              "id": "b",
+              "text": "Le royaume du Kongo"
+            },
+            {
+              "id": "c",
+              "text": "L’Empire du Mali"
+            },
+            {
+              "id": "d",
+              "text": "L’Empire aksoumite"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Pense au règne de Mansa Moussa.",
+          "explanation": "Sous les souverains maliens, notamment au XIVe siècle, Tombouctou devint un foyer majeur d’échanges et d’études islamiques.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "world-history"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-004",
+      "title": "Série 4",
+      "questions": [
+        {
+          "id": "PRE-0016",
+          "type": "multiple_choice",
+          "category": "geography",
+          "subcategory": "capitals",
+          "difficulty": 1,
+          "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Auckland"
+            },
+            {
+              "id": "b",
+              "text": "Christchurch"
+            },
+            {
+              "id": "c",
+              "text": "Dunedin"
+            },
+            {
+              "id": "d",
+              "text": "Wellington"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Elle se situe à l’extrémité sud de l’île du Nord.",
+          "explanation": "Wellington est la capitale politique du pays, tandis qu’Auckland est sa ville la plus peuplée.",
+          "sourceLabel": "National Geographic",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "capitals"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0017",
+          "type": "multiple_choice",
+          "category": "science-nature",
+          "subcategory": "human-body",
+          "difficulty": 2,
+          "question": "Quel organe produit l’insuline ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le pancréas"
+            },
+            {
+              "id": "b",
+              "text": "La rate"
+            },
+            {
+              "id": "c",
+              "text": "La thyroïde"
+            },
+            {
+              "id": "d",
+              "text": "La vésicule biliaire"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Cet organe a aussi une fonction digestive.",
+          "explanation": "Les cellules bêta des îlots de Langerhans sécrètent l’insuline, essentielle à la régulation de la glycémie.",
+          "sourceLabel": "CNRS",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "human-body"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0018",
+          "type": "multiple_choice",
+          "category": "arts-literature",
+          "subcategory": "theatre",
+          "difficulty": 3,
+          "question": "Dans la tragédie de Shakespeare, quel prince danois hésite à venger son père ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Macbeth"
+            },
+            {
+              "id": "b",
+              "text": "Hamlet"
+            },
+            {
+              "id": "c",
+              "text": "Othello"
+            },
+            {
+              "id": "d",
+              "text": "Lear"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "La pièce se déroule au château d’Elseneur.",
+          "explanation": "Hamlet enquête sur la mort de son père et interroge sans cesse le sens de l’action, de la vérité et de la mort.",
+          "sourceLabel": "BnF",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "theatre"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0019",
+          "type": "multiple_choice",
+          "category": "cinema-series",
+          "subcategory": "animation",
+          "difficulty": 4,
+          "question": "Quel studio japonais a produit Princesse Mononoké ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Toei Animation"
+            },
+            {
+              "id": "b",
+              "text": "Madhouse"
+            },
+            {
+              "id": "c",
+              "text": "Studio Ghibli"
+            },
+            {
+              "id": "d",
+              "text": "Production I.G"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Le studio est associé à Miyazaki et Takahata.",
+          "explanation": "Réalisé par Hayao Miyazaki, le film confronte industrialisation, nature et forces spirituelles.",
+          "sourceLabel": "BFI",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "animation"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0020",
+          "type": "multiple_choice",
+          "category": "music",
+          "subcategory": "world-music",
+          "difficulty": 5,
+          "question": "Quel instrument à cordes pincées est central dans la musique classique de l’Inde du Nord ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le shamisen"
+            },
+            {
+              "id": "b",
+              "text": "Le koto"
+            },
+            {
+              "id": "c",
+              "text": "Le oud"
+            },
+            {
+              "id": "d",
+              "text": "Le sitar"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Ravi Shankar l’a fait connaître internationalement.",
+          "explanation": "Le sitar utilise des cordes mélodiques et sympathiques, produisant une résonance caractéristique de la musique hindoustanie.",
+          "sourceLabel": "Philharmonie de Paris",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "world-music"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-005",
+      "title": "Série 5",
+      "questions": [
+        {
+          "id": "PRE-0021",
+          "type": "multiple_choice",
+          "category": "society-institutions",
+          "subcategory": "france",
+          "difficulty": 1,
+          "question": "Combien de chambres composent le Parlement français ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Deux"
+            },
+            {
+              "id": "b",
+              "text": "Une"
+            },
+            {
+              "id": "c",
+              "text": "Trois"
+            },
+            {
+              "id": "d",
+              "text": "Quatre"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Pense au bicamérisme.",
+          "explanation": "Le Parlement comprend l’Assemblée nationale et le Sénat, qui participent à l’élaboration de la loi.",
+          "sourceLabel": "Vie publique",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "france"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0022",
+          "type": "multiple_choice",
+          "category": "sports",
+          "subcategory": "football",
+          "difficulty": 2,
+          "question": "Quelle partie du corps un joueur de champ ne peut-il normalement pas utiliser volontairement au football ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "La tête"
+            },
+            {
+              "id": "b",
+              "text": "Les mains et les bras"
+            },
+            {
+              "id": "c",
+              "text": "La poitrine"
+            },
+            {
+              "id": "d",
+              "text": "Les cuisses"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "Une exception existe pour le gardien dans une zone précise.",
+          "explanation": "Seul le gardien peut manipuler volontairement le ballon avec les mains dans sa propre surface de réparation.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "football"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0023",
+          "type": "multiple_choice",
+          "category": "technology",
+          "subcategory": "cybersecurity",
+          "difficulty": 3,
+          "question": "Comment appelle-t-on une attaque qui cherche à tromper un utilisateur pour obtenir ses identifiants ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "La défragmentation"
+            },
+            {
+              "id": "b",
+              "text": "La virtualisation"
+            },
+            {
+              "id": "c",
+              "text": "L’hameçonnage"
+            },
+            {
+              "id": "d",
+              "text": "La compilation"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "L’attaque exploite surtout la confiance humaine.",
+          "explanation": "L’hameçonnage imite souvent un message légitime pour pousser la victime à cliquer ou transmettre des données.",
+          "sourceLabel": "W3C",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "cybersecurity"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0024",
+          "type": "multiple_choice",
+          "category": "french-language",
+          "subcategory": "etymology",
+          "difficulty": 4,
+          "question": "De quelle langue vient le mot français « algèbre » ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Du latin"
+            },
+            {
+              "id": "b",
+              "text": "Du japonais"
+            },
+            {
+              "id": "c",
+              "text": "Du gaulois"
+            },
+            {
+              "id": "d",
+              "text": "De l’arabe"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Le mot est lié aux mathématiques du monde médiéval islamique.",
+          "explanation": "Le terme vient de l’arabe al-jabr, présent dans le titre d’un ouvrage d’al-Khwarizmi.",
+          "sourceLabel": "Académie française",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "etymology"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0025",
+          "type": "multiple_choice",
+          "category": "gastronomy",
+          "subcategory": "food-science",
+          "difficulty": 5,
+          "question": "Quelle réaction brunit les aliments en associant sucres réducteurs et acides aminés ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "La réaction de Maillard"
+            },
+            {
+              "id": "b",
+              "text": "La caramélisation uniquement"
+            },
+            {
+              "id": "c",
+              "text": "La fermentation lactique"
+            },
+            {
+              "id": "d",
+              "text": "L’oxydation enzymatique"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Elle intervient dans la croûte du pain et la viande grillée.",
+          "explanation": "La réaction de Maillard produit de nombreux composés aromatiques lors de cuissons à température suffisamment élevée.",
+          "sourceLabel": "Larousse Gastronomique",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "food-science"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-006",
+      "title": "Série 6",
+      "questions": [
+        {
+          "id": "PRE-0026",
+          "type": "multiple_choice",
+          "category": "mythologies",
+          "subcategory": "greek",
+          "difficulty": 1,
+          "question": "Quel dieu grec règne sur la mer ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Apollon"
+            },
+            {
+              "id": "b",
+              "text": "Poséidon"
+            },
+            {
+              "id": "c",
+              "text": "Hermès"
+            },
+            {
+              "id": "d",
+              "text": "Arès"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "Son attribut est un trident.",
+          "explanation": "Poséidon est associé à la mer, aux séismes et aux chevaux, et porte souvent un trident.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "greek"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0027",
+          "type": "multiple_choice",
+          "category": "popular-culture",
+          "subcategory": "video-games",
+          "difficulty": 2,
+          "question": "Quel plombier de Nintendo porte généralement une casquette rouge ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Sonic"
+            },
+            {
+              "id": "b",
+              "text": "Link"
+            },
+            {
+              "id": "c",
+              "text": "Mario"
+            },
+            {
+              "id": "d",
+              "text": "Kirby"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Son frère s’appelle Luigi.",
+          "explanation": "Mario apparaît dans de nombreux jeux de plateforme et affronte souvent Bowser pour sauver la princesse Peach.",
+          "sourceLabel": "Bibliothèque nationale de France",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "video-games"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0028",
+          "type": "multiple_choice",
+          "category": "world-cultures",
+          "subcategory": "clothing",
+          "difficulty": 3,
+          "question": "Quel vêtement traditionnel écossais est associé à un tissu tartan ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le sari"
+            },
+            {
+              "id": "b",
+              "text": "Le hanbok"
+            },
+            {
+              "id": "c",
+              "text": "Le poncho"
+            },
+            {
+              "id": "d",
+              "text": "Le kilt"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Le motif à carreaux varie selon les tartans.",
+          "explanation": "Le kilt est une jupe plissée portée dans différents contextes cérémoniels et culturels en Écosse.",
+          "sourceLabel": "UNESCO",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "clothing"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0029",
+          "type": "multiple_choice",
+          "category": "history",
+          "subcategory": "contemporary-history",
+          "difficulty": 4,
+          "question": "Quel plan américain soutint la reconstruction économique de l’Europe après 1945 ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le plan Marshall"
+            },
+            {
+              "id": "b",
+              "text": "Le plan Dawes"
+            },
+            {
+              "id": "c",
+              "text": "Le plan Schlieffen"
+            },
+            {
+              "id": "d",
+              "text": "Le plan Young"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Il porte le nom d’un secrétaire d’État américain.",
+          "explanation": "Annoncé en 1947, ce programme d’aide financière et matérielle accompagna la reconstruction de plusieurs pays européens.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "contemporary-history"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0030",
+          "type": "multiple_choice",
+          "category": "geography",
+          "subcategory": "world-regions",
+          "difficulty": 5,
+          "question": "Quel plateau élevé occupe une grande partie de la Bolivie et du Pérou ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le Deccan"
+            },
+            {
+              "id": "b",
+              "text": "L’Altiplano"
+            },
+            {
+              "id": "c",
+              "text": "Le plateau du Colorado"
+            },
+            {
+              "id": "d",
+              "text": "Le Pamir"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "Il appartient à la cordillère des Andes.",
+          "explanation": "L’Altiplano andin est l’un des plus hauts grands plateaux habités du monde et comprend le lac Titicaca.",
+          "sourceLabel": "National Geographic",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "world-regions"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-007",
+      "title": "Série 7",
+      "questions": [
+        {
+          "id": "PRE-0031",
+          "type": "multiple_choice",
+          "category": "science-nature",
+          "subcategory": "biology",
+          "difficulty": 1,
+          "question": "Quel pigment permet principalement aux plantes d’absorber l’énergie lumineuse ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "La mélanine"
+            },
+            {
+              "id": "b",
+              "text": "L’hémoglobine"
+            },
+            {
+              "id": "c",
+              "text": "La chlorophylle"
+            },
+            {
+              "id": "d",
+              "text": "La kératine"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Il se trouve dans les chloroplastes.",
+          "explanation": "La chlorophylle absorbe surtout certaines longueurs d’onde et donne leur couleur verte à de nombreux végétaux.",
+          "sourceLabel": "CNRS",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "biology"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0032",
+          "type": "multiple_choice",
+          "category": "arts-literature",
+          "subcategory": "painting",
+          "difficulty": 2,
+          "question": "Quel peintre néerlandais a réalisé La Nuit étoilée ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Piet Mondrian"
+            },
+            {
+              "id": "b",
+              "text": "Johannes Vermeer"
+            },
+            {
+              "id": "c",
+              "text": "Rembrandt"
+            },
+            {
+              "id": "d",
+              "text": "Vincent van Gogh"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Pense à un artiste postimpressionniste aux tourbillons expressifs.",
+          "explanation": "Van Gogh peignit cette œuvre en 1889 depuis Saint-Rémy-de-Provence, avec un ciel fortement stylisé.",
+          "sourceLabel": "BnF",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "painting"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0033",
+          "type": "multiple_choice",
+          "category": "cinema-series",
+          "subcategory": "series",
+          "difficulty": 3,
+          "question": "Dans Breaking Bad, quelle matière Walter White enseigne-t-il au début de la série ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "La chimie"
+            },
+            {
+              "id": "b",
+              "text": "La physique"
+            },
+            {
+              "id": "c",
+              "text": "Les mathématiques"
+            },
+            {
+              "id": "d",
+              "text": "La biologie"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Son expertise devient centrale dans l’intrigue.",
+          "explanation": "Walter White est professeur de lycée avant de mettre ses compétences scientifiques au service d’une activité criminelle.",
+          "sourceLabel": "BFI",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "series"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0034",
+          "type": "multiple_choice",
+          "category": "music",
+          "subcategory": "jazz-and-blues",
+          "difficulty": 4,
+          "question": "Quel saxophoniste a composé et enregistré A Love Supreme ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Charlie Parker"
+            },
+            {
+              "id": "b",
+              "text": "John Coltrane"
+            },
+            {
+              "id": "c",
+              "text": "Sonny Rollins"
+            },
+            {
+              "id": "d",
+              "text": "Coleman Hawkins"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "Le musicien est associé au saxophone ténor et au jazz modal.",
+          "explanation": "Publié en 1965, l’album est une suite spirituelle majeure du jazz modal.",
+          "sourceLabel": "Philharmonie de Paris",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "jazz-and-blues"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0035",
+          "type": "multiple_choice",
+          "category": "society-institutions",
+          "subcategory": "economics",
+          "difficulty": 5,
+          "question": "Quel terme désigne une situation où un seul vendeur domine un marché ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Un oligopole"
+            },
+            {
+              "id": "b",
+              "text": "Une concurrence parfaite"
+            },
+            {
+              "id": "c",
+              "text": "Un monopole"
+            },
+            {
+              "id": "d",
+              "text": "Un monopsone"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Ne confonds pas avec un marché dominé par quelques vendeurs.",
+          "explanation": "Un monopole est caractérisé par un offreur unique face à de nombreux acheteurs, avec des barrières à l’entrée importantes.",
+          "sourceLabel": "Vie publique",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "economics"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-008",
+      "title": "Série 8",
+      "questions": [
+        {
+          "id": "PRE-0036",
+          "type": "multiple_choice",
+          "category": "sports",
+          "subcategory": "olympic-games",
+          "difficulty": 1,
+          "question": "Dans quel sport utilise-t-on un fleuret ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le tir à l’arc"
+            },
+            {
+              "id": "b",
+              "text": "Le pentathlon"
+            },
+            {
+              "id": "c",
+              "text": "Le badminton"
+            },
+            {
+              "id": "d",
+              "text": "L’escrime"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Il s’agit d’une arme légère à pointe.",
+          "explanation": "Le fleuret est l’une des trois armes de l’escrime, avec l’épée et le sabre.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "olympic-games"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0037",
+          "type": "multiple_choice",
+          "category": "technology",
+          "subcategory": "internet",
+          "difficulty": 2,
+          "question": "Quel protocole sécurisé est généralement utilisé pour consulter un site web chiffré ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "HTTPS"
+            },
+            {
+              "id": "b",
+              "text": "FTP"
+            },
+            {
+              "id": "c",
+              "text": "SMTP"
+            },
+            {
+              "id": "d",
+              "text": "Bluetooth"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Un cadenas apparaît souvent dans le navigateur.",
+          "explanation": "HTTPS associe HTTP à une couche de chiffrement TLS afin de protéger les échanges entre navigateur et serveur.",
+          "sourceLabel": "W3C",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "internet"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0038",
+          "type": "multiple_choice",
+          "category": "french-language",
+          "subcategory": "figures-of-speech",
+          "difficulty": 3,
+          "question": "Quelle figure rapproche deux éléments avec un outil comme « tel » ou « comme » ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "La métaphore"
+            },
+            {
+              "id": "b",
+              "text": "La comparaison"
+            },
+            {
+              "id": "c",
+              "text": "L’oxymore"
+            },
+            {
+              "id": "d",
+              "text": "La métonymie"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "La relation est signalée par un mot-outil.",
+          "explanation": "La comparaison met explicitement en relation un comparé et un comparant grâce à un outil comparatif.",
+          "sourceLabel": "Académie française",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "figures-of-speech"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0039",
+          "type": "multiple_choice",
+          "category": "gastronomy",
+          "subcategory": "pastry",
+          "difficulty": 4,
+          "question": "Quelle pâte sert traditionnellement à préparer des éclairs ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "La pâte feuilletée"
+            },
+            {
+              "id": "b",
+              "text": "La pâte brisée"
+            },
+            {
+              "id": "c",
+              "text": "La pâte à choux"
+            },
+            {
+              "id": "d",
+              "text": "La pâte sablée"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "La même pâte sert aux chouquettes et aux profiteroles.",
+          "explanation": "La pâte à choux gonfle grâce à la vapeur et forme une cavité prête à être garnie.",
+          "sourceLabel": "Larousse Gastronomique",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "pastry"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0040",
+          "type": "multiple_choice",
+          "category": "mythologies",
+          "subcategory": "mesopotamian",
+          "difficulty": 5,
+          "question": "Dans l’Épopée de Gilgamesh, quel compagnon sauvage devient l’ami du roi ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Utnapishtim"
+            },
+            {
+              "id": "b",
+              "text": "Humbaba"
+            },
+            {
+              "id": "c",
+              "text": "Ea"
+            },
+            {
+              "id": "d",
+              "text": "Enkidu"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Le personnage est d’abord décrit comme vivant parmi les animaux.",
+          "explanation": "Enkidu, créé pour équilibrer Gilgamesh, devient son compagnon avant qu’une tragédie ne transforme le roi.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "mesopotamian"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-009",
+      "title": "Série 9",
+      "questions": [
+        {
+          "id": "PRE-0041",
+          "type": "multiple_choice",
+          "category": "popular-culture",
+          "subcategory": "comics",
+          "difficulty": 1,
+          "question": "Quel reporter belge voyage avec le chien Milou ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Tintin"
+            },
+            {
+              "id": "b",
+              "text": "Spirou"
+            },
+            {
+              "id": "c",
+              "text": "Gaston Lagaffe"
+            },
+            {
+              "id": "d",
+              "text": "Lucky Luke"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Le héros porte souvent une houppette.",
+          "explanation": "Créé par Hergé, Tintin parcourt le monde avec Milou et le capitaine Haddock.",
+          "sourceLabel": "Bibliothèque nationale de France",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "comics"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0042",
+          "type": "multiple_choice",
+          "category": "world-cultures",
+          "subcategory": "traditional-arts",
+          "difficulty": 2,
+          "question": "Quel art japonais consiste à plier du papier ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "L’ikebana"
+            },
+            {
+              "id": "b",
+              "text": "L’origami"
+            },
+            {
+              "id": "c",
+              "text": "Le kabuki"
+            },
+            {
+              "id": "d",
+              "text": "Le bonsaï"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "L’activité part d’une feuille de papier.",
+          "explanation": "L’origami transforme une feuille par pliages successifs sans nécessiter de découpe dans sa forme classique.",
+          "sourceLabel": "UNESCO",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "traditional-arts"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0043",
+          "type": "multiple_choice",
+          "category": "history",
+          "subcategory": "modern-era",
+          "difficulty": 3,
+          "question": "Quel traité de 1648 mit fin à la guerre de Trente Ans ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le traité d’Utrecht"
+            },
+            {
+              "id": "b",
+              "text": "Le traité de Tordesillas"
+            },
+            {
+              "id": "c",
+              "text": "Les traités de Westphalie"
+            },
+            {
+              "id": "d",
+              "text": "Le congrès de Vienne"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Cherche un ensemble d’accords signés en Allemagne.",
+          "explanation": "Les accords de Westphalie redessinèrent l’équilibre européen et renforcèrent la souveraineté des États du Saint-Empire.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "modern-era"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0044",
+          "type": "multiple_choice",
+          "category": "geography",
+          "subcategory": "rivers",
+          "difficulty": 4,
+          "question": "Quel fleuve traverse Vienne, Bratislava, Budapest et Belgrade ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le Rhin"
+            },
+            {
+              "id": "b",
+              "text": "La Vistule"
+            },
+            {
+              "id": "c",
+              "text": "Le Dniepr"
+            },
+            {
+              "id": "d",
+              "text": "Le Danube"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Il coule globalement vers la mer Noire.",
+          "explanation": "Le Danube relie une succession de capitales d’Europe centrale et du Sud-Est avant de se jeter dans la mer Noire.",
+          "sourceLabel": "National Geographic",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "rivers"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0045",
+          "type": "multiple_choice",
+          "category": "science-nature",
+          "subcategory": "chemistry",
+          "difficulty": 5,
+          "question": "Quel nombre quantique décrit la forme générale d’une orbitale atomique ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le nombre quantique azimutal"
+            },
+            {
+              "id": "b",
+              "text": "Le nombre quantique principal"
+            },
+            {
+              "id": "c",
+              "text": "Le nombre quantique magnétique"
+            },
+            {
+              "id": "d",
+              "text": "Le nombre quantique de spin"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Il différencie les sous-couches électroniques.",
+          "explanation": "Le nombre quantique azimutal, noté l, distingue notamment les sous-couches s, p, d et f.",
+          "sourceLabel": "CNRS",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "chemistry"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "pressure-series-010",
+      "title": "Série 10",
+      "questions": [
+        {
+          "id": "PRE-0046",
+          "type": "multiple_choice",
+          "category": "arts-literature",
+          "subcategory": "literature-france",
+          "difficulty": 1,
+          "question": "Qui a écrit Le Petit Prince ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Jules Verne"
+            },
+            {
+              "id": "b",
+              "text": "Antoine de Saint-Exupéry"
+            },
+            {
+              "id": "c",
+              "text": "Albert Camus"
+            },
+            {
+              "id": "d",
+              "text": "Marcel Pagnol"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "L’auteur était aussi aviateur.",
+          "explanation": "Publié en 1943, ce récit poétique mêle voyage, amitié, responsabilité et regard critique sur le monde adulte.",
+          "sourceLabel": "BnF",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "literature-france"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0047",
+          "type": "multiple_choice",
+          "category": "cinema-series",
+          "subcategory": "modern-cinema",
+          "difficulty": 2,
+          "question": "Quel réalisateur a signé Jurassic Park ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "James Cameron"
+            },
+            {
+              "id": "b",
+              "text": "Ridley Scott"
+            },
+            {
+              "id": "c",
+              "text": "Steven Spielberg"
+            },
+            {
+              "id": "d",
+              "text": "Robert Zemeckis"
+            }
+          ],
+          "correctAnswerId": "c",
+          "contextualHint": "Le réalisateur a aussi signé E.T. et Les Dents de la mer.",
+          "explanation": "Sorti en 1993, le film popularisa des effets combinant animatroniques et images numériques.",
+          "sourceLabel": "BFI",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "modern-cinema"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0048",
+          "type": "multiple_choice",
+          "category": "music",
+          "subcategory": "music-theory",
+          "difficulty": 3,
+          "question": "Que signifie l’indication crescendo ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Ralentir progressivement"
+            },
+            {
+              "id": "b",
+              "text": "Jouer très détaché"
+            },
+            {
+              "id": "c",
+              "text": "Revenir au tempo initial"
+            },
+            {
+              "id": "d",
+              "text": "Augmenter progressivement l’intensité"
+            }
+          ],
+          "correctAnswerId": "d",
+          "contextualHint": "Observe l’évolution du volume, pas de la vitesse.",
+          "explanation": "Un crescendo demande d’accroître graduellement le volume sonore sur une durée donnée.",
+          "sourceLabel": "Philharmonie de Paris",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "music-theory"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0049",
+          "type": "multiple_choice",
+          "category": "society-institutions",
+          "subcategory": "international-organizations",
+          "difficulty": 4,
+          "question": "Quel organe principal de l’ONU peut adopter des résolutions contraignantes sur la paix et la sécurité ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Le Conseil de sécurité"
+            },
+            {
+              "id": "b",
+              "text": "L’Assemblée générale"
+            },
+            {
+              "id": "c",
+              "text": "Le Conseil économique et social"
+            },
+            {
+              "id": "d",
+              "text": "Le Secrétariat"
+            }
+          ],
+          "correctAnswerId": "a",
+          "contextualHint": "Cinq membres y disposent d’un droit de veto.",
+          "explanation": "Le Conseil de sécurité dispose de pouvoirs spécifiques au titre de la Charte, dont des sanctions ou l’autorisation de mesures coercitives.",
+          "sourceLabel": "Vie publique",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "international-organizations"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        },
+        {
+          "id": "PRE-0050",
+          "type": "multiple_choice",
+          "category": "sports",
+          "subcategory": "sport-history",
+          "difficulty": 5,
+          "question": "Dans quelle ville furent organisés les premiers Jeux olympiques modernes en 1896 ?",
+          "answers": [
+            {
+              "id": "a",
+              "text": "Paris"
+            },
+            {
+              "id": "b",
+              "text": "Athènes"
+            },
+            {
+              "id": "c",
+              "text": "Londres"
+            },
+            {
+              "id": "d",
+              "text": "Rome"
+            }
+          ],
+          "correctAnswerId": "b",
+          "contextualHint": "La ville renvoie directement à l’Antiquité grecque.",
+          "explanation": "Le choix d’Athènes soulignait la référence aux Jeux antiques, même si le programme moderne était différent.",
+          "sourceLabel": "Encyclopædia Britannica",
+          "sourceUrl": null,
+          "verificationStatus": "to_verify",
+          "tags": [
+            "sport-history"
+          ],
+          "estimatedTimeSeconds": 30,
+          "status": "generated",
+          "version": 1
+        }
+      ]
+    }
+  ]
+}

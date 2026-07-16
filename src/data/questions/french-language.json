@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-french-language-001",
+  "title": "Langue française — Lot 1",
+  "category": "french-language",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "FRA-0001",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "vocabulary",
+      "difficulty": 1,
+      "question": "Quel mot signifie « qui dure peu de temps » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Éphémère"
+        },
+        {
+          "id": "b",
+          "text": "Pérenne"
+        },
+        {
+          "id": "c",
+          "text": "Taciturne"
+        },
+        {
+          "id": "d",
+          "text": "Opaque"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Éphémère qualifie ce qui ne dure qu’un temps très court.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "éphémère",
+        "vocabulaire",
+        "durée"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0002",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "grammar",
+      "difficulty": 1,
+      "question": "Dans « Les enfants jouent », quel est le sujet ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "jouent"
+        },
+        {
+          "id": "b",
+          "text": "Les enfants"
+        },
+        {
+          "id": "c",
+          "text": "Les"
+        },
+        {
+          "id": "d",
+          "text": "enfants jouent"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le groupe nominal « Les enfants » commande l’accord du verbe au pluriel.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "sujet",
+        "grammaire",
+        "phrase"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0003",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "spelling",
+      "difficulty": 1,
+      "question": "Quelle orthographe est correcte ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Acceuil"
+        },
+        {
+          "id": "b",
+          "text": "Aqueil"
+        },
+        {
+          "id": "c",
+          "text": "Accueil"
+        },
+        {
+          "id": "d",
+          "text": "Acueil"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le mot s’écrit avec deux c et le groupe final -ueil.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "accueil",
+        "orthographe",
+        "français"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0004",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "expressions",
+      "difficulty": 1,
+      "question": "Que signifie « mettre la charrue avant les bœufs » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Travailler très lentement"
+        },
+        {
+          "id": "b",
+          "text": "Refuser toute aide"
+        },
+        {
+          "id": "c",
+          "text": "Changer souvent d’avis"
+        },
+        {
+          "id": "d",
+          "text": "Faire les choses dans le mauvais ordre"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’expression critique une action engagée avant que les étapes nécessaires soient prêtes.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "expression",
+        "ordre",
+        "charrue"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0005",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "figures-of-speech",
+      "difficulty": 2,
+      "question": "Quelle figure rapproche explicitement deux éléments avec un mot comme « comme » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La comparaison"
+        },
+        {
+          "id": "b",
+          "text": "La métaphore"
+        },
+        {
+          "id": "c",
+          "text": "L’ellipse"
+        },
+        {
+          "id": "d",
+          "text": "L’anaphore"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La comparaison rapproche deux éléments au moyen d’un outil comparatif explicite.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "comparaison",
+        "figure de style",
+        "comme"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0006",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "etymology",
+      "difficulty": 2,
+      "question": "Le mot « bibliothèque » vient de racines grecques liées à quoi ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "À la voix et au chant"
+        },
+        {
+          "id": "b",
+          "text": "Au livre et au dépôt"
+        },
+        {
+          "id": "c",
+          "text": "À la loi et au juge"
+        },
+        {
+          "id": "d",
+          "text": "À la mer et au voyage"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Biblion signifie livre et thêkê désigne un lieu de dépôt ou de rangement.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "bibliothèque",
+        "étymologie",
+        "grec"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0007",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "word-formation",
+      "difficulty": 2,
+      "question": "Dans « impossible », quel est le préfixe ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "-ible"
+        },
+        {
+          "id": "b",
+          "text": "poss-"
+        },
+        {
+          "id": "c",
+          "text": "im-"
+        },
+        {
+          "id": "d",
+          "text": "-sible"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le préfixe im-, variante de in-, exprime ici la négation.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "préfixe",
+        "impossible",
+        "formation des mots"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0008",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "francophonie",
+      "difficulty": 2,
+      "question": "Dans quel pays le français est-il l’une des langues officielles avec l’anglais ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Brésil"
+        },
+        {
+          "id": "b",
+          "text": "Le Japon"
+        },
+        {
+          "id": "c",
+          "text": "La Turquie"
+        },
+        {
+          "id": "d",
+          "text": "Le Canada"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Au niveau fédéral, le Canada reconnaît le français et l’anglais comme langues officielles.",
+      "sourceLabel": "Gouvernement du Canada",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "français",
+        "Canada",
+        "francophonie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0009",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "vocabulary",
+      "difficulty": 2,
+      "question": "Quel nom désigne la peur des espaces clos ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Claustrophobie"
+        },
+        {
+          "id": "b",
+          "text": "Agoraphobie"
+        },
+        {
+          "id": "c",
+          "text": "Acrophobie"
+        },
+        {
+          "id": "d",
+          "text": "Arachnophobie"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le terme associe le latin claustrum, lieu fermé, au grec phobos, peur.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "claustrophobie",
+        "vocabulaire",
+        "peur"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0010",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "grammar",
+      "difficulty": 2,
+      "question": "Quel temps est utilisé dans « J’avais terminé » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le passé composé"
+        },
+        {
+          "id": "b",
+          "text": "Le plus-que-parfait"
+        },
+        {
+          "id": "c",
+          "text": "L’imparfait"
+        },
+        {
+          "id": "d",
+          "text": "Le passé simple"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le plus-que-parfait se forme avec l’auxiliaire à l’imparfait et le participe passé.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "plus-que-parfait",
+        "temps",
+        "grammaire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0011",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "spelling",
+      "difficulty": 3,
+      "question": "Quelle forme est correcte au pluriel ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Des chef-d’œuvres"
+        },
+        {
+          "id": "b",
+          "text": "Des chefs-d’œuvrex"
+        },
+        {
+          "id": "c",
+          "text": "Des chefs-d’œuvre"
+        },
+        {
+          "id": "d",
+          "text": "Des chef-d’œuvre"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Dans ce nom composé, chef prend la marque du pluriel, tandis qu’œuvre reste au singulier.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "chefs-d’œuvre",
+        "pluriel",
+        "orthographe"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0012",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "expressions",
+      "difficulty": 3,
+      "question": "Que signifie « avoir le cœur sur la main » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Être très anxieux"
+        },
+        {
+          "id": "b",
+          "text": "Être maladroit"
+        },
+        {
+          "id": "c",
+          "text": "Être rancunier"
+        },
+        {
+          "id": "d",
+          "text": "Être généreux"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’expression décrit une personne spontanément généreuse et prête à aider.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "expression",
+        "générosité",
+        "cœur"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0013",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "figures-of-speech",
+      "difficulty": 3,
+      "question": "Dans « cette obscure clarté », quelle figure apparaît ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un oxymore"
+        },
+        {
+          "id": "b",
+          "text": "Une hyperbole"
+        },
+        {
+          "id": "c",
+          "text": "Une litote"
+        },
+        {
+          "id": "d",
+          "text": "Une métonymie"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’oxymore rapproche deux termes apparemment contradictoires dans un même groupe.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "oxymore",
+        "figure de style",
+        "contradiction"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0014",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "etymology",
+      "difficulty": 3,
+      "question": "De quelle langue vient principalement le mot « algèbre » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Du latin"
+        },
+        {
+          "id": "b",
+          "text": "De l’arabe"
+        },
+        {
+          "id": "c",
+          "text": "Du japonais"
+        },
+        {
+          "id": "d",
+          "text": "Du gaulois"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le mot vient de l’arabe al-jabr, présent dans le titre d’un traité d’al-Khwarizmi.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "algèbre",
+        "étymologie",
+        "arabe"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0015",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "word-formation",
+      "difficulty": 3,
+      "question": "Quel mot est formé par composition ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Rapidement"
+        },
+        {
+          "id": "b",
+          "text": "Chanteur"
+        },
+        {
+          "id": "c",
+          "text": "Porte-monnaie"
+        },
+        {
+          "id": "d",
+          "text": "Impossible"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Porte-monnaie associe deux mots autonomes pour créer une nouvelle unité lexicale.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "composition",
+        "porte-monnaie",
+        "mot"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0016",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "francophonie",
+      "difficulty": 3,
+      "question": "Quelle organisation rassemble des États et gouvernements ayant le français en partage ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Conseil de l’Europe"
+        },
+        {
+          "id": "b",
+          "text": "L’Union africaine"
+        },
+        {
+          "id": "c",
+          "text": "L’Organisation mondiale du commerce"
+        },
+        {
+          "id": "d",
+          "text": "L’Organisation internationale de la Francophonie"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’OIF mène des actions de coopération linguistique, culturelle, éducative et politique.",
+      "sourceLabel": "Organisation internationale de la Francophonie",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "OIF",
+        "francophonie",
+        "organisation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0017",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "vocabulary",
+      "difficulty": 3,
+      "question": "Quel adjectif signifie « qui ne peut être évité » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Inéluctable"
+        },
+        {
+          "id": "b",
+          "text": "Aléatoire"
+        },
+        {
+          "id": "c",
+          "text": "Facultatif"
+        },
+        {
+          "id": "d",
+          "text": "Superficiel"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Inéluctable qualifie ce qui doit nécessairement se produire.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "inéluctable",
+        "vocabulaire",
+        "inévitable"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0018",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "grammar",
+      "difficulty": 4,
+      "question": "Dans « Bien qu’il soit tard », quel mode est employé ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’indicatif"
+        },
+        {
+          "id": "b",
+          "text": "Le subjonctif"
+        },
+        {
+          "id": "c",
+          "text": "L’impératif"
+        },
+        {
+          "id": "d",
+          "text": "Le conditionnel"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La locution « bien que » appelle normalement le subjonctif.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "subjonctif",
+        "bien que",
+        "grammaire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0019",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "spelling",
+      "difficulty": 4,
+      "question": "Quelle graphie est correcte ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Aparamment"
+        },
+        {
+          "id": "b",
+          "text": "Apparament"
+        },
+        {
+          "id": "c",
+          "text": "Apparemment"
+        },
+        {
+          "id": "d",
+          "text": "Apparemmentt"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "L’adverbe dérive d’apparent et s’écrit avec deux p et le suffixe -emment.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "apparemment",
+        "orthographe",
+        "adverbe"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0020",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "expressions",
+      "difficulty": 4,
+      "question": "Que signifie « couper les cheveux en quatre » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Changer radicalement de coiffure"
+        },
+        {
+          "id": "b",
+          "text": "Prendre une décision rapide"
+        },
+        {
+          "id": "c",
+          "text": "Éviter un sujet"
+        },
+        {
+          "id": "d",
+          "text": "Analyser de façon excessivement minutieuse"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’expression vise une tendance à compliquer inutilement les distinctions.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "expression",
+        "minutie",
+        "analyse"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0021",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "figures-of-speech",
+      "difficulty": 4,
+      "question": "Quelle figure consiste à exagérer volontairement ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’hyperbole"
+        },
+        {
+          "id": "b",
+          "text": "La litote"
+        },
+        {
+          "id": "c",
+          "text": "L’euphémisme"
+        },
+        {
+          "id": "d",
+          "text": "La synecdoque"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’hyperbole amplifie une idée pour produire un effet expressif.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "hyperbole",
+        "figure de style",
+        "exagération"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0022",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "etymology",
+      "difficulty": 4,
+      "question": "Le mot « robot » vient à l’origine de quelle langue ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Du grec"
+        },
+        {
+          "id": "b",
+          "text": "Du tchèque"
+        },
+        {
+          "id": "c",
+          "text": "Du chinois"
+        },
+        {
+          "id": "d",
+          "text": "Du portugais"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Robot vient du tchèque robota, qui évoque le travail forcé ou la corvée.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "robot",
+        "étymologie",
+        "tchèque"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0023",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "word-formation",
+      "difficulty": 5,
+      "question": "Quel suffixe transforme le verbe « laver » en nom d’action dans « lavage » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "-ment"
+        },
+        {
+          "id": "b",
+          "text": "-iste"
+        },
+        {
+          "id": "c",
+          "text": "-age"
+        },
+        {
+          "id": "d",
+          "text": "-eux"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le suffixe -age sert fréquemment à former des noms d’action ou de résultat.",
+      "sourceLabel": "Académie française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "suffixe",
+        "lavage",
+        "formation des mots"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0024",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "francophonie",
+      "difficulty": 5,
+      "question": "Quel poète sénégalais fut aussi le premier président de son pays et un défenseur de la francophonie ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Aimé Césaire"
+        },
+        {
+          "id": "b",
+          "text": "Ahmadou Kourouma"
+        },
+        {
+          "id": "c",
+          "text": "Léon-Gontran Damas"
+        },
+        {
+          "id": "d",
+          "text": "Léopold Sédar Senghor"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Senghor fut poète, homme d’État et l’un des promoteurs du concept de francophonie institutionnelle.",
+      "sourceLabel": "Organisation internationale de la Francophonie",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Senghor",
+        "francophonie",
+        "Sénégal"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "FRA-0025",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "vocabulary",
+      "difficulty": 5,
+      "question": "Quel mot désigne un récit bref se terminant souvent par une morale ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une fable"
+        },
+        {
+          "id": "b",
+          "text": "Une épopée"
+        },
+        {
+          "id": "c",
+          "text": "Une élégie"
+        },
+        {
+          "id": "d",
+          "text": "Une chronique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La fable met souvent en scène des animaux personnifiés afin de proposer une leçon.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fable",
+        "récit",
+        "morale"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-history-001",
+  "title": "Histoire — Lot 1",
+  "category": "history",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "HIS-0001",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "antiquity",
+      "difficulty": 1,
+      "question": "Quelle cité antique est associée à la naissance de la démocratie directe ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Athènes"
+        },
+        {
+          "id": "b",
+          "text": "Sparte"
+        },
+        {
+          "id": "c",
+          "text": "Corinthe"
+        },
+        {
+          "id": "d",
+          "text": "Thèbes"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "À Athènes, au Ve siècle av. J.-C., une partie des citoyens masculins participait directement aux décisions politiques. Cette démocratie excluait toutefois les femmes, les esclaves et les étrangers.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Athènes",
+        "démocratie",
+        "Antiquité"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0002",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "history-of-france",
+      "difficulty": 1,
+      "question": "Quel bâtiment parisien fut pris le 14 juillet 1789 ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Louvre"
+        },
+        {
+          "id": "b",
+          "text": "La Bastille"
+        },
+        {
+          "id": "c",
+          "text": "Les Invalides"
+        },
+        {
+          "id": "d",
+          "text": "Le Panthéon"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La Bastille était une forteresse-prison devenue un symbole de l’arbitraire royal. Sa prise marque une étape majeure du début de la Révolution française.",
+      "sourceLabel": "Assemblée nationale",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Révolution française",
+        "Bastille",
+        "1789"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0003",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "scientific-history",
+      "difficulty": 1,
+      "question": "À qui attribue-t-on l’imprimerie européenne à caractères mobiles au XVe siècle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Galilée"
+        },
+        {
+          "id": "b",
+          "text": "Nicolas Copernic"
+        },
+        {
+          "id": "c",
+          "text": "Johannes Gutenberg"
+        },
+        {
+          "id": "d",
+          "text": "Érasme"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Gutenberg perfectionna un procédé combinant caractères mobiles métalliques, presse et encre adaptée, ce qui accéléra fortement la diffusion des textes en Europe.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "imprimerie",
+        "Gutenberg",
+        "invention"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0004",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "world-history",
+      "difficulty": 1,
+      "question": "Quelle civilisation a construit Machu Picchu ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les Mayas"
+        },
+        {
+          "id": "b",
+          "text": "Les Aztèques"
+        },
+        {
+          "id": "c",
+          "text": "Les Olmèques"
+        },
+        {
+          "id": "d",
+          "text": "Les Incas"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Machu Picchu est un site inca du XVe siècle situé dans les Andes péruviennes. Sa fonction exacte reste discutée, mais son origine inca est établie.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Incas",
+        "Machu Picchu",
+        "Andes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0005",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "middle-ages",
+      "difficulty": 2,
+      "question": "Quel texte anglais de 1215 limita symboliquement le pouvoir royal ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Magna Carta"
+        },
+        {
+          "id": "b",
+          "text": "L’Habeas Corpus"
+        },
+        {
+          "id": "c",
+          "text": "Le Bill of Rights"
+        },
+        {
+          "id": "d",
+          "text": "L’Acte d’Union"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Magna Carta fut imposée au roi Jean sans Terre par des barons. Elle ne créa pas une démocratie, mais devint un jalon majeur de la limitation du pouvoir.",
+      "sourceLabel": "British Library",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Magna Carta",
+        "Angleterre",
+        "Moyen Âge"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0006",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "modern-era",
+      "difficulty": 2,
+      "question": "Quel mouvement religieux du XVIe siècle est associé à Martin Luther ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Contre-Réforme"
+        },
+        {
+          "id": "b",
+          "text": "La Réforme protestante"
+        },
+        {
+          "id": "c",
+          "text": "Le Grand Schisme"
+        },
+        {
+          "id": "d",
+          "text": "Le jansénisme"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "En 1517, Luther contesta notamment la pratique des indulgences. Ses critiques contribuèrent à une rupture durable de la chrétienté occidentale.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Luther",
+        "Réforme",
+        "protestantisme"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0007",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "contemporary-history",
+      "difficulty": 2,
+      "question": "Quel événement de 1969 symbolise la première présence humaine sur la Lune ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La mission Spoutnik 1"
+        },
+        {
+          "id": "b",
+          "text": "La mission Apollo 8"
+        },
+        {
+          "id": "c",
+          "text": "La mission Apollo 11"
+        },
+        {
+          "id": "d",
+          "text": "La mission Voyager 1"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Apollo 11 permit à Neil Armstrong et Buzz Aldrin de marcher sur la Lune en juillet 1969, tandis que Michael Collins resta en orbite.",
+      "sourceLabel": "NASA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Apollo 11",
+        "Lune",
+        "1969"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0008",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "historical-figures",
+      "difficulty": 2,
+      "question": "Quelle scientifique a reçu deux prix Nobel dans deux disciplines différentes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Rosalind Franklin"
+        },
+        {
+          "id": "b",
+          "text": "Ada Lovelace"
+        },
+        {
+          "id": "c",
+          "text": "Lise Meitner"
+        },
+        {
+          "id": "d",
+          "text": "Marie Curie"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Marie Curie reçut le prix Nobel de physique en 1903 et celui de chimie en 1911, notamment pour ses travaux sur la radioactivité.",
+      "sourceLabel": "Nobel Prize",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Marie Curie",
+        "Nobel",
+        "science"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0009",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "major-events",
+      "difficulty": 2,
+      "question": "Quel événement mit fin à la division politique de Berlin en 1989 ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La chute du mur de Berlin"
+        },
+        {
+          "id": "b",
+          "text": "Le traité de Versailles"
+        },
+        {
+          "id": "c",
+          "text": "Le blocus de Berlin"
+        },
+        {
+          "id": "d",
+          "text": "La conférence de Yalta"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’ouverture des points de passage du mur, le 9 novembre 1989, symbolisa l’effondrement des régimes communistes d’Europe de l’Est et précéda la réunification allemande.",
+      "sourceLabel": "Deutsches Historisches Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Berlin",
+        "mur",
+        "1989"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0010",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "antiquity",
+      "difficulty": 2,
+      "question": "Quelle route commerciale reliait l’Asie à la Méditerranée par plusieurs itinéraires ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La route de l’ambre"
+        },
+        {
+          "id": "b",
+          "text": "La route de la soie"
+        },
+        {
+          "id": "c",
+          "text": "La voie Appienne"
+        },
+        {
+          "id": "d",
+          "text": "La route du sel"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La route de la soie désigne un réseau d’itinéraires terrestres et maritimes par lesquels circulaient marchandises, techniques, idées et religions.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "route de la soie",
+        "commerce",
+        "échanges"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0011",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "history-of-france",
+      "difficulty": 3,
+      "question": "Quel édit accorda en 1598 des droits limités aux protestants en France ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’édit de Fontainebleau"
+        },
+        {
+          "id": "b",
+          "text": "L’ordonnance de Villers-Cotterêts"
+        },
+        {
+          "id": "c",
+          "text": "L’édit de Nantes"
+        },
+        {
+          "id": "d",
+          "text": "L’édit de Milan"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Promulgué par Henri IV, l’édit de Nantes mit fin à une grande partie des guerres de Religion en accordant des garanties civiles et cultuelles aux protestants.",
+      "sourceLabel": "Archives nationales",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "édit de Nantes",
+        "protestants",
+        "Henri IV"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0012",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "world-history",
+      "difficulty": 3,
+      "question": "Quel empire avait Constantinople pour capitale ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’Empire carolingien"
+        },
+        {
+          "id": "b",
+          "text": "L’Empire moghol"
+        },
+        {
+          "id": "c",
+          "text": "L’Empire achéménide"
+        },
+        {
+          "id": "d",
+          "text": "L’Empire byzantin"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Constantinople fut la capitale de l’Empire romain d’Orient, souvent appelé Empire byzantin, jusqu’à sa conquête par les Ottomans en 1453.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Byzance",
+        "Constantinople",
+        "empire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0013",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "modern-era",
+      "difficulty": 3,
+      "question": "Quelle culture commerciale domina fortement les plantations de Saint-Domingue au XVIIIe siècle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le sucre"
+        },
+        {
+          "id": "b",
+          "text": "Le blé"
+        },
+        {
+          "id": "c",
+          "text": "Le lin"
+        },
+        {
+          "id": "d",
+          "text": "Le thé"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Saint-Domingue devint une colonie extrêmement rentable grâce au sucre et au café, produits par un système esclavagiste d’une grande violence.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Saint-Domingue",
+        "sucre",
+        "esclavage"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0014",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "middle-ages",
+      "difficulty": 3,
+      "question": "Quel groupe social regroupait principalement les artisans et marchands des villes médiévales ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La chevalerie"
+        },
+        {
+          "id": "b",
+          "text": "La bourgeoisie urbaine"
+        },
+        {
+          "id": "c",
+          "text": "Le clergé régulier"
+        },
+        {
+          "id": "d",
+          "text": "La paysannerie servile"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Dans les villes médiévales, marchands et artisans formèrent progressivement une bourgeoisie organisée en métiers, guildes ou corporations.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Moyen Âge",
+        "bourgeoisie",
+        "villes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0015",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "contemporary-history",
+      "difficulty": 3,
+      "question": "Quel système de ségrégation raciale fut officiellement appliqué en Afrique du Sud jusqu’au début des années 1990 ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La glasnost"
+        },
+        {
+          "id": "b",
+          "text": "Le maccarthysme"
+        },
+        {
+          "id": "c",
+          "text": "L’apartheid"
+        },
+        {
+          "id": "d",
+          "text": "Le système des castes"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "L’apartheid imposait une séparation juridique et territoriale selon des catégories raciales. Son démantèlement conduisit aux premières élections multiraciales de 1994.",
+      "sourceLabel": "South African History Online",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "apartheid",
+        "Afrique du Sud",
+        "ségrégation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0016",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "historical-figures",
+      "difficulty": 3,
+      "question": "Quel dirigeant indien est associé à la stratégie de non-violence contre la domination britannique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Jawaharlal Nehru"
+        },
+        {
+          "id": "b",
+          "text": "Subhas Chandra Bose"
+        },
+        {
+          "id": "c",
+          "text": "Muhammad Ali Jinnah"
+        },
+        {
+          "id": "d",
+          "text": "Mahatma Gandhi"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Gandhi développa des campagnes de désobéissance civile non violente, notamment contre le monopole britannique du sel.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Gandhi",
+        "non-violence",
+        "Inde"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0017",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "scientific-history",
+      "difficulty": 3,
+      "question": "Quelle théorie Charles Darwin exposa-t-il dans L’Origine des espèces ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’évolution par sélection naturelle"
+        },
+        {
+          "id": "b",
+          "text": "La dérive des continents"
+        },
+        {
+          "id": "c",
+          "text": "La théorie cellulaire"
+        },
+        {
+          "id": "d",
+          "text": "La génération spontanée"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Darwin proposa que les variations héréditaires avantageuses tendent à être conservées au fil des générations, produisant adaptation et diversification des espèces.",
+      "sourceLabel": "Natural History Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Darwin",
+        "sélection naturelle",
+        "évolution"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0018",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "major-events",
+      "difficulty": 4,
+      "question": "Quel accident nucléaire survint en Ukraine soviétique en 1986 ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Three Mile Island"
+        },
+        {
+          "id": "b",
+          "text": "Tchernobyl"
+        },
+        {
+          "id": "c",
+          "text": "Fukushima"
+        },
+        {
+          "id": "d",
+          "text": "Windscale"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "L’explosion du réacteur 4 de Tchernobyl provoqua un important rejet radioactif et marqua durablement l’histoire de l’énergie nucléaire.",
+      "sourceLabel": "AIEA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Tchernobyl",
+        "1986",
+        "nucléaire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0019",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "history-of-france",
+      "difficulty": 4,
+      "question": "Quelle réforme de 1881-1882 rendit l’école primaire publique gratuite, laïque et obligatoire ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les lois Falloux"
+        },
+        {
+          "id": "b",
+          "text": "Les lois Guizot"
+        },
+        {
+          "id": "c",
+          "text": "Les lois Ferry"
+        },
+        {
+          "id": "d",
+          "text": "Les lois Veil"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les lois portées par Jules Ferry instaurèrent la gratuité, l’obligation scolaire et la laïcisation de l’enseignement primaire public en France.",
+      "sourceLabel": "Vie publique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "lois Ferry",
+        "école",
+        "laïcité"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0020",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "world-history",
+      "difficulty": 4,
+      "question": "Quel mouvement du XVIIIe siècle plaça la raison et la critique au cœur de la réflexion politique et sociale ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le romantisme"
+        },
+        {
+          "id": "b",
+          "text": "Le mercantilisme"
+        },
+        {
+          "id": "c",
+          "text": "Le futurisme"
+        },
+        {
+          "id": "d",
+          "text": "Les Lumières"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les philosophes des Lumières défendirent notamment la raison, la tolérance, la diffusion des savoirs et la critique de l’absolutisme.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Lumières",
+        "philosophie",
+        "XVIIIe siècle"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0021",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "antiquity",
+      "difficulty": 4,
+      "question": "Quelle écriture était utilisée dans l’Égypte ancienne pour les inscriptions monumentales ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les hiéroglyphes"
+        },
+        {
+          "id": "b",
+          "text": "Le cunéiforme"
+        },
+        {
+          "id": "c",
+          "text": "Le linéaire B"
+        },
+        {
+          "id": "d",
+          "text": "L’alphabet runique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les hiéroglyphes combinaient signes phonétiques et idéogrammes. Ils étaient notamment gravés ou peints sur les monuments et objets cultuels.",
+      "sourceLabel": "British Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "hiéroglyphes",
+        "Égypte",
+        "écriture"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0022",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "middle-ages",
+      "difficulty": 4,
+      "question": "Quelle institution médiévale réunissait maîtres et étudiants autour de l’enseignement supérieur ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La corporation artisanale"
+        },
+        {
+          "id": "b",
+          "text": "L’université"
+        },
+        {
+          "id": "c",
+          "text": "La chancellerie royale"
+        },
+        {
+          "id": "d",
+          "text": "La commanderie"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les premières universités européennes, comme Bologne, Paris ou Oxford, se structurèrent au Moyen Âge en communautés juridiquement reconnues de maîtres et d’étudiants.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "université",
+        "Moyen Âge",
+        "enseignement"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0023",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "modern-era",
+      "difficulty": 5,
+      "question": "Quelle expédition réalisa la première circumnavigation du globe ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’expédition de Cook"
+        },
+        {
+          "id": "b",
+          "text": "Le voyage de Colomb"
+        },
+        {
+          "id": "c",
+          "text": "L’expédition de Magellan et Elcano"
+        },
+        {
+          "id": "d",
+          "text": "L’expédition de Vasco de Gama"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Partie en 1519 sous le commandement de Magellan, l’expédition fut achevée en 1522 par Juan Sebastián Elcano après la mort de Magellan.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "circumnavigation",
+        "Magellan",
+        "Elcano"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0024",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "contemporary-history",
+      "difficulty": 5,
+      "question": "Quel texte de 1948 affirme des droits fondamentaux universels après la Seconde Guerre mondiale ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Convention de Genève de 1864"
+        },
+        {
+          "id": "b",
+          "text": "Le traité de Rome"
+        },
+        {
+          "id": "c",
+          "text": "La Charte de l’Atlantique"
+        },
+        {
+          "id": "d",
+          "text": "La Déclaration universelle des droits de l’homme"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Adoptée par l’Assemblée générale de l’ONU, la Déclaration de 1948 énonce des droits civils, politiques, économiques, sociaux et culturels.",
+      "sourceLabel": "Nations unies",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "DUDH",
+        "1948",
+        "droits humains"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "HIS-0025",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "historical-figures",
+      "difficulty": 5,
+      "question": "Quelle reine d’Égypte s’allia successivement à Jules César puis Marc Antoine ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Cléopâtre VII"
+        },
+        {
+          "id": "b",
+          "text": "Hatchepsout"
+        },
+        {
+          "id": "c",
+          "text": "Néfertiti"
+        },
+        {
+          "id": "d",
+          "text": "Arsinoé II"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Cléopâtre VII, dernière souveraine lagide d’Égypte, utilisa ses alliances romaines pour défendre son royaume dans une période de rivalités intenses.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Cléopâtre",
+        "César",
+        "Marc Antoine"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

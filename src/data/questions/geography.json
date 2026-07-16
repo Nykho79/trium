@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-geography-001",
+  "title": "Géographie — Lot 1",
+  "category": "geography",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "GEO-0001",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "capitals",
+      "difficulty": 1,
+      "question": "Quelle est la capitale du Japon ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Tokyo"
+        },
+        {
+          "id": "b",
+          "text": "Kyoto"
+        },
+        {
+          "id": "c",
+          "text": "Osaka"
+        },
+        {
+          "id": "d",
+          "text": "Nagoya"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Tokyo est le centre politique du Japon depuis le XIXe siècle. Kyoto fut auparavant la capitale impériale pendant plus d’un millénaire.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Tokyo",
+        "Japon",
+        "capitale"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0002",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "countries",
+      "difficulty": 1,
+      "question": "Dans quel pays se trouve la ville de Marrakech ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Tunisie"
+        },
+        {
+          "id": "b",
+          "text": "Le Maroc"
+        },
+        {
+          "id": "c",
+          "text": "L’Algérie"
+        },
+        {
+          "id": "d",
+          "text": "L’Égypte"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Marrakech se situe au Maroc, au pied de l’Atlas. Sa médina est inscrite au patrimoine mondial de l’UNESCO.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Marrakech",
+        "Maroc",
+        "ville"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0003",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "physical-geography",
+      "difficulty": 1,
+      "question": "Quel océan borde la côte ouest de l’Amérique du Sud ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’océan Atlantique"
+        },
+        {
+          "id": "b",
+          "text": "L’océan Indien"
+        },
+        {
+          "id": "c",
+          "text": "L’océan Pacifique"
+        },
+        {
+          "id": "d",
+          "text": "L’océan Arctique"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La façade occidentale de l’Amérique du Sud donne sur le Pacifique, tandis que sa façade orientale donne sur l’Atlantique.",
+      "sourceLabel": "National Geographic",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Pacifique",
+        "Amérique du Sud",
+        "océan"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0004",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "france",
+      "difficulty": 1,
+      "question": "Quel fleuve traverse Paris ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Loire"
+        },
+        {
+          "id": "b",
+          "text": "La Garonne"
+        },
+        {
+          "id": "c",
+          "text": "Le Rhône"
+        },
+        {
+          "id": "d",
+          "text": "La Seine"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La Seine traverse Paris avant de poursuivre vers la Manche. Elle structure l’histoire, les échanges et le paysage de la capitale.",
+      "sourceLabel": "IGN",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Seine",
+        "Paris",
+        "fleuve"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0005",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "europe",
+      "difficulty": 2,
+      "question": "Quel pays européen a la forme d’une botte sur les cartes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’Italie"
+        },
+        {
+          "id": "b",
+          "text": "La Grèce"
+        },
+        {
+          "id": "c",
+          "text": "La Croatie"
+        },
+        {
+          "id": "d",
+          "text": "Le Portugal"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La péninsule italienne est souvent comparée à une botte s’avançant dans la Méditerranée.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Italie",
+        "péninsule",
+        "Europe"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0006",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "maps-and-borders",
+      "difficulty": 2,
+      "question": "Quel pays partage une frontière terrestre avec le Portugal ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La France"
+        },
+        {
+          "id": "b",
+          "text": "L’Espagne"
+        },
+        {
+          "id": "c",
+          "text": "L’Italie"
+        },
+        {
+          "id": "d",
+          "text": "Le Maroc"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le Portugal continental n’a qu’un seul voisin terrestre : l’Espagne. Ses autres limites sont maritimes, sur l’Atlantique.",
+      "sourceLabel": "Eurostat",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Portugal",
+        "Espagne",
+        "frontière"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0007",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "world-regions",
+      "difficulty": 2,
+      "question": "Dans quelle grande région se situe le désert du Sahara ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’Afrique australe"
+        },
+        {
+          "id": "b",
+          "text": "L’Asie centrale"
+        },
+        {
+          "id": "c",
+          "text": "L’Afrique du Nord"
+        },
+        {
+          "id": "d",
+          "text": "L’Amérique centrale"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le Sahara s’étend sur plusieurs pays d’Afrique du Nord, de l’Atlantique à la mer Rouge.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Sahara",
+        "Afrique du Nord",
+        "désert"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0008",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "physical-geography",
+      "difficulty": 2,
+      "question": "Quel massif montagneux sépare en partie la France et l’Espagne ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les Alpes"
+        },
+        {
+          "id": "b",
+          "text": "Les Carpates"
+        },
+        {
+          "id": "c",
+          "text": "Les Apennins"
+        },
+        {
+          "id": "d",
+          "text": "Les Pyrénées"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les Pyrénées forment une frontière naturelle entre la péninsule Ibérique et le reste de l’Europe occidentale.",
+      "sourceLabel": "IGN",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Pyrénées",
+        "France",
+        "Espagne"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0009",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "human-geography",
+      "difficulty": 2,
+      "question": "Comment appelle-t-on l’augmentation de la population vivant dans les villes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’urbanisation"
+        },
+        {
+          "id": "b",
+          "text": "La désertification"
+        },
+        {
+          "id": "c",
+          "text": "La sédentarisation"
+        },
+        {
+          "id": "d",
+          "text": "La transhumance"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’urbanisation désigne l’augmentation de la part de population vivant en ville et l’extension des espaces urbains.",
+      "sourceLabel": "ONU-Habitat",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "urbanisation",
+        "villes",
+        "population"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0010",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "capitals",
+      "difficulty": 2,
+      "question": "Quelle est la capitale du Canada ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Toronto"
+        },
+        {
+          "id": "b",
+          "text": "Ottawa"
+        },
+        {
+          "id": "c",
+          "text": "Montréal"
+        },
+        {
+          "id": "d",
+          "text": "Vancouver"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Ottawa est la capitale fédérale du Canada. Toronto est plus peuplée, mais elle n’est pas la capitale.",
+      "sourceLabel": "Gouvernement du Canada",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Ottawa",
+        "Canada",
+        "capitale"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0011",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "countries",
+      "difficulty": 3,
+      "question": "Quel pays occupe la plus grande partie de la péninsule Arabique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Yémen"
+        },
+        {
+          "id": "b",
+          "text": "Oman"
+        },
+        {
+          "id": "c",
+          "text": "L’Arabie saoudite"
+        },
+        {
+          "id": "d",
+          "text": "Les Émirats arabes unis"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "L’Arabie saoudite couvre l’essentiel de la péninsule Arabique, aux côtés de plusieurs autres États.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Arabie saoudite",
+        "péninsule Arabique",
+        "pays"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0012",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "france",
+      "difficulty": 3,
+      "question": "Dans quelle mer se jette le Rhône ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Manche"
+        },
+        {
+          "id": "b",
+          "text": "La mer du Nord"
+        },
+        {
+          "id": "c",
+          "text": "L’océan Atlantique"
+        },
+        {
+          "id": "d",
+          "text": "La mer Méditerranée"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Après avoir traversé le lac Léman et le sud-est de la France, le Rhône forme un delta en Camargue avant d’atteindre la Méditerranée.",
+      "sourceLabel": "IGN",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Rhône",
+        "Méditerranée",
+        "fleuve"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0013",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "europe",
+      "difficulty": 3,
+      "question": "Quelle chaîne montagneuse traverse notamment la Suisse et l’Autriche ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les Alpes"
+        },
+        {
+          "id": "b",
+          "text": "Les Balkans"
+        },
+        {
+          "id": "c",
+          "text": "Les Vosges"
+        },
+        {
+          "id": "d",
+          "text": "Les monts Oural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les Alpes s’étendent sur plusieurs pays européens, dont la France, la Suisse, l’Italie, l’Autriche et la Slovénie.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Alpes",
+        "Suisse",
+        "Autriche"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0014",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "maps-and-borders",
+      "difficulty": 3,
+      "question": "Quel détroit sépare l’Espagne du Maroc ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Bosphore"
+        },
+        {
+          "id": "b",
+          "text": "Le détroit de Gibraltar"
+        },
+        {
+          "id": "c",
+          "text": "Le détroit de Béring"
+        },
+        {
+          "id": "d",
+          "text": "Le pas de Calais"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le détroit de Gibraltar relie l’Atlantique à la Méditerranée et sépare l’Europe de l’Afrique sur une faible distance.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Gibraltar",
+        "Espagne",
+        "Maroc"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0015",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "world-regions",
+      "difficulty": 3,
+      "question": "Quelle région comprend notamment l’Argentine, le Chili et l’Uruguay ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les Caraïbes"
+        },
+        {
+          "id": "b",
+          "text": "L’Amérique centrale"
+        },
+        {
+          "id": "c",
+          "text": "Le cône Sud"
+        },
+        {
+          "id": "d",
+          "text": "Le Sahel"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le cône Sud désigne la partie méridionale de l’Amérique du Sud, généralement centrée sur l’Argentine, le Chili et l’Uruguay.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "cône Sud",
+        "Amérique du Sud",
+        "région"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0016",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "human-geography",
+      "difficulty": 3,
+      "question": "Quel terme désigne une ville qui concentre des fonctions de commandement à l’échelle mondiale ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une ville nouvelle"
+        },
+        {
+          "id": "b",
+          "text": "Une cité-jardin"
+        },
+        {
+          "id": "c",
+          "text": "Une station balnéaire"
+        },
+        {
+          "id": "d",
+          "text": "Une ville mondiale"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Une ville mondiale joue un rôle majeur dans les réseaux financiers, politiques, culturels et informationnels internationaux.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ville mondiale",
+        "métropole",
+        "réseaux"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0017",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "physical-geography",
+      "difficulty": 3,
+      "question": "Quel fleuve traverse l’Égypte du sud vers le nord ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Nil"
+        },
+        {
+          "id": "b",
+          "text": "Le Niger"
+        },
+        {
+          "id": "c",
+          "text": "Le Congo"
+        },
+        {
+          "id": "d",
+          "text": "Le Zambèze"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Nil traverse l’Égypte et se jette dans la Méditerranée en formant un vaste delta.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Nil",
+        "Égypte",
+        "fleuve"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0018",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "countries",
+      "difficulty": 4,
+      "question": "Quel pays est entièrement enclavé dans l’Afrique du Sud ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’Eswatini"
+        },
+        {
+          "id": "b",
+          "text": "Le Lesotho"
+        },
+        {
+          "id": "c",
+          "text": "Le Botswana"
+        },
+        {
+          "id": "d",
+          "text": "La Namibie"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le Lesotho est un État enclavé dont tout le territoire est entouré par l’Afrique du Sud.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Lesotho",
+        "enclave",
+        "Afrique du Sud"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0019",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "capitals",
+      "difficulty": 4,
+      "question": "Quelle capitale européenne est née de l’union de Buda et Pest ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Bratislava"
+        },
+        {
+          "id": "b",
+          "text": "Belgrade"
+        },
+        {
+          "id": "c",
+          "text": "Budapest"
+        },
+        {
+          "id": "d",
+          "text": "Vienne"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Budapest est née en 1873 de l’union de Buda, Pest et Óbuda, sur les deux rives du Danube.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Budapest",
+        "Danube",
+        "capitale"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0020",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "france",
+      "difficulty": 4,
+      "question": "Quel territoire français se situe dans l’océan Indien, à l’est de Madagascar ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Guadeloupe"
+        },
+        {
+          "id": "b",
+          "text": "La Martinique"
+        },
+        {
+          "id": "c",
+          "text": "Saint-Pierre-et-Miquelon"
+        },
+        {
+          "id": "d",
+          "text": "La Réunion"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La Réunion est une île volcanique française de l’océan Indien, située à l’est de Madagascar.",
+      "sourceLabel": "INSEE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "La Réunion",
+        "océan Indien",
+        "France"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0021",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "europe",
+      "difficulty": 4,
+      "question": "Quel grand fleuve traverse Vienne, Bratislava, Budapest et Belgrade ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Danube"
+        },
+        {
+          "id": "b",
+          "text": "Le Rhin"
+        },
+        {
+          "id": "c",
+          "text": "L’Elbe"
+        },
+        {
+          "id": "d",
+          "text": "La Vistule"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Danube traverse ou borde de nombreux pays d’Europe centrale et orientale avant de se jeter dans la mer Noire.",
+      "sourceLabel": "Commission internationale du Danube",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Danube",
+        "Europe",
+        "fleuve"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0022",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "maps-and-borders",
+      "difficulty": 4,
+      "question": "Quel pays est séparé de la France métropolitaine par la Manche ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’Irlande"
+        },
+        {
+          "id": "b",
+          "text": "Le Royaume-Uni"
+        },
+        {
+          "id": "c",
+          "text": "Le Danemark"
+        },
+        {
+          "id": "d",
+          "text": "La Norvège"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La Manche sépare principalement la France du sud de l’Angleterre. Le tunnel sous la Manche relie les deux rives.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Manche",
+        "France",
+        "Royaume-Uni"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0023",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "world-regions",
+      "difficulty": 5,
+      "question": "Quelle région semi-aride s’étend au sud du Sahara ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Patagonie"
+        },
+        {
+          "id": "b",
+          "text": "La taïga"
+        },
+        {
+          "id": "c",
+          "text": "Le Sahel"
+        },
+        {
+          "id": "d",
+          "text": "Le Deccan"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le Sahel est une bande de transition entre le Sahara au nord et les savanes plus humides au sud.",
+      "sourceLabel": "FAO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Sahel",
+        "Afrique",
+        "région"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0024",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "human-geography",
+      "difficulty": 5,
+      "question": "Quel terme désigne le départ durable des habitants des campagnes vers les villes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La gentrification"
+        },
+        {
+          "id": "b",
+          "text": "La suburbanisation"
+        },
+        {
+          "id": "c",
+          "text": "La transhumance"
+        },
+        {
+          "id": "d",
+          "text": "L’exode rural"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’exode rural correspond à une migration durable des campagnes vers les villes, souvent liée aux transformations économiques et agricoles.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "exode rural",
+        "migration",
+        "villes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GEO-0025",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "physical-geography",
+      "difficulty": 5,
+      "question": "Quelle mer intérieure borde notamment l’Italie, la Grèce et la Tunisie ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La mer Méditerranée"
+        },
+        {
+          "id": "b",
+          "text": "La mer Baltique"
+        },
+        {
+          "id": "c",
+          "text": "La mer Noire"
+        },
+        {
+          "id": "d",
+          "text": "La mer Rouge"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Méditerranée est presque entièrement entourée par l’Europe, l’Afrique et l’Asie. Elle communique avec l’Atlantique par Gibraltar.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Méditerranée",
+        "mer",
+        "géographie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

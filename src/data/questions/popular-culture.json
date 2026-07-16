@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-popular-culture-001",
+  "title": "Culture populaire — Lot 1",
+  "category": "popular-culture",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "POP-0001",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "comics",
+      "difficulty": 1,
+      "question": "Quel héros de bande dessinée est accompagné du chien Milou ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Tintin"
+        },
+        {
+          "id": "b",
+          "text": "Spirou"
+        },
+        {
+          "id": "c",
+          "text": "Astérix"
+        },
+        {
+          "id": "d",
+          "text": "Gaston Lagaffe"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Milou est le fox-terrier fidèle de Tintin dans la série créée par Hergé.",
+      "sourceLabel": "Musée Hergé",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Tintin",
+        "Milou",
+        "bande dessinée"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0002",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "video-games",
+      "difficulty": 1,
+      "question": "Quel plombier moustachu est la mascotte de Nintendo ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Sonic"
+        },
+        {
+          "id": "b",
+          "text": "Mario"
+        },
+        {
+          "id": "c",
+          "text": "Crash Bandicoot"
+        },
+        {
+          "id": "d",
+          "text": "Rayman"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Mario apparaît d’abord dans Donkey Kong avant de devenir le héros de nombreuses séries Nintendo.",
+      "sourceLabel": "Nintendo",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Mario",
+        "Nintendo",
+        "jeu vidéo"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0003",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "animation",
+      "difficulty": 1,
+      "question": "Quel personnage vit dans un ananas au fond de la mer ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Patrick l’étoile"
+        },
+        {
+          "id": "b",
+          "text": "Popeye"
+        },
+        {
+          "id": "c",
+          "text": "Bob l’éponge"
+        },
+        {
+          "id": "d",
+          "text": "Garfield"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Bob l’éponge habite à Bikini Bottom et travaille au Crabe Croustillant.",
+      "sourceLabel": "Nickelodeon",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Bob l’éponge",
+        "animation",
+        "personnage"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0004",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "fictional-characters",
+      "difficulty": 1,
+      "question": "Quel détective habite au 221B Baker Street ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Hercule Poirot"
+        },
+        {
+          "id": "b",
+          "text": "Arsène Lupin"
+        },
+        {
+          "id": "c",
+          "text": "Philip Marlowe"
+        },
+        {
+          "id": "d",
+          "text": "Sherlock Holmes"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’adresse londonienne est devenue indissociable du personnage créé par Arthur Conan Doyle.",
+      "sourceLabel": "Sherlock Holmes Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Sherlock Holmes",
+        "Baker Street",
+        "détective"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0005",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "toys-and-games",
+      "difficulty": 2,
+      "question": "Combien de cases comporte un échiquier ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "64"
+        },
+        {
+          "id": "b",
+          "text": "49"
+        },
+        {
+          "id": "c",
+          "text": "72"
+        },
+        {
+          "id": "d",
+          "text": "81"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’échiquier est une grille de huit cases sur huit, alternant deux couleurs.",
+      "sourceLabel": "FIDE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "échecs",
+        "échiquier",
+        "jeu"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0006",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "franchises",
+      "difficulty": 2,
+      "question": "Dans Star Wars, quelle arme utilisent principalement les Jedi ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le phaser"
+        },
+        {
+          "id": "b",
+          "text": "Le sabre laser"
+        },
+        {
+          "id": "c",
+          "text": "Le trident énergétique"
+        },
+        {
+          "id": "d",
+          "text": "Le canon à protons portatif"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le sabre laser est associé aux Jedi et aux Sith, avec une lame d’énergie colorée.",
+      "sourceLabel": "Lucasfilm",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Star Wars",
+        "Jedi",
+        "sabre laser"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0007",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "popular-icons",
+      "difficulty": 2,
+      "question": "Quel personnage porte une cape rouge et un « S » sur la poitrine ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Batman"
+        },
+        {
+          "id": "b",
+          "text": "Flash"
+        },
+        {
+          "id": "c",
+          "text": "Superman"
+        },
+        {
+          "id": "d",
+          "text": "Aquaman"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Superman, créé en 1938, est l’un des premiers super-héros majeurs des comics américains.",
+      "sourceLabel": "DC Comics",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Superman",
+        "super-héros",
+        "comics"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0008",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "internet-culture",
+      "difficulty": 2,
+      "question": "Que signifie généralement « mème Internet » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un virus informatique"
+        },
+        {
+          "id": "b",
+          "text": "Un mot de passe partagé"
+        },
+        {
+          "id": "c",
+          "text": "Une publicité obligatoire"
+        },
+        {
+          "id": "d",
+          "text": "Un contenu culturel repris et transformé en ligne"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Un mème se diffuse par imitation, variation et réutilisation dans différents contextes.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "mème",
+        "Internet",
+        "culture"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0009",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "comics",
+      "difficulty": 2,
+      "question": "Dans Astérix, quel métier exerce Ordralfabétix ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Poissonnier"
+        },
+        {
+          "id": "b",
+          "text": "Forgeron"
+        },
+        {
+          "id": "c",
+          "text": "Barde"
+        },
+        {
+          "id": "d",
+          "text": "Chef du village"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ordralfabétix vend du poisson et se dispute fréquemment avec Cétautomatix.",
+      "sourceLabel": "Éditions Albert René",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Astérix",
+        "Ordralfabétix",
+        "BD"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0010",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "video-games",
+      "difficulty": 2,
+      "question": "Dans quel jeu empile-t-on des tétriminos ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pong"
+        },
+        {
+          "id": "b",
+          "text": "Tetris"
+        },
+        {
+          "id": "c",
+          "text": "Pac-Man"
+        },
+        {
+          "id": "d",
+          "text": "Snake"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les pièces géométriques tombent et doivent former des lignes complètes.",
+      "sourceLabel": "The Tetris Company",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Tetris",
+        "tétriminos",
+        "jeu vidéo"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0011",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "animation",
+      "difficulty": 3,
+      "question": "Quel studio a créé Toy Story ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "DreamWorks"
+        },
+        {
+          "id": "b",
+          "text": "Laika"
+        },
+        {
+          "id": "c",
+          "text": "Pixar"
+        },
+        {
+          "id": "d",
+          "text": "Aardman"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Toy Story fut le premier long métrage entièrement réalisé en images de synthèse.",
+      "sourceLabel": "Pixar",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Toy Story",
+        "Pixar",
+        "animation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0012",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "fictional-characters",
+      "difficulty": 3,
+      "question": "Quel super-héros est l’alter ego de Bruce Wayne ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Iron Man"
+        },
+        {
+          "id": "b",
+          "text": "Spider-Man"
+        },
+        {
+          "id": "c",
+          "text": "Green Lantern"
+        },
+        {
+          "id": "d",
+          "text": "Batman"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Bruce Wayne combat le crime à Gotham sans pouvoir surnaturel, en utilisant entraînement, technologie et stratégie.",
+      "sourceLabel": "DC Comics",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Batman",
+        "Bruce Wayne",
+        "Gotham"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0013",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "toys-and-games",
+      "difficulty": 3,
+      "question": "Dans le Monopoly classique, que faut-il faire pour construire une maison ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Posséder toutes les propriétés d’un groupe de couleur"
+        },
+        {
+          "id": "b",
+          "text": "Avoir tiré un double"
+        },
+        {
+          "id": "c",
+          "text": "Passer par la case Départ"
+        },
+        {
+          "id": "d",
+          "text": "Être en prison"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La construction suit aussi des règles d’équilibre entre les terrains d’un même groupe.",
+      "sourceLabel": "Hasbro",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Monopoly",
+        "maisons",
+        "jeu"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0014",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "franchises",
+      "difficulty": 3,
+      "question": "Quel objet Harry Potter reçoit-il pour se rendre à Poudlard ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une carte au trésor"
+        },
+        {
+          "id": "b",
+          "text": "Une lettre d’admission"
+        },
+        {
+          "id": "c",
+          "text": "Une couronne"
+        },
+        {
+          "id": "d",
+          "text": "Un sabre"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les lettres sont d’abord interceptées par les Dursley avant d’être finalement remises par Hagrid.",
+      "sourceLabel": "Wizarding World",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Harry Potter",
+        "Poudlard",
+        "lettre"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0015",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "popular-icons",
+      "difficulty": 3,
+      "question": "Quel personnage de jeu vidéo bleu court à très grande vitesse ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mega Man"
+        },
+        {
+          "id": "b",
+          "text": "Kirby"
+        },
+        {
+          "id": "c",
+          "text": "Sonic"
+        },
+        {
+          "id": "d",
+          "text": "Link"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Sonic est la mascotte de Sega et affronte régulièrement le docteur Eggman.",
+      "sourceLabel": "Sega",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Sonic",
+        "Sega",
+        "jeu vidéo"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0016",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "internet-culture",
+      "difficulty": 3,
+      "question": "Que signifie « spoiler » une œuvre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Améliorer sa qualité vidéo"
+        },
+        {
+          "id": "b",
+          "text": "La traduire"
+        },
+        {
+          "id": "c",
+          "text": "La parodier"
+        },
+        {
+          "id": "d",
+          "text": "Révéler un élément important de l’intrigue"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Un spoiler peut révéler une surprise, une fin ou un retournement majeur.",
+      "sourceLabel": "Oxford English Dictionary",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "spoiler",
+        "intrigue",
+        "Internet"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0017",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "comics",
+      "difficulty": 3,
+      "question": "Quel village résiste encore et toujours à l’envahisseur romain ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le village d’Astérix"
+        },
+        {
+          "id": "b",
+          "text": "Gotham City"
+        },
+        {
+          "id": "c",
+          "text": "Moulinsart"
+        },
+        {
+          "id": "d",
+          "text": "Donaldville"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La potion magique de Panoramix donne aux habitants une force exceptionnelle.",
+      "sourceLabel": "Éditions Albert René",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Astérix",
+        "village gaulois",
+        "comics"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0018",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "video-games",
+      "difficulty": 4,
+      "question": "Quel personnage doit souvent sauver la princesse Zelda ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ganondorf"
+        },
+        {
+          "id": "b",
+          "text": "Link"
+        },
+        {
+          "id": "c",
+          "text": "Epona"
+        },
+        {
+          "id": "d",
+          "text": "Kirby"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Dans la série The Legend of Zelda, Link est généralement le héros contrôlé par le joueur.",
+      "sourceLabel": "Nintendo",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Zelda",
+        "Link",
+        "Nintendo"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0019",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "animation",
+      "difficulty": 4,
+      "question": "Quel ogre vert vit dans un marais ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Sulley"
+        },
+        {
+          "id": "b",
+          "text": "Hulk"
+        },
+        {
+          "id": "c",
+          "text": "Shrek"
+        },
+        {
+          "id": "d",
+          "text": "Le Grinch"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Shrek voit sa tranquillité perturbée par l’arrivée de personnages de contes.",
+      "sourceLabel": "DreamWorks",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Shrek",
+        "ogre",
+        "animation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0020",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "fictional-characters",
+      "difficulty": 4,
+      "question": "Quel personnage est élevé par des singes dans la jungle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mowgli"
+        },
+        {
+          "id": "b",
+          "text": "Peter Pan"
+        },
+        {
+          "id": "c",
+          "text": "Conan"
+        },
+        {
+          "id": "d",
+          "text": "Tarzan"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Tarzan est créé par Edgar Rice Burroughs ; Mowgli, lui, est élevé par des loups.",
+      "sourceLabel": "Library of Congress",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Tarzan",
+        "jungle",
+        "fiction"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0021",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "toys-and-games",
+      "difficulty": 4,
+      "question": "Quel jeu de société utilise des lettres pour former des mots sur une grille ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Scrabble"
+        },
+        {
+          "id": "b",
+          "text": "Risk"
+        },
+        {
+          "id": "c",
+          "text": "Cluedo"
+        },
+        {
+          "id": "d",
+          "text": "Uno"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les joueurs marquent des points selon les lettres et les cases multiplicatrices.",
+      "sourceLabel": "Mattel",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Scrabble",
+        "lettres",
+        "jeu"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0022",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "franchises",
+      "difficulty": 4,
+      "question": "Dans Pokémon, quel appareil sert à capturer les créatures ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Digivice"
+        },
+        {
+          "id": "b",
+          "text": "La Poké Ball"
+        },
+        {
+          "id": "c",
+          "text": "La capsule Hoi-Poi"
+        },
+        {
+          "id": "d",
+          "text": "Le cube cosmique"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les Poké Balls permettent de capturer et transporter les Pokémon dans l’univers de la franchise.",
+      "sourceLabel": "The Pokémon Company",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Pokémon",
+        "Poké Ball",
+        "franchise"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0023",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "popular-icons",
+      "difficulty": 5,
+      "question": "Quel personnage porte un chapeau melon, une canne et une petite moustache ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Buster Keaton"
+        },
+        {
+          "id": "b",
+          "text": "Mr Bean"
+        },
+        {
+          "id": "c",
+          "text": "Charlot"
+        },
+        {
+          "id": "d",
+          "text": "Le Joker"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Charlot est le personnage emblématique créé et interprété par Charlie Chaplin.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Charlot",
+        "Chaplin",
+        "icône"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0024",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "internet-culture",
+      "difficulty": 5,
+      "question": "Quel symbole précède un mot-clé sur de nombreux réseaux sociaux ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’esperluette &"
+        },
+        {
+          "id": "b",
+          "text": "L’astérisque *"
+        },
+        {
+          "id": "c",
+          "text": "Le pourcentage %"
+        },
+        {
+          "id": "d",
+          "text": "Le dièse #"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le hashtag permet de regrouper des publications autour d’un même mot-clé.",
+      "sourceLabel": "Oxford English Dictionary",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "hashtag",
+        "réseaux sociaux",
+        "Internet"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "POP-0025",
+      "type": "multiple_choice",
+      "category": "popular-culture",
+      "subcategory": "franchises",
+      "difficulty": 5,
+      "question": "Quel archéologue aventurier porte un fouet et un fedora ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Indiana Jones"
+        },
+        {
+          "id": "b",
+          "text": "Lara Croft"
+        },
+        {
+          "id": "c",
+          "text": "Nathan Drake"
+        },
+        {
+          "id": "d",
+          "text": "Allan Quatermain"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le personnage combine aventure, archéologie fictive et cinéma de série.",
+      "sourceLabel": "Lucasfilm",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Indiana Jones",
+        "aventure",
+        "franchise"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

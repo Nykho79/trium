@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">TRIUM</title>
+  <desc id="desc">Embleme abstrait bleu nuit, violet et cyan de TRIUM.</desc>
+  <rect width="512" height="512" rx="96" fill="#03070d"/>
+  <path d="M96 156h320l-52 210H148L96 156Z" fill="#1b1240" stroke="#67e8f9" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M156 156l100 210 100-210" fill="none" stroke="#f6b73c" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="256" cy="246" r="46" fill="#67e8f9" opacity="0.92"/>
+</svg>
