@@ -1,6 +1,7 @@
 import type { Player } from "./player";
 import type { RoundDefinition, RoundState } from "./round";
 import type { AnswerResult, JokerState, ScoreBreakdown } from "./scoring";
+import type { GameEvent } from "./event";
 
 export type RoundKind =
   | "knowledge-grid"
@@ -51,17 +52,27 @@ export interface GameConfig {
   defaultQuestionTimeMs: number;
 }
 
+export interface GameTimerState {
+  startedAt: number;
+  expiresAt: number;
+  pausedAt?: number | undefined;
+  remainingMs?: number | undefined;
+}
+
 export interface GameState {
   status: GameStatus;
   config: GameConfig;
   currentRoundIndex: number;
   currentRoundState?: RoundState | undefined;
   activeQuestionId?: QuestionId | undefined;
+  captainPlayerId: Player["id"];
+  timer?: GameTimerState | undefined;
   lockedAnswer?: string | string[] | undefined;
   lastAnswerResult?: AnswerResult | undefined;
   usedQuestionIds: QuestionId[];
   recentlyPlayedQuestionIds: QuestionId[];
   jokers: JokerState;
   score: ScoreBreakdown;
+  eventLog: GameEvent[];
   error?: string | undefined;
 }

@@ -914,14 +914,14 @@ Un lot est termine seulement si :
 - les echecs restants, s'il y en a, sont bloques ou explicitement exclus avant validation.
 
 Etat actuel : cette phase ne cree pas encore le scaffold applicatif et ne peut donc pas executer ces commandes.
-## 16. Noyau métier central
+## 16. Noyau mÃ©tier central
 
-Le noyau métier ne dépend pas de React. Les contrats sont centralisés dans `src/core/types` et les validations JSON dans `src/core/schemas`.
+Le noyau mÃ©tier ne dÃ©pend pas de React. Les contrats sont centralisÃ©s dans `src/core/types` et les validations JSON dans `src/core/schemas`.
 
-Types ajoutés ou stabilisés :
+Types ajoutÃ©s ou stabilisÃ©s :
 
 - `Player`, `PlayerId` pour les trois joueurs fixes ;
-- `GameConfig`, `GameMode`, `GameStatus`, `GameState` pour la configuration et la machine d'état ;
+- `GameConfig`, `GameMode`, `GameStatus`, `GameState` pour la configuration et la machine d'Ã©tat ;
 - `RoundDefinition`, `RoundState`, `GameRound` pour imposer une interface commune aux manches ;
 - `Question` et ses variantes `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` ;
 - `Joker`, `JokerType`, `JokerState` ;
@@ -931,4 +931,24 @@ Types ajoutés ou stabilisés :
 `GameRound` impose a chaque manche d'initialiser/restaurer son etat, selectionner ses questions, gerer une reponse, calculer son score, determiner sa fin et produire un resume. Les calculs restent purs et testables.
 
 Les schemas Zod correspondants valident les donnees externes avant usage : joueurs, questions, score, jokers, manches, config, etat, actions et evenements.
+## 17. Moteur de jeu central
+
+Le moteur central est implementé dans `src/core/engine/gameEngine.ts`. Il est independant de React et expose des fonctions pures qui transforment un `GameState` en nouveau `GameState`.
+
+Fonctions publiques : `createGame`, `startGame`, `startRound`, `loadQuestion`, `submitAnswer`, `revealAnswer`, `completeRound`, `advanceRound`, `completeGame`, `pauseGame`, `resumeGame`, `restoreGame`, `applyJoker`, `rotateCaptain`.
+
+Garanties actuelles :
+
+- exactement trois joueurs dans la configuration ;
+- progression explicite entre les etats ;
+- rejet des transitions invalides par `GameEngineError` ;
+- verrouillage d'une reponse avant revelation ;
+- score calcule une seule fois par question ;
+- reponse refusee apres expiration du timer ;
+- aucune question ne peut etre chargee deux fois dans une meme partie ;
+- capitaine derive de la progression des questions et change automatiquement ;
+- jokers decrementes et journalises ;
+- pause/reprise avec conservation du temps restant ;
+- restauration validee par Zod ;
+- journal interne `eventLog` pour tracer les actions du moteur.
 

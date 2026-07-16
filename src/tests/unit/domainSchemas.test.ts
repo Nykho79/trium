@@ -47,7 +47,7 @@ const roundDefinition: RoundDefinition = {
   id: "round-pressure",
   kind: "pressure-choice",
   label: "Choix sous pression",
-  description: "QCM chronométré.",
+  description: "QCM chronomÃ©trÃ©.",
   questionTypes: ["multiple_choice"],
   questionCount: 1,
   maxScore: 500,
@@ -92,14 +92,14 @@ const question: MultipleChoiceQuestion = {
   subCategoryId: "space",
   subCategoryLabel: "Espace",
   difficulty: 1,
-  prompt: "Quelle planète est surnommée la planète rouge ?",
-  explanation: "Mars est rouge à cause des oxydes de fer présents à sa surface.",
+  prompt: "Quelle planÃ¨te est surnommÃ©e la planÃ¨te rouge ?",
+  explanation: "Mars est rouge Ã  cause des oxydes de fer prÃ©sents Ã  sa surface.",
   tags: ["astronomie"],
   editorialStatus: "approved",
   version: 1,
   options: [
     { id: "a", label: "Mars" },
-    { id: "b", label: "Vénus" },
+    { id: "b", label: "VÃ©nus" },
     { id: "c", label: "Jupiter" },
     { id: "d", label: "Mercure" },
   ],
@@ -143,7 +143,7 @@ describe("schemas metier centraux", () => {
     expect(jokerSchema.parse({
       type: "fifty-fifty",
       label: "50/50",
-      description: "Retire deux mauvaises réponses.",
+      description: "Retire deux mauvaises rÃ©ponses.",
       maxUses: 1,
     }).type).toBe("fifty-fifty");
     expect(jokerStateSchema.parse({ available: jokerInventory, used: jokerInventory, disabled: [] }).available["extra-time"]).toBe(1);
@@ -166,10 +166,12 @@ describe("schemas metier centraux", () => {
       currentRoundIndex: 0,
       currentRoundState: roundState,
       activeQuestionId: "q-1",
+      captainPlayerId: "player-1",
       usedQuestionIds: [],
       recentlyPlayedQuestionIds: [],
       jokers: { available: jokerInventory, used: jokerInventory, disabled: [] },
       score,
+      eventLog: [],
     };
     const action: GameAction = { type: "LOCK_ANSWER", answer: "a" };
     const event: GameEvent = {
@@ -233,5 +235,7 @@ describe("schemas metier centraux", () => {
     expect(round.restoreState(roundState)).toEqual(roundState);
   });
 });
+
+
 
 

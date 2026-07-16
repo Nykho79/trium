@@ -17,15 +17,21 @@ export type GameAction =
   | { type: "RESET_GAME" };
 
 export type GameEventType =
+  | "game_created"
   | "game_configured"
   | "status_changed"
   | "round_started"
   | "question_loaded"
+  | "captain_rotated"
   | "answer_locked"
   | "answer_revealed"
   | "joker_used"
   | "round_completed"
+  | "round_advanced"
   | "game_completed"
+  | "game_paused"
+  | "game_resumed"
+  | "game_restored"
   | "game_failed";
 
 export interface GameEvent {

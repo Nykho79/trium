@@ -40,21 +40,21 @@ C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd dev
 ```
 
 
-## Noyau métier
+## Noyau mÃ©tier
 
-Le noyau métier central est défini dans `src/core/types` et validé par les schémas Zod de `src/core/schemas`.
+Le noyau mÃ©tier central est dÃ©fini dans `src/core/types` et validÃ© par les schÃ©mas Zod de `src/core/schemas`.
 
 Contrats principaux :
 
 - `Player`, `PlayerId` : joueurs fixes de la partie, exactement trois dans `GameConfig` ;
-- `GameConfig`, `GameMode`, `GameStatus`, `GameState` : configuration et états du moteur ;
+- `GameConfig`, `GameMode`, `GameStatus`, `GameState` : configuration et Ã©tats du moteur ;
 - `RoundDefinition`, `RoundState`, `GameRound` : contrat commun de toutes les manches ;
 - `Question`, `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` : formats de questions validables depuis JSON ;
-- `Joker`, `JokerType`, `JokerState` : inventaire partagé des jokers ;
-- `ScoreBreakdown`, `AnswerResult` : résultat pur et détail du score ;
-- `GameEvent`, `GameAction` : entrées et événements du moteur.
+- `Joker`, `JokerType`, `JokerState` : inventaire partagÃ© des jokers ;
+- `ScoreBreakdown`, `AnswerResult` : rÃ©sultat pur et dÃ©tail du score ;
+- `GameEvent`, `GameAction` : entrÃ©es et Ã©vÃ©nements du moteur.
 
-La commande `npm run check` exécute lint, TypeScript strict et tests unitaires. Sur cette machine, `npm` n'est pas disponible sur le PATH global ; la validation équivalente peut être lancée avec `pnpm check` via le runtime Node local.
+La commande `npm run check` exÃ©cute lint, TypeScript strict et tests unitaires. Sur cette machine, `npm` n'est pas disponible sur le PATH global ; la validation Ã©quivalente peut Ãªtre lancÃ©e avec `pnpm check` via le runtime Node local.
 
 ## Architecture
 
@@ -92,5 +92,6 @@ git remote -v
 ```
 
 Le push peut necessiter une authentification GitHub locale.
+
 
 
