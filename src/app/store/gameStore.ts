@@ -1,13 +1,111 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
-import { INITIAL_JOKERS } from "../../core/constants/scoring";
 import { STANDARD_FORMAT } from "../../core/constants/game";
-import type { AppScreen, GameSessionPreview, Player } from "../../core/types";
+import { INITIAL_JOKERS } from "../../core/constants/scoring";
+import { STORAGE_SCHEMA_VERSION } from "../../core/constants/storage";
+import {
+  advanceRound,
+  applyJoker,
+  completeGame,
+  completeRound,
+  createGame,
+  loadQuestion,
+  pauseGame,
+  resumeGame,
+  revealAnswer as revealEngineAnswer,
+  restoreGame,
+  startGame,
+  startRound,
+  submitAnswer,
+} from "../../core/engine/gameEngine";
+import type {
+  AppScreen,
+  GameConfig,
+  GameSessionPreview,
+  GameState,
+  JokerType,
+  Player,
+  Question,
+  RoundDefinition,
+} from "../../core/types";
+import {
+  buildSavedGameEnvelope,
+  clearSavedGame as clearSavedGameStorage,
+  loadRecentQuestionIds,
+  loadSavedGame,
+  saveGameEnvelope,
+  saveRecentQuestionIds,
+} from "./persistence";
 
-const DEFAULT_PLAYERS: [Player, Player, Player] = [
+export const DEFAULT_PLAYERS: [Player, Player, Player] = [
   { id: "player-1", name: "Joueur 1", color: "amber", ready: true },
   { id: "player-2", name: "Joueur 2", color: "cyan", ready: true },
   { id: "player-3", name: "Joueur 3", color: "magenta", ready: true },
+];
+
+const DEFAULT_ROUNDS: RoundDefinition[] = [
+  {
+    id: "knowledge-grid",
+    kind: "knowledge-grid",
+    label: "Grille des savoirs",
+    description: "Choix libre de categories et de valeurs.",
+    questionTypes: ["multiple_choice"],
+    questionCount: 5,
+    maxScore: 1_500,
+  },
+  {
+    id: "clue-race",
+    kind: "clue-race",
+    label: "Course aux indices",
+    description: "Indices progressifs et score decroissant.",
+    questionTypes: ["progressive_clues"],
+    questionCount: 3,
+    maxScore: 900,
+  },
+  {
+    id: "pressure-choice",
+    kind: "pressure-choice",
+    label: "Choix sous pression",
+    description: "QCM chronometres avec jokers.",
+    questionTypes: ["multiple_choice"],
+    questionCount: 5,
+    maxScore: 1_500,
+  },
+  {
+    id: "synapse",
+    kind: "synapse",
+    label: "Synapse",
+    description: "Logique, classement, memoire et categorisation.",
+    questionTypes: ["chronology", "analogy", "memory", "sequence"],
+    questionCount: 4,
+    maxScore: 1_200,
+  },
+  {
+    id: "connections",
+    kind: "connections",
+    label: "Connexions",
+    description: "Trouver le lien commun entre plusieurs elements.",
+    questionTypes: ["connection"],
+    questionCount: 3,
+    maxScore: 900,
+  },
+  {
+    id: "wager",
+    kind: "wager",
+    label: "Le Pari",
+    description: "Categorie, difficulte et mise choisies par l'equipe.",
+    questionTypes: ["multiple_choice", "progressive_clues", "connection"],
+    questionCount: 3,
+    maxScore: 1_500,
+  },
+  {
+    id: "final-convergence",
+    kind: "final-convergence",
+    label: "Convergence finale",
+    description: "Finale en cinq etapes avec avantages acquis.",
+    questionTypes: ["multiple_choice", "progressive_clues", "connection", "chronology", "analogy", "sequence"],
+    questionCount: 5,
+    maxScore: 2_500,
+  },
 ];
 
 const DEFAULT_SESSION: GameSessionPreview = {
@@ -17,75 +115,409 @@ const DEFAULT_SESSION: GameSessionPreview = {
   currentQuestionId: "pc-fr-001",
   usedQuestionIds: [],
   score: {
-    teamScore: 1250,
+    teamScore: 1_250,
     streak: 2,
     jokers: INITIAL_JOKERS,
   },
 };
+
+interface EngineQuestionInput {
+  questions: readonly Question[];
+  questionId?: string | undefined;
+  now?: number | undefined;
+}
 
 interface GameStoreState {
   screen: AppScreen;
   previousScreen: AppScreen;
   session: GameSessionPreview;
   selectedAnswerId: string | undefined;
-  reducedMotion: boolean;
-  soundEnabled: boolean;
-  musicEnabled: boolean;
+  gameState: GameState | null;
+  hasSavedGame: boolean;
+  persistenceError: string | undefined;
+  engineError: string | undefined;
+  recentQuestionIds: string[];
+  saveVersion: number;
   navigate: (screen: AppScreen) => void;
   updatePlayerName: (playerIndex: 0 | 1 | 2, name: string) => void;
   selectAnswer: (answerId: string) => void;
   revealAnswer: () => void;
   resetDemo: () => void;
-  toggleReducedMotion: () => void;
-  toggleSound: () => void;
-  toggleMusic: () => void;
+  startNewGame: (seed?: string | undefined) => void;
+  startConfiguredGame: () => void;
+  startCurrentRound: (roundIndex?: number | undefined) => void;
+  loadCurrentQuestion: (input: EngineQuestionInput) => void;
+  submitCurrentAnswer: (answer: string | string[], now?: number | undefined) => void;
+  revealCurrentAnswer: (questions: readonly Question[], now?: number | undefined) => void;
+  completeCurrentRound: (now?: number | undefined) => void;
+  advanceToNextRound: (now?: number | undefined) => void;
+  finishGame: (now?: number | undefined) => void;
+  pauseCurrentGame: (now?: number | undefined) => void;
+  resumeCurrentGame: (now?: number | undefined) => void;
+  applyGameJoker: (joker: JokerType, now?: number | undefined) => void;
+  resumeSavedGame: () => void;
+  clearSavedGame: () => void;
+  setEngineState: (gameState: GameState) => void;
 }
 
-export const useGameStore = create<GameStoreState>()(
-  persist(
-    (set) => ({
+function createDefaultConfig(players: [Player, Player, Player], seed = `trium-${Date.now()}`): GameConfig {
+  return {
+    id: "trium-standard-local",
+    mode: "standard",
+    seed,
+    players,
+    rounds: DEFAULT_ROUNDS,
+    questionBankVersion: 1,
+    allowRecentlyPlayedFallback: true,
+    defaultQuestionTimeMs: 30_000,
+  };
+}
+
+function sessionFromGameState(gameState: GameState, fallback: GameSessionPreview): GameSessionPreview {
+  const round = gameState.config.rounds[gameState.currentRoundIndex];
+  const session: GameSessionPreview = {
+    players: gameState.config.players,
+    format: fallback.format,
+    currentRoundKind: round?.kind ?? fallback.currentRoundKind,
+    usedQuestionIds: gameState.usedQuestionIds,
+    score: {
+      teamScore: gameState.score.total,
+      streak: gameState.lastAnswerResult?.isCorrect ? fallback.score.streak + 1 : fallback.score.streak,
+      jokers: gameState.jokers.available,
+      breakdown: gameState.score,
+    },
+  };
+  return gameState.activeQuestionId ? { ...session, currentQuestionId: gameState.activeQuestionId } : session;
+}
+
+function persistencePatch(input: {
+  gameState: GameState | null;
+  screen: AppScreen;
+  selectedAnswerId: string | undefined;
+}): Pick<GameStoreState, "hasSavedGame" | "persistenceError" | "recentQuestionIds"> {
+  if (input.gameState === null) {
+    return { hasSavedGame: false, persistenceError: undefined, recentQuestionIds: [] };
+  }
+  const envelope = buildSavedGameEnvelope({
+    gameState: input.gameState,
+    screen: input.screen,
+    selectedAnswerId: input.selectedAnswerId,
+  });
+  const saved = saveGameEnvelope(envelope);
+  if (!saved.ok) {
+    return {
+      hasSavedGame: true,
+      persistenceError: saved.error,
+      recentQuestionIds: input.gameState.recentlyPlayedQuestionIds,
+    };
+  }
+  return {
+    hasSavedGame: true,
+    persistenceError: undefined,
+    recentQuestionIds: saved.value.recentQuestionIds,
+  };
+}
+
+function errorMessage(error: unknown): string {
+  if (error instanceof Error) {
+    return error.message;
+  }
+  return "Action moteur impossible.";
+}
+
+function restoreSavedState(): Pick<GameStoreState, "gameState" | "screen" | "selectedAnswerId" | "session" | "hasSavedGame" | "persistenceError" | "recentQuestionIds"> {
+  const saved = loadSavedGame();
+  if (!saved.ok) {
+    return {
+      gameState: null,
+      screen: "home",
+      selectedAnswerId: undefined,
+      session: DEFAULT_SESSION,
+      hasSavedGame: false,
+      persistenceError: saved.error,
+      recentQuestionIds: [],
+    };
+  }
+  if (saved.value === null) {
+    const recent = loadRecentQuestionIds();
+    return {
+      gameState: null,
+      screen: "home",
+      selectedAnswerId: undefined,
+      session: DEFAULT_SESSION,
+      hasSavedGame: false,
+      persistenceError: recent.ok ? undefined : recent.error,
+      recentQuestionIds: recent.ok ? recent.value : [],
+    };
+  }
+
+  const restored = restoreGame(saved.value.gameState, Date.now());
+  return {
+    gameState: restored,
+    screen: saved.value.screen,
+    selectedAnswerId: saved.value.selectedAnswerId,
+    session: sessionFromGameState(restored, DEFAULT_SESSION),
+    hasSavedGame: true,
+    persistenceError: undefined,
+    recentQuestionIds: saved.value.recentQuestionIds,
+  };
+}
+
+const restoredState = restoreSavedState();
+
+export const useGameStore = create<GameStoreState>()((set) => ({
+  screen: restoredState.screen,
+  previousScreen: "home",
+  session: restoredState.session,
+  selectedAnswerId: restoredState.selectedAnswerId,
+  gameState: restoredState.gameState,
+  hasSavedGame: restoredState.hasSavedGame,
+  persistenceError: restoredState.persistenceError,
+  engineError: undefined,
+  recentQuestionIds: restoredState.recentQuestionIds,
+  saveVersion: STORAGE_SCHEMA_VERSION,
+  navigate: (screen) => set((state) => {
+    const patch = persistencePatch({ gameState: state.gameState, screen, selectedAnswerId: state.selectedAnswerId });
+    return { previousScreen: state.screen, screen, ...patch };
+  }),
+  updatePlayerName: (playerIndex, name) => set((state) => {
+    const players = [...state.session.players] as [Player, Player, Player];
+    players[playerIndex] = { ...players[playerIndex], name: name.trim() || `Joueur ${playerIndex + 1}` };
+    const config = state.gameState ? { ...state.gameState.config, players } : undefined;
+    const gameState = state.gameState && config ? { ...state.gameState, config } : state.gameState;
+    const session = { ...state.session, players };
+    const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+    return { session, gameState, ...patch };
+  }),
+  selectAnswer: (answerId) => set((state) => {
+    const patch = persistencePatch({ gameState: state.gameState, screen: state.screen, selectedAnswerId: answerId });
+    return { selectedAnswerId: answerId, ...patch };
+  }),
+  revealAnswer: () => set((state) => {
+    const session: GameSessionPreview = {
+      ...state.session,
+      usedQuestionIds: state.session.currentQuestionId
+        ? [...new Set([...state.session.usedQuestionIds, state.session.currentQuestionId])]
+        : state.session.usedQuestionIds,
+      score: {
+        ...state.session.score,
+        teamScore: state.selectedAnswerId === "a" ? state.session.score.teamScore + 200 : state.session.score.teamScore,
+        streak: state.selectedAnswerId === "a" ? state.session.score.streak + 1 : 0,
+      },
+    };
+    const patch = persistencePatch({ gameState: state.gameState, screen: "question-transition", selectedAnswerId: state.selectedAnswerId });
+    return { screen: "question-transition", session, ...patch };
+  }),
+  resetDemo: () => set(() => {
+    const cleared = clearSavedGameStorage();
+    return {
       screen: "home",
       previousScreen: "home",
       session: DEFAULT_SESSION,
       selectedAnswerId: undefined,
-      reducedMotion: false,
-      soundEnabled: true,
-      musicEnabled: false,
-      navigate: (screen) => set((state) => ({ previousScreen: state.screen, screen })),
-      updatePlayerName: (playerIndex, name) => set((state) => {
-        const players = [...state.session.players] as [Player, Player, Player];
-        players[playerIndex] = { ...players[playerIndex], name: name.trim() || `Joueur ${playerIndex + 1}` };
-        return { session: { ...state.session, players } };
-      }),
-      selectAnswer: (answerId) => set({ selectedAnswerId: answerId }),
-      revealAnswer: () => set((state) => ({
-        screen: "question-transition",
-        session: {
-          ...state.session,
-          usedQuestionIds: state.session.currentQuestionId
-            ? [...new Set([...state.session.usedQuestionIds, state.session.currentQuestionId])]
-            : state.session.usedQuestionIds,
-          score: {
-            ...state.session.score,
-            teamScore: state.selectedAnswerId === "a" ? state.session.score.teamScore + 200 : state.session.score.teamScore,
-            streak: state.selectedAnswerId === "a" ? state.session.score.streak + 1 : 0,
-          },
-        },
-      })),
-      resetDemo: () => set({ screen: "home", session: DEFAULT_SESSION, selectedAnswerId: undefined }),
-      toggleReducedMotion: () => set((state) => ({ reducedMotion: !state.reducedMotion })),
-      toggleSound: () => set((state) => ({ soundEnabled: !state.soundEnabled })),
-      toggleMusic: () => set((state) => ({ musicEnabled: !state.musicEnabled })),
-    }),
-    {
-      name: "trium.local-session.v1",
-      partialize: (state) => ({
-        session: state.session,
-        reducedMotion: state.reducedMotion,
-        soundEnabled: state.soundEnabled,
-        musicEnabled: state.musicEnabled,
-      }),
-    },
-  ),
-);
-
+      gameState: null,
+      hasSavedGame: false,
+      persistenceError: cleared.ok ? undefined : cleared.error,
+      engineError: undefined,
+    };
+  }),
+  startNewGame: (seed) => set((state) => {
+    const recent = loadRecentQuestionIds();
+    const config = createDefaultConfig(state.session.players, seed);
+    const gameState = createGame({
+      config,
+      recentlyPlayedQuestionIds: recent.ok ? recent.value : state.recentQuestionIds,
+      now: Date.now(),
+    });
+    const session = sessionFromGameState(gameState, state.session);
+    const patch = persistencePatch({ gameState, screen: "game-intro", selectedAnswerId: undefined });
+    return {
+      screen: "game-intro",
+      previousScreen: state.screen,
+      session,
+      selectedAnswerId: undefined,
+      gameState,
+      engineError: undefined,
+      persistenceError: recent.ok ? patch.persistenceError : recent.error,
+      hasSavedGame: patch.hasSavedGame,
+      recentQuestionIds: patch.recentQuestionIds,
+    };
+  }),
+  startConfiguredGame: () => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie a demarrer." };
+    }
+    try {
+      const gameState = startGame(state.gameState, Date.now());
+      const patch = persistencePatch({ gameState, screen: "game-intro", selectedAnswerId: state.selectedAnswerId });
+      return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  startCurrentRound: (roundIndex) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = startRound(state.gameState, roundIndex ?? state.gameState.currentRoundIndex, Date.now());
+      const patch = persistencePatch({ gameState, screen: "round-intro", selectedAnswerId: undefined });
+      return { gameState, screen: "round-intro", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  loadCurrentQuestion: (input) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = loadQuestion(state.gameState, { questions: input.questions, questionId: input.questionId, now: input.now ?? Date.now() });
+      const recentQuestionIds = [...new Set([...state.recentQuestionIds, ...gameState.usedQuestionIds])].slice(-50);
+      saveRecentQuestionIds(recentQuestionIds);
+      const syncedGameState = { ...gameState, recentlyPlayedQuestionIds: recentQuestionIds };
+      const patch = persistencePatch({ gameState: syncedGameState, screen: "game", selectedAnswerId: undefined });
+      return { gameState: syncedGameState, screen: "game", selectedAnswerId: undefined, session: sessionFromGameState(syncedGameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  submitCurrentAnswer: (answer, now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = submitAnswer(state.gameState, { answer, now: now ?? Date.now() });
+      const selectedAnswerId = Array.isArray(answer) ? answer.join("|") : answer;
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId });
+      return { gameState, selectedAnswerId, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  revealCurrentAnswer: (questions, now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = revealEngineAnswer(state.gameState, { questions, now: now ?? Date.now() });
+      const patch = persistencePatch({ gameState, screen: "question-transition", selectedAnswerId: state.selectedAnswerId });
+      return { gameState, screen: "question-transition", session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  completeCurrentRound: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = completeRound(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: "round-result", selectedAnswerId: undefined });
+      return { gameState, screen: "round-result", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  advanceToNextRound: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = advanceRound(state.gameState, now ?? Date.now());
+      const screen: AppScreen = gameState.status === "game_result" ? "summary" : "round-intro";
+      const patch = persistencePatch({ gameState, screen, selectedAnswerId: undefined });
+      return { gameState, screen, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  finishGame: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = completeGame(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: "summary", selectedAnswerId: undefined });
+      return { gameState, screen: "summary", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  pauseCurrentGame: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = pauseGame(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+      return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  resumeCurrentGame: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = resumeGame(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+      return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  applyGameJoker: (joker, now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = applyJoker(state.gameState, joker, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+      return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  resumeSavedGame: () => set((state) => {
+    const saved = loadSavedGame();
+    if (!saved.ok) {
+      return { persistenceError: saved.error, hasSavedGame: false };
+    }
+    if (saved.value === null) {
+      return { persistenceError: "Aucune partie sauvegardee a reprendre.", hasSavedGame: false };
+    }
+    try {
+      const gameState = restoreGame(saved.value.gameState, Date.now());
+      const patch = persistencePatch({ gameState, screen: saved.value.screen, selectedAnswerId: saved.value.selectedAnswerId });
+      return {
+        gameState,
+        screen: saved.value.screen,
+        previousScreen: state.screen,
+        selectedAnswerId: saved.value.selectedAnswerId,
+        session: sessionFromGameState(gameState, state.session),
+        engineError: undefined,
+        ...patch,
+      };
+    } catch (error) {
+      clearSavedGameStorage();
+      return { persistenceError: `Sauvegarde ignoree: ${errorMessage(error)}`, hasSavedGame: false };
+    }
+  }),
+  clearSavedGame: () => set(() => {
+    const cleared = clearSavedGameStorage();
+    return {
+      gameState: null,
+      hasSavedGame: false,
+      selectedAnswerId: undefined,
+      session: DEFAULT_SESSION,
+      persistenceError: cleared.ok ? undefined : cleared.error,
+      engineError: undefined,
+    };
+  }),
+  setEngineState: (gameState) => set((state) => {
+    const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+    return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+  }),
+}));

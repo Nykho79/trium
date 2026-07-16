@@ -1,16 +1,18 @@
+import { useGameStore } from "../../app/store/gameStore";
+import { useSettingsStore } from "../../app/store/settingsStore";
 import { Button } from "../components/Button";
 import { Panel } from "../components/Panel";
 import { ScreenFrame } from "../components/ScreenFrame";
-import { useGameStore } from "../../app/store/gameStore";
 
 export function SettingsScreen() {
   const navigate = useGameStore((state) => state.navigate);
-  const reducedMotion = useGameStore((state) => state.reducedMotion);
-  const soundEnabled = useGameStore((state) => state.soundEnabled);
-  const musicEnabled = useGameStore((state) => state.musicEnabled);
-  const toggleReducedMotion = useGameStore((state) => state.toggleReducedMotion);
-  const toggleSound = useGameStore((state) => state.toggleSound);
-  const toggleMusic = useGameStore((state) => state.toggleMusic);
+  const reducedMotion = useSettingsStore((state) => state.reducedMotion);
+  const soundEnabled = useSettingsStore((state) => state.soundEnabled);
+  const musicEnabled = useSettingsStore((state) => state.musicEnabled);
+  const persistenceError = useSettingsStore((state) => state.persistenceError);
+  const toggleReducedMotion = useSettingsStore((state) => state.toggleReducedMotion);
+  const toggleSound = useSettingsStore((state) => state.toggleSound);
+  const toggleMusic = useSettingsStore((state) => state.toggleMusic);
 
   return (
     <ScreenFrame title="Paramètres">
@@ -20,6 +22,7 @@ export function SettingsScreen() {
           <p>Réglages stockés localement sur cet ordinateur.</p>
         </div>
         <Panel className="settings-list">
+          {persistenceError ? <p role="alert">{persistenceError}</p> : null}
           <button type="button" onClick={toggleSound}>Sons d'interface <strong>{soundEnabled ? "Activés" : "Coupés"}</strong></button>
           <button type="button" onClick={toggleMusic}>Musique <strong>{musicEnabled ? "Activée" : "Coupée"}</strong></button>
           <button type="button" onClick={toggleReducedMotion}>Animations réduites <strong>{reducedMotion ? "Oui" : "Non"}</strong></button>

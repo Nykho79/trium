@@ -1,11 +1,12 @@
+import { useGameStore } from "../../app/store/gameStore";
 import { STANDARD_FORMAT } from "../../core/constants/game";
 import { Button } from "../components/Button";
 import { Panel } from "../components/Panel";
 import { ScreenFrame } from "../components/ScreenFrame";
-import { useGameStore } from "../../app/store/gameStore";
 
 export function FormatSelectionScreen() {
   const navigate = useGameStore((state) => state.navigate);
+  const startNewGame = useGameStore((state) => state.startNewGame);
   return (
     <ScreenFrame title="Choix du format">
       <section className="setup-screen">
@@ -24,7 +25,7 @@ export function FormatSelectionScreen() {
         </Panel>
         <div className="screen-actions">
           <Button variant="secondary" onClick={() => navigate("player-setup")}>Retour</Button>
-          <Button variant="primary" onClick={() => navigate("game-intro")}>Préparer la partie</Button>
+          <Button variant="primary" onClick={() => startNewGame()}>Préparer la partie</Button>
         </div>
       </section>
     </ScreenFrame>

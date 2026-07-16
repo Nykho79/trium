@@ -40,22 +40,32 @@ C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd dev
 ```
 
 
-## Noyau mÃ©tier
+## Noyau mÃƒÂ©tier
 
-Le noyau mÃ©tier central est dÃ©fini dans `src/core/types` et validÃ© par les schÃ©mas Zod de `src/core/schemas`.
+Le noyau mÃƒÂ©tier central est dÃƒÂ©fini dans `src/core/types` et validÃƒÂ© par les schÃƒÂ©mas Zod de `src/core/schemas`.
 
 Contrats principaux :
 
 - `Player`, `PlayerId` : joueurs fixes de la partie, exactement trois dans `GameConfig` ;
-- `GameConfig`, `GameMode`, `GameStatus`, `GameState` : configuration et Ã©tats du moteur ;
+- `GameConfig`, `GameMode`, `GameStatus`, `GameState` : configuration et ÃƒÂ©tats du moteur ;
 - `RoundDefinition`, `RoundState`, `GameRound` : contrat commun de toutes les manches ;
 - `Question`, `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` : formats de questions validables depuis JSON ;
-- `Joker`, `JokerType`, `JokerState` : inventaire partagÃ© des jokers ;
-- `ScoreBreakdown`, `AnswerResult` : rÃ©sultat pur et dÃ©tail du score ;
-- `GameEvent`, `GameAction` : entrÃ©es et Ã©vÃ©nements du moteur.
+- `Joker`, `JokerType`, `JokerState` : inventaire partagÃƒÂ© des jokers ;
+- `ScoreBreakdown`, `AnswerResult` : rÃƒÂ©sultat pur et dÃƒÂ©tail du score ;
+- `GameEvent`, `GameAction` : entrÃƒÂ©es et ÃƒÂ©vÃƒÂ©nements du moteur.
 
-La commande `npm run check` exÃ©cute lint, TypeScript strict et tests unitaires. Sur cette machine, `npm` n'est pas disponible sur le PATH global ; la validation Ã©quivalente peut Ãªtre lancÃ©e avec `pnpm check` via le runtime Node local.
+La commande `npm run check` exÃƒÂ©cute lint, TypeScript strict et tests unitaires. Sur cette machine, `npm` n'est pas disponible sur le PATH global ; la validation ÃƒÂ©quivalente peut ÃƒÂªtre lancÃƒÂ©e avec `pnpm check` via le runtime Node local.
 
+
+## Stores et persistance locale
+
+L'etat React est separe en trois stores Zustand :
+
+- `src/app/store/gameStore.ts` relie l'interface au moteur pur, conserve l'ecran courant, la session de presentation, le `GameState` actif, les erreurs moteur et les actions de reprise/suppression ;
+- `src/app/store/settingsStore.ts` persiste les reglages audio, musique, mode developpement, echelle de timer et preference d'animations reduites ;
+- `src/app/store/audioStore.ts` garde l'etat runtime audio, dont le mute global et les volumes bornes entre 0 et 1.
+
+La sauvegarde locale est versionnee par `STORAGE_SCHEMA_VERSION` et validee avec Zod dans `src/app/store/persistence.ts`. Une sauvegarde corrompue ou d'une version inconnue est ignoree avec un message d'erreur stocke dans le store, sans bloquer l'application. La partie en cours, les joueurs, la manche/question courante, le score, les jokers, l'historique recent des questions et la configuration de partie sont serialises dans `localStorage`.
 ## Architecture
 
 Les decisions structurantes sont documentees dans `ARCHITECTURE.md`.
@@ -67,7 +77,7 @@ Principes actifs :
 - les schemas Zod sont centralises dans `src/core/schemas` ;
 - les ecrans React sont dans `src/ui/screens` ;
 - l'etat local d'interface est gere par Zustand et persiste dans `localStorage` ;
-- les sons sont centralises dans `src/ui/audio/soundManager.ts`.
+- les sons sont centralises dans `src/ui/audio/soundManager.ts` et pilotes par `settingsStore`/`audioStore`.
 
 
 ## Validation effectuee
@@ -76,7 +86,7 @@ Validation locale executee le 2026-07-16 :
 
 - `pnpm lint` : OK ;
 - `pnpm typecheck` : OK ;
-- `pnpm test` : OK, 7 tests unitaires ;
+- `pnpm test` : OK, 33 tests unitaires ;
 - `pnpm build` : OK ;
 - `pnpm test:e2e` : OK, 6 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
 - verification console navigateur : OK, aucune erreur detectee sur l'accueil aux deux resolutions.

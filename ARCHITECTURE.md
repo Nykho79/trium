@@ -69,6 +69,7 @@ trium/
       store/
         gameStore.ts
         settingsStore.ts
+        audioStore.ts
         persistence.ts
     core/
       constants/
@@ -692,7 +693,7 @@ Cles proposees :
 ```ts
 export const STORAGE_KEYS = {
   settings: "trium.settings.v1",
-  savedSession: "trium.saved-session.v1",
+  savedSession: "trium.saved-game.v1",
   recentQuestions: "trium.recent-questions.v1",
 } as const;
 ```
@@ -914,14 +915,14 @@ Un lot est termine seulement si :
 - les echecs restants, s'il y en a, sont bloques ou explicitement exclus avant validation.
 
 Etat actuel : cette phase ne cree pas encore le scaffold applicatif et ne peut donc pas executer ces commandes.
-## 16. Noyau mÃ©tier central
+## 16. Noyau mÃƒÂ©tier central
 
-Le noyau mÃ©tier ne dÃ©pend pas de React. Les contrats sont centralisÃ©s dans `src/core/types` et les validations JSON dans `src/core/schemas`.
+Le noyau mÃƒÂ©tier ne dÃƒÂ©pend pas de React. Les contrats sont centralisÃƒÂ©s dans `src/core/types` et les validations JSON dans `src/core/schemas`.
 
-Types ajoutÃ©s ou stabilisÃ©s :
+Types ajoutÃƒÂ©s ou stabilisÃƒÂ©s :
 
 - `Player`, `PlayerId` pour les trois joueurs fixes ;
-- `GameConfig`, `GameMode`, `GameStatus`, `GameState` pour la configuration et la machine d'Ã©tat ;
+- `GameConfig`, `GameMode`, `GameStatus`, `GameState` pour la configuration et la machine d'ÃƒÂ©tat ;
 - `RoundDefinition`, `RoundState`, `GameRound` pour imposer une interface commune aux manches ;
 - `Question` et ses variantes `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` ;
 - `Joker`, `JokerType`, `JokerState` ;
@@ -933,7 +934,7 @@ Types ajoutÃ©s ou stabilisÃ©s :
 Les schemas Zod correspondants valident les donnees externes avant usage : joueurs, questions, score, jokers, manches, config, etat, actions et evenements.
 ## 17. Moteur de jeu central
 
-Le moteur central est implementé dans `src/core/engine/gameEngine.ts`. Il est independant de React et expose des fonctions pures qui transforment un `GameState` en nouveau `GameState`.
+Le moteur central est implementÃ© dans `src/core/engine/gameEngine.ts`. Il est independant de React et expose des fonctions pures qui transforment un `GameState` en nouveau `GameState`.
 
 Fonctions publiques : `createGame`, `startGame`, `startRound`, `loadQuestion`, `submitAnswer`, `revealAnswer`, `completeRound`, `advanceRound`, `completeGame`, `pauseGame`, `resumeGame`, `restoreGame`, `applyJoker`, `rotateCaptain`.
 
@@ -951,4 +952,12 @@ Garanties actuelles :
 - pause/reprise avec conservation du temps restant ;
 - restauration validee par Zod ;
 - journal interne `eventLog` pour tracer les actions du moteur.
+## 18. Stores Zustand et sauvegarde locale
 
+La couche React consomme le moteur via trois stores explicites :
+
+- `gameStore` porte le `GameState` actif, l'ecran courant, la session de presentation, l'erreur moteur, l'erreur de persistance et les actions qui appellent les fonctions pures du moteur (`startGame`, `startRound`, `loadQuestion`, `submitAnswer`, `revealAnswer`, `applyJoker`, pause/reprise, fin de manche et fin de partie) ;
+- `settingsStore` persiste les preferences utilisateur : sons d'interface, musique, animations reduites, mode developpement et echelle de timer ;
+- `audioStore` garde l'etat runtime non metier : mute global, volume UI et volume musique.
+
+La persistance est centralisee dans `src/app/store/persistence.ts`. Le format de sauvegarde est enveloppe par `{ version, savedAt, screen, selectedAnswerId, gameState, recentQuestionIds }` et valide avec Zod avant restauration. Une sauvegarde corrompue ou d'une version inconnue renvoie une erreur claire dans le store et n'empeche pas l'application de demarrer. La suppression d'une partie retire uniquement la partie en cours ; l'historique recent des questions peut rester disponible pour les prochaines parties.

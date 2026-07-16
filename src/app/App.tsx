@@ -1,6 +1,8 @@
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
+import { useAudioStore } from "./store/audioStore";
 import { useGameStore } from "./store/gameStore";
+import { useSettingsStore } from "./store/settingsStore";
 import { setGlobalAudioEnabled } from "../ui/audio/soundManager";
 import { DevQuestionBankScreen } from "../ui/screens/DevQuestionBankScreen";
 import { FinaleScreen } from "../ui/screens/FinaleScreen";
@@ -17,11 +19,12 @@ import { SummaryScreen } from "../ui/screens/SummaryScreen";
 
 export function App() {
   const screen = useGameStore((state) => state.screen);
-  const soundEnabled = useGameStore((state) => state.soundEnabled);
+  const soundEnabled = useSettingsStore((state) => state.soundEnabled);
+  const masterMuted = useAudioStore((state) => state.masterMuted);
 
   useEffect(() => {
-    setGlobalAudioEnabled(soundEnabled);
-  }, [soundEnabled]);
+    setGlobalAudioEnabled(soundEnabled && !masterMuted);
+  }, [masterMuted, soundEnabled]);
 
   return (
     <div className="app-shell">

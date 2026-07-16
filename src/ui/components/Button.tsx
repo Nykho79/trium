@@ -1,6 +1,7 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
+import { useAudioStore } from "../../app/store/audioStore";
+import { useSettingsStore } from "../../app/store/settingsStore";
 import { playUiClick } from "../audio/soundManager";
-import { useGameStore } from "../../app/store/gameStore";
 
 type ButtonVariant = "primary" | "secondary" | "ghost" | "answer";
 
@@ -18,12 +19,13 @@ const variantClassNames: Record<ButtonVariant, string> = {
 };
 
 export function Button({ children, variant = "secondary", selected = false, onClick, className = "", ...props }: ButtonProps) {
-  const soundEnabled = useGameStore((state) => state.soundEnabled);
+  const soundEnabled = useSettingsStore((state) => state.soundEnabled);
+  const masterMuted = useAudioStore((state) => state.masterMuted);
   return (
     <button
       className={`${variantClassNames[variant]} ${selected ? "is-selected" : ""} ${className}`}
       onClick={(event) => {
-        playUiClick(soundEnabled);
+        playUiClick(soundEnabled && !masterMuted);
         onClick?.(event);
       }}
       {...props}
