@@ -6,12 +6,26 @@ import { Panel } from "../components/Panel";
 import { ScreenFrame } from "../components/ScreenFrame";
 import { useGameStore } from "../../app/store/gameStore";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
-import type { PressureChoiceQuestion, Question } from "../../core/types";
-
+import type { MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion } from "../../core/types";
+import { buildSynapseQuestionSet, synapseOptions } from "../../rounds/synapse";
 
 function isPressureChoiceQuestion(question: Question): question is PressureChoiceQuestion {
   return question.kind === "pressure-choice" && question.type === "multiple_choice" && question.editorialStatus === "approved";
 }
+
+function optionsFor(question: Question): readonly MultipleChoiceOption[] | undefined {
+  if (question.kind === "synapse") {
+    return synapseOptions(question as SynapseQuestion);
+  }
+  if ((question.type === "multiple_choice" || question.type === "progressive_clues") && question.options !== undefined) {
+    return question.options;
+  }
+  if (question.type === "chronology") {
+    return question.options;
+  }
+  return undefined;
+}
+
 function displayAnswer(question: Question | undefined, correctAnswer: string | string[] | undefined): string {
   if (!question || correctAnswer === undefined) {
     return Array.isArray(correctAnswer) ? correctAnswer.join(", ") : correctAnswer ?? "Reponse indisponible";
@@ -19,8 +33,9 @@ function displayAnswer(question: Question | undefined, correctAnswer: string | s
   if (Array.isArray(correctAnswer)) {
     return correctAnswer.join(", ");
   }
-  if ((question.type === "multiple_choice" || question.type === "progressive_clues") && question.options !== undefined) {
-    return question.options.find((option) => option.id === correctAnswer)?.label ?? correctAnswer;
+  const options = optionsFor(question);
+  if (options !== undefined) {
+    return options.find((option) => option.id === correctAnswer)?.label ?? correctAnswer;
   }
   if (question.type === "progressive_clues") {
     return question.answer.display;
@@ -50,7 +65,9 @@ export function QuestionTransitionScreen() {
   }, []);
 
   const result = gameState?.lastAnswerResult;
-  const question = questions.find((candidate) => candidate.id === result?.questionId);
+  const synapseQuestions = buildSynapseQuestionSet(gameState?.config.seed ?? "trium-synapse");
+  const allQuestions = [...questions, ...synapseQuestions];
+  const question = allQuestions.find((candidate) => candidate.id === result?.questionId);
   const round = gameState?.config.rounds[gameState.currentRoundIndex];
   const answeredCount = gameState?.currentRoundState?.answeredQuestionIds.length ?? 0;
   const targetCount = round?.questionCount ?? 5;
@@ -60,7 +77,7 @@ export function QuestionTransitionScreen() {
   const isPressureChoice = round?.kind === "pressure-choice";
   const pressureQuestions = questions.filter(isPressureChoiceQuestion);
   const pressureEndedByFailure = isPressureChoice && result?.isCorrect === false;
-  const returnLabel = round?.kind === "knowledge-grid" ? "Retour a la grille" : isPressureChoice ? "Continuer" : "Enigme suivante";
+  const returnLabel = round?.kind === "knowledge-grid" ? "Retour a la grille" : isPressureChoice ? "Continuer" : round?.kind === "synapse" ? "Epreuve suivante" : "Enigme suivante";
 
   const continueRound = () => {
     if (pressureEndedByFailure || isRoundComplete) {

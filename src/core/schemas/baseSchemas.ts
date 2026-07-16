@@ -29,6 +29,9 @@ export const questionTypeSchema = z.union([
   z.literal("analogy"),
   z.literal("memory"),
   z.literal("sequence"),
+  z.literal("intruder"),
+  z.literal("visual_matrix"),
+  z.literal("symbol_rule"),
 ]);
 
 export const gameModeSchema = z.union([

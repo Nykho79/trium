@@ -79,9 +79,9 @@ const DEFAULT_ROUNDS: RoundDefinition[] = [
     kind: "synapse",
     label: "Synapse",
     description: "Logique, classement, memoire et categorisation.",
-    questionTypes: ["chronology", "analogy", "memory", "sequence"],
-    questionCount: 4,
-    maxScore: 1_200,
+    questionTypes: ["chronology", "analogy", "memory", "sequence", "intruder", "visual_matrix", "symbol_rule"],
+    questionCount: 6,
+    maxScore: 1_680,
   },
   {
     id: "connections",

@@ -1081,3 +1081,25 @@ Regles implementees :
 - les actions de securisation et d'expiration sont exposees par le moteur et branchees dans `gameStore`.
 
 L'ecran `GameScreen` affiche l'echelle de progression, les points securises, les points a risque, le multiplicateur, le chronometre et les QCM. L'ecran de transition propose `Continuer` ou `Securiser` apres une bonne reponse.
+
+## 26. Manche Synapse
+
+La manche `synapse` est implementee dans `src/rounds/synapse`. Elle respecte l'interface `GameRound` et reste independante de React. Les mini-epreuves sont ludiques uniquement : aucune terminologie diagnostique, aucun item psychometrique protege, aucun score de quotient intellectuel.
+
+Regles implementees :
+
+- six mini-epreuves par manche ;
+- tirage deterministe par seed avec maximum deux epreuves du meme type ;
+- difficulte progressive `[1, 2, 3, 3, 4, 5]` ;
+- types couverts : analogie, suite logique, memoire de chiffres, memoire inversee, intrus conceptuel, classement, matrice visuelle originale et association symbole-regle ;
+- generateurs seedes pour sequences de chiffres, memoire inversee, suites numeriques, ordre logique et association de symboles ;
+- scoring pur : facile 150, moyen 250, difficile 400, bonus vitesse plafonne a 20 % ;
+- `extra_time` et `second_chance` autorises ;
+- `contextual_hint` reserve aux analogies et suites ;
+- `fifty_fifty`, `change_question` et `team_vote` interdits dans cette manche.
+
+Les formats de questions metier et les schemas Zod acceptent maintenant `intruder`, `visual_matrix` et `symbol_rule`, en plus des formats Synapse deja presents. Certaines questions Synapse utilisent quatre propositions avec `correctOptionId` afin de rester compatibles avec le flux TV commun : selection, verrouillage, revelation et explication.
+
+L'interface est portee par `SynapseExerciseView`, avec un composant par mini-epreuve et une grille de reponses commune. La memoire affiche la sequence pendant la duree definie, la masque automatiquement, puis affiche les propositions sans retour arriere.
+
+Validation ajoutee : tests unitaires des generateurs et du scoring Synapse, tests moteur pour score/jokers, et parcours Playwright sur 1920 x 1080 et 1366 x 768.

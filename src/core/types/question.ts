@@ -8,7 +8,10 @@ export type QuestionType =
   | "chronology"
   | "analogy"
   | "memory"
-  | "sequence";
+  | "sequence"
+  | "intruder"
+  | "visual_matrix"
+  | "symbol_rule";
 
 export interface BaseQuestion {
   id: QuestionId;
@@ -39,9 +42,11 @@ export interface MultipleChoiceOption {
   label: string;
 }
 
+export type FourOptions = [MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption];
+
 export interface MultipleChoiceQuestion extends BaseQuestion {
   type: "multiple_choice";
-  options: [MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption];
+  options: FourOptions;
   correctOptionId: string;
   answer?: AnswerPayload | undefined;
   timeLimitSeconds?: number | undefined;
@@ -53,7 +58,7 @@ export interface ProgressiveCluesQuestion extends BaseQuestion {
   clues: string[];
   answer: AnswerPayload;
   pointsByClueIndex: number[];
-  options?: [MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption] | undefined;
+  options?: FourOptions | undefined;
   correctOptionId?: string | undefined;
 }
 
@@ -72,6 +77,8 @@ export interface ChronologyQuestion extends BaseQuestion {
   type: "chronology";
   items: ChronologyItem[];
   correctOrderIds: string[];
+  options?: FourOptions | undefined;
+  correctOptionId?: string | undefined;
 }
 
 export interface AnalogyQuestion extends BaseQuestion {
@@ -80,7 +87,8 @@ export interface AnalogyQuestion extends BaseQuestion {
   right: string;
   relation: string;
   missing: string;
-  options?: [MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption, MultipleChoiceOption] | undefined;
+  options?: FourOptions | undefined;
+  correctOptionId?: string | undefined;
   answer: AnswerPayload;
 }
 
@@ -88,6 +96,10 @@ export interface MemoryQuestion extends BaseQuestion {
   type: "memory";
   items: string[];
   recallPrompt: string;
+  mode?: "forward" | "reverse" | undefined;
+  displaySeconds?: number | undefined;
+  options?: FourOptions | undefined;
+  correctOptionId?: string | undefined;
   answer: AnswerPayload;
 }
 
@@ -96,6 +108,34 @@ export interface SequenceQuestion extends BaseQuestion {
   items: string[];
   correctOrder?: string[] | undefined;
   nextItem?: string | undefined;
+  options?: FourOptions | undefined;
+  correctOptionId?: string | undefined;
+  answer: AnswerPayload;
+}
+
+export interface IntruderQuestion extends BaseQuestion {
+  type: "intruder";
+  items: FourOptions;
+  correctOptionId: string;
+  answer: AnswerPayload;
+}
+
+export interface VisualMatrixQuestion extends BaseQuestion {
+  type: "visual_matrix";
+  grid: [string, string, string, string, string, string, string, string, string];
+  missingIndex: number;
+  options: FourOptions;
+  correctOptionId: string;
+  ruleLabel: string;
+  answer: AnswerPayload;
+}
+
+export interface SymbolRuleQuestion extends BaseQuestion {
+  type: "symbol_rule";
+  rule: string;
+  examples: [string, string, string];
+  options: FourOptions;
+  correctOptionId: string;
   answer: AnswerPayload;
 }
 
@@ -106,7 +146,10 @@ export type Question =
   | ChronologyQuestion
   | AnalogyQuestion
   | MemoryQuestion
-  | SequenceQuestion;
+  | SequenceQuestion
+  | IntruderQuestion
+  | VisualMatrixQuestion
+  | SymbolRuleQuestion;
 
 export type KnowledgeGridQuestion = MultipleChoiceQuestion & {
   kind: "knowledge-grid";
@@ -124,6 +167,18 @@ export type ClueRaceQuestion = ProgressiveCluesQuestion & {
 
 export type ConnectionsQuestion = ConnectionQuestion & {
   kind: "connections";
+};
+
+export type SynapseQuestion = (
+  | ChronologyQuestion
+  | AnalogyQuestion
+  | MemoryQuestion
+  | SequenceQuestion
+  | IntruderQuestion
+  | VisualMatrixQuestion
+  | SymbolRuleQuestion
+) & {
+  kind: "synapse";
 };
 
 export interface QuestionBank {

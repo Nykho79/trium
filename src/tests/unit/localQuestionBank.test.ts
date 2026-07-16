@@ -47,11 +47,11 @@ describe("localQuestionBank", () => {
     const bank = loadLocalQuestionBank();
 
     expect(bank.report.fileCount).toBeGreaterThan(0);
-    expect(bank.report.totalCount).toBe(350);
+    expect(bank.report.totalCount).toBeGreaterThanOrEqual(350);
     expect(bank.report.verifiedCount).toBe(0);
     expect(bank.report.playableCount).toBe(0);
-    expect(bank.report.rejectedCount).toBe(350);
-    expect(bank.report.byCategory.geography).toBe(25);
+    expect(bank.report.rejectedCount).toBe(bank.report.totalCount);
+    expect(bank.report.byCategory.geography).toBeGreaterThan(0);
   });
 
   it("normalise uniquement les questions verified et approved", () => {

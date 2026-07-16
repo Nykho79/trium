@@ -5,7 +5,7 @@ export const REQUIRED_PLAYER_COUNT = 3;
 export const STANDARD_FORMAT: GameFormat = {
   id: "standard-local",
   label: "Format classique",
-  description: "Une partie locale Ã©quilibrÃ©e pour dÃ©couvrir les sept manches de TRIUM.",
+  description: "Une partie locale ÃƒÂ©quilibrÃƒÂ©e pour dÃƒÂ©couvrir les sept manches de TRIUM.",
   roundOrder: [
     "knowledge-grid",
     "clue-race",
@@ -19,7 +19,7 @@ export const STANDARD_FORMAT: GameFormat = {
     "knowledge-grid": 8,
     "clue-race": 5,
     "pressure-choice": 5,
-    synapse: 4,
+    synapse: 6,
     connections: 3,
     wager: 3,
     "final-convergence": 5,

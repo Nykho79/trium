@@ -1,5 +1,5 @@
 import type { GameConfig, GameState, GameStatus, GameTimerState, QuestionId } from "../types/game";
-import type { ClueRaceQuestion, KnowledgeGridQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question } from "../types/question";
+import type { ClueRaceQuestion, KnowledgeGridQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion } from "../types/question";
 import type { RoundDefinition, RoundState } from "../types/round";
 import type { AnswerResult, JokerEffectState, JokerInventory, JokerType, ScoreBreakdown } from "../types/scoring";
 import type { GameEvent, GameEventType } from "../types/event";
@@ -8,6 +8,7 @@ import { gameStateSchema } from "../schemas/gameSchemas";
 import { calculateKnowledgeGridScore } from "../../rounds/knowledge-grid";
 import { calculateClueRaceScore, revealNextClueInState, showAnswersInState } from "../../rounds/clue-race";
 import { calculatePressureChoiceScore, isPressureChoiceComplete, loseRiskPoints, pressureStepIndex, secureRiskPoints, timeLimitForPressureStep } from "../../rounds/pressure-choice";
+import { calculateSynapseScore, correctSynapseOptionId } from "../../rounds/synapse";
 import { shuffleWithSeed } from "./random";
 
 export class GameEngineError extends Error {
@@ -172,10 +173,19 @@ function isAnswerCorrect(question: Question, answer: string | string[]): boolean
     return typeof answer === "string" && answer === question.correctOptionId;
   }
   if (question.type === "chronology") {
+    if (question.correctOptionId !== undefined) {
+      return typeof answer === "string" && answer === question.correctOptionId;
+    }
     return Array.isArray(answer) && answer.join("|") === question.correctOrderIds.join("|");
   }
   if (Array.isArray(answer)) {
     return false;
+  }
+  if (question.kind === "synapse") {
+    const correctOptionId = correctSynapseOptionId(question as SynapseQuestion);
+    if (correctOptionId !== undefined) {
+      return answer === correctOptionId;
+    }
   }
   return question.answer.accepted.map(normalizeText).includes(normalizeText(answer));
 }
@@ -188,7 +198,10 @@ function displayCorrectAnswer(question: Question): string | string[] {
     return question.correctOptionId ?? question.answer.display;
   }
   if (question.type === "chronology") {
-    return question.correctOrderIds;
+    return question.correctOptionId ?? question.correctOrderIds;
+  }
+  if (question.kind === "synapse") {
+    return correctSynapseOptionId(question as SynapseQuestion) ?? question.answer.display;
   }
   return question.answer.display;
 }
@@ -241,6 +254,17 @@ function calculateAnswerScore(question: Question, isCorrect: boolean, timer: Gam
       question: question as PressureChoiceQuestion,
       isCorrect,
       stepIndex: pressureStepIndex(roundState),
+    });
+  }
+
+  if (question.kind === "synapse") {
+    const timeLimitMs = timer ? timer.expiresAt - timer.startedAt : 30_000;
+    const answeredInMs = timer ? now - timer.startedAt : timeLimitMs;
+    return calculateSynapseScore({
+      question: question as SynapseQuestion,
+      isCorrect,
+      answeredInMs,
+      timeLimitMs,
     });
   }
   const basePoints = basePointsFor(question);
@@ -317,6 +341,7 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
 
 const FORBIDDEN_JOKERS_BY_ROUND: Partial<Record<GameConfig["rounds"][number]["kind"], readonly JokerType[]>> = {
   "clue-race": ["second_chance", "change_question", "contextual_hint", "team_vote"],
+  "synapse": ["fifty_fifty", "change_question", "team_vote"],
   "final-convergence": ["change_question", "team_vote"],
 };
 
@@ -779,6 +804,9 @@ export function applyJoker(state: GameState, input: ApplyJokerInput | JokerType,
 
   if (joker === "contextual_hint") {
     const question = findActiveQuestion(state, request.questions ?? []);
+    if (question.kind === "synapse" && question.type !== "analogy" && question.type !== "sequence") {
+      throw new GameEngineError("L'indice contextuel est reserve aux analogies et aux suites dans Synapse.");
+    }
     return withEvent({
       ...baseState,
       jokers: nextJokers,

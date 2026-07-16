@@ -15,6 +15,7 @@ Le projet contient maintenant :
 - la manche jouable `Grille des savoirs` avec grille 5 categories x 4 niveaux, verrouillage, revelation, score et retour grille ;
 - la manche jouable `Course aux indices` avec cinq indices progressifs, propositions sur demande et score decroissant ;
 - la manche jouable `Choix sous pression` avec cinq paliers, chrono decroissant, multiplicateurs et points a securiser ;
+- la manche jouable `Synapse` avec six mini-epreuves ludiques, generateurs deterministes, memoire masquee, scoring progressif et jokers limites ;
 - un systeme complet de jokers : 50/50, deuxieme chance, changement de question, indice contextuel, temps supplementaire et vote equipe ;
 - une banque de questions JSON locale dans `src/data/questions` ;
 - un chargeur local qui valide les fichiers JSON avec Zod, filtre les questions jouables et produit un rapport qualite ;
@@ -82,7 +83,7 @@ Les fichiers sources sont places dans `src/data/questions/*.json`. Le module `sr
 - evite les questions recemment jouees quand une alternative existe ;
 - equilibre categorie et difficulte selon l'historique de la partie.
 
-Etat actuel de la banque locale : 350 questions chargees, 14 categories, aucun doublon exact detecte, aucun doublon probable detecte, mais 0 question jouable car toutes les questions sont encore `to_verify` et `generated`.
+Etat actuel de la banque locale : le nombre depend des fichiers presents dans `src/data/questions`. Seules les questions `verificationStatus: "verified"` et `status: "approved"` sont jouables ; les autres restent chargees pour inspection mais sont rejetees du tirage.
 
 La page developpement `DevQuestionBankScreen` permet d'inspecter le rapport, les repartitions et un echantillon des questions chargees depuis l'application.
 
@@ -119,10 +120,10 @@ Principes actifs :
 
 Validation locale executee le 2026-07-16 :
 
-- `pnpm questions` : OK, 350 questions analysees ;
-- `pnpm check` : OK, lint + TypeScript + 80 tests unitaires ;
+- `pnpm check` : OK, lint + TypeScript + 89 tests unitaires ;
+- `pnpm test:e2e` : OK, 26 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
 - `pnpm build` : OK, avec avertissement Vite de chunk superieur a 500 kB ;
-- `pnpm test:e2e` : OK, 24 tests Playwright sur 1920 x 1080 et 1366 x 768.
+- `pnpm questions:json` : execute, mais les fichiers JSON non verifies presents localement produisent un rapport de rejet et un code de sortie non nul.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.
 
