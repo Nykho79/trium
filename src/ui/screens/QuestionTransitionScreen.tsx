@@ -8,6 +8,7 @@ import { useGameStore } from "../../app/store/gameStore";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
 import type { ConnectionsQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion } from "../../core/types";
 import { buildConnectionsQuestionSet, isConnectionsQuestion } from "../../rounds/connections";
+import { buildWagerQuestionSet } from "../../rounds/wager";
 import { buildSynapseQuestionSet, synapseOptions } from "../../rounds/synapse";
 
 function isPressureChoiceQuestion(question: Question): question is PressureChoiceQuestion {
@@ -71,7 +72,8 @@ export function QuestionTransitionScreen() {
   const result = gameState?.lastAnswerResult;
   const synapseQuestions = buildSynapseQuestionSet(gameState?.config.seed ?? "trium-synapse");
   const connectionQuestions = buildConnectionsQuestionSet(gameState?.config.seed ?? "trium-connections");
-  const allQuestions = [...questions, ...synapseQuestions, ...connectionQuestions];
+  const wagerQuestions = buildWagerQuestionSet(gameState?.config.seed ?? "trium-wager");
+  const allQuestions = [...questions, ...synapseQuestions, ...connectionQuestions, ...wagerQuestions];
   const question = allQuestions.find((candidate) => candidate.id === result?.questionId);
   const connectionQuestion = question && isConnectionsQuestion(question) ? question as ConnectionsQuestion : undefined;
   const round = gameState?.config.rounds[gameState.currentRoundIndex];
@@ -83,7 +85,7 @@ export function QuestionTransitionScreen() {
   const isPressureChoice = round?.kind === "pressure-choice";
   const pressureQuestions = questions.filter(isPressureChoiceQuestion);
   const pressureEndedByFailure = isPressureChoice && result?.isCorrect === false;
-  const returnLabel = round?.kind === "knowledge-grid" ? "Retour a la grille" : isPressureChoice ? "Continuer" : round?.kind === "synapse" ? "Epreuve suivante" : round?.kind === "connections" ? "Connexion suivante" : "Enigme suivante";
+  const returnLabel = round?.kind === "knowledge-grid" ? "Retour a la grille" : isPressureChoice ? "Continuer" : round?.kind === "synapse" ? "Epreuve suivante" : round?.kind === "connections" ? "Connexion suivante" : round?.kind === "wager" ? "Pari suivant" : "Enigme suivante";
 
   const continueRound = () => {
     if (pressureEndedByFailure || isRoundComplete) {

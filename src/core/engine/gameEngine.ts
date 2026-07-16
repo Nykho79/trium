@@ -9,6 +9,7 @@ import { calculateKnowledgeGridScore } from "../../rounds/knowledge-grid";
 import { calculateClueRaceScore, revealNextClueInState, showAnswersInState } from "../../rounds/clue-race";
 import { calculatePressureChoiceScore, isPressureChoiceComplete, loseRiskPoints, pressureStepIndex, secureRiskPoints, timeLimitForPressureStep } from "../../rounds/pressure-choice";
 import { calculateConnectionsScore, revealNextConnectionItemInState, showConnectionAnswersInState } from "../../rounds/connections";
+import { assertAllowedWagerAmount, calculateWagerScore, coefficientForWagerDifficulty } from "../../rounds/wager";
 import { calculateSynapseScore, correctSynapseOptionId } from "../../rounds/synapse";
 import { shuffleWithSeed } from "./random";
 
@@ -46,7 +47,12 @@ export interface ApplyJokerInput {
   questions?: readonly Question[] | undefined;
   now?: number | undefined;
 }
-
+export interface ConfigureWagerInput {
+  categoryId: string;
+  difficulty: 1 | 2 | 3 | 4 | 5;
+  amount: number;
+  now?: number | undefined;
+}
 interface AnswerOptionQuestion {
   id: QuestionId;
   options: readonly MultipleChoiceOption[];
@@ -196,7 +202,7 @@ function isAnswerCorrect(question: Question, answer: string | string[]): boolean
 
 function displayCorrectAnswer(question: Question): string | string[] {
   if (question.type === "multiple_choice") {
-    return question.correctOptionId;
+    return question.options.find((option) => option.id === question.correctOptionId)?.label ?? question.answer?.display ?? question.correctOptionId;
   }
   if (question.type === "progressive_clues") {
     return question.correctOptionId ?? question.answer.display;
@@ -232,6 +238,13 @@ function currentCorrectStreak(roundState: RoundState): number {
 }
 
 function calculateAnswerScore(question: Question, isCorrect: boolean, timer: GameTimerState | undefined, now: number, roundState: RoundState): ScoreBreakdown {
+  if (question.kind === "wager" && question.type === "multiple_choice") {
+    return calculateWagerScore({
+      isCorrect,
+      amount: roundState.wagerAmount ?? 100,
+      coefficient: roundState.wagerCoefficient ?? coefficientForWagerDifficulty(question.difficulty),
+    });
+  }
   if (!isCorrect) {
     return { ...emptyScore };
   }
@@ -308,6 +321,13 @@ function addScore(left: ScoreBreakdown, right: ScoreBreakdown): ScoreBreakdown {
   };
 }
 
+function clampScoreTotal(score: ScoreBreakdown): ScoreBreakdown {
+  if (score.total >= 0) {
+    return score;
+  }
+  return { ...score, wagerDelta: score.wagerDelta - score.total, total: 0 };
+}
+
 function scoreFromPoints(points: number): ScoreBreakdown {
   return {
     basePoints: points,
@@ -338,6 +358,12 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
     const expectedDifficulty = Math.min(5, roundState.currentQuestionIndex + 1);
     candidates = candidates.filter((question) => question.difficulty === expectedDifficulty);
   }
+  if (!explicitQuestion && definition.kind === "wager") {
+    if (!roundState.wagerCategoryId || roundState.wagerDifficulty === undefined || roundState.wagerAmount === undefined) {
+      throw new GameEngineError("Le pari doit etre configure avant de charger une question.");
+    }
+    candidates = candidates.filter((question) => question.categoryId === roundState.wagerCategoryId && question.difficulty === roundState.wagerDifficulty);
+  }
   const selected = explicitQuestion ?? shuffleWithSeed(
     candidates.filter((question) => !state.usedQuestionIds.includes(question.id)),
     `${state.config.seed}:${definition.id}:${roundState.currentQuestionIndex}`,
@@ -357,6 +383,7 @@ const FORBIDDEN_JOKERS_BY_ROUND: Partial<Record<GameConfig["rounds"][number]["ki
   "clue-race": ["second_chance", "change_question", "contextual_hint", "team_vote"],
   "synapse": ["fifty_fifty", "change_question", "team_vote"],
   "connections": ["change_question", "extra_time", "team_vote"],
+  "wager": ["change_question", "team_vote"],
   "final-convergence": ["change_question", "team_vote"],
 };
 
@@ -519,6 +546,11 @@ export function startRound(state: GameState, roundIndex = state.currentRoundInde
     connectionItemIndex: definition.kind === "connections" ? 0 : undefined,
     securedPoints: definition.kind === "pressure-choice" ? 0 : undefined,
     riskPoints: definition.kind === "pressure-choice" ? 0 : undefined,
+    wagerCategoryId: undefined,
+    wagerDifficulty: undefined,
+    wagerAmount: undefined,
+    wagerCoefficient: undefined,
+    wagerIsFreeStake: undefined,
   };
   const next = transition({
     ...cloneState(state),
@@ -530,6 +562,28 @@ export function startRound(state: GameState, roundIndex = state.currentRoundInde
     timer: undefined,
   }, "round_intro", now, "round_started");
   return next;
+}
+
+export function configureWager(state: GameState, input: ConfigureWagerInput): GameState {
+  requireStatus(state, ["round_intro", "answer_reveal"], "configureWager");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "wager") {
+    throw new GameEngineError("Cette action est reservee au Pari.");
+  }
+  const roundState = requireRound(state);
+  assertAllowedWagerAmount({ amount: input.amount, scoreTotal: state.score.total });
+  const coefficient = coefficientForWagerDifficulty(input.difficulty);
+  return withEvent({
+    ...cloneState(state),
+    currentRoundState: {
+      ...roundState,
+      wagerCategoryId: input.categoryId,
+      wagerDifficulty: input.difficulty,
+      wagerAmount: input.amount,
+      wagerCoefficient: coefficient,
+      wagerIsFreeStake: state.score.total < 100 && input.amount === 100,
+    },
+  }, "status_changed", input.now ?? 0, { message: `Pari configure: ${input.amount} x${coefficient}` });
 }
 
 export function loadQuestion(state: GameState, input: LoadQuestionInput): GameState {
@@ -662,13 +716,15 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
     answeredQuestionIds: [...roundState.answeredQuestionIds, question.id],
     answerResults: [...roundState.answerResults, { questionId: question.id, isCorrect }],
   };
-  const isPressureChoice = currentRoundDefinition(state).kind === "pressure-choice";
+  const roundDefinition = currentRoundDefinition(state);
+  const isPressureChoice = roundDefinition.kind === "pressure-choice";
+  const nextRoundScore = roundDefinition.kind === "wager" ? clampScoreTotal(addScore(roundState.score, score)) : addScore(roundState.score, score);
   const nextRoundState = isPressureChoice
     ? isCorrect
       ? { ...baseRoundState, riskPoints: (roundState.riskPoints ?? 0) + score.total }
       : loseRiskPoints(baseRoundState)
-    : { ...baseRoundState, score: addScore(roundState.score, score) };
-  const nextScore = isPressureChoice ? state.score : addScore(state.score, score);
+    : { ...baseRoundState, score: nextRoundScore };
+  const nextScore = isPressureChoice ? state.score : roundDefinition.kind === "wager" ? clampScoreTotal(addScore(state.score, score)) : addScore(state.score, score);
 
   return transition({
     ...cloneState(state),

@@ -18,14 +18,17 @@ import { useGameStore } from "../../app/store/gameStore";
 import { useSettingsStore } from "../../app/store/settingsStore";
 import { playJokerSound } from "../audio/soundManager";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
-import type { ClueRaceQuestion, JokerType, KnowledgeGridQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion, ConnectionsQuestion } from "../../core/types";
+import type { ClueRaceQuestion, ConnectionsQuestion, Difficulty, JokerType, KnowledgeGridQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion } from "../../core/types";
 import { buildKnowledgeGrid, selectKnowledgeGridQuestion } from "../../rounds/knowledge-grid";
 import { isClueRaceQuestion, pointsForClueIndex, visibleClues } from "../../rounds/clue-race";
 import { multiplierForPressureStep, timeLimitForPressureStep } from "../../rounds/pressure-choice";
 import { buildSynapseQuestionSet, isSynapseQuestion } from "../../rounds/synapse";
 import { buildConnectionsQuestionSet, isConnectionsQuestion, pointsForConnectionItemIndex } from "../../rounds/connections";
+import { buildWagerQuestionSet, coefficientForWagerDifficulty, isWagerQuestion, type WagerQuestion } from "../../rounds/wager";
 import { SynapseExerciseView } from "./SynapseExerciseView";
 import { ConnectionsExerciseView } from "./ConnectionsExerciseView";
+import { WagerQuestionView } from "./WagerQuestionView";
+import { WagerSetupView } from "./WagerSetupView";
 
 type VoteState = {
   active: boolean;
@@ -93,6 +96,7 @@ export function GameScreen() {
   const revealNextConnectionItemForCurrentQuestion = useGameStore((state) => state.revealNextConnectionItemForCurrentQuestion);
   const showClueRaceAnswerOptions = useGameStore((state) => state.showClueRaceAnswerOptions);
   const showConnectionAnswerOptionsForCurrentQuestion = useGameStore((state) => state.showConnectionAnswerOptionsForCurrentQuestion);
+  const configureCurrentWager = useGameStore((state) => state.configureCurrentWager);
   const navigate = useGameStore((state) => state.navigate);
   const soundEnabled = useSettingsStore((state) => state.soundEnabled);
   const masterMuted = useAudioStore((state) => state.masterMuted);
@@ -100,6 +104,11 @@ export function GameScreen() {
   const [loadError, setLoadError] = useState<string | undefined>(undefined);
   const [pendingJoker, setPendingJoker] = useState<JokerType | undefined>(undefined);
   const [voteState, setVoteState] = useState<VoteState>({ active: false, currentIndex: 0, votes: [] });
+  const [wagerCategoryId, setWagerCategoryId] = useState<string | undefined>(undefined);
+  const [wagerDifficulty, setWagerDifficulty] = useState<Difficulty | undefined>(undefined);
+  const [wagerAmount, setWagerAmount] = useState<number | undefined>(undefined);
+  const [wagerCustomAmount, setWagerCustomAmount] = useState("");
+  const [wagerConfirming, setWagerConfirming] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -129,18 +138,21 @@ export function GameScreen() {
   const targetCount = round?.questionCount ?? 8;
   const synapseQuestions = useMemo(() => buildSynapseQuestionSet(gameState?.config.seed ?? "trium-synapse"), [gameState?.config.seed]);
   const generatedConnectionQuestions = useMemo(() => buildConnectionsQuestionSet(gameState?.config.seed ?? "trium-connections"), [gameState?.config.seed]);
-  const allQuestions = useMemo(() => [...questions, ...synapseQuestions, ...generatedConnectionQuestions], [generatedConnectionQuestions, questions, synapseQuestions]);
+  const generatedWagerQuestions = useMemo(() => buildWagerQuestionSet(gameState?.config.seed ?? "trium-wager"), [gameState?.config.seed]);
+  const allQuestions = useMemo(() => [...questions, ...synapseQuestions, ...generatedConnectionQuestions, ...generatedWagerQuestions], [generatedConnectionQuestions, generatedWagerQuestions, questions, synapseQuestions]);
   const activeQuestion = allQuestions.find((question) => question.id === gameState?.activeQuestionId);
   const activeKnowledgeQuestion = activeQuestion && isKnowledgeGridQuestion(activeQuestion) ? activeQuestion : undefined;
   const activeClueQuestion = activeQuestion && isClueRaceQuestion(activeQuestion) ? activeQuestion : undefined;
   const activePressureQuestion = activeQuestion && isPressureChoiceQuestion(activeQuestion) ? activeQuestion : undefined;
   const activeSynapseQuestion = activeQuestion && isSynapseQuestion(activeQuestion) ? activeQuestion as SynapseQuestion : undefined;
   const activeConnectionQuestion = activeQuestion && isConnectionsQuestion(activeQuestion) ? activeQuestion as ConnectionsQuestion : undefined;
+  const activeWagerQuestion = activeQuestion && isWagerQuestion(activeQuestion) ? activeQuestion as WagerQuestion : undefined;
   const knowledgeQuestions = useMemo(() => questions.filter(isKnowledgeGridQuestion), [questions]);
   const clueQuestions = useMemo(() => questions.filter(isClueRaceQuestion), [questions]);
   const pressureQuestions = useMemo(() => questions.filter(isPressureChoiceQuestion), [questions]);
   const approvedSynapseQuestions = useMemo(() => synapseQuestions.filter(isSynapseQuestion), [synapseQuestions]);
   const connectionQuestions = useMemo(() => [...questions.filter(isConnectionsQuestion), ...generatedConnectionQuestions], [questions, generatedConnectionQuestions]);
+  const wagerQuestions = useMemo(() => generatedWagerQuestions.filter(isWagerQuestion), [generatedWagerQuestions]);
   const captain = gameState?.config.players.find((player) => player.id === gameState.captainPlayerId) ?? session.players[0];
   const isQuestionActive = gameState?.status === "question_active" || gameState?.status === "answer_locked";
   const isLocked = gameState?.status === "answer_locked";
@@ -148,6 +160,7 @@ export function GameScreen() {
   const isPressureChoice = round?.kind === "pressure-choice";
   const isSynapse = round?.kind === "synapse";
   const isConnections = round?.kind === "connections";
+  const isWager = round?.kind === "wager";
   const clueIndex = gameState?.currentRoundState?.clueIndex ?? 0;
   const answersVisible = gameState?.currentRoundState?.answersVisible === true || isLocked;
   const pressureStep = Math.min(4, gameState?.currentRoundState?.currentQuestionIndex ?? 0);
@@ -157,6 +170,9 @@ export function GameScreen() {
   const riskPoints = gameState?.currentRoundState?.riskPoints ?? 0;
   const connectionItemIndex = gameState?.currentRoundState?.connectionItemIndex ?? 0;
   const connectionPoints = pointsForConnectionItemIndex(Math.min(3, connectionItemIndex));
+  const activeWagerAmount = gameState?.currentRoundState?.wagerAmount ?? 100;
+  const activeWagerCoefficient = gameState?.currentRoundState?.wagerCoefficient ?? (activeWagerQuestion ? coefficientForWagerDifficulty(activeWagerQuestion.difficulty) : 1);
+  const activeWagerIsFreeStake = gameState?.currentRoundState?.wagerIsFreeStake === true;
   const canUseJoker = gameState?.status === "question_active" && activeQuestion !== undefined;
   const board = useMemo(() => buildKnowledgeGrid({
     questions: knowledgeQuestions,
@@ -187,6 +203,14 @@ export function GameScreen() {
 
   const loadNextConnectionQuestion = () => {
     loadCurrentQuestion({ questions: connectionQuestions });
+  };
+
+  const confirmWagerAndLoadQuestion = () => {
+    if (!wagerCategoryId || wagerDifficulty === undefined || wagerAmount === undefined) {
+      return;
+    }
+    configureCurrentWager({ categoryId: wagerCategoryId, difficulty: wagerDifficulty, amount: wagerAmount });
+    loadCurrentQuestion({ questions: wagerQuestions });
   };
 
   const submitAnswer = () => {
@@ -229,6 +253,9 @@ export function GameScreen() {
     if (isPressureChoice && joker === "change_question" && pressureStep >= 4) {
       return true;
     }
+    if (isWager && (joker === "change_question" || joker === "team_vote")) {
+      return true;
+    }
     if (isConnections) {
       if (joker === "change_question" || joker === "extra_time" || joker === "team_vote") {
         return true;
@@ -264,9 +291,9 @@ export function GameScreen() {
 
   return (
     <ScreenFrame title="Ecran de jeu">
-      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""} ${isPressureChoice ? "pressure-choice-layout" : ""} ${isSynapse ? "synapse-layout" : ""} ${isConnections ? "connections-layout" : ""}`}>
-        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""} ${isPressureChoice ? "pressure-choice-stage" : ""} ${isSynapse ? "synapse-stage" : ""} ${isConnections ? "connections-stage" : ""}`}>
-          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : isPressureChoice ? "Continuer ou securiser" : isSynapse ? "Mini-epreuves ludiques" : isConnections ? "Lien commun progressif" : "Le capitaine choisit une case"} />
+      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""} ${isPressureChoice ? "pressure-choice-layout" : ""} ${isSynapse ? "synapse-layout" : ""} ${isConnections ? "connections-layout" : ""} ${isWager ? "wager-layout" : ""}`}>
+        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""} ${isPressureChoice ? "pressure-choice-stage" : ""} ${isSynapse ? "synapse-stage" : ""} ${isConnections ? "connections-stage" : ""} ${isWager ? "wager-stage" : ""}`}>
+          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : isPressureChoice ? "Continuer ou securiser" : isSynapse ? "Mini-epreuves ludiques" : isConnections ? "Lien commun progressif" : isWager ? "Categorie, difficulte, mise" : "Le capitaine choisit une case"} />
           <ScoreBoard score={session.score.teamScore} streak={session.score.streak} roundLabel={`Question ${Math.min(answeredCount + 1, targetCount)}`} />
 
           {loadError ? <FeedbackBanner tone="warning" title="Banque indisponible" message={loadError} /> : null}
@@ -274,7 +301,7 @@ export function GameScreen() {
           {gameState.jokerEffects.contextualHint ? <FeedbackBanner tone="info" title="Indice contextuel" message={gameState.jokerEffects.contextualHint} /> : null}
           {gameState.jokerEffects.secondChanceConsumed && gameState.status === "question_active" ? <FeedbackBanner tone="warning" title="Seconde chance" message="Premiere reponse incorrecte. La prochaine bonne reponse vaudra 50 % des points." /> : null}
 
-          {!isClueRace && !isPressureChoice && !isSynapse && !isConnections && !isQuestionActive ? (
+          {!isClueRace && !isPressureChoice && !isSynapse && !isConnections && !isWager && !isQuestionActive ? (
             <div className="knowledge-grid-board" role="grid" aria-label="Grille des savoirs">
               {board.columns.map((column) => (
                 <section key={column.categoryId} className="knowledge-grid-column" aria-label={column.categoryLabel}>
@@ -328,6 +355,30 @@ export function GameScreen() {
               <p>{answeredCount >= targetCount ? "Les six mini-epreuves sont jouees." : "Une epreuve ludique est tiree avec la seed de partie. Maximum deux epreuves du meme type."}</p>
               {answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : <Button variant="primary" onClick={loadNextSynapseQuestion} disabled={approvedSynapseQuestions.length === 0} data-testid="start-synapse-question">Lancer l'epreuve</Button>}
             </div>
+          ) : null}
+
+          {isWager && !isQuestionActive ? (
+            <WagerSetupView
+              questions={wagerQuestions}
+              usedQuestionIds={gameState.usedQuestionIds}
+              seed={gameState.config.seed}
+              teamScore={gameState.score.total}
+              selectedCategoryId={wagerCategoryId}
+              selectedDifficulty={wagerDifficulty}
+              selectedAmount={wagerAmount}
+              customAmount={wagerCustomAmount}
+              isConfirming={wagerConfirming}
+              answeredCount={answeredCount}
+              targetCount={targetCount}
+              onSelectCategory={(categoryId) => { setWagerCategoryId(categoryId); setWagerDifficulty(undefined); setWagerAmount(undefined); setWagerConfirming(false); }}
+              onSelectDifficulty={(difficulty) => { setWagerDifficulty(difficulty); setWagerAmount(undefined); setWagerConfirming(false); }}
+              onSelectAmount={(amount) => { setWagerAmount(amount); setWagerConfirming(false); }}
+              onCustomAmountChange={(value) => { setWagerCustomAmount(value.replace(/\D/g, "")); setWagerConfirming(false); }}
+              onRequestConfirm={() => setWagerConfirming(true)}
+              onCancelConfirm={() => setWagerConfirming(false)}
+              onConfirm={confirmWagerAndLoadQuestion}
+              onCompleteRound={() => completeCurrentRound()}
+            />
           ) : null}
 
           {isConnections && !isQuestionActive ? (
@@ -472,6 +523,23 @@ export function GameScreen() {
 
 
 
+          {isQuestionActive && activeWagerQuestion ? (
+            <>
+              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
+              <WagerQuestionView
+                question={activeWagerQuestion}
+                amount={activeWagerAmount}
+                coefficient={activeWagerCoefficient}
+                isFreeStake={activeWagerIsFreeStake}
+                isLocked={isLocked}
+                selectedAnswerId={selectedAnswerId}
+                eliminatedOptionIds={gameState.jokerEffects.eliminatedOptionIds}
+                onSelect={selectAnswer}
+              />
+              {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message="Le resultat du pari sera applique a la revelation." /> : null}
+            </>
+          ) : null}
+
           {isQuestionActive && activeConnectionQuestion ? (
             <>
               <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
@@ -524,7 +592,7 @@ export function GameScreen() {
             <h2>Progression</h2>
             <div className="knowledge-progress-card">
               <strong>{answeredCount} / {targetCount}</strong>
-              <span>{isClueRace ? "enigmes jouees" : isPressureChoice ? "paliers joues" : isSynapse ? "epreuves jouees" : isConnections ? "connexions jouees" : "questions selectionnees"}</span>
+              <span>{isClueRace ? "enigmes jouees" : isPressureChoice ? "paliers joues" : isSynapse ? "epreuves jouees" : isConnections ? "connexions jouees" : isWager ? "paris joues" : "questions selectionnees"}</span>
             </div>
           </Panel>
           <Panel>

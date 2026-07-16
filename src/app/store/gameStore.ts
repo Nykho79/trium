@@ -7,6 +7,7 @@ import {
   applyJoker,
   completeGame,
   completeRound,
+  configureWager,
   createGame,
   expirePressureChoiceQuestion,
   loadQuestion,
@@ -99,9 +100,9 @@ const DEFAULT_ROUNDS: RoundDefinition[] = [
     kind: "wager",
     label: "Le Pari",
     description: "Categorie, difficulte et mise choisies par l'equipe.",
-    questionTypes: ["multiple_choice", "progressive_clues", "connection"],
-    questionCount: 3,
-    maxScore: 1_500,
+    questionTypes: ["multiple_choice"],
+    questionCount: 5,
+    maxScore: 12_500,
   },
   {
     id: "final-convergence",
@@ -166,6 +167,7 @@ interface GameStoreState {
   revealNextConnectionItemForCurrentQuestion: (now?: number | undefined) => void;
   showClueRaceAnswerOptions: (now?: number | undefined) => void;
   showConnectionAnswerOptionsForCurrentQuestion: (now?: number | undefined) => void;
+  configureCurrentWager: (input: { categoryId: string; difficulty: 1 | 2 | 3 | 4 | 5; amount: number; now?: number | undefined }) => void;
   securePressureChoiceRisk: (now?: number | undefined) => void;
   expireCurrentPressureChoiceQuestion: (questions: readonly Question[], now?: number | undefined) => void;
   resumeSavedGame: () => void;
@@ -547,6 +549,18 @@ export const useGameStore = create<GameStoreState>()((set) => ({
     }
     try {
       const gameState = showConnectionAnswerOptions(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: undefined });
+      return { gameState, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  configureCurrentWager: (input) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = configureWager(state.gameState, { ...input, now: input.now ?? Date.now() });
       const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: undefined });
       return { gameState, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {

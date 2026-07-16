@@ -21,7 +21,7 @@ export const STANDARD_FORMAT: GameFormat = {
     "pressure-choice": 5,
     synapse: 6,
     connections: 5,
-    wager: 3,
+    wager: 5,
     "final-convergence": 5,
   },
 };

@@ -17,6 +17,7 @@ Le projet contient maintenant :
 - la manche jouable `Choix sous pression` avec cinq paliers, chrono decroissant, multiplicateurs et points a securiser ;
 - la manche jouable `Synapse` avec six mini-epreuves ludiques, generateurs deterministes, memoire masquee, scoring progressif et jokers limites ;
 - la manche jouable `Connexions` avec quatre elements progressifs, propositions sur demande, score decroissant, details de revelation et jokers limites ;
+- la manche jouable `Le Pari` avec choix categorie/difficulte/mise, confirmation obligatoire, gain ou perte de mise et jokers limites ;
 - un systeme complet de jokers : 50/50, deuxieme chance, changement de question, indice contextuel, temps supplementaire et vote equipe ;
 - une banque de questions JSON locale dans `src/data/questions` ;
 - un chargeur local qui valide les fichiers JSON avec Zod, filtre les questions jouables et produit un rapport qualite ;
@@ -121,8 +122,8 @@ Principes actifs :
 
 Validation locale executee le 2026-07-16 :
 
-- `pnpm check` : OK, lint + TypeScript + 102 tests unitaires ;
-- `pnpm test:e2e` : OK, 28 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
+- `pnpm check` : OK, lint + TypeScript + 114 tests unitaires ;
+- `pnpm test:e2e` : OK, 30 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
 - `pnpm build` : OK, avec avertissement Vite de chunk superieur a 500 kB ;
 - `pnpm questions:json` : execute, mais les fichiers JSON non verifies presents localement produisent un rapport de rejet et un code de sortie non nul.
 

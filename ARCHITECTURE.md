@@ -1103,6 +1103,7 @@ Les formats de questions metier et les schemas Zod acceptent maintenant `intrude
 L'interface est portee par `SynapseExerciseView`, avec un composant par mini-epreuve et une grille de reponses commune. La memoire affiche la sequence pendant la duree definie, la masque automatiquement, puis affiche les propositions sans retour arriere.
 
 Validation ajoutee : tests unitaires des generateurs et du scoring Synapse, tests moteur pour score/jokers, et parcours Playwright sur 1920 x 1080 et 1366 x 768.
+
 ## 27. Manche Connexions
 
 La manche `connections` est implementee dans `src/rounds/connections`. Elle respecte l'interface `GameRound` et reste independante de React.
@@ -1123,3 +1124,27 @@ Regles implementees :
 Le type `ConnectionQuestion` accepte maintenant quatre propositions optionnelles, un `correctOptionId`, des `itemDetails` et un indicateur `randomizeItems`. Le schema Zod impose la coherence entre propositions et bonne option. Le moteur expose `revealNextConnectionItem` et `showConnectionAnswerOptions` pour separer la revelation progressive du verrouillage de reponse.
 
 L'interface est portee par `ConnectionsExerciseView` : quatre cartes centrales, compteur de points disponibles, boutons `Element suivant` et `Repondre maintenant`, et grille de reponses compatible 50/50. Le parcours Playwright valide la manche en 1920 x 1080 et 1366 x 768.
+
+## 28. Manche Le Pari
+
+La manche `wager` est implementee dans `src/rounds/wager`. Elle respecte l'interface `GameRound` et conserve les calculs de mise dans des fonctions pures testables.
+
+Regles implementees :
+
+- cinq paris par manche ;
+- choix explicite d'une categorie, d'une difficulte et d'une mise avant chaque question ;
+- coefficients : facile x1, moyen x2, difficile x3, expert x5 ;
+- mises standard 100, 250 et 500 ;
+- mise libre plafonnee a 25 % du score actuel ;
+- impossibilite de miser plus que le score disponible ;
+- mise minimale gratuite de 100 points fictifs si le score global est inferieur a 100 ;
+- bonne reponse : gain `mise x coefficient` ;
+- mauvaise reponse : perte limitee a la mise ;
+- score global borne a zero ;
+- selection de question filtree par categorie et difficulte, sans repetition dans la partie ;
+- `fifty_fifty`, `second_chance`, `contextual_hint` et `extra_time` sont autorises ;
+- `change_question` et `team_vote` sont interdits dans cette manche.
+
+Le moteur expose `configureWager` pour enregistrer le pari avant `loadQuestion`. `RoundState` persiste `wagerCategoryId`, `wagerDifficulty`, `wagerAmount`, `wagerCoefficient` et `wagerIsFreeStake`, avec validation Zod dans `roundStateSchema`.
+
+L'interface est portee par `WagerSetupView` et `WagerQuestionView` : selection en trois etapes, resume clair, confirmation obligatoire, panneau de question avec gain possible, perte maximale, jokers visibles et transition de revelation. Le parcours Playwright valide la manche en 1920 x 1080 et 1366 x 768.

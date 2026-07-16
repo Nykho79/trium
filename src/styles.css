@@ -2162,3 +2162,167 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Wager round */
+.wager-stage {
+  background: linear-gradient(145deg, rgba(16, 14, 34, 0.94), rgba(52, 24, 48, 0.78));
+}
+
+.wager-empty-state,
+.wager-setup,
+.wager-live {
+  display: grid;
+  gap: 22px;
+  align-content: center;
+  min-height: min(64vh, 700px);
+}
+
+.wager-empty-state,
+.wager-setup-heading {
+  text-align: center;
+}
+
+.wager-empty-state h1,
+.wager-setup-heading h1,
+.wager-live h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(42px, 4.2vw, 76px);
+  line-height: 1.05;
+}
+
+.wager-empty-state p,
+.wager-setup-heading p,
+.wager-confirm-panel p {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--color-muted);
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.wager-step-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.wager-step-panel {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.wager-step-panel h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.wager-choice-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.wager-choice-grid button {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border: 1px solid rgba(159, 178, 196, 0.32);
+  border-radius: var(--radius-control);
+  padding: 14px 18px;
+  color: var(--color-text);
+  background: rgba(3, 7, 13, 0.46);
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 850;
+  text-align: left;
+}
+
+.wager-choice-grid button strong {
+  color: var(--color-amber);
+  font-size: 28px;
+}
+
+.wager-choice-grid button.is-selected {
+  border-color: var(--color-amber);
+  box-shadow: inset 0 0 0 2px rgba(255, 176, 32, 0.18), 0 0 24px rgba(255, 176, 32, 0.16);
+}
+
+.wager-choice-grid button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.wager-custom-input {
+  display: grid;
+  gap: 8px;
+  color: var(--color-muted);
+  font-size: 20px;
+  font-weight: 850;
+}
+
+.wager-custom-input input {
+  min-height: 64px;
+  border: 1px solid rgba(159, 178, 196, 0.34);
+  border-radius: var(--radius-control);
+  padding: 0 16px;
+  color: var(--color-text);
+  background: rgba(3, 7, 13, 0.56);
+  font-size: 24px;
+  font-weight: 850;
+}
+
+.wager-summary-panel,
+.wager-question-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  align-items: center;
+}
+
+.wager-summary-panel div {
+  display: grid;
+  gap: 6px;
+  border: 1px solid rgba(255, 176, 32, 0.22);
+  border-radius: var(--radius-control);
+  padding: 14px;
+  background: rgba(3, 7, 13, 0.38);
+}
+
+.wager-summary-panel span {
+  color: var(--color-muted);
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.wager-summary-panel strong,
+.wager-question-summary strong {
+  color: var(--color-amber);
+  font-size: 28px;
+}
+
+.wager-confirm-panel {
+  display: grid;
+  gap: 18px;
+  border-color: rgba(255, 176, 32, 0.46);
+}
+
+.wager-confirm-panel > strong {
+  color: var(--color-amber);
+  font-size: 32px;
+  text-align: center;
+}
+
+.wager-live .answer-button {
+  min-height: 112px;
+}
+
+@media (max-width: 1200px) {
+  .wager-step-grid,
+  .wager-summary-panel,
+  .wager-question-summary {
+    grid-template-columns: 1fr;
+  }
+}
