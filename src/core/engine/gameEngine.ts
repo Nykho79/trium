@@ -11,6 +11,7 @@ import { calculatePressureChoiceScore, isPressureChoiceComplete, loseRiskPoints,
 import { calculateConnectionsScore, revealNextConnectionItemInState, showConnectionAnswersInState } from "../../rounds/connections";
 import { assertAllowedWagerAmount, calculateWagerScore, coefficientForWagerDifficulty } from "../../rounds/wager";
 import { calculateSynapseScore, correctSynapseOptionId } from "../../rounds/synapse";
+import { advantageById, calculateFinalConvergenceScore, canApplyFinalAdvantageToStep, finalStepForIndex, finalStepForQuestion, type FinalConvergenceAdvantageId } from "../../rounds/final-convergence";
 import { shuffleWithSeed } from "./random";
 
 export class GameEngineError extends Error {
@@ -45,6 +46,10 @@ export interface RevealAnswerInput {
 export interface ApplyJokerInput {
   joker: JokerType;
   questions?: readonly Question[] | undefined;
+  now?: number | undefined;
+}
+export interface PurchaseFinalAdvantageInput {
+  advantageId: FinalConvergenceAdvantageId;
   now?: number | undefined;
 }
 export interface ConfigureWagerInput {
@@ -238,6 +243,9 @@ function currentCorrectStreak(roundState: RoundState): number {
 }
 
 function calculateAnswerScore(question: Question, isCorrect: boolean, timer: GameTimerState | undefined, now: number, roundState: RoundState): ScoreBreakdown {
+  if (question.kind === "final-convergence") {
+    return calculateFinalConvergenceScore(isCorrect);
+  }
   if (question.kind === "wager" && question.type === "multiple_choice") {
     return calculateWagerScore({
       isCorrect,
@@ -338,6 +346,63 @@ function scoreFromPoints(points: number): ScoreBreakdown {
     total: points,
   };
 }
+
+function finalPurchasedAdvantages(roundState: RoundState): readonly FinalConvergenceAdvantageId[] {
+  return (roundState.finalPurchasedAdvantageIds ?? []) as readonly FinalConvergenceAdvantageId[];
+}
+
+function finalUsedAdvantages(roundState: RoundState): readonly FinalConvergenceAdvantageId[] {
+  return (roundState.finalUsedAdvantageIds ?? []) as readonly FinalConvergenceAdvantageId[];
+}
+
+function hasFinalAdvantage(roundState: RoundState, advantageId: FinalConvergenceAdvantageId): boolean {
+  return finalPurchasedAdvantages(roundState).includes(advantageId);
+}
+
+function hasUsedFinalAdvantage(roundState: RoundState, advantageId: FinalConvergenceAdvantageId): boolean {
+  return finalUsedAdvantages(roundState).includes(advantageId);
+}
+
+function markFinalAdvantageUsed(roundState: RoundState, advantageId: FinalConvergenceAdvantageId): RoundState {
+  if (hasUsedFinalAdvantage(roundState, advantageId)) {
+    return roundState;
+  }
+  return { ...roundState, finalUsedAdvantageIds: [...(roundState.finalUsedAdvantageIds ?? []), advantageId] };
+}
+
+function finalAdvantageCanTrigger(roundState: RoundState, advantageId: FinalConvergenceAdvantageId, question: Question): boolean {
+  const step = finalStepForQuestion(question);
+  return step !== undefined && hasFinalAdvantage(roundState, advantageId) && !hasUsedFinalAdvantage(roundState, advantageId) && canApplyFinalAdvantageToStep(advantageId, step);
+}
+
+function questionOptions(question: Question): readonly MultipleChoiceOption[] | undefined {
+  if (question.type === "multiple_choice" || question.type === "progressive_clues" || question.type === "connection" || question.type === "chronology" || question.type === "analogy" || question.type === "memory" || question.type === "sequence") {
+    return question.options;
+  }
+  if (question.type === "intruder") {
+    return question.items;
+  }
+  if (question.type === "visual_matrix" || question.type === "symbol_rule") {
+    return question.options;
+  }
+  return undefined;
+}
+
+function questionCorrectOptionId(question: Question): string | undefined {
+  if ("correctOptionId" in question) {
+    return question.correctOptionId;
+  }
+  return undefined;
+}
+
+function deterministicSingleWrongOption(question: Question, seed: string): string | undefined {
+  const options = questionOptions(question);
+  const correctOptionId = questionCorrectOptionId(question);
+  if (!options || !correctOptionId) {
+    return undefined;
+  }
+  return shuffleWithSeed(options.filter((option) => option.id !== correctOptionId).map((option) => option.id), `${seed}:final:remove-wrong:${question.id}`)[0];
+}
 function findActiveQuestion(state: GameState, questions: readonly Question[]): Question {
   if (!state.activeQuestionId) {
     throw new GameEngineError("Aucune question active.");
@@ -358,7 +423,10 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
     const expectedDifficulty = Math.min(5, roundState.currentQuestionIndex + 1);
     candidates = candidates.filter((question) => question.difficulty === expectedDifficulty);
   }
-  if (!explicitQuestion && definition.kind === "wager") {
+  if (!explicitQuestion && definition.kind === "final-convergence") {
+    const expectedStep = finalStepForIndex(roundState.currentQuestionIndex);
+    candidates = candidates.filter((question) => finalStepForQuestion(question) === expectedStep);
+  }  if (!explicitQuestion && definition.kind === "wager") {
     if (!roundState.wagerCategoryId || roundState.wagerDifficulty === undefined || roundState.wagerAmount === undefined) {
       throw new GameEngineError("Le pari doit etre configure avant de charger une question.");
     }
@@ -384,7 +452,7 @@ const FORBIDDEN_JOKERS_BY_ROUND: Partial<Record<GameConfig["rounds"][number]["ki
   "synapse": ["fifty_fifty", "change_question", "team_vote"],
   "connections": ["change_question", "extra_time", "team_vote"],
   "wager": ["change_question", "team_vote"],
-  "final-convergence": ["change_question", "team_vote"],
+  "final-convergence": ["fifty_fifty", "second_chance", "change_question", "contextual_hint", "extra_time", "team_vote"],
 };
 
 function resetQuestionJokerEffects(effects: JokerEffectState): JokerEffectState {
@@ -551,6 +619,8 @@ export function startRound(state: GameState, roundIndex = state.currentRoundInde
     wagerAmount: undefined,
     wagerCoefficient: undefined,
     wagerIsFreeStake: undefined,
+    finalPurchasedAdvantageIds: definition.kind === "final-convergence" ? [] : undefined,
+    finalUsedAdvantageIds: definition.kind === "final-convergence" ? [] : undefined,
   };
   const next = transition({
     ...cloneState(state),
@@ -564,6 +634,30 @@ export function startRound(state: GameState, roundIndex = state.currentRoundInde
   return next;
 }
 
+export function purchaseFinalAdvantage(state: GameState, input: PurchaseFinalAdvantageInput): GameState {
+  requireStatus(state, ["round_intro"], "purchaseFinalAdvantage");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "final-convergence") {
+    throw new GameEngineError("Cette action est reservee a Convergence finale.");
+  }
+  const roundState = requireRound(state);
+  const advantage = advantageById(input.advantageId);
+  if (hasFinalAdvantage(roundState, input.advantageId)) {
+    throw new GameEngineError("Cet avantage est deja achete.");
+  }
+  if (state.score.total < advantage.cost) {
+    throw new GameEngineError("Score insuffisant pour acheter cet avantage.");
+  }
+  const costScore: ScoreBreakdown = { ...emptyScore, jokerPenalty: advantage.cost, total: -advantage.cost };
+  return withEvent({
+    ...cloneState(state),
+    currentRoundState: {
+      ...roundState,
+      finalPurchasedAdvantageIds: [...(roundState.finalPurchasedAdvantageIds ?? []), input.advantageId],
+    },
+    score: addScore(state.score, costScore),
+  }, "status_changed", input.now ?? 0, { message: `Avantage achete: ${advantage.label}` });
+}
 export function configureWager(state: GameState, input: ConfigureWagerInput): GameState {
   requireStatus(state, ["round_intro", "answer_reveal"], "configureWager");
   const definition = currentRoundDefinition(state);
@@ -595,14 +689,28 @@ export function loadQuestion(state: GameState, input: LoadQuestionInput): GameSt
   if (!captain) {
     throw new GameEngineError("Capitaine introuvable.");
   }
-  const durationMs = questionDurationMs(selected, state.config, pressureStepIndex(roundState));
-  const nextRoundState: RoundState = {
+  let durationMs = questionDurationMs(selected, state.config, pressureStepIndex(roundState));
+  let nextRoundState: RoundState = {
     ...roundState,
     selectedQuestionIds: [...roundState.selectedQuestionIds, selected.id],
-    clueIndex: selected.kind === "clue-race" ? 0 : roundState.clueIndex,
-    answersVisible: selected.kind === "clue-race" || selected.kind === "connections" ? false : roundState.answersVisible,
-    connectionItemIndex: selected.kind === "connections" ? 0 : roundState.connectionItemIndex,
+    clueIndex: selected.kind === "clue-race" || selected.kind === "final-convergence" ? 0 : roundState.clueIndex,
+    answersVisible: selected.kind === "clue-race" || selected.kind === "connections" || selected.kind === "final-convergence" ? false : roundState.answersVisible,
+    connectionItemIndex: selected.kind === "connections" || selected.kind === "final-convergence" ? 0 : roundState.connectionItemIndex,
   };
+  let nextJokerEffects = resetQuestionJokerEffects(state.jokerEffects);
+  if (selected.kind === "final-convergence") {
+    if (finalAdvantageCanTrigger(nextRoundState, "extra_time", selected)) {
+      durationMs += 15_000;
+      nextRoundState = markFinalAdvantageUsed(nextRoundState, "extra_time");
+    }
+    if (finalAdvantageCanTrigger(nextRoundState, "remove_wrong_answer", selected)) {
+      const eliminatedOptionId = deterministicSingleWrongOption(selected, state.config.seed);
+      if (eliminatedOptionId !== undefined) {
+        nextJokerEffects = { ...nextJokerEffects, eliminatedOptionIds: [eliminatedOptionId] };
+        nextRoundState = markFinalAdvantageUsed(nextRoundState, "remove_wrong_answer");
+      }
+    }
+  }
   let next = transition({
     ...cloneState(state),
     status: "question_loading",
@@ -612,12 +720,30 @@ export function loadQuestion(state: GameState, input: LoadQuestionInput): GameSt
     timer: { startedAt: input.now, expiresAt: input.now + durationMs },
     lockedAnswer: undefined,
     lastAnswerResult: undefined,
+    jokerEffects: nextJokerEffects,
     usedQuestionIds: [...state.usedQuestionIds, selected.id],
   }, "question_active", input.now, "question_loaded");
   next = withEvent(next, "captain_rotated", input.now, { questionId: selected.id, message: `Capitaine: ${captain.id}` });
   return next;
 }
 
+export function activateFinalConvergenceHint(state: GameState, questions: readonly Question[], now = 0): GameState {
+  requireStatus(state, ["question_active", "answer_locked"], "activateFinalConvergenceHint");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "final-convergence") {
+    throw new GameEngineError("Cette action est reservee a Convergence finale.");
+  }
+  const question = findActiveQuestion(state, questions);
+  const roundState = requireRound(state);
+  if (!finalAdvantageCanTrigger(roundState, "extra_hint", question)) {
+    throw new GameEngineError("Aucun indice supplementaire disponible pour cette etape.");
+  }
+  return withEvent({
+    ...cloneState(state),
+    currentRoundState: markFinalAdvantageUsed(roundState, "extra_hint"),
+    jokerEffects: { ...state.jokerEffects, contextualHint: hintFor(question) },
+  }, "status_changed", now, { questionId: question.id, message: "Indice supplementaire de finale affiche." });
+}
 export function revealNextClue(state: GameState, now = 0): GameState {
   requireStatus(state, ["question_active"], "revealNextClue");
   const definition = currentRoundDefinition(state);
@@ -688,10 +814,9 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
     throw new GameEngineError("Cette reponse a deja ete comptee.");
   }
   const question = findActiveQuestion(state, input.questions);
-  const isCorrect = isAnswerCorrect(question, state.lockedAnswer);
-  const roundState = requireRound(state);
-  const initialScore = calculateAnswerScore(question, isCorrect, state.timer, input.now, roundState);
-  const score = state.jokerEffects.secondChanceConsumed && isCorrect ? halveScore(initialScore) : initialScore;
+  const rawIsCorrect = isAnswerCorrect(question, state.lockedAnswer);
+  let isCorrect = rawIsCorrect;
+  let roundState = requireRound(state);
 
   if (!isCorrect && state.jokerEffects.secondChanceActive && !state.jokerEffects.secondChanceConsumed) {
     return withEvent({
@@ -701,6 +826,23 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
       jokerEffects: { ...state.jokerEffects, secondChanceActive: false, secondChanceConsumed: true },
     }, "joker_used", input.now, { joker: "second_chance", questionId: question.id, message: "Seconde chance activee." });
   }
+
+  if (!isCorrect && question.kind === "final-convergence" && finalAdvantageCanTrigger(roundState, "second_chance", question)) {
+    return withEvent({
+      ...cloneState(state),
+      status: "question_active",
+      lockedAnswer: undefined,
+      currentRoundState: markFinalAdvantageUsed(roundState, "second_chance"),
+    }, "status_changed", input.now, { questionId: question.id, message: "Deuxieme chance de finale activee." });
+  }
+
+  if (!isCorrect && question.kind === "final-convergence" && state.lockedAnswer !== "temps-ecoule" && finalAdvantageCanTrigger(roundState, "error_protection", question)) {
+    isCorrect = true;
+    roundState = markFinalAdvantageUsed(roundState, "error_protection");
+  }
+
+  const initialScore = calculateAnswerScore(question, isCorrect, state.timer, input.now, roundState);
+  const score = state.jokerEffects.secondChanceConsumed && isCorrect ? halveScore(initialScore) : initialScore;
   const result: AnswerResult = {
     questionId: question.id,
     isCorrect,

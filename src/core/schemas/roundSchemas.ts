@@ -36,6 +36,8 @@ export const roundStateSchema = z.object({
   wagerAmount: z.number().int().positive().optional(),
   wagerCoefficient: z.number().int().positive().optional(),
   wagerIsFreeStake: z.boolean().optional(),
+  finalPurchasedAdvantageIds: z.array(z.string().min(1)).optional(),
+  finalUsedAdvantageIds: z.array(z.string().min(1)).optional(),
 });
 
 export const roundSummarySchema = z.object({

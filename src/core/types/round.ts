@@ -38,6 +38,8 @@ export interface RoundState {
   wagerAmount?: number | undefined;
   wagerCoefficient?: number | undefined;
   wagerIsFreeStake?: boolean | undefined;
+  finalPurchasedAdvantageIds?: string[] | undefined;
+  finalUsedAdvantageIds?: string[] | undefined;
 }
 
 export interface RoundQuestionSelectionInput<TQuestion extends Question = Question> {

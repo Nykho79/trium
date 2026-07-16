@@ -12,6 +12,7 @@ import {
   expirePressureChoiceQuestion,
   loadQuestion,
   pauseGame,
+  purchaseFinalAdvantage,
   resumeGame,
   revealNextClue,
   revealNextConnectionItem,
@@ -23,6 +24,7 @@ import {
   startGame,
   startRound,
   submitAnswer,
+  activateFinalConvergenceHint,
 } from "../../core/engine/gameEngine";
 import type {
   AppScreen,
@@ -168,6 +170,8 @@ interface GameStoreState {
   showClueRaceAnswerOptions: (now?: number | undefined) => void;
   showConnectionAnswerOptionsForCurrentQuestion: (now?: number | undefined) => void;
   configureCurrentWager: (input: { categoryId: string; difficulty: 1 | 2 | 3 | 4 | 5; amount: number; now?: number | undefined }) => void;
+  purchaseFinalAdvantageForCurrentRound: (advantageId: "extra_time" | "remove_wrong_answer" | "extra_hint" | "second_chance" | "error_protection", now?: number | undefined) => void;
+  activateFinalHintForCurrentQuestion: (questions: readonly Question[], now?: number | undefined) => void;
   securePressureChoiceRisk: (now?: number | undefined) => void;
   expireCurrentPressureChoiceQuestion: (questions: readonly Question[], now?: number | undefined) => void;
   resumeSavedGame: () => void;
@@ -555,7 +559,30 @@ export const useGameStore = create<GameStoreState>()((set) => ({
       return { engineError: errorMessage(error) };
     }
   }),
-  configureCurrentWager: (input) => set((state) => {
+  purchaseFinalAdvantageForCurrentRound: (advantageId, now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = purchaseFinalAdvantage(state.gameState, { advantageId, now: now ?? Date.now() });
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: undefined });
+      return { gameState, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  activateFinalHintForCurrentQuestion: (questions, now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = activateFinalConvergenceHint(state.gameState, questions, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+      return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),  configureCurrentWager: (input) => set((state) => {
     if (!state.gameState) {
       return { engineError: "Aucune partie active." };
     }

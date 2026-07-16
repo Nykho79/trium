@@ -25,10 +25,13 @@ import { multiplierForPressureStep, timeLimitForPressureStep } from "../../round
 import { buildSynapseQuestionSet, isSynapseQuestion } from "../../rounds/synapse";
 import { buildConnectionsQuestionSet, isConnectionsQuestion, pointsForConnectionItemIndex } from "../../rounds/connections";
 import { buildWagerQuestionSet, coefficientForWagerDifficulty, isWagerQuestion, type WagerQuestion } from "../../rounds/wager";
+import { buildFinalConvergenceQuestionSet, canApplyFinalAdvantageToStep, finalStepForQuestion, isFinalConvergenceQuestion, type FinalConvergenceQuestion } from "../../rounds/final-convergence";
 import { SynapseExerciseView } from "./SynapseExerciseView";
 import { ConnectionsExerciseView } from "./ConnectionsExerciseView";
 import { WagerQuestionView } from "./WagerQuestionView";
 import { WagerSetupView } from "./WagerSetupView";
+import { FinalConvergenceSetupView } from "./FinalConvergenceSetupView";
+import { FinalConvergenceQuestionView } from "./FinalConvergenceQuestionView";
 
 type VoteState = {
   active: boolean;
@@ -97,6 +100,8 @@ export function GameScreen() {
   const showClueRaceAnswerOptions = useGameStore((state) => state.showClueRaceAnswerOptions);
   const showConnectionAnswerOptionsForCurrentQuestion = useGameStore((state) => state.showConnectionAnswerOptionsForCurrentQuestion);
   const configureCurrentWager = useGameStore((state) => state.configureCurrentWager);
+  const purchaseFinalAdvantageForCurrentRound = useGameStore((state) => state.purchaseFinalAdvantageForCurrentRound);
+  const activateFinalHintForCurrentQuestion = useGameStore((state) => state.activateFinalHintForCurrentQuestion);
   const navigate = useGameStore((state) => state.navigate);
   const soundEnabled = useSettingsStore((state) => state.soundEnabled);
   const masterMuted = useAudioStore((state) => state.masterMuted);
@@ -139,7 +144,8 @@ export function GameScreen() {
   const synapseQuestions = useMemo(() => buildSynapseQuestionSet(gameState?.config.seed ?? "trium-synapse"), [gameState?.config.seed]);
   const generatedConnectionQuestions = useMemo(() => buildConnectionsQuestionSet(gameState?.config.seed ?? "trium-connections"), [gameState?.config.seed]);
   const generatedWagerQuestions = useMemo(() => buildWagerQuestionSet(gameState?.config.seed ?? "trium-wager"), [gameState?.config.seed]);
-  const allQuestions = useMemo(() => [...questions, ...synapseQuestions, ...generatedConnectionQuestions, ...generatedWagerQuestions], [generatedConnectionQuestions, generatedWagerQuestions, questions, synapseQuestions]);
+  const generatedFinalQuestions = useMemo(() => buildFinalConvergenceQuestionSet(gameState?.config.seed ?? "trium-final"), [gameState?.config.seed]);
+  const allQuestions = useMemo(() => [...questions, ...synapseQuestions, ...generatedConnectionQuestions, ...generatedWagerQuestions, ...generatedFinalQuestions], [generatedConnectionQuestions, generatedFinalQuestions, generatedWagerQuestions, questions, synapseQuestions]);
   const activeQuestion = allQuestions.find((question) => question.id === gameState?.activeQuestionId);
   const activeKnowledgeQuestion = activeQuestion && isKnowledgeGridQuestion(activeQuestion) ? activeQuestion : undefined;
   const activeClueQuestion = activeQuestion && isClueRaceQuestion(activeQuestion) ? activeQuestion : undefined;
@@ -147,12 +153,14 @@ export function GameScreen() {
   const activeSynapseQuestion = activeQuestion && isSynapseQuestion(activeQuestion) ? activeQuestion as SynapseQuestion : undefined;
   const activeConnectionQuestion = activeQuestion && isConnectionsQuestion(activeQuestion) ? activeQuestion as ConnectionsQuestion : undefined;
   const activeWagerQuestion = activeQuestion && isWagerQuestion(activeQuestion) ? activeQuestion as WagerQuestion : undefined;
+  const activeFinalQuestion = activeQuestion && isFinalConvergenceQuestion(activeQuestion) ? activeQuestion as FinalConvergenceQuestion : undefined;
   const knowledgeQuestions = useMemo(() => questions.filter(isKnowledgeGridQuestion), [questions]);
   const clueQuestions = useMemo(() => questions.filter(isClueRaceQuestion), [questions]);
   const pressureQuestions = useMemo(() => questions.filter(isPressureChoiceQuestion), [questions]);
   const approvedSynapseQuestions = useMemo(() => synapseQuestions.filter(isSynapseQuestion), [synapseQuestions]);
   const connectionQuestions = useMemo(() => [...questions.filter(isConnectionsQuestion), ...generatedConnectionQuestions], [questions, generatedConnectionQuestions]);
   const wagerQuestions = useMemo(() => generatedWagerQuestions.filter(isWagerQuestion), [generatedWagerQuestions]);
+  const finalQuestions = useMemo(() => generatedFinalQuestions.filter(isFinalConvergenceQuestion), [generatedFinalQuestions]);
   const captain = gameState?.config.players.find((player) => player.id === gameState.captainPlayerId) ?? session.players[0];
   const isQuestionActive = gameState?.status === "question_active" || gameState?.status === "answer_locked";
   const isLocked = gameState?.status === "answer_locked";
@@ -161,6 +169,7 @@ export function GameScreen() {
   const isSynapse = round?.kind === "synapse";
   const isConnections = round?.kind === "connections";
   const isWager = round?.kind === "wager";
+  const isFinalConvergence = round?.kind === "final-convergence";
   const clueIndex = gameState?.currentRoundState?.clueIndex ?? 0;
   const answersVisible = gameState?.currentRoundState?.answersVisible === true || isLocked;
   const pressureStep = Math.min(4, gameState?.currentRoundState?.currentQuestionIndex ?? 0);
@@ -173,6 +182,10 @@ export function GameScreen() {
   const activeWagerAmount = gameState?.currentRoundState?.wagerAmount ?? 100;
   const activeWagerCoefficient = gameState?.currentRoundState?.wagerCoefficient ?? (activeWagerQuestion ? coefficientForWagerDifficulty(activeWagerQuestion.difficulty) : 1);
   const activeWagerIsFreeStake = gameState?.currentRoundState?.wagerIsFreeStake === true;
+  const finalPurchasedAdvantageIds = gameState?.currentRoundState?.finalPurchasedAdvantageIds ?? [];
+  const finalUsedAdvantageIds = gameState?.currentRoundState?.finalUsedAdvantageIds ?? [];
+  const activeFinalStep = activeFinalQuestion ? finalStepForQuestion(activeFinalQuestion) : undefined;
+  const canUseFinalHint = activeFinalStep !== undefined && finalPurchasedAdvantageIds.includes("extra_hint") && !finalUsedAdvantageIds.includes("extra_hint") && canApplyFinalAdvantageToStep("extra_hint", activeFinalStep);
   const canUseJoker = gameState?.status === "question_active" && activeQuestion !== undefined;
   const board = useMemo(() => buildKnowledgeGrid({
     questions: knowledgeQuestions,
@@ -203,6 +216,10 @@ export function GameScreen() {
 
   const loadNextConnectionQuestion = () => {
     loadCurrentQuestion({ questions: connectionQuestions });
+  };
+
+  const loadNextFinalQuestion = () => {
+    loadCurrentQuestion({ questions: finalQuestions });
   };
 
   const confirmWagerAndLoadQuestion = () => {
@@ -253,6 +270,9 @@ export function GameScreen() {
     if (isPressureChoice && joker === "change_question" && pressureStep >= 4) {
       return true;
     }
+    if (isFinalConvergence) {
+      return true;
+    }
     if (isWager && (joker === "change_question" || joker === "team_vote")) {
       return true;
     }
@@ -291,9 +311,9 @@ export function GameScreen() {
 
   return (
     <ScreenFrame title="Ecran de jeu">
-      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""} ${isPressureChoice ? "pressure-choice-layout" : ""} ${isSynapse ? "synapse-layout" : ""} ${isConnections ? "connections-layout" : ""} ${isWager ? "wager-layout" : ""}`}>
-        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""} ${isPressureChoice ? "pressure-choice-stage" : ""} ${isSynapse ? "synapse-stage" : ""} ${isConnections ? "connections-stage" : ""} ${isWager ? "wager-stage" : ""}`}>
-          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : isPressureChoice ? "Continuer ou securiser" : isSynapse ? "Mini-epreuves ludiques" : isConnections ? "Lien commun progressif" : isWager ? "Categorie, difficulte, mise" : "Le capitaine choisit une case"} />
+      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""} ${isPressureChoice ? "pressure-choice-layout" : ""} ${isSynapse ? "synapse-layout" : ""} ${isConnections ? "connections-layout" : ""} ${isWager ? "wager-layout" : ""} ${isFinalConvergence ? "final-layout" : ""}`}>
+        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""} ${isPressureChoice ? "pressure-choice-stage" : ""} ${isSynapse ? "synapse-stage" : ""} ${isConnections ? "connections-stage" : ""} ${isWager ? "wager-stage" : ""} ${isFinalConvergence ? "final-stage" : ""}`}>
+          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : isPressureChoice ? "Continuer ou securiser" : isSynapse ? "Mini-epreuves ludiques" : isConnections ? "Lien commun progressif" : isWager ? "Categorie, difficulte, mise" : isFinalConvergence ? "Cinq etapes pour conclure" : "Le capitaine choisit une case"} />
           <ScoreBoard score={session.score.teamScore} streak={session.score.streak} roundLabel={`Question ${Math.min(answeredCount + 1, targetCount)}`} />
 
           {loadError ? <FeedbackBanner tone="warning" title="Banque indisponible" message={loadError} /> : null}
@@ -301,7 +321,7 @@ export function GameScreen() {
           {gameState.jokerEffects.contextualHint ? <FeedbackBanner tone="info" title="Indice contextuel" message={gameState.jokerEffects.contextualHint} /> : null}
           {gameState.jokerEffects.secondChanceConsumed && gameState.status === "question_active" ? <FeedbackBanner tone="warning" title="Seconde chance" message="Premiere reponse incorrecte. La prochaine bonne reponse vaudra 50 % des points." /> : null}
 
-          {!isClueRace && !isPressureChoice && !isSynapse && !isConnections && !isWager && !isQuestionActive ? (
+          {!isClueRace && !isPressureChoice && !isSynapse && !isConnections && !isWager && !isFinalConvergence && !isQuestionActive ? (
             <div className="knowledge-grid-board" role="grid" aria-label="Grille des savoirs">
               {board.columns.map((column) => (
                 <section key={column.categoryId} className="knowledge-grid-column" aria-label={column.categoryLabel}>
@@ -357,6 +377,16 @@ export function GameScreen() {
             </div>
           ) : null}
 
+          {isFinalConvergence && !isQuestionActive ? (
+            <FinalConvergenceSetupView
+              score={gameState.score.total}
+              purchasedAdvantageIds={finalPurchasedAdvantageIds}
+              usedQuestionCount={answeredCount}
+              answerResults={gameState.currentRoundState?.answerResults ?? []}
+              onBuyAdvantage={(advantageId) => purchaseFinalAdvantageForCurrentRound(advantageId)}
+              onStart={answeredCount >= targetCount ? () => completeCurrentRound() : loadNextFinalQuestion}
+            />
+          ) : null}
           {isWager && !isQuestionActive ? (
             <WagerSetupView
               questions={wagerQuestions}
@@ -388,6 +418,20 @@ export function GameScreen() {
               <p>{answeredCount >= targetCount ? "Les cinq connexions sont jouees." : "Quatre elements vont apparaitre progressivement. Repondre tot rapporte plus de points."}</p>
               {answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : <Button variant="primary" onClick={loadNextConnectionQuestion} disabled={connectionQuestions.length === 0} data-testid="start-connection-question">Afficher le premier element</Button>}
             </div>
+          ) : null}
+          {isQuestionActive && activeFinalQuestion ? (
+            <FinalConvergenceQuestionView
+              question={activeFinalQuestion}
+              stepIndex={answeredCount}
+              isLocked={isLocked}
+              selectedAnswerId={selectedAnswerId}
+              eliminatedOptionIds={gameState.jokerEffects.eliminatedOptionIds}
+              remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())}
+              totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000}
+              canUseHint={canUseFinalHint}
+              onUseHint={() => activateFinalHintForCurrentQuestion(finalQuestions)}
+              onSelect={(answerId) => selectAnswer(answerId)}
+            />
           ) : null}
           {isQuestionActive && activeKnowledgeQuestion ? (
             <div className="question-live knowledge-question-live">

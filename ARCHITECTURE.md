@@ -1148,3 +1148,29 @@ Regles implementees :
 Le moteur expose `configureWager` pour enregistrer le pari avant `loadQuestion`. `RoundState` persiste `wagerCategoryId`, `wagerDifficulty`, `wagerAmount`, `wagerCoefficient` et `wagerIsFreeStake`, avec validation Zod dans `roundStateSchema`.
 
 L'interface est portee par `WagerSetupView` et `WagerQuestionView` : selection en trois etapes, resume clair, confirmation obligatoire, panneau de question avec gain possible, perte maximale, jokers visibles et transition de revelation. Le parcours Playwright valide la manche en 1920 x 1080 et 1366 x 768.
+## 29. Finale Convergence
+
+La finale `final-convergence` est implementee dans `src/rounds/final-convergence`. Elle respecte l'interface `GameRound` et combine cinq formats deja presents dans le moteur : QCM, indices progressifs, connexion, memoire et enigme logique.
+
+Regles implementees :
+
+- cinq etapes dans un ordre fixe : culture generale, indices, connexion, memoire, logique ;
+- victoire avec au moins quatre reussites sur cinq ;
+- score de 1 000 points par etape reussie ;
+- les points accumules permettent d'acheter des avantages avant le depart ;
+- chaque avantage ne peut etre achete et utilise qu'une fois ;
+- le cout est retire du score global au moment de l'achat ;
+- les jokers classiques sont interdits dans cette finale ;
+- protection d'erreur et deuxieme chance sont gerees par le moteur avant le comptage definitif.
+
+Avantages disponibles :
+
+- `extra_time` : +15 secondes, 300 points ;
+- `remove_wrong_answer` : retire une mauvaise reponse, 500 points ;
+- `extra_hint` : indice supplementaire prepare, 400 points ;
+- `second_chance` : deuxieme tentative sur une etape, 700 points ;
+- `error_protection` : annule une erreur hors expiration, 1 000 points.
+
+Le moteur expose `purchaseFinalAdvantage` et `activateFinalConvergenceHint`. `RoundState` persiste `finalPurchasedAdvantageIds` et `finalUsedAdvantageIds`, valides par Zod.
+
+L'interface est portee par `FinalConvergenceSetupView` et `FinalConvergenceQuestionView`. L'ecran de fin affiche explicitement `Convergence remportee` ou `Convergence manquee`, le nombre d'etapes reussies, le score et un titre d'equipe sans formulation humiliante. Le parcours Playwright valide l'achat d'avantages et la premiere etape sur 1920 x 1080 et 1366 x 768.
