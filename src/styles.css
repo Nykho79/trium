@@ -2552,6 +2552,7 @@ body {
   box-shadow: 0 18px 58px rgba(0, 0, 0, 0.42);
   font-size: 22px;
   font-weight: 850;
+  pointer-events: none;
   text-align: center;
 }
 
@@ -2603,5 +2604,204 @@ body {
     min-width: 88px;
     min-height: 46px;
     font-size: 16px;
+  }
+}
+/* Responsive viewport safety */
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app-shell {
+  min-width: 0;
+  min-height: 100dvh;
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+.ambient-grid {
+  position: fixed;
+  pointer-events: none;
+}
+
+.screen-slot {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.screen-frame {
+  width: min(calc(100vw / var(--trium-ui-scale)), 1920px);
+  max-width: 100%;
+  min-width: 0;
+  min-height: calc(100dvh / var(--trium-ui-scale));
+  padding-top: max(76px, clamp(20px, 3vw, 56px));
+}
+
+.screen-frame > *,
+.ds-card,
+.panel,
+.card,
+.game-stage,
+.side-rail,
+.settings-panel,
+.question-live,
+.question-preview {
+  min-width: 0;
+}
+
+.home-grid,
+.game-layout,
+.round-header,
+.score-board,
+.general-card-grid,
+.mode-grid,
+.result-metrics-grid,
+.final-status-strip,
+.final-question-topline,
+.final-connection-cards,
+.final-advantage-grid,
+.ds-grid,
+.token-grid {
+  max-width: 100%;
+}
+
+img,
+svg,
+canvas,
+video {
+  max-width: 100%;
+}
+
+@media (max-width: 1500px), (max-height: 860px) {
+  :root {
+    --font-body: 22px;
+    --font-answer: 22px;
+    --font-action: 22px;
+    --font-title: clamp(38px, 5vw, 56px);
+    --font-display: clamp(64px, 9vw, 104px);
+  }
+
+  .screen-frame {
+    padding-inline: clamp(16px, 3vw, 36px);
+    padding-bottom: clamp(20px, 3vw, 44px);
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 28px;
+    min-height: auto;
+  }
+
+  .brand-stage {
+    gap: 18px;
+  }
+
+  .orbital-mark {
+    width: min(56vw, 420px);
+    transform: translateY(-42px);
+  }
+
+  .home-primary-actions,
+  .general-card-grid,
+  .mode-grid,
+  .result-metrics-grid,
+  .round-score-list,
+  .round-header,
+  .score-board,
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .game-stage,
+  .question-live,
+  .question-preview,
+  .settings-panel,
+  .round-intro-card,
+  .intro-brief {
+    padding: clamp(18px, 3vw, 32px);
+  }
+}
+
+@media (max-width: 1000px), (max-height: 720px) {
+  :root {
+    --font-body: 20px;
+    --font-answer: 20px;
+    --font-action: 20px;
+  }
+
+  .screen-frame {
+    padding-top: 72px;
+    padding-inline: 14px;
+  }
+
+  .tv-controls {
+    left: 12px;
+    right: 12px;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .tv-size-warning {
+    position: sticky;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    transform: none;
+    margin: 0 14px 14px;
+    font-size: 18px;
+  }
+
+  .answer-grid,
+  .setup-grid,
+  .team-row,
+  .score-strip,
+  .side-rail,
+  .final-advantage-grid,
+  .final-status-strip,
+  .final-question-topline,
+  .final-connection-cards,
+  .ds-grid,
+  .token-grid,
+  .joker-demo-grid,
+  .component-demo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-actions,
+  .screen-actions,
+  .home-primary-actions {
+    flex-direction: column;
+  }
+
+  .btn,
+  .answer-button,
+  .settings-list button,
+  .setting-row {
+    min-height: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .screen-frame {
+    padding-inline: 10px;
+  }
+
+  .tv-control-button {
+    min-width: 0;
+    padding: 0 12px;
+    font-size: 14px;
   }
 }

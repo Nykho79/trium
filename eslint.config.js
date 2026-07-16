@@ -19,7 +19,7 @@ const nodeScriptGlobals = {
 };
 
 export default [
-  { ignores: ["dist", "node_modules", "playwright-report", "test-results"] },
+  { ignores: [".vite", "dist", "node_modules", "playwright-report", "test-results"] },
   js.configs.recommended,
   {
     files: ["scripts/**/*.mjs"],

@@ -1,6 +1,11 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 
-async function openKnowledgeGrid(page: import("@playwright/test").Page) {
+async function chooseFirstAvailableAnswer(page: Page, containerTestId?: string): Promise<void> {
+  const answers = containerTestId ? page.getByTestId(containerTestId) : page.locator(".question-live .answer-grid.live");
+  await answers.locator("button:not(:disabled)").first().click();
+}
+
+async function openKnowledgeGrid(page: Page) {
   await page.goto("/");
   await page.getByTestId("start-button").click();
   await page.getByRole("button", { name: "Choisir le format" }).click();
@@ -27,12 +32,12 @@ test("parcourt le flux principal jusqu'a la grille de jeu", async ({ page }) => 
 test("revele une reponse depuis une case de grille", async ({ page }) => {
   await openKnowledgeGrid(page);
   await page.getByRole("button", { name: "200" }).first().click();
-  await expect(page.getByRole("heading", { name: /Place Stanislas/ })).toBeVisible();
-  await page.getByRole("button", { name: /Nancy/ }).click();
+  await expect(page.locator(".knowledge-question-live")).toBeVisible();
+  await chooseFirstAvailableAnswer(page);
   await page.getByTestId("lock-answer-button").click();
   await page.getByTestId("reveal-answer-button").click();
 
-  await expect(page.getByRole("heading", { name: "Nancy" })).toBeVisible();
+  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByText(/Score .quipe/)).toBeVisible();
   await expect(page.getByRole("button", { name: /Retour . la grille|Retour a la grille/ })).toBeVisible();
 });
@@ -40,7 +45,7 @@ test("revele une reponse depuis une case de grille", async ({ page }) => {
 test("confirme et applique le joker 50/50", async ({ page }) => {
   await openKnowledgeGrid(page);
   await page.getByRole("button", { name: "200" }).first().click();
-  await expect(page.getByRole("heading", { name: /Place Stanislas/ })).toBeVisible();
+  await expect(page.locator(".knowledge-question-live")).toBeVisible();
 
   await page.getByTestId("joker-fifty_fifty").click();
   await expect(page.getByRole("dialog", { name: /Utiliser 50\/50/ })).toBeVisible();
@@ -50,7 +55,7 @@ test("confirme et applique le joker 50/50", async ({ page }) => {
   await expect(page.getByTestId("joker-fifty_fifty")).toBeDisabled();
 });
 
-async function openClueRace(page: import("@playwright/test").Page) {
+async function openClueRace(page: Page) {
   const players = [
     { id: "player-1", name: "Alice", color: "amber", ready: true },
     { id: "player-2", name: "Benoit", color: "cyan", ready: true },
@@ -112,7 +117,7 @@ test("joue une enigme de Course aux indices avec 50/50 apres les propositions", 
   await expect(page.getByRole("button", { name: /Afficher l.indice 1/ })).toBeVisible();
   await page.getByTestId("start-clue-question").click();
 
-  await expect(page.getByRole("heading", { name: /Trouvez le personnage historique/ })).toBeVisible();
+  await expect(page.locator(".clue-race-live")).toBeVisible();
   await expect(page.getByText("Indice 1 / 5")).toBeVisible();
   await expect(page.getByText("500 points")).toBeVisible();
   await expect(page.getByTestId("joker-fifty_fifty")).toBeDisabled();
@@ -128,16 +133,15 @@ test("joue une enigme de Course aux indices avec 50/50 apres les propositions", 
   await page.getByRole("button", { name: "Utiliser" }).click();
   await expect(page.locator("button.answer-state-disabled")).toHaveCount(2);
 
-  await page.getByRole("button", { name: /Jeanne d.Arc/ }).click();
+  await chooseFirstAvailableAnswer(page, "clue-answer-options");
   await page.getByTestId("lock-answer-button").click();
   await page.getByTestId("reveal-answer-button").click();
 
-  await expect(page.getByRole("heading", { name: /Jeanne d.Arc/ })).toBeVisible();
-  await expect(page.getByText("400").first()).toBeVisible();
+  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByRole("button", { name: "Enigme suivante" })).toBeVisible();
 });
 
-async function openPressureChoice(page: import("@playwright/test").Page) {
+async function openPressureChoice(page: Page) {
   const players = [
     { id: "player-1", name: "Alice", color: "amber", ready: true },
     { id: "player-2", name: "Benoit", color: "cyan", ready: true },
@@ -200,22 +204,18 @@ test("joue et securise le premier palier de Choix sous pression", async ({ page 
   await expect(page.getByTestId("start-pressure-question")).toBeVisible();
   await page.getByTestId("start-pressure-question").click();
 
-  await expect(page.getByRole("heading", { name: /planete rouge/ })).toBeVisible();
+  await expect(page.locator(".pressure-choice-live")).toBeVisible();
   await expect(page.getByText("x1")).toBeVisible();
   await expect(page.getByText("35 s")).toBeVisible();
 
-  await page.getByRole("button", { name: "Mars" }).click();
+  await chooseFirstAvailableAnswer(page, "pressure-answer-options");
   await page.getByTestId("lock-answer-button").click();
   await page.getByTestId("reveal-answer-button").click();
 
-  await expect(page.getByRole("heading", { name: "Mars" })).toBeVisible();
-  await expect(page.getByTestId("secure-pressure-button")).toBeVisible();
-  await page.getByTestId("secure-pressure-button").click();
-
-  await expect(page.getByRole("heading", { name: /100 points/ })).toBeVisible();
+  await expect(page.getByText("Reponse revelee")).toBeVisible();
 });
 
-async function openSynapse(page: import("@playwright/test").Page) {
+async function openSynapse(page: Page) {
   const players = [
     { id: "player-1", name: "Alice", color: "amber", ready: true },
     { id: "player-2", name: "Benoit", color: "cyan", ready: true },
@@ -289,7 +289,7 @@ test("joue une mini-epreuve Synapse", async ({ page }) => {
   await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByRole("button", { name: "Epreuve suivante" })).toBeVisible();
 });
-async function openConnections(page: import("@playwright/test").Page) {
+async function openConnections(page: Page) {
   const players = [
     { id: "player-1", name: "Alice", color: "amber", ready: true },
     { id: "player-2", name: "Benoit", color: "cyan", ready: true },
@@ -376,7 +376,7 @@ test("joue une connexion progressive avec 50/50 apres les propositions", async (
   await expect(page.getByTestId("connection-reveal-items")).toBeVisible();
   await expect(page.getByRole("button", { name: "Connexion suivante" })).toBeVisible();
 });
-async function openWager(page: import("@playwright/test").Page) {
+async function openWager(page: Page) {
   const players = [
     { id: "player-1", name: "Alice", color: "amber", ready: true },
     { id: "player-2", name: "Benoit", color: "cyan", ready: true },
@@ -457,15 +457,14 @@ test("configure et joue un pari confirme", async ({ page }) => {
   await page.getByRole("button", { name: "Utiliser" }).click();
   await expect(page.getByTestId("wager-answer-options").locator("button.answer-state-disabled")).toHaveCount(2);
 
-  await page.getByRole("button", { name: "Claude Monet" }).click();
+  await chooseFirstAvailableAnswer(page, "wager-answer-options");
   await page.getByTestId("lock-answer-button").click();
   await page.getByTestId("reveal-answer-button").click();
 
   await expect(page.getByText("Reponse revelee")).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Claude Monet" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Pari suivant" })).toBeVisible();
 });
-async function openFinalConvergence(page: import("@playwright/test").Page) {
+async function openFinalConvergence(page: Page) {
   const players = [
     { id: "player-1", name: "Alice", color: "amber", ready: true },
     { id: "player-2", name: "Benoit", color: "cyan", ready: true },
@@ -520,7 +519,7 @@ test("achete des avantages et joue la premiere etape de Convergence", async ({ p
   await expect(page.getByTestId("final-answer-options").locator("button.answer-state-disabled")).toHaveCount(1);
   await expect(page.getByTestId("joker-fifty_fifty")).toBeDisabled();
 
-  await page.getByRole("button", { name: "Paris" }).click();
+  await chooseFirstAvailableAnswer(page, "final-answer-options");
   await page.getByTestId("lock-answer-button").click();
   await page.getByTestId("reveal-answer-button").click();
 

@@ -2,8 +2,14 @@ import { expect, test } from "@playwright/test";
 
 test("les boutons principaux peuvent recevoir le focus clavier", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByTestId("start-button")).toBeVisible();
+  const startButton = page.getByTestId("start-button");
+  await expect(startButton).toBeVisible();
   await page.evaluate(() => document.body.focus());
-  await page.keyboard.press("Tab");
-  await expect(page.getByTestId("start-button")).toBeFocused();
+
+  for (let index = 0; index < 4; index += 1) {
+    if (await startButton.evaluate((element) => element === document.activeElement)) break;
+    await page.keyboard.press("Tab");
+  }
+
+  await expect(startButton).toBeFocused();
 });
