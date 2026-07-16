@@ -100,6 +100,19 @@ L'etat React est separe en trois stores Zustand :
 
 La sauvegarde locale est versionnee par `STORAGE_SCHEMA_VERSION` et validee avec Zod dans `src/app/store/persistence.ts`. Une sauvegarde corrompue ou d'une version inconnue est ignoree avec un message d'erreur stocke dans le store, sans bloquer l'application.
 
+
+## Usage TV / HDMI
+
+L'application expose des controles globaux adaptes a un ordinateur branche en HDMI :
+
+- bouton `Plein ecran` puis `Sortir` disponible en permanence ;
+- raccourci clavier `F` pour basculer le plein ecran ;
+- raccourci `Echap` pour ouvrir ou fermer le menu des parametres ;
+- avertissement si la fenetre descend sous 1280 x 720 ;
+- zoom interne reglable dans `Parametres -> Zoom interface` jusqu'a 125 % ;
+- tentative de maintien de l'ecran actif via Screen Wake Lock quand le navigateur le permet ;
+- curseur masque apres inactivite et restaure au mouvement ;
+- tests Playwright executes sur 1920 x 1080, 1366 x 768 et 1280 x 720.
 ## Design system
 
 Les composants TV-first reutilisables sont centralises dans `src/ui/components` et documentes dans `DESIGN.md`. La page interne de demonstration est accessible en developpement depuis `Parametres -> Design system`.
@@ -123,9 +136,10 @@ Principes actifs :
 
 Validation locale executee le 2026-07-16 :
 
-- `pnpm check` : OK, lint + TypeScript + 124 tests unitaires ;
-- `pnpm test:e2e` : OK, 32 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
-- `pnpm build` : OK, avec avertissement Vite de chunk superieur a 500 kB ;
+- `pnpm check` : OK, lint + TypeScript + 127 tests unitaires ;
+- `pnpm playwright test src/tests/e2e/tv-runtime.spec.ts` : OK, 12 tests Playwright sur 1920 x 1080, 1366 x 768 et 1280 x 720, avec zoom interface 125 % et zoom navigateur simule 125 % ;
+- `pnpm test:e2e` : derniere validation complete connue OK, 32 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
+- `pnpm build` : derniere validation connue OK, avec avertissement Vite de chunk superieur a 500 kB ;
 - `pnpm questions:json` : execute, mais les fichiers JSON non verifies presents localement produisent un rapport de rejet et un code de sortie non nul.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.

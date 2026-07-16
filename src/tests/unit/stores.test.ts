@@ -41,7 +41,7 @@ describe("zustand stores", () => {
   });
 
   it("signale une sauvegarde invalide sans bloquer le store", () => {
-    localStorage.setItem(STORAGE_KEYS.savedSession, "{cassÃ©");
+    localStorage.setItem(STORAGE_KEYS.savedSession, "{cassÃƒÂ©");
 
     useGameStore.getState().resumeSavedGame();
     const state = useGameStore.getState();
@@ -87,5 +87,15 @@ describe("zustand stores", () => {
     expect(state.gameState?.config.playerMode).toBe("solo");
     expect(state.gameState?.config.players).toHaveLength(1);
     expect(state.gameState?.captainPlayerId).toBe("player-1");
+  });
+
+  it("borne le zoom interne et memorise le maintien de l'ecran actif", () => {
+    useSettingsStore.getState().setUiScale(2);
+    useSettingsStore.getState().setKeepScreenAwake(false);
+    useSettingsStore.getState().setWakeLockStatus("unsupported");
+
+    expect(useSettingsStore.getState().uiScale).toBe(1.25);
+    expect(useSettingsStore.getState().keepScreenAwake).toBe(false);
+    expect(useSettingsStore.getState().wakeLockStatus).toBe("unsupported");
   });
 });

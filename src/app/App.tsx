@@ -1,5 +1,6 @@
 import { AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, type CSSProperties } from "react";
+import { useTvRuntime } from "./hooks/useTvRuntime";
 import { useAudioStore } from "./store/audioStore";
 import { useGameStore } from "./store/gameStore";
 import { useSettingsStore } from "./store/settingsStore";
@@ -26,9 +27,15 @@ const devOnlyScreens = new Set(["design-system", "dev-question-bank"]);
 
 export function App() {
   const screen = useGameStore((state) => state.screen);
+  const previousScreen = useGameStore((state) => state.previousScreen);
+  const navigate = useGameStore((state) => state.navigate);
   const currentScreen = !import.meta.env.DEV && devOnlyScreens.has(screen) ? "settings" : screen;
   const soundEnabled = useSettingsStore((state) => state.soundEnabled);
+  const fullscreenActive = useSettingsStore((state) => state.fullscreenActive);
+  const uiScale = useSettingsStore((state) => state.uiScale);
   const masterMuted = useAudioStore((state) => state.masterMuted);
+  const tvRuntime = useTvRuntime({ currentScreen, previousScreen, navigate });
+  const shellStyle = { "--trium-ui-scale": uiScale } as CSSProperties;
 
   useEffect(() => {
     setGlobalAudioEnabled(soundEnabled && !masterMuted);
@@ -36,8 +43,21 @@ export function App() {
 
   return (
     <ErrorBoundary>
-      <div className="app-shell">
+      <div aria-label="TRIUM" className={`app-shell ${tvRuntime.isCursorHidden ? "is-cursor-hidden" : ""}`} style={shellStyle} tabIndex={-1}>
         <div className="ambient-grid" aria-hidden="true" />
+        <div className="tv-controls" aria-label="Affichage TV">
+          <button type="button" className="tv-control-button" onClick={() => void tvRuntime.toggleFullscreen()}>
+            {fullscreenActive ? "Sortir" : "Plein ecran"}
+          </button>
+          <button type="button" className="tv-control-button" onClick={() => navigate(currentScreen === "settings" ? previousScreen : "settings")}>
+            Menu
+          </button>
+        </div>
+        {tvRuntime.isWindowTooSmall ? (
+          <div className="tv-size-warning" role="alert">
+            Fenetre trop petite pour une TV : 1280 x 720 minimum recommande.
+          </div>
+        ) : null}
         <AnimatePresence mode="wait">
           <div key={currentScreen} className="screen-slot">
             {currentScreen === "home" && <HomeScreen />}

@@ -2480,3 +2480,128 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* TV runtime */
+.app-shell {
+  --trium-ui-scale: 1;
+  isolation: isolate;
+}
+
+.screen-slot {
+  width: calc(100% / var(--trium-ui-scale));
+  min-height: calc(100vh / var(--trium-ui-scale));
+  margin: 0 auto;
+  transform: scale(var(--trium-ui-scale));
+  transform-origin: top center;
+}
+
+.screen-frame {
+  width: min(calc(100vw / var(--trium-ui-scale)), 1920px);
+  min-height: calc(100vh / var(--trium-ui-scale));
+  padding: max(28px, clamp(24px, 3vw, 56px));
+  padding-inline: max(36px, clamp(24px, 3vw, 56px));
+}
+
+.tv-controls {
+  position: fixed;
+  z-index: 20;
+  top: max(24px, env(safe-area-inset-top));
+  right: max(24px, env(safe-area-inset-right));
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tv-control-button {
+  min-width: 112px;
+  min-height: 52px;
+  border: 1px solid rgba(159, 178, 196, 0.38);
+  border-radius: 8px;
+  padding: 0 18px;
+  color: #f6fbff;
+  background: rgba(3, 7, 13, 0.72);
+  box-shadow: 0 12px 42px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(246, 251, 255, 0.08);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.tv-control-button:hover {
+  border-color: rgba(39, 217, 242, 0.9);
+  background: rgba(13, 26, 42, 0.9);
+}
+
+.tv-control-button:focus-visible {
+  outline: 4px solid #f6fbff;
+  outline-offset: 4px;
+}
+
+.tv-size-warning {
+  position: fixed;
+  z-index: 30;
+  left: 50%;
+  bottom: max(28px, env(safe-area-inset-bottom));
+  width: min(920px, calc(100vw - 48px));
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 176, 32, 0.72);
+  border-radius: 8px;
+  padding: 18px 24px;
+  color: #fff7df;
+  background: rgba(58, 36, 6, 0.94);
+  box-shadow: 0 18px 58px rgba(0, 0, 0, 0.42);
+  font-size: 22px;
+  font-weight: 850;
+  text-align: center;
+}
+
+.app-shell.is-cursor-hidden,
+.app-shell.is-cursor-hidden * {
+  cursor: none !important;
+}
+
+.setting-row {
+  display: grid;
+  gap: 12px;
+  min-height: 72px;
+  border: 1px solid rgba(159, 178, 196, 0.25);
+  border-radius: 8px;
+  padding: 16px 22px;
+  color: #f6fbff;
+  background: rgba(3, 7, 13, 0.35);
+}
+
+.setting-row span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #d8e7f2;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.setting-row input[type="range"] {
+  width: 100%;
+  min-height: 36px;
+  accent-color: #27d9f2;
+}
+
+@media (aspect-ratio: 16 / 9) {
+  .screen-frame {
+    padding-block: max(32px, clamp(24px, 3vh, 56px));
+  }
+}
+
+@media (max-width: 900px), (max-height: 620px) {
+  .tv-controls {
+    top: 12px;
+    right: 12px;
+  }
+
+  .tv-control-button {
+    min-width: 88px;
+    min-height: 46px;
+    font-size: 16px;
+  }
+}
