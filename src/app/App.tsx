@@ -3,7 +3,9 @@ import { useEffect } from "react";
 import { useAudioStore } from "./store/audioStore";
 import { useGameStore } from "./store/gameStore";
 import { useSettingsStore } from "./store/settingsStore";
+import { ErrorBoundary } from "../ui/components/ErrorBoundary";
 import { setGlobalAudioEnabled } from "../ui/audio/soundManager";
+import { DesignSystemScreen } from "../ui/screens/DesignSystemScreen";
 import { DevQuestionBankScreen } from "../ui/screens/DevQuestionBankScreen";
 import { FinaleScreen } from "../ui/screens/FinaleScreen";
 import { FormatSelectionScreen } from "../ui/screens/FormatSelectionScreen";
@@ -19,6 +21,7 @@ import { SummaryScreen } from "../ui/screens/SummaryScreen";
 
 export function App() {
   const screen = useGameStore((state) => state.screen);
+  const currentScreen = !import.meta.env.DEV && screen === "design-system" ? "settings" : screen;
   const soundEnabled = useSettingsStore((state) => state.soundEnabled);
   const masterMuted = useAudioStore((state) => state.masterMuted);
 
@@ -27,24 +30,27 @@ export function App() {
   }, [masterMuted, soundEnabled]);
 
   return (
-    <div className="app-shell">
-      <div className="ambient-grid" aria-hidden="true" />
-      <AnimatePresence mode="wait">
-        <div key={screen} className="screen-slot">
-          {screen === "home" && <HomeScreen />}
-          {screen === "rules" && <RulesScreen />}
-          {screen === "player-setup" && <PlayerSetupScreen />}
-          {screen === "format-selection" && <FormatSelectionScreen />}
-          {screen === "game-intro" && <GameIntroScreen />}
-          {screen === "game" && <GameScreen />}
-          {screen === "question-transition" && <QuestionTransitionScreen />}
-          {screen === "round-result" && <RoundResultScreen />}
-          {screen === "finale" && <FinaleScreen />}
-          {screen === "summary" && <SummaryScreen />}
-          {screen === "settings" && <SettingsScreen />}
-          {screen === "dev-question-bank" && <DevQuestionBankScreen />}
-        </div>
-      </AnimatePresence>
-    </div>
+    <ErrorBoundary>
+      <div className="app-shell">
+        <div className="ambient-grid" aria-hidden="true" />
+        <AnimatePresence mode="wait">
+          <div key={currentScreen} className="screen-slot">
+            {currentScreen === "home" && <HomeScreen />}
+            {currentScreen === "rules" && <RulesScreen />}
+            {currentScreen === "player-setup" && <PlayerSetupScreen />}
+            {currentScreen === "format-selection" && <FormatSelectionScreen />}
+            {currentScreen === "game-intro" && <GameIntroScreen />}
+            {currentScreen === "game" && <GameScreen />}
+            {currentScreen === "question-transition" && <QuestionTransitionScreen />}
+            {currentScreen === "round-result" && <RoundResultScreen />}
+            {currentScreen === "finale" && <FinaleScreen />}
+            {currentScreen === "summary" && <SummaryScreen />}
+            {currentScreen === "settings" && <SettingsScreen />}
+            {currentScreen === "dev-question-bank" && <DevQuestionBankScreen />}
+            {import.meta.env.DEV && currentScreen === "design-system" && <DesignSystemScreen />}
+          </div>
+        </AnimatePresence>
+      </div>
+    </ErrorBoundary>
   );
 }

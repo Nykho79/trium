@@ -27,6 +27,7 @@ export function SettingsScreen() {
           <button type="button" onClick={toggleMusic}>Musique <strong>{musicEnabled ? "Activée" : "Coupée"}</strong></button>
           <button type="button" onClick={toggleReducedMotion}>Animations réduites <strong>{reducedMotion ? "Oui" : "Non"}</strong></button>
           <button type="button" onClick={() => navigate("dev-question-bank")}>Banque de questions <strong>Mode dev</strong></button>
+          {import.meta.env.DEV ? <button type="button" onClick={() => navigate("design-system")}>Design system <strong>Mode dev</strong></button> : null}
         </Panel>
         <Button variant="primary" onClick={() => navigate("home")}>Retour</Button>
       </section>

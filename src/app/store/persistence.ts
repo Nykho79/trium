@@ -27,6 +27,7 @@ const appScreenSchema = z.enum([
   "summary",
   "settings",
   "dev-question-bank",
+  "design-system",
 ]);
 
 export const savedGameEnvelopeSchema = z.object({

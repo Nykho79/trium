@@ -15,7 +15,8 @@ export type AppScreen =
   | "finale"
   | "summary"
   | "settings"
-  | "dev-question-bank";
+  | "dev-question-bank"
+  | "design-system";
 
 export interface GameSessionPreview {
   players: [Player, Player, Player];
