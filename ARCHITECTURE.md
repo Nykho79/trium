@@ -1002,3 +1002,20 @@ Responsabilites de selection :
 Le script `pnpm questions` execute la validation hors React et affiche un rapport lisible dans le terminal. `pnpm questions:json` produit le meme rapport en JSON pour de futurs controles CI.
 
 La page `DevQuestionBankScreen` affiche le rapport dans l'application en mode developpement, avec un echantillon des questions chargees et les erreurs eventuelles.
+
+## 22. Manche Grille des savoirs
+
+La manche `knowledge-grid` est le premier module autonome dans `src/rounds/knowledge-grid`. Elle expose des fonctions pures pour construire une grille, selectionner une case, refuser une case deja jouee, calculer le score et determiner la fin de manche.
+
+Regles implementees :
+
+- grille de 5 colonnes et 4 niveaux par defaut ;
+- valeurs 100, 200, 300 et 400, avec support de 500 si la difficulte 5 est activee ;
+- fin apres 8 questions selectionnees ;
+- bonus de rapidite de 20 % si la reponse arrive dans la premiere moitie du temps ;
+- bonus de serie de 100 points toutes les trois bonnes reponses consecutives ;
+- aucune penalite directe en cas d'erreur ;
+- case indisponible apres selection ;
+- erreur explicite si aucune question n'existe pour une categorie/difficulte.
+
+Le moteur conserve maintenant `answerResults` dans `RoundState` afin de calculer les series de bonnes reponses de maniere pure et restaurable. L'ecran `GameScreen` branche cette manche sur le moteur : choix de case, affichage QCM, verrouillage, revelation, explication et retour a la grille.

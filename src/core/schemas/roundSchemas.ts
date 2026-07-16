@@ -12,6 +12,11 @@ export const roundDefinitionSchema = z.object({
   maxScore: z.number().int().min(0),
 });
 
+const roundAnswerHistoryEntrySchema = z.object({
+  questionId: z.string().min(1),
+  isCorrect: z.boolean(),
+});
+
 export const roundStateSchema = z.object({
   id: z.string().min(1),
   definitionId: z.string().min(1),
@@ -19,6 +24,7 @@ export const roundStateSchema = z.object({
   currentQuestionIndex: z.number().int().min(0),
   selectedQuestionIds: z.array(z.string().min(1)),
   answeredQuestionIds: z.array(z.string().min(1)),
+  answerResults: z.array(roundAnswerHistoryEntrySchema).default([]),
   score: scoreBreakdownSchema,
 });
 

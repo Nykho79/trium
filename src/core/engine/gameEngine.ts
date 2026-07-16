@@ -1,10 +1,11 @@
 import type { GameConfig, GameState, GameStatus, GameTimerState, QuestionId } from "../types/game";
-import type { Question } from "../types/question";
+import type { KnowledgeGridQuestion, Question } from "../types/question";
 import type { RoundDefinition, RoundState } from "../types/round";
 import type { AnswerResult, JokerInventory, JokerType, ScoreBreakdown } from "../types/scoring";
 import type { GameEvent, GameEventType } from "../types/event";
 import { INITIAL_JOKERS } from "../constants/scoring";
 import { gameStateSchema } from "../schemas/gameSchemas";
+import { calculateKnowledgeGridScore } from "../../rounds/knowledge-grid";
 import { shuffleWithSeed } from "./random";
 
 export class GameEngineError extends Error {
@@ -59,7 +60,7 @@ function zeroJokers(): JokerInventory {
 function cloneState(state: GameState): GameState {
   return {
     ...state,
-    currentRoundState: state.currentRoundState ? { ...state.currentRoundState, selectedQuestionIds: [...state.currentRoundState.selectedQuestionIds], answeredQuestionIds: [...state.currentRoundState.answeredQuestionIds], score: { ...state.currentRoundState.score } } : undefined,
+    currentRoundState: state.currentRoundState ? { ...state.currentRoundState, selectedQuestionIds: [...state.currentRoundState.selectedQuestionIds], answeredQuestionIds: [...state.currentRoundState.answeredQuestionIds], answerResults: [...state.currentRoundState.answerResults], score: { ...state.currentRoundState.score } } : undefined,
     timer: state.timer ? { ...state.timer } : undefined,
     lastAnswerResult: state.lastAnswerResult ? { ...state.lastAnswerResult, score: { ...state.lastAnswerResult.score }, usedJokers: [...state.lastAnswerResult.usedJokers] } : undefined,
     usedQuestionIds: [...state.usedQuestionIds],
@@ -158,10 +159,33 @@ function basePointsFor(question: Question): number {
   return question.difficulty * 100;
 }
 
-function calculateAnswerScore(question: Question, isCorrect: boolean, timer: GameTimerState | undefined, now: number): ScoreBreakdown {
+function currentCorrectStreak(roundState: RoundState): number {
+  let streak = 0;
+  for (const result of roundState.answerResults.slice().reverse()) {
+    if (!result.isCorrect) {
+      break;
+    }
+    streak += 1;
+  }
+  return streak;
+}
+
+function calculateAnswerScore(question: Question, isCorrect: boolean, timer: GameTimerState | undefined, now: number, roundState: RoundState): ScoreBreakdown {
   if (!isCorrect) {
     return { ...emptyScore };
   }
+  if (question.kind === "knowledge-grid" && question.type === "multiple_choice") {
+    const timeLimitMs = timer ? timer.expiresAt - timer.startedAt : 30_000;
+    const answeredInMs = timer ? now - timer.startedAt : timeLimitMs;
+    return calculateKnowledgeGridScore({
+      question: question as KnowledgeGridQuestion,
+      isCorrect,
+      answeredInMs,
+      timeLimitMs,
+      currentCorrectStreak: currentCorrectStreak(roundState),
+    });
+  }
+
   const basePoints = basePointsFor(question);
   const remainingMs = timer ? Math.max(0, timer.expiresAt - now) : 0;
   const timeBonus = Math.floor(remainingMs / 1000) * 2;
@@ -266,6 +290,7 @@ export function startRound(state: GameState, roundIndex = state.currentRoundInde
     currentQuestionIndex: 0,
     selectedQuestionIds: [],
     answeredQuestionIds: [],
+    answerResults: [],
     score: { ...emptyScore },
   };
   const next = transition({
@@ -327,7 +352,8 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
   }
   const question = findActiveQuestion(state, input.questions);
   const isCorrect = isAnswerCorrect(question, state.lockedAnswer);
-  const score = calculateAnswerScore(question, isCorrect, state.timer, input.now);
+  const roundState = requireRound(state);
+  const score = calculateAnswerScore(question, isCorrect, state.timer, input.now, roundState);
   const result: AnswerResult = {
     questionId: question.id,
     isCorrect,
@@ -337,11 +363,11 @@ export function revealAnswer(state: GameState, input: RevealAnswerInput): GameSt
     score,
     usedJokers: [],
   };
-  const roundState = requireRound(state);
   const nextRoundState: RoundState = {
     ...roundState,
     currentQuestionIndex: roundState.currentQuestionIndex + 1,
     answeredQuestionIds: [...roundState.answeredQuestionIds, question.id],
+    answerResults: [...roundState.answerResults, { questionId: question.id, isCorrect }],
     score: addScore(roundState.score, score),
   };
   return transition({
@@ -420,5 +446,3 @@ export function restoreGame(savedState: unknown, now = 0): GameState {
   const restored = gameStateSchema.parse(savedState);
   return withEvent(restored, "game_restored", now, { toStatus: restored.status });
 }
-
-

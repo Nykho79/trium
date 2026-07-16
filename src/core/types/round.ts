@@ -14,6 +14,11 @@ export interface RoundDefinition {
   maxScore: number;
 }
 
+export interface RoundAnswerHistoryEntry {
+  questionId: QuestionId;
+  isCorrect: boolean;
+}
+
 export interface RoundState {
   id: string;
   definitionId: string;
@@ -21,6 +26,7 @@ export interface RoundState {
   currentQuestionIndex: number;
   selectedQuestionIds: QuestionId[];
   answeredQuestionIds: QuestionId[];
+  answerResults: RoundAnswerHistoryEntry[];
   score: ScoreBreakdown;
 }
 

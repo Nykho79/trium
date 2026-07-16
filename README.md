@@ -12,6 +12,7 @@ Le projet contient maintenant :
 - les ecrans generaux : accueil, reprise, regles, joueurs, modes, parametres, intros, resultats et erreur ;
 - un design system TRIUM documente dans `DESIGN.md` ;
 - un flux local accueil -> joueurs -> mode -> intro -> manche -> jeu -> resultats ;
+- la manche jouable `Grille des savoirs` avec grille 5 categories x 4 niveaux, verrouillage, revelation, score et retour grille ;
 - une banque de questions JSON locale dans `src/data/questions` ;
 - un chargeur local qui valide les fichiers JSON avec Zod, filtre les questions jouables et produit un rapport qualite ;
 - une selection de questions seedable avec exclusion des questions deja jouees et ponderation categories/difficultes ;
@@ -116,8 +117,8 @@ Principes actifs :
 Validation locale executee le 2026-07-16 :
 
 - `pnpm questions` : OK, 350 questions analysees ;
-- `pnpm check` : OK, lint + TypeScript + 41 tests unitaires ;
-- `pnpm build` : OK ;
+- `pnpm check` : OK, lint + TypeScript + 47 tests unitaires ;
+- `pnpm build` : OK, avec avertissement Vite de chunk superieur a 500 kB ;
 - `pnpm test:e2e` : OK, 18 tests Playwright sur 1920 x 1080 et 1366 x 768.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.

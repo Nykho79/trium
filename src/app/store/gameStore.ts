@@ -49,8 +49,8 @@ const DEFAULT_ROUNDS: RoundDefinition[] = [
     label: "Grille des savoirs",
     description: "Choix libre de categories et de valeurs.",
     questionTypes: ["multiple_choice"],
-    questionCount: 5,
-    maxScore: 1_500,
+    questionCount: 8,
+    maxScore: 4_100,
   },
   {
     id: "clue-race",

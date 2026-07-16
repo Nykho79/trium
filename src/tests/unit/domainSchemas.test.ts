@@ -47,7 +47,7 @@ const roundDefinition: RoundDefinition = {
   id: "round-pressure",
   kind: "pressure-choice",
   label: "Choix sous pression",
-  description: "QCM chronomÃ©trÃ©.",
+  description: "QCM chronomÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©trÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©.",
   questionTypes: ["multiple_choice"],
   questionCount: 1,
   maxScore: 500,
@@ -60,6 +60,7 @@ const roundState: RoundState = {
   currentQuestionIndex: 0,
   selectedQuestionIds: ["q-1"],
   answeredQuestionIds: [],
+  answerResults: [],
   score,
 };
 
@@ -92,14 +93,14 @@ const question: MultipleChoiceQuestion = {
   subCategoryId: "space",
   subCategoryLabel: "Espace",
   difficulty: 1,
-  prompt: "Quelle planÃ¨te est surnommÃ©e la planÃ¨te rouge ?",
-  explanation: "Mars est rouge Ã  cause des oxydes de fer prÃ©sents Ã  sa surface.",
+  prompt: "Quelle planÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨te est surnommÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©e la planÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨te rouge ?",
+  explanation: "Mars est rouge ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â  cause des oxydes de fer prÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©sents ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â  sa surface.",
   tags: ["astronomie"],
   editorialStatus: "approved",
   version: 1,
   options: [
     { id: "a", label: "Mars" },
-    { id: "b", label: "VÃ©nus" },
+    { id: "b", label: "VÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©nus" },
     { id: "c", label: "Jupiter" },
     { id: "d", label: "Mercure" },
   ],
@@ -143,7 +144,7 @@ describe("schemas metier centraux", () => {
     expect(jokerSchema.parse({
       type: "fifty-fifty",
       label: "50/50",
-      description: "Retire deux mauvaises rÃ©ponses.",
+      description: "Retire deux mauvaises rÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ponses.",
       maxUses: 1,
     }).type).toBe("fifty-fifty");
     expect(jokerStateSchema.parse({ available: jokerInventory, used: jokerInventory, disabled: [] }).available["extra-time"]).toBe(1);
@@ -235,7 +236,3 @@ describe("schemas metier centraux", () => {
     expect(round.restoreState(roundState)).toEqual(roundState);
   });
 });
-
-
-
-
