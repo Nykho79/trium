@@ -16,6 +16,7 @@ import type {
   VisualMatrixQuestion,
 } from "../core/types";
 import { shuffleWithSeed } from "../core/engine/random";
+import { questionSchema } from "../core/schemas/questionSchemas";
 const difficultySchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5)]);
 const verificationStatusSchema = z.enum(["to_verify", "verified", "rejected"]).default("to_verify");
 const sourceQuestionStatusSchema = z.enum(["generated", "draft", "review", "approved", "rejected"]).default("generated");
@@ -151,6 +152,11 @@ function normalizeText(value: string): string {
     .toLocaleLowerCase("fr-FR");
 }
 
+function answerAcceptedValues(label: string, optionId: string): string[] {
+  const normalized = normalizeText(label);
+  return [...new Set([normalized, optionId].filter((value) => value.length > 0))];
+}
+
 function labelFromSlug(slug: string): string {
   return slug.split("-").map((part) => part.charAt(0).toLocaleUpperCase("fr-FR") + part.slice(1)).join(" ");
 }
@@ -252,7 +258,7 @@ function convertMultipleChoice(question: SourceQuestion, kind: RoundKind): Multi
     type: "multiple_choice",
     options: converted.options,
     correctOptionId: converted.correctOptionId,
-    answer: { accepted: [normalizeText(converted.correctLabel), converted.correctOptionId], display: converted.correctLabel },
+    answer: { accepted: answerAcceptedValues(converted.correctLabel, converted.correctOptionId), display: converted.correctLabel },
     timeLimitSeconds: question.estimatedTimeSeconds ?? 30,
     value,
   };
@@ -271,7 +277,7 @@ function convertProgressive(question: SourceQuestion, kind: RoundKind): Progress
     ...baseFields(question, kind),
     type: "progressive_clues",
     clues,
-    answer: { accepted: [normalizeText(converted.correctLabel), converted.correctOptionId], display: converted.correctLabel },
+    answer: { accepted: answerAcceptedValues(converted.correctLabel, converted.correctOptionId), display: converted.correctLabel },
     pointsByClueIndex: kind === "final-convergence" ? [1_000, 800, 600, 400, 200] : [500, 400, 300, 200, 100],
     options: converted.options,
     correctOptionId: converted.correctOptionId,
@@ -287,7 +293,7 @@ function convertConnection(question: SourceQuestion, kind: RoundKind): Connectio
     items,
     itemDetails: items,
     randomizeItems: true,
-    answer: { accepted: [normalizeText(converted.correctLabel), converted.correctOptionId], display: converted.correctLabel },
+    answer: { accepted: answerAcceptedValues(converted.correctLabel, converted.correctOptionId), display: converted.correctLabel },
     options: converted.options,
     correctOptionId: converted.correctOptionId,
   };
@@ -305,7 +311,7 @@ function convertIntruder(question: SourceQuestion): IntruderQuestion {
     type: "intruder",
     items,
     correctOptionId,
-    answer: { accepted: [normalizeText(correct), correctOptionId], display: correct },
+    answer: { accepted: answerAcceptedValues(correct, correctOptionId), display: correct },
   };
 }
 
@@ -334,7 +340,7 @@ function convertSequence(question: SourceQuestion, kind: RoundKind): SequenceQue
     nextItem: converted.correctLabel,
     options: converted.options,
     correctOptionId: converted.correctOptionId,
-    answer: { accepted: [normalizeText(converted.correctLabel), converted.correctOptionId], display: converted.correctLabel },
+    answer: { accepted: answerAcceptedValues(converted.correctLabel, converted.correctOptionId), display: converted.correctLabel },
   };
 }
 
@@ -357,7 +363,7 @@ function convertVisualMatrix(question: SourceQuestion): VisualMatrixQuestion {
     options: converted.options,
     correctOptionId: converted.correctOptionId,
     ruleLabel: question.rule ?? "Regle visuelle",
-    answer: { accepted: [normalizeText(converted.correctLabel), converted.correctOptionId], display: converted.correctLabel },
+    answer: { accepted: answerAcceptedValues(converted.correctLabel, converted.correctOptionId), display: converted.correctLabel },
   };
 }
 
@@ -378,7 +384,7 @@ function convertSymbolRule(question: SourceQuestion): SymbolRuleQuestion {
     examples: examples.slice(0, 3) as [string, string, string],
     options: converted.options,
     correctOptionId: converted.correctOptionId,
-    answer: { accepted: [normalizeText(converted.correctLabel), converted.correctOptionId], display: converted.correctLabel },
+    answer: { accepted: answerAcceptedValues(converted.correctLabel, converted.correctOptionId), display: converted.correctLabel },
   };
 }
 
@@ -506,8 +512,13 @@ export function compileQuestionBankFromSources(sources: readonly unknown[]): Loa
       try {
         const converted = convertQuestion(question, context);
         if (converted && !seenGameIds.has(converted.id)) {
-          seenGameIds.add(converted.id);
-          playableQuestions.push(converted);
+          const validated = questionSchema.safeParse(converted);
+          if (!validated.success) {
+            report.validationErrors.push(`${parsed.data.fileId}/${question.id}: ${validated.error.issues.map((issue) => `${issue.path.join(".")}: ${issue.message}`).join("; ")}`);
+            continue;
+          }
+          seenGameIds.add(validated.data.id);
+          playableQuestions.push(validated.data);
         }
       } catch (error) {
         report.validationErrors.push(`${parsed.data.fileId}/${question.id}: ${error instanceof Error ? error.message : "Question invalide."}`);

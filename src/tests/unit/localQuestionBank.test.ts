@@ -66,6 +66,30 @@ describe("localQuestionBank", () => {
     expect(bank.playableQuestions[0]?.kind).toBe("knowledge-grid");
   });
 
+  it("ne genere jamais d'alias de reponse vide apres normalisation", () => {
+    const bank = compileQuestionBankFromSources([sourceWithQuestions([
+      {
+        ...approvedQuestion,
+        id: "TEST-SYMBOL",
+        answers: [
+          { id: "a", text: "▲" },
+          { id: "b", text: "■" },
+          { id: "c", text: "●" },
+          { id: "d", text: "◆" },
+        ],
+        correctAnswerId: "a",
+      },
+    ])]);
+
+    const firstQuestion = bank.playableQuestions[0];
+    expect(bank.report.validationErrors).toEqual([]);
+    expect(firstQuestion?.type).toBe("multiple_choice");
+    if (firstQuestion?.type !== "multiple_choice") {
+      throw new Error("Question de test inattendue.");
+    }
+    expect(firstQuestion.answer?.accepted).toEqual(["a"]);
+  });
+
   it("detecte les doublons exacts et probables", () => {
     const bank = compileQuestionBankFromSources([sourceWithQuestions([
       approvedQuestion,
