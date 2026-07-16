@@ -82,6 +82,20 @@ export const connectionQuestionSchema = baseQuestionSchema.extend({
   type: z.literal("connection"),
   items: z.tuple([z.string().min(1), z.string().min(1), z.string().min(1), z.string().min(1)]),
   answer: answerSchema,
+  options: fourOptionsSchema.optional(),
+  correctOptionId: z.string().min(1).optional(),
+  itemDetails: z.tuple([z.string().min(1), z.string().min(1), z.string().min(1), z.string().min(1)]).optional(),
+  randomizeItems: z.boolean().optional(),
+}).superRefine((question, ctx) => {
+  if (question.options !== undefined || question.correctOptionId !== undefined) {
+    if (question.options === undefined || question.correctOptionId === undefined) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["options"], message: "Les propositions et correctOptionId doivent etre fournis ensemble." });
+      return;
+    }
+    if (!optionIdSet(question.options).has(question.correctOptionId)) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["correctOptionId"], message: "correctOptionId doit correspondre a une option existante." });
+    }
+  }
 });
 
 export const chronologyQuestionSchema = baseQuestionSchema.extend({

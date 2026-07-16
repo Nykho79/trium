@@ -27,6 +27,7 @@ export const roundStateSchema = z.object({
   answerResults: z.array(roundAnswerHistoryEntrySchema).default([]),
   score: scoreBreakdownSchema,
   clueIndex: z.number().int().min(0).max(4).optional(),
+  connectionItemIndex: z.number().int().min(0).max(3).optional(),
   answersVisible: z.boolean().optional(),
   securedPoints: z.number().int().min(0).optional(),
   riskPoints: z.number().int().min(0).optional(),

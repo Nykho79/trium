@@ -66,6 +66,10 @@ export interface ConnectionQuestion extends BaseQuestion {
   type: "connection";
   items: [string, string, string, string];
   answer: AnswerPayload;
+  options?: FourOptions | undefined;
+  correctOptionId?: string | undefined;
+  itemDetails?: [string, string, string, string] | undefined;
+  randomizeItems?: boolean | undefined;
 }
 
 export interface ChronologyItem {

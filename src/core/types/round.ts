@@ -29,6 +29,7 @@ export interface RoundState {
   answerResults: RoundAnswerHistoryEntry[];
   score: ScoreBreakdown;
   clueIndex?: number | undefined;
+  connectionItemIndex?: number | undefined;
   answersVisible?: boolean | undefined;
   securedPoints?: number | undefined;
   riskPoints?: number | undefined;

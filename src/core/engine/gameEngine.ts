@@ -8,6 +8,7 @@ import { gameStateSchema } from "../schemas/gameSchemas";
 import { calculateKnowledgeGridScore } from "../../rounds/knowledge-grid";
 import { calculateClueRaceScore, revealNextClueInState, showAnswersInState } from "../../rounds/clue-race";
 import { calculatePressureChoiceScore, isPressureChoiceComplete, loseRiskPoints, pressureStepIndex, secureRiskPoints, timeLimitForPressureStep } from "../../rounds/pressure-choice";
+import { calculateConnectionsScore, revealNextConnectionItemInState, showConnectionAnswersInState } from "../../rounds/connections";
 import { calculateSynapseScore, correctSynapseOptionId } from "../../rounds/synapse";
 import { shuffleWithSeed } from "./random";
 
@@ -172,6 +173,9 @@ function isAnswerCorrect(question: Question, answer: string | string[]): boolean
   if (question.type === "progressive_clues" && question.correctOptionId !== undefined) {
     return typeof answer === "string" && answer === question.correctOptionId;
   }
+  if (question.type === "connection" && question.correctOptionId !== undefined) {
+    return typeof answer === "string" && answer === question.correctOptionId;
+  }
   if (question.type === "chronology") {
     if (question.correctOptionId !== undefined) {
       return typeof answer === "string" && answer === question.correctOptionId;
@@ -195,6 +199,9 @@ function displayCorrectAnswer(question: Question): string | string[] {
     return question.correctOptionId;
   }
   if (question.type === "progressive_clues") {
+    return question.correctOptionId ?? question.answer.display;
+  }
+  if (question.type === "connection") {
     return question.correctOptionId ?? question.answer.display;
   }
   if (question.type === "chronology") {
@@ -254,6 +261,13 @@ function calculateAnswerScore(question: Question, isCorrect: boolean, timer: Gam
       question: question as PressureChoiceQuestion,
       isCorrect,
       stepIndex: pressureStepIndex(roundState),
+    });
+  }
+
+  if (question.kind === "connections" && question.type === "connection") {
+    return calculateConnectionsScore({
+      isCorrect,
+      itemIndex: roundState.connectionItemIndex ?? 0,
     });
   }
 
@@ -342,6 +356,7 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
 const FORBIDDEN_JOKERS_BY_ROUND: Partial<Record<GameConfig["rounds"][number]["kind"], readonly JokerType[]>> = {
   "clue-race": ["second_chance", "change_question", "contextual_hint", "team_vote"],
   "synapse": ["fifty_fifty", "change_question", "team_vote"],
+  "connections": ["change_question", "extra_time", "team_vote"],
   "final-convergence": ["change_question", "team_vote"],
 };
 
@@ -381,6 +396,12 @@ function activeAnswerOptionQuestion(state: GameState, questions: readonly Questi
   }
   if (question.type === "progressive_clues" && question.options !== undefined && question.correctOptionId !== undefined) {
     if (currentRoundDefinition(state).kind === "clue-race" && state.currentRoundState?.answersVisible !== true) {
+      throw new GameEngineError("Le 50/50 est disponible seulement apres affichage des reponses.");
+    }
+    return { id: question.id, options: question.options, correctOptionId: question.correctOptionId };
+  }
+  if (question.type === "connection" && question.options !== undefined && question.correctOptionId !== undefined) {
+    if (currentRoundDefinition(state).kind === "connections" && state.currentRoundState?.answersVisible !== true) {
       throw new GameEngineError("Le 50/50 est disponible seulement apres affichage des reponses.");
     }
     return { id: question.id, options: question.options, correctOptionId: question.correctOptionId };
@@ -494,7 +515,8 @@ export function startRound(state: GameState, roundIndex = state.currentRoundInde
     answerResults: [],
     score: { ...emptyScore },
     clueIndex: definition.kind === "clue-race" ? 0 : undefined,
-    answersVisible: definition.kind === "clue-race" ? false : undefined,
+    answersVisible: definition.kind === "clue-race" || definition.kind === "connections" ? false : undefined,
+    connectionItemIndex: definition.kind === "connections" ? 0 : undefined,
     securedPoints: definition.kind === "pressure-choice" ? 0 : undefined,
     riskPoints: definition.kind === "pressure-choice" ? 0 : undefined,
   };
@@ -524,7 +546,8 @@ export function loadQuestion(state: GameState, input: LoadQuestionInput): GameSt
     ...roundState,
     selectedQuestionIds: [...roundState.selectedQuestionIds, selected.id],
     clueIndex: selected.kind === "clue-race" ? 0 : roundState.clueIndex,
-    answersVisible: selected.kind === "clue-race" ? false : roundState.answersVisible,
+    answersVisible: selected.kind === "clue-race" || selected.kind === "connections" ? false : roundState.answersVisible,
+    connectionItemIndex: selected.kind === "connections" ? 0 : roundState.connectionItemIndex,
   };
   let next = transition({
     ...cloneState(state),
@@ -566,9 +589,34 @@ export function showClueRaceAnswers(state: GameState, now = 0): GameState {
     currentRoundState: showAnswersInState(roundState),
   }, "status_changed", now, { questionId: state.activeQuestionId, message: "Propositions affichees." });
 }
+export function revealNextConnectionItem(state: GameState, now = 0): GameState {
+  requireStatus(state, ["question_active"], "revealNextConnectionItem");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "connections") {
+    throw new GameEngineError("Cette action est reservee a Connexions.");
+  }
+  const roundState = requireRound(state);
+  return withEvent({
+    ...cloneState(state),
+    currentRoundState: revealNextConnectionItemInState(roundState),
+  }, "status_changed", now, { questionId: state.activeQuestionId, message: "Element suivant revele." });
+}
+
+export function showConnectionAnswerOptions(state: GameState, now = 0): GameState {
+  requireStatus(state, ["question_active"], "showConnectionAnswerOptions");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind !== "connections") {
+    throw new GameEngineError("Cette action est reservee a Connexions.");
+  }
+  const roundState = requireRound(state);
+  return withEvent({
+    ...cloneState(state),
+    currentRoundState: showConnectionAnswersInState(roundState),
+  }, "status_changed", now, { questionId: state.activeQuestionId, message: "Propositions de connexion affichees." });
+}
 export function submitAnswer(state: GameState, input: SubmitAnswerInput): GameState {
   requireStatus(state, ["question_active"], "submitAnswer");
-  if (currentRoundDefinition(state).kind === "clue-race" && state.currentRoundState?.answersVisible !== true) {
+  if ((currentRoundDefinition(state).kind === "clue-race" || currentRoundDefinition(state).kind === "connections") && state.currentRoundState?.answersVisible !== true) {
     throw new GameEngineError("Les propositions doivent etre affichees avant de repondre.");
   }
   if (isTimerExpired(state.timer, input.now)) {

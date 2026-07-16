@@ -6,7 +6,8 @@ import { Panel } from "../components/Panel";
 import { ScreenFrame } from "../components/ScreenFrame";
 import { useGameStore } from "../../app/store/gameStore";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
-import type { MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion } from "../../core/types";
+import type { ConnectionsQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion } from "../../core/types";
+import { buildConnectionsQuestionSet, isConnectionsQuestion } from "../../rounds/connections";
 import { buildSynapseQuestionSet, synapseOptions } from "../../rounds/synapse";
 
 function isPressureChoiceQuestion(question: Question): question is PressureChoiceQuestion {
@@ -16,6 +17,9 @@ function isPressureChoiceQuestion(question: Question): question is PressureChoic
 function optionsFor(question: Question): readonly MultipleChoiceOption[] | undefined {
   if (question.kind === "synapse") {
     return synapseOptions(question as SynapseQuestion);
+  }
+  if (question.type === "connection") {
+    return question.options;
   }
   if ((question.type === "multiple_choice" || question.type === "progressive_clues") && question.options !== undefined) {
     return question.options;
@@ -37,7 +41,7 @@ function displayAnswer(question: Question | undefined, correctAnswer: string | s
   if (options !== undefined) {
     return options.find((option) => option.id === correctAnswer)?.label ?? correctAnswer;
   }
-  if (question.type === "progressive_clues") {
+  if (question.type === "progressive_clues" || question.type === "connection") {
     return question.answer.display;
   }
   return correctAnswer;
@@ -66,8 +70,10 @@ export function QuestionTransitionScreen() {
 
   const result = gameState?.lastAnswerResult;
   const synapseQuestions = buildSynapseQuestionSet(gameState?.config.seed ?? "trium-synapse");
-  const allQuestions = [...questions, ...synapseQuestions];
+  const connectionQuestions = buildConnectionsQuestionSet(gameState?.config.seed ?? "trium-connections");
+  const allQuestions = [...questions, ...synapseQuestions, ...connectionQuestions];
   const question = allQuestions.find((candidate) => candidate.id === result?.questionId);
+  const connectionQuestion = question && isConnectionsQuestion(question) ? question as ConnectionsQuestion : undefined;
   const round = gameState?.config.rounds[gameState.currentRoundIndex];
   const answeredCount = gameState?.currentRoundState?.answeredQuestionIds.length ?? 0;
   const targetCount = round?.questionCount ?? 5;
@@ -77,7 +83,7 @@ export function QuestionTransitionScreen() {
   const isPressureChoice = round?.kind === "pressure-choice";
   const pressureQuestions = questions.filter(isPressureChoiceQuestion);
   const pressureEndedByFailure = isPressureChoice && result?.isCorrect === false;
-  const returnLabel = round?.kind === "knowledge-grid" ? "Retour a la grille" : isPressureChoice ? "Continuer" : round?.kind === "synapse" ? "Epreuve suivante" : "Enigme suivante";
+  const returnLabel = round?.kind === "knowledge-grid" ? "Retour a la grille" : isPressureChoice ? "Continuer" : round?.kind === "synapse" ? "Epreuve suivante" : round?.kind === "connections" ? "Connexion suivante" : "Enigme suivante";
 
   const continueRound = () => {
     if (pressureEndedByFailure || isRoundComplete) {
@@ -109,6 +115,16 @@ export function QuestionTransitionScreen() {
             <div><span>Serie</span><strong>{result?.score.streakBonus ?? 0}</strong></div>
             <div><span>Total</span><strong>{points}</strong></div>
           </div>
+          {connectionQuestion ? (
+            <div className="connection-reveal-list" data-testid="connection-reveal-items">
+              {connectionQuestion.items.map((item, index) => (
+                <div key={`${connectionQuestion.id}-${item}`}>
+                  <strong>{item}</strong>
+                  <span>{connectionQuestion.itemDetails?.[index] ?? "Element rattache au lien commun."}</span>
+                </div>
+              ))}
+            </div>
+          ) : null}
           <strong>Score equipe : {session.score.teamScore.toLocaleString("fr-FR")}</strong>
           <div className="screen-actions">
             <Button variant="secondary" onClick={() => navigate("home")}>Quitter</Button>

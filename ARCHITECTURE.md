@@ -1103,3 +1103,23 @@ Les formats de questions metier et les schemas Zod acceptent maintenant `intrude
 L'interface est portee par `SynapseExerciseView`, avec un composant par mini-epreuve et une grille de reponses commune. La memoire affiche la sequence pendant la duree definie, la masque automatiquement, puis affiche les propositions sans retour arriere.
 
 Validation ajoutee : tests unitaires des generateurs et du scoring Synapse, tests moteur pour score/jokers, et parcours Playwright sur 1920 x 1080 et 1366 x 768.
+## 27. Manche Connexions
+
+La manche `connections` est implementee dans `src/rounds/connections`. Elle respecte l'interface `GameRound` et reste independante de React.
+
+Regles implementees :
+
+- cinq connexions par manche ;
+- quatre elements affiches progressivement ;
+- les propositions ne sont affichees que lorsque l'equipe choisit `Repondre maintenant` ;
+- score decroissant selon le nombre d'elements visibles : 500, 400, 250, 150 ;
+- une erreur termine la connexion sans penalite directe ;
+- les quatre elements restent visibles apres verrouillage et revelation ;
+- l'explication de revelation detaille chaque element ;
+- l'ordre des elements et des propositions est deterministe par seed ;
+- `contextual_hint`, `fifty_fifty` et `second_chance` sont autorises ;
+- `change_question`, `extra_time` et `team_vote` sont interdits dans cette manche.
+
+Le type `ConnectionQuestion` accepte maintenant quatre propositions optionnelles, un `correctOptionId`, des `itemDetails` et un indicateur `randomizeItems`. Le schema Zod impose la coherence entre propositions et bonne option. Le moteur expose `revealNextConnectionItem` et `showConnectionAnswerOptions` pour separer la revelation progressive du verrouillage de reponse.
+
+L'interface est portee par `ConnectionsExerciseView` : quatre cartes centrales, compteur de points disponibles, boutons `Element suivant` et `Repondre maintenant`, et grille de reponses compatible 50/50. Le parcours Playwright valide la manche en 1920 x 1080 et 1366 x 768.

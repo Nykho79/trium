@@ -20,7 +20,7 @@ export const STANDARD_FORMAT: GameFormat = {
     "clue-race": 5,
     "pressure-choice": 5,
     synapse: 6,
-    connections: 3,
+    connections: 5,
     wager: 3,
     "final-convergence": 5,
   },

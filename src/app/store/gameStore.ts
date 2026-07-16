@@ -13,7 +13,9 @@ import {
   pauseGame,
   resumeGame,
   revealNextClue,
+  revealNextConnectionItem,
   showClueRaceAnswers,
+  showConnectionAnswerOptions,
   securePressureChoicePoints,
   revealAnswer as revealEngineAnswer,
   restoreGame,
@@ -161,7 +163,9 @@ interface GameStoreState {
   resumeCurrentGame: (now?: number | undefined) => void;
   applyGameJoker: (joker: JokerType, questions?: readonly Question[] | undefined, now?: number | undefined) => void;
   revealNextClueForCurrentQuestion: (now?: number | undefined) => void;
+  revealNextConnectionItemForCurrentQuestion: (now?: number | undefined) => void;
   showClueRaceAnswerOptions: (now?: number | undefined) => void;
+  showConnectionAnswerOptionsForCurrentQuestion: (now?: number | undefined) => void;
   securePressureChoiceRisk: (now?: number | undefined) => void;
   expireCurrentPressureChoiceQuestion: (questions: readonly Question[], now?: number | undefined) => void;
   resumeSavedGame: () => void;
@@ -513,12 +517,36 @@ export const useGameStore = create<GameStoreState>()((set) => ({
       return { engineError: errorMessage(error) };
     }
   }),
+  revealNextConnectionItemForCurrentQuestion: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = revealNextConnectionItem(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
+      return { gameState, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
   showClueRaceAnswerOptions: (now) => set((state) => {
     if (!state.gameState) {
       return { engineError: "Aucune partie active." };
     }
     try {
       const gameState = showClueRaceAnswers(state.gameState, now ?? Date.now());
+      const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: undefined });
+      return { gameState, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  showConnectionAnswerOptionsForCurrentQuestion: (now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = showConnectionAnswerOptions(state.gameState, now ?? Date.now());
       const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: undefined });
       return { gameState, selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {

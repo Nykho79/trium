@@ -18,12 +18,14 @@ import { useGameStore } from "../../app/store/gameStore";
 import { useSettingsStore } from "../../app/store/settingsStore";
 import { playJokerSound } from "../audio/soundManager";
 import { loadQuestionBank } from "../../data/loadQuestionBank";
-import type { ClueRaceQuestion, JokerType, KnowledgeGridQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion } from "../../core/types";
+import type { ClueRaceQuestion, JokerType, KnowledgeGridQuestion, MultipleChoiceOption, PressureChoiceQuestion, Question, SynapseQuestion, ConnectionsQuestion } from "../../core/types";
 import { buildKnowledgeGrid, selectKnowledgeGridQuestion } from "../../rounds/knowledge-grid";
 import { isClueRaceQuestion, pointsForClueIndex, visibleClues } from "../../rounds/clue-race";
 import { multiplierForPressureStep, timeLimitForPressureStep } from "../../rounds/pressure-choice";
 import { buildSynapseQuestionSet, isSynapseQuestion } from "../../rounds/synapse";
+import { buildConnectionsQuestionSet, isConnectionsQuestion, pointsForConnectionItemIndex } from "../../rounds/connections";
 import { SynapseExerciseView } from "./SynapseExerciseView";
+import { ConnectionsExerciseView } from "./ConnectionsExerciseView";
 
 type VoteState = {
   active: boolean;
@@ -88,7 +90,9 @@ export function GameScreen() {
   const completeCurrentRound = useGameStore((state) => state.completeCurrentRound);
   const applyGameJoker = useGameStore((state) => state.applyGameJoker);
   const revealNextClueForCurrentQuestion = useGameStore((state) => state.revealNextClueForCurrentQuestion);
+  const revealNextConnectionItemForCurrentQuestion = useGameStore((state) => state.revealNextConnectionItemForCurrentQuestion);
   const showClueRaceAnswerOptions = useGameStore((state) => state.showClueRaceAnswerOptions);
+  const showConnectionAnswerOptionsForCurrentQuestion = useGameStore((state) => state.showConnectionAnswerOptionsForCurrentQuestion);
   const navigate = useGameStore((state) => state.navigate);
   const soundEnabled = useSettingsStore((state) => state.soundEnabled);
   const masterMuted = useAudioStore((state) => state.masterMuted);
@@ -124,22 +128,26 @@ export function GameScreen() {
   const answeredCount = gameState?.currentRoundState?.answeredQuestionIds.length ?? 0;
   const targetCount = round?.questionCount ?? 8;
   const synapseQuestions = useMemo(() => buildSynapseQuestionSet(gameState?.config.seed ?? "trium-synapse"), [gameState?.config.seed]);
-  const allQuestions = useMemo(() => [...questions, ...synapseQuestions], [questions, synapseQuestions]);
+  const generatedConnectionQuestions = useMemo(() => buildConnectionsQuestionSet(gameState?.config.seed ?? "trium-connections"), [gameState?.config.seed]);
+  const allQuestions = useMemo(() => [...questions, ...synapseQuestions, ...generatedConnectionQuestions], [generatedConnectionQuestions, questions, synapseQuestions]);
   const activeQuestion = allQuestions.find((question) => question.id === gameState?.activeQuestionId);
   const activeKnowledgeQuestion = activeQuestion && isKnowledgeGridQuestion(activeQuestion) ? activeQuestion : undefined;
   const activeClueQuestion = activeQuestion && isClueRaceQuestion(activeQuestion) ? activeQuestion : undefined;
   const activePressureQuestion = activeQuestion && isPressureChoiceQuestion(activeQuestion) ? activeQuestion : undefined;
   const activeSynapseQuestion = activeQuestion && isSynapseQuestion(activeQuestion) ? activeQuestion as SynapseQuestion : undefined;
+  const activeConnectionQuestion = activeQuestion && isConnectionsQuestion(activeQuestion) ? activeQuestion as ConnectionsQuestion : undefined;
   const knowledgeQuestions = useMemo(() => questions.filter(isKnowledgeGridQuestion), [questions]);
   const clueQuestions = useMemo(() => questions.filter(isClueRaceQuestion), [questions]);
   const pressureQuestions = useMemo(() => questions.filter(isPressureChoiceQuestion), [questions]);
   const approvedSynapseQuestions = useMemo(() => synapseQuestions.filter(isSynapseQuestion), [synapseQuestions]);
+  const connectionQuestions = useMemo(() => [...questions.filter(isConnectionsQuestion), ...generatedConnectionQuestions], [questions, generatedConnectionQuestions]);
   const captain = gameState?.config.players.find((player) => player.id === gameState.captainPlayerId) ?? session.players[0];
   const isQuestionActive = gameState?.status === "question_active" || gameState?.status === "answer_locked";
   const isLocked = gameState?.status === "answer_locked";
   const isClueRace = round?.kind === "clue-race";
   const isPressureChoice = round?.kind === "pressure-choice";
   const isSynapse = round?.kind === "synapse";
+  const isConnections = round?.kind === "connections";
   const clueIndex = gameState?.currentRoundState?.clueIndex ?? 0;
   const answersVisible = gameState?.currentRoundState?.answersVisible === true || isLocked;
   const pressureStep = Math.min(4, gameState?.currentRoundState?.currentQuestionIndex ?? 0);
@@ -147,6 +155,8 @@ export function GameScreen() {
   const pressureTimeLimitMs = timeLimitForPressureStep(pressureStep) * 1000;
   const securedPoints = gameState?.currentRoundState?.securedPoints ?? 0;
   const riskPoints = gameState?.currentRoundState?.riskPoints ?? 0;
+  const connectionItemIndex = gameState?.currentRoundState?.connectionItemIndex ?? 0;
+  const connectionPoints = pointsForConnectionItemIndex(Math.min(3, connectionItemIndex));
   const canUseJoker = gameState?.status === "question_active" && activeQuestion !== undefined;
   const board = useMemo(() => buildKnowledgeGrid({
     questions: knowledgeQuestions,
@@ -173,6 +183,10 @@ export function GameScreen() {
 
   const loadNextSynapseQuestion = () => {
     loadCurrentQuestion({ questions: approvedSynapseQuestions });
+  };
+
+  const loadNextConnectionQuestion = () => {
+    loadCurrentQuestion({ questions: connectionQuestions });
   };
 
   const submitAnswer = () => {
@@ -215,6 +229,14 @@ export function GameScreen() {
     if (isPressureChoice && joker === "change_question" && pressureStep >= 4) {
       return true;
     }
+    if (isConnections) {
+      if (joker === "change_question" || joker === "extra_time" || joker === "team_vote") {
+        return true;
+      }
+      if (joker === "fifty_fifty" && !answersVisible) {
+        return true;
+      }
+    }
     if (isSynapse) {
       if (joker === "fifty_fifty" || joker === "change_question" || joker === "team_vote") {
         return true;
@@ -242,9 +264,9 @@ export function GameScreen() {
 
   return (
     <ScreenFrame title="Ecran de jeu">
-      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""} ${isPressureChoice ? "pressure-choice-layout" : ""} ${isSynapse ? "synapse-layout" : ""}`}>
-        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""} ${isPressureChoice ? "pressure-choice-stage" : ""} ${isSynapse ? "synapse-stage" : ""}`}>
-          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : isPressureChoice ? "Continuer ou securiser" : isSynapse ? "Mini-epreuves ludiques" : "Le capitaine choisit une case"} />
+      <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""} ${isPressureChoice ? "pressure-choice-layout" : ""} ${isSynapse ? "synapse-layout" : ""} ${isConnections ? "connections-layout" : ""}`}>
+        <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""} ${isPressureChoice ? "pressure-choice-stage" : ""} ${isSynapse ? "synapse-stage" : ""} ${isConnections ? "connections-stage" : ""}`}>
+          <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : isPressureChoice ? "Continuer ou securiser" : isSynapse ? "Mini-epreuves ludiques" : isConnections ? "Lien commun progressif" : "Le capitaine choisit une case"} />
           <ScoreBoard score={session.score.teamScore} streak={session.score.streak} roundLabel={`Question ${Math.min(answeredCount + 1, targetCount)}`} />
 
           {loadError ? <FeedbackBanner tone="warning" title="Banque indisponible" message={loadError} /> : null}
@@ -252,7 +274,7 @@ export function GameScreen() {
           {gameState.jokerEffects.contextualHint ? <FeedbackBanner tone="info" title="Indice contextuel" message={gameState.jokerEffects.contextualHint} /> : null}
           {gameState.jokerEffects.secondChanceConsumed && gameState.status === "question_active" ? <FeedbackBanner tone="warning" title="Seconde chance" message="Premiere reponse incorrecte. La prochaine bonne reponse vaudra 50 % des points." /> : null}
 
-          {!isClueRace && !isPressureChoice && !isSynapse && !isQuestionActive ? (
+          {!isClueRace && !isPressureChoice && !isSynapse && !isConnections && !isQuestionActive ? (
             <div className="knowledge-grid-board" role="grid" aria-label="Grille des savoirs">
               {board.columns.map((column) => (
                 <section key={column.categoryId} className="knowledge-grid-column" aria-label={column.categoryLabel}>
@@ -305,6 +327,15 @@ export function GameScreen() {
               <h1>{answeredCount >= targetCount ? "Manche terminee" : `Epreuve ${answeredCount + 1}`}</h1>
               <p>{answeredCount >= targetCount ? "Les six mini-epreuves sont jouees." : "Une epreuve ludique est tiree avec la seed de partie. Maximum deux epreuves du meme type."}</p>
               {answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : <Button variant="primary" onClick={loadNextSynapseQuestion} disabled={approvedSynapseQuestions.length === 0} data-testid="start-synapse-question">Lancer l'epreuve</Button>}
+            </div>
+          ) : null}
+
+          {isConnections && !isQuestionActive ? (
+            <div className="connections-empty-state">
+              <Badge tone="cyan">Connexions</Badge>
+              <h1>{answeredCount >= targetCount ? "Manche terminee" : `Connexion ${answeredCount + 1}`}</h1>
+              <p>{answeredCount >= targetCount ? "Les cinq connexions sont jouees." : "Quatre elements vont apparaitre progressivement. Repondre tot rapporte plus de points."}</p>
+              {answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : <Button variant="primary" onClick={loadNextConnectionQuestion} disabled={connectionQuestions.length === 0} data-testid="start-connection-question">Afficher le premier element</Button>}
             </div>
           ) : null}
           {isQuestionActive && activeKnowledgeQuestion ? (
@@ -440,6 +471,27 @@ export function GameScreen() {
           ) : null}
 
 
+
+          {isQuestionActive && activeConnectionQuestion ? (
+            <>
+              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
+              <ConnectionsExerciseView
+                question={activeConnectionQuestion}
+                itemIndex={connectionItemIndex}
+                answersVisible={answersVisible}
+                isLocked={isLocked}
+                selectedAnswerId={selectedAnswerId}
+                eliminatedOptionIds={gameState.jokerEffects.eliminatedOptionIds}
+                points={connectionPoints}
+                onSelect={selectAnswer}
+              />
+              <div className="screen-actions connection-actions">
+                <Button variant="secondary" onClick={() => revealNextConnectionItemForCurrentQuestion()} disabled={isLocked || answersVisible || connectionItemIndex >= 3}>Element suivant</Button>
+                <Button variant="primary" onClick={() => showConnectionAnswerOptionsForCurrentQuestion()} disabled={isLocked || answersVisible}>Repondre maintenant</Button>
+              </div>
+              {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message="Les quatre elements restent visibles. Revelation prete." /> : null}
+            </>
+          ) : null}
           {isQuestionActive && activeSynapseQuestion ? (
             <>
               <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
@@ -450,8 +502,8 @@ export function GameScreen() {
           <div className="screen-actions in-stage knowledge-actions">
             <Button variant="secondary" onClick={() => navigate("home")}>Quitter</Button>
             {!isQuestionActive && answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : null}
-            {gameState.status === "question_active" && answersVisible ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
-            {gameState.status === "question_active" && !isClueRace ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
+            {gameState.status === "question_active" && isClueRace && answersVisible ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
+            {gameState.status === "question_active" && !isClueRace ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId || (isConnections && !answersVisible)} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
             {gameState.status === "answer_locked" ? <Button variant="primary" onClick={() => revealCurrentAnswer(allQuestions)} data-testid="reveal-answer-button">Reveler la reponse</Button> : null}
           </div>
         </Panel>
@@ -472,7 +524,7 @@ export function GameScreen() {
             <h2>Progression</h2>
             <div className="knowledge-progress-card">
               <strong>{answeredCount} / {targetCount}</strong>
-              <span>{isClueRace ? "enigmes jouees" : isPressureChoice ? "paliers joues" : isSynapse ? "epreuves jouees" : "questions selectionnees"}</span>
+              <span>{isClueRace ? "enigmes jouees" : isPressureChoice ? "paliers joues" : isSynapse ? "epreuves jouees" : isConnections ? "connexions jouees" : "questions selectionnees"}</span>
             </div>
           </Panel>
           <Panel>
