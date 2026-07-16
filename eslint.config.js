@@ -13,9 +13,22 @@ const browserGlobals = {
   window: "readonly",
 };
 
+const nodeScriptGlobals = {
+  console: "readonly",
+  process: "readonly",
+};
+
 export default [
   { ignores: ["dist", "node_modules", "playwright-report", "test-results"] },
   js.configs.recommended,
+  {
+    files: ["scripts/**/*.mjs"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      globals: nodeScriptGlobals,
+    },
+  },
   {
     files: ["**/*.{ts,tsx}"],
     languageOptions: {

@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-music-001",
+  "title": "Musique — Lot 1",
+  "category": "music",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "MUS-0001",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "classical-music",
+      "difficulty": 1,
+      "question": "Qui a composé la Neuvième Symphonie avec l’Ode à la joie ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ludwig van Beethoven"
+        },
+        {
+          "id": "b",
+          "text": "Wolfgang Amadeus Mozart"
+        },
+        {
+          "id": "c",
+          "text": "Johannes Brahms"
+        },
+        {
+          "id": "d",
+          "text": "Franz Schubert"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Créée en 1824, la Neuvième introduit des voix dans son dernier mouvement sur un poème de Schiller.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Beethoven",
+        "Neuvième Symphonie",
+        "classique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0002",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "instruments",
+      "difficulty": 1,
+      "question": "Combien de touches possède généralement un piano moderne complet ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "76"
+        },
+        {
+          "id": "b",
+          "text": "88"
+        },
+        {
+          "id": "c",
+          "text": "61"
+        },
+        {
+          "id": "d",
+          "text": "96"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le clavier standard comprend 52 touches blanches et 36 noires, soit 88 au total.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "piano",
+        "touches",
+        "instrument"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0003",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "french-song",
+      "difficulty": 1,
+      "question": "Quel chanteur a interprété La Bohème ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Gilbert Bécaud"
+        },
+        {
+          "id": "b",
+          "text": "Serge Reggiani"
+        },
+        {
+          "id": "c",
+          "text": "Charles Aznavour"
+        },
+        {
+          "id": "d",
+          "text": "Yves Montand"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La chanson évoque avec nostalgie la vie d’un jeune artiste dans le Montmartre d’autrefois.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Aznavour",
+        "La Bohème",
+        "chanson française"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0004",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "music-theory",
+      "difficulty": 1,
+      "question": "Comment appelle-t-on la vitesse d’exécution d’un morceau ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le timbre"
+        },
+        {
+          "id": "b",
+          "text": "La tonalité"
+        },
+        {
+          "id": "c",
+          "text": "La cadence"
+        },
+        {
+          "id": "d",
+          "text": "Le tempo"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le tempo indique la rapidité générale d’une œuvre, souvent mesurée en battements par minute.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "tempo",
+        "rythme",
+        "musique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0005",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "rock-and-pop",
+      "difficulty": 2,
+      "question": "Quel groupe a enregistré l’album Abbey Road ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "The Beatles"
+        },
+        {
+          "id": "b",
+          "text": "The Rolling Stones"
+        },
+        {
+          "id": "c",
+          "text": "The Who"
+        },
+        {
+          "id": "d",
+          "text": "Pink Floyd"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Abbey Road, publié en 1969, porte le nom du studio londonien où le groupe enregistrait.",
+      "sourceLabel": "British Library",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Beatles",
+        "Abbey Road",
+        "rock"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0006",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "jazz-and-blues",
+      "difficulty": 2,
+      "question": "Quel instrument Louis Armstrong jouait-il principalement ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le saxophone"
+        },
+        {
+          "id": "b",
+          "text": "La trompette"
+        },
+        {
+          "id": "c",
+          "text": "Le piano"
+        },
+        {
+          "id": "d",
+          "text": "La contrebasse"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Armstrong fut un trompettiste et chanteur majeur, célèbre pour son improvisation et son phrasé.",
+      "sourceLabel": "Smithsonian",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Armstrong",
+        "trompette",
+        "jazz"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0007",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "world-music",
+      "difficulty": 2,
+      "question": "Le flamenco est principalement associé à quelle région d’Espagne ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Galice"
+        },
+        {
+          "id": "b",
+          "text": "La Catalogne"
+        },
+        {
+          "id": "c",
+          "text": "L’Andalousie"
+        },
+        {
+          "id": "d",
+          "text": "La Castille"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le flamenco réunit chant, guitare et danse dans une tradition fortement liée à l’Andalousie.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "flamenco",
+        "Andalousie",
+        "Espagne"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0008",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "artists-and-works",
+      "difficulty": 2,
+      "question": "Qui a composé Les Quatre Saisons ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Arcangelo Corelli"
+        },
+        {
+          "id": "b",
+          "text": "Georg Friedrich Haendel"
+        },
+        {
+          "id": "c",
+          "text": "Jean-Sébastien Bach"
+        },
+        {
+          "id": "d",
+          "text": "Antonio Vivaldi"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Ces quatre concertos pour violon évoquent chacun une saison par des procédés musicaux descriptifs.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Vivaldi",
+        "Quatre Saisons",
+        "concerto"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0009",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "classical-music",
+      "difficulty": 2,
+      "question": "Quel compositeur est surnommé le « père de la symphonie » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Joseph Haydn"
+        },
+        {
+          "id": "b",
+          "text": "Hector Berlioz"
+        },
+        {
+          "id": "c",
+          "text": "Frédéric Chopin"
+        },
+        {
+          "id": "d",
+          "text": "Claude Debussy"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Haydn contribua fortement à fixer la forme classique de la symphonie et du quatuor à cordes.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Haydn",
+        "symphonie",
+        "classique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0010",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "french-song",
+      "difficulty": 2,
+      "question": "Quel duo a enregistré la version française de Paroles, paroles ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "France Gall et Michel Berger"
+        },
+        {
+          "id": "b",
+          "text": "Dalida et Alain Delon"
+        },
+        {
+          "id": "c",
+          "text": "Jane Birkin et Serge Gainsbourg"
+        },
+        {
+          "id": "d",
+          "text": "Barbara et Georges Brassens"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La chanson alterne les déclarations parlées d’Alain Delon et les réponses chantées de Dalida.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Dalida",
+        "Alain Delon",
+        "Paroles paroles"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0011",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "rock-and-pop",
+      "difficulty": 3,
+      "question": "Quel artiste est surnommé le « King of Pop » ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Prince"
+        },
+        {
+          "id": "b",
+          "text": "David Bowie"
+        },
+        {
+          "id": "c",
+          "text": "Michael Jackson"
+        },
+        {
+          "id": "d",
+          "text": "Elvis Presley"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Ce surnom s’est imposé en raison de son influence mondiale sur la pop, la danse et le clip vidéo.",
+      "sourceLabel": "Rock & Roll Hall of Fame",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Michael Jackson",
+        "pop",
+        "artiste"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0012",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "jazz-and-blues",
+      "difficulty": 3,
+      "question": "Quelle ville américaine est considérée comme un berceau majeur du jazz ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Boston"
+        },
+        {
+          "id": "b",
+          "text": "Seattle"
+        },
+        {
+          "id": "c",
+          "text": "Denver"
+        },
+        {
+          "id": "d",
+          "text": "La Nouvelle-Orléans"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le jazz s’y développe au début du XXe siècle à partir de traditions afro-américaines, créoles et européennes.",
+      "sourceLabel": "Smithsonian",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "jazz",
+        "Nouvelle-Orléans",
+        "États-Unis"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0013",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "instruments",
+      "difficulty": 3,
+      "question": "Quel instrument se joue avec un archet et se tient sous le menton ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le violon"
+        },
+        {
+          "id": "b",
+          "text": "Le violoncelle"
+        },
+        {
+          "id": "c",
+          "text": "La contrebasse"
+        },
+        {
+          "id": "d",
+          "text": "La harpe"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le violon est le plus petit instrument de la famille moderne des cordes frottées orchestrales.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "violon",
+        "archet",
+        "instrument"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0014",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "music-theory",
+      "difficulty": 3,
+      "question": "Quel intervalle sépare deux notes portant le même nom, l’une plus aiguë que l’autre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La quinte"
+        },
+        {
+          "id": "b",
+          "text": "L’octave"
+        },
+        {
+          "id": "c",
+          "text": "La tierce"
+        },
+        {
+          "id": "d",
+          "text": "La seconde"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "À l’octave, la fréquence de la note supérieure est deux fois celle de la note inférieure.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "octave",
+        "intervalle",
+        "musique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0015",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "world-music",
+      "difficulty": 3,
+      "question": "Quel instrument à cordes est emblématique de la musique classique indienne du Nord ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le koto"
+        },
+        {
+          "id": "b",
+          "text": "Le oud"
+        },
+        {
+          "id": "c",
+          "text": "Le sitar"
+        },
+        {
+          "id": "d",
+          "text": "Le balafon"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le sitar possède des cordes mélodiques et sympathiques qui contribuent à sa résonance caractéristique.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "sitar",
+        "Inde",
+        "instrument"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0016",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "artists-and-works",
+      "difficulty": 3,
+      "question": "Quel opéra de Bizet met en scène une bohémienne travaillant dans une manufacture de tabac ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Lakmé"
+        },
+        {
+          "id": "b",
+          "text": "Manon"
+        },
+        {
+          "id": "c",
+          "text": "Thaïs"
+        },
+        {
+          "id": "d",
+          "text": "Carmen"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Créé en 1875, Carmen se déroule à Séville et mêle passion, jalousie et fatalité.",
+      "sourceLabel": "Opéra national de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Carmen",
+        "Bizet",
+        "opéra"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0017",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "classical-music",
+      "difficulty": 3,
+      "question": "Quel compositeur a écrit Le Sacre du printemps ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Igor Stravinsky"
+        },
+        {
+          "id": "b",
+          "text": "Maurice Ravel"
+        },
+        {
+          "id": "c",
+          "text": "Gustav Mahler"
+        },
+        {
+          "id": "d",
+          "text": "Antonín Dvořák"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Créé à Paris en 1913, le ballet marqua par ses rythmes irréguliers et son orchestration novatrice.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Stravinsky",
+        "Sacre du printemps",
+        "ballet"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0018",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "french-song",
+      "difficulty": 4,
+      "question": "Qui a écrit et interprété Ne me quitte pas ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Léo Ferré"
+        },
+        {
+          "id": "b",
+          "text": "Jacques Brel"
+        },
+        {
+          "id": "c",
+          "text": "Claude Nougaro"
+        },
+        {
+          "id": "d",
+          "text": "Georges Moustaki"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La chanson, publiée en 1959, est devenue l’une des œuvres les plus reprises du répertoire francophone.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Brel",
+        "Ne me quitte pas",
+        "chanson"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0019",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "rock-and-pop",
+      "difficulty": 4,
+      "question": "Quel mouvement musical est associé à Nirvana et Seattle au début des années 1990 ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le glam rock"
+        },
+        {
+          "id": "b",
+          "text": "Le ska"
+        },
+        {
+          "id": "c",
+          "text": "Le grunge"
+        },
+        {
+          "id": "d",
+          "text": "Le disco"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le grunge mêle punk et heavy metal, avec une esthétique souvent brute et désenchantée.",
+      "sourceLabel": "Rock & Roll Hall of Fame",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "grunge",
+        "Nirvana",
+        "Seattle"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0020",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "jazz-and-blues",
+      "difficulty": 4,
+      "question": "Qu’est-ce qu’un standard de jazz ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un instrument accordé en do"
+        },
+        {
+          "id": "b",
+          "text": "Une règle de notation"
+        },
+        {
+          "id": "c",
+          "text": "Un type de salle"
+        },
+        {
+          "id": "d",
+          "text": "Un morceau largement repris et réinterprété"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les standards fournissent une base commune permettant aux musiciens d’improviser sur des mélodies et harmonies connues.",
+      "sourceLabel": "Smithsonian",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "standard",
+        "jazz",
+        "improvisation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0021",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "world-music",
+      "difficulty": 4,
+      "question": "Quel genre musical jamaïcain est associé à Bob Marley ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le reggae"
+        },
+        {
+          "id": "b",
+          "text": "La salsa"
+        },
+        {
+          "id": "c",
+          "text": "Le raï"
+        },
+        {
+          "id": "d",
+          "text": "Le fado"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le reggae se développe en Jamaïque à la fin des années 1960 et met souvent l’accent sur les contretemps.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "reggae",
+        "Bob Marley",
+        "Jamaïque"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0022",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "instruments",
+      "difficulty": 4,
+      "question": "Quel instrument possède des tuyaux alimentés par de l’air et plusieurs claviers possibles ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le clavecin"
+        },
+        {
+          "id": "b",
+          "text": "L’orgue"
+        },
+        {
+          "id": "c",
+          "text": "L’accordéon"
+        },
+        {
+          "id": "d",
+          "text": "Le célesta"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "L’orgue produit le son en faisant passer de l’air dans des tuyaux de tailles et de timbres variés.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "orgue",
+        "tuyaux",
+        "instrument"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0023",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "music-theory",
+      "difficulty": 5,
+      "question": "Que désigne le timbre d’un son ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Sa durée exacte"
+        },
+        {
+          "id": "b",
+          "text": "Sa hauteur uniquement"
+        },
+        {
+          "id": "c",
+          "text": "Sa couleur sonore"
+        },
+        {
+          "id": "d",
+          "text": "Son volume seulement"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le timbre permet de distinguer deux instruments jouant la même note à la même intensité.",
+      "sourceLabel": "IRCAM",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "timbre",
+        "son",
+        "musique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0024",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "artists-and-works",
+      "difficulty": 5,
+      "question": "Quel groupe français a créé l’album Discovery ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Air"
+        },
+        {
+          "id": "b",
+          "text": "Phoenix"
+        },
+        {
+          "id": "c",
+          "text": "Justice"
+        },
+        {
+          "id": "d",
+          "text": "Daft Punk"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Discovery, sorti en 2001, mêle house, disco, funk et pop avec un usage marqué des voix traitées.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Daft Punk",
+        "Discovery",
+        "musique électronique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MUS-0025",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "classical-music",
+      "difficulty": 5,
+      "question": "Quel compositeur français a écrit le Boléro ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Maurice Ravel"
+        },
+        {
+          "id": "b",
+          "text": "Claude Debussy"
+        },
+        {
+          "id": "c",
+          "text": "Erik Satie"
+        },
+        {
+          "id": "d",
+          "text": "Gabriel Fauré"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Boléro repose sur un rythme obstiné et une orchestration qui s’enrichit progressivement sans changer de thème.",
+      "sourceLabel": "Philharmonie de Paris",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Ravel",
+        "Boléro",
+        "classique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

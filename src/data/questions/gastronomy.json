@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-gastronomy-001",
+  "title": "Gastronomie — Lot 1",
+  "category": "gastronomy",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "GAS-0001",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "french-cuisine",
+      "difficulty": 1,
+      "question": "Quel plat associe traditionnellement pommes de terre, fromage et lardons en Savoie ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La tartiflette"
+        },
+        {
+          "id": "b",
+          "text": "La bouillabaisse"
+        },
+        {
+          "id": "c",
+          "text": "Le cassoulet"
+        },
+        {
+          "id": "d",
+          "text": "La ratatouille"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La tartiflette moderne est préparée avec du reblochon, des pommes de terre, des oignons et souvent des lardons.",
+      "sourceLabel": "INAO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "tartiflette",
+        "Savoie",
+        "cuisine française"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0002",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "ingredients",
+      "difficulty": 1,
+      "question": "De quel fruit provient le guacamole ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La mangue"
+        },
+        {
+          "id": "b",
+          "text": "L’avocat"
+        },
+        {
+          "id": "c",
+          "text": "La courgette"
+        },
+        {
+          "id": "d",
+          "text": "Le kiwi"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le guacamole est une préparation mexicaine à base d’avocat écrasé, souvent assaisonné de citron vert et de piment.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "guacamole",
+        "avocat",
+        "Mexique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0003",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "techniques",
+      "difficulty": 1,
+      "question": "Que signifie « blanchir » des légumes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les cuire au four sans matière grasse"
+        },
+        {
+          "id": "b",
+          "text": "Les recouvrir de farine"
+        },
+        {
+          "id": "c",
+          "text": "Les plonger brièvement dans l’eau bouillante puis les refroidir"
+        },
+        {
+          "id": "d",
+          "text": "Les faire fermenter"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le blanchiment peut fixer la couleur, attendrir légèrement et préparer à une autre cuisson ou à la congélation.",
+      "sourceLabel": "Le Cordon Bleu",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "blanchir",
+        "technique",
+        "légumes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0004",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "pastry",
+      "difficulty": 1,
+      "question": "Quel ingrédient fait lever une pâte à pain traditionnelle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le sel"
+        },
+        {
+          "id": "b",
+          "text": "Le cacao"
+        },
+        {
+          "id": "c",
+          "text": "L’huile"
+        },
+        {
+          "id": "d",
+          "text": "La levure"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La levure fermente les sucres et produit du dioxyde de carbone, qui forme des bulles dans la pâte.",
+      "sourceLabel": "INRAE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "levure",
+        "pain",
+        "pâtisserie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0005",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "world-cuisine",
+      "difficulty": 2,
+      "question": "Le sushi appartient à quelle cuisine ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La cuisine japonaise"
+        },
+        {
+          "id": "b",
+          "text": "La cuisine coréenne"
+        },
+        {
+          "id": "c",
+          "text": "La cuisine vietnamienne"
+        },
+        {
+          "id": "d",
+          "text": "La cuisine thaïlandaise"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le sushi associe du riz vinaigré à divers accompagnements, qui ne sont pas toujours du poisson cru.",
+      "sourceLabel": "Ministère japonais de l’Agriculture",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "sushi",
+        "Japon",
+        "cuisine"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0006",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "dishes",
+      "difficulty": 2,
+      "question": "Quel légume est la base principale d’une soupe à l’oignon ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le poireau"
+        },
+        {
+          "id": "b",
+          "text": "L’oignon"
+        },
+        {
+          "id": "c",
+          "text": "Le navet"
+        },
+        {
+          "id": "d",
+          "text": "Le fenouil"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La soupe à l’oignon française repose sur des oignons longuement revenus puis mouillés de bouillon.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "soupe à l’oignon",
+        "plat",
+        "France"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0007",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "beverages",
+      "difficulty": 2,
+      "question": "Quelle boisson est obtenue par infusion de feuilles de Camellia sinensis ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le café"
+        },
+        {
+          "id": "b",
+          "text": "Le maté"
+        },
+        {
+          "id": "c",
+          "text": "Le thé"
+        },
+        {
+          "id": "d",
+          "text": "Le cacao"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Thé vert, noir, blanc et oolong proviennent de la même espèce, mais diffèrent par leur transformation.",
+      "sourceLabel": "FAO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "thé",
+        "Camellia sinensis",
+        "boisson"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0008",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "food-history",
+      "difficulty": 2,
+      "question": "Quel produit venu d’Amérique s’est largement diffusé en Europe après le XVIe siècle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le riz"
+        },
+        {
+          "id": "b",
+          "text": "Le blé"
+        },
+        {
+          "id": "c",
+          "text": "L’olive"
+        },
+        {
+          "id": "d",
+          "text": "La tomate"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La tomate est originaire des Amériques et fut progressivement intégrée aux cuisines européennes.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "tomate",
+        "Amériques",
+        "histoire alimentaire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0009",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "french-cuisine",
+      "difficulty": 2,
+      "question": "Quel fromage est traditionnellement chauffé puis raclé sur des pommes de terre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le fromage à raclette"
+        },
+        {
+          "id": "b",
+          "text": "Le roquefort"
+        },
+        {
+          "id": "c",
+          "text": "Le camembert"
+        },
+        {
+          "id": "d",
+          "text": "Le chèvre frais"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le fromage à raclette fond sous l’effet de la chaleur avant d’être raclé sur les accompagnements.",
+      "sourceLabel": "INAO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "raclette",
+        "fromage",
+        "cuisine"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0010",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "ingredients",
+      "difficulty": 2,
+      "question": "Quelle épice donne sa couleur jaune à de nombreux currys ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le cumin"
+        },
+        {
+          "id": "b",
+          "text": "Le curcuma"
+        },
+        {
+          "id": "c",
+          "text": "La muscade"
+        },
+        {
+          "id": "d",
+          "text": "Le poivre noir"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le curcuma contient de la curcumine, pigment jaune-orangé très colorant.",
+      "sourceLabel": "FAO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "curcuma",
+        "épice",
+        "curry"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0011",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "techniques",
+      "difficulty": 3,
+      "question": "Que signifie « saisir » un aliment ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le cuire lentement dans l’eau"
+        },
+        {
+          "id": "b",
+          "text": "Le congeler immédiatement"
+        },
+        {
+          "id": "c",
+          "text": "Le cuire rapidement à forte chaleur en surface"
+        },
+        {
+          "id": "d",
+          "text": "Le laisser mariner"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Saisir favorise une coloration rapide sans garantir à elle seule la cuisson à cœur.",
+      "sourceLabel": "Le Cordon Bleu",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "saisir",
+        "cuisson",
+        "technique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0012",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "pastry",
+      "difficulty": 3,
+      "question": "Quelle crème est composée principalement de lait, jaunes d’œufs, sucre et amidon ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La crème chantilly"
+        },
+        {
+          "id": "b",
+          "text": "La ganache"
+        },
+        {
+          "id": "c",
+          "text": "La crème au beurre"
+        },
+        {
+          "id": "d",
+          "text": "La crème pâtissière"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Elle est cuite jusqu’à épaississement et sert à garnir éclairs, tartes et mille-feuilles.",
+      "sourceLabel": "Le Cordon Bleu",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "crème pâtissière",
+        "pâtisserie",
+        "crème"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0013",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "world-cuisine",
+      "difficulty": 3,
+      "question": "Quel plat espagnol associe traditionnellement riz, safran et divers ingrédients ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La paella"
+        },
+        {
+          "id": "b",
+          "text": "La moussaka"
+        },
+        {
+          "id": "c",
+          "text": "Le risotto"
+        },
+        {
+          "id": "d",
+          "text": "Le couscous"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Originaire de la région de Valence, la paella connaît de nombreuses variantes régionales.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "paella",
+        "Espagne",
+        "riz"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0014",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "dishes",
+      "difficulty": 3,
+      "question": "Quel plat italien alterne couches de pâtes, sauce et fromage ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les gnocchis"
+        },
+        {
+          "id": "b",
+          "text": "Les lasagnes"
+        },
+        {
+          "id": "c",
+          "text": "La polenta"
+        },
+        {
+          "id": "d",
+          "text": "Le minestrone"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les lasagnes sont montées en couches puis cuites au four, avec des recettes variant selon les régions.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "lasagnes",
+        "Italie",
+        "plat"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0015",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "beverages",
+      "difficulty": 3,
+      "question": "Quelle boisson est obtenue à partir de grains torréfiés et moulus ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le thé"
+        },
+        {
+          "id": "b",
+          "text": "Le kéfir"
+        },
+        {
+          "id": "c",
+          "text": "Le café"
+        },
+        {
+          "id": "d",
+          "text": "Le kombucha"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les grains sont les graines du fruit du caféier. Leur torréfaction développe une grande partie des arômes.",
+      "sourceLabel": "Organisation internationale du café",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "café",
+        "torréfaction",
+        "boisson"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0016",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "food-history",
+      "difficulty": 3,
+      "question": "Quel mode de conservation repose sur l’action de micro-organismes produisant acides ou alcool ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La filtration"
+        },
+        {
+          "id": "b",
+          "text": "La congélation"
+        },
+        {
+          "id": "c",
+          "text": "La torréfaction"
+        },
+        {
+          "id": "d",
+          "text": "La fermentation"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La fermentation est utilisée depuis l’Antiquité pour le pain, les fromages, les boissons et les légumes conservés.",
+      "sourceLabel": "INRAE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fermentation",
+        "conservation",
+        "histoire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0017",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "french-cuisine",
+      "difficulty": 3,
+      "question": "Quel plat provençal est composé de légumes mijotés comme courgette, aubergine et tomate ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La ratatouille"
+        },
+        {
+          "id": "b",
+          "text": "Le gratin dauphinois"
+        },
+        {
+          "id": "c",
+          "text": "La choucroute"
+        },
+        {
+          "id": "d",
+          "text": "La quiche lorraine"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La ratatouille associe plusieurs légumes méditerranéens cuits avec huile d’olive et aromates.",
+      "sourceLabel": "Ministère de la Culture",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ratatouille",
+        "Provence",
+        "légumes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0018",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "ingredients",
+      "difficulty": 4,
+      "question": "Quel fruit sec est la base du massepain ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La noisette"
+        },
+        {
+          "id": "b",
+          "text": "L’amande"
+        },
+        {
+          "id": "c",
+          "text": "La noix"
+        },
+        {
+          "id": "d",
+          "text": "La pistache"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le massepain mélange principalement amandes finement moulues et sucre.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "massepain",
+        "amande",
+        "ingrédient"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0019",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "techniques",
+      "difficulty": 4,
+      "question": "Que signifie « déglacer » une poêle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Retirer toute matière grasse à froid"
+        },
+        {
+          "id": "b",
+          "text": "Refroidir une sauce"
+        },
+        {
+          "id": "c",
+          "text": "Dissoudre les sucs avec un liquide"
+        },
+        {
+          "id": "d",
+          "text": "Ajouter de la glace pilée"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le liquide détache les sucs caramélisés pour enrichir une sauce ou un jus.",
+      "sourceLabel": "Le Cordon Bleu",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "déglacer",
+        "sucs",
+        "technique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0020",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "pastry",
+      "difficulty": 4,
+      "question": "Quel dessert italien est préparé avec mascarpone, café et biscuits ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La panna cotta"
+        },
+        {
+          "id": "b",
+          "text": "Le cannolo"
+        },
+        {
+          "id": "c",
+          "text": "Le panettone"
+        },
+        {
+          "id": "d",
+          "text": "Le tiramisu"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le tiramisu alterne biscuits imbibés de café et crème au mascarpone, puis reçoit souvent du cacao.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "tiramisu",
+        "Italie",
+        "dessert"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0021",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "world-cuisine",
+      "difficulty": 4,
+      "question": "Dans quel pays le pho est-il un plat emblématique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Vietnam"
+        },
+        {
+          "id": "b",
+          "text": "Le Laos"
+        },
+        {
+          "id": "c",
+          "text": "Le Cambodge"
+        },
+        {
+          "id": "d",
+          "text": "La Malaisie"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le pho est une soupe de nouilles de riz dans un bouillon aromatique, souvent servie avec bœuf ou poulet.",
+      "sourceLabel": "Vietnam National Administration of Tourism",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "pho",
+        "Vietnam",
+        "soupe"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0022",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "dishes",
+      "difficulty": 4,
+      "question": "Quel légume sec est la base du houmous ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La lentille"
+        },
+        {
+          "id": "b",
+          "text": "Le pois chiche"
+        },
+        {
+          "id": "c",
+          "text": "Le haricot rouge"
+        },
+        {
+          "id": "d",
+          "text": "Le pois cassé"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le houmous mélange pois chiches, tahini, citron et ail, avec de nombreuses variantes.",
+      "sourceLabel": "FAO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "houmous",
+        "pois chiche",
+        "plat"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0023",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "beverages",
+      "difficulty": 5,
+      "question": "Quelle infusion sud-américaine se prépare avec les feuilles de yerba mate ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le rooibos"
+        },
+        {
+          "id": "b",
+          "text": "Le chai"
+        },
+        {
+          "id": "c",
+          "text": "Le maté"
+        },
+        {
+          "id": "d",
+          "text": "Le saké"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le maté est traditionnellement bu dans une calebasse à l’aide d’une bombilla.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "maté",
+        "Amérique du Sud",
+        "boisson"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0024",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "food-history",
+      "difficulty": 5,
+      "question": "Quel récipient a favorisé la diffusion industrielle des conserves au XIXe siècle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le wok"
+        },
+        {
+          "id": "b",
+          "text": "Le siphon"
+        },
+        {
+          "id": "c",
+          "text": "Le mortier"
+        },
+        {
+          "id": "d",
+          "text": "La boîte métallique"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Après les travaux d’Appert, la mise en conserve industrielle s’est développée dans des récipients hermétiques, notamment métalliques.",
+      "sourceLabel": "Musée des Arts et Métiers",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "conserve",
+        "boîte métallique",
+        "histoire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "GAS-0025",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "pastry",
+      "difficulty": 5,
+      "question": "Quel terme désigne le mélange de chocolat et de crème utilisé en pâtisserie ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La ganache"
+        },
+        {
+          "id": "b",
+          "text": "La meringue"
+        },
+        {
+          "id": "c",
+          "text": "La mousseline"
+        },
+        {
+          "id": "d",
+          "text": "Le sabayon"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La ganache peut servir de garniture, de glaçage ou de base de truffes selon ses proportions.",
+      "sourceLabel": "Le Cordon Bleu",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ganache",
+        "chocolat",
+        "pâtisserie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

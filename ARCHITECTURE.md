@@ -915,14 +915,14 @@ Un lot est termine seulement si :
 - les echecs restants, s'il y en a, sont bloques ou explicitement exclus avant validation.
 
 Etat actuel : cette phase ne cree pas encore le scaffold applicatif et ne peut donc pas executer ces commandes.
-## 16. Noyau mÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©tier central
+## 16. Noyau metier central
 
-Le noyau mÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©tier ne dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©pend pas de React. Les contrats sont centralisÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s dans `src/core/types` et les validations JSON dans `src/core/schemas`.
+Le noyau metier ne depend pas de React. Les contrats sont centralises dans `src/core/types` et les validations JSON dans `src/core/schemas`.
 
-Types ajoutÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s ou stabilisÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s :
+Types ajoutes ou stabilises :
 
 - `Player`, `PlayerId` pour les trois joueurs fixes ;
-- `GameConfig`, `GameMode`, `GameStatus`, `GameState` pour la configuration et la machine d'ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©tat ;
+- `GameConfig`, `GameMode`, `GameStatus`, `GameState` pour la configuration et la machine d'etat ;
 - `RoundDefinition`, `RoundState`, `GameRound` pour imposer une interface commune aux manches ;
 - `Question` et ses variantes `MultipleChoiceQuestion`, `ProgressiveCluesQuestion`, `ConnectionQuestion`, `ChronologyQuestion`, `AnalogyQuestion`, `MemoryQuestion`, `SequenceQuestion` ;
 - `Joker`, `JokerType`, `JokerState` ;
@@ -932,9 +932,10 @@ Types ajoutÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s ou stabilisÃƒÆ’Ã†
 `GameRound` impose a chaque manche d'initialiser/restaurer son etat, selectionner ses questions, gerer une reponse, calculer son score, determiner sa fin et produire un resume. Les calculs restent purs et testables.
 
 Les schemas Zod correspondants valident les donnees externes avant usage : joueurs, questions, score, jokers, manches, config, etat, actions et evenements.
+
 ## 17. Moteur de jeu central
 
-Le moteur central est implementÃƒÆ’Ã‚Â© dans `src/core/engine/gameEngine.ts`. Il est independant de React et expose des fonctions pures qui transforment un `GameState` en nouveau `GameState`.
+Le moteur central est implemente dans `src/core/engine/gameEngine.ts`. Il est independant de React et expose des fonctions pures qui transforment un `GameState` en nouveau `GameState`.
 
 Fonctions publiques : `createGame`, `startGame`, `startRound`, `loadQuestion`, `submitAnswer`, `revealAnswer`, `completeRound`, `advanceRound`, `completeGame`, `pauseGame`, `resumeGame`, `restoreGame`, `applyJoker`, `rotateCaptain`.
 
@@ -952,6 +953,7 @@ Garanties actuelles :
 - pause/reprise avec conservation du temps restant ;
 - restauration validee par Zod ;
 - journal interne `eventLog` pour tracer les actions du moteur.
+
 ## 18. Stores Zustand et sauvegarde locale
 
 La couche React consomme le moteur via trois stores explicites :
@@ -961,6 +963,7 @@ La couche React consomme le moteur via trois stores explicites :
 - `audioStore` garde l'etat runtime non metier : mute global, volume UI et volume musique.
 
 La persistance est centralisee dans `src/app/store/persistence.ts`. Le format de sauvegarde est enveloppe par `{ version, savedAt, screen, selectedAnswerId, gameState, recentQuestionIds }` et valide avec Zod avant restauration. Une sauvegarde corrompue ou d'une version inconnue renvoie une erreur claire dans le store et n'empeche pas l'application de demarrer. La suppression d'une partie retire uniquement la partie en cours ; l'historique recent des questions peut rester disponible pour les prochaines parties.
+
 ## 19. Design system TV-first
 
 Le design system TRIUM est documente dans `DESIGN.md` et implemente dans `src/ui/components` avec des tokens dans `src/ui/theme/tokens.ts` et `src/styles.css`.
@@ -968,8 +971,34 @@ Le design system TRIUM est documente dans `DESIGN.md` et implemente dans `src/ui
 Composants disponibles : `Button`, `IconButton`, `Card`, `Panel`, `Modal`, `Badge`, `ProgressBar`, `Timer`, `ScoreBoard`, `PlayerBadge`, `CaptainIndicator`, `AnswerButton`, `JokerButton`, `RoundHeader`, `FeedbackBanner`, `LoadingScreen`, `ErrorBoundary`, `ConfirmationDialog`.
 
 La page interne `DesignSystemScreen` est accessible uniquement en developpement depuis les parametres. Elle sert de banc de verification visuelle pour les tailles TV, les etats interactifs, les feedbacks et les dialogues.
+
 ## 20. Ecrans generaux
 
 Les ecrans generaux du jeu sont implementes dans `src/ui/screens` : `HomeScreen`, `RulesScreen`, `PlayerSetupScreen`, `GameModeScreen`, `ResumeGameScreen`, `SettingsScreen`, `GameIntroScreen`, `RoundIntroScreen`, `RoundResultScreen`, `GameResultScreen` et `ErrorScreen`.
 
 Le parcours V1 active uniquement le mode classique. Les modes express et grande aventure sont visibles mais desactives. La configuration joueurs impose trois prenoms, uniques et limites a 14 caracteres. Les parametres couvrent volumes musique/effets, mute global, animations reduites, duree des chronometres, plein ecran, reinitialisation de partie et reinitialisation des questions recentes.
+
+## 21. Chargement de la banque de questions locale
+
+Le pipeline local de questions est implemente dans `src/data/localQuestionBank.ts` et verifie par `scripts/questions.mjs`.
+
+Responsabilites du module applicatif :
+
+- importer tous les fichiers `src/data/questions/*.json` via `import.meta.glob` ;
+- valider chaque fichier et chaque question source avec Zod ;
+- exclure des questions jouables tout element qui n'est pas `verificationStatus: "verified"` et `status: "approved"` ;
+- conserver les questions sources pour l'inspection developpement ;
+- normaliser les questions approuvees en `Question` metier ;
+- produire un `QuestionLoadReport` avec totals, categories, sous-categories, difficultes, repartition des bonnes reponses, compte verifie, compte rejete, doublons exacts, doublons probables et erreurs de validation.
+
+Responsabilites de selection :
+
+- selection deterministe par graine ;
+- exclusion stricte des questions deja utilisees dans la partie ;
+- evitement des questions recemment jouees quand une alternative existe ;
+- ponderation simple pour reduire la surexposition d'une categorie ou d'une difficulte ;
+- erreur metier explicite `QuestionAvailabilityError` si aucune question eligible n'existe.
+
+Le script `pnpm questions` execute la validation hors React et affiche un rapport lisible dans le terminal. `pnpm questions:json` produit le meme rapport en JSON pour de futurs controles CI.
+
+La page `DevQuestionBankScreen` affiche le rapport dans l'application en mode developpement, avec un echantillon des questions chargees et les erreurs eventuelles.

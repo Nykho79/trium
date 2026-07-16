@@ -12,7 +12,9 @@
     "lint": "eslint . --max-warnings=0",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "questions": "node scripts/questions.mjs",
+    "questions:json": "node scripts/questions.mjs --json"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.0",

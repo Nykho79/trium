@@ -32,13 +32,13 @@ export function SettingsScreen() {
     try {
       if (document.fullscreenElement) {
         await document.exitFullscreen();
-        setFullscreenMessage("Mode plein ecran quitte.");
+        setFullscreenMessage("Mode plein écran quitté.");
         return;
       }
       await document.documentElement.requestFullscreen();
-      setFullscreenMessage("Mode plein ecran active.");
+      setFullscreenMessage("Mode plein écran activé.");
     } catch {
-      setFullscreenMessage("Le plein ecran est indisponible dans ce contexte.");
+      setFullscreenMessage("Le plein écran est indisponible dans ce contexte.");
     }
   };
 
@@ -46,9 +46,9 @@ export function SettingsScreen() {
     <ScreenFrame title="Paramètres">
       <section className="setup-screen general-screen">
         <div className="screen-heading">
-          <Badge tone="cyan">Systeme</Badge>
+          <Badge tone="cyan">Système</Badge>
           <h1>Paramètres</h1>
-          <p>Reglages locaux pour le son, le rythme et l'affichage TV.</p>
+          <p>Réglages locaux pour le son, le rythme et l'affichage TV.</p>
         </div>
         <Panel className="settings-list settings-panel">
           {persistenceError ? <p role="alert">{persistenceError}</p> : null}
@@ -63,15 +63,15 @@ export function SettingsScreen() {
             <input type="range" min="0" max="1" step="0.05" value={uiVolume} onChange={(event) => setUiVolume(Number(event.target.value))} />
           </label>
           <button type="button" onClick={() => setMasterMuted(!masterMuted)}>Couper le son <strong>{masterMuted ? "Oui" : "Non"}</strong></button>
-          <button type="button" onClick={toggleReducedMotion}>Animations reduites <strong>{reducedMotion ? "Oui" : "Non"}</strong></button>
+          <button type="button" onClick={toggleReducedMotion}>Animations réduites <strong>{reducedMotion ? "Oui" : "Non"}</strong></button>
           <label className="setting-row">
-            <span>Duree des chronometres <strong>x{timerScale.toFixed(2)}</strong></span>
+            <span>Durée des chronomètres <strong>x{timerScale.toFixed(2)}</strong></span>
             <input type="range" min="0.5" max="2" step="0.25" value={timerScale} onChange={(event) => setTimerScale(Number(event.target.value))} />
           </label>
           <button type="button" onClick={toggleFullscreen}>Mode plein écran <strong>{document.fullscreenElement ? "Actif" : "Basculer"}</strong></button>
-          <button type="button" onClick={clearSavedGame}>Reinitialisation de la partie <strong>Effacer</strong></button>
-          <button type="button" onClick={clearRecentQuestions}>Questions recemment vues <strong>Reinitialiser</strong></button>
-          <button type="button" onClick={() => navigate("dev-question-bank")}>Banque de questions <strong>Mode dev</strong></button>
+          <button type="button" onClick={clearSavedGame}>Réinitialisation de la partie <strong>Effacer</strong></button>
+          <button type="button" onClick={clearRecentQuestions}>Questions récemment vues <strong>Réinitialiser</strong></button>
+          {import.meta.env.DEV ? <button type="button" onClick={() => navigate("dev-question-bank")}>Banque de questions <strong>Mode dev</strong></button> : null}
           {import.meta.env.DEV ? <button type="button" onClick={() => navigate("design-system")}>Design system <strong>Mode dev</strong></button> : null}
         </Panel>
         <Button variant="primary" onClick={() => navigate("home")}>Retour</Button>

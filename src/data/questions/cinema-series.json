@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-cinema-series-001",
+  "title": "Cinéma et séries — Lot 1",
+  "category": "cinema-series",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "CIN-0001",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "classic-cinema",
+      "difficulty": 1,
+      "question": "Quel film de Charlie Chaplin met en scène un ouvrier happé par une machine ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les Temps modernes"
+        },
+        {
+          "id": "b",
+          "text": "Le Dictateur"
+        },
+        {
+          "id": "c",
+          "text": "La Ruée vers l’or"
+        },
+        {
+          "id": "d",
+          "text": "Les Lumières de la ville"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Sorti en 1936, le film critique la mécanisation du travail et les effets sociaux de l’industrialisation.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Chaplin",
+        "Temps modernes",
+        "cinéma"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0002",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "modern-cinema",
+      "difficulty": 1,
+      "question": "Dans Matrix, quelle pilule Neo choisit-il ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La pilule bleue"
+        },
+        {
+          "id": "b",
+          "text": "La pilule rouge"
+        },
+        {
+          "id": "c",
+          "text": "La pilule verte"
+        },
+        {
+          "id": "d",
+          "text": "La pilule noire"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La pilule rouge symbolise l’acceptation d’une réalité dérangeante, tandis que la bleue permettrait de retourner à l’illusion.",
+      "sourceLabel": "Warner Bros.",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Matrix",
+        "Neo",
+        "pilule rouge"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0003",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "french-cinema",
+      "difficulty": 1,
+      "question": "Quel acteur incarne François Pignon dans Le Dîner de cons ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Thierry Lhermitte"
+        },
+        {
+          "id": "b",
+          "text": "Daniel Auteuil"
+        },
+        {
+          "id": "c",
+          "text": "Jacques Villeret"
+        },
+        {
+          "id": "d",
+          "text": "Christian Clavier"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Jacques Villeret interprète un passionné de maquettes en allumettes invité à un dîner cruel dont il ignore le principe.",
+      "sourceLabel": "Unifrance",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Dîner de cons",
+        "Jacques Villeret",
+        "cinéma français"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0004",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "animation",
+      "difficulty": 1,
+      "question": "Quel studio japonais a produit Mon voisin Totoro ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Toei Animation"
+        },
+        {
+          "id": "b",
+          "text": "Madhouse"
+        },
+        {
+          "id": "c",
+          "text": "Production I.G"
+        },
+        {
+          "id": "d",
+          "text": "Studio Ghibli"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Réalisé par Hayao Miyazaki, le film est devenu l’un des symboles du Studio Ghibli.",
+      "sourceLabel": "Studio Ghibli",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Totoro",
+        "Ghibli",
+        "animation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0005",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "television-series",
+      "difficulty": 2,
+      "question": "Dans Friends, quel personnage travaille comme paléontologue ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ross Geller"
+        },
+        {
+          "id": "b",
+          "text": "Chandler Bing"
+        },
+        {
+          "id": "c",
+          "text": "Joey Tribbiani"
+        },
+        {
+          "id": "d",
+          "text": "Gunther"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ross est spécialiste des dinosaures et travaille notamment dans un musée puis à l’université.",
+      "sourceLabel": "Warner Bros. Television",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Friends",
+        "Ross",
+        "série"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0006",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "directors",
+      "difficulty": 2,
+      "question": "Qui a réalisé Psychose ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Billy Wilder"
+        },
+        {
+          "id": "b",
+          "text": "Alfred Hitchcock"
+        },
+        {
+          "id": "c",
+          "text": "Orson Welles"
+        },
+        {
+          "id": "d",
+          "text": "Stanley Kubrick"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Sorti en 1960, Psychose renouvelle le thriller par sa mise en scène, son montage et sa célèbre scène de douche.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Psychose",
+        "Hitchcock",
+        "réalisateur"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0007",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "international-cinema",
+      "difficulty": 2,
+      "question": "De quel pays est originaire le film Parasite ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Japon"
+        },
+        {
+          "id": "b",
+          "text": "La Chine"
+        },
+        {
+          "id": "c",
+          "text": "La Corée du Sud"
+        },
+        {
+          "id": "d",
+          "text": "La Thaïlande"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le film de Bong Joon-ho explore les rapports de classe à travers l’intrusion d’une famille pauvre chez une famille aisée.",
+      "sourceLabel": "Korean Film Council",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Parasite",
+        "Corée du Sud",
+        "cinéma"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0008",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "characters-and-plots",
+      "difficulty": 2,
+      "question": "Quel objet doit être détruit dans Le Seigneur des anneaux ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Silmaril noir"
+        },
+        {
+          "id": "b",
+          "text": "L’épée Andúril"
+        },
+        {
+          "id": "c",
+          "text": "Le palantír"
+        },
+        {
+          "id": "d",
+          "text": "L’Anneau unique"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’Anneau unique concentre le pouvoir de Sauron. Frodon doit le porter jusqu’à la Montagne du Destin pour le détruire.",
+      "sourceLabel": "New Line Cinema",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Seigneur des anneaux",
+        "Anneau unique",
+        "intrigue"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0009",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "classic-cinema",
+      "difficulty": 2,
+      "question": "Dans Casablanca, dans quelle ville l’action se déroule-t-elle principalement ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Casablanca"
+        },
+        {
+          "id": "b",
+          "text": "Tanger"
+        },
+        {
+          "id": "c",
+          "text": "Alger"
+        },
+        {
+          "id": "d",
+          "text": "Rabat"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le film se déroule dans le Maroc sous contrôle de Vichy, lieu de passage pour des réfugiés cherchant à rejoindre l’Amérique.",
+      "sourceLabel": "BFI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Casablanca",
+        "film",
+        "Maroc"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0010",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "modern-cinema",
+      "difficulty": 2,
+      "question": "Quel film met en scène un parc peuplé de dinosaures clonés ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "King Kong"
+        },
+        {
+          "id": "b",
+          "text": "Jurassic Park"
+        },
+        {
+          "id": "c",
+          "text": "Godzilla"
+        },
+        {
+          "id": "d",
+          "text": "Le Monde perdu de 1925"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Dans le film de Spielberg, des scientifiques recréent des dinosaures à partir d’ADN ancien, avec des conséquences incontrôlables.",
+      "sourceLabel": "Universal Pictures",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Jurassic Park",
+        "dinosaures",
+        "Spielberg"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0011",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "french-cinema",
+      "difficulty": 3,
+      "question": "Quel film de Jean-Pierre Jeunet suit une jeune serveuse de Montmartre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Delicatessen"
+        },
+        {
+          "id": "b",
+          "text": "Un long dimanche de fiançailles"
+        },
+        {
+          "id": "c",
+          "text": "Le Fabuleux Destin d’Amélie Poulain"
+        },
+        {
+          "id": "d",
+          "text": "Micmacs à tire-larigot"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Amélie décide d’améliorer secrètement la vie de son entourage tout en cherchant sa propre place.",
+      "sourceLabel": "Unifrance",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Amélie Poulain",
+        "Jeunet",
+        "Montmartre"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0012",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "animation",
+      "difficulty": 3,
+      "question": "Quel personnage de Pixar est un robot chargé de nettoyer une Terre abandonnée ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Baymax"
+        },
+        {
+          "id": "b",
+          "text": "R2-D2"
+        },
+        {
+          "id": "c",
+          "text": "BMO"
+        },
+        {
+          "id": "d",
+          "text": "WALL-E"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "WALL-E compacte les déchets avant de découvrir une plante qui devient essentielle au retour de l’humanité.",
+      "sourceLabel": "Pixar",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "WALL-E",
+        "Pixar",
+        "robot"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0013",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "television-series",
+      "difficulty": 3,
+      "question": "Dans Breaking Bad, quelle matière Walter White enseigne-t-il au lycée ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La chimie"
+        },
+        {
+          "id": "b",
+          "text": "La physique"
+        },
+        {
+          "id": "c",
+          "text": "Les mathématiques"
+        },
+        {
+          "id": "d",
+          "text": "La biologie"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ses compétences de chimiste deviennent centrales lorsqu’il se lance dans la fabrication de méthamphétamine.",
+      "sourceLabel": "AMC",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Breaking Bad",
+        "Walter White",
+        "chimie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0014",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "directors",
+      "difficulty": 3,
+      "question": "Quelle réalisatrice a signé Lost in Translation ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Jane Campion"
+        },
+        {
+          "id": "b",
+          "text": "Sofia Coppola"
+        },
+        {
+          "id": "c",
+          "text": "Kathryn Bigelow"
+        },
+        {
+          "id": "d",
+          "text": "Greta Gerwig"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le film suit deux Américains isolés à Tokyo et explore la solitude, le décalage culturel et une relation ambiguë.",
+      "sourceLabel": "Focus Features",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Sofia Coppola",
+        "Lost in Translation",
+        "réalisatrice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0015",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "characters-and-plots",
+      "difficulty": 3,
+      "question": "Quel est le métier d’Indiana Jones ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Historien de l’art"
+        },
+        {
+          "id": "b",
+          "text": "Journaliste"
+        },
+        {
+          "id": "c",
+          "text": "Archéologue"
+        },
+        {
+          "id": "d",
+          "text": "Détective privé"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Indiana Jones enseigne l’archéologie et part à la recherche d’objets historiques, dans un mélange d’aventure et de fiction.",
+      "sourceLabel": "Lucasfilm",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Indiana Jones",
+        "archéologue",
+        "personnage"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0016",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "international-cinema",
+      "difficulty": 3,
+      "question": "Qui a réalisé Les Sept Samouraïs ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Yasujirō Ozu"
+        },
+        {
+          "id": "b",
+          "text": "Kenji Mizoguchi"
+        },
+        {
+          "id": "c",
+          "text": "Takeshi Kitano"
+        },
+        {
+          "id": "d",
+          "text": "Akira Kurosawa"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le film raconte la défense d’un village par des samouraïs et a influencé de nombreux récits d’action collectifs.",
+      "sourceLabel": "Toho",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Sept Samouraïs",
+        "Kurosawa",
+        "Japon"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0017",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "classic-cinema",
+      "difficulty": 3,
+      "question": "Quel film muet allemand met en scène une ville futuriste divisée entre élites et ouvriers ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Metropolis"
+        },
+        {
+          "id": "b",
+          "text": "Nosferatu"
+        },
+        {
+          "id": "c",
+          "text": "M le Maudit"
+        },
+        {
+          "id": "d",
+          "text": "Le Cabinet du docteur Caligari"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Fritz Lang y propose une vision spectaculaire des tensions sociales et de la modernité industrielle.",
+      "sourceLabel": "Deutsche Kinemathek",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Metropolis",
+        "Fritz Lang",
+        "cinéma muet"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0018",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "modern-cinema",
+      "difficulty": 4,
+      "question": "Quel réalisateur a créé Inception ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "David Fincher"
+        },
+        {
+          "id": "b",
+          "text": "Christopher Nolan"
+        },
+        {
+          "id": "c",
+          "text": "Denis Villeneuve"
+        },
+        {
+          "id": "d",
+          "text": "Peter Jackson"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Inception met en scène des spécialistes capables d’entrer dans les rêves pour y voler ou implanter une idée.",
+      "sourceLabel": "Warner Bros.",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Inception",
+        "Nolan",
+        "rêve"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0019",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "french-cinema",
+      "difficulty": 4,
+      "question": "Dans Intouchables, quelle relation se noue entre les deux personnages principaux ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une rivalité sportive"
+        },
+        {
+          "id": "b",
+          "text": "Une enquête policière"
+        },
+        {
+          "id": "c",
+          "text": "Une amitié entre un homme tétraplégique et son aide à domicile"
+        },
+        {
+          "id": "d",
+          "text": "Une relation entre deux frères"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le film repose sur la rencontre de deux hommes issus de milieux très différents et sur l’évolution de leur relation.",
+      "sourceLabel": "Unifrance",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Intouchables",
+        "amitié",
+        "cinéma français"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0020",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "animation",
+      "difficulty": 4,
+      "question": "Quelle princesse Disney possède un tigre nommé Rajah ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ariel"
+        },
+        {
+          "id": "b",
+          "text": "Belle"
+        },
+        {
+          "id": "c",
+          "text": "Mulan"
+        },
+        {
+          "id": "d",
+          "text": "Jasmine"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Dans Aladdin, Rajah accompagne Jasmine au palais d’Agrabah et se montre protecteur envers elle.",
+      "sourceLabel": "Disney",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Jasmine",
+        "Rajah",
+        "Aladdin"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0021",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "television-series",
+      "difficulty": 4,
+      "question": "Quelle série suit les familles Stark, Lannister et Targaryen ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Game of Thrones"
+        },
+        {
+          "id": "b",
+          "text": "The Witcher"
+        },
+        {
+          "id": "c",
+          "text": "Vikings"
+        },
+        {
+          "id": "d",
+          "text": "The Last Kingdom"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La série adapte les romans de George R. R. Martin et met en scène des luttes dynastiques sur plusieurs continents fictifs.",
+      "sourceLabel": "HBO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Game of Thrones",
+        "Stark",
+        "Lannister"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0022",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "directors",
+      "difficulty": 4,
+      "question": "Quel réalisateur est associé aux films Le Voyage de Chihiro et Princesse Mononoké ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mamoru Hosoda"
+        },
+        {
+          "id": "b",
+          "text": "Hayao Miyazaki"
+        },
+        {
+          "id": "c",
+          "text": "Satoshi Kon"
+        },
+        {
+          "id": "d",
+          "text": "Isao Takahata"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Miyazaki mêle souvent merveilleux, écologie, enfance et ambiguïté morale dans ses films d’animation.",
+      "sourceLabel": "Studio Ghibli",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Miyazaki",
+        "Chihiro",
+        "Mononoké"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0023",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "characters-and-plots",
+      "difficulty": 5,
+      "question": "Dans Retour vers le futur, quel véhicule sert de machine à voyager dans le temps ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une Ford Mustang"
+        },
+        {
+          "id": "b",
+          "text": "Une Volkswagen Coccinelle"
+        },
+        {
+          "id": "c",
+          "text": "Une DeLorean"
+        },
+        {
+          "id": "d",
+          "text": "Une Cadillac Eldorado"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Doc Brown transforme une DeLorean DMC-12 en machine temporelle grâce au convecteur temporel.",
+      "sourceLabel": "Universal Pictures",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Retour vers le futur",
+        "DeLorean",
+        "voyage temporel"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0024",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "international-cinema",
+      "difficulty": 5,
+      "question": "Quel film italien suit un père protégeant son fils par l’imagination dans un camp nazi ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Cinema Paradiso"
+        },
+        {
+          "id": "b",
+          "text": "Le Voleur de bicyclette"
+        },
+        {
+          "id": "c",
+          "text": "La Grande Bellezza"
+        },
+        {
+          "id": "d",
+          "text": "La vie est belle"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Roberto Benigni combine comédie et tragédie pour montrer un père qui transforme l’horreur en jeu aux yeux de son enfant.",
+      "sourceLabel": "Istituto Luce Cinecittà",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "La vie est belle",
+        "Benigni",
+        "Italie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "CIN-0025",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "television-series",
+      "difficulty": 5,
+      "question": "Dans Stranger Things, quel monde parallèle menace Hawkins ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Monde à l’envers"
+        },
+        {
+          "id": "b",
+          "text": "La Zone fantôme"
+        },
+        {
+          "id": "c",
+          "text": "Le Néant"
+        },
+        {
+          "id": "d",
+          "text": "Le Royaume quantique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Monde à l’envers est une dimension sombre reliée à Hawkins par des portails et peuplée de créatures hostiles.",
+      "sourceLabel": "Netflix",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Stranger Things",
+        "Hawkins",
+        "Monde à l’envers"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

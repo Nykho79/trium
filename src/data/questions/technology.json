@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-technology-001",
+  "title": "Technologie et numérique — Lot 1",
+  "category": "technology",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "TEC-0001",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "hardware",
+      "difficulty": 1,
+      "question": "Quel composant exécute principalement les instructions d’un ordinateur ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le processeur"
+        },
+        {
+          "id": "b",
+          "text": "Le disque dur"
+        },
+        {
+          "id": "c",
+          "text": "L’écran"
+        },
+        {
+          "id": "d",
+          "text": "Le clavier"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le processeur réalise des opérations logiques et arithmétiques et coordonne l’exécution des programmes.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "processeur",
+        "ordinateur",
+        "matériel"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0002",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "internet",
+      "difficulty": 1,
+      "question": "Que signifie l’abréviation URL ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Universal Routing Link"
+        },
+        {
+          "id": "b",
+          "text": "Uniform Resource Locator"
+        },
+        {
+          "id": "c",
+          "text": "User Reference Line"
+        },
+        {
+          "id": "d",
+          "text": "Unified Resource Language"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Une URL est l’adresse permettant de localiser une ressource sur un réseau, notamment sur le Web.",
+      "sourceLabel": "W3C",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "URL",
+        "Web",
+        "Internet"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0003",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "cybersecurity",
+      "difficulty": 1,
+      "question": "Quel mot de passe est généralement le plus robuste ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "12345678"
+        },
+        {
+          "id": "b",
+          "text": "Le prénom suivi de l’année"
+        },
+        {
+          "id": "c",
+          "text": "Une longue phrase unique"
+        },
+        {
+          "id": "d",
+          "text": "Le même mot partout"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La longueur, l’unicité et l’imprévisibilité sont essentielles. Un gestionnaire de mots de passe peut aider.",
+      "sourceLabel": "ANSSI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "mot de passe",
+        "sécurité",
+        "cybersécurité"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0004",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "computing-history",
+      "difficulty": 1,
+      "question": "Qui est souvent considérée comme la première programmeuse ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Grace Hopper"
+        },
+        {
+          "id": "b",
+          "text": "Hedy Lamarr"
+        },
+        {
+          "id": "c",
+          "text": "Margaret Hamilton"
+        },
+        {
+          "id": "d",
+          "text": "Ada Lovelace"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Ada Lovelace décrivit un algorithme destiné à la machine analytique de Charles Babbage.",
+      "sourceLabel": "Science Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Ada Lovelace",
+        "programmation",
+        "histoire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0005",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "software",
+      "difficulty": 2,
+      "question": "Quel type de logiciel permet de naviguer sur le Web ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un navigateur"
+        },
+        {
+          "id": "b",
+          "text": "Un tableur"
+        },
+        {
+          "id": "c",
+          "text": "Un compilateur"
+        },
+        {
+          "id": "d",
+          "text": "Un antivirus uniquement"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le navigateur interprète notamment HTML, CSS et JavaScript pour afficher des pages web.",
+      "sourceLabel": "Mozilla",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "navigateur",
+        "Web",
+        "logiciel"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0006",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "programming-basics",
+      "difficulty": 2,
+      "question": "Qu’est-ce qu’une variable en programmation ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une erreur de syntaxe"
+        },
+        {
+          "id": "b",
+          "text": "Un emplacement nommé qui stocke une valeur"
+        },
+        {
+          "id": "c",
+          "text": "Un câble réseau"
+        },
+        {
+          "id": "d",
+          "text": "Une image compressée"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Une variable permet de manipuler une donnée qui peut changer pendant l’exécution du programme.",
+      "sourceLabel": "MDN",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "variable",
+        "programmation",
+        "code"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0007",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "artificial-intelligence",
+      "difficulty": 2,
+      "question": "Qu’est-ce qu’un modèle d’apprentissage automatique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un robot nécessairement humanoïde"
+        },
+        {
+          "id": "b",
+          "text": "Une base de données vide"
+        },
+        {
+          "id": "c",
+          "text": "Un système apprenant des régularités à partir de données"
+        },
+        {
+          "id": "d",
+          "text": "Un antivirus classique"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le modèle ajuste des paramètres afin de réaliser une tâche comme classer, prédire ou générer.",
+      "sourceLabel": "INRIA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "apprentissage automatique",
+        "IA",
+        "données"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0008",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "inventions",
+      "difficulty": 2,
+      "question": "Quelle invention permet de transmettre la voix à distance par signal électrique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le télégraphe optique"
+        },
+        {
+          "id": "b",
+          "text": "Le phonographe"
+        },
+        {
+          "id": "c",
+          "text": "La boussole"
+        },
+        {
+          "id": "d",
+          "text": "Le téléphone"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le téléphone convertit les sons en signaux transmissibles puis les reconvertit en sons.",
+      "sourceLabel": "Smithsonian",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "téléphone",
+        "invention",
+        "communication"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0009",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "hardware",
+      "difficulty": 2,
+      "question": "Quelle mémoire conserve temporairement les données utilisées par les programmes en cours ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La mémoire vive"
+        },
+        {
+          "id": "b",
+          "text": "La mémoire morte"
+        },
+        {
+          "id": "c",
+          "text": "Le disque optique"
+        },
+        {
+          "id": "d",
+          "text": "La carte réseau"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La RAM est rapide mais volatile : son contenu disparaît généralement à l’arrêt de la machine.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "RAM",
+        "mémoire vive",
+        "ordinateur"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0010",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "internet",
+      "difficulty": 2,
+      "question": "Quel protocole sécurisé est indiqué par le cadenas d’un site web ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "FTP"
+        },
+        {
+          "id": "b",
+          "text": "HTTPS"
+        },
+        {
+          "id": "c",
+          "text": "SMTP"
+        },
+        {
+          "id": "d",
+          "text": "Bluetooth"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "HTTPS chiffre les échanges entre le navigateur et le serveur grâce à TLS.",
+      "sourceLabel": "IETF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "HTTPS",
+        "sécurité",
+        "Web"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0011",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "cybersecurity",
+      "difficulty": 3,
+      "question": "Qu’est-ce que l’hameçonnage ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une sauvegarde automatique"
+        },
+        {
+          "id": "b",
+          "text": "Un nettoyage de disque"
+        },
+        {
+          "id": "c",
+          "text": "Une tentative de voler des informations par usurpation"
+        },
+        {
+          "id": "d",
+          "text": "Une mise à jour système"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le phishing imite souvent un service légitime afin d’obtenir identifiants, coordonnées bancaires ou autres données.",
+      "sourceLabel": "ANSSI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "phishing",
+        "hameçonnage",
+        "cybersécurité"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0012",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "computing-history",
+      "difficulty": 3,
+      "question": "Quel réseau est un ancêtre majeur d’Internet ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Minitel"
+        },
+        {
+          "id": "b",
+          "text": "Usenet"
+        },
+        {
+          "id": "c",
+          "text": "Ethernet"
+        },
+        {
+          "id": "d",
+          "text": "ARPANET"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "ARPANET expérimenta la commutation de paquets et relia plusieurs centres de recherche américains.",
+      "sourceLabel": "Internet Society",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ARPANET",
+        "Internet",
+        "histoire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0013",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "software",
+      "difficulty": 3,
+      "question": "Quel logiciel sert principalement à organiser des données en cellules et formules ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un tableur"
+        },
+        {
+          "id": "b",
+          "text": "Un traitement de texte"
+        },
+        {
+          "id": "c",
+          "text": "Un navigateur"
+        },
+        {
+          "id": "d",
+          "text": "Un lecteur audio"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les tableurs permettent calculs, tableaux, graphiques et analyses de données.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "tableur",
+        "logiciel",
+        "données"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0014",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "programming-basics",
+      "difficulty": 3,
+      "question": "Que fait une boucle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Elle chiffre un disque"
+        },
+        {
+          "id": "b",
+          "text": "Elle répète un bloc d’instructions"
+        },
+        {
+          "id": "c",
+          "text": "Elle dessine forcément un cercle"
+        },
+        {
+          "id": "d",
+          "text": "Elle ferme le programme"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Une boucle exécute des instructions plusieurs fois selon une condition ou un nombre d’itérations.",
+      "sourceLabel": "MDN",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "boucle",
+        "programmation",
+        "instructions"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0015",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "artificial-intelligence",
+      "difficulty": 3,
+      "question": "Qu’appelle-t-on données d’entraînement ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les fichiers supprimés"
+        },
+        {
+          "id": "b",
+          "text": "Les résultats d’un antivirus"
+        },
+        {
+          "id": "c",
+          "text": "Les exemples utilisés pour ajuster un modèle"
+        },
+        {
+          "id": "d",
+          "text": "Les composants matériels"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La qualité, la diversité et les biais de ces données influencent fortement le comportement du modèle.",
+      "sourceLabel": "INRIA",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "données d’entraînement",
+        "IA",
+        "modèle"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0016",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "inventions",
+      "difficulty": 3,
+      "question": "Quelle technologie utilise des satellites pour déterminer une position ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le NFC"
+        },
+        {
+          "id": "b",
+          "text": "Le fax"
+        },
+        {
+          "id": "c",
+          "text": "Le code-barres"
+        },
+        {
+          "id": "d",
+          "text": "Le GPS"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le récepteur calcule sa position à partir de signaux temporels envoyés par plusieurs satellites.",
+      "sourceLabel": "GPS.gov",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "GPS",
+        "satellites",
+        "géolocalisation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0017",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "hardware",
+      "difficulty": 3,
+      "question": "Quel périphérique convertit un document papier en image numérique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un scanner"
+        },
+        {
+          "id": "b",
+          "text": "Un routeur"
+        },
+        {
+          "id": "c",
+          "text": "Un projecteur"
+        },
+        {
+          "id": "d",
+          "text": "Un modem"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le scanner capture optiquement une surface et produit un fichier image ou PDF.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "scanner",
+        "périphérique",
+        "numérisation"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0018",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "internet",
+      "difficulty": 4,
+      "question": "Quelle différence essentielle sépare Internet et le Web ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ils sont strictement synonymes"
+        },
+        {
+          "id": "b",
+          "text": "Internet est le réseau, le Web est un service qui l’utilise"
+        },
+        {
+          "id": "c",
+          "text": "Le Web est plus ancien qu’Internet"
+        },
+        {
+          "id": "d",
+          "text": "Internet ne transporte pas de données"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Internet est l’infrastructure mondiale de réseaux ; le Web repose sur des pages et liens accessibles via cette infrastructure.",
+      "sourceLabel": "CERN",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Internet",
+        "Web",
+        "réseau"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0019",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "cybersecurity",
+      "difficulty": 4,
+      "question": "Pourquoi installer les mises à jour de sécurité ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pour augmenter la taille de l’écran"
+        },
+        {
+          "id": "b",
+          "text": "Pour changer de fournisseur"
+        },
+        {
+          "id": "c",
+          "text": "Pour corriger des vulnérabilités connues"
+        },
+        {
+          "id": "d",
+          "text": "Pour éviter toute sauvegarde"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les mises à jour réduisent l’exposition à des failles déjà identifiées et parfois exploitées.",
+      "sourceLabel": "ANSSI",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "mise à jour",
+        "vulnérabilité",
+        "sécurité"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0020",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "computing-history",
+      "difficulty": 4,
+      "question": "Quel inventeur britannique a proposé la machine analytique au XIXe siècle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Alan Turing"
+        },
+        {
+          "id": "b",
+          "text": "John von Neumann"
+        },
+        {
+          "id": "c",
+          "text": "Tim Berners-Lee"
+        },
+        {
+          "id": "d",
+          "text": "Charles Babbage"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La machine analytique devait être programmable à l’aide de cartes perforées, bien qu’elle n’ait pas été achevée.",
+      "sourceLabel": "Science Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Babbage",
+        "machine analytique",
+        "histoire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0021",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "software",
+      "difficulty": 4,
+      "question": "Qu’est-ce qu’un système d’exploitation ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le logiciel qui gère le matériel et les applications"
+        },
+        {
+          "id": "b",
+          "text": "Un câble d’alimentation"
+        },
+        {
+          "id": "c",
+          "text": "Un format d’image"
+        },
+        {
+          "id": "d",
+          "text": "Un moteur de recherche"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Il fournit des services essentiels : fichiers, mémoire, processus, périphériques et interface utilisateur.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "système d’exploitation",
+        "logiciel",
+        "ordinateur"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0022",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "programming-basics",
+      "difficulty": 4,
+      "question": "Que signifie « bug » en informatique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un mot de passe oublié"
+        },
+        {
+          "id": "b",
+          "text": "Un défaut provoquant un comportement inattendu"
+        },
+        {
+          "id": "c",
+          "text": "Une compression réussie"
+        },
+        {
+          "id": "d",
+          "text": "Un fichier multimédia"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Un bug peut venir d’une erreur de logique, de conception, de saisie ou d’interaction entre composants.",
+      "sourceLabel": "IEEE",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "bug",
+        "informatique",
+        "erreur"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0023",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "artificial-intelligence",
+      "difficulty": 5,
+      "question": "Qu’est-ce qu’un biais algorithmique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une vitesse de calcul élevée"
+        },
+        {
+          "id": "b",
+          "text": "Un écran mal calibré"
+        },
+        {
+          "id": "c",
+          "text": "Une distorsion systématique dans les résultats"
+        },
+        {
+          "id": "d",
+          "text": "Une panne électrique"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Il peut provenir des données, des objectifs, de la conception ou du contexte d’utilisation.",
+      "sourceLabel": "CNIL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "biais algorithmique",
+        "IA",
+        "résultats"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0024",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "inventions",
+      "difficulty": 5,
+      "question": "Qui a inventé le World Wide Web au CERN ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Vinton Cerf"
+        },
+        {
+          "id": "b",
+          "text": "Steve Wozniak"
+        },
+        {
+          "id": "c",
+          "text": "Dennis Ritchie"
+        },
+        {
+          "id": "d",
+          "text": "Tim Berners-Lee"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Berners-Lee proposa en 1989 un système de documents reliés par hyperliens utilisant URL, HTTP et HTML.",
+      "sourceLabel": "CERN",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Tim Berners-Lee",
+        "World Wide Web",
+        "CERN"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "TEC-0025",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "hardware",
+      "difficulty": 5,
+      "question": "Quel support stocke des données sans pièce mécanique mobile ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un SSD"
+        },
+        {
+          "id": "b",
+          "text": "Un disque dur magnétique"
+        },
+        {
+          "id": "c",
+          "text": "Une disquette"
+        },
+        {
+          "id": "d",
+          "text": "Une bande magnétique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le SSD utilise de la mémoire flash, ce qui permet des accès rapides et silencieux.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "SSD",
+        "stockage",
+        "matériel"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

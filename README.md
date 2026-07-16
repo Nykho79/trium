@@ -12,7 +12,9 @@ Le projet contient maintenant :
 - les ecrans generaux : accueil, reprise, regles, joueurs, modes, parametres, intros, resultats et erreur ;
 - un design system TRIUM documente dans `DESIGN.md` ;
 - un flux local accueil -> joueurs -> mode -> intro -> manche -> jeu -> resultats ;
-- une banque de questions JSON locale d'exemple ;
+- une banque de questions JSON locale dans `src/data/questions` ;
+- un chargeur local qui valide les fichiers JSON avec Zod, filtre les questions jouables et produit un rapport qualite ;
+- une selection de questions seedable avec exclusion des questions deja jouees et ponderation categories/difficultes ;
 - des schemas Zod pour valider les questions ;
 - un generateur aleatoire seedable et une selection anti-repetition ;
 - des stores Zustand separes pour la partie, les parametres et l'audio ;
@@ -29,6 +31,7 @@ Apres installation des dependances :
 ```bash
 pnpm install
 pnpm dev
+pnpm questions
 pnpm lint
 pnpm typecheck
 pnpm test
@@ -36,11 +39,14 @@ pnpm test:e2e
 pnpm build
 ```
 
+Le script `pnpm questions` valide les fichiers de `src/data/questions` et affiche le rapport de couverture, de statuts et de doublons. `pnpm questions:json` produit le meme rapport au format JSON.
+
 Si `pnpm` n'est pas sur le PATH Windows, utiliser le binaire global existant :
 
 ```powershell
 C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd install
 C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd dev
+C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd questions
 ```
 
 ## Noyau metier
@@ -58,6 +64,23 @@ Contrats principaux :
 - `GameEvent`, `GameAction` : entrees et evenements du moteur.
 
 La commande `npm run check` execute lint, TypeScript strict et tests unitaires. Sur cette machine, `npm` n'est pas disponible sur le PATH global ; la validation equivalente peut etre lancee avec `pnpm check` via le runtime Node local.
+
+## Banque de questions
+
+Les fichiers sources sont places dans `src/data/questions/*.json`. Le module `src/data/localQuestionBank.ts` :
+
+- importe tous les fichiers JSON locaux avec `import.meta.glob` ;
+- valide chaque fichier avec Zod ;
+- expose les questions sources, les questions jouables normalisees et un rapport ;
+- ne rend jouables que les questions `verificationStatus: "verified"` et `status: "approved"` ;
+- detecte les doublons exacts et les doublons probables ;
+- prepare une selection deterministe par graine, sans repetition dans une partie ;
+- evite les questions recemment jouees quand une alternative existe ;
+- equilibre categorie et difficulte selon l'historique de la partie.
+
+Etat actuel de la banque locale : 350 questions chargees, 14 categories, aucun doublon exact detecte, aucun doublon probable detecte, mais 0 question jouable car toutes les questions sont encore `to_verify` et `generated`.
+
+La page developpement `DevQuestionBankScreen` permet d'inspecter le rapport, les repartitions et un echantillon des questions chargees depuis l'application.
 
 ## Stores et persistance locale
 
@@ -82,6 +105,7 @@ Principes actifs :
 - le moteur de jeu reste dans `src/core` et ne depend pas de React ;
 - les types metier sont centralises dans `src/core/types` ;
 - les schemas Zod sont centralises dans `src/core/schemas` ;
+- les donnees de questions sources sont centralisees dans `src/data/questions` ;
 - les ecrans React sont dans `src/ui/screens` ;
 - l'etat local est reparti entre `gameStore`, `settingsStore` et `audioStore` ;
 - les sons sont centralises dans `src/ui/audio/soundManager.ts` et pilotes par `settingsStore`/`audioStore` ;
@@ -91,12 +115,10 @@ Principes actifs :
 
 Validation locale executee le 2026-07-16 :
 
-- `pnpm lint` : OK ;
-- `pnpm typecheck` : OK ;
-- `pnpm test` : OK, 37 tests unitaires ;
+- `pnpm questions` : OK, 350 questions analysees ;
+- `pnpm check` : OK, lint + TypeScript + 41 tests unitaires ;
 - `pnpm build` : OK ;
-- `pnpm test:e2e` : OK, 16 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
-- verification console navigateur : OK sur les parcours Playwright.
+- `pnpm test:e2e` : OK, 18 tests Playwright sur 1920 x 1080 et 1366 x 768.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.
 

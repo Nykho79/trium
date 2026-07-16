@@ -40,5 +40,5 @@ test("ouvre la reprise sans sauvegarde et les parametres generaux", async ({ pag
   await expect(page.getByText("Volume musique")).toBeVisible();
   await expect(page.getByText("Volume effets")).toBeVisible();
   await expect(page.getByRole("button", { name: /Mode plein/ })).toBeVisible();
-  await expect(page.getByRole("button", { name: /Questions recemment vues/ })).toBeVisible();
+  await expect(page.getByRole("button", { name: /Questions r.cemment vues/ })).toBeVisible();
 });

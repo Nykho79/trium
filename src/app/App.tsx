@@ -22,9 +22,11 @@ import { RoundResultScreen } from "../ui/screens/RoundResultScreen";
 import { RulesScreen } from "../ui/screens/RulesScreen";
 import { SettingsScreen } from "../ui/screens/SettingsScreen";
 
+const devOnlyScreens = new Set(["design-system", "dev-question-bank"]);
+
 export function App() {
   const screen = useGameStore((state) => state.screen);
-  const currentScreen = !import.meta.env.DEV && screen === "design-system" ? "settings" : screen;
+  const currentScreen = !import.meta.env.DEV && devOnlyScreens.has(screen) ? "settings" : screen;
   const soundEnabled = useSettingsStore((state) => state.soundEnabled);
   const masterMuted = useAudioStore((state) => state.masterMuted);
 
@@ -51,7 +53,7 @@ export function App() {
             {currentScreen === "finale" && <FinaleScreen />}
             {(currentScreen === "summary" || currentScreen === "game-result") && <GameResultScreen />}
             {currentScreen === "settings" && <SettingsScreen />}
-            {currentScreen === "dev-question-bank" && <DevQuestionBankScreen />}
+            {import.meta.env.DEV && currentScreen === "dev-question-bank" && <DevQuestionBankScreen />}
             {currentScreen === "error" && <ErrorScreen />}
             {import.meta.env.DEV && currentScreen === "design-system" && <DesignSystemScreen />}
           </div>

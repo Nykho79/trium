@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-mythology-religions-001",
+  "title": "Mythologies et religions — Lot 1",
+  "category": "mythology-religions",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "MYT-0001",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "greek-mythology",
+      "difficulty": 1,
+      "question": "Quel dieu grec règne sur la mer ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Poséidon"
+        },
+        {
+          "id": "b",
+          "text": "Apollon"
+        },
+        {
+          "id": "c",
+          "text": "Hermès"
+        },
+        {
+          "id": "d",
+          "text": "Arès"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Poséidon est associé à la mer, aux séismes et aux chevaux dans la mythologie grecque.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Poséidon",
+        "mer",
+        "mythologie grecque"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0002",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "roman-mythology",
+      "difficulty": 1,
+      "question": "Quel est l’équivalent romain de Zeus ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mars"
+        },
+        {
+          "id": "b",
+          "text": "Jupiter"
+        },
+        {
+          "id": "c",
+          "text": "Neptune"
+        },
+        {
+          "id": "d",
+          "text": "Mercure"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Jupiter est le principal dieu du panthéon romain, associé au ciel et au tonnerre.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Jupiter",
+        "Zeus",
+        "mythologie romaine"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0003",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "norse-mythology",
+      "difficulty": 1,
+      "question": "Quel dieu nordique manie le marteau Mjöllnir ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Loki"
+        },
+        {
+          "id": "b",
+          "text": "Odin"
+        },
+        {
+          "id": "c",
+          "text": "Thor"
+        },
+        {
+          "id": "d",
+          "text": "Týr"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Thor protège les dieux et les humains contre les géants grâce à son marteau.",
+      "sourceLabel": "National Museum of Denmark",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Thor",
+        "Mjöllnir",
+        "mythologie nordique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0004",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "egyptian-mythology",
+      "difficulty": 1,
+      "question": "Quel dieu égyptien est souvent représenté avec une tête de chacal ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Horus"
+        },
+        {
+          "id": "b",
+          "text": "Thot"
+        },
+        {
+          "id": "c",
+          "text": "Sobek"
+        },
+        {
+          "id": "d",
+          "text": "Anubis"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Anubis est lié à l’embaumement, aux rites funéraires et à la protection des morts.",
+      "sourceLabel": "British Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Anubis",
+        "chacal",
+        "Égypte"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0005",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "texts-and-traditions",
+      "difficulty": 2,
+      "question": "Quel texte sacré est central dans le judaïsme ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Torah"
+        },
+        {
+          "id": "b",
+          "text": "Les Vedas"
+        },
+        {
+          "id": "c",
+          "text": "Le Tripitaka"
+        },
+        {
+          "id": "d",
+          "text": "L’Avesta"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Torah désigne notamment les cinq premiers livres de la Bible hébraïque et occupe une place centrale dans la tradition juive.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Torah",
+        "judaïsme",
+        "texte"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0006",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "religious-history",
+      "difficulty": 2,
+      "question": "Dans quelle région historique le bouddhisme est-il né ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La péninsule Arabique"
+        },
+        {
+          "id": "b",
+          "text": "Le nord du sous-continent indien"
+        },
+        {
+          "id": "c",
+          "text": "La Scandinavie"
+        },
+        {
+          "id": "d",
+          "text": "L’Afrique de l’Ouest"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le bouddhisme apparaît autour de l’enseignement de Siddhartha Gautama dans le nord du sous-continent indien.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "bouddhisme",
+        "Inde",
+        "histoire"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0007",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "symbols",
+      "difficulty": 2,
+      "question": "Quel symbole est le plus couramment associé au christianisme ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le trident"
+        },
+        {
+          "id": "b",
+          "text": "Le yin-yang"
+        },
+        {
+          "id": "c",
+          "text": "La croix"
+        },
+        {
+          "id": "d",
+          "text": "La roue solaire"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La croix rappelle la crucifixion de Jésus et devient progressivement le symbole chrétien le plus répandu.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "croix",
+        "christianisme",
+        "symbole"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0008",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "world-mythologies",
+      "difficulty": 2,
+      "question": "Dans la mythologie japonaise, quelle déesse est associée au Soleil ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Izanami"
+        },
+        {
+          "id": "b",
+          "text": "Benzaiten"
+        },
+        {
+          "id": "c",
+          "text": "Konohanasakuya"
+        },
+        {
+          "id": "d",
+          "text": "Amaterasu"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Amaterasu occupe une place majeure dans le shinto et dans les récits impériaux japonais.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Amaterasu",
+        "Soleil",
+        "Japon"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0009",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "greek-mythology",
+      "difficulty": 2,
+      "question": "Qui accomplit douze travaux imposés par Eurysthée ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Héraclès"
+        },
+        {
+          "id": "b",
+          "text": "Persée"
+        },
+        {
+          "id": "c",
+          "text": "Thésée"
+        },
+        {
+          "id": "d",
+          "text": "Orphée"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les douze travaux d’Héraclès comprennent notamment le lion de Némée et l’hydre de Lerne.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Héraclès",
+        "douze travaux",
+        "Grèce"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0010",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "roman-mythology",
+      "difficulty": 2,
+      "question": "Quelle déesse romaine correspond à Aphrodite ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Junon"
+        },
+        {
+          "id": "b",
+          "text": "Vénus"
+        },
+        {
+          "id": "c",
+          "text": "Diane"
+        },
+        {
+          "id": "d",
+          "text": "Minerve"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Vénus est associée à l’amour, à la beauté et à la fécondité dans la religion romaine.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Vénus",
+        "Aphrodite",
+        "Rome"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0011",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "norse-mythology",
+      "difficulty": 3,
+      "question": "Quel arbre relie les mondes dans la cosmologie nordique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Irminsul"
+        },
+        {
+          "id": "b",
+          "text": "Dodone"
+        },
+        {
+          "id": "c",
+          "text": "Yggdrasil"
+        },
+        {
+          "id": "d",
+          "text": "Laurel"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Yggdrasil est un arbre cosmique reliant plusieurs mondes dans les récits nordiques.",
+      "sourceLabel": "National Museum of Denmark",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Yggdrasil",
+        "arbre cosmique",
+        "Norse"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0012",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "egyptian-mythology",
+      "difficulty": 3,
+      "question": "Quel dieu solaire égyptien est souvent représenté avec un disque solaire ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Osiris"
+        },
+        {
+          "id": "b",
+          "text": "Ptah"
+        },
+        {
+          "id": "c",
+          "text": "Khnum"
+        },
+        {
+          "id": "d",
+          "text": "Rê"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Rê est une grande divinité solaire dont le culte fut particulièrement important à Héliopolis.",
+      "sourceLabel": "British Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Rê",
+        "Soleil",
+        "Égypte"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0013",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "texts-and-traditions",
+      "difficulty": 3,
+      "question": "Comment s’appelle le mois de jeûne dans l’islam ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Le muharram"
+        },
+        {
+          "id": "c",
+          "text": "Le shawwal"
+        },
+        {
+          "id": "d",
+          "text": "Le rajab"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Durant le ramadan, les musulmans adultes concernés jeûnent de l’aube au coucher du soleil.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "ramadan",
+        "islam",
+        "tradition"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0014",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "religious-history",
+      "difficulty": 3,
+      "question": "Quelle réforme religieuse du XVIe siècle est liée à Martin Luther ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le concile de Nicée"
+        },
+        {
+          "id": "b",
+          "text": "La Réforme protestante"
+        },
+        {
+          "id": "c",
+          "text": "Le Grand Schisme"
+        },
+        {
+          "id": "d",
+          "text": "La Réforme grégorienne"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les écrits de Luther contribuèrent à la naissance de plusieurs Églises protestantes en Europe.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Luther",
+        "Réforme",
+        "protestantisme"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0015",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "symbols",
+      "difficulty": 3,
+      "question": "Quel lieu est le centre du pèlerinage musulman du hajj ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le mont Sinaï"
+        },
+        {
+          "id": "b",
+          "text": "Le Vatican"
+        },
+        {
+          "id": "c",
+          "text": "La Kaaba à La Mecque"
+        },
+        {
+          "id": "d",
+          "text": "Varanasi"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les pèlerins accomplissent plusieurs rites autour de la Kaaba dans la grande mosquée de La Mecque.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Kaaba",
+        "La Mecque",
+        "hajj"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0016",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "world-mythologies",
+      "difficulty": 3,
+      "question": "Quel héros mésopotamien cherche l’immortalité après la mort d’Enkidu ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Rama"
+        },
+        {
+          "id": "b",
+          "text": "Quetzalcoatl"
+        },
+        {
+          "id": "c",
+          "text": "Maui"
+        },
+        {
+          "id": "d",
+          "text": "Gilgamesh"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’Épopée de Gilgamesh est l’un des plus anciens grands récits littéraires connus.",
+      "sourceLabel": "British Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Gilgamesh",
+        "Enkidu",
+        "Mésopotamie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0017",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "greek-mythology",
+      "difficulty": 3,
+      "question": "Quelle déesse grecque est née, selon le mythe, de la tête de Zeus ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Athéna"
+        },
+        {
+          "id": "b",
+          "text": "Artémis"
+        },
+        {
+          "id": "c",
+          "text": "Héra"
+        },
+        {
+          "id": "d",
+          "text": "Déméter"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Athéna surgit armée de la tête de Zeus après qu’il eut avalé Métis.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Athéna",
+        "Zeus",
+        "mythologie grecque"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0018",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "roman-mythology",
+      "difficulty": 4,
+      "question": "Quels jumeaux sont associés à la fondation légendaire de Rome ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Castor et Pollux"
+        },
+        {
+          "id": "b",
+          "text": "Romulus et Rémus"
+        },
+        {
+          "id": "c",
+          "text": "Énée et Ascagne"
+        },
+        {
+          "id": "d",
+          "text": "Horace et Curiace"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Selon la tradition romaine, Romulus fonde Rome après un conflit avec son frère Rémus.",
+      "sourceLabel": "Musei Capitolini",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Romulus",
+        "Rémus",
+        "Rome"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0019",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "norse-mythology",
+      "difficulty": 4,
+      "question": "Quel événement final oppose dieux et géants dans la mythologie nordique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Valhalla"
+        },
+        {
+          "id": "b",
+          "text": "Le Bifröst"
+        },
+        {
+          "id": "c",
+          "text": "Le Ragnarök"
+        },
+        {
+          "id": "d",
+          "text": "Le Thing"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le Ragnarök désigne une série de catastrophes et de combats conduisant à la destruction puis au renouvellement du monde.",
+      "sourceLabel": "National Museum of Denmark",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Ragnarök",
+        "dieux",
+        "mythologie nordique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0020",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "egyptian-mythology",
+      "difficulty": 4,
+      "question": "Quel dieu est associé à la royauté et souvent représenté avec une tête de faucon ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Seth"
+        },
+        {
+          "id": "b",
+          "text": "Anubis"
+        },
+        {
+          "id": "c",
+          "text": "Apis"
+        },
+        {
+          "id": "d",
+          "text": "Horus"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Horus est lié au ciel et à la royauté pharaonique ; le pharaon vivant pouvait être identifié à lui.",
+      "sourceLabel": "British Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Horus",
+        "faucon",
+        "royauté"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0021",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "texts-and-traditions",
+      "difficulty": 4,
+      "question": "Quels textes forment la base la plus ancienne de la tradition religieuse védique ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les Vedas"
+        },
+        {
+          "id": "b",
+          "text": "Le Kojiki"
+        },
+        {
+          "id": "c",
+          "text": "Le Tao Tö King"
+        },
+        {
+          "id": "d",
+          "text": "Le Tripitaka"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les Vedas sont des recueils de chants et formules rituelles composés en sanskrit ancien.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Vedas",
+        "hindouisme",
+        "textes"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0022",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "religious-history",
+      "difficulty": 4,
+      "question": "Quel empereur romain accorda en 313 la liberté de culte aux chrétiens avec l’édit de Milan ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Néron"
+        },
+        {
+          "id": "b",
+          "text": "Constantin"
+        },
+        {
+          "id": "c",
+          "text": "Dioclétien"
+        },
+        {
+          "id": "d",
+          "text": "Auguste"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "L’édit de Milan mit fin à une grande partie des persécutions officielles et autorisa le culte chrétien.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Constantin",
+        "édit de Milan",
+        "christianisme"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0023",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "symbols",
+      "difficulty": 5,
+      "question": "Quel symbole du judaïsme est formé de deux triangles entrelacés ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La roue du Dharma"
+        },
+        {
+          "id": "b",
+          "text": "L’ankh"
+        },
+        {
+          "id": "c",
+          "text": "L’étoile de David"
+        },
+        {
+          "id": "d",
+          "text": "Le lotus"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "L’étoile de David devient un symbole largement reconnu du judaïsme à l’époque moderne.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "étoile de David",
+        "judaïsme",
+        "symbole"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0024",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "world-mythologies",
+      "difficulty": 5,
+      "question": "Dans la tradition hindoue, quel dieu est souvent représenté avec une tête d’éléphant ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Shiva"
+        },
+        {
+          "id": "b",
+          "text": "Vishnou"
+        },
+        {
+          "id": "c",
+          "text": "Indra"
+        },
+        {
+          "id": "d",
+          "text": "Ganesh"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Ganesh est associé à la sagesse, aux commencements et à la levée des obstacles.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Ganesh",
+        "éléphant",
+        "hindouisme"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MYT-0025",
+      "type": "multiple_choice",
+      "category": "mythology-religions",
+      "subcategory": "texts-and-traditions",
+      "difficulty": 5,
+      "question": "Quel jour hebdomadaire est traditionnellement consacré au repos dans le judaïsme ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le shabbat"
+        },
+        {
+          "id": "b",
+          "text": "Le dimanche"
+        },
+        {
+          "id": "c",
+          "text": "Le lundi"
+        },
+        {
+          "id": "d",
+          "text": "Le mercredi"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le shabbat s’étend du vendredi soir au samedi soir et commémore notamment le repos du septième jour.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "shabbat",
+        "judaïsme",
+        "repos"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

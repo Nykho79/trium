@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-world-cultures-001",
+  "title": "Cultures du monde — Lot 1",
+  "category": "world-cultures",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "MON-0001",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "languages",
+      "difficulty": 1,
+      "question": "Quelle langue est principalement parlée au Brésil ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le portugais"
+        },
+        {
+          "id": "b",
+          "text": "L’espagnol"
+        },
+        {
+          "id": "c",
+          "text": "Le français"
+        },
+        {
+          "id": "d",
+          "text": "L’italien"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le portugais s’est imposé au Brésil pendant la colonisation portugaise.",
+      "sourceLabel": "Instituto Camões",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Brésil",
+        "portugais",
+        "langue"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0002",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "festivals",
+      "difficulty": 1,
+      "question": "Dans quel pays célèbre-t-on traditionnellement la fête de Holi ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Japon"
+        },
+        {
+          "id": "b",
+          "text": "L’Inde"
+        },
+        {
+          "id": "c",
+          "text": "Le Maroc"
+        },
+        {
+          "id": "d",
+          "text": "Le Pérou"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Holi est une fête hindoue printanière marquée par les couleurs, avec des pratiques variables selon les régions.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Holi",
+        "Inde",
+        "fête"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0003",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "traditional-arts",
+      "difficulty": 1,
+      "question": "Quel art japonais consiste à plier du papier ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’ikebana"
+        },
+        {
+          "id": "b",
+          "text": "Le kabuki"
+        },
+        {
+          "id": "c",
+          "text": "L’origami"
+        },
+        {
+          "id": "d",
+          "text": "Le bonsaï"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Origami vient de oru, plier, et kami, papier.",
+      "sourceLabel": "Japan Foundation",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "origami",
+        "Japon",
+        "papier"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0004",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "clothing",
+      "difficulty": 1,
+      "question": "Quel vêtement traditionnel japonais se ferme avec une large ceinture appelée obi ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le sari"
+        },
+        {
+          "id": "b",
+          "text": "Le poncho"
+        },
+        {
+          "id": "c",
+          "text": "Le caftan"
+        },
+        {
+          "id": "d",
+          "text": "Le kimono"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le kimono est un vêtement en forme de T, porté de diverses manières selon les contextes.",
+      "sourceLabel": "Victoria and Albert Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "kimono",
+        "obi",
+        "Japon"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0005",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "architecture",
+      "difficulty": 2,
+      "question": "Comment appelle-t-on les tours à étages de l’architecture bouddhique d’Asie de l’Est ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les pagodes"
+        },
+        {
+          "id": "b",
+          "text": "Les ziggourats"
+        },
+        {
+          "id": "c",
+          "text": "Les minarets"
+        },
+        {
+          "id": "d",
+          "text": "Les haciendas"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les pagodes dérivent historiquement du stupa et servent souvent à abriter des reliques ou des textes sacrés.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "pagode",
+        "architecture",
+        "Asie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0006",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "heritage",
+      "difficulty": 2,
+      "question": "Dans quel pays se trouve le site d’Angkor ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Thaïlande"
+        },
+        {
+          "id": "b",
+          "text": "Le Cambodge"
+        },
+        {
+          "id": "c",
+          "text": "Le Laos"
+        },
+        {
+          "id": "d",
+          "text": "Le Myanmar"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Angkor fut le centre de l’Empire khmer et comprend notamment le temple d’Angkor Wat.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Angkor",
+        "Cambodge",
+        "patrimoine"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0007",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "symbols",
+      "difficulty": 2,
+      "question": "Quel animal est un symbole national et culturel majeur de la Chine ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le kangourou"
+        },
+        {
+          "id": "b",
+          "text": "Le bison"
+        },
+        {
+          "id": "c",
+          "text": "Le panda géant"
+        },
+        {
+          "id": "d",
+          "text": "Le kiwi"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le panda géant est fortement associé à la conservation de la nature et à l’image internationale de la Chine.",
+      "sourceLabel": "WWF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "panda",
+        "Chine",
+        "symbole"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0008",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "customs",
+      "difficulty": 2,
+      "question": "Que signifie retirer ses chaussures avant d’entrer dans de nombreux foyers japonais ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Signaler une invitation à manger"
+        },
+        {
+          "id": "b",
+          "text": "Refuser toute conversation"
+        },
+        {
+          "id": "c",
+          "text": "Demander un cadeau"
+        },
+        {
+          "id": "d",
+          "text": "Respecter la séparation entre extérieur et intérieur"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Cette pratique vise notamment à préserver la propreté des espaces intérieurs.",
+      "sourceLabel": "Japan National Tourism Organization",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "chaussures",
+        "Japon",
+        "coutume"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0009",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "languages",
+      "difficulty": 2,
+      "question": "À quelle famille appartient principalement le swahili ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Aux langues bantoues"
+        },
+        {
+          "id": "b",
+          "text": "Aux langues romanes"
+        },
+        {
+          "id": "c",
+          "text": "Aux langues slaves"
+        },
+        {
+          "id": "d",
+          "text": "Aux langues germaniques"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le swahili est une langue bantoue enrichie par des emprunts, notamment à l’arabe.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "swahili",
+        "langues bantoues",
+        "Afrique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0010",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "festivals",
+      "difficulty": 2,
+      "question": "Quel carnaval brésilien est particulièrement célèbre pour ses écoles de samba ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le carnaval de Venise"
+        },
+        {
+          "id": "b",
+          "text": "Le carnaval de Rio"
+        },
+        {
+          "id": "c",
+          "text": "Le carnaval de Nice"
+        },
+        {
+          "id": "d",
+          "text": "Le carnaval de Québec"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "À Rio, les écoles de samba défilent au Sambodrome avec musique, danse et chars.",
+      "sourceLabel": "Riotur",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "carnaval",
+        "Rio",
+        "samba"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0011",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "traditional-arts",
+      "difficulty": 3,
+      "question": "Quel théâtre dansé masqué est associé à Bali ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le nô"
+        },
+        {
+          "id": "b",
+          "text": "Le kathakali"
+        },
+        {
+          "id": "c",
+          "text": "Le barong"
+        },
+        {
+          "id": "d",
+          "text": "Le flamenco"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le barong met en scène un affrontement symbolique entre forces protectrices et destructrices.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "barong",
+        "Bali",
+        "danse"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0012",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "clothing",
+      "difficulty": 3,
+      "question": "Quel vêtement drapé est traditionnellement porté par de nombreuses femmes en Inde ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le kimono"
+        },
+        {
+          "id": "b",
+          "text": "Le kilt"
+        },
+        {
+          "id": "c",
+          "text": "Le huipil"
+        },
+        {
+          "id": "d",
+          "text": "Le sari"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le sari est une longue pièce de tissu drapée de façons différentes selon les régions et les usages.",
+      "sourceLabel": "Victoria and Albert Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "sari",
+        "Inde",
+        "vêtement"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0013",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "architecture",
+      "difficulty": 3,
+      "question": "Quel type d’habitation arctique traditionnelle est construit en blocs de neige ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’igloo"
+        },
+        {
+          "id": "b",
+          "text": "La yourte"
+        },
+        {
+          "id": "c",
+          "text": "Le tipi"
+        },
+        {
+          "id": "d",
+          "text": "La maison longue"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’igloo est surtout associé à certaines populations inuit et à des usages temporaires, pas à toutes leurs habitations.",
+      "sourceLabel": "The Canadian Encyclopedia",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "igloo",
+        "Inuit",
+        "Arctique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0014",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "heritage",
+      "difficulty": 3,
+      "question": "Quel site jordanien est célèbre pour ses façades taillées dans la roche ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Palmyre"
+        },
+        {
+          "id": "b",
+          "text": "Pétra"
+        },
+        {
+          "id": "c",
+          "text": "Persépolis"
+        },
+        {
+          "id": "d",
+          "text": "Byblos"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Pétra fut un important carrefour caravanier du royaume nabatéen.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Pétra",
+        "Jordanie",
+        "patrimoine"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0015",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "symbols",
+      "difficulty": 3,
+      "question": "Quel oiseau figure sur les armoiries du Mexique, posé sur un cactus ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un condor"
+        },
+        {
+          "id": "b",
+          "text": "Un toucan"
+        },
+        {
+          "id": "c",
+          "text": "Un aigle"
+        },
+        {
+          "id": "d",
+          "text": "Un cygne"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "L’image renvoie au récit mexica de la fondation de Tenochtitlan.",
+      "sourceLabel": "Gouvernement du Mexique",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Mexique",
+        "aigle",
+        "symbole"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0016",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "customs",
+      "difficulty": 3,
+      "question": "Dans plusieurs cultures d’Asie de l’Est, à quoi sert une révérence ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "À lancer une compétition"
+        },
+        {
+          "id": "b",
+          "text": "À conclure obligatoirement un repas"
+        },
+        {
+          "id": "c",
+          "text": "À demander son chemin uniquement"
+        },
+        {
+          "id": "d",
+          "text": "À saluer ou montrer du respect"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "La profondeur et le contexte de la révérence varient fortement selon les pays et les situations.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "révérence",
+        "respect",
+        "Asie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0017",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "languages",
+      "difficulty": 3,
+      "question": "Quelle langue utilise l’alphabet hangul ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le coréen"
+        },
+        {
+          "id": "b",
+          "text": "Le thaï"
+        },
+        {
+          "id": "c",
+          "text": "Le vietnamien"
+        },
+        {
+          "id": "d",
+          "text": "Le mongol"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le hangul fut conçu au XVe siècle sous le règne du roi Sejong.",
+      "sourceLabel": "National Hangeul Museum",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "hangul",
+        "coréen",
+        "alphabet"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0018",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "festivals",
+      "difficulty": 4,
+      "question": "Quel événement mexicain honore la mémoire des morts au début de novembre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Semana Santa"
+        },
+        {
+          "id": "b",
+          "text": "Le Día de Muertos"
+        },
+        {
+          "id": "c",
+          "text": "Las Fallas"
+        },
+        {
+          "id": "d",
+          "text": "L’Inti Raymi"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Les pratiques mêlent autels, offrandes, fleurs et rassemblements familiaux, avec de fortes variations régionales.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Día de Muertos",
+        "Mexique",
+        "fête"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0019",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "traditional-arts",
+      "difficulty": 4,
+      "question": "Quel art textile indonésien utilise des réserves de cire avant teinture ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le tartan"
+        },
+        {
+          "id": "b",
+          "text": "Le brocart"
+        },
+        {
+          "id": "c",
+          "text": "Le batik"
+        },
+        {
+          "id": "d",
+          "text": "Le patchwork"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La cire empêche certaines zones d’absorber la teinture et permet des motifs complexes.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "batik",
+        "Indonésie",
+        "textile"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0020",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "clothing",
+      "difficulty": 4,
+      "question": "Quel vêtement écossais masculin est une jupe plissée portée dans certains contextes cérémoniels ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le sarong"
+        },
+        {
+          "id": "b",
+          "text": "Le dhoti"
+        },
+        {
+          "id": "c",
+          "text": "Le hanbok"
+        },
+        {
+          "id": "d",
+          "text": "Le kilt"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le kilt moderne est associé aux Highlands et à des tartans liés à des clans ou institutions.",
+      "sourceLabel": "National Museums Scotland",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "kilt",
+        "Écosse",
+        "vêtement"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0021",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "architecture",
+      "difficulty": 4,
+      "question": "Quel habitat circulaire démontable est traditionnellement associé aux peuples nomades d’Asie centrale ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La yourte"
+        },
+        {
+          "id": "b",
+          "text": "Le ryokan"
+        },
+        {
+          "id": "c",
+          "text": "La hacienda"
+        },
+        {
+          "id": "d",
+          "text": "Le trullo"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La yourte possède une structure en treillis recouverte de feutre, adaptée au déplacement.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "yourte",
+        "Asie centrale",
+        "habitat"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0022",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "heritage",
+      "difficulty": 4,
+      "question": "Dans quel pays se trouve la cité inca de Machu Picchu ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Bolivie"
+        },
+        {
+          "id": "b",
+          "text": "Le Pérou"
+        },
+        {
+          "id": "c",
+          "text": "L’Équateur"
+        },
+        {
+          "id": "d",
+          "text": "La Colombie"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le site se situe dans les Andes péruviennes et témoigne de l’ingénierie inca.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Machu Picchu",
+        "Pérou",
+        "patrimoine"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0023",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "symbols",
+      "difficulty": 5,
+      "question": "Quelle plante est un symbole culturel important du Japon et fleurit au printemps ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le baobab"
+        },
+        {
+          "id": "b",
+          "text": "L’olivier"
+        },
+        {
+          "id": "c",
+          "text": "Le cerisier sakura"
+        },
+        {
+          "id": "d",
+          "text": "Le cactus saguaro"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "La floraison des sakura est associée au hanami, l’observation des fleurs.",
+      "sourceLabel": "Japan National Tourism Organization",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "sakura",
+        "Japon",
+        "symbole"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0024",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "customs",
+      "difficulty": 5,
+      "question": "Dans de nombreuses cultures du Moyen-Orient, que représente souvent l’offre de café ou de thé à un visiteur ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une invitation obligatoire à dormir"
+        },
+        {
+          "id": "b",
+          "text": "Un contrat commercial"
+        },
+        {
+          "id": "c",
+          "text": "Un refus de discuter"
+        },
+        {
+          "id": "d",
+          "text": "Un geste d’hospitalité"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Les formes précises de l’hospitalité varient selon les pays, les familles et les contextes.",
+      "sourceLabel": "UNESCO",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "hospitalité",
+        "café",
+        "Moyen-Orient"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "MON-0025",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "languages",
+      "difficulty": 5,
+      "question": "Quelle langue sémitique occupe une place importante dans l’administration fédérale éthiopienne ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’amharique"
+        },
+        {
+          "id": "b",
+          "text": "Le zoulou"
+        },
+        {
+          "id": "c",
+          "text": "Le wolof"
+        },
+        {
+          "id": "d",
+          "text": "Le berbère"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’Éthiopie est multilingue ; l’amharique joue un rôle administratif important au niveau fédéral.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "amharique",
+        "Éthiopie",
+        "langue"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}

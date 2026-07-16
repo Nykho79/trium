@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "general-arts-literature-001",
+  "title": "Arts et littérature — Lot 1",
+  "category": "arts-literature",
+  "questionType": "multiple_choice",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "ART-0001",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "literature-france",
+      "difficulty": 1,
+      "question": "Qui a écrit Les Misérables ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Victor Hugo"
+        },
+        {
+          "id": "b",
+          "text": "Émile Zola"
+        },
+        {
+          "id": "c",
+          "text": "Gustave Flaubert"
+        },
+        {
+          "id": "d",
+          "text": "Stendhal"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Publié en 1862, le roman suit plusieurs destins, dont celui de Jean Valjean, sur fond de misère sociale et de bouleversements politiques.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Victor Hugo",
+        "Les Misérables",
+        "roman"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0002",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "painting",
+      "difficulty": 1,
+      "question": "Quel artiste a peint La Joconde ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Raphaël"
+        },
+        {
+          "id": "b",
+          "text": "Léonard de Vinci"
+        },
+        {
+          "id": "c",
+          "text": "Michel-Ange"
+        },
+        {
+          "id": "d",
+          "text": "Botticelli"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "La Joconde fut peinte au début du XVIe siècle. Son identité et son sourire ont nourri de nombreuses interprétations.",
+      "sourceLabel": "Musée du Louvre",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Joconde",
+        "Léonard de Vinci",
+        "peinture"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0003",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "theatre",
+      "difficulty": 1,
+      "question": "Dans quelle pièce de Molière apparaît le personnage d’Harpagon ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Misanthrope"
+        },
+        {
+          "id": "b",
+          "text": "Tartuffe"
+        },
+        {
+          "id": "c",
+          "text": "L’Avare"
+        },
+        {
+          "id": "d",
+          "text": "Le Malade imaginaire"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Harpagon est obsédé par son argent et sa cassette, ce qui fait de lui une figure emblématique de l’avarice au théâtre.",
+      "sourceLabel": "Comédie-Française",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Molière",
+        "Harpagon",
+        "théâtre"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0004",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "architecture",
+      "difficulty": 1,
+      "question": "Quel style architectural caractérise notamment les arcs brisés et les arcs-boutants ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le roman"
+        },
+        {
+          "id": "b",
+          "text": "Le baroque"
+        },
+        {
+          "id": "c",
+          "text": "Le néoclassique"
+        },
+        {
+          "id": "d",
+          "text": "Le gothique"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "L’architecture gothique développe des structures permettant d’élever les voûtes et d’ouvrir de vastes verrières.",
+      "sourceLabel": "Cité de l’architecture",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "gothique",
+        "architecture",
+        "arcs-boutants"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0005",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "world-literature",
+      "difficulty": 2,
+      "question": "Quel héros combat des moulins à vent en les prenant pour des géants ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Don Quichotte"
+        },
+        {
+          "id": "b",
+          "text": "Ulysse"
+        },
+        {
+          "id": "c",
+          "text": "Gulliver"
+        },
+        {
+          "id": "d",
+          "text": "Faust"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Dans le roman de Cervantès, Don Quichotte interprète le monde à travers les récits de chevalerie qu’il a lus.",
+      "sourceLabel": "Instituto Cervantes",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Don Quichotte",
+        "Cervantès",
+        "roman"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0006",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "sculpture",
+      "difficulty": 2,
+      "question": "Quel sculpteur français a créé Le Penseur ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Antoine Bourdelle"
+        },
+        {
+          "id": "b",
+          "text": "Auguste Rodin"
+        },
+        {
+          "id": "c",
+          "text": "Aristide Maillol"
+        },
+        {
+          "id": "d",
+          "text": "Camille Claudel"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le Penseur fut conçu à l’origine pour La Porte de l’Enfer avant de devenir une œuvre autonome.",
+      "sourceLabel": "Musée Rodin",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Rodin",
+        "Le Penseur",
+        "sculpture"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0007",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "art-movements",
+      "difficulty": 2,
+      "question": "Quel mouvement pictural est associé à Monet, Renoir et Degas ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le cubisme"
+        },
+        {
+          "id": "b",
+          "text": "Le surréalisme"
+        },
+        {
+          "id": "c",
+          "text": "L’impressionnisme"
+        },
+        {
+          "id": "d",
+          "text": "Le fauvisme"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Les impressionnistes cherchent à saisir les variations de lumière et les impressions fugitives, souvent en peignant en plein air.",
+      "sourceLabel": "Musée d’Orsay",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "impressionnisme",
+        "Monet",
+        "Renoir"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0008",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "works-and-authors",
+      "difficulty": 2,
+      "question": "Qui est l’auteur de 1984 ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Aldous Huxley"
+        },
+        {
+          "id": "b",
+          "text": "Ray Bradbury"
+        },
+        {
+          "id": "c",
+          "text": "H. G. Wells"
+        },
+        {
+          "id": "d",
+          "text": "George Orwell"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le roman décrit une société totalitaire fondée sur la surveillance, la propagande et la manipulation du langage.",
+      "sourceLabel": "British Library",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "1984",
+        "George Orwell",
+        "dystopie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0009",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "literature-france",
+      "difficulty": 2,
+      "question": "Quel personnage est le narrateur d’À la recherche du temps perdu ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Un narrateur parfois appelé Marcel"
+        },
+        {
+          "id": "b",
+          "text": "Charles Swann"
+        },
+        {
+          "id": "c",
+          "text": "Le baron de Charlus"
+        },
+        {
+          "id": "d",
+          "text": "Robert de Saint-Loup"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le narrateur n’est pas strictement identique à Proust, même si le roman puise largement dans son expérience et emploie une fois le prénom Marcel.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Proust",
+        "narrateur",
+        "Recherche"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0010",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "painting",
+      "difficulty": 2,
+      "question": "Quelle technique consiste à peindre sur un enduit mural encore humide ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La tempera"
+        },
+        {
+          "id": "b",
+          "text": "La fresque"
+        },
+        {
+          "id": "c",
+          "text": "L’aquarelle"
+        },
+        {
+          "id": "d",
+          "text": "La gravure"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Dans la fresque, les pigments pénètrent l’enduit frais et se fixent lors du séchage.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "fresque",
+        "technique",
+        "peinture"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0011",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "world-literature",
+      "difficulty": 3,
+      "question": "Dans quel pays est né Gabriel García Márquez ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Mexique"
+        },
+        {
+          "id": "b",
+          "text": "L’Argentine"
+        },
+        {
+          "id": "c",
+          "text": "La Colombie"
+        },
+        {
+          "id": "d",
+          "text": "Le Chili"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Écrivain colombien, García Márquez est l’une des grandes figures du réalisme magique latino-américain.",
+      "sourceLabel": "Nobel Prize",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "García Márquez",
+        "Colombie",
+        "littérature"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0012",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "architecture",
+      "difficulty": 3,
+      "question": "Quel architecte catalan a conçu la Sagrada Família ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Santiago Calatrava"
+        },
+        {
+          "id": "b",
+          "text": "Ricardo Bofill"
+        },
+        {
+          "id": "c",
+          "text": "Lluís Domènech i Montaner"
+        },
+        {
+          "id": "d",
+          "text": "Antoni Gaudí"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Gaudí consacra une grande partie de sa vie à cette basilique barcelonaise aux formes inspirées de la nature.",
+      "sourceLabel": "Sagrada Família",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Gaudí",
+        "Sagrada Família",
+        "Barcelone"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0013",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "theatre",
+      "difficulty": 3,
+      "question": "Que désigne une didascalie dans une pièce de théâtre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une indication scénique de l’auteur"
+        },
+        {
+          "id": "b",
+          "text": "Un monologue comique"
+        },
+        {
+          "id": "c",
+          "text": "Une scène sans dialogue"
+        },
+        {
+          "id": "d",
+          "text": "Une critique publiée"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les didascalies précisent les gestes, les décors, le ton ou les déplacements, sans être prononcées par les personnages.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "didascalie",
+        "théâtre",
+        "mise en scène"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0014",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "art-movements",
+      "difficulty": 3,
+      "question": "Quel mouvement artistique utilise le rêve et l’inconscient comme sources majeures ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le réalisme"
+        },
+        {
+          "id": "b",
+          "text": "Le surréalisme"
+        },
+        {
+          "id": "c",
+          "text": "Le pointillisme"
+        },
+        {
+          "id": "d",
+          "text": "Le constructivisme"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le surréalisme, théorisé notamment par André Breton, explore l’automatisme, le rêve et les associations inattendues.",
+      "sourceLabel": "Centre Pompidou",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "surréalisme",
+        "rêve",
+        "Breton"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0015",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "works-and-authors",
+      "difficulty": 3,
+      "question": "Quel roman met en scène le capitaine Achab poursuivant une baleine blanche ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’Île au trésor"
+        },
+        {
+          "id": "b",
+          "text": "Vingt mille lieues sous les mers"
+        },
+        {
+          "id": "c",
+          "text": "Moby-Dick"
+        },
+        {
+          "id": "d",
+          "text": "Le Vieil Homme et la Mer"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Chez Melville, la chasse à Moby Dick devient une obsession qui entraîne l’équipage vers la catastrophe.",
+      "sourceLabel": "Library of Congress",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Moby-Dick",
+        "Achab",
+        "Melville"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0016",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "literature-france",
+      "difficulty": 3,
+      "question": "Quel courant littéraire est associé à Zola et à l’observation des milieux sociaux ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le symbolisme"
+        },
+        {
+          "id": "b",
+          "text": "Le romantisme"
+        },
+        {
+          "id": "c",
+          "text": "Le classicisme"
+        },
+        {
+          "id": "d",
+          "text": "Le naturalisme"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le naturalisme cherche à décrire les comportements humains en tenant compte de l’hérédité, du milieu social et des conditions matérielles.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "naturalisme",
+        "Zola",
+        "littérature"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0017",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "painting",
+      "difficulty": 3,
+      "question": "Quel peintre espagnol a réalisé Guernica ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pablo Picasso"
+        },
+        {
+          "id": "b",
+          "text": "Joan Miró"
+        },
+        {
+          "id": "c",
+          "text": "Salvador Dalí"
+        },
+        {
+          "id": "d",
+          "text": "Diego Velázquez"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Peint en 1937, Guernica dénonce la violence du bombardement de la ville basque pendant la guerre d’Espagne.",
+      "sourceLabel": "Museo Reina Sofía",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Guernica",
+        "Picasso",
+        "peinture"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0018",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "sculpture",
+      "difficulty": 4,
+      "question": "Dans quelle matière Michel-Ange a-t-il sculpté son David ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le bronze"
+        },
+        {
+          "id": "b",
+          "text": "Le marbre"
+        },
+        {
+          "id": "c",
+          "text": "Le bois"
+        },
+        {
+          "id": "d",
+          "text": "La terre cuite"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le David fut taillé dans un bloc de marbre et installé à Florence au début du XVIe siècle.",
+      "sourceLabel": "Galleria dell’Accademia",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "David",
+        "Michel-Ange",
+        "marbre"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0019",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "architecture",
+      "difficulty": 4,
+      "question": "Quel ordre antique se reconnaît à ses chapiteaux ornés de feuilles d’acanthe ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’ordre dorique"
+        },
+        {
+          "id": "b",
+          "text": "L’ordre ionique"
+        },
+        {
+          "id": "c",
+          "text": "L’ordre corinthien"
+        },
+        {
+          "id": "d",
+          "text": "L’ordre toscan"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "L’ordre corinthien se distingue par un chapiteau richement décoré, souvent de feuilles d’acanthe stylisées.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "corinthien",
+        "chapiteau",
+        "architecture"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0020",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "world-literature",
+      "difficulty": 4,
+      "question": "Quel auteur japonais a écrit Kafka sur le rivage ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Yukio Mishima"
+        },
+        {
+          "id": "b",
+          "text": "Kenzaburō Ōe"
+        },
+        {
+          "id": "c",
+          "text": "Yasunari Kawabata"
+        },
+        {
+          "id": "d",
+          "text": "Haruki Murakami"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le roman mêle quête initiatique, réalisme quotidien et éléments fantastiques caractéristiques de l’œuvre de Murakami.",
+      "sourceLabel": "Bibliothèque nationale de la Diète",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Murakami",
+        "Kafka sur le rivage",
+        "Japon"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0021",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "theatre",
+      "difficulty": 4,
+      "question": "Qu’est-ce qu’un aparté au théâtre ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une parole destinée au public mais supposée inaudible des autres personnages"
+        },
+        {
+          "id": "b",
+          "text": "Une scène chantée"
+        },
+        {
+          "id": "c",
+          "text": "Un changement de décor"
+        },
+        {
+          "id": "d",
+          "text": "Une répétition générale"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L’aparté crée une complicité avec le public en révélant une pensée ou une intention cachée.",
+      "sourceLabel": "CNRTL",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "aparté",
+        "théâtre",
+        "public"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0022",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "art-movements",
+      "difficulty": 4,
+      "question": "Quel mouvement du début du XXe siècle fragmente les formes en plans géométriques ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L’académisme"
+        },
+        {
+          "id": "b",
+          "text": "Le cubisme"
+        },
+        {
+          "id": "c",
+          "text": "Le rococo"
+        },
+        {
+          "id": "d",
+          "text": "L’expressionnisme abstrait"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Le cubisme, développé notamment par Picasso et Braque, représente simultanément plusieurs points de vue.",
+      "sourceLabel": "Centre Pompidou",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "cubisme",
+        "Picasso",
+        "Braque"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0023",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "works-and-authors",
+      "difficulty": 5,
+      "question": "Quel personnage ouvre La Divine Comédie en se retrouvant dans une forêt obscure ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Virgile"
+        },
+        {
+          "id": "b",
+          "text": "Béatrice"
+        },
+        {
+          "id": "c",
+          "text": "Dante lui-même comme narrateur"
+        },
+        {
+          "id": "d",
+          "text": "Ulysse"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Le narrateur, identifié à Dante, entreprend un voyage à travers l’Enfer, le Purgatoire et le Paradis.",
+      "sourceLabel": "Encyclopædia Britannica",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Dante",
+        "Divine Comédie",
+        "narrateur"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0024",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "literature-france",
+      "difficulty": 5,
+      "question": "Quel poète a publié Les Fleurs du mal ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Paul Verlaine"
+        },
+        {
+          "id": "b",
+          "text": "Arthur Rimbaud"
+        },
+        {
+          "id": "c",
+          "text": "Stéphane Mallarmé"
+        },
+        {
+          "id": "d",
+          "text": "Charles Baudelaire"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Le recueil explore la beauté, le spleen, la modernité urbaine et la tension entre idéal et chute.",
+      "sourceLabel": "BnF",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "Baudelaire",
+        "Fleurs du mal",
+        "poésie"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    },
+    {
+      "id": "ART-0025",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "painting",
+      "difficulty": 5,
+      "question": "Quel principe caractérise le pointillisme ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La juxtaposition de petites touches de couleurs"
+        },
+        {
+          "id": "b",
+          "text": "L’usage exclusif du noir"
+        },
+        {
+          "id": "c",
+          "text": "La peinture sur verre"
+        },
+        {
+          "id": "d",
+          "text": "La suppression de la perspective"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les couleurs sont posées en petites touches distinctes qui se recomposent optiquement à distance.",
+      "sourceLabel": "Musée d’Orsay",
+      "sourceUrl": null,
+      "verificationStatus": "to_verify",
+      "tags": [
+        "pointillisme",
+        "couleur",
+        "technique"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "generated",
+      "version": 1
+    }
+  ]
+}
