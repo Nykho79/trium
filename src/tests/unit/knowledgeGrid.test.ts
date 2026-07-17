@@ -81,6 +81,19 @@ describe("knowledge-grid", () => {
     expect(board.columns[0]?.cells).toHaveLength(4);
   });
 
+
+  it("evite une question recente quand une alternative existe pour la meme case", () => {
+    const recent = makeQuestion(1, 1);
+    const fresh = { ...recent, id: "kg-1-1-fresh", prompt: "Question alternative" };
+    const board = buildKnowledgeGrid({
+      questions: [recent, fresh, ...questions.filter((question) => question.id !== recent.id)],
+      usedQuestionIds: [],
+      recentlyPlayedQuestionIds: [recent.id],
+      seed: "grid",
+    });
+
+    expect(selectKnowledgeGridQuestion(board, "category-1:1")).toBe(fresh.id);
+  });
   it("rejette une case deja jouee", () => {
     const board = buildKnowledgeGrid({ questions, usedQuestionIds: ["kg-1-1"], seed: "grid" });
 

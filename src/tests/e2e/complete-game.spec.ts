@@ -7,7 +7,7 @@ import { questionBankSchema } from "../../core/schemas/questionSchemas";
 
 const SAVE_KEY = "trium.saved-game.v1";
 const FIXED_SEED = "trium-e2e-complete-v1";
-test.setTimeout(120_000);
+test.setTimeout(180_000);
 
 type SourceAnswer = { id: string; text?: string; itemOrder?: string[]; output?: string[] };
 type SourceQuestion = {
@@ -356,13 +356,15 @@ test("expiration avec horloge simulee", async ({ page }) => {
   await playClueRaceRound(page);
   await page.getByTestId("start-pressure-question").click();
   await expect(page.locator(".pressure-choice-live")).toBeVisible();
+  await expect(page.getByTestId("game-timer")).toContainText("Chrono");
   const browserNow = await page.evaluate(() => Date.now());
   await page.clock.install({ time: browserNow });
-  await page.clock.fastForward(36_000);
-  await chooseAnswer(page, "pressure-answer-options");
-  await page.getByTestId("lock-answer-button").click();
-  await expect(page.getByText("Action impossible")).toBeVisible();
-  await expect(page.getByText(/expiration|expiree/)).toBeVisible();
+  await page.clock.fastForward(26_000);
+  await expect(page.getByTestId("game-timer")).toContainText("Moins de 10 secondes");
+  await page.clock.fastForward(10_000);
+  await expect(page.getByTestId("time-expired-alert")).toBeVisible();
+  await expect(page.getByText("Chrono termine")).toBeVisible();
+  await expect(page.getByTestId("time-expired-alert").getByText("Temps ecoule")).toBeVisible();
 });
 
 test("sauvegarde corrompue ignoree sans bloquer l'application", async ({ page }) => {

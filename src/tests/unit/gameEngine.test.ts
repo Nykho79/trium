@@ -116,6 +116,25 @@ describe("gameEngine", () => {
     expect(() => submitAnswer(game, { answer: "a", now: 35_004 })).toThrow("expiration");
   });
 
+
+  it("evite les questions recentes dans la selection automatique", () => {
+    const knowledgeRound: RoundDefinition = {
+      id: "grid",
+      kind: "knowledge-grid",
+      label: "Grille",
+      description: "Questions recentes.",
+      questionTypes: ["multiple_choice"],
+      questionCount: 1,
+      maxScore: 100,
+    };
+    const recentQuestion = makeQuestion("q-recent", "a", "knowledge-grid");
+    const freshQuestion = makeQuestion("q-fresh", "a", "knowledge-grid");
+    const created = createGame({ config: createConfig([knowledgeRound]), recentlyPlayedQuestionIds: [recentQuestion.id], now: 0 });
+    const roundStarted = startRound(startGame(created, 1), 0, 2);
+    const loaded = loadQuestion(roundStarted, { questions: [recentQuestion, freshQuestion], now: 3 });
+
+    expect(loaded.activeQuestionId).toBe(freshQuestion.id);
+  });
   it("rejette une transition invalide", () => {
     const created = createGame({ config: createConfig(), now: 0 });
 

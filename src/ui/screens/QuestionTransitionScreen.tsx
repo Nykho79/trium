@@ -84,6 +84,7 @@ export function QuestionTransitionScreen() {
   const isRoundComplete = answeredCount >= targetCount;
   const answer = displayAnswer(question, result?.correctAnswer);
   const points = result?.score.total ?? 0;
+  const timedOut = result?.lockedAnswer === "temps-ecoule";
   const isPressureChoice = round?.kind === "pressure-choice";
   const pressureQuestions = questions.filter(isPressureChoiceQuestion);
   const pressureEndedByFailure = isPressureChoice && result?.isCorrect === false;
@@ -106,11 +107,11 @@ export function QuestionTransitionScreen() {
     <ScreenFrame title="Transition entre questions">
       <section className="result-screen general-screen">
         <Panel className="result-card">
-          <Badge tone={result?.isCorrect ? "success" : "amber"}>Reponse revelee</Badge>
+          <Badge tone={timedOut ? "danger" : result?.isCorrect ? "success" : "amber"}>{timedOut ? "Temps ecoule" : "Reponse revelee"}</Badge>
           <h1>{answer}</h1>
           <FeedbackBanner
             tone={result?.isCorrect ? "success" : "warning"}
-            title={result?.isCorrect ? "Bonne reponse" : "Reponse manquee"}
+            title={timedOut ? "Chrono termine" : result?.isCorrect ? "Bonne reponse" : "Reponse manquee"}
             message={result?.explanation ?? "Explication indisponible."}
           />
           <div className="reveal-score-grid">

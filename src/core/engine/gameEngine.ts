@@ -439,9 +439,16 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
     }
     candidates = candidates.filter((question) => question.categoryId === roundState.wagerCategoryId && question.difficulty === roundState.wagerDifficulty);
   }
+  const used = new Set(state.usedQuestionIds);
+  const recent = new Set(state.recentlyPlayedQuestionIds);
+  const availableCandidates = candidates.filter((question) => !used.has(question.id));
+  const freshCandidates = availableCandidates.filter((question) => !recent.has(question.id));
+  const selectionPool = freshCandidates.length > 0 || !state.config.allowRecentlyPlayedFallback
+    ? freshCandidates
+    : availableCandidates;
   const selected = explicitQuestion ?? shuffleWithSeed(
-    candidates.filter((question) => !state.usedQuestionIds.includes(question.id)),
-    `${state.config.seed}:${definition.id}:${roundState.currentQuestionIndex}`,
+    selectionPool,
+    `${state.config.seed}:${definition.id}:${roundState.currentQuestionIndex}:${state.recentlyPlayedQuestionIds.length}`,
   )[0];
 
   if (!selected) {
@@ -949,6 +956,45 @@ export function expirePressureChoiceQuestion(state: GameState, input: RevealAnsw
     lockedAnswer: "temps-ecoule",
     lastAnswerResult: result,
     jokerEffects: resetQuestionJokerEffects(state.jokerEffects),
+  }, "answer_reveal", input.now, "answer_revealed");
+}
+export function expireQuestion(state: GameState, input: RevealAnswerInput): GameState {
+  requireStatus(state, ["question_active"], "expireQuestion");
+  const definition = currentRoundDefinition(state);
+  if (definition.kind === "pressure-choice") {
+    return expirePressureChoiceQuestion(state, input);
+  }
+  if (!isTimerExpired(state.timer, input.now)) {
+    throw new GameEngineError("Le chrono n'est pas encore expire.");
+  }
+  const question = findActiveQuestion(state, input.questions);
+  const roundState = requireRound(state);
+  const score = calculateAnswerScore(question, false, state.timer, input.now, roundState);
+  const result: AnswerResult = {
+    questionId: question.id,
+    isCorrect: false,
+    lockedAnswer: "temps-ecoule",
+    correctAnswer: displayCorrectAnswer(question),
+    explanation: question.explanation,
+    score,
+    usedJokers: Object.entries(state.jokers.used).filter(([, count]) => count > 0).map(([joker]) => joker as JokerType),
+  };
+  const baseRoundState: RoundState = {
+    ...roundState,
+    currentQuestionIndex: roundState.currentQuestionIndex + 1,
+    answeredQuestionIds: [...roundState.answeredQuestionIds, question.id],
+    answerResults: [...roundState.answerResults, { questionId: question.id, isCorrect: false }],
+  };
+  const nextRoundScore = definition.kind === "wager" ? clampScoreTotal(addScore(roundState.score, score)) : addScore(roundState.score, score);
+  const nextScore = definition.kind === "wager" ? clampScoreTotal(addScore(state.score, score)) : addScore(state.score, score);
+
+  return transition({
+    ...cloneState(state),
+    currentRoundState: { ...baseRoundState, score: nextRoundScore },
+    lockedAnswer: "temps-ecoule",
+    lastAnswerResult: result,
+    jokerEffects: resetQuestionJokerEffects(state.jokerEffects),
+    score: nextScore,
   }, "answer_reveal", input.now, "answer_revealed");
 }
 export function completeRound(state: GameState, now = 0): GameState {

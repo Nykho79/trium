@@ -10,6 +10,7 @@ import {
   configureWager,
   createGame,
   expirePressureChoiceQuestion,
+  expireQuestion,
   loadQuestion,
   pauseGame,
   purchaseFinalAdvantage,
@@ -183,6 +184,7 @@ interface GameStoreState {
   activateFinalHintForCurrentQuestion: (questions: readonly Question[], now?: number | undefined) => void;
   securePressureChoiceRisk: (now?: number | undefined) => void;
   expireCurrentPressureChoiceQuestion: (questions: readonly Question[], now?: number | undefined) => void;
+  expireCurrentQuestion: (questions: readonly Question[], now?: number | undefined) => void;
   resumeSavedGame: () => void;
   clearSavedGame: () => void;
   setEngineState: (gameState: GameState) => void;
@@ -636,6 +638,18 @@ export const useGameStore = create<GameStoreState>()((set) => ({
     }
     try {
       const gameState = expirePressureChoiceQuestion(state.gameState, { questions, now: now ?? Date.now() });
+      const patch = persistencePatch({ gameState, screen: "question-transition", selectedAnswerId: undefined });
+      return { gameState, screen: "question-transition", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
+    } catch (error) {
+      return { engineError: errorMessage(error) };
+    }
+  }),
+  expireCurrentQuestion: (questions, now) => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie active." };
+    }
+    try {
+      const gameState = expireQuestion(state.gameState, { questions, now: now ?? Date.now() });
       const patch = persistencePatch({ gameState, screen: "question-transition", selectedAnswerId: undefined });
       return { gameState, screen: "question-transition", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {

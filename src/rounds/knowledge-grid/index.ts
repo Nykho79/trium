@@ -48,6 +48,7 @@ export interface KnowledgeGridScoreInput {
 export interface BuildKnowledgeGridInput {
   questions: readonly KnowledgeGridQuestion[];
   usedQuestionIds: readonly QuestionId[];
+  recentlyPlayedQuestionIds?: readonly QuestionId[] | undefined;
   seed: string;
   includeDifficultyFive?: boolean | undefined;
 }
@@ -94,15 +95,19 @@ function questionForCell(input: {
   categoryId: string;
   difficulty: KnowledgeGridDifficulty;
   usedQuestionIds: readonly QuestionId[];
+  recentlyPlayedQuestionIds?: readonly QuestionId[] | undefined;
   seed: string;
 }): KnowledgeGridQuestion | undefined {
   const used = new Set(input.usedQuestionIds);
+  const recent = new Set(input.recentlyPlayedQuestionIds ?? []);
   const candidates = input.questions.filter((question) => (
     question.categoryId === input.categoryId
     && question.difficulty === input.difficulty
     && !used.has(question.id)
   ));
-  return shuffleWithSeed(candidates, `${input.seed}:${input.categoryId}:${input.difficulty}`)[0];
+  const freshCandidates = candidates.filter((question) => !recent.has(question.id));
+  const pool = freshCandidates.length > 0 ? freshCandidates : candidates;
+  return shuffleWithSeed(pool, `${input.seed}:${input.categoryId}:${input.difficulty}:${recent.size}`)[0];
 }
 
 export function buildKnowledgeGrid(input: BuildKnowledgeGridInput): KnowledgeGridBoard {
@@ -121,6 +126,7 @@ export function buildKnowledgeGrid(input: BuildKnowledgeGridInput): KnowledgeGri
         categoryId: category.id,
         difficulty,
         usedQuestionIds: input.usedQuestionIds,
+        recentlyPlayedQuestionIds: input.recentlyPlayedQuestionIds,
         seed: input.seed,
       });
       const isPlayed = question ? input.usedQuestionIds.includes(question.id) : false;
@@ -202,6 +208,7 @@ export function createKnowledgeGridRoundState(input: {
   config: GameConfig;
   questions: readonly KnowledgeGridQuestion[];
   usedQuestionIds: readonly QuestionId[];
+  recentlyPlayedQuestionIds?: readonly QuestionId[] | undefined;
   seed: string;
   includeDifficultyFive?: boolean | undefined;
 }): KnowledgeGridState {
@@ -218,6 +225,7 @@ export function createKnowledgeGridRoundState(input: {
     board: buildKnowledgeGrid({
       questions: input.questions,
       usedQuestionIds: input.usedQuestionIds,
+      recentlyPlayedQuestionIds: input.recentlyPlayedQuestionIds,
       seed: input.seed,
       includeDifficultyFive: input.includeDifficultyFive,
     }),

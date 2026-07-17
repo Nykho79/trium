@@ -102,6 +102,7 @@ export function GameScreen() {
   const configureCurrentWager = useGameStore((state) => state.configureCurrentWager);
   const purchaseFinalAdvantageForCurrentRound = useGameStore((state) => state.purchaseFinalAdvantageForCurrentRound);
   const activateFinalHintForCurrentQuestion = useGameStore((state) => state.activateFinalHintForCurrentQuestion);
+  const expireCurrentQuestion = useGameStore((state) => state.expireCurrentQuestion);
   const navigate = useGameStore((state) => state.navigate);
   const soundEnabled = useSettingsStore((state) => state.soundEnabled);
   const masterMuted = useAudioStore((state) => state.masterMuted);
@@ -115,6 +116,8 @@ export function GameScreen() {
   const [wagerCustomAmount, setWagerCustomAmount] = useState("");
   const [wagerConfirming, setWagerConfirming] = useState(false);
   const [revealReady, setRevealReady] = useState(false);
+  const [now, setNow] = useState(() => Date.now());
+  const [expiredQuestionId, setExpiredQuestionId] = useState<string | undefined>(undefined);
 
   useEffect(() => {
     if (gameState?.status !== "answer_locked") {
@@ -124,6 +127,21 @@ export function GameScreen() {
     setRevealReady(false);
     const timeout = window.setTimeout(() => setRevealReady(true), 300);
     return () => window.clearTimeout(timeout);
+  }, [gameState?.activeQuestionId, gameState?.status]);
+  useEffect(() => {
+    if (!gameState?.timer || gameState.status !== "question_active") {
+      setNow(Date.now());
+      return undefined;
+    }
+    setNow(Date.now());
+    const interval = window.setInterval(() => setNow(Date.now()), 250);
+    return () => window.clearInterval(interval);
+  }, [gameState?.activeQuestionId, gameState?.status, gameState?.timer, gameState?.timer?.expiresAt]);
+
+  useEffect(() => {
+    if (gameState?.status !== "question_active") {
+      setExpiredQuestionId(undefined);
+    }
   }, [gameState?.activeQuestionId, gameState?.status]);
 
   useEffect(() => {
@@ -198,12 +216,16 @@ export function GameScreen() {
   const finalUsedAdvantageIds = gameState?.currentRoundState?.finalUsedAdvantageIds ?? [];
   const activeFinalStep = activeFinalQuestion ? finalStepForQuestion(activeFinalQuestion) : undefined;
   const canUseFinalHint = activeFinalStep !== undefined && finalPurchasedAdvantageIds.includes("extra_hint") && !finalUsedAdvantageIds.includes("extra_hint") && canApplyFinalAdvantageToStep("extra_hint", activeFinalStep);
+  const totalTimerMs = (gameState?.timer?.expiresAt ?? 0) - (gameState?.timer?.startedAt ?? 0) || 30_000;
+  const remainingTimerMs = Math.max(0, (gameState?.timer?.expiresAt ?? now) - now);
+  const isTimerExpired = gameState?.status === "question_active" && gameState.timer !== undefined && remainingTimerMs <= 0;
   const canUseJoker = gameState?.status === "question_active" && activeQuestion !== undefined;
   const board = useMemo(() => buildKnowledgeGrid({
     questions: knowledgeQuestions,
     usedQuestionIds: gameState?.usedQuestionIds ?? [],
+    recentlyPlayedQuestionIds: gameState?.recentlyPlayedQuestionIds ?? [],
     seed: gameState?.config.seed ?? "trium-grid",
-  }), [gameState?.config.seed, gameState?.usedQuestionIds, knowledgeQuestions]);
+  }), [gameState?.config.seed, gameState?.recentlyPlayedQuestionIds, gameState?.usedQuestionIds, knowledgeQuestions]);
 
   const chooseCell = (cellId: string) => {
     try {
@@ -310,6 +332,14 @@ export function GameScreen() {
     return false;
   };
 
+  useEffect(() => {
+    if (!isTimerExpired || !gameState?.activeQuestionId || expiredQuestionId === gameState.activeQuestionId || allQuestions.length === 0) {
+      return undefined;
+    }
+    setExpiredQuestionId(gameState.activeQuestionId);
+    const timeout = window.setTimeout(() => expireCurrentQuestion(allQuestions, Date.now()), 1_200);
+    return () => window.clearTimeout(timeout);
+  }, [allQuestions, expiredQuestionId, expireCurrentQuestion, gameState?.activeQuestionId, isTimerExpired]);
   if (!gameState || !round) {
     return (
       <ScreenFrame title="Ecran de jeu">
@@ -441,8 +471,8 @@ export function GameScreen() {
               isLocked={isLocked}
               selectedAnswerId={selectedAnswerId}
               eliminatedOptionIds={gameState.jokerEffects.eliminatedOptionIds}
-              remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())}
-              totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000}
+              remainingMs={remainingTimerMs}
+              totalMs={totalTimerMs}
               canUseHint={canUseFinalHint}
               onUseHint={() => activateFinalHintForCurrentQuestion(finalQuestions)}
               onSelect={(answerId) => selectAnswer(answerId)}
@@ -450,7 +480,7 @@ export function GameScreen() {
           ) : null}
           {isQuestionActive && activeKnowledgeQuestion ? (
             <div className="question-live knowledge-question-live">
-              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
+              <Timer remainingMs={remainingTimerMs} totalMs={totalTimerMs} />
               <div className="question-value-strip">
                 <Badge tone="amber">{activeKnowledgeQuestion.value} points</Badge>
                 <span>{activeKnowledgeQuestion.categoryLabel} - difficulte {activeKnowledgeQuestion.difficulty}</span>
@@ -493,7 +523,7 @@ export function GameScreen() {
 
           {isQuestionActive && activePressureQuestion ? (
             <div className="question-live pressure-choice-live">
-              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={pressureTimeLimitMs} />
+              <Timer remainingMs={remainingTimerMs} totalMs={totalTimerMs || pressureTimeLimitMs} />
               <div className="pressure-step-track" aria-label="Progression Choix sous pression">
                 {[1, 2, 3, 4, 5].map((step) => (
                   <span key={step} className={step - 1 < pressureStep ? "is-passed" : step - 1 === pressureStep ? "is-current" : ""}>{step}</span>
@@ -545,7 +575,7 @@ export function GameScreen() {
           ) : null}
           {isQuestionActive && activeClueQuestion ? (
             <div className="question-live clue-race-live">
-              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
+              <Timer remainingMs={remainingTimerMs} totalMs={totalTimerMs} />
               <div className="question-value-strip">
                 <Badge tone="amber">{pointsForClueIndex(clueIndex)} points</Badge>
                 <span>Indice {clueIndex + 1} / 5</span>
@@ -584,7 +614,7 @@ export function GameScreen() {
 
           {isQuestionActive && activeWagerQuestion ? (
             <>
-              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
+              <Timer remainingMs={remainingTimerMs} totalMs={totalTimerMs} />
               <WagerQuestionView
                 question={activeWagerQuestion}
                 amount={activeWagerAmount}
@@ -601,7 +631,7 @@ export function GameScreen() {
 
           {isQuestionActive && activeConnectionQuestion ? (
             <>
-              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
+              <Timer remainingMs={remainingTimerMs} totalMs={totalTimerMs} />
               <ConnectionsExerciseView
                 question={activeConnectionQuestion}
                 itemIndex={connectionItemIndex}
@@ -621,7 +651,7 @@ export function GameScreen() {
           ) : null}
           {isQuestionActive && activeSynapseQuestion ? (
             <>
-              <Timer remainingMs={Math.max(0, (gameState.timer?.expiresAt ?? Date.now()) - Date.now())} totalMs={(gameState.timer?.expiresAt ?? 0) - (gameState.timer?.startedAt ?? 0) || 30_000} />
+              <Timer remainingMs={remainingTimerMs} totalMs={totalTimerMs} />
               <SynapseExerciseView question={activeSynapseQuestion} isLocked={isLocked} selectedAnswerId={selectedAnswerId} onSelect={selectAnswer} />
               {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message="Revelation prete pour cette epreuve Synapse." /> : null}
             </>
@@ -662,6 +692,15 @@ export function GameScreen() {
           </Panel>
         </aside>
       </section>
+      {isTimerExpired ? (
+        <div className="time-expired-layer" role="alertdialog" aria-modal="true" aria-labelledby="time-expired-title" data-testid="time-expired-alert">
+          <Panel className="time-expired-panel">
+            <Badge tone="danger">Temps ecoule</Badge>
+            <h1 id="time-expired-title">Chrono termine</h1>
+            <p>La reponse va etre revelee automatiquement.</p>
+          </Panel>
+        </div>
+      ) : null}
       <ConfirmationDialog
         isOpen={pendingJoker !== undefined}
         title={pendingJoker ? `Utiliser ${jokerLabels[pendingJoker]}` : "Utiliser un joker"}
