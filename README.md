@@ -88,7 +88,7 @@ Les fichiers sources sont places dans `src/data/questions/*.json`. Le module `sr
 - evite les questions recemment jouees quand une alternative existe ;
 - equilibre categorie et difficulte selon l'historique de la partie.
 
-Etat actuel de la banque locale : `pnpm questions` charge 28 fichiers de donnees, valide 853 questions `approved` + `verified`, rejette 0 entree jouable et ne detecte plus aucun doublon exact. La passe de curation a retire 147 entrees faibles, redondantes ou un parcours final incomplet et la copie de developpement `conceptual-intruders - Copie.json` a ete supprimee. Les doublons probables restent affiches comme signal faible, car certaines epreuves Synapse partagent volontairement une structure proche. Cette validation est applicative et ne remplace pas une revue factuelle source par source.
+Etat actuel de la banque locale : `pnpm questions` charge 34 fichiers de donnees, valide 949 questions `approved` + `verified`, rejette 0 entree jouable et ne detecte aucun doublon exact. Les fichiers d extension ajoutent du volume pour Course aux indices, Connexions, Choix sous pression, Synapse, Le Pari et la finale memoire. Les doublons probables restent affiches comme signal faible, car certaines epreuves Synapse et finales partagent volontairement une structure proche ; ils ne sont pas masques par le script. Cette validation est applicative et ne remplace pas une revue factuelle source par source.
 
 La page developpement `DevQuestionBankScreen` permet d'inspecter le rapport, les repartitions et un echantillon des questions chargees depuis l'application.
 
@@ -136,15 +136,13 @@ Principes actifs :
 
 ## Validation effectuee
 
-Validation locale executee le 2026-07-17 :
+Validation locale de cette passe :
 
-- `pnpm check` : OK, lint + TypeScript + 132 tests unitaires ;
-- `pnpm playwright test src/tests/e2e/tv-runtime.spec.ts` : OK, 12 tests Playwright sur 1920 x 1080, 1366 x 768 et 1280 x 720, avec zoom interface 125 % et zoom navigateur simule 125 % ;
-- `pnpm test:e2e` : OK, 81 tests Playwright sur 1920 x 1080, 1366 x 768 et 1280 x 720 ;
-- `pnpm build` : OK, build production Vite vers `dist`, avec avertissement Vite de chunk superieur a 500 kB ;
-- `pnpm preview --port 4178` : OK, verification locale de `/`, `/manifest.webmanifest`, `/sw.js` et fallback SPA ;
-- controle navigateur Playwright sur la preview production : OK, titre `TRIUM`, accueil visible, manifest detecte, service worker actif, aucune erreur console ;
-- `pnpm questions` : OK, 853 questions approuvees et verifiees, 0 rejet jouable, 0 doublon exact.
+- `pnpm questions` : OK, 949 questions approuvees et verifiees, 0 rejet jouable, 0 doublon exact ;
+- `pnpm lint` : OK ;
+- `pnpm typecheck` : OK.
+
+Dans le sandbox Codex Windows de cette session, Vitest et Vite build ne demarrent pas parce qu'esbuild echoue sur `spawn EPERM` au chargement de `vitest.config.ts` / `vite.config.ts`. La relance hors sandbox a ete refusee par la limite d'usage Codex ; la suite `pnpm run check`, les tests Playwright et la verification navigateur doivent donc etre relances dans un terminal Windows normal avant de considerer cette passe comme totalement validee.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.
 
