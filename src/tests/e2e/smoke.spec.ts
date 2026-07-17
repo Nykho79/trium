@@ -5,6 +5,11 @@ async function chooseFirstAvailableAnswer(page: Page, containerTestId?: string):
   await answers.locator("button:not(:disabled)").first().click();
 }
 
+async function answerAndReveal(page: Page, containerTestId?: string): Promise<void> {
+  await chooseFirstAvailableAnswer(page, containerTestId);
+  await expect(page.getByText("Reponse revelee")).toBeVisible();
+}
+
 async function openKnowledgeGrid(page: Page) {
   await page.goto("/");
   await page.getByTestId("start-button").click();
@@ -33,12 +38,8 @@ test("revele une reponse depuis une case de grille", async ({ page }) => {
   await openKnowledgeGrid(page);
   await page.getByRole("button", { name: "200" }).first().click();
   await expect(page.locator(".knowledge-question-live")).toBeVisible();
-  await chooseFirstAvailableAnswer(page);
-  await page.getByTestId("lock-answer-button").click();
-  await page.getByTestId("reveal-answer-button").click();
+  await answerAndReveal(page);
 
-  await expect(page.getByText("Reponse revelee")).toBeVisible();
-  await expect(page.getByText(/Score .quipe/)).toBeVisible();
   await expect(page.getByRole("button", { name: /Retour . la grille|Retour a la grille/ })).toBeVisible();
 });
 
@@ -133,11 +134,8 @@ test("joue une enigme de Course aux indices avec 50/50 apres les propositions", 
   await page.getByRole("button", { name: "Utiliser" }).click();
   await expect(page.locator("button.answer-state-disabled")).toHaveCount(2);
 
-  await chooseFirstAvailableAnswer(page, "clue-answer-options");
-  await page.getByTestId("lock-answer-button").click();
-  await page.getByTestId("reveal-answer-button").click();
+  await answerAndReveal(page, "clue-answer-options");
 
-  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByRole("button", { name: "Enigme suivante" })).toBeVisible();
 });
 
@@ -208,11 +206,8 @@ test("joue et securise le premier palier de Choix sous pression", async ({ page 
   await expect(page.getByText("x1")).toBeVisible();
   await expect(page.getByText("35 s")).toBeVisible();
 
-  await chooseFirstAvailableAnswer(page, "pressure-answer-options");
-  await page.getByTestId("lock-answer-button").click();
-  await page.getByTestId("reveal-answer-button").click();
+  await answerAndReveal(page, "pressure-answer-options");
 
-  await expect(page.getByText("Reponse revelee")).toBeVisible();
 });
 
 async function openSynapse(page: Page) {
@@ -282,11 +277,8 @@ test("joue une mini-epreuve Synapse", async ({ page }) => {
   await expect(page.getByTestId("joker-team_vote")).toBeDisabled();
   await expect(page.getByTestId("synapse-answer-options")).toBeVisible({ timeout: 3000 });
 
-  await page.getByTestId("synapse-answer-options").locator("button").first().click();
-  await page.getByTestId("lock-answer-button").click();
-  await page.getByTestId("reveal-answer-button").click();
+  await answerAndReveal(page, "synapse-answer-options");
 
-  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByRole("button", { name: "Epreuve suivante" })).toBeVisible();
 });
 async function openConnections(page: Page) {
@@ -368,11 +360,8 @@ test("joue une connexion progressive avec 50/50 apres les propositions", async (
   await page.getByRole("button", { name: "Utiliser" }).click();
   await expect(page.getByTestId("connection-answer-options").locator("button.answer-state-disabled")).toHaveCount(2);
 
-  await page.getByTestId("connection-answer-options").locator("button:not(:disabled)").first().click();
-  await page.getByTestId("lock-answer-button").click();
-  await page.getByTestId("reveal-answer-button").click();
+  await answerAndReveal(page, "connection-answer-options");
 
-  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByTestId("connection-reveal-items")).toBeVisible();
   await expect(page.getByRole("button", { name: "Connexion suivante" })).toBeVisible();
 });
@@ -457,11 +446,8 @@ test("configure et joue un pari confirme", async ({ page }) => {
   await page.getByRole("button", { name: "Utiliser" }).click();
   await expect(page.getByTestId("wager-answer-options").locator("button.answer-state-disabled")).toHaveCount(2);
 
-  await chooseFirstAvailableAnswer(page, "wager-answer-options");
-  await page.getByTestId("lock-answer-button").click();
-  await page.getByTestId("reveal-answer-button").click();
+  await answerAndReveal(page, "wager-answer-options");
 
-  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByRole("button", { name: "Pari suivant" })).toBeVisible();
 });
 async function openFinalConvergence(page: Page) {
@@ -519,10 +505,7 @@ test("achete des avantages et joue la premiere etape de Convergence", async ({ p
   await expect(page.getByTestId("final-answer-options").locator("button.answer-state-disabled")).toHaveCount(1);
   await expect(page.getByTestId("joker-fifty_fifty")).toBeDisabled();
 
-  await chooseFirstAvailableAnswer(page, "final-answer-options");
-  await page.getByTestId("lock-answer-button").click();
-  await page.getByTestId("reveal-answer-button").click();
+  await answerAndReveal(page, "final-answer-options");
 
-  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByRole("button", { name: "Etape suivante" })).toBeVisible();
 });

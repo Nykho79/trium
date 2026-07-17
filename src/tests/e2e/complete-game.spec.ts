@@ -195,11 +195,6 @@ async function chooseAnswer(page: Page, testId?: string, preferredOptionId?: str
 }
 
 async function lockAndReveal(page: Page): Promise<void> {
-  await page.getByTestId("lock-answer-button").click();
-  const revealButton = page.getByTestId("reveal-answer-button");
-  await expect(revealButton).toBeVisible();
-  await expect(revealButton).toBeEnabled();
-  await revealButton.click();
   await expect(page.getByText("Reponse revelee")).toBeVisible();
 }
 
@@ -321,7 +316,7 @@ test("partie complete compacte avec seed fixe jusqu'a la revanche", async ({ pag
   await expect(page.getByRole("heading", { name: /Convergence remportee|Convergence manquee|Architectes|Equipe|Collectif/ })).toBeVisible();
   await expect(page.getByText("Score total")).toBeVisible();
   await expect(page.getByText("Score par manche")).toBeVisible();
-  await page.getByRole("button", { name: "Nouvelle partie" }).click();
+  await page.getByRole("button", { name: "Accueil" }).click();
   await expect(page.getByRole("heading", { name: "TRIUM" })).toBeVisible();
   await page.getByTestId("start-button").click();
   await expect(page.getByRole("heading", { name: "Configuration des joueurs" })).toBeVisible();
@@ -338,16 +333,16 @@ test("scenarios d'erreur moteur et navigation", async ({ page }) => {
   await expect(page.getByRole("dialog", { name: /Utiliser 50\/50/ })).toBeHidden();
   await expect(page.getByTestId("joker-fifty_fifty")).toBeEnabled();
 
-  await chooseAnswer(page);
-  await page.getByTestId("lock-answer-button").dblclick();
-  await expect(page.getByTestId("reveal-answer-button")).toBeVisible();
+  const firstAnswer = answerScope(page).locator("button:not(:disabled)").first();
+  await firstAnswer.dblclick();
+  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await expect(page.getByText("Action impossible")).toHaveCount(0);
 
   await page.reload();
-  await expect(page.getByTestId("reveal-answer-button")).toBeVisible();
+  await expect(page.getByText("Reponse revelee")).toBeVisible();
   await page.goBack().catch(() => null);
   await page.goForward().catch(() => null);
-  await expect(page.getByTestId("reveal-answer-button")).toBeVisible();
+  await expect(page.getByText("Reponse revelee")).toBeVisible();
 });
 
 test("expiration avec horloge simulee", async ({ page }) => {
