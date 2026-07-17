@@ -425,6 +425,31 @@ function findActiveQuestion(state: GameState, questions: readonly Question[]): Q
   return question;
 }
 
+const SYNAPSE_DIFFICULTY_PATH: readonly [1, 2, 3, 3, 4, 5] = [1, 2, 3, 3, 4, 5];
+
+function applySynapseVarietyFilters(candidates: readonly Question[], roundState: RoundState, allQuestions: readonly Question[]): readonly Question[] {
+  const expectedDifficulty = SYNAPSE_DIFFICULTY_PATH[Math.min(roundState.currentQuestionIndex, SYNAPSE_DIFFICULTY_PATH.length - 1)] ?? 5;
+  const difficultyMatched = candidates.filter((question) => question.difficulty === expectedDifficulty);
+  const difficultyPool = difficultyMatched.length > 0 ? difficultyMatched : candidates;
+  const selectedById = new Map(allQuestions.map((question) => [question.id, question]));
+  const typeCounts = new Map<string, number>();
+  for (const questionId of roundState.selectedQuestionIds) {
+    const selected = selectedById.get(questionId);
+    if (selected?.kind === "synapse") {
+      typeCounts.set(selected.type, (typeCounts.get(selected.type) ?? 0) + 1);
+    }
+  }
+  const typeLimited = difficultyPool.filter((question) => (typeCounts.get(question.type) ?? 0) < 2);
+  const variedTypePool = typeLimited.length > 0 ? typeLimited : difficultyPool;
+  const selectedSubCategories = new Set(
+    roundState.selectedQuestionIds
+      .map((questionId) => selectedById.get(questionId))
+      .filter((question): question is Question => question?.kind === "synapse")
+      .map((question) => question.subCategoryId),
+  );
+  const subCategoryLimited = variedTypePool.filter((question) => !selectedSubCategories.has(question.subCategoryId));
+  return subCategoryLimited.length > 0 ? subCategoryLimited : variedTypePool;
+}
 function selectQuestion(state: GameState, questions: readonly Question[], questionId: QuestionId | undefined): Question {
   const definition = currentRoundDefinition(state);
   const roundState = requireRound(state);
@@ -437,6 +462,9 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
   if (!explicitQuestion && definition.kind === "final-convergence") {
     const expectedStep = finalStepForIndex(roundState.currentQuestionIndex);
     candidates = candidates.filter((question) => finalStepForQuestion(question) === expectedStep);
+  }
+  if (!explicitQuestion && definition.kind === "synapse") {
+    candidates = [...applySynapseVarietyFilters(candidates, roundState, questions)];
   }
   if (!explicitQuestion && definition.kind === "wager") {
     if (!roundState.wagerCategoryId || roundState.wagerDifficulty === undefined || roundState.wagerAmount === undefined) {

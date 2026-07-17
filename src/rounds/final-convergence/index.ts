@@ -65,6 +65,7 @@ export function advantageById(id: FinalConvergenceAdvantageId): FinalConvergence
 
 export function finalStepForQuestion(question: Question): FinalConvergenceStep | undefined {
   if (question.kind !== "final-convergence") return undefined;
+  if (question.categoryId === "logic-puzzles") return "logic";
   if (question.type === "multiple_choice") return "culture";
   if (question.type === "progressive_clues") return "clues";
   if (question.type === "connection") return "connection";
