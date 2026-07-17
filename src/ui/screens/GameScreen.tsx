@@ -114,6 +114,17 @@ export function GameScreen() {
   const [wagerAmount, setWagerAmount] = useState<number | undefined>(undefined);
   const [wagerCustomAmount, setWagerCustomAmount] = useState("");
   const [wagerConfirming, setWagerConfirming] = useState(false);
+  const [revealReady, setRevealReady] = useState(false);
+
+  useEffect(() => {
+    if (gameState?.status !== "answer_locked") {
+      setRevealReady(false);
+      return undefined;
+    }
+    setRevealReady(false);
+    const timeout = window.setTimeout(() => setRevealReady(true), 300);
+    return () => window.clearTimeout(timeout);
+  }, [gameState?.activeQuestionId, gameState?.status]);
 
   useEffect(() => {
     let cancelled = false;
@@ -620,7 +631,7 @@ export function GameScreen() {
             {!isQuestionActive && answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : null}
             {gameState.status === "question_active" && isClueRace && answersVisible ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
             {gameState.status === "question_active" && !isClueRace ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId || (isConnections && !answersVisible)} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
-            {gameState.status === "answer_locked" ? <Button variant="primary" onClick={() => revealCurrentAnswer(allQuestions)} data-testid="reveal-answer-button">Reveler la reponse</Button> : null}
+            {gameState.status === "answer_locked" ? <Button variant="primary" onClick={() => revealCurrentAnswer(allQuestions)} disabled={!revealReady} data-testid="reveal-answer-button">Reveler la reponse</Button> : null}
           </div>
         </Panel>
         <aside className="side-rail" aria-label="Informations de partie">

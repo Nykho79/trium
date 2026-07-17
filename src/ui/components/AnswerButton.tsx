@@ -18,6 +18,7 @@ export function AnswerButton({ answerId, label, state = "idle", className = "", 
         selected={state === "selected" || state === "correct"}
         className={`answer-state-${state} ${className}`}
         aria-pressed={state === "selected"}
+        data-answer-id={answerId}
         disabled={state === "disabled" || props.disabled}
         {...props}
       >

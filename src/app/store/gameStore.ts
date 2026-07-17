@@ -119,7 +119,7 @@ const DEFAULT_ROUNDS: RoundDefinition[] = [
     kind: "final-convergence",
     label: "Convergence finale",
     description: "Finale en cinq etapes avec avantages acquis.",
-    questionTypes: ["multiple_choice", "progressive_clues", "connection", "chronology", "analogy", "sequence"],
+    questionTypes: ["multiple_choice", "progressive_clues", "connection", "memory", "chronology", "analogy", "sequence"],
     questionCount: 5,
     maxScore: 2_500,
   },
