@@ -389,7 +389,7 @@ function convertSymbolRule(question: SourceQuestion): SymbolRuleQuestion {
 }
 
 function playableStatus(question: SourceQuestion): boolean {
-  return question.status !== "rejected" && question.verificationStatus !== "rejected";
+  return question.status === "approved" && question.verificationStatus === "verified";
 }
 
 function kindForMultipleChoice(context: ConversionContext): RoundKind {

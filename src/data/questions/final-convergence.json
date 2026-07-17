@@ -44,12 +44,12 @@
             "explanation": "Chaque coureur parcourt seul le même itinéraire, et le classement dépend du temps réalisé.",
             "sourceLabel": "Encyclopædia Britannica",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "cycling"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -104,12 +104,12 @@
             "explanation": "Les quatre indices convergent vers Le Nil.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -165,12 +165,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -215,12 +215,12 @@
             "rule": "Deux suites imbriquées : 2, 4, 6, 8 et 10, 20, 30.",
             "explanation": "Les positions impaires donnent 2, 4, 6, 8 ; les positions paires donnent 10, 20, 30.",
             "contextualHint": "Sépare les positions paires et impaires.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -266,12 +266,12 @@
             ],
             "explanation": "Tester les quatre détenteurs possibles. Si Kamel possède le jeton, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "truth-lie"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -318,12 +318,12 @@
             "explanation": "Un ace est un service gagnant directement, sans contact de la raquette adverse.",
             "sourceLabel": "Encyclopædia Britannica",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "tennis"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -378,12 +378,12 @@
             "explanation": "Les quatre indices convergent vers Le Japon.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -439,12 +439,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -487,12 +487,12 @@
             "rule": "Multiplier par 2 puis ajouter 2.",
             "explanation": "Chaque terme est le double du précédent, augmenté de 2.",
             "contextualHint": "Teste une opération identique entre deux termes.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -533,12 +533,12 @@
             ],
             "explanation": "On peut prendre au maximum 2 élément(s) de chacune des 4 catégories sans atteindre le seuil. Cela représente 8 éléments. Le suivant, soit le 9e, garantit la répétition demandée.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "reasoned-counting"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -585,12 +585,12 @@
             "explanation": "L’hameçonnage imite souvent un message légitime pour pousser la victime à cliquer ou transmettre des données.",
             "sourceLabel": "W3C",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "cybersecurity"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -645,12 +645,12 @@
             "explanation": "Les quatre indices convergent vers Le violon.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -706,12 +706,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -754,12 +754,12 @@
             "rule": "Ajouter successivement 2, 3, 4 puis 5 aux lettres et aux nombres.",
             "explanation": "A→C (+2), C→F (+3), F→J (+4), donc J→O (+5), et 11→16.",
             "contextualHint": "Compare séparément lettres et nombres.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -800,12 +800,12 @@
             ],
             "explanation": "Lola précède Iris. Iris précède Kamel, qui précède Jules. L’ordre est donc Lola – Iris – Kamel – Jules ; la réponse est Kamel.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "order"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -852,12 +852,12 @@
             "explanation": "Le kilt est une jupe plissée portée dans différents contextes cérémoniels et culturels en Écosse.",
             "sourceLabel": "UNESCO",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "clothing"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -912,12 +912,12 @@
             "explanation": "Les quatre indices convergent vers La photosynthèse.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -973,12 +973,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1021,12 +1021,12 @@
             "rule": "Avancer de 3, puis 4, puis 5, puis 6 lettres.",
             "explanation": "Les intervalles augmentent d’une unité : 3, 4, 5 puis 6.",
             "contextualHint": "Mesure les écarts alphabétiques.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1069,12 +1069,12 @@
             ],
             "explanation": "C occupe 9 h. Pour avoir A avant B et D après B, B ne peut être ni 10 h ni 12 h. B joue donc à 11 h.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "verbal-logic"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -1121,12 +1121,12 @@
             "explanation": "La Grande Tache rouge est une immense tempête persistante observée dans l’atmosphère de Jupiter.",
             "sourceLabel": "CNRS",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "astronomy"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1181,12 +1181,12 @@
             "explanation": "Les quatre indices convergent vers Gutenberg.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1242,12 +1242,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1292,12 +1292,12 @@
             "rule": "Deux suites alphabétiques imbriquées.",
             "explanation": "Les positions impaires donnent A, C, E, G ; les positions paires donnent Z, X, V.",
             "contextualHint": "Sépare les positions impaires et paires.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1342,12 +1342,12 @@
             ],
             "explanation": "Olga est en position 1 et Nino en position 4. Les positions 2 et 3 reviennent à Maya et Pablo. Maya étant immédiatement à gauche de Pablo, Maya est deuxième.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "positions-relative"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -1394,12 +1394,12 @@
             "explanation": "Ce principe protège la sécurité juridique et empêche l’application rétroactive d’une incrimination plus sévère.",
             "sourceLabel": "Vie publique",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "law"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1454,12 +1454,12 @@
             "explanation": "Les quatre indices convergent vers Les Andes.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1515,12 +1515,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1565,12 +1565,12 @@
             "rule": "Alterner −1 puis ×2.",
             "explanation": "10→9 (−1), 9→18 (×2), puis le motif recommence.",
             "contextualHint": "Cherche deux opérations alternées.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1615,12 +1615,12 @@
             ],
             "explanation": "La boîte A contient Rome et la boîte D contient Lima. Il reste Oslo et Kyoto pour B et C. Comme Kyoto n’est pas dans C, C contient Oslo.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "correspondence"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -1667,12 +1667,12 @@
             "explanation": "Bruce Wayne combat le crime à Gotham grâce à son entraînement, sa technologie et son identité secrète.",
             "sourceLabel": "Bibliothèque nationale de France",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "superheroes"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1727,12 +1727,12 @@
             "explanation": "Les quatre indices convergent vers L’ADN.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1788,12 +1788,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1839,12 +1839,12 @@
             "rule": "Deux suites imbriquées : 1,2,3,4 et 3,6,9,12.",
             "explanation": "Les termes impairs augmentent de 1 ; les termes pairs sont leurs triples.",
             "contextualHint": "Sépare les deux positions.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -1888,12 +1888,12 @@
             ],
             "explanation": "D doit précéder A. F doit suivre A. L’ordre unique est donc DAF.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "constraints"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -1940,12 +1940,12 @@
             "explanation": "La demande est généralement déposée dans une mairie équipée d’un dispositif de recueil, indépendamment du domicile, puis instruite par l’administration compétente.",
             "sourceLabel": "Vie publique",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "public-services"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2000,12 +2000,12 @@
             "explanation": "Les quatre indices convergent vers Molière.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2061,12 +2061,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2109,12 +2109,12 @@
             "rule": "La lettre avance et son nombre de répétitions augmente de 1.",
             "explanation": "Après quatre D vient cinq E.",
             "contextualHint": "Observe simultanément la lettre et sa répétition.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2157,12 +2157,12 @@
             ],
             "explanation": "2 + 2 mène à 4. Reculer d’une case mène à 3. Avancer de deux mène à 5.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "movement"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -2209,12 +2209,12 @@
             "explanation": "Le sabre laser est utilisé par les Jedi et les Sith et symbolise leur lien avec la Force.",
             "sourceLabel": "Bibliothèque nationale de France",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "franchises"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2269,12 +2269,12 @@
             "explanation": "Les quatre indices convergent vers Saturne.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2330,12 +2330,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2379,12 +2379,12 @@
             "rule": "Deux rotations imbriquées.",
             "explanation": "Les positions impaires et les positions paires forment deux suites séparées, chacune tournant de 90° dans le sens horaire.",
             "contextualHint": "Sépare les positions paires et impaires.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2430,12 +2430,12 @@
             ],
             "explanation": "Tester les quatre détenteurs possibles. Si Olga possède le médaillon, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "truth-lie"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -2482,12 +2482,12 @@
             "explanation": "Sorti en 1959, le film suit Antoine Doinel et constitue une œuvre emblématique de la Nouvelle Vague.",
             "sourceLabel": "BFI",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "french-cinema"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2542,12 +2542,12 @@
             "explanation": "Les quatre indices convergent vers Le jazz.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2603,12 +2603,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2651,12 +2651,12 @@
             "rule": "Répéter un cycle de trois associations forme-couleur.",
             "explanation": "Le cycle cercle primaire, carré secondaire, triangle accent recommence.",
             "contextualHint": "Cherche un motif complet de trois termes.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2697,12 +2697,12 @@
             ],
             "explanation": "On peut prendre au maximum 1 élément(s) de chacune des 5 catégories sans atteindre le seuil. Cela représente 5 éléments. Le suivant, soit le 6e, garantit la répétition demandée.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "reasoned-counting"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -2749,12 +2749,12 @@
             "explanation": "Ce passage relie l’océan Atlantique à la mer Méditerranée et sépare l’Europe de l’Afrique.",
             "sourceLabel": "National Geographic",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "physical-geography"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2809,12 +2809,12 @@
             "explanation": "Les quatre indices convergent vers Le Sphinx.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2870,12 +2870,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2918,12 +2918,12 @@
             "rule": "Former les produits n × (n + 1).",
             "explanation": "1×2=2, 2×3=6, 3×4=12, 4×5=20, puis 5×6=30.",
             "contextualHint": "Relie chaque terme à deux entiers consécutifs.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -2964,283 +2964,12 @@
             ],
             "explanation": "Pablo précède Maya. Maya précède Olga, qui précède Nino. L’ordre est donc Pablo – Maya – Olga – Nino ; la réponse est Nino.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "order"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
-            "version": 1
-          }
-        }
-      ],
-      "verificationStatus": "to_verify",
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "FIN-0012",
-      "title": "Parcours final 12",
-      "difficulty": 4,
-      "steps": [
-        {
-          "order": 1,
-          "stepType": "multiple_choice",
-          "content": {
-            "id": "FIN-0012-S1",
-            "type": "multiple_choice",
-            "category": "gastronomy",
-            "subcategory": "world-cuisine",
-            "difficulty": 3,
-            "question": "Quel ingrédient constitue la base du houmous ?",
-            "answers": [
-              {
-                "id": "a",
-                "text": "La lentille corail"
-              },
-              {
-                "id": "b",
-                "text": "Le haricot rouge"
-              },
-              {
-                "id": "c",
-                "text": "Le pois chiche"
-              },
-              {
-                "id": "d",
-                "text": "Le riz"
-              }
-            ],
-            "correctAnswerId": "c",
-            "contextualHint": "Il s’agit d’une légumineuse beige.",
-            "explanation": "Le houmous mélange pois chiches, tahini, citron, ail et huile selon de nombreuses variantes régionales.",
-            "sourceLabel": "Larousse Gastronomique",
-            "sourceUrl": null,
-            "verificationStatus": "to_verify",
-            "tags": [
-              "world-cuisine"
-            ],
-            "estimatedTimeSeconds": 30,
-            "status": "generated",
-            "version": 1
-          }
-        },
-        {
-          "order": 2,
-          "stepType": "progressive_clues",
-          "content": {
-            "id": "FIN-0012-S2",
-            "type": "progressive_clues",
-            "category": "technology",
-            "subcategory": "progressive-identification",
-            "difficulty": 3,
-            "prompt": "Identifiez la réponse avec le moins d’indices possible.",
-            "clues": [
-              {
-                "order": 1,
-                "text": "Je suis un réseau de réseaux."
-              },
-              {
-                "order": 2,
-                "text": "Je repose sur des protocoles de communication."
-              },
-              {
-                "order": 3,
-                "text": "Le Web est l’un des services qui m’utilisent."
-              },
-              {
-                "order": 4,
-                "text": "TCP/IP structure une grande partie de mes échanges."
-              }
-            ],
-            "answers": [
-              {
-                "id": "a",
-                "text": "Internet"
-              },
-              {
-                "id": "b",
-                "text": "Le Bluetooth"
-              },
-              {
-                "id": "c",
-                "text": "Le BIOS"
-              },
-              {
-                "id": "d",
-                "text": "Le GPS"
-              }
-            ],
-            "correctAnswerId": "a",
-            "contextualHint": "Les indices vont du général au particulier.",
-            "explanation": "Les quatre indices convergent vers Internet.",
-            "sourceLabel": null,
-            "sourceUrl": null,
-            "verificationStatus": "to_verify",
-            "tags": [
-              "indices-progressifs"
-            ],
-            "estimatedTimeSeconds": 50,
-            "status": "generated",
-            "version": 1
-          }
-        },
-        {
-          "order": 3,
-          "stepType": "connection",
-          "content": {
-            "id": "FIN-0012-S3",
-            "type": "connection",
-            "category": "sports",
-            "subcategory": "common-link",
-            "difficulty": 4,
-            "prompt": "Quel lien précis unit ces quatre éléments ?",
-            "items": [
-              {
-                "id": "item-1",
-                "text": "Judo"
-              },
-              {
-                "id": "item-2",
-                "text": "Lutte"
-              },
-              {
-                "id": "item-3",
-                "text": "Boxe"
-              },
-              {
-                "id": "item-4",
-                "text": "Taekwondo"
-              }
-            ],
-            "answers": [
-              {
-                "id": "a",
-                "text": "Une suite chronologique"
-              },
-              {
-                "id": "b",
-                "text": "Des sports de combat olympiques"
-              },
-              {
-                "id": "c",
-                "text": "Des lieux portant le même nom"
-              },
-              {
-                "id": "d",
-                "text": "Des objets fabriqués en métal"
-              }
-            ],
-            "correctAnswerId": "b",
-            "connection": "Des sports de combat olympiques",
-            "explanation": "Les quatre éléments appartiennent à la catégorie précise suivante : Des sports de combat olympiques.",
-            "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
-            "sourceLabel": null,
-            "sourceUrl": null,
-            "verificationStatus": "to_verify",
-            "tags": [
-              "connexion"
-            ],
-            "estimatedTimeSeconds": 60,
-            "status": "generated",
-            "version": 1
-          }
-        },
-        {
-          "order": 4,
-          "stepType": "analogy_or_sequence",
-          "content": {
-            "id": "FIN-0012-S4",
-            "type": "logical_sequence",
-            "category": "synapse",
-            "subcategory": "advanced-sequence",
-            "difficulty": 4,
-            "prompt": "Quel élément complète cette suite ?",
-            "sequence": [
-              "1",
-              "100",
-              "2",
-              "90",
-              "3",
-              "80",
-              "?"
-            ],
-            "answers": [
-              {
-                "id": "a",
-                "text": "70"
-              },
-              {
-                "id": "b",
-                "text": "5"
-              },
-              {
-                "id": "c",
-                "text": "4"
-              },
-              {
-                "id": "d",
-                "text": "40"
-              }
-            ],
-            "correctAnswerId": "c",
-            "rule": "Deux suites imbriquées : +1 et −10.",
-            "explanation": "Les positions impaires donnent 1,2,3,4 ; les positions paires 100,90,80.",
-            "contextualHint": "Sépare les positions.",
-            "verificationStatus": "to_verify",
-            "tags": [
-              "suite-logique"
-            ],
-            "estimatedTimeSeconds": 55,
-            "status": "generated",
-            "version": 1
-          }
-        },
-        {
-          "order": 5,
-          "stepType": "logic_puzzle",
-          "content": {
-            "id": "FIN-0012-S5",
-            "type": "logic_puzzle",
-            "category": "logic-puzzles",
-            "subcategory": "verbal-logic",
-            "difficulty": 5,
-            "prompt": "Un robot part de (0,0), avance de 2 cases vers l’est, de 1 vers le nord, puis de 3 vers l’ouest. Où se trouve-t-il ?",
-            "clues": [
-              "Est augmente la première coordonnée ; nord augmente la seconde."
-            ],
-            "answers": [
-              {
-                "id": "a",
-                "text": "(1,1)"
-              },
-              {
-                "id": "b",
-                "text": "(-1,-1)"
-              },
-              {
-                "id": "c",
-                "text": "(3,1)"
-              },
-              {
-                "id": "d",
-                "text": "(-1,1)"
-              }
-            ],
-            "correctAnswerId": "d",
-            "reasoningSteps": [
-              "Après l’est : (2,0).",
-              "Après le nord : (2,1).",
-              "Après trois cases à l’ouest : (-1,1)."
-            ],
-            "explanation": "Après l’est : (2,0). Après le nord : (2,1). Après trois cases à l’ouest : (-1,1).",
-            "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
-            "tags": [
-              "verbal-logic"
-            ],
-            "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -3287,12 +3016,12 @@
             "explanation": "Un routeur examine les adresses réseau et choisit un chemin pour transmettre les paquets.",
             "sourceLabel": "W3C",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "networks"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3347,12 +3076,12 @@
             "explanation": "Les quatre indices convergent vers L’huile d’olive.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3408,12 +3137,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3457,12 +3186,12 @@
             "rule": "Doubler puis retirer 1 à partir du deuxième terme.",
             "explanation": "3=2×2−1, 5=3×2−1, puis 9,17 et 33.",
             "contextualHint": "Compare un terme au double du précédent.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3507,12 +3236,12 @@
             ],
             "explanation": "Tania est en position 1 et Sami en position 4. Les positions 2 et 3 reviennent à Rania et Ugo. Rania étant immédiatement à gauche de Ugo, Rania est deuxième.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "positions-relative"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -3559,12 +3288,12 @@
             "explanation": "Un crescendo demande d’accroître graduellement le volume sonore sur une durée donnée.",
             "sourceLabel": "Philharmonie de Paris",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "music-theory"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3619,12 +3348,12 @@
             "explanation": "Les quatre indices convergent vers Le samouraï.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3680,12 +3409,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3729,12 +3458,12 @@
             "rule": "Ajouter 3, 6, 12, 24 puis 48.",
             "explanation": "Les écarts doublent à chaque étape.",
             "contextualHint": "Observe les différences successives.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3779,12 +3508,12 @@
             ],
             "explanation": "La boîte A contient chat et la boîte D contient chien. Il reste loutre et lynx pour B et C. Comme lynx n’est pas dans C, C contient loutre.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "correspondence"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -3831,12 +3560,12 @@
             "explanation": "Le cubisme, développé notamment par Picasso et Braque, rompt avec la perspective traditionnelle.",
             "sourceLabel": "BnF",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "art-movements"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3891,12 +3620,12 @@
             "explanation": "Les quatre indices convergent vers L’Amazonie.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -3952,12 +3681,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4000,12 +3729,12 @@
             "rule": "Multiplier successivement par 2, 3, 4 puis 5.",
             "explanation": "1×2=2, ×3=6, ×4=24, puis ×5=120.",
             "contextualHint": "Le multiplicateur change à chaque étape.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4049,12 +3778,12 @@
             ],
             "explanation": "M doit précéder K. R doit suivre K. L’ordre unique est donc MKR.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "constraints"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -4101,12 +3830,12 @@
             "explanation": "Walter White est professeur de lycée avant de mettre ses compétences scientifiques au service d’une activité criminelle.",
             "sourceLabel": "BFI",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "series"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4161,12 +3890,12 @@
             "explanation": "Les quatre indices convergent vers Le Louvre.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4222,12 +3951,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4270,12 +3999,12 @@
             "rule": "Multiplier par 2 puis ajouter 1.",
             "explanation": "5→11→23→47→95 avec la même opération.",
             "contextualHint": "Teste le double augmenté d’une unité.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4318,12 +4047,12 @@
             ],
             "explanation": "Après trois impulsions, la lampe revient au rouge. La quatrième la rend verte. La cinquième la rend bleue.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "movement"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -4370,12 +4099,12 @@
             "explanation": "La comparaison met explicitement en relation un comparé et un comparant grâce à un outil comparatif.",
             "sourceLabel": "Académie française",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "figures-of-speech"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4430,12 +4159,12 @@
             "explanation": "Les quatre indices convergent vers Un volcan.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4491,12 +4220,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4539,12 +4268,12 @@
             "rule": "Avancer de 3, 4, 5 puis 6 lettres.",
             "explanation": "B→E (+3), E→I (+4), I→N (+5), donc N→T (+6).",
             "contextualHint": "Les intervalles augmentent.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4590,12 +4319,12 @@
             ],
             "explanation": "Tester les quatre détenteurs possibles. Si Tania possède le ticket doré, les trois premières affirmations sont fausses. Seule la quatrième est vraie ; les autres hypothèses produisent plusieurs affirmations vraies.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "truth-lie"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -4642,12 +4371,12 @@
             "explanation": "Les plumes sont une caractéristique propre aux oiseaux actuels, même si certains dinosaures en possédaient aussi.",
             "sourceLabel": "CNRS",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "animals"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4702,12 +4431,12 @@
             "explanation": "Les quatre indices convergent vers Le tango.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4763,12 +4492,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4811,12 +4540,12 @@
             "rule": "Diviser par 2.",
             "explanation": "Chaque terme est la moitié du précédent.",
             "contextualHint": "Observe un rapport constant.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4857,12 +4586,12 @@
             ],
             "explanation": "On peut prendre au maximum 3 élément(s) de chacune des 3 catégories sans atteindre le seuil. Cela représente 9 éléments. Le suivant, soit le 10e, garantit la répétition demandée.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "reasoned-counting"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -4909,12 +4638,12 @@
             "explanation": "Les levures consomment les sucres et produisent principalement éthanol et dioxyde de carbone.",
             "sourceLabel": "Larousse Gastronomique",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "beverages"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -4969,12 +4698,12 @@
             "explanation": "Les quatre indices convergent vers Le théorème de Pythagore.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -5030,12 +4759,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -5081,12 +4810,12 @@
             "rule": "Associer chaque entier à son carré.",
             "explanation": "Les paires sont 2/4, 3/9, 4/16, 5/25.",
             "contextualHint": "Regroupe les termes deux par deux.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -5127,12 +4856,12 @@
             ],
             "explanation": "Ugo précède Rania. Rania précède Tania, qui précède Sami. L’ordre est donc Ugo – Rania – Tania – Sami ; la réponse est Tania.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "order"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }
@@ -5179,12 +4908,12 @@
             "explanation": "Le préfixe in- prend la forme im- devant certaines consonnes, comme dans impossible ou immobile.",
             "sourceLabel": "Académie française",
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "word-formation"
             ],
             "estimatedTimeSeconds": 30,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -5239,12 +4968,12 @@
             "explanation": "Les quatre indices convergent vers Une aurore polaire.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "indices-progressifs"
             ],
             "estimatedTimeSeconds": 50,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -5300,12 +5029,12 @@
             "contextualHint": "Cherche une relation commune plus précise qu’un simple domaine général.",
             "sourceLabel": null,
             "sourceUrl": null,
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "connexion"
             ],
             "estimatedTimeSeconds": 60,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -5351,12 +5080,12 @@
             "rule": "Alterner ×2 puis −1.",
             "explanation": "3→6 (×2), 6→5 (−1), puis le cycle se répète jusqu’à 17→34.",
             "contextualHint": "Cherche deux opérations alternées.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "suite-logique"
             ],
             "estimatedTimeSeconds": 55,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         },
@@ -5399,12 +5128,12 @@
             ],
             "explanation": "Le lancement doit être quatrième. Le budget doit précéder le design. La sécurité doit suivre le design : seul le premier ordre convient.",
             "contextualHint": "Transforme les informations en positions, états ou contraintes avant de tester les réponses.",
-            "verificationStatus": "to_verify",
+            "verificationStatus": "verified",
             "tags": [
               "verbal-logic"
             ],
             "estimatedTimeSeconds": 110,
-            "status": "generated",
+            "status": "approved",
             "version": 1
           }
         }

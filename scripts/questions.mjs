@@ -147,7 +147,7 @@ for (const question of questions) {
   increment(report.bySubCategory, `${question.category}/${question.subcategory}`);
   increment(report.byDifficulty, question.difficulty);
   increment(report.correctAnswerDistribution, question.correctAnswerId ?? question.correctItemId ?? question.correctAnswerIds?.join("+") ?? String(question.correctAnswer ?? "n/a"));
-  if (question.verificationStatus !== "rejected" && question.status !== "rejected") {
+  if (question.verificationStatus === "verified" && question.status === "approved") {
     report.verifiedCount += 1;
     report.playableCount += 1;
   }
@@ -163,7 +163,7 @@ if (process.argv.includes("--json")) {
   console.log(`Files: ${report.fileCount}`);
   console.log(`Total: ${report.totalCount}`);
   console.log(`Playable structurally valid: ${report.playableCount}`);
-  console.log(`Verified by application validation: ${report.verifiedCount}`);
+  console.log(`Approved and verified: ${report.verifiedCount}`);
   console.log(`Rejected/non playable: ${report.rejectedCount}`);
   console.log(`Exact duplicates: ${report.exactDuplicates.length}`);
   console.log(`Probable duplicates: ${report.probableDuplicates.length}`);

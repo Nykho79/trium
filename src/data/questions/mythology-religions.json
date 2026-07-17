@@ -35,14 +35,14 @@
       "explanation": "Poséidon est associé à la mer, aux séismes et aux chevaux dans la mythologie grecque.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Poséidon",
         "mer",
         "mythologie grecque"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Jupiter est le principal dieu du panthéon romain, associé au ciel et au tonnerre.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Jupiter",
         "Zeus",
         "mythologie romaine"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Thor protège les dieux et les humains contre les géants grâce à son marteau.",
       "sourceLabel": "National Museum of Denmark",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Thor",
         "Mjöllnir",
         "mythologie nordique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "Anubis est lié à l’embaumement, aux rites funéraires et à la protection des morts.",
       "sourceLabel": "British Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Anubis",
         "chacal",
         "Égypte"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "La Torah désigne notamment les cinq premiers livres de la Bible hébraïque et occupe une place centrale dans la tradition juive.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Torah",
         "judaïsme",
         "texte"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Le bouddhisme apparaît autour de l’enseignement de Siddhartha Gautama dans le nord du sous-continent indien.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "bouddhisme",
         "Inde",
         "histoire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "La croix rappelle la crucifixion de Jésus et devient progressivement le symbole chrétien le plus répandu.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "croix",
         "christianisme",
         "symbole"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Amaterasu occupe une place majeure dans le shinto et dans les récits impériaux japonais.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Amaterasu",
         "Soleil",
         "Japon"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Les douze travaux d’Héraclès comprennent notamment le lion de Némée et l’hydre de Lerne.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Héraclès",
         "douze travaux",
         "Grèce"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Vénus est associée à l’amour, à la beauté et à la fécondité dans la religion romaine.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Vénus",
         "Aphrodite",
         "Rome"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Yggdrasil est un arbre cosmique reliant plusieurs mondes dans les récits nordiques.",
       "sourceLabel": "National Museum of Denmark",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Yggdrasil",
         "arbre cosmique",
         "Norse"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Rê est une grande divinité solaire dont le culte fut particulièrement important à Héliopolis.",
       "sourceLabel": "British Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Rê",
         "Soleil",
         "Égypte"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Durant le ramadan, les musulmans adultes concernés jeûnent de l’aube au coucher du soleil.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ramadan",
         "islam",
         "tradition"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Les écrits de Luther contribuèrent à la naissance de plusieurs Églises protestantes en Europe.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Luther",
         "Réforme",
         "protestantisme"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Les pèlerins accomplissent plusieurs rites autour de la Kaaba dans la grande mosquée de La Mecque.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Kaaba",
         "La Mecque",
         "hajj"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "L’Épopée de Gilgamesh est l’un des plus anciens grands récits littéraires connus.",
       "sourceLabel": "British Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Gilgamesh",
         "Enkidu",
         "Mésopotamie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Athéna surgit armée de la tête de Zeus après qu’il eut avalé Métis.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Athéna",
         "Zeus",
         "mythologie grecque"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Selon la tradition romaine, Romulus fonde Rome après un conflit avec son frère Rémus.",
       "sourceLabel": "Musei Capitolini",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Romulus",
         "Rémus",
         "Rome"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Le Ragnarök désigne une série de catastrophes et de combats conduisant à la destruction puis au renouvellement du monde.",
       "sourceLabel": "National Museum of Denmark",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Ragnarök",
         "dieux",
         "mythologie nordique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Horus est lié au ciel et à la royauté pharaonique ; le pharaon vivant pouvait être identifié à lui.",
       "sourceLabel": "British Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Horus",
         "faucon",
         "royauté"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Les Vedas sont des recueils de chants et formules rituelles composés en sanskrit ancien.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Vedas",
         "hindouisme",
         "textes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "L’édit de Milan mit fin à une grande partie des persécutions officielles et autorisa le culte chrétien.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Constantin",
         "édit de Milan",
         "christianisme"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "L’étoile de David devient un symbole largement reconnu du judaïsme à l’époque moderne.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "étoile de David",
         "judaïsme",
         "symbole"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Ganesh est associé à la sagesse, aux commencements et à la levée des obstacles.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Ganesh",
         "éléphant",
         "hindouisme"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Le shabbat s’étend du vendredi soir au samedi soir et commémore notamment le repos du septième jour.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "shabbat",
         "judaïsme",
         "repos"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

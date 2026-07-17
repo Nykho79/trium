@@ -35,14 +35,14 @@
       "explanation": "Sorti en 1936, le film critique la mécanisation du travail et les effets sociaux de l’industrialisation.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Chaplin",
         "Temps modernes",
         "cinéma"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "La pilule rouge symbolise l’acceptation d’une réalité dérangeante, tandis que la bleue permettrait de retourner à l’illusion.",
       "sourceLabel": "Warner Bros.",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Matrix",
         "Neo",
         "pilule rouge"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Jacques Villeret interprète un passionné de maquettes en allumettes invité à un dîner cruel dont il ignore le principe.",
       "sourceLabel": "Unifrance",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Dîner de cons",
         "Jacques Villeret",
         "cinéma français"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "Réalisé par Hayao Miyazaki, le film est devenu l’un des symboles du Studio Ghibli.",
       "sourceLabel": "Studio Ghibli",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Totoro",
         "Ghibli",
         "animation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "Ross est spécialiste des dinosaures et travaille notamment dans un musée puis à l’université.",
       "sourceLabel": "Warner Bros. Television",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Friends",
         "Ross",
         "série"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Sorti en 1960, Psychose renouvelle le thriller par sa mise en scène, son montage et sa célèbre scène de douche.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Psychose",
         "Hitchcock",
         "réalisateur"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Le film de Bong Joon-ho explore les rapports de classe à travers l’intrusion d’une famille pauvre chez une famille aisée.",
       "sourceLabel": "Korean Film Council",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Parasite",
         "Corée du Sud",
         "cinéma"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "L’Anneau unique concentre le pouvoir de Sauron. Frodon doit le porter jusqu’à la Montagne du Destin pour le détruire.",
       "sourceLabel": "New Line Cinema",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Seigneur des anneaux",
         "Anneau unique",
         "intrigue"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Le film se déroule dans le Maroc sous contrôle de Vichy, lieu de passage pour des réfugiés cherchant à rejoindre l’Amérique.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Casablanca",
         "film",
         "Maroc"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Dans le film de Spielberg, des scientifiques recréent des dinosaures à partir d’ADN ancien, avec des conséquences incontrôlables.",
       "sourceLabel": "Universal Pictures",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Jurassic Park",
         "dinosaures",
         "Spielberg"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Amélie décide d’améliorer secrètement la vie de son entourage tout en cherchant sa propre place.",
       "sourceLabel": "Unifrance",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Amélie Poulain",
         "Jeunet",
         "Montmartre"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "WALL-E compacte les déchets avant de découvrir une plante qui devient essentielle au retour de l’humanité.",
       "sourceLabel": "Pixar",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "WALL-E",
         "Pixar",
         "robot"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Ses compétences de chimiste deviennent centrales lorsqu’il se lance dans la fabrication de méthamphétamine.",
       "sourceLabel": "AMC",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Breaking Bad",
         "Walter White",
         "chimie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Le film suit deux Américains isolés à Tokyo et explore la solitude, le décalage culturel et une relation ambiguë.",
       "sourceLabel": "Focus Features",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Sofia Coppola",
         "Lost in Translation",
         "réalisatrice"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Indiana Jones enseigne l’archéologie et part à la recherche d’objets historiques, dans un mélange d’aventure et de fiction.",
       "sourceLabel": "Lucasfilm",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Indiana Jones",
         "archéologue",
         "personnage"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "Le film raconte la défense d’un village par des samouraïs et a influencé de nombreux récits d’action collectifs.",
       "sourceLabel": "Toho",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Sept Samouraïs",
         "Kurosawa",
         "Japon"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Fritz Lang y propose une vision spectaculaire des tensions sociales et de la modernité industrielle.",
       "sourceLabel": "Deutsche Kinemathek",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Metropolis",
         "Fritz Lang",
         "cinéma muet"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Inception met en scène des spécialistes capables d’entrer dans les rêves pour y voler ou implanter une idée.",
       "sourceLabel": "Warner Bros.",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Inception",
         "Nolan",
         "rêve"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Le film repose sur la rencontre de deux hommes issus de milieux très différents et sur l’évolution de leur relation.",
       "sourceLabel": "Unifrance",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Intouchables",
         "amitié",
         "cinéma français"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Dans Aladdin, Rajah accompagne Jasmine au palais d’Agrabah et se montre protecteur envers elle.",
       "sourceLabel": "Disney",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Jasmine",
         "Rajah",
         "Aladdin"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "La série adapte les romans de George R. R. Martin et met en scène des luttes dynastiques sur plusieurs continents fictifs.",
       "sourceLabel": "HBO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Game of Thrones",
         "Stark",
         "Lannister"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Miyazaki mêle souvent merveilleux, écologie, enfance et ambiguïté morale dans ses films d’animation.",
       "sourceLabel": "Studio Ghibli",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Miyazaki",
         "Chihiro",
         "Mononoké"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Doc Brown transforme une DeLorean DMC-12 en machine temporelle grâce au convecteur temporel.",
       "sourceLabel": "Universal Pictures",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Retour vers le futur",
         "DeLorean",
         "voyage temporel"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Roberto Benigni combine comédie et tragédie pour montrer un père qui transforme l’horreur en jeu aux yeux de son enfant.",
       "sourceLabel": "Istituto Luce Cinecittà",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "La vie est belle",
         "Benigni",
         "Italie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Le Monde à l’envers est une dimension sombre reliée à Hawkins par des portails et peuplée de créatures hostiles.",
       "sourceLabel": "Netflix",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Stranger Things",
         "Hawkins",
         "Monde à l’envers"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

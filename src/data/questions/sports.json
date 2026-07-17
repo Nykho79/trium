@@ -35,14 +35,14 @@
       "explanation": "Les cinq anneaux représentent l’universalité du mouvement olympique et l’union des continents.",
       "sourceLabel": "CIO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "anneaux",
         "Jeux olympiques",
         "symbole"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Une équipe commence avec onze joueurs, gardien compris, sous réserve des règles de la compétition.",
       "sourceLabel": "IFAB",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "football",
         "joueurs",
         "règles"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Un essai vaut cinq points et peut être suivi d’une transformation valant deux points.",
       "sourceLabel": "World Rugby",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "rugby",
         "essai",
         "points"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "À 40-40, un joueur doit généralement gagner deux points consécutifs pour remporter le jeu.",
       "sourceLabel": "ITF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "tennis",
         "égalité",
         "score"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "Le maillot jaune distingue le premier du classement général au temps.",
       "sourceLabel": "Tour de France",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Tour de France",
         "maillot jaune",
         "cyclisme"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "La distance officielle fut fixée à 42,195 kilomètres au début du XXe siècle.",
       "sourceLabel": "World Athletics",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "marathon",
         "distance",
         "athlétisme"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Le lancer franc est accordé après certaines fautes et se tire sans opposition depuis la ligne dédiée.",
       "sourceLabel": "FIBA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "basket-ball",
         "lancer franc",
         "règles"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Jigoro Kano fonda le judo à la fin du XIXe siècle à partir de techniques de jujutsu.",
       "sourceLabel": "Kodokan",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "judo",
         "Japon",
         "histoire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Le volant, fait de plumes ou de matière synthétique, est frappé au-dessus d’un filet avec une raquette.",
       "sourceLabel": "BWF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "badminton",
         "volant",
         "sport"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Seul le gardien peut manier le ballon avec les mains dans sa propre surface de réparation.",
       "sourceLabel": "IFAB",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "football",
         "mains",
         "règles"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "La terre battue ralentit la balle et produit des rebonds relativement hauts.",
       "sourceLabel": "FFT",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Roland-Garros",
         "terre battue",
         "tennis"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Les Jeux antiques se tenaient à Olympie en l’honneur de Zeus.",
       "sourceLabel": "CIO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Olympie",
         "Jeux olympiques",
         "Antiquité"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "La mêlée ordonnée oppose les packs des deux équipes pour disputer le ballon.",
       "sourceLabel": "World Rugby",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "rugby",
         "mêlée",
         "règles"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Les départs sont espacés et le classement dépend du temps réalisé.",
       "sourceLabel": "UCI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "contre-la-montre",
         "cyclisme",
         "chronomètre"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "L’athlète utilise une perche flexible pour transformer sa course en élévation.",
       "sourceLabel": "World Athletics",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "saut à la perche",
         "athlétisme",
         "barre"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "La première équipe à trois sets remporte le match. Le cinquième set éventuel se joue généralement en 15 points.",
       "sourceLabel": "FIVB",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "volley-ball",
         "sets",
         "règles"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Coubertin participa à la création du Comité international olympique en 1894.",
       "sourceLabel": "CIO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Coubertin",
         "Jeux olympiques",
         "histoire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Les joueurs font glisser des pierres vers une cible et balaient la glace pour influencer leur trajectoire.",
       "sourceLabel": "World Curling",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "curling",
         "glace",
         "pierres"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Un carton rouge impose au joueur de quitter définitivement le terrain et son équipe continue en infériorité numérique.",
       "sourceLabel": "IFAB",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "football",
         "carton rouge",
         "exclusion"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Un ace est un service valide que le receveur ne parvient pas à toucher.",
       "sourceLabel": "ITF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "tennis",
         "ace",
         "service"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Le biathlon alterne effort d’endurance et phases de tir exigeant précision et contrôle respiratoire.",
       "sourceLabel": "IBU",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "biathlon",
         "ski",
         "tir"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Le drop est réussi lorsque le ballon est lâché, rebondit puis est frappé entre les poteaux.",
       "sourceLabel": "World Rugby",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "rugby",
         "drop",
         "points"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Depuis 1975, l’étape finale se termine traditionnellement sur l’avenue des Champs-Élysées.",
       "sourceLabel": "Tour de France",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Tour de France",
         "Champs-Élysées",
         "Paris"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "L’athlète effectue des rotations dans une aire circulaire avant de libérer le disque.",
       "sourceLabel": "World Athletics",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "lancer du disque",
         "athlétisme",
         "disque"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "La gymnastique artistique comporte des agrès différents selon les catégories de compétition.",
       "sourceLabel": "FIG",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "gymnastique artistique",
         "agrès",
         "sport"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

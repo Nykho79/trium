@@ -35,14 +35,14 @@
       "explanation": "Créée en 1824, la Neuvième introduit des voix dans son dernier mouvement sur un poème de Schiller.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Beethoven",
         "Neuvième Symphonie",
         "classique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Le clavier standard comprend 52 touches blanches et 36 noires, soit 88 au total.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "piano",
         "touches",
         "instrument"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "La chanson évoque avec nostalgie la vie d’un jeune artiste dans le Montmartre d’autrefois.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Aznavour",
         "La Bohème",
         "chanson française"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "Le tempo indique la rapidité générale d’une œuvre, souvent mesurée en battements par minute.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "tempo",
         "rythme",
         "musique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "Abbey Road, publié en 1969, porte le nom du studio londonien où le groupe enregistrait.",
       "sourceLabel": "British Library",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Beatles",
         "Abbey Road",
         "rock"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Armstrong fut un trompettiste et chanteur majeur, célèbre pour son improvisation et son phrasé.",
       "sourceLabel": "Smithsonian",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Armstrong",
         "trompette",
         "jazz"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Le flamenco réunit chant, guitare et danse dans une tradition fortement liée à l’Andalousie.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "flamenco",
         "Andalousie",
         "Espagne"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Ces quatre concertos pour violon évoquent chacun une saison par des procédés musicaux descriptifs.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Vivaldi",
         "Quatre Saisons",
         "concerto"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Haydn contribua fortement à fixer la forme classique de la symphonie et du quatuor à cordes.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Haydn",
         "symphonie",
         "classique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "La chanson alterne les déclarations parlées d’Alain Delon et les réponses chantées de Dalida.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Dalida",
         "Alain Delon",
         "Paroles paroles"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Ce surnom s’est imposé en raison de son influence mondiale sur la pop, la danse et le clip vidéo.",
       "sourceLabel": "Rock & Roll Hall of Fame",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Michael Jackson",
         "pop",
         "artiste"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Le jazz s’y développe au début du XXe siècle à partir de traditions afro-américaines, créoles et européennes.",
       "sourceLabel": "Smithsonian",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "jazz",
         "Nouvelle-Orléans",
         "États-Unis"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Le violon est le plus petit instrument de la famille moderne des cordes frottées orchestrales.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "violon",
         "archet",
         "instrument"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "À l’octave, la fréquence de la note supérieure est deux fois celle de la note inférieure.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "octave",
         "intervalle",
         "musique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Le sitar possède des cordes mélodiques et sympathiques qui contribuent à sa résonance caractéristique.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sitar",
         "Inde",
         "instrument"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "Créé en 1875, Carmen se déroule à Séville et mêle passion, jalousie et fatalité.",
       "sourceLabel": "Opéra national de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Carmen",
         "Bizet",
         "opéra"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Créé à Paris en 1913, le ballet marqua par ses rythmes irréguliers et son orchestration novatrice.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Stravinsky",
         "Sacre du printemps",
         "ballet"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "La chanson, publiée en 1959, est devenue l’une des œuvres les plus reprises du répertoire francophone.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Brel",
         "Ne me quitte pas",
         "chanson"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Le grunge mêle punk et heavy metal, avec une esthétique souvent brute et désenchantée.",
       "sourceLabel": "Rock & Roll Hall of Fame",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "grunge",
         "Nirvana",
         "Seattle"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Les standards fournissent une base commune permettant aux musiciens d’improviser sur des mélodies et harmonies connues.",
       "sourceLabel": "Smithsonian",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "standard",
         "jazz",
         "improvisation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Le reggae se développe en Jamaïque à la fin des années 1960 et met souvent l’accent sur les contretemps.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "reggae",
         "Bob Marley",
         "Jamaïque"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "L’orgue produit le son en faisant passer de l’air dans des tuyaux de tailles et de timbres variés.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "orgue",
         "tuyaux",
         "instrument"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Le timbre permet de distinguer deux instruments jouant la même note à la même intensité.",
       "sourceLabel": "IRCAM",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "timbre",
         "son",
         "musique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Discovery, sorti en 2001, mêle house, disco, funk et pop avec un usage marqué des voix traitées.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Daft Punk",
         "Discovery",
         "musique électronique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Le Boléro repose sur un rythme obstiné et une orchestration qui s’enrichit progressivement sans changer de thème.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Ravel",
         "Boléro",
         "classique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

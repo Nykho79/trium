@@ -35,14 +35,14 @@
       "explanation": "À Athènes, au Ve siècle av. J.-C., une partie des citoyens masculins participait directement aux décisions politiques. Cette démocratie excluait toutefois les femmes, les esclaves et les étrangers.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Athènes",
         "démocratie",
         "Antiquité"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "La Bastille était une forteresse-prison devenue un symbole de l’arbitraire royal. Sa prise marque une étape majeure du début de la Révolution française.",
       "sourceLabel": "Assemblée nationale",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Révolution française",
         "Bastille",
         "1789"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Gutenberg perfectionna un procédé combinant caractères mobiles métalliques, presse et encre adaptée, ce qui accéléra fortement la diffusion des textes en Europe.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "imprimerie",
         "Gutenberg",
         "invention"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "Machu Picchu est un site inca du XVe siècle situé dans les Andes péruviennes. Sa fonction exacte reste discutée, mais son origine inca est établie.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Incas",
         "Machu Picchu",
         "Andes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "La Magna Carta fut imposée au roi Jean sans Terre par des barons. Elle ne créa pas une démocratie, mais devint un jalon majeur de la limitation du pouvoir.",
       "sourceLabel": "British Library",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Magna Carta",
         "Angleterre",
         "Moyen Âge"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "En 1517, Luther contesta notamment la pratique des indulgences. Ses critiques contribuèrent à une rupture durable de la chrétienté occidentale.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Luther",
         "Réforme",
         "protestantisme"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Apollo 11 permit à Neil Armstrong et Buzz Aldrin de marcher sur la Lune en juillet 1969, tandis que Michael Collins resta en orbite.",
       "sourceLabel": "NASA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Apollo 11",
         "Lune",
         "1969"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Marie Curie reçut le prix Nobel de physique en 1903 et celui de chimie en 1911, notamment pour ses travaux sur la radioactivité.",
       "sourceLabel": "Nobel Prize",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Marie Curie",
         "Nobel",
         "science"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "L’ouverture des points de passage du mur, le 9 novembre 1989, symbolisa l’effondrement des régimes communistes d’Europe de l’Est et précéda la réunification allemande.",
       "sourceLabel": "Deutsches Historisches Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Berlin",
         "mur",
         "1989"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "La route de la soie désigne un réseau d’itinéraires terrestres et maritimes par lesquels circulaient marchandises, techniques, idées et religions.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "route de la soie",
         "commerce",
         "échanges"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Promulgué par Henri IV, l’édit de Nantes mit fin à une grande partie des guerres de Religion en accordant des garanties civiles et cultuelles aux protestants.",
       "sourceLabel": "Archives nationales",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "édit de Nantes",
         "protestants",
         "Henri IV"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Constantinople fut la capitale de l’Empire romain d’Orient, souvent appelé Empire byzantin, jusqu’à sa conquête par les Ottomans en 1453.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Byzance",
         "Constantinople",
         "empire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Saint-Domingue devint une colonie extrêmement rentable grâce au sucre et au café, produits par un système esclavagiste d’une grande violence.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Saint-Domingue",
         "sucre",
         "esclavage"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Dans les villes médiévales, marchands et artisans formèrent progressivement une bourgeoisie organisée en métiers, guildes ou corporations.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Moyen Âge",
         "bourgeoisie",
         "villes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "L’apartheid imposait une séparation juridique et territoriale selon des catégories raciales. Son démantèlement conduisit aux premières élections multiraciales de 1994.",
       "sourceLabel": "South African History Online",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "apartheid",
         "Afrique du Sud",
         "ségrégation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "Gandhi développa des campagnes de désobéissance civile non violente, notamment contre le monopole britannique du sel.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Gandhi",
         "non-violence",
         "Inde"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Darwin proposa que les variations héréditaires avantageuses tendent à être conservées au fil des générations, produisant adaptation et diversification des espèces.",
       "sourceLabel": "Natural History Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Darwin",
         "sélection naturelle",
         "évolution"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "L’explosion du réacteur 4 de Tchernobyl provoqua un important rejet radioactif et marqua durablement l’histoire de l’énergie nucléaire.",
       "sourceLabel": "AIEA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Tchernobyl",
         "1986",
         "nucléaire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Les lois portées par Jules Ferry instaurèrent la gratuité, l’obligation scolaire et la laïcisation de l’enseignement primaire public en France.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "lois Ferry",
         "école",
         "laïcité"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Les philosophes des Lumières défendirent notamment la raison, la tolérance, la diffusion des savoirs et la critique de l’absolutisme.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Lumières",
         "philosophie",
         "XVIIIe siècle"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Les hiéroglyphes combinaient signes phonétiques et idéogrammes. Ils étaient notamment gravés ou peints sur les monuments et objets cultuels.",
       "sourceLabel": "British Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "hiéroglyphes",
         "Égypte",
         "écriture"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Les premières universités européennes, comme Bologne, Paris ou Oxford, se structurèrent au Moyen Âge en communautés juridiquement reconnues de maîtres et d’étudiants.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "université",
         "Moyen Âge",
         "enseignement"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Partie en 1519 sous le commandement de Magellan, l’expédition fut achevée en 1522 par Juan Sebastián Elcano après la mort de Magellan.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "circumnavigation",
         "Magellan",
         "Elcano"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Adoptée par l’Assemblée générale de l’ONU, la Déclaration de 1948 énonce des droits civils, politiques, économiques, sociaux et culturels.",
       "sourceLabel": "Nations unies",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "DUDH",
         "1948",
         "droits humains"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Cléopâtre VII, dernière souveraine lagide d’Égypte, utilisa ses alliances romaines pour défendre son royaume dans une période de rivalités intenses.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Cléopâtre",
         "César",
         "Marc Antoine"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

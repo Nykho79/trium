@@ -35,14 +35,14 @@
       "explanation": "L’ADN contient des séquences qui peuvent être transcrites et utilisées pour produire des ARN et des protéines.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ADN",
         "génétique",
         "biologie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Le cœur se contracte de façon rythmique pour propulser le sang dans les circulations pulmonaire et générale.",
       "sourceLabel": "Inserm",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "cœur",
         "circulation",
         "corps humain"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Mercure parcourt l’orbite la plus proche du Soleil. Malgré cela, Vénus possède une température de surface moyenne plus élevée.",
       "sourceLabel": "NASA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Mercure",
         "Soleil",
         "planète"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "Chez les papillons, l’œuf donne une chenille, puis une chrysalide, avant l’émergence de l’adulte ailé.",
       "sourceLabel": "Muséum national d’Histoire naturelle",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "papillon",
         "chenille",
         "métamorphose"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "Le newton correspond à la force nécessaire pour accélérer une masse d’un kilogramme d’un mètre par seconde carrée.",
       "sourceLabel": "BIPM",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "newton",
         "force",
         "physique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Le symbole de l’oxygène est O. Dans l’air, il se trouve principalement sous forme de molécules O₂.",
       "sourceLabel": "IUPAC",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "oxygène",
         "symbole",
         "chimie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Le magma est un mélange de roches fondues, de cristaux et de gaz en profondeur. Lorsqu’il atteint la surface, on parle de lave.",
       "sourceLabel": "USGS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "magma",
         "lave",
         "volcan"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "La photosynthèse utilise l’énergie lumineuse pour transformer l’eau et le dioxyde de carbone en matière organique, avec libération d’oxygène.",
       "sourceLabel": "INRAE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "photosynthèse",
         "plantes",
         "lumière"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Le dioxyde de carbone produit par le métabolisme est transporté par le sang jusqu’aux poumons, puis expiré.",
       "sourceLabel": "Inserm",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "dioxyde de carbone",
         "respiration",
         "poumons"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Le Soleil contient l’essentiel de la masse du Système solaire, et les planètes orbitent autour de lui.",
       "sourceLabel": "NASA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Soleil",
         "Système solaire",
         "astronomie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Les mitochondries produisent une grande partie de l’ATP utilisé par les cellules eucaryotes grâce à la respiration cellulaire.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "mitochondrie",
         "cellule",
         "énergie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Les différentes longueurs d’onde de la lumière sont réfractées selon des angles légèrement différents, séparant les couleurs du spectre.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "dispersion",
         "lumière",
         "prisme"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "À température ambiante, une solution neutre possède des concentrations égales en ions hydrogène et hydroxyde, correspondant à un pH proche de 7.",
       "sourceLabel": "IUPAC",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "pH",
         "neutre",
         "chimie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Les plumes sont une caractéristique propre aux oiseaux actuels, même si certains dinosaures non aviens en possédaient aussi.",
       "sourceLabel": "Muséum national d’Histoire naturelle",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "oiseaux",
         "plumes",
         "animaux"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "La lithosphère comprend la croûte et la partie supérieure rigide du manteau. Elle est divisée en plaques tectoniques.",
       "sourceLabel": "USGS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "lithosphère",
         "plaques",
         "Terre"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "Dans les Principia de 1687, Newton établit trois lois du mouvement et une loi de gravitation permettant d’unifier phénomènes terrestres et célestes.",
       "sourceLabel": "Royal Society",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Newton",
         "gravitation",
         "physique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "La mitose répartit les chromosomes dupliqués entre deux cellules filles et permet notamment croissance et renouvellement des tissus.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "mitose",
         "cellule",
         "division"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "La puissance mesure la rapidité d’un transfert d’énergie. Son unité dans le Système international est le watt.",
       "sourceLabel": "BIPM",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "puissance",
         "watt",
         "énergie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Le carbone peut former quatre liaisons covalentes et construire des chaînes, cycles et structures complexes à la base de la chimie organique.",
       "sourceLabel": "IUPAC",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "carbone",
         "chimie organique",
         "élément"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Une supernova libère énormément d’énergie et disperse dans l’espace des éléments chimiques formés au cours de la vie de l’étoile.",
       "sourceLabel": "NASA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "supernova",
         "étoile",
         "explosion"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Le sismomètre mesure les mouvements du sol. Les enregistrements obtenus, appelés sismogrammes, permettent d’étudier les ondes sismiques.",
       "sourceLabel": "USGS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sismomètre",
         "séisme",
         "ondes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Les dauphins émettent des clics et analysent les échos pour localiser des objets, communiquer et chasser.",
       "sourceLabel": "NOAA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "dauphin",
         "écholocalisation",
         "mammifère"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Les étamines sont les organes reproducteurs mâles de la fleur. Leurs anthères produisent et libèrent les grains de pollen.",
       "sourceLabel": "INRAE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "étamines",
         "pollen",
         "fleur"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Les images de diffraction obtenues par Franklin, notamment la Photo 51, furent essentielles à l’élaboration du modèle de l’ADN.",
       "sourceLabel": "King’s College London",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Rosalind Franklin",
         "ADN",
         "rayons X"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Le cervelet intervient dans la coordination motrice, l’équilibre et l’apprentissage de gestes précis.",
       "sourceLabel": "Inserm",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "cervelet",
         "équilibre",
         "mouvement"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

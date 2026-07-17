@@ -35,14 +35,14 @@
       "explanation": "Le processeur réalise des opérations logiques et arithmétiques et coordonne l’exécution des programmes.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "processeur",
         "ordinateur",
         "matériel"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Une URL est l’adresse permettant de localiser une ressource sur un réseau, notamment sur le Web.",
       "sourceLabel": "W3C",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "URL",
         "Web",
         "Internet"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "La longueur, l’unicité et l’imprévisibilité sont essentielles. Un gestionnaire de mots de passe peut aider.",
       "sourceLabel": "ANSSI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "mot de passe",
         "sécurité",
         "cybersécurité"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "Ada Lovelace décrivit un algorithme destiné à la machine analytique de Charles Babbage.",
       "sourceLabel": "Science Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Ada Lovelace",
         "programmation",
         "histoire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "Le navigateur interprète notamment HTML, CSS et JavaScript pour afficher des pages web.",
       "sourceLabel": "Mozilla",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "navigateur",
         "Web",
         "logiciel"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Une variable permet de manipuler une donnée qui peut changer pendant l’exécution du programme.",
       "sourceLabel": "MDN",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "variable",
         "programmation",
         "code"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Le modèle ajuste des paramètres afin de réaliser une tâche comme classer, prédire ou générer.",
       "sourceLabel": "INRIA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "apprentissage automatique",
         "IA",
         "données"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Le téléphone convertit les sons en signaux transmissibles puis les reconvertit en sons.",
       "sourceLabel": "Smithsonian",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "téléphone",
         "invention",
         "communication"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "La RAM est rapide mais volatile : son contenu disparaît généralement à l’arrêt de la machine.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "RAM",
         "mémoire vive",
         "ordinateur"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "HTTPS chiffre les échanges entre le navigateur et le serveur grâce à TLS.",
       "sourceLabel": "IETF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "HTTPS",
         "sécurité",
         "Web"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Le phishing imite souvent un service légitime afin d’obtenir identifiants, coordonnées bancaires ou autres données.",
       "sourceLabel": "ANSSI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "phishing",
         "hameçonnage",
         "cybersécurité"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "ARPANET expérimenta la commutation de paquets et relia plusieurs centres de recherche américains.",
       "sourceLabel": "Internet Society",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ARPANET",
         "Internet",
         "histoire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Les tableurs permettent calculs, tableaux, graphiques et analyses de données.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "tableur",
         "logiciel",
         "données"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Une boucle exécute des instructions plusieurs fois selon une condition ou un nombre d’itérations.",
       "sourceLabel": "MDN",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "boucle",
         "programmation",
         "instructions"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "La qualité, la diversité et les biais de ces données influencent fortement le comportement du modèle.",
       "sourceLabel": "INRIA",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "données d’entraînement",
         "IA",
         "modèle"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "Le récepteur calcule sa position à partir de signaux temporels envoyés par plusieurs satellites.",
       "sourceLabel": "GPS.gov",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "GPS",
         "satellites",
         "géolocalisation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Le scanner capture optiquement une surface et produit un fichier image ou PDF.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "scanner",
         "périphérique",
         "numérisation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Internet est l’infrastructure mondiale de réseaux ; le Web repose sur des pages et liens accessibles via cette infrastructure.",
       "sourceLabel": "CERN",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Internet",
         "Web",
         "réseau"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Les mises à jour réduisent l’exposition à des failles déjà identifiées et parfois exploitées.",
       "sourceLabel": "ANSSI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "mise à jour",
         "vulnérabilité",
         "sécurité"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "La machine analytique devait être programmable à l’aide de cartes perforées, bien qu’elle n’ait pas été achevée.",
       "sourceLabel": "Science Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Babbage",
         "machine analytique",
         "histoire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Il fournit des services essentiels : fichiers, mémoire, processus, périphériques et interface utilisateur.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "système d’exploitation",
         "logiciel",
         "ordinateur"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Un bug peut venir d’une erreur de logique, de conception, de saisie ou d’interaction entre composants.",
       "sourceLabel": "IEEE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "bug",
         "informatique",
         "erreur"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Il peut provenir des données, des objectifs, de la conception ou du contexte d’utilisation.",
       "sourceLabel": "CNIL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "biais algorithmique",
         "IA",
         "résultats"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Berners-Lee proposa en 1989 un système de documents reliés par hyperliens utilisant URL, HTTP et HTML.",
       "sourceLabel": "CERN",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Tim Berners-Lee",
         "World Wide Web",
         "CERN"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Le SSD utilise de la mémoire flash, ce qui permet des accès rapides et silencieux.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "SSD",
         "stockage",
         "matériel"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

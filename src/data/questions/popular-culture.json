@@ -35,14 +35,14 @@
       "explanation": "Milou est le fox-terrier fidèle de Tintin dans la série créée par Hergé.",
       "sourceLabel": "Musée Hergé",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Tintin",
         "Milou",
         "bande dessinée"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Mario apparaît d’abord dans Donkey Kong avant de devenir le héros de nombreuses séries Nintendo.",
       "sourceLabel": "Nintendo",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Mario",
         "Nintendo",
         "jeu vidéo"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Bob l’éponge habite à Bikini Bottom et travaille au Crabe Croustillant.",
       "sourceLabel": "Nickelodeon",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Bob l’éponge",
         "animation",
         "personnage"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "L’adresse londonienne est devenue indissociable du personnage créé par Arthur Conan Doyle.",
       "sourceLabel": "Sherlock Holmes Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Sherlock Holmes",
         "Baker Street",
         "détective"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "L’échiquier est une grille de huit cases sur huit, alternant deux couleurs.",
       "sourceLabel": "FIDE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "échecs",
         "échiquier",
         "jeu"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Le sabre laser est associé aux Jedi et aux Sith, avec une lame d’énergie colorée.",
       "sourceLabel": "Lucasfilm",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Star Wars",
         "Jedi",
         "sabre laser"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Superman, créé en 1938, est l’un des premiers super-héros majeurs des comics américains.",
       "sourceLabel": "DC Comics",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Superman",
         "super-héros",
         "comics"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Un mème se diffuse par imitation, variation et réutilisation dans différents contextes.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "mème",
         "Internet",
         "culture"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Ordralfabétix vend du poisson et se dispute fréquemment avec Cétautomatix.",
       "sourceLabel": "Éditions Albert René",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Astérix",
         "Ordralfabétix",
         "BD"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Les pièces géométriques tombent et doivent former des lignes complètes.",
       "sourceLabel": "The Tetris Company",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Tetris",
         "tétriminos",
         "jeu vidéo"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Toy Story fut le premier long métrage entièrement réalisé en images de synthèse.",
       "sourceLabel": "Pixar",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Toy Story",
         "Pixar",
         "animation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Bruce Wayne combat le crime à Gotham sans pouvoir surnaturel, en utilisant entraînement, technologie et stratégie.",
       "sourceLabel": "DC Comics",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Batman",
         "Bruce Wayne",
         "Gotham"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "La construction suit aussi des règles d’équilibre entre les terrains d’un même groupe.",
       "sourceLabel": "Hasbro",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Monopoly",
         "maisons",
         "jeu"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Les lettres sont d’abord interceptées par les Dursley avant d’être finalement remises par Hagrid.",
       "sourceLabel": "Wizarding World",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Harry Potter",
         "Poudlard",
         "lettre"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Sonic est la mascotte de Sega et affronte régulièrement le docteur Eggman.",
       "sourceLabel": "Sega",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Sonic",
         "Sega",
         "jeu vidéo"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "Un spoiler peut révéler une surprise, une fin ou un retournement majeur.",
       "sourceLabel": "Oxford English Dictionary",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "spoiler",
         "intrigue",
         "Internet"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "La potion magique de Panoramix donne aux habitants une force exceptionnelle.",
       "sourceLabel": "Éditions Albert René",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Astérix",
         "village gaulois",
         "comics"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Dans la série The Legend of Zelda, Link est généralement le héros contrôlé par le joueur.",
       "sourceLabel": "Nintendo",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Zelda",
         "Link",
         "Nintendo"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Shrek voit sa tranquillité perturbée par l’arrivée de personnages de contes.",
       "sourceLabel": "DreamWorks",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Shrek",
         "ogre",
         "animation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Tarzan est créé par Edgar Rice Burroughs ; Mowgli, lui, est élevé par des loups.",
       "sourceLabel": "Library of Congress",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Tarzan",
         "jungle",
         "fiction"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Les joueurs marquent des points selon les lettres et les cases multiplicatrices.",
       "sourceLabel": "Mattel",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Scrabble",
         "lettres",
         "jeu"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Les Poké Balls permettent de capturer et transporter les Pokémon dans l’univers de la franchise.",
       "sourceLabel": "The Pokémon Company",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Pokémon",
         "Poké Ball",
         "franchise"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Charlot est le personnage emblématique créé et interprété par Charlie Chaplin.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Charlot",
         "Chaplin",
         "icône"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Le hashtag permet de regrouper des publications autour d’un même mot-clé.",
       "sourceLabel": "Oxford English Dictionary",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "hashtag",
         "réseaux sociaux",
         "Internet"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Le personnage combine aventure, archéologie fictive et cinéma de série.",
       "sourceLabel": "Lucasfilm",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Indiana Jones",
         "aventure",
         "franchise"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

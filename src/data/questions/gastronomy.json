@@ -35,14 +35,14 @@
       "explanation": "La tartiflette moderne est préparée avec du reblochon, des pommes de terre, des oignons et souvent des lardons.",
       "sourceLabel": "INAO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "tartiflette",
         "Savoie",
         "cuisine française"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Le guacamole est une préparation mexicaine à base d’avocat écrasé, souvent assaisonné de citron vert et de piment.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "guacamole",
         "avocat",
         "Mexique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Le blanchiment peut fixer la couleur, attendrir légèrement et préparer à une autre cuisson ou à la congélation.",
       "sourceLabel": "Le Cordon Bleu",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "blanchir",
         "technique",
         "légumes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "La levure fermente les sucres et produit du dioxyde de carbone, qui forme des bulles dans la pâte.",
       "sourceLabel": "INRAE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "levure",
         "pain",
         "pâtisserie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "Le sushi associe du riz vinaigré à divers accompagnements, qui ne sont pas toujours du poisson cru.",
       "sourceLabel": "Ministère japonais de l’Agriculture",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sushi",
         "Japon",
         "cuisine"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "La soupe à l’oignon française repose sur des oignons longuement revenus puis mouillés de bouillon.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "soupe à l’oignon",
         "plat",
         "France"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Thé vert, noir, blanc et oolong proviennent de la même espèce, mais diffèrent par leur transformation.",
       "sourceLabel": "FAO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "thé",
         "Camellia sinensis",
         "boisson"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "La tomate est originaire des Amériques et fut progressivement intégrée aux cuisines européennes.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "tomate",
         "Amériques",
         "histoire alimentaire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Le fromage à raclette fond sous l’effet de la chaleur avant d’être raclé sur les accompagnements.",
       "sourceLabel": "INAO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "raclette",
         "fromage",
         "cuisine"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Le curcuma contient de la curcumine, pigment jaune-orangé très colorant.",
       "sourceLabel": "FAO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "curcuma",
         "épice",
         "curry"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Saisir favorise une coloration rapide sans garantir à elle seule la cuisson à cœur.",
       "sourceLabel": "Le Cordon Bleu",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "saisir",
         "cuisson",
         "technique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Elle est cuite jusqu’à épaississement et sert à garnir éclairs, tartes et mille-feuilles.",
       "sourceLabel": "Le Cordon Bleu",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "crème pâtissière",
         "pâtisserie",
         "crème"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Originaire de la région de Valence, la paella connaît de nombreuses variantes régionales.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "paella",
         "Espagne",
         "riz"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Les lasagnes sont montées en couches puis cuites au four, avec des recettes variant selon les régions.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "lasagnes",
         "Italie",
         "plat"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Les grains sont les graines du fruit du caféier. Leur torréfaction développe une grande partie des arômes.",
       "sourceLabel": "Organisation internationale du café",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "café",
         "torréfaction",
         "boisson"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "La fermentation est utilisée depuis l’Antiquité pour le pain, les fromages, les boissons et les légumes conservés.",
       "sourceLabel": "INRAE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "fermentation",
         "conservation",
         "histoire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "La ratatouille associe plusieurs légumes méditerranéens cuits avec huile d’olive et aromates.",
       "sourceLabel": "Ministère de la Culture",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ratatouille",
         "Provence",
         "légumes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Le massepain mélange principalement amandes finement moulues et sucre.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "massepain",
         "amande",
         "ingrédient"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Le liquide détache les sucs caramélisés pour enrichir une sauce ou un jus.",
       "sourceLabel": "Le Cordon Bleu",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "déglacer",
         "sucs",
         "technique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Le tiramisu alterne biscuits imbibés de café et crème au mascarpone, puis reçoit souvent du cacao.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "tiramisu",
         "Italie",
         "dessert"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Le pho est une soupe de nouilles de riz dans un bouillon aromatique, souvent servie avec bœuf ou poulet.",
       "sourceLabel": "Vietnam National Administration of Tourism",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "pho",
         "Vietnam",
         "soupe"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Le houmous mélange pois chiches, tahini, citron et ail, avec de nombreuses variantes.",
       "sourceLabel": "FAO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "houmous",
         "pois chiche",
         "plat"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Le maté est traditionnellement bu dans une calebasse à l’aide d’une bombilla.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "maté",
         "Amérique du Sud",
         "boisson"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Après les travaux d’Appert, la mise en conserve industrielle s’est développée dans des récipients hermétiques, notamment métalliques.",
       "sourceLabel": "Musée des Arts et Métiers",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "conserve",
         "boîte métallique",
         "histoire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "La ganache peut servir de garniture, de glaçage ou de base de truffes selon ses proportions.",
       "sourceLabel": "Le Cordon Bleu",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ganache",
         "chocolat",
         "pâtisserie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

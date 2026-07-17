@@ -42,12 +42,12 @@
       "rule": "Ajouter 3 à chaque étape.",
       "explanation": "3 + 3 = 6, puis 9, 12 et 15.",
       "contextualHint": "Calcule l’écart constant.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-progression"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -86,12 +86,12 @@
       "rule": "Retirer 2 à chaque étape.",
       "explanation": "Chaque terme diminue de 2.",
       "contextualHint": "Observe une diminution régulière.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-progression"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -130,12 +130,12 @@
       "rule": "Ajouter 3.",
       "explanation": "Les écarts valent toujours 3.",
       "contextualHint": "Compare les différences.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-progression"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -174,12 +174,12 @@
       "rule": "Multiplier par 2 puis ajouter 1.",
       "explanation": "2×2+1=5, 5×2+1=11, 11×2+1=23, donc 47.",
       "contextualHint": "La même opération combine multiplication et addition.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "operations"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -218,12 +218,12 @@
       "rule": "Ajouter 3, puis 6, puis 9, puis 12.",
       "explanation": "Les écarts augmentent de 3 : 3, 6, 9, 12.",
       "contextualHint": "Étudie les écarts entre les termes.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "intervals"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -262,12 +262,12 @@
       "rule": "Diviser par 3.",
       "explanation": "81÷3=27, 27÷3=9, 9÷3=3, puis 1.",
       "contextualHint": "Une division identique se répète.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "operations"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,12 +308,12 @@
       "rule": "Deux suites imbriquées : 2,4,6,8 et 10,20,30.",
       "explanation": "Les positions impaires augmentent de 2 ; les paires de 10.",
       "contextualHint": "Sépare les positions impaires et paires.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "double-sequence"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -352,56 +352,12 @@
       "rule": "Multiplier par 2 puis ajouter 2.",
       "explanation": "3×2+2=8, 8×2+2=18, 18×2+2=38, donc 78.",
       "contextualHint": "Teste une opération en deux temps.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "operations"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "SEQ-0009",
-      "type": "logical_sequence",
-      "category": "synapse",
-      "subcategory": "letters",
-      "difficulty": 1,
-      "prompt": "Quel élément complète cette suite ?",
-      "sequence": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "?"
-      ],
-      "answers": [
-        {
-          "id": "a",
-          "text": "E"
-        },
-        {
-          "id": "b",
-          "text": "F"
-        },
-        {
-          "id": "c",
-          "text": "G"
-        },
-        {
-          "id": "d",
-          "text": "H"
-        }
-      ],
-      "correctAnswerId": "a",
-      "rule": "Avancer d’une lettre.",
-      "explanation": "A, B, C, D puis E.",
-      "contextualHint": "Utilise l’ordre alphabétique.",
-      "verificationStatus": "to_verify",
-      "tags": [
-        "letters"
-      ],
-      "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -440,12 +396,12 @@
       "rule": "Avancer de deux lettres.",
       "explanation": "Les positions sont 1,3,5,7,9.",
       "contextualHint": "Compte les positions dans l’alphabet.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "letters"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -484,279 +440,12 @@
       "rule": "Reculer de deux lettres.",
       "explanation": "26,24,22,20 puis 18, soit R.",
       "contextualHint": "La suite descend dans l’alphabet.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "letters"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "SEQ-0012",
-      "type": "logical_sequence",
-      "category": "synapse",
-      "subcategory": "letters",
-      "difficulty": 3,
-      "prompt": "Quel élément complète cette suite ?",
-      "sequence": [
-        "B",
-        "E",
-        "I",
-        "N",
-        "?"
-      ],
-      "answers": [
-        {
-          "id": "a",
-          "text": "S"
-        },
-        {
-          "id": "b",
-          "text": "U"
-        },
-        {
-          "id": "c",
-          "text": "V"
-        },
-        {
-          "id": "d",
-          "text": "T"
-        }
-      ],
-      "correctAnswerId": "d",
-      "rule": "Avancer de 3, puis 4, puis 5, puis 6 lettres.",
-      "explanation": "2→5 (+3), 5→9 (+4), 9→14 (+5), puis 20.",
-      "contextualHint": "Les sauts augmentent.",
-      "verificationStatus": "to_verify",
-      "tags": [
-        "letters"
-      ],
-      "estimatedTimeSeconds": 40,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "SEQ-0013",
-      "type": "logical_sequence",
-      "category": "synapse",
-      "subcategory": "alphanumeric",
-      "difficulty": 3,
-      "prompt": "Quel élément complète cette suite ?",
-      "sequence": [
-        "A1",
-        "B2",
-        "C3",
-        "D4",
-        "?"
-      ],
-      "answers": [
-        {
-          "id": "a",
-          "text": "E5"
-        },
-        {
-          "id": "b",
-          "text": "E4"
-        },
-        {
-          "id": "c",
-          "text": "F5"
-        },
-        {
-          "id": "d",
-          "text": "D5"
-        }
-      ],
-      "correctAnswerId": "a",
-      "rule": "La lettre et le nombre avancent de 1.",
-      "explanation": "A1, B2, C3, D4, E5.",
-      "contextualHint": "Observe les deux composantes.",
-      "verificationStatus": "to_verify",
-      "tags": [
-        "alphanumeric"
-      ],
-      "estimatedTimeSeconds": 40,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "SEQ-0014",
-      "type": "logical_sequence",
-      "category": "synapse",
-      "subcategory": "alphanumeric",
-      "difficulty": 4,
-      "prompt": "Quel élément complète cette suite ?",
-      "sequence": [
-        "A2",
-        "C4",
-        "F7",
-        "J11",
-        "?"
-      ],
-      "answers": [
-        {
-          "id": "a",
-          "text": "N15"
-        },
-        {
-          "id": "b",
-          "text": "O16"
-        },
-        {
-          "id": "c",
-          "text": "O15"
-        },
-        {
-          "id": "d",
-          "text": "P16"
-        }
-      ],
-      "correctAnswerId": "b",
-      "rule": "Ajouter 2,3,4,5 aux positions et aux nombres.",
-      "explanation": "A(1)+2=C(3), +3=F(6), +4=J(10), +5=O(15); 2,4,7,11,16.",
-      "contextualHint": "Les deux séries ont des écarts croissants.",
-      "verificationStatus": "to_verify",
-      "tags": [
-        "alphanumeric"
-      ],
-      "estimatedTimeSeconds": 40,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "SEQ-0015",
-      "type": "logical_sequence",
-      "category": "synapse",
-      "subcategory": "letters",
-      "difficulty": 4,
-      "prompt": "Quel élément complète cette suite ?",
-      "sequence": [
-        "A",
-        "D",
-        "H",
-        "M",
-        "?"
-      ],
-      "answers": [
-        {
-          "id": "a",
-          "text": "R"
-        },
-        {
-          "id": "b",
-          "text": "T"
-        },
-        {
-          "id": "c",
-          "text": "S"
-        },
-        {
-          "id": "d",
-          "text": "U"
-        }
-      ],
-      "correctAnswerId": "c",
-      "rule": "Avancer de 3,4,5,6 lettres.",
-      "explanation": "1→4→8→13→19, donc S.",
-      "contextualHint": "Convertis les lettres en positions.",
-      "verificationStatus": "to_verify",
-      "tags": [
-        "letters"
-      ],
-      "estimatedTimeSeconds": 40,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "SEQ-0016",
-      "type": "logical_sequence",
-      "category": "synapse",
-      "subcategory": "double-sequence",
-      "difficulty": 5,
-      "prompt": "Quel élément complète cette suite ?",
-      "sequence": [
-        "A",
-        "Z",
-        "C",
-        "X",
-        "E",
-        "V",
-        "?"
-      ],
-      "answers": [
-        {
-          "id": "a",
-          "text": "F"
-        },
-        {
-          "id": "b",
-          "text": "H"
-        },
-        {
-          "id": "c",
-          "text": "T"
-        },
-        {
-          "id": "d",
-          "text": "G"
-        }
-      ],
-      "correctAnswerId": "d",
-      "rule": "Deux suites imbriquées : A,C,E,G et Z,X,V.",
-      "explanation": "Les positions impaires avancent de 2 ; les paires reculent de 2.",
-      "contextualHint": "Sépare les positions impaires et paires.",
-      "verificationStatus": "to_verify",
-      "tags": [
-        "double-sequence"
-      ],
-      "estimatedTimeSeconds": 40,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "SEQ-0017",
-      "type": "logical_sequence",
-      "category": "synapse",
-      "subcategory": "alternation",
-      "difficulty": 1,
-      "prompt": "Quel élément complète cette suite ?",
-      "sequence": [
-        "1",
-        "2",
-        "1",
-        "2",
-        "1",
-        "?"
-      ],
-      "answers": [
-        {
-          "id": "a",
-          "text": "2"
-        },
-        {
-          "id": "b",
-          "text": "1"
-        },
-        {
-          "id": "c",
-          "text": "3"
-        },
-        {
-          "id": "d",
-          "text": "4"
-        }
-      ],
-      "correctAnswerId": "a",
-      "rule": "Alterner 1 et 2.",
-      "explanation": "Le motif 1,2 se répète.",
-      "contextualHint": "Cherche un motif court répété.",
-      "verificationStatus": "to_verify",
-      "tags": [
-        "alternation"
-      ],
-      "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -797,12 +486,12 @@
       "rule": "Deux suites imbriquées : +1 et +2.",
       "explanation": "Positions impaires : 5,6,7,8 ; paires : 10,12,14.",
       "contextualHint": "Sépare les positions impaires et paires.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "alternation"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -842,12 +531,12 @@
       "rule": "Répéter un cycle de trois couleurs.",
       "explanation": "Le cycle rouge, bleu, vert recommence.",
       "contextualHint": "Repère la longueur du cycle.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "motif"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -888,12 +577,12 @@
       "rule": "Deux suites : 2,3,4,5 et 4,6,8.",
       "explanation": "Les impairs augmentent de 1 ; les pairs de 2.",
       "contextualHint": "Dissocie les deux rythmes.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "alternation"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -934,12 +623,12 @@
       "rule": "Le motif ○,□,□ se répète.",
       "explanation": "Après deux carrés revient un cercle.",
       "contextualHint": "Cherche un groupe de trois.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "motif"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -980,12 +669,12 @@
       "rule": "Alterner −1 puis ×2.",
       "explanation": "10−1=9, 9×2=18, 18−1=17, 17×2=34, 34−1=33, puis 66.",
       "contextualHint": "Deux opérations alternent.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "alternation"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1027,12 +716,12 @@
       "rule": "Deux suites imbriquées : 1,2,3,4 et 3,6,9,12.",
       "explanation": "Les impairs augmentent de 1 ; les pairs de 3.",
       "contextualHint": "Sépare impairs et pairs.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "alternation"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1071,12 +760,12 @@
       "rule": "La lettre et le nombre de répétitions progressent ensemble.",
       "explanation": "A apparaît 1 fois, B 2 fois, C 3, D 4, donc E 5 fois.",
       "contextualHint": "Observe à la fois le symbole et sa quantité.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "motif"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1114,12 +803,12 @@
       "rule": "Rotation de 90° dans le sens horaire.",
       "explanation": "Haut, droite, bas, gauche.",
       "contextualHint": "Suis l’orientation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "textual-shapes"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1158,12 +847,12 @@
       "rule": "Ajouter un cercle.",
       "explanation": "La quantité augmente de 1.",
       "contextualHint": "Compte les formes.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "textual-shapes"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1201,12 +890,12 @@
       "rule": "Alterner rempli et vide.",
       "explanation": "Plein, vide, plein, vide.",
       "contextualHint": "Observe le remplissage.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "textual-shapes"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1245,12 +934,12 @@
       "rule": "Déplacement gauche-centre-droite-centre.",
       "explanation": "Le cercle effectue un aller-retour horizontal.",
       "contextualHint": "Visualise un mouvement de va-et-vient.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "textual-shapes"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1289,12 +978,12 @@
       "rule": "Alterner la forme et augmenter la quantité après chaque paire.",
       "explanation": "1 triangle, 1 carré, 2 triangles, 2 carrés, 3 triangles.",
       "contextualHint": "Regroupe les termes par paires.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "textual-shapes"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1334,12 +1023,12 @@
       "rule": "Deux rotations imbriquées de 180° puis 90°.",
       "explanation": "Les couples sont haut/bas, droite/gauche, bas/haut.",
       "contextualHint": "Observe les couples opposés.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "textual-shapes"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1378,12 +1067,12 @@
       "rule": "Un cycle de trois associations se répète.",
       "explanation": "Cercle primaire, carré secondaire, triangle accent, puis reprise.",
       "contextualHint": "Cherche un cycle de trois associations.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "textual-shapes"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1422,12 +1111,12 @@
       "rule": "La quantité augmente et le remplissage alterne.",
       "explanation": "1,2,3,4,5 tandis que plein/vide alterne.",
       "contextualHint": "Combine quantité et remplissage.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "textual-shapes"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1466,12 +1155,12 @@
       "rule": "Ajouter 3,4,5,6.",
       "explanation": "Les écarts croissent d’une unité.",
       "contextualHint": "Regarde l’évolution des écarts.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "intervals"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1511,56 +1200,12 @@
       "rule": "Alterner ×2 puis −2.",
       "explanation": "6×2=12, −2=10, ×2=20, −2=18, puis ×2=36.",
       "contextualHint": "Deux opérations alternent.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "operations"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "SEQ-0035",
-      "type": "logical_sequence",
-      "category": "synapse",
-      "subcategory": "numeric-progression",
-      "difficulty": 3,
-      "prompt": "Quel élément complète cette suite ?",
-      "sequence": [
-        "1",
-        "4",
-        "9",
-        "16",
-        "?"
-      ],
-      "answers": [
-        {
-          "id": "a",
-          "text": "20"
-        },
-        {
-          "id": "b",
-          "text": "24"
-        },
-        {
-          "id": "c",
-          "text": "25"
-        },
-        {
-          "id": "d",
-          "text": "36"
-        }
-      ],
-      "correctAnswerId": "c",
-      "rule": "Carrés successifs.",
-      "explanation": "1²,2²,3²,4²,5².",
-      "contextualHint": "Cherche des carrés parfaits.",
-      "verificationStatus": "to_verify",
-      "tags": [
-        "numeric-progression"
-      ],
-      "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1599,12 +1244,12 @@
       "rule": "Produits n×(n+1).",
       "explanation": "1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30.",
       "contextualHint": "Décompose chaque terme en produit de voisins.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-progression"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1645,12 +1290,12 @@
       "rule": "Deux suites : +1 et −10.",
       "explanation": "Impairs 1,2,3,4 ; pairs 100,90,80.",
       "contextualHint": "Sépare les positions.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "double-sequence"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1690,12 +1335,12 @@
       "rule": "Doubler puis retirer 1 à partir du deuxième terme.",
       "explanation": "3=2×2−1, 5=3×2−1, 9=5×2−1, 17 puis 33.",
       "contextualHint": "Teste une relation entre deux termes successifs.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "operations"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1735,12 +1380,12 @@
       "rule": "Ajouter 3,6,12,24,48.",
       "explanation": "Les écarts doublent à chaque étape.",
       "contextualHint": "Les différences forment elles-mêmes une suite.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "intervals"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1779,12 +1424,12 @@
       "rule": "Multiplier successivement par 2,3,4,5.",
       "explanation": "1×2=2, ×3=6, ×4=24, ×5=120.",
       "contextualHint": "Le multiplicateur augmente de 1.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "operations"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

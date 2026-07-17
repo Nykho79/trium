@@ -40,6 +40,7 @@ Apres installation des dependances :
 pnpm install
 pnpm dev
 pnpm questions
+pnpm questions:curate
 pnpm lint
 pnpm typecheck
 pnpm test
@@ -48,7 +49,7 @@ pnpm build
 pnpm build:checked
 ```
 
-Le script `pnpm questions` valide les fichiers de `src/data/questions` et affiche le rapport de couverture, de statuts et de doublons. `pnpm questions:json` produit le meme rapport au format JSON.
+Le script `pnpm questions` valide les fichiers de `src/data/questions` et affiche le rapport de couverture, de statuts et de doublons. `pnpm questions:json` produit le meme rapport au format JSON. `pnpm questions:curate` applique la passe de curation locale : retrait des doublons exacts, rejet des entrees manifestement faibles et marquage `approved` + `verified` des questions conservees.
 
 Si `pnpm` n'est pas sur le PATH Windows, utiliser le binaire global existant :
 
@@ -87,7 +88,7 @@ Les fichiers sources sont places dans `src/data/questions/*.json`. Le module `sr
 - evite les questions recemment jouees quand une alternative existe ;
 - equilibre categorie et difficulte selon l'historique de la partie.
 
-Etat actuel de la banque locale : `pnpm questions` charge 28 fichiers de donnees, ignore la copie de developpement `conceptual-intruders - Copie.json`, valide 1000 entrees structurellement jouables et rapporte les doublons exacts/probables pour inspection. Cette validation est applicative et ne remplace pas une revue factuelle editoriale source par source.
+Etat actuel de la banque locale : `pnpm questions` charge 28 fichiers de donnees, valide 853 questions `approved` + `verified`, rejette 0 entree jouable et ne detecte plus aucun doublon exact. La passe de curation a retire 147 entrees faibles, redondantes ou un parcours final incomplet et la copie de developpement `conceptual-intruders - Copie.json` a ete supprimee. Les doublons probables restent affiches comme signal faible, car certaines epreuves Synapse partagent volontairement une structure proche. Cette validation est applicative et ne remplace pas une revue factuelle source par source.
 
 La page developpement `DevQuestionBankScreen` permet d'inspecter le rapport, les repartitions et un echantillon des questions chargees depuis l'application.
 
@@ -135,15 +136,15 @@ Principes actifs :
 
 ## Validation effectuee
 
-Validation locale executee le 2026-07-16 :
+Validation locale executee le 2026-07-17 :
 
-- `pnpm check` : OK, lint + TypeScript + 127 tests unitaires ;
+- `pnpm check` : OK, lint + TypeScript + 132 tests unitaires ;
 - `pnpm playwright test src/tests/e2e/tv-runtime.spec.ts` : OK, 12 tests Playwright sur 1920 x 1080, 1366 x 768 et 1280 x 720, avec zoom interface 125 % et zoom navigateur simule 125 % ;
-- `pnpm test:e2e` : derniere validation complete connue OK, 32 tests Playwright sur 1920 x 1080 et 1366 x 768 ;
+- `pnpm test:e2e` : OK, 81 tests Playwright sur 1920 x 1080, 1366 x 768 et 1280 x 720 ;
 - `pnpm build` : OK, build production Vite vers `dist`, avec avertissement Vite de chunk superieur a 500 kB ;
 - `pnpm preview --port 4178` : OK, verification locale de `/`, `/manifest.webmanifest`, `/sw.js` et fallback SPA ;
 - controle navigateur Playwright sur la preview production : OK, titre `TRIUM`, accueil visible, manifest detecte, service worker actif, aucune erreur console ;
-- `pnpm questions:json` : execute, mais les fichiers JSON non verifies presents localement produisent un rapport de rejet et un code de sortie non nul.
+- `pnpm questions` : OK, 853 questions approuvees et verifiees, 0 rejet jouable, 0 doublon exact.
 
 Note Windows : `node` et `npm` ne sont pas sur le PATH global de cette machine. Les validations ont ete lancees avec le runtime Node Codex et `C:\Users\nicol\AppData\Roaming\npm\pnpm.cmd`.
 

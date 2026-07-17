@@ -35,14 +35,14 @@
       "explanation": "Éphémère qualifie ce qui ne dure qu’un temps très court.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "éphémère",
         "vocabulaire",
         "durée"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Le groupe nominal « Les enfants » commande l’accord du verbe au pluriel.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sujet",
         "grammaire",
         "phrase"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Le mot s’écrit avec deux c et le groupe final -ueil.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "accueil",
         "orthographe",
         "français"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "L’expression critique une action engagée avant que les étapes nécessaires soient prêtes.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "expression",
         "ordre",
         "charrue"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "La comparaison rapproche deux éléments au moyen d’un outil comparatif explicite.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "comparaison",
         "figure de style",
         "comme"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Biblion signifie livre et thêkê désigne un lieu de dépôt ou de rangement.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "bibliothèque",
         "étymologie",
         "grec"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Le préfixe im-, variante de in-, exprime ici la négation.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "préfixe",
         "impossible",
         "formation des mots"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Au niveau fédéral, le Canada reconnaît le français et l’anglais comme langues officielles.",
       "sourceLabel": "Gouvernement du Canada",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "français",
         "Canada",
         "francophonie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Le terme associe le latin claustrum, lieu fermé, au grec phobos, peur.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "claustrophobie",
         "vocabulaire",
         "peur"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Le plus-que-parfait se forme avec l’auxiliaire à l’imparfait et le participe passé.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "plus-que-parfait",
         "temps",
         "grammaire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Dans ce nom composé, chef prend la marque du pluriel, tandis qu’œuvre reste au singulier.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "chefs-d’œuvre",
         "pluriel",
         "orthographe"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "L’expression décrit une personne spontanément généreuse et prête à aider.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "expression",
         "générosité",
         "cœur"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "L’oxymore rapproche deux termes apparemment contradictoires dans un même groupe.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "oxymore",
         "figure de style",
         "contradiction"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Le mot vient de l’arabe al-jabr, présent dans le titre d’un traité d’al-Khwarizmi.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "algèbre",
         "étymologie",
         "arabe"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Porte-monnaie associe deux mots autonomes pour créer une nouvelle unité lexicale.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "composition",
         "porte-monnaie",
         "mot"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "L’OIF mène des actions de coopération linguistique, culturelle, éducative et politique.",
       "sourceLabel": "Organisation internationale de la Francophonie",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "OIF",
         "francophonie",
         "organisation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Inéluctable qualifie ce qui doit nécessairement se produire.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "inéluctable",
         "vocabulaire",
         "inévitable"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "La locution « bien que » appelle normalement le subjonctif.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "subjonctif",
         "bien que",
         "grammaire"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "L’adverbe dérive d’apparent et s’écrit avec deux p et le suffixe -emment.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "apparemment",
         "orthographe",
         "adverbe"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "L’expression vise une tendance à compliquer inutilement les distinctions.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "expression",
         "minutie",
         "analyse"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "L’hyperbole amplifie une idée pour produire un effet expressif.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "hyperbole",
         "figure de style",
         "exagération"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Robot vient du tchèque robota, qui évoque le travail forcé ou la corvée.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "robot",
         "étymologie",
         "tchèque"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Le suffixe -age sert fréquemment à former des noms d’action ou de résultat.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "suffixe",
         "lavage",
         "formation des mots"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Senghor fut poète, homme d’État et l’un des promoteurs du concept de francophonie institutionnelle.",
       "sourceLabel": "Organisation internationale de la Francophonie",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Senghor",
         "francophonie",
         "Sénégal"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "La fable met souvent en scène des animaux personnifiés afin de proposer une leçon.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "fable",
         "récit",
         "morale"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

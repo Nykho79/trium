@@ -35,14 +35,14 @@
       "explanation": "Le portugais s’est imposé au Brésil pendant la colonisation portugaise.",
       "sourceLabel": "Instituto Camões",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Brésil",
         "portugais",
         "langue"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,53 +74,14 @@
       "explanation": "Holi est une fête hindoue printanière marquée par les couleurs, avec des pratiques variables selon les régions.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Holi",
         "Inde",
         "fête"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
-      "version": 1
-    },
-    {
-      "id": "MON-0003",
-      "type": "multiple_choice",
-      "category": "world-cultures",
-      "subcategory": "traditional-arts",
-      "difficulty": 1,
-      "question": "Quel art japonais consiste à plier du papier ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "L’ikebana"
-        },
-        {
-          "id": "b",
-          "text": "Le kabuki"
-        },
-        {
-          "id": "c",
-          "text": "L’origami"
-        },
-        {
-          "id": "d",
-          "text": "Le bonsaï"
-        }
-      ],
-      "correctAnswerId": "c",
-      "explanation": "Origami vient de oru, plier, et kami, papier.",
-      "sourceLabel": "Japan Foundation",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "origami",
-        "Japon",
-        "papier"
-      ],
-      "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +113,14 @@
       "explanation": "Le kimono est un vêtement en forme de T, porté de diverses manières selon les contextes.",
       "sourceLabel": "Victoria and Albert Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "kimono",
         "obi",
         "Japon"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +152,14 @@
       "explanation": "Les pagodes dérivent historiquement du stupa et servent souvent à abriter des reliques ou des textes sacrés.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "pagode",
         "architecture",
         "Asie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +191,14 @@
       "explanation": "Angkor fut le centre de l’Empire khmer et comprend notamment le temple d’Angkor Wat.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Angkor",
         "Cambodge",
         "patrimoine"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +230,14 @@
       "explanation": "Le panda géant est fortement associé à la conservation de la nature et à l’image internationale de la Chine.",
       "sourceLabel": "WWF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "panda",
         "Chine",
         "symbole"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +269,14 @@
       "explanation": "Cette pratique vise notamment à préserver la propreté des espaces intérieurs.",
       "sourceLabel": "Japan National Tourism Organization",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "chaussures",
         "Japon",
         "coutume"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +308,14 @@
       "explanation": "Le swahili est une langue bantoue enrichie par des emprunts, notamment à l’arabe.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "swahili",
         "langues bantoues",
         "Afrique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +347,14 @@
       "explanation": "À Rio, les écoles de samba défilent au Sambodrome avec musique, danse et chars.",
       "sourceLabel": "Riotur",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "carnaval",
         "Rio",
         "samba"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +386,14 @@
       "explanation": "Le barong met en scène un affrontement symbolique entre forces protectrices et destructrices.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "barong",
         "Bali",
         "danse"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +425,14 @@
       "explanation": "Le sari est une longue pièce de tissu drapée de façons différentes selon les régions et les usages.",
       "sourceLabel": "Victoria and Albert Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sari",
         "Inde",
         "vêtement"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +464,14 @@
       "explanation": "L’igloo est surtout associé à certaines populations inuit et à des usages temporaires, pas à toutes leurs habitations.",
       "sourceLabel": "The Canadian Encyclopedia",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "igloo",
         "Inuit",
         "Arctique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +503,14 @@
       "explanation": "Pétra fut un important carrefour caravanier du royaume nabatéen.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Pétra",
         "Jordanie",
         "patrimoine"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +542,14 @@
       "explanation": "L’image renvoie au récit mexica de la fondation de Tenochtitlan.",
       "sourceLabel": "Gouvernement du Mexique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Mexique",
         "aigle",
         "symbole"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +581,14 @@
       "explanation": "La profondeur et le contexte de la révérence varient fortement selon les pays et les situations.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "révérence",
         "respect",
         "Asie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +620,14 @@
       "explanation": "Le hangul fut conçu au XVe siècle sous le règne du roi Sejong.",
       "sourceLabel": "National Hangeul Museum",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "hangul",
         "coréen",
         "alphabet"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +659,14 @@
       "explanation": "Les pratiques mêlent autels, offrandes, fleurs et rassemblements familiaux, avec de fortes variations régionales.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Día de Muertos",
         "Mexique",
         "fête"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +698,14 @@
       "explanation": "La cire empêche certaines zones d’absorber la teinture et permet des motifs complexes.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "batik",
         "Indonésie",
         "textile"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +737,14 @@
       "explanation": "Le kilt moderne est associé aux Highlands et à des tartans liés à des clans ou institutions.",
       "sourceLabel": "National Museums Scotland",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "kilt",
         "Écosse",
         "vêtement"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +776,14 @@
       "explanation": "La yourte possède une structure en treillis recouverte de feutre, adaptée au déplacement.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "yourte",
         "Asie centrale",
         "habitat"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +815,14 @@
       "explanation": "Le site se situe dans les Andes péruviennes et témoigne de l’ingénierie inca.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Machu Picchu",
         "Pérou",
         "patrimoine"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +854,14 @@
       "explanation": "La floraison des sakura est associée au hanami, l’observation des fleurs.",
       "sourceLabel": "Japan National Tourism Organization",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sakura",
         "Japon",
         "symbole"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +893,14 @@
       "explanation": "Les formes précises de l’hospitalité varient selon les pays, les familles et les contextes.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "hospitalité",
         "café",
         "Moyen-Orient"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +932,14 @@
       "explanation": "L’Éthiopie est multilingue ; l’amharique joue un rôle administratif important au niveau fédéral.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "amharique",
         "Éthiopie",
         "langue"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

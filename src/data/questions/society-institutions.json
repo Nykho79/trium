@@ -35,14 +35,14 @@
       "explanation": "Le Parlement, composé de l’Assemblée nationale et du Sénat, exerce principalement le pouvoir législatif.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "France",
         "pouvoir législatif",
         "Parlement"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Les députés européens sont élus au suffrage universel direct tous les cinq ans.",
       "sourceLabel": "Union européenne",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Parlement européen",
         "élections",
         "Union européenne"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "La Charte des Nations unies confie au système onusien un rôle central dans la paix, la coopération et les droits humains.",
       "sourceLabel": "Nations unies",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ONU",
         "paix",
         "organisation internationale"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "Depuis 1974, la majorité civile en France est fixée à 18 ans.",
       "sourceLabel": "Service-Public.fr",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "majorité",
         "France",
         "citoyenneté"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "L’inflation correspond à une augmentation durable du niveau général des prix, et non à la hausse d’un seul produit.",
       "sourceLabel": "Banque de France",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "inflation",
         "prix",
         "économie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "La devise républicaine apparaît dans la Constitution et sur de nombreux édifices publics.",
       "sourceLabel": "Élysée",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "devise",
         "République",
         "France"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Une source primaire fournit une information de première main, qui doit néanmoins être contextualisée et vérifiée.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "source primaire",
         "journalisme",
         "information"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "La socialisation se déroule tout au long de la vie par la famille, l’école, les pairs, le travail et d’autres institutions.",
       "sourceLabel": "Encyclopædia Universalis",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "socialisation",
         "sociologie",
         "normes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "La Constitution organise les pouvoirs publics et garantit des droits fondamentaux.",
       "sourceLabel": "Conseil constitutionnel",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Constitution",
         "France",
         "normes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Le traité de Maastricht institue l’Union européenne et prépare l’union économique et monétaire.",
       "sourceLabel": "Union européenne",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Maastricht",
         "Union européenne",
         "traité"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "La Cour internationale de Justice, principal organe judiciaire de l’ONU, siège au Palais de la Paix à La Haye.",
       "sourceLabel": "Cour internationale de Justice",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "CIJ",
         "La Haye",
         "justice"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Les définitions statistiques ajoutent des critères précis de disponibilité et de recherche active.",
       "sourceLabel": "INSEE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "chômage",
         "emploi",
         "économie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Nul ne peut être puni pour un acte qui n’était pas légalement défini comme une infraction au moment où il a été commis.",
       "sourceLabel": "Conseil constitutionnel",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "légalité",
         "droit",
         "peines"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Le statut social renvoie à une position à laquelle sont associés des droits, devoirs et attentes.",
       "sourceLabel": "Encyclopædia Universalis",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "statut social",
         "sociologie",
         "position"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Le fact-checking confronte une déclaration à des données, documents et témoignages vérifiables.",
       "sourceLabel": "AFP Factuel",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "fact-checking",
         "médias",
         "vérification"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "La laïcité garantit la liberté de conscience et la neutralité de l’État à l’égard des religions.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "laïcité",
         "État",
         "religions"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Le gouvernement est politiquement responsable devant l’Assemblée nationale, pas devant le Sénat.",
       "sourceLabel": "Assemblée nationale",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "motion de censure",
         "Assemblée nationale",
         "gouvernement"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Le principe de subsidiarité encadre l’intervention de l’Union dans les domaines de compétence partagée.",
       "sourceLabel": "Union européenne",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "subsidiarité",
         "Union européenne",
         "compétences"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "L’UNESCO développe la coopération internationale en éducation, sciences, culture et communication.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "UNESCO",
         "culture",
         "éducation"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Le produit intérieur brut mesure la production réalisée pendant une période donnée.",
       "sourceLabel": "INSEE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "PIB",
         "production",
         "économie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Le recours contentieux demande au juge administratif d’annuler, modifier ou indemniser les effets d’une décision.",
       "sourceLabel": "Conseil d’État",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "recours",
         "justice administrative",
         "droit"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Elle peut être ascendante, descendante ou horizontale, et se mesurer entre générations ou au cours d’une vie.",
       "sourceLabel": "INSEE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "mobilité sociale",
         "sociologie",
         "position"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Comparer des sources indépendantes aide à distinguer les faits établis, les interprétations et les informations incertaines.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sources",
         "vérification",
         "médias"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Le suffrage universel s’oppose notamment au suffrage censitaire fondé sur la fortune.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "suffrage universel",
         "vote",
         "démocratie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Le Conseil constitutionnel peut être saisi avant la promulgation d’une loi et, par la QPC, après son entrée en vigueur.",
       "sourceLabel": "Conseil constitutionnel",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Conseil constitutionnel",
         "lois",
         "Constitution"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

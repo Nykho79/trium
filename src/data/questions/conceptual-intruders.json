@@ -37,13 +37,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "animals",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -77,13 +77,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "plants",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -117,13 +117,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "geography",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -157,13 +157,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "objects",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -197,13 +197,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "language",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -237,13 +237,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "science",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -277,13 +277,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "animals",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -317,13 +317,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "music",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -357,13 +357,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "literature",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -397,13 +397,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "technology",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -437,13 +437,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "history",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -477,13 +477,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "cinema",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -517,13 +517,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "logic-abstract",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -557,13 +557,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "geography",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -597,13 +597,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "plants",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -637,13 +637,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "science",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -677,13 +677,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "music",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -717,13 +717,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "technology",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -757,13 +757,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "literature",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -797,13 +797,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "objects",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -837,13 +837,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "history",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -877,13 +877,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "cinema",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -917,13 +917,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "animals",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -957,13 +957,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "geography",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -997,13 +997,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "science",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1037,13 +1037,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "literature",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1077,13 +1077,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "music",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1117,13 +1117,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "technology",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1157,13 +1157,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "history",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1197,13 +1197,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "logic-abstract",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1237,13 +1237,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "plants",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1277,13 +1277,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "cinema",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1317,13 +1317,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "objects",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1357,13 +1357,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "science",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1397,13 +1397,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "geography",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1437,13 +1437,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "history",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1477,13 +1477,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "literature",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1517,13 +1517,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "technology",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1557,13 +1557,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "music",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1597,13 +1597,13 @@
       "contextualHint": "Identifie la catégorie précise partagée par trois éléments.",
       "sourceLabel": null,
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "logic-abstract",
         "intrus"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

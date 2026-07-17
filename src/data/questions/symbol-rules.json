@@ -75,12 +75,12 @@
       "rule": "Le symbole ajoute 1.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole ajoute 1. Elle donne ici la sortie « 12 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,12 +152,12 @@
       "rule": "Le symbole retire 2.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole retire 2. Elle donne ici la sortie « 17 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -245,12 +245,12 @@
       "rule": "Le symbole inverse complètement l’ordre des éléments.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse complètement l’ordre des éléments. Elle donne ici la sortie « z1, y1, x1 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "order-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -322,12 +322,12 @@
       "rule": "Le symbole effectue une rotation de 90° dans le sens horaire.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole effectue une rotation de 90° dans le sens horaire. Elle donne ici la sortie « losange:225° ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "rotation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -399,12 +399,12 @@
       "rule": "Le symbole fait avancer la couleur dans le cycle montré par les exemples.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole fait avancer la couleur dans le cycle montré par les exemples. Elle donne ici la sortie « primary ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "color-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -476,12 +476,12 @@
       "rule": "Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples. Elle donne ici la sortie « circle ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "shape-replacement"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -553,12 +553,12 @@
       "rule": "Le symbole déplace l’élément vers la position suivante du cycle montré.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole déplace l’élément vers la position suivante du cycle montré. Elle donne ici la sortie « gauche ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "movement"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -630,12 +630,12 @@
       "rule": "Le symbole multiplie la valeur par 3.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie la valeur par 3. Elle donne ici la sortie « 15 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -707,12 +707,12 @@
       "rule": "Le symbole multiplie par 2, puis ajoute 1.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie par 2, puis ajoute 1. Elle donne ici la sortie « 15 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "combined-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -798,12 +798,12 @@
       "rule": "Le symbole inverse les deux éléments puis répète 1 fois le premier élément d’origine.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse les deux éléments puis répète 1 fois le premier élément d’origine. Elle donne ici la sortie « bleu, rouge, rouge ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "combined-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -875,12 +875,12 @@
       "rule": "Le symbole ajoute 2.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole ajoute 2. Elle donne ici la sortie « 14 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -952,12 +952,12 @@
       "rule": "Le symbole retire 3.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole retire 3. Elle donne ici la sortie « 17 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1045,12 +1045,12 @@
       "rule": "Le symbole inverse complètement l’ordre des éléments.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse complètement l’ordre des éléments. Elle donne ici la sortie « z2, y2, x2 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "order-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1122,12 +1122,12 @@
       "rule": "Le symbole effectue une rotation de 180° dans le sens horaire.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole effectue une rotation de 180° dans le sens horaire. Elle donne ici la sortie « losange:270° ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "rotation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1199,12 +1199,12 @@
       "rule": "Le symbole fait avancer la couleur dans le cycle montré par les exemples.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole fait avancer la couleur dans le cycle montré par les exemples. Elle donne ici la sortie « secondary ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "color-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1276,12 +1276,12 @@
       "rule": "Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples. Elle donne ici la sortie « diamond ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "shape-replacement"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1353,12 +1353,12 @@
       "rule": "Le symbole déplace l’élément vers la position suivante du cycle montré.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole déplace l’élément vers la position suivante du cycle montré. Elle donne ici la sortie « haut ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "movement"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1430,12 +1430,12 @@
       "rule": "Le symbole multiplie la valeur par 4.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie la valeur par 4. Elle donne ici la sortie « 20 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1507,12 +1507,12 @@
       "rule": "Le symbole multiplie par 3, puis ajoute 2.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie par 3, puis ajoute 2. Elle donne ici la sortie « 23 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "combined-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1603,12 +1603,12 @@
       "rule": "Le symbole inverse les deux éléments puis répète 2 fois le premier élément d’origine.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse les deux éléments puis répète 2 fois le premier élément d’origine. Elle donne ici la sortie « bleu, rouge, rouge, rouge ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "combined-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1680,12 +1680,12 @@
       "rule": "Le symbole ajoute 3.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole ajoute 3. Elle donne ici la sortie « 16 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1757,12 +1757,12 @@
       "rule": "Le symbole retire 4.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole retire 4. Elle donne ici la sortie « 17 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1852,12 +1852,12 @@
       "rule": "Le symbole inverse complètement l’ordre des éléments.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse complètement l’ordre des éléments. Elle donne ici la sortie « z3, y3, x3 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "order-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1929,12 +1929,12 @@
       "rule": "Le symbole effectue une rotation de 270° dans le sens horaire.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole effectue une rotation de 270° dans le sens horaire. Elle donne ici la sortie « losange:315° ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "rotation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -2006,12 +2006,12 @@
       "rule": "Le symbole fait avancer la couleur dans le cycle montré par les exemples.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole fait avancer la couleur dans le cycle montré par les exemples. Elle donne ici la sortie « accent ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "color-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -2083,12 +2083,12 @@
       "rule": "Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole remplace chaque forme par la suivante dans le cycle déduit des exemples. Elle donne ici la sortie « triangle ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "shape-replacement"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -2160,12 +2160,12 @@
       "rule": "Le symbole déplace l’élément vers la position suivante du cycle montré.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole déplace l’élément vers la position suivante du cycle montré. Elle donne ici la sortie « nord ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "movement"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -2237,12 +2237,12 @@
       "rule": "Le symbole multiplie la valeur par 5.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie la valeur par 5. Elle donne ici la sortie « 25 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "numeric-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -2314,12 +2314,12 @@
       "rule": "Le symbole multiplie par 4, puis ajoute 3.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole multiplie par 4, puis ajoute 3. Elle donne ici la sortie « 31 ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "combined-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -2415,12 +2415,12 @@
       "rule": "Le symbole inverse les deux éléments puis répète 3 fois le premier élément d’origine.",
       "explanation": "Les deux exemples permettent d’identifier la règle : Le symbole inverse les deux éléments puis répète 3 fois le premier élément d’origine. Elle donne ici la sortie « bleu, rouge, rouge, rouge, rouge ».",
       "contextualHint": "Compare chaque entrée à sa sortie avant d’appliquer la transformation.",
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "combined-transformation"
       ],
       "estimatedTimeSeconds": 50,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

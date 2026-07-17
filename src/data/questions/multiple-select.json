@@ -40,12 +40,12 @@
       "explanation": "Les réponses correctes sont « Pérou » et « Chili ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "countries"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -82,12 +82,12 @@
       "explanation": "Les réponses correctes sont « Jupiter » et « Saturne ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "astronomy"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -124,12 +124,12 @@
       "explanation": "Les réponses correctes sont « Mayas » et « Aztèques ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "antiquity"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -166,12 +166,12 @@
       "explanation": "Les réponses correctes sont « Victor Hugo » et « Émile Zola ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "authors"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -208,12 +208,12 @@
       "explanation": "Les réponses correctes sont « Violon » et « Violoncelle ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "instruments"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -250,12 +250,12 @@
       "explanation": "Les réponses correctes sont « Football » et « Futsal ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ball-sports"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -292,12 +292,12 @@
       "explanation": "Les réponses correctes sont « HTML » et « JavaScript ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "W3C",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "web"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -334,12 +334,12 @@
       "explanation": "Les réponses correctes sont « Courir » et « Écrire ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "grammar"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -376,12 +376,12 @@
       "explanation": "Les réponses correctes sont « Pois chiche » et « Lentille ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Larousse Gastronomique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ingredients"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -418,12 +418,12 @@
       "explanation": "Les réponses correctes sont « Athéna » et « Hermès ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "greek"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -460,12 +460,12 @@
       "explanation": "Les réponses correctes sont « Tintin » et « Astérix ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Bibliothèque nationale de France",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "comics"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -502,12 +502,12 @@
       "explanation": "Les réponses correctes sont « Origami » et « Ikebana ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "arts"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -544,12 +544,12 @@
       "explanation": "Les réponses correctes sont « Assemblée nationale » et « Sénat ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "france"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -586,12 +586,12 @@
       "explanation": "Les réponses correctes sont « Ridley Scott » et « James Cameron ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "directors"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -628,12 +628,12 @@
       "explanation": "Les réponses correctes sont « Mitochondrie » et « Chloroplaste ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "biology"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -670,12 +670,12 @@
       "explanation": "Les réponses correctes sont « Danube » et « Dniepr ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "rivers"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -712,12 +712,12 @@
       "explanation": "Les réponses correctes sont « Réforme de Luther » et « Concile de Trente ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "modern-era"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -754,12 +754,12 @@
       "explanation": "Les réponses correctes sont « Pablo Picasso » et « Georges Braque ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "movements"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -796,12 +796,12 @@
       "explanation": "Les réponses correctes sont « Crescendo » et « Decrescendo ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "theory"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -838,12 +838,12 @@
       "explanation": "Les réponses correctes sont « Escrime » et « Aviron ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "olympics"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -880,12 +880,12 @@
       "explanation": "Les réponses correctes sont « HTTP » et « FTP ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "W3C",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "networks"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -922,12 +922,12 @@
       "explanation": "Les réponses correctes sont « Métaphore » et « Anaphore ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "figures"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -964,12 +964,12 @@
       "explanation": "Les réponses correctes sont « Saisir » et « Griller ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Larousse Gastronomique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "techniques"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1006,12 +1006,12 @@
       "explanation": "Les réponses correctes sont « Yggdrasil » et « Mjöllnir ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "norse"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1048,12 +1048,12 @@
       "explanation": "Les réponses correctes sont « Mario » et « Link ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Bibliothèque nationale de France",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "video-games"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1090,12 +1090,12 @@
       "explanation": "Les réponses correctes sont « Diwali » et « Holi ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "festivals"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1132,12 +1132,12 @@
       "explanation": "Les réponses correctes sont « Hélium » et « Néon ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "chemistry"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1174,12 +1174,12 @@
       "explanation": "Les réponses correctes sont « Honshū » et « Hokkaidō ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "islands"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1216,12 +1216,12 @@
       "explanation": "Les réponses correctes sont « Magna Carta » et « Bill of Rights de 1689 ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "documents"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1258,12 +1258,12 @@
       "explanation": "Les réponses correctes sont « Hamlet » et « Macbeth ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "works"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1300,12 +1300,12 @@
       "explanation": "Les réponses correctes sont « John Coltrane » et « Charlie Parker ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "jazz"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1342,12 +1342,12 @@
       "explanation": "Les réponses correctes sont « Parlement européen » et « Conseil de l’Union européenne ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "eu"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1384,12 +1384,12 @@
       "explanation": "Les réponses correctes sont « Décathlon » et « Biathlon ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "combined"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1426,12 +1426,12 @@
       "explanation": "Les réponses correctes sont « C » et « Rust ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "W3C",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "programming"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1468,12 +1468,12 @@
       "explanation": "Les réponses correctes sont « Algèbre » et « Zéro ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "etymology"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1510,12 +1510,12 @@
       "explanation": "Les réponses correctes sont « Miso » et « Yaourt ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Larousse Gastronomique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "fermentation"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1552,12 +1552,12 @@
       "explanation": "Les réponses correctes sont « Anubis » et « Horus ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "egyptian"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1594,12 +1594,12 @@
       "explanation": "Les réponses correctes sont « Star Wars » et « The Legend of Zelda ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "Bibliothèque nationale de France",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "franchises"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1636,12 +1636,12 @@
       "explanation": "Les réponses correctes sont « Hangeul » et « Alphabet turc latin réformé ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "writing"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -1678,12 +1678,12 @@
       "explanation": "Les réponses correctes sont « Force » et « Vitesse ». Les deux autres ne satisfont pas le critère demandé.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "physics"
       ],
       "estimatedTimeSeconds": 40,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

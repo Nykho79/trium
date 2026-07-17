@@ -35,14 +35,14 @@
       "explanation": "Publié en 1862, le roman suit plusieurs destins, dont celui de Jean Valjean, sur fond de misère sociale et de bouleversements politiques.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Victor Hugo",
         "Les Misérables",
         "roman"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "La Joconde fut peinte au début du XVIe siècle. Son identité et son sourire ont nourri de nombreuses interprétations.",
       "sourceLabel": "Musée du Louvre",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Joconde",
         "Léonard de Vinci",
         "peinture"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "Harpagon est obsédé par son argent et sa cassette, ce qui fait de lui une figure emblématique de l’avarice au théâtre.",
       "sourceLabel": "Comédie-Française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Molière",
         "Harpagon",
         "théâtre"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "L’architecture gothique développe des structures permettant d’élever les voûtes et d’ouvrir de vastes verrières.",
       "sourceLabel": "Cité de l’architecture",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "gothique",
         "architecture",
         "arcs-boutants"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "Dans le roman de Cervantès, Don Quichotte interprète le monde à travers les récits de chevalerie qu’il a lus.",
       "sourceLabel": "Instituto Cervantes",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Don Quichotte",
         "Cervantès",
         "roman"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Le Penseur fut conçu à l’origine pour La Porte de l’Enfer avant de devenir une œuvre autonome.",
       "sourceLabel": "Musée Rodin",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Rodin",
         "Le Penseur",
         "sculpture"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Les impressionnistes cherchent à saisir les variations de lumière et les impressions fugitives, souvent en peignant en plein air.",
       "sourceLabel": "Musée d’Orsay",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "impressionnisme",
         "Monet",
         "Renoir"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Le roman décrit une société totalitaire fondée sur la surveillance, la propagande et la manipulation du langage.",
       "sourceLabel": "British Library",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "1984",
         "George Orwell",
         "dystopie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "Le narrateur n’est pas strictement identique à Proust, même si le roman puise largement dans son expérience et emploie une fois le prénom Marcel.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Proust",
         "narrateur",
         "Recherche"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Dans la fresque, les pigments pénètrent l’enduit frais et se fixent lors du séchage.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "fresque",
         "technique",
         "peinture"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "Écrivain colombien, García Márquez est l’une des grandes figures du réalisme magique latino-américain.",
       "sourceLabel": "Nobel Prize",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "García Márquez",
         "Colombie",
         "littérature"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Gaudí consacra une grande partie de sa vie à cette basilique barcelonaise aux formes inspirées de la nature.",
       "sourceLabel": "Sagrada Família",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Gaudí",
         "Sagrada Família",
         "Barcelone"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Les didascalies précisent les gestes, les décors, le ton ou les déplacements, sans être prononcées par les personnages.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "didascalie",
         "théâtre",
         "mise en scène"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Le surréalisme, théorisé notamment par André Breton, explore l’automatisme, le rêve et les associations inattendues.",
       "sourceLabel": "Centre Pompidou",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "surréalisme",
         "rêve",
         "Breton"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Chez Melville, la chasse à Moby Dick devient une obsession qui entraîne l’équipage vers la catastrophe.",
       "sourceLabel": "Library of Congress",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Moby-Dick",
         "Achab",
         "Melville"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "Le naturalisme cherche à décrire les comportements humains en tenant compte de l’hérédité, du milieu social et des conditions matérielles.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "naturalisme",
         "Zola",
         "littérature"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Peint en 1937, Guernica dénonce la violence du bombardement de la ville basque pendant la guerre d’Espagne.",
       "sourceLabel": "Museo Reina Sofía",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Guernica",
         "Picasso",
         "peinture"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Le David fut taillé dans un bloc de marbre et installé à Florence au début du XVIe siècle.",
       "sourceLabel": "Galleria dell’Accademia",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "David",
         "Michel-Ange",
         "marbre"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "L’ordre corinthien se distingue par un chapiteau richement décoré, souvent de feuilles d’acanthe stylisées.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "corinthien",
         "chapiteau",
         "architecture"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "Le roman mêle quête initiatique, réalisme quotidien et éléments fantastiques caractéristiques de l’œuvre de Murakami.",
       "sourceLabel": "Bibliothèque nationale de la Diète",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Murakami",
         "Kafka sur le rivage",
         "Japon"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "L’aparté crée une complicité avec le public en révélant une pensée ou une intention cachée.",
       "sourceLabel": "CNRTL",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "aparté",
         "théâtre",
         "public"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "Le cubisme, développé notamment par Picasso et Braque, représente simultanément plusieurs points de vue.",
       "sourceLabel": "Centre Pompidou",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "cubisme",
         "Picasso",
         "Braque"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Le narrateur, identifié à Dante, entreprend un voyage à travers l’Enfer, le Purgatoire et le Paradis.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Dante",
         "Divine Comédie",
         "narrateur"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "Le recueil explore la beauté, le spleen, la modernité urbaine et la tension entre idéal et chute.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Baudelaire",
         "Fleurs du mal",
         "poésie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "Les couleurs sont posées en petites touches distinctes qui se recomposent optiquement à distance.",
       "sourceLabel": "Musée d’Orsay",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "pointillisme",
         "couleur",
         "technique"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

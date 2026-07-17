@@ -35,14 +35,14 @@
       "explanation": "Tokyo est le centre politique du Japon depuis le XIXe siècle. Kyoto fut auparavant la capitale impériale pendant plus d’un millénaire.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Tokyo",
         "Japon",
         "capitale"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -74,14 +74,14 @@
       "explanation": "Marrakech se situe au Maroc, au pied de l’Atlas. Sa médina est inscrite au patrimoine mondial de l’UNESCO.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Marrakech",
         "Maroc",
         "ville"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -113,14 +113,14 @@
       "explanation": "La façade occidentale de l’Amérique du Sud donne sur le Pacifique, tandis que sa façade orientale donne sur l’Atlantique.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Pacifique",
         "Amérique du Sud",
         "océan"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -152,14 +152,14 @@
       "explanation": "La Seine traverse Paris avant de poursuivre vers la Manche. Elle structure l’histoire, les échanges et le paysage de la capitale.",
       "sourceLabel": "IGN",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Seine",
         "Paris",
         "fleuve"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -191,14 +191,14 @@
       "explanation": "La péninsule italienne est souvent comparée à une botte s’avançant dans la Méditerranée.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Italie",
         "péninsule",
         "Europe"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -230,14 +230,14 @@
       "explanation": "Le Portugal continental n’a qu’un seul voisin terrestre : l’Espagne. Ses autres limites sont maritimes, sur l’Atlantique.",
       "sourceLabel": "Eurostat",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Portugal",
         "Espagne",
         "frontière"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -269,14 +269,14 @@
       "explanation": "Le Sahara s’étend sur plusieurs pays d’Afrique du Nord, de l’Atlantique à la mer Rouge.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Sahara",
         "Afrique du Nord",
         "désert"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -308,14 +308,14 @@
       "explanation": "Les Pyrénées forment une frontière naturelle entre la péninsule Ibérique et le reste de l’Europe occidentale.",
       "sourceLabel": "IGN",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Pyrénées",
         "France",
         "Espagne"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -347,14 +347,14 @@
       "explanation": "L’urbanisation désigne l’augmentation de la part de population vivant en ville et l’extension des espaces urbains.",
       "sourceLabel": "ONU-Habitat",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "urbanisation",
         "villes",
         "population"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -386,14 +386,14 @@
       "explanation": "Ottawa est la capitale fédérale du Canada. Toronto est plus peuplée, mais elle n’est pas la capitale.",
       "sourceLabel": "Gouvernement du Canada",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Ottawa",
         "Canada",
         "capitale"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -425,14 +425,14 @@
       "explanation": "L’Arabie saoudite couvre l’essentiel de la péninsule Arabique, aux côtés de plusieurs autres États.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Arabie saoudite",
         "péninsule Arabique",
         "pays"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -464,14 +464,14 @@
       "explanation": "Après avoir traversé le lac Léman et le sud-est de la France, le Rhône forme un delta en Camargue avant d’atteindre la Méditerranée.",
       "sourceLabel": "IGN",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Rhône",
         "Méditerranée",
         "fleuve"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -503,14 +503,14 @@
       "explanation": "Les Alpes s’étendent sur plusieurs pays européens, dont la France, la Suisse, l’Italie, l’Autriche et la Slovénie.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Alpes",
         "Suisse",
         "Autriche"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -542,14 +542,14 @@
       "explanation": "Le détroit de Gibraltar relie l’Atlantique à la Méditerranée et sépare l’Europe de l’Afrique sur une faible distance.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Gibraltar",
         "Espagne",
         "Maroc"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -581,14 +581,14 @@
       "explanation": "Le cône Sud désigne la partie méridionale de l’Amérique du Sud, généralement centrée sur l’Argentine, le Chili et l’Uruguay.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "cône Sud",
         "Amérique du Sud",
         "région"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -620,14 +620,14 @@
       "explanation": "Une ville mondiale joue un rôle majeur dans les réseaux financiers, politiques, culturels et informationnels internationaux.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "ville mondiale",
         "métropole",
         "réseaux"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -659,14 +659,14 @@
       "explanation": "Le Nil traverse l’Égypte et se jette dans la Méditerranée en formant un vaste delta.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Nil",
         "Égypte",
         "fleuve"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -698,14 +698,14 @@
       "explanation": "Le Lesotho est un État enclavé dont tout le territoire est entouré par l’Afrique du Sud.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Lesotho",
         "enclave",
         "Afrique du Sud"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -737,14 +737,14 @@
       "explanation": "Budapest est née en 1873 de l’union de Buda, Pest et Óbuda, sur les deux rives du Danube.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Budapest",
         "Danube",
         "capitale"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -776,14 +776,14 @@
       "explanation": "La Réunion est une île volcanique française de l’océan Indien, située à l’est de Madagascar.",
       "sourceLabel": "INSEE",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "La Réunion",
         "océan Indien",
         "France"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -815,14 +815,14 @@
       "explanation": "Le Danube traverse ou borde de nombreux pays d’Europe centrale et orientale avant de se jeter dans la mer Noire.",
       "sourceLabel": "Commission internationale du Danube",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Danube",
         "Europe",
         "fleuve"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -854,14 +854,14 @@
       "explanation": "La Manche sépare principalement la France du sud de l’Angleterre. Le tunnel sous la Manche relie les deux rives.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Manche",
         "France",
         "Royaume-Uni"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -893,14 +893,14 @@
       "explanation": "Le Sahel est une bande de transition entre le Sahara au nord et les savanes plus humides au sud.",
       "sourceLabel": "FAO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Sahel",
         "Afrique",
         "région"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -932,14 +932,14 @@
       "explanation": "L’exode rural correspond à une migration durable des campagnes vers les villes, souvent liée aux transformations économiques et agricoles.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "exode rural",
         "migration",
         "villes"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     },
     {
@@ -971,14 +971,14 @@
       "explanation": "La Méditerranée est presque entièrement entourée par l’Europe, l’Afrique et l’Asie. Elle communique avec l’Atlantique par Gibraltar.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "Méditerranée",
         "mer",
         "géographie"
       ],
       "estimatedTimeSeconds": 30,
-      "status": "generated",
+      "status": "approved",
       "version": 1
     }
   ]

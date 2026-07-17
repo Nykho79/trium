@@ -47,20 +47,22 @@ describe("localQuestionBank", () => {
     const bank = loadLocalQuestionBank();
 
     expect(bank.report.fileCount).toBeGreaterThan(0);
-    expect(bank.report.totalCount).toBeGreaterThanOrEqual(1_000);
+    expect(bank.report.totalCount).toBeGreaterThanOrEqual(850);
     expect(bank.report.verifiedCount).toBe(bank.report.totalCount);
     expect(bank.report.playableCount).toBe(bank.report.totalCount);
     expect(bank.report.rejectedCount).toBe(0);
     expect(bank.report.byCategory.geography).toBeGreaterThan(0);
   });
 
-  it("normalise les questions structurellement valides et exclut les rejets explicites", () => {
+  it("normalise uniquement les questions approuvees et verifiees", () => {
     const bank = compileQuestionBankFromSources([sourceWithQuestions([
       approvedQuestion,
       { ...approvedQuestion, id: "TEST-002", verificationStatus: "rejected", status: "rejected" },
+      { ...approvedQuestion, id: "TEST-003", verificationStatus: "to_verify", status: "approved" },
+      { ...approvedQuestion, id: "TEST-004", verificationStatus: "verified", status: "review" },
     ])]);
 
-    expect(bank.report.totalCount).toBe(2);
+    expect(bank.report.totalCount).toBe(4);
     expect(bank.report.playableCount).toBe(1);
     expect(bank.playableQuestions[0]?.id).toBe("TEST-001");
     expect(bank.playableQuestions[0]?.kind).toBe("knowledge-grid");

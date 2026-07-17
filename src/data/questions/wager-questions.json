@@ -7,45 +7,6 @@
   "generatedAt": null,
   "questions": [
     {
-      "id": "PAR-0001",
-      "type": "multiple_choice",
-      "category": "history",
-      "subcategory": "antiquity",
-      "difficulty": 1,
-      "question": "Quel peuple antique a édifié le Colisée ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Les Romains"
-        },
-        {
-          "id": "b",
-          "text": "Les Grecs"
-        },
-        {
-          "id": "c",
-          "text": "Les Étrusques"
-        },
-        {
-          "id": "d",
-          "text": "Les Phéniciens"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "Pense à la capitale d’un vaste empire méditerranéen.",
-      "explanation": "Le Colisée fut inauguré à Rome au Ier siècle sous les empereurs flavien et pouvait accueillir des dizaines de milliers de spectateurs.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "antiquity"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
       "id": "PAR-0002",
       "type": "multiple_choice",
       "category": "geography",
@@ -75,90 +36,12 @@
       "explanation": "Wellington est la capitale politique du pays, tandis qu’Auckland est sa ville la plus peuplée.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "capitals"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0003",
-      "type": "multiple_choice",
-      "category": "science-nature",
-      "subcategory": "biology",
-      "difficulty": 1,
-      "question": "Quel pigment permet principalement aux plantes d’absorber l’énergie lumineuse ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "La mélanine"
-        },
-        {
-          "id": "b",
-          "text": "L’hémoglobine"
-        },
-        {
-          "id": "c",
-          "text": "La chlorophylle"
-        },
-        {
-          "id": "d",
-          "text": "La kératine"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "Il se trouve dans les chloroplastes.",
-      "explanation": "La chlorophylle absorbe surtout certaines longueurs d’onde et donne leur couleur verte à de nombreux végétaux.",
-      "sourceLabel": "CNRS",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "biology"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0004",
-      "type": "multiple_choice",
-      "category": "arts-literature",
-      "subcategory": "literature-france",
-      "difficulty": 1,
-      "question": "Qui a écrit Le Petit Prince ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Jules Verne"
-        },
-        {
-          "id": "b",
-          "text": "Albert Camus"
-        },
-        {
-          "id": "c",
-          "text": "Marcel Pagnol"
-        },
-        {
-          "id": "d",
-          "text": "Antoine de Saint-Exupéry"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "L’auteur était aussi aviateur.",
-      "explanation": "Publié en 1943, ce récit poétique mêle voyage, amitié, responsabilité et regard critique sur le monde adulte.",
-      "sourceLabel": "BnF",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "literature-france"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -192,51 +75,12 @@
       "explanation": "Le film de 1939 suit Dorothy, l’Épouvantail, le Bûcheron en fer-blanc et le Lion peureux.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "classic-cinema"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0006",
-      "type": "multiple_choice",
-      "category": "music",
-      "subcategory": "classical-music",
-      "difficulty": 1,
-      "question": "Quel compositeur a écrit Les Quatre Saisons ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Johann Sebastian Bach"
-        },
-        {
-          "id": "b",
-          "text": "Antonio Vivaldi"
-        },
-        {
-          "id": "c",
-          "text": "Georg Friedrich Haendel"
-        },
-        {
-          "id": "d",
-          "text": "Joseph Haydn"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "Le compositeur était un prêtre vénitien surnommé le Prêtre roux.",
-      "explanation": "Ce cycle de quatre concertos pour violon évoque musicalement les saisons et des scènes de la nature.",
-      "sourceLabel": "Philharmonie de Paris",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "classical-music"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -270,51 +114,12 @@
       "explanation": "Le Parlement comprend l’Assemblée nationale et le Sénat, qui participent à l’élaboration de la loi.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "france"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0008",
-      "type": "multiple_choice",
-      "category": "sports",
-      "subcategory": "olympic-games",
-      "difficulty": 1,
-      "question": "Dans quel sport utilise-t-on un fleuret ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le tir à l’arc"
-        },
-        {
-          "id": "b",
-          "text": "Le pentathlon"
-        },
-        {
-          "id": "c",
-          "text": "Le badminton"
-        },
-        {
-          "id": "d",
-          "text": "L’escrime"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "Il s’agit d’une arme légère à pointe.",
-      "explanation": "Le fleuret est l’une des trois armes de l’escrime, avec l’épée et le sabre.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "olympic-games"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -348,207 +153,12 @@
       "explanation": "L’écran reçoit un signal vidéo et le transforme en pixels visibles.",
       "sourceLabel": "W3C",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "hardware"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0010",
-      "type": "multiple_choice",
-      "category": "french-language",
-      "subcategory": "grammar",
-      "difficulty": 1,
-      "question": "Quel est le pluriel de « cheval » ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Chevals"
-        },
-        {
-          "id": "b",
-          "text": "Chevaux"
-        },
-        {
-          "id": "c",
-          "text": "Chevaus"
-        },
-        {
-          "id": "d",
-          "text": "Chevauxs"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "Le pluriel modifie la terminaison -al.",
-      "explanation": "Le nom cheval forme son pluriel en -aux, comme plusieurs noms terminés par -al.",
-      "sourceLabel": "Académie française",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "grammar"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0011",
-      "type": "multiple_choice",
-      "category": "gastronomy",
-      "subcategory": "ingredients",
-      "difficulty": 1,
-      "question": "Quel ingrédient principal donne sa couleur au pesto traditionnel génois ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le persil"
-        },
-        {
-          "id": "b",
-          "text": "La roquette"
-        },
-        {
-          "id": "c",
-          "text": "Le basilic"
-        },
-        {
-          "id": "d",
-          "text": "La menthe"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "Pense à une herbe très utilisée en Ligurie.",
-      "explanation": "Le pesto génois associe basilic, pignons, ail, fromage et huile d’olive.",
-      "sourceLabel": "Larousse Gastronomique",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "ingredients"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0012",
-      "type": "multiple_choice",
-      "category": "mythologies",
-      "subcategory": "greek",
-      "difficulty": 1,
-      "question": "Quel dieu grec règne sur la mer ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Apollon"
-        },
-        {
-          "id": "b",
-          "text": "Hermès"
-        },
-        {
-          "id": "c",
-          "text": "Arès"
-        },
-        {
-          "id": "d",
-          "text": "Poséidon"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "Son attribut est un trident.",
-      "explanation": "Poséidon est associé à la mer, aux séismes et aux chevaux, et porte souvent un trident.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "greek"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0013",
-      "type": "multiple_choice",
-      "category": "popular-culture",
-      "subcategory": "comics",
-      "difficulty": 1,
-      "question": "Quel reporter belge voyage avec le chien Milou ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Tintin"
-        },
-        {
-          "id": "b",
-          "text": "Spirou"
-        },
-        {
-          "id": "c",
-          "text": "Gaston Lagaffe"
-        },
-        {
-          "id": "d",
-          "text": "Lucky Luke"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "Le héros porte souvent une houppette.",
-      "explanation": "Créé par Hergé, Tintin parcourt le monde avec Milou et le capitaine Haddock.",
-      "sourceLabel": "Bibliothèque nationale de France",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "comics"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0014",
-      "type": "multiple_choice",
-      "category": "world-cultures",
-      "subcategory": "festivals",
-      "difficulty": 1,
-      "question": "Dans quel pays la fête de Diwali est-elle particulièrement importante ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le Japon"
-        },
-        {
-          "id": "b",
-          "text": "L’Inde"
-        },
-        {
-          "id": "c",
-          "text": "Le Mexique"
-        },
-        {
-          "id": "d",
-          "text": "La Finlande"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "Des lampes à huile symbolisent la lumière.",
-      "explanation": "Diwali, souvent appelée fête des lumières, est célébrée par plusieurs traditions religieuses en Inde et au-delà.",
-      "sourceLabel": "UNESCO",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "festivals"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -582,12 +192,12 @@
       "explanation": "La victoire normande à Hastings entraîna une profonde transformation politique, sociale et linguistique de l’Angleterre médiévale.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "middle-ages"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -621,12 +231,12 @@
       "explanation": "L’édit accorda des droits aux protestants et contribua à apaiser les guerres de Religion, avant sa révocation en 1685.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "history-of-france"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -660,51 +270,12 @@
       "explanation": "La principauté d’Andorre occupe une vallée des Pyrénées entre ses deux grands voisins.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "countries"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "easy"
-    },
-    {
-      "id": "PAR-0018",
-      "type": "multiple_choice",
-      "category": "geography",
-      "subcategory": "france",
-      "difficulty": 2,
-      "question": "Dans quel massif se trouve le puy de Dôme ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Les Vosges"
-        },
-        {
-          "id": "b",
-          "text": "Le Massif central"
-        },
-        {
-          "id": "c",
-          "text": "Le Jura"
-        },
-        {
-          "id": "d",
-          "text": "Les Alpes"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "Pense aux volcans d’Auvergne.",
-      "explanation": "Le puy de Dôme est un volcan de la chaîne des Puys, au cœur de l’Auvergne.",
-      "sourceLabel": "National Geographic",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "france"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -738,12 +309,12 @@
       "explanation": "Les cellules bêta des îlots de Langerhans sécrètent l’insuline, essentielle à la régulation de la glycémie.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "human-body"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -777,12 +348,12 @@
       "explanation": "Les roches magmatiques cristallisent en profondeur ou se solidifient rapidement après une éruption.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "earth-sciences"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "easy"
     },
@@ -816,12 +387,12 @@
       "explanation": "Les accords de Westphalie redessinèrent l’équilibre européen et renforcèrent la souveraineté des États du Saint-Empire.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "modern-era"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -855,90 +426,12 @@
       "explanation": "Ce passage relie l’océan Atlantique à la mer Méditerranée et sépare l’Europe de l’Afrique.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "physical-geography"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0023",
-      "type": "multiple_choice",
-      "category": "science-nature",
-      "subcategory": "astronomy",
-      "difficulty": 3,
-      "question": "Quelle planète possède la Grande Tache rouge ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Saturne"
-        },
-        {
-          "id": "b",
-          "text": "Mars"
-        },
-        {
-          "id": "c",
-          "text": "Jupiter"
-        },
-        {
-          "id": "d",
-          "text": "Neptune"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "Cherche la plus grande planète du Système solaire.",
-      "explanation": "La Grande Tache rouge est une immense tempête persistante observée dans l’atmosphère de Jupiter.",
-      "sourceLabel": "CNRS",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "astronomy"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0024",
-      "type": "multiple_choice",
-      "category": "arts-literature",
-      "subcategory": "painting",
-      "difficulty": 2,
-      "question": "Quel peintre néerlandais a réalisé La Nuit étoilée ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Piet Mondrian"
-        },
-        {
-          "id": "b",
-          "text": "Johannes Vermeer"
-        },
-        {
-          "id": "c",
-          "text": "Rembrandt"
-        },
-        {
-          "id": "d",
-          "text": "Vincent van Gogh"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "Pense à un artiste postimpressionniste aux tourbillons expressifs.",
-      "explanation": "Van Gogh peignit cette œuvre en 1889 depuis Saint-Rémy-de-Provence, avec un ciel fortement stylisé.",
-      "sourceLabel": "BnF",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "painting"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -972,12 +465,12 @@
       "explanation": "Sorti en 1993, le film popularisa des effets combinant animatroniques et images numériques.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "modern-cinema"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1011,51 +504,12 @@
       "explanation": "La guitare standard possède six cordes, même si des variantes à sept, huit ou douze cordes existent.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "instruments"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0027",
-      "type": "multiple_choice",
-      "category": "society-institutions",
-      "subcategory": "law",
-      "difficulty": 2,
-      "question": "Quel principe impose que nul ne soit puni pour un acte qui n’était pas interdit au moment où il a été commis ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "La séparation des pouvoirs"
-        },
-        {
-          "id": "b",
-          "text": "La présomption de majorité"
-        },
-        {
-          "id": "c",
-          "text": "La non-rétroactivité de la loi pénale plus sévère"
-        },
-        {
-          "id": "d",
-          "text": "La publicité des débats"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "Il concerne le rapport entre une loi nouvelle et des faits passés.",
-      "explanation": "Ce principe protège la sécurité juridique et empêche l’application rétroactive d’une incrimination plus sévère.",
-      "sourceLabel": "Vie publique",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "law"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1089,51 +543,12 @@
       "explanation": "Seul le gardien peut manipuler volontairement le ballon avec les mains dans sa propre surface de réparation.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "football"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0029",
-      "type": "multiple_choice",
-      "category": "technology",
-      "subcategory": "internet",
-      "difficulty": 2,
-      "question": "Quel protocole sécurisé est généralement utilisé pour consulter un site web chiffré ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "HTTPS"
-        },
-        {
-          "id": "b",
-          "text": "FTP"
-        },
-        {
-          "id": "c",
-          "text": "SMTP"
-        },
-        {
-          "id": "d",
-          "text": "Bluetooth"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "Un cadenas apparaît souvent dans le navigateur.",
-      "explanation": "HTTPS associe HTTP à une couche de chiffrement TLS afin de protéger les échanges entre navigateur et serveur.",
-      "sourceLabel": "W3C",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "internet"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1167,12 +582,12 @@
       "explanation": "Succinct et concis qualifient une expression brève qui va à l’essentiel.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "vocabulary"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1206,51 +621,12 @@
       "explanation": "Saisir colore rapidement la surface et développe des arômes grâce à une chaleur intense.",
       "sourceLabel": "Larousse Gastronomique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "techniques"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0032",
-      "type": "multiple_choice",
-      "category": "mythologies",
-      "subcategory": "roman",
-      "difficulty": 2,
-      "question": "Quel est l’équivalent romain du dieu grec Zeus ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Mars"
-        },
-        {
-          "id": "b",
-          "text": "Mercure"
-        },
-        {
-          "id": "c",
-          "text": "Neptune"
-        },
-        {
-          "id": "d",
-          "text": "Jupiter"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "Il partage la foudre et la souveraineté céleste.",
-      "explanation": "Jupiter est le dieu souverain du panthéon romain, maître du ciel et de la foudre.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "roman"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1284,90 +660,12 @@
       "explanation": "Mario apparaît dans de nombreux jeux de plateforme et affronte souvent Bowser pour sauver la princesse Peach.",
       "sourceLabel": "Bibliothèque nationale de France",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "video-games"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0034",
-      "type": "multiple_choice",
-      "category": "world-cultures",
-      "subcategory": "traditional-arts",
-      "difficulty": 2,
-      "question": "Quel art japonais consiste à plier du papier ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "L’ikebana"
-        },
-        {
-          "id": "b",
-          "text": "L’origami"
-        },
-        {
-          "id": "c",
-          "text": "Le kabuki"
-        },
-        {
-          "id": "d",
-          "text": "Le bonsaï"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "L’activité part d’une feuille de papier.",
-      "explanation": "L’origami transforme une feuille par pliages successifs sans nécessiter de découpe dans sa forme classique.",
-      "sourceLabel": "UNESCO",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "traditional-arts"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0035",
-      "type": "multiple_choice",
-      "category": "history",
-      "subcategory": "scientific-history",
-      "difficulty": 3,
-      "question": "Qui formula les trois lois du mouvement publiées dans les Principia en 1687 ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Galilée"
-        },
-        {
-          "id": "b",
-          "text": "Johannes Kepler"
-        },
-        {
-          "id": "c",
-          "text": "Isaac Newton"
-        },
-        {
-          "id": "d",
-          "text": "Robert Hooke"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "Le savant est aussi lié à la gravitation universelle.",
-      "explanation": "Les Principia exposent une mécanique mathématique reliant mouvement terrestre et gravitation universelle.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "scientific-history"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1401,12 +699,12 @@
       "explanation": "Le Jutland danois est relié au continent européen par une frontière avec le nord de l’Allemagne.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "maps-and-borders"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1440,51 +738,12 @@
       "explanation": "Les plumes sont une caractéristique propre aux oiseaux actuels, même si certains dinosaures en possédaient aussi.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "animals"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0038",
-      "type": "multiple_choice",
-      "category": "arts-literature",
-      "subcategory": "theatre",
-      "difficulty": 3,
-      "question": "Dans la tragédie de Shakespeare, quel prince danois hésite à venger son père ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Macbeth"
-        },
-        {
-          "id": "b",
-          "text": "Hamlet"
-        },
-        {
-          "id": "c",
-          "text": "Othello"
-        },
-        {
-          "id": "d",
-          "text": "Lear"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "La pièce se déroule au château d’Elseneur.",
-      "explanation": "Hamlet enquête sur la mort de son père et interroge sans cesse le sens de l’action, de la vérité et de la mort.",
-      "sourceLabel": "BnF",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "theatre"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1518,12 +777,12 @@
       "explanation": "Le David de Michel-Ange, taillé dans le marbre, est devenu un symbole de la Renaissance florentine.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sculpture"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
     },
@@ -1557,53 +816,14 @@
       "explanation": "Le cubisme, développé notamment par Picasso et Braque, rompt avec la perspective traditionnelle.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "art-movements"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "medium"
-    },
-    {
-      "id": "PAR-0041",
-      "type": "multiple_choice",
-      "category": "history",
-      "subcategory": "contemporary-history",
-      "difficulty": 4,
-      "question": "Quel plan américain soutint la reconstruction économique de l’Europe après 1945 ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le plan Marshall"
-        },
-        {
-          "id": "b",
-          "text": "Le plan Dawes"
-        },
-        {
-          "id": "c",
-          "text": "Le plan Schlieffen"
-        },
-        {
-          "id": "d",
-          "text": "Le plan Young"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "Il porte le nom d’un secrétaire d’État américain.",
-      "explanation": "Annoncé en 1947, ce programme d’aide financière et matérielle accompagna la reconstruction de plusieurs pays européens.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "contemporary-history"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
     },
     {
       "id": "PAR-0042",
@@ -1635,12 +855,12 @@
       "explanation": "Le Danube relie une succession de capitales d’Europe centrale et du Sud-Est avant de se jeter dans la mer Noire.",
       "sourceLabel": "National Geographic",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "rivers"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
     },
@@ -1674,90 +894,12 @@
       "explanation": "Dans un écoulement idéal, une augmentation de vitesse s’accompagne d’une diminution de pression le long d’une ligne de courant.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "physics"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0044",
-      "type": "multiple_choice",
-      "category": "arts-literature",
-      "subcategory": "architecture",
-      "difficulty": 4,
-      "question": "Quel architecte conçut la villa Savoye à Poissy ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Walter Gropius"
-        },
-        {
-          "id": "b",
-          "text": "Frank Lloyd Wright"
-        },
-        {
-          "id": "c",
-          "text": "Auguste Perret"
-        },
-        {
-          "id": "d",
-          "text": "Le Corbusier"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "Pense aux pilotis et au toit-terrasse.",
-      "explanation": "La villa Savoye illustre les cinq points de l’architecture moderne formulés par Le Corbusier.",
-      "sourceLabel": "BnF",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "architecture"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0045",
-      "type": "multiple_choice",
-      "category": "cinema-series",
-      "subcategory": "series",
-      "difficulty": 3,
-      "question": "Dans Breaking Bad, quelle matière Walter White enseigne-t-il au début de la série ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "La chimie"
-        },
-        {
-          "id": "b",
-          "text": "La physique"
-        },
-        {
-          "id": "c",
-          "text": "Les mathématiques"
-        },
-        {
-          "id": "d",
-          "text": "La biologie"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "Son expertise devient centrale dans l’intrigue.",
-      "explanation": "Walter White est professeur de lycée avant de mettre ses compétences scientifiques au service d’une activité criminelle.",
-      "sourceLabel": "BFI",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "series"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
     },
@@ -1791,207 +933,12 @@
       "explanation": "Un crescendo demande d’accroître graduellement le volume sonore sur une durée donnée.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "music-theory"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0047",
-      "type": "multiple_choice",
-      "category": "society-institutions",
-      "subcategory": "european-union",
-      "difficulty": 3,
-      "question": "Quelle institution de l’Union européenne propose généralement les textes législatifs ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le Conseil européen"
-        },
-        {
-          "id": "b",
-          "text": "La Cour des comptes européenne"
-        },
-        {
-          "id": "c",
-          "text": "La Commission européenne"
-        },
-        {
-          "id": "d",
-          "text": "La Banque centrale européenne"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "Elle joue un rôle d’initiative et d’exécution.",
-      "explanation": "La Commission dispose en principe de l’initiative législative, puis le Parlement et le Conseil examinent les propositions.",
-      "sourceLabel": "Vie publique",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "european-union"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0048",
-      "type": "multiple_choice",
-      "category": "sports",
-      "subcategory": "tennis",
-      "difficulty": 3,
-      "question": "Comment appelle-t-on un service que l’adversaire ne touche pas ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Un let"
-        },
-        {
-          "id": "b",
-          "text": "Un lob"
-        },
-        {
-          "id": "c",
-          "text": "Un passing-shot"
-        },
-        {
-          "id": "d",
-          "text": "Un ace"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "Le point se termine dès la mise en jeu.",
-      "explanation": "Un ace est un service gagnant directement, sans contact de la raquette adverse.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "tennis"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0049",
-      "type": "multiple_choice",
-      "category": "technology",
-      "subcategory": "cybersecurity",
-      "difficulty": 3,
-      "question": "Comment appelle-t-on une attaque qui cherche à tromper un utilisateur pour obtenir ses identifiants ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "L’hameçonnage"
-        },
-        {
-          "id": "b",
-          "text": "La défragmentation"
-        },
-        {
-          "id": "c",
-          "text": "La virtualisation"
-        },
-        {
-          "id": "d",
-          "text": "La compilation"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "L’attaque exploite surtout la confiance humaine.",
-      "explanation": "L’hameçonnage imite souvent un message légitime pour pousser la victime à cliquer ou transmettre des données.",
-      "sourceLabel": "W3C",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "cybersecurity"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0050",
-      "type": "multiple_choice",
-      "category": "french-language",
-      "subcategory": "figures-of-speech",
-      "difficulty": 3,
-      "question": "Quelle figure rapproche deux éléments avec un outil comme « tel » ou « comme » ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "La métaphore"
-        },
-        {
-          "id": "b",
-          "text": "La comparaison"
-        },
-        {
-          "id": "c",
-          "text": "L’oxymore"
-        },
-        {
-          "id": "d",
-          "text": "La métonymie"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "La relation est signalée par un mot-outil.",
-      "explanation": "La comparaison met explicitement en relation un comparé et un comparant grâce à un outil comparatif.",
-      "sourceLabel": "Académie française",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "figures-of-speech"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0051",
-      "type": "multiple_choice",
-      "category": "gastronomy",
-      "subcategory": "world-cuisine",
-      "difficulty": 3,
-      "question": "Quel ingrédient constitue la base du houmous ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "La lentille corail"
-        },
-        {
-          "id": "b",
-          "text": "Le haricot rouge"
-        },
-        {
-          "id": "c",
-          "text": "Le pois chiche"
-        },
-        {
-          "id": "d",
-          "text": "Le riz"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "Il s’agit d’une légumineuse beige.",
-      "explanation": "Le houmous mélange pois chiches, tahini, citron, ail et huile selon de nombreuses variantes régionales.",
-      "sourceLabel": "Larousse Gastronomique",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "world-cuisine"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
     },
@@ -2025,51 +972,12 @@
       "explanation": "Yggdrasil est un frêne immense autour duquel s’organisent les différents mondes nordiques.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "norse"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0053",
-      "type": "multiple_choice",
-      "category": "popular-culture",
-      "subcategory": "franchises",
-      "difficulty": 3,
-      "question": "Dans Star Wars, quelle arme est associée aux Jedi ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le sabre laser"
-        },
-        {
-          "id": "b",
-          "text": "Le tricordeur"
-        },
-        {
-          "id": "c",
-          "text": "Le phaser"
-        },
-        {
-          "id": "d",
-          "text": "Le Batarang"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "La lame est faite d’énergie lumineuse.",
-      "explanation": "Le sabre laser est utilisé par les Jedi et les Sith et symbolise leur lien avec la Force.",
-      "sourceLabel": "Bibliothèque nationale de France",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "franchises"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
     },
@@ -2103,12 +1011,12 @@
       "explanation": "Le kilt est une jupe plissée portée dans différents contextes cérémoniels et culturels en Écosse.",
       "sourceLabel": "UNESCO",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "clothing"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
     },
@@ -2142,51 +1050,12 @@
       "explanation": "La révolte entraîna la dissolution du pouvoir politique de la Compagnie et le passage de l’Inde sous administration directe de la Couronne.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "major-events"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0056",
-      "type": "multiple_choice",
-      "category": "geography",
-      "subcategory": "human-geography",
-      "difficulty": 4,
-      "question": "Comment appelle-t-on une ville principale qui domine fortement le réseau urbain d’un pays ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Une ville nouvelle"
-        },
-        {
-          "id": "b",
-          "text": "Une conurbation"
-        },
-        {
-          "id": "c",
-          "text": "Une technopole"
-        },
-        {
-          "id": "d",
-          "text": "Une ville primatiale"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "Le terme décrit une domination urbaine nationale.",
-      "explanation": "Une ville primatiale concentre une part disproportionnée de la population, des fonctions politiques et des activités économiques.",
-      "sourceLabel": "National Geographic",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "human-geography"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
     },
@@ -2220,12 +1089,12 @@
       "explanation": "Les stomates s’ouvrent et se ferment pour contrôler l’entrée du dioxyde de carbone et la perte d’eau.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "plants"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
     },
@@ -2259,51 +1128,12 @@
       "explanation": "Le roman alterne les consciences des personnages et condense son action sur une seule journée.",
       "sourceLabel": "BnF",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "works-and-authors"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0059",
-      "type": "multiple_choice",
-      "category": "cinema-series",
-      "subcategory": "animation",
-      "difficulty": 4,
-      "question": "Quel studio japonais a produit Princesse Mononoké ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Toei Animation"
-        },
-        {
-          "id": "b",
-          "text": "Madhouse"
-        },
-        {
-          "id": "c",
-          "text": "Studio Ghibli"
-        },
-        {
-          "id": "d",
-          "text": "Production I.G"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "Le studio est associé à Miyazaki et Takahata.",
-      "explanation": "Réalisé par Hayao Miyazaki, le film confronte industrialisation, nature et forces spirituelles.",
-      "sourceLabel": "BFI",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "animation"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
     },
@@ -2337,92 +1167,14 @@
       "explanation": "Le Nostromo transporte l’équipage réveillé par un signal provenant d’un planétoïde.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "science-fiction"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "hard"
-    },
-    {
-      "id": "PAR-0061",
-      "type": "multiple_choice",
-      "category": "history",
-      "subcategory": "world-history",
-      "difficulty": 5,
-      "question": "Quel empire africain médiéval eut Tombouctou comme grand centre intellectuel et commercial ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "L’Empire du Mali"
-        },
-        {
-          "id": "b",
-          "text": "L’Empire songhaï uniquement"
-        },
-        {
-          "id": "c",
-          "text": "Le royaume du Kongo"
-        },
-        {
-          "id": "d",
-          "text": "L’Empire aksoumite"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "Pense au règne de Mansa Moussa.",
-      "explanation": "Sous les souverains maliens, notamment au XIVe siècle, Tombouctou devint un foyer majeur d’échanges et d’études islamiques.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "world-history"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0062",
-      "type": "multiple_choice",
-      "category": "geography",
-      "subcategory": "world-regions",
-      "difficulty": 5,
-      "question": "Quel plateau élevé occupe une grande partie de la Bolivie et du Pérou ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le Deccan"
-        },
-        {
-          "id": "b",
-          "text": "L’Altiplano"
-        },
-        {
-          "id": "c",
-          "text": "Le plateau du Colorado"
-        },
-        {
-          "id": "d",
-          "text": "Le Pamir"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "Il appartient à la cordillère des Andes.",
-      "explanation": "L’Altiplano andin est l’un des plus hauts grands plateaux habités du monde et comprend le lac Titicaca.",
-      "sourceLabel": "National Geographic",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "world-regions"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
     },
     {
       "id": "PAR-0063",
@@ -2454,129 +1206,12 @@
       "explanation": "Le nombre quantique azimutal, noté l, distingue notamment les sous-couches s, p, d et f.",
       "sourceLabel": "CNRS",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "chemistry"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0064",
-      "type": "multiple_choice",
-      "category": "arts-literature",
-      "subcategory": "world-literature",
-      "difficulty": 5,
-      "question": "Quel auteur japonais a écrit Le Pavillon d’or ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Yasunari Kawabata"
-        },
-        {
-          "id": "b",
-          "text": "Kenzaburō Ōe"
-        },
-        {
-          "id": "c",
-          "text": "Haruki Murakami"
-        },
-        {
-          "id": "d",
-          "text": "Yukio Mishima"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "L’auteur fut une figure majeure et controversée du XXe siècle japonais.",
-      "explanation": "Le roman s’inspire de l’incendie du pavillon Kinkaku-ji et explore l’obsession de la beauté.",
-      "sourceLabel": "BnF",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "world-literature"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0065",
-      "type": "multiple_choice",
-      "category": "cinema-series",
-      "subcategory": "film-language",
-      "difficulty": 5,
-      "question": "Comment appelle-t-on un plan filmé sans coupe apparente pendant une longue durée ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Un plan-séquence"
-        },
-        {
-          "id": "b",
-          "text": "Un champ-contrechamp"
-        },
-        {
-          "id": "c",
-          "text": "Un insert"
-        },
-        {
-          "id": "d",
-          "text": "Un raccord regard"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "La caméra peut se déplacer, mais le montage ne coupe pas.",
-      "explanation": "Le plan-séquence conserve la continuité temporelle et spatiale au sein d’une prise prolongée.",
-      "sourceLabel": "BFI",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "film-language"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0066",
-      "type": "multiple_choice",
-      "category": "music",
-      "subcategory": "jazz-and-blues",
-      "difficulty": 4,
-      "question": "Quel saxophoniste a composé et enregistré A Love Supreme ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Charlie Parker"
-        },
-        {
-          "id": "b",
-          "text": "John Coltrane"
-        },
-        {
-          "id": "c",
-          "text": "Sonny Rollins"
-        },
-        {
-          "id": "d",
-          "text": "Coleman Hawkins"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "Le musicien est associé au saxophone ténor et au jazz modal.",
-      "explanation": "Publié en 1965, l’album est une suite spirituelle majeure du jazz modal.",
-      "sourceLabel": "Philharmonie de Paris",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "jazz-and-blues"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -2610,12 +1245,12 @@
       "explanation": "Le Conseil de sécurité dispose de pouvoirs spécifiques au titre de la Charte, dont des sanctions ou l’autorisation de mesures coercitives.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "international-organizations"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -2649,51 +1284,12 @@
       "explanation": "Le décathlon se déroule sur deux jours et additionne des performances de courses, sauts et lancers.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "athletics"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0069",
-      "type": "multiple_choice",
-      "category": "technology",
-      "subcategory": "computing-history",
-      "difficulty": 4,
-      "question": "Quel langage fut créé par Dennis Ritchie au début des années 1970 ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le langage C"
-        },
-        {
-          "id": "b",
-          "text": "Pascal"
-        },
-        {
-          "id": "c",
-          "text": "Java"
-        },
-        {
-          "id": "d",
-          "text": "Python"
-        }
-      ],
-      "correctAnswerId": "a",
-      "contextualHint": "Il est étroitement lié à Unix.",
-      "explanation": "Le langage C fut développé aux Bell Labs et joua un rôle majeur dans la conception d’Unix.",
-      "sourceLabel": "W3C",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "computing-history"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -2727,51 +1323,12 @@
       "explanation": "Le terme vient de l’arabe al-jabr, présent dans le titre d’un ouvrage d’al-Khwarizmi.",
       "sourceLabel": "Académie française",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "etymology"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0071",
-      "type": "multiple_choice",
-      "category": "gastronomy",
-      "subcategory": "pastry",
-      "difficulty": 4,
-      "question": "Quelle pâte sert traditionnellement à préparer des éclairs ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "La pâte feuilletée"
-        },
-        {
-          "id": "b",
-          "text": "La pâte brisée"
-        },
-        {
-          "id": "c",
-          "text": "La pâte à choux"
-        },
-        {
-          "id": "d",
-          "text": "La pâte sablée"
-        }
-      ],
-      "correctAnswerId": "c",
-      "contextualHint": "La même pâte sert aux chouquettes et aux profiteroles.",
-      "explanation": "La pâte à choux gonfle grâce à la vapeur et forme une cavité prête à être garnie.",
-      "sourceLabel": "Larousse Gastronomique",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "pastry"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -2805,12 +1362,12 @@
       "explanation": "Anubis protège les rites funéraires et accompagne symboliquement les morts dans leur passage.",
       "sourceLabel": "Encyclopædia Britannica",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "egyptian"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -2844,51 +1401,12 @@
       "explanation": "Les joueurs collectent des informations pour identifier les trois éléments cachés du crime.",
       "sourceLabel": "Bibliothèque nationale de France",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "toys-and-games"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0074",
-      "type": "multiple_choice",
-      "category": "world-cultures",
-      "subcategory": "architecture",
-      "difficulty": 4,
-      "question": "Comment appelle-t-on les portes monumentales marquant l’entrée d’un sanctuaire shinto ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Les stupas"
-        },
-        {
-          "id": "b",
-          "text": "Les torii"
-        },
-        {
-          "id": "c",
-          "text": "Les minarets"
-        },
-        {
-          "id": "d",
-          "text": "Les ziggourats"
-        }
-      ],
-      "correctAnswerId": "b",
-      "contextualHint": "Elles sont souvent peintes en rouge vermillon.",
-      "explanation": "Les torii signalent symboliquement le passage de l’espace ordinaire vers l’espace sacré.",
-      "sourceLabel": "UNESCO",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "architecture"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -2922,51 +1440,12 @@
       "explanation": "Diffusée à partir de 1963, la série repose sur la régénération du personnage principal et le voyage dans le temps.",
       "sourceLabel": "BFI",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "television-history"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0076",
-      "type": "multiple_choice",
-      "category": "music",
-      "subcategory": "world-music",
-      "difficulty": 5,
-      "question": "Quel instrument à cordes pincées est central dans la musique classique de l’Inde du Nord ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Le shamisen"
-        },
-        {
-          "id": "b",
-          "text": "Le koto"
-        },
-        {
-          "id": "c",
-          "text": "Le oud"
-        },
-        {
-          "id": "d",
-          "text": "Le sitar"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "Ravi Shankar l’a fait connaître internationalement.",
-      "explanation": "Le sitar utilise des cordes mélodiques et sympathiques, produisant une résonance caractéristique de la musique hindoustanie.",
-      "sourceLabel": "Philharmonie de Paris",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "world-music"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -3000,12 +1479,12 @@
       "explanation": "Le thérémine contrôle hauteur et volume grâce aux mouvements des mains autour de deux antennes.",
       "sourceLabel": "Philharmonie de Paris",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "electronic-music"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -3039,12 +1518,12 @@
       "explanation": "Un monopole est caractérisé par un offreur unique face à de nombreux acheteurs, avec des barrières à l’entrée importantes.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "economics"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     },
@@ -3078,51 +1557,12 @@
       "explanation": "La socialisation transmet des manières d’agir, de penser et de se comporter au sein de différents groupes.",
       "sourceLabel": "Vie publique",
       "sourceUrl": null,
-      "verificationStatus": "to_verify",
+      "verificationStatus": "verified",
       "tags": [
         "sociology"
       ],
       "estimatedTimeSeconds": 35,
-      "status": "generated",
-      "version": 1,
-      "wagerLevel": "expert"
-    },
-    {
-      "id": "PAR-0080",
-      "type": "multiple_choice",
-      "category": "sports",
-      "subcategory": "sport-history",
-      "difficulty": 5,
-      "question": "Dans quelle ville furent organisés les premiers Jeux olympiques modernes en 1896 ?",
-      "answers": [
-        {
-          "id": "a",
-          "text": "Paris"
-        },
-        {
-          "id": "b",
-          "text": "Londres"
-        },
-        {
-          "id": "c",
-          "text": "Rome"
-        },
-        {
-          "id": "d",
-          "text": "Athènes"
-        }
-      ],
-      "correctAnswerId": "d",
-      "contextualHint": "La ville renvoie directement à l’Antiquité grecque.",
-      "explanation": "Le choix d’Athènes soulignait la référence aux Jeux antiques, même si le programme moderne était différent.",
-      "sourceLabel": "Encyclopædia Britannica",
-      "sourceUrl": null,
-      "verificationStatus": "to_verify",
-      "tags": [
-        "sport-history"
-      ],
-      "estimatedTimeSeconds": 35,
-      "status": "generated",
+      "status": "approved",
       "version": 1,
       "wagerLevel": "expert"
     }
