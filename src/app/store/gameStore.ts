@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { STANDARD_FORMAT } from "../../core/constants/game";
 import { INITIAL_JOKERS } from "../../core/constants/scoring";
 import { STORAGE_SCHEMA_VERSION } from "../../core/constants/storage";
+import { appendRecentQuestionGame, flattenRecentQuestionHistory, type RecentQuestionGame } from "../../core/engine/replayability";
 import {
   advanceRound,
   applyJoker,
@@ -42,10 +43,10 @@ import type {
 import {
   buildSavedGameEnvelope,
   clearSavedGame as clearSavedGameStorage,
-  loadRecentQuestionIds,
+  loadRecentQuestionHistory,
   loadSavedGame,
   saveGameEnvelope,
-  saveRecentQuestionIds,
+  saveRecentQuestionHistory,
 } from "./persistence";
 
 export const DEFAULT_TRIO_PLAYERS: [Player, Player, Player] = [
@@ -155,6 +156,7 @@ interface GameStoreState {
   persistenceError: string | undefined;
   engineError: string | undefined;
   recentQuestionIds: string[];
+  recentQuestionHistory: RecentQuestionGame[];
   saveVersion: number;
   navigate: (screen: AppScreen) => void;
   setPlayerMode: (mode: PlayerMode) => void;
@@ -164,6 +166,7 @@ interface GameStoreState {
   resetDemo: () => void;
   clearRecentQuestions: () => void;
   startNewGame: (seed?: string | undefined) => void;
+  startRematch: () => void;
   startConfiguredGame: () => void;
   startCurrentRound: (roundIndex?: number | undefined) => void;
   loadCurrentQuestion: (input: EngineQuestionInput) => void;
@@ -190,7 +193,14 @@ interface GameStoreState {
   setEngineState: (gameState: GameState) => void;
 }
 
-function createDefaultConfig(players: PlayerRoster, seed = `trium-${Date.now()}`): GameConfig {
+function createGameSeed(): string {
+  if (typeof globalThis.crypto !== "undefined" && "randomUUID" in globalThis.crypto) {
+    return `trium-${globalThis.crypto.randomUUID()}`;
+  }
+  return `trium-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+}
+
+function createDefaultConfig(players: PlayerRoster, seed = createGameSeed()): GameConfig {
   return {
     id: "trium-standard-local",
     mode: "standard",
@@ -225,9 +235,16 @@ function persistencePatch(input: {
   gameState: GameState | null;
   screen: AppScreen;
   selectedAnswerId: string | undefined;
-}): Pick<GameStoreState, "hasSavedGame" | "persistenceError" | "recentQuestionIds"> {
+}): Pick<GameStoreState, "hasSavedGame" | "persistenceError" | "recentQuestionIds" | "recentQuestionHistory"> {
   if (input.gameState === null) {
-    return { hasSavedGame: false, persistenceError: undefined, recentQuestionIds: [] };
+    const recent = loadRecentQuestionHistory();
+    const history = recent.ok ? recent.value : [];
+    return {
+      hasSavedGame: false,
+      persistenceError: recent.ok ? undefined : recent.error,
+      recentQuestionIds: flattenRecentQuestionHistory(history),
+      recentQuestionHistory: history,
+    };
   }
   const envelope = buildSavedGameEnvelope({
     gameState: input.gameState,
@@ -240,12 +257,14 @@ function persistencePatch(input: {
       hasSavedGame: true,
       persistenceError: saved.error,
       recentQuestionIds: input.gameState.recentlyPlayedQuestionIds,
+      recentQuestionHistory: input.gameState.recentQuestionHistory,
     };
   }
   return {
     hasSavedGame: true,
     persistenceError: undefined,
     recentQuestionIds: saved.value.recentQuestionIds,
+    recentQuestionHistory: saved.value.recentQuestionHistory,
   };
 }
 
@@ -256,7 +275,7 @@ function errorMessage(error: unknown): string {
   return "Action moteur impossible.";
 }
 
-function restoreSavedState(): Pick<GameStoreState, "gameState" | "screen" | "selectedAnswerId" | "session" | "hasSavedGame" | "persistenceError" | "recentQuestionIds"> {
+function restoreSavedState(): Pick<GameStoreState, "gameState" | "screen" | "selectedAnswerId" | "session" | "hasSavedGame" | "persistenceError" | "recentQuestionIds" | "recentQuestionHistory"> {
   const saved = loadSavedGame();
   if (!saved.ok) {
     return {
@@ -267,10 +286,12 @@ function restoreSavedState(): Pick<GameStoreState, "gameState" | "screen" | "sel
       hasSavedGame: false,
       persistenceError: saved.error,
       recentQuestionIds: [],
+      recentQuestionHistory: [],
     };
   }
   if (saved.value === null) {
-    const recent = loadRecentQuestionIds();
+    const recent = loadRecentQuestionHistory();
+    const history = recent.ok ? recent.value : [];
     return {
       gameState: null,
       screen: "home",
@@ -278,7 +299,8 @@ function restoreSavedState(): Pick<GameStoreState, "gameState" | "screen" | "sel
       session: DEFAULT_SESSION,
       hasSavedGame: false,
       persistenceError: recent.ok ? undefined : recent.error,
-      recentQuestionIds: recent.ok ? recent.value : [],
+      recentQuestionIds: flattenRecentQuestionHistory(history),
+      recentQuestionHistory: history,
     };
   }
 
@@ -291,6 +313,7 @@ function restoreSavedState(): Pick<GameStoreState, "gameState" | "screen" | "sel
     hasSavedGame: true,
     persistenceError: undefined,
     recentQuestionIds: saved.value.recentQuestionIds,
+    recentQuestionHistory: saved.value.recentQuestionHistory,
   };
 }
 
@@ -306,6 +329,7 @@ export const useGameStore = create<GameStoreState>()((set) => ({
   persistenceError: restoredState.persistenceError,
   engineError: undefined,
   recentQuestionIds: restoredState.recentQuestionIds,
+  recentQuestionHistory: restoredState.recentQuestionHistory,
   saveVersion: STORAGE_SCHEMA_VERSION,
   navigate: (screen) => set((state) => {
     const patch = persistencePatch({ gameState: state.gameState, screen, selectedAnswerId: state.selectedAnswerId });
@@ -367,22 +391,25 @@ export const useGameStore = create<GameStoreState>()((set) => ({
     };
   }),
   clearRecentQuestions: () => set((state) => {
-    const saved = saveRecentQuestionIds([]);
-    const gameState = state.gameState ? { ...state.gameState, recentlyPlayedQuestionIds: [] } : null;
+    const saved = saveRecentQuestionHistory([]);
+    const gameState = state.gameState ? { ...state.gameState, recentlyPlayedQuestionIds: [], recentQuestionHistory: [] } : null;
     const patch = persistencePatch({ gameState, screen: state.screen, selectedAnswerId: state.selectedAnswerId });
     return {
       gameState,
       recentQuestionIds: [],
+      recentQuestionHistory: [],
       persistenceError: saved.ok ? patch.persistenceError : saved.error,
       hasSavedGame: patch.hasSavedGame,
     };
   }),
   startNewGame: (seed) => set((state) => {
-    const recent = loadRecentQuestionIds();
+    const recent = loadRecentQuestionHistory();
+    const history = recent.ok ? recent.value : state.recentQuestionHistory;
     const config = createDefaultConfig(state.session.players, seed);
     const gameState = createGame({
       config,
-      recentlyPlayedQuestionIds: recent.ok ? recent.value : state.recentQuestionIds,
+      recentlyPlayedQuestionIds: flattenRecentQuestionHistory(history),
+      recentQuestionHistory: history,
       now: Date.now(),
     });
     const session = sessionFromGameState(gameState, state.session);
@@ -397,6 +424,35 @@ export const useGameStore = create<GameStoreState>()((set) => ({
       persistenceError: recent.ok ? patch.persistenceError : recent.error,
       hasSavedGame: patch.hasSavedGame,
       recentQuestionIds: patch.recentQuestionIds,
+      recentQuestionHistory: patch.recentQuestionHistory,
+    };
+  }),
+  startRematch: () => set((state) => {
+    if (!state.gameState) {
+      return { engineError: "Aucune partie a rejouer." };
+    }
+    const completedHistory = appendRecentQuestionGame({
+      history: state.recentQuestionHistory,
+      seed: state.gameState.config.seed,
+      questionIds: state.gameState.usedQuestionIds,
+    });
+    const config = { ...state.gameState.config, seed: createGameSeed() };
+    const gameState = createGame({
+      config,
+      recentlyPlayedQuestionIds: flattenRecentQuestionHistory(completedHistory),
+      recentQuestionHistory: completedHistory,
+      now: Date.now(),
+    });
+    const session = sessionFromGameState(gameState, state.session);
+    const patch = persistencePatch({ gameState, screen: "game-intro", selectedAnswerId: undefined });
+    return {
+      screen: "game-intro",
+      previousScreen: state.screen,
+      selectedAnswerId: undefined,
+      gameState,
+      session,
+      engineError: undefined,
+      ...patch,
     };
   }),
   startConfiguredGame: () => set((state) => {
@@ -429,9 +485,7 @@ export const useGameStore = create<GameStoreState>()((set) => ({
     }
     try {
       const gameState = loadQuestion(state.gameState, { questions: input.questions, questionId: input.questionId, now: input.now ?? Date.now() });
-      const recentQuestionIds = [...new Set([...state.recentQuestionIds, ...gameState.usedQuestionIds])].slice(-50);
-      saveRecentQuestionIds(recentQuestionIds);
-      const syncedGameState = { ...gameState, recentlyPlayedQuestionIds: recentQuestionIds };
+      const syncedGameState = { ...gameState, recentlyPlayedQuestionIds: state.recentQuestionIds, recentQuestionHistory: state.recentQuestionHistory };
       const patch = persistencePatch({ gameState: syncedGameState, screen: "game", selectedAnswerId: undefined });
       return { gameState: syncedGameState, screen: "game", selectedAnswerId: undefined, session: sessionFromGameState(syncedGameState, state.session), engineError: undefined, ...patch };
     } catch (error) {
@@ -493,7 +547,17 @@ export const useGameStore = create<GameStoreState>()((set) => ({
       return { engineError: "Aucune partie active." };
     }
     try {
-      const gameState = completeGame(state.gameState, now ?? Date.now());
+      const completed = completeGame(state.gameState, now ?? Date.now());
+      const recentQuestionHistory = appendRecentQuestionGame({
+        history: state.recentQuestionHistory,
+        seed: completed.config.seed,
+        questionIds: completed.usedQuestionIds,
+      });
+      const gameState = {
+        ...completed,
+        recentQuestionHistory,
+        recentlyPlayedQuestionIds: flattenRecentQuestionHistory(recentQuestionHistory),
+      };
       const patch = persistencePatch({ gameState, screen: "game-result", selectedAnswerId: undefined });
       return { gameState, screen: "game-result", selectedAnswerId: undefined, session: sessionFromGameState(gameState, state.session), engineError: undefined, ...patch };
     } catch (error) {

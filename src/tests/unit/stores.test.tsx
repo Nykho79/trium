@@ -65,7 +65,7 @@ function resetStores() {
   useGameStore.getState().resetDemo();
   useSettingsStore.getState().resetSettings();
   useAudioStore.getState().resetAudio();
-  useGameStore.setState({ persistenceError: undefined, engineError: undefined, hasSavedGame: false, gameState: null, recentQuestionIds: [] });
+  useGameStore.setState({ persistenceError: undefined, engineError: undefined, hasSavedGame: false, gameState: null, recentQuestionIds: [], recentQuestionHistory: [] });
 }
 
 describe("zustand stores", () => {
@@ -85,6 +85,49 @@ describe("zustand stores", () => {
     expect(rawSave).not.toBeNull();
   });
 
+  it("genere une nouvelle seed quand aucune seed n'est forcee", () => {
+    useGameStore.getState().startNewGame();
+    const firstSeed = useGameStore.getState().gameState?.config.seed;
+
+    useGameStore.getState().startNewGame();
+    const secondSeed = useGameStore.getState().gameState?.config.seed;
+
+    expect(firstSeed).toBeDefined();
+    expect(secondSeed).toBeDefined();
+    expect(secondSeed).not.toBe(firstSeed);
+  });
+
+  it("lance une revanche avec les memes regles et de nouvelles questions", () => {
+    useGameStore.getState().startNewGame("seed-before-rematch");
+    const before = useGameStore.getState().gameState;
+    if (!before) {
+      throw new Error("La partie initiale devrait exister.");
+    }
+    useGameStore.setState({ gameState: { ...before, usedQuestionIds: ["q-1", "q-2"] } });
+
+    useGameStore.getState().startRematch();
+    const after = useGameStore.getState();
+
+    expect(after.gameState?.config.seed).toBeDefined();
+    expect(after.gameState?.config.seed).not.toBe("seed-before-rematch");
+    expect(after.gameState?.config.rounds).toEqual(before.config.rounds);
+    expect(after.recentQuestionHistory.at(-1)?.questionIds).toEqual(["q-1", "q-2"]);
+    expect(after.gameState?.recentlyPlayedQuestionIds).toEqual(["q-1", "q-2"]);
+  });
+  it("conserve l'historique recent pendant la navigation sans partie active", () => {
+    localStorage.setItem(STORAGE_KEYS.recentQuestions, JSON.stringify({
+      version: 1,
+      questionIds: ["q-menu"],
+      games: [{ seed: "seed-menu", questionIds: ["q-menu"], completedAt: "2026-07-17T00:00:00.000Z" }],
+    }));
+    useGameStore.setState({ gameState: null, recentQuestionIds: ["q-menu"], recentQuestionHistory: [{ seed: "seed-menu", questionIds: ["q-menu"], completedAt: "2026-07-17T00:00:00.000Z" }] });
+
+    useGameStore.getState().navigate("settings");
+    const state = useGameStore.getState();
+
+    expect(state.recentQuestionIds).toEqual(["q-menu"]);
+    expect(state.recentQuestionHistory).toHaveLength(1);
+  });
   it("reprend une partie sauvegardee apres suppression de l'etat en memoire", () => {
     useGameStore.getState().startNewGame("seed-reprise");
     useGameStore.setState({ gameState: null, hasSavedGame: false, screen: "home" });

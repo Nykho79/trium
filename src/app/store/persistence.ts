@@ -2,6 +2,8 @@ import { z } from "zod";
 import { STORAGE_KEYS, STORAGE_SCHEMA_VERSION } from "../../core/constants/storage";
 import { gameStateSchema } from "../../core/schemas";
 import type { AppScreen, GameState, QuestionId } from "../../core/types";
+import type { RecentQuestionGame } from "../../core/engine/replayability";
+import { flattenRecentQuestionHistory, trimRecentQuestionHistory } from "../../core/engine/replayability";
 
 export interface StorageLike {
   getItem: (key: string) => string | null;
@@ -34,6 +36,12 @@ const appScreenSchema = z.enum([
   "error",
 ]);
 
+const recentQuestionGameSchema = z.object({
+  seed: z.string().min(1),
+  questionIds: z.array(z.string().min(1)),
+  completedAt: z.string().datetime(),
+});
+
 export const savedGameEnvelopeSchema = z.object({
   version: z.literal(STORAGE_SCHEMA_VERSION),
   savedAt: z.string().datetime(),
@@ -41,13 +49,15 @@ export const savedGameEnvelopeSchema = z.object({
   selectedAnswerId: z.string().min(1).optional(),
   gameState: gameStateSchema,
   recentQuestionIds: z.array(z.string().min(1)),
+  recentQuestionHistory: z.array(recentQuestionGameSchema).default([]),
 });
 
 export type SavedGameEnvelope = z.infer<typeof savedGameEnvelopeSchema>;
 
 const recentQuestionHistorySchema = z.object({
   version: z.literal(STORAGE_SCHEMA_VERSION),
-  questionIds: z.array(z.string().min(1)),
+  questionIds: z.array(z.string().min(1)).default([]),
+  games: z.array(recentQuestionGameSchema).default([]),
 });
 
 function browserStorage(): StorageLike | undefined {
@@ -83,6 +93,7 @@ export function buildSavedGameEnvelope(input: {
     selectedAnswerId: input.selectedAnswerId,
     gameState: input.gameState,
     recentQuestionIds: input.gameState.recentlyPlayedQuestionIds,
+    recentQuestionHistory: input.gameState.recentQuestionHistory,
   };
 }
 
@@ -115,7 +126,7 @@ export function saveGameEnvelope(envelope: SavedGameEnvelope, storage = browserS
   }
   try {
     storage.setItem(STORAGE_KEYS.savedSession, JSON.stringify(validation.data));
-    saveRecentQuestionIds(validation.data.recentQuestionIds, storage);
+    saveRecentQuestionHistory(validation.data.recentQuestionHistory, storage);
     return { ok: true, value: validation.data };
   } catch (error) {
     return { ok: false, error: `Impossible d'ecrire la sauvegarde locale: ${stringifyError(error)}` };
@@ -150,7 +161,7 @@ export function migrateSavedGame(raw: unknown): PersistenceResult<SavedGameEnvel
   return { ok: true, value: parsed.data };
 }
 
-export function loadRecentQuestionIds(storage = browserStorage()): PersistenceResult<QuestionId[]> {
+export function loadRecentQuestionHistory(storage = browserStorage()): PersistenceResult<RecentQuestionGame[]> {
   if (!storage) {
     return { ok: true, value: [] };
   }
@@ -165,21 +176,51 @@ export function loadRecentQuestionIds(storage = browserStorage()): PersistenceRe
   if (!validation.success) {
     return { ok: false, error: "Historique recent ignore: format invalide." };
   }
-  return { ok: true, value: validation.data.questionIds };
+  if (validation.data.games.length > 0) {
+    return { ok: true, value: trimRecentQuestionHistory(validation.data.games) };
+  }
+  if (validation.data.questionIds.length === 0) {
+    return { ok: true, value: [] };
+  }
+  return {
+    ok: true,
+    value: [{ seed: "legacy", questionIds: [...new Set(validation.data.questionIds)], completedAt: new Date(0).toISOString() }],
+  };
 }
 
-export function saveRecentQuestionIds(questionIds: readonly QuestionId[], storage = browserStorage()): PersistenceResult<QuestionId[]> {
+export function saveRecentQuestionHistory(history: readonly RecentQuestionGame[], storage = browserStorage()): PersistenceResult<RecentQuestionGame[]> {
+  const trimmed = trimRecentQuestionHistory(history);
   if (!storage) {
-    return { ok: true, value: [...questionIds] };
+    return { ok: true, value: trimmed };
   }
-  const uniqueQuestionIds = [...new Set(questionIds)].slice(-50);
   try {
     storage.setItem(STORAGE_KEYS.recentQuestions, JSON.stringify({
       version: STORAGE_SCHEMA_VERSION,
-      questionIds: uniqueQuestionIds,
+      questionIds: flattenRecentQuestionHistory(trimmed),
+      games: trimmed,
     }));
-    return { ok: true, value: uniqueQuestionIds };
+    return { ok: true, value: trimmed };
   } catch (error) {
     return { ok: false, error: `Impossible d'ecrire l'historique recent: ${stringifyError(error)}` };
   }
+}
+
+export function loadRecentQuestionIds(storage = browserStorage()): PersistenceResult<QuestionId[]> {
+  const history = loadRecentQuestionHistory(storage);
+  if (!history.ok) {
+    return history;
+  }
+  return { ok: true, value: flattenRecentQuestionHistory(history.value) };
+}
+
+export function saveRecentQuestionIds(questionIds: readonly QuestionId[], storage = browserStorage()): PersistenceResult<QuestionId[]> {
+  const uniqueQuestionIds = [...new Set(questionIds)].slice(-250);
+  const history: RecentQuestionGame[] = uniqueQuestionIds.length > 0
+    ? [{ seed: "legacy", questionIds: uniqueQuestionIds, completedAt: new Date(0).toISOString() }]
+    : [];
+  const saved = saveRecentQuestionHistory(history, storage);
+  if (!saved.ok) {
+    return saved;
+  }
+  return { ok: true, value: flattenRecentQuestionHistory(saved.value) };
 }

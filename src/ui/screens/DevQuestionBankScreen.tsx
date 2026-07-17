@@ -3,13 +3,22 @@ import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { Panel } from "../components/Panel";
 import { ScreenFrame } from "../components/ScreenFrame";
-import { loadLocalQuestionBank } from "../../data/localQuestionBank";
+import { estimateQuestionAvailability, loadLocalQuestionBank } from "../../data/localQuestionBank";
 import { useGameStore } from "../../app/store/gameStore";
 
 export function DevQuestionBankScreen() {
   const navigate = useGameStore((state) => state.navigate);
+  const recentQuestionIds = useGameStore((state) => state.recentQuestionIds);
+  const recentQuestionHistory = useGameStore((state) => state.recentQuestionHistory);
   const bank = loadLocalQuestionBank();
   const sampleQuestions = bank.sourceQuestions.slice(0, 12);
+  const availability = estimateQuestionAvailability({
+    questions: bank.playableQuestions,
+    usedQuestionIds: [],
+    recentlyPlayedQuestionIds: recentQuestionIds,
+    recentQuestionHistory,
+    requiredCount: 39,
+  });
 
   return (
     <ScreenFrame title="Banque de questions">
@@ -29,6 +38,10 @@ export function DevQuestionBankScreen() {
           <Card accent="neutral"><span>Doublons exacts</span><strong>{bank.report.exactDuplicates.length}</strong></Card>
           <Card accent="neutral"><span>Doublons probables</span><strong>{bank.report.probableDuplicates.length}</strong></Card>
           <Card accent={bank.report.validationErrors.length > 0 ? "amber" : "cyan"}><span>Erreurs Zod</span><strong>{bank.report.validationErrors.length}</strong></Card>
+          <Card accent="cyan"><span>Jamais jouees</span><strong>{availability.neverPlayed}</strong></Card>
+          <Card accent="violet"><span>Hors 5 parties</span><strong>{availability.availableOutsideLastFive}</strong></Card>
+          <Card accent="violet"><span>Hors 2 parties</span><strong>{availability.availableOutsideLastTwo}</strong></Card>
+          <Card accent={availability.isInsufficient ? "amber" : "neutral"}><span>Recours recent</span><strong>{availability.recentOnly}</strong></Card>
         </div>
 
         <Panel className="question-report-grid">

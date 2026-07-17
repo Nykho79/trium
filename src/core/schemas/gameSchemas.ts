@@ -36,6 +36,12 @@ export const gameTimerStateSchema = z.object({
   }
 });
 
+export const recentQuestionGameSchema = z.object({
+  seed: z.string().min(1),
+  questionIds: z.array(z.string().min(1)),
+  completedAt: z.string().datetime(),
+});
+
 export const gameStateSchema = z.object({
   status: gameStatusSchema,
   config: gameConfigSchema,
@@ -48,6 +54,7 @@ export const gameStateSchema = z.object({
   lastAnswerResult: answerResultSchema.optional(),
   usedQuestionIds: z.array(z.string().min(1)),
   recentlyPlayedQuestionIds: z.array(z.string().min(1)),
+  recentQuestionHistory: z.array(recentQuestionGameSchema).default([]),
   jokers: jokerStateSchema,
   jokerEffects: jokerEffectStateSchema,
   score: scoreBreakdownSchema,

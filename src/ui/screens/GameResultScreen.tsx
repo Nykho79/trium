@@ -16,7 +16,7 @@ function finalTitle(score: number): string {
 
 export function GameResultScreen() {
   const navigate = useGameStore((state) => state.navigate);
-  const resetDemo = useGameStore((state) => state.resetDemo);
+  const startRematch = useGameStore((state) => state.startRematch);
   const session = useGameStore((state) => state.session);
   const gameState = useGameStore((state) => state.gameState);
   const totalQuestions = Math.max(5, gameState?.usedQuestionIds.length ?? session.usedQuestionIds.length);
@@ -74,7 +74,7 @@ export function GameResultScreen() {
 
         <div className="screen-actions">
           <Button variant="secondary" onClick={() => navigate("home")}>Accueil</Button>
-          <Button variant="primary" onClick={resetDemo}>Nouvelle partie</Button>
+          <Button variant="primary" onClick={startRematch}>Revanche</Button>
         </div>
       </section>
     </ScreenFrame>

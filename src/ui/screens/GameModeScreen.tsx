@@ -34,7 +34,7 @@ export function GameModeScreen() {
               <Button
                 variant={mode.enabled ? "primary" : "secondary"}
                 disabled={!mode.enabled}
-                onClick={() => startNewGame("trium-classique-v1")}
+                onClick={() => startNewGame()}
               >
                 {mode.enabled ? "Choisir le mode classique" : "Indisponible en V1"}
               </Button>

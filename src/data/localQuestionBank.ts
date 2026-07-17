@@ -16,6 +16,8 @@ import type {
   VisualMatrixQuestion,
 } from "../core/types";
 import { shuffleWithSeed } from "../core/engine/random";
+import type { RecentQuestionGame } from "../core/engine/replayability";
+import { estimateQuestionAvailability, rankedReplayabilityCandidates } from "../core/engine/replayability";
 import { questionSchema } from "../core/schemas/questionSchemas";
 const difficultySchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5)]);
 const verificationStatusSchema = z.enum(["to_verify", "verified", "rejected"]).default("to_verify");
@@ -125,6 +127,7 @@ export interface WeightedQuestionSelectionInput {
   roundKind?: RoundKind | undefined;
   usedQuestionIds: readonly QuestionId[];
   recentlyPlayedQuestionIds: readonly QuestionId[];
+  recentQuestionHistory?: readonly RecentQuestionGame[] | undefined;
   seed: string;
 }
 
@@ -552,8 +555,6 @@ export function loadLocalQuestionBank(): LoadedQuestionBank {
 }
 
 export function selectWeightedQuestion(input: WeightedQuestionSelectionInput): Question {
-  const used = new Set(input.usedQuestionIds);
-  const recent = new Set(input.recentlyPlayedQuestionIds);
   const byId = new Map(input.questions.map((question) => [question.id, question]));
   const categoryUsage = new Map<string, number>();
   const difficultyUsage = new Map<Difficulty, number>();
@@ -566,17 +567,21 @@ export function selectWeightedQuestion(input: WeightedQuestionSelectionInput): Q
     }
   }
 
-  const eligible = input.questions.filter((question) => {
-    const roundMatches = input.roundKind === undefined || question.kind === input.roundKind;
-    return roundMatches && !used.has(question.id);
+  const rankedCandidates = rankedReplayabilityCandidates({
+    questions: input.questions,
+    roundKind: input.roundKind,
+    usedQuestionIds: input.usedQuestionIds,
+    recentlyPlayedQuestionIds: input.recentlyPlayedQuestionIds,
+    recentQuestionHistory: input.recentQuestionHistory,
+    seed: input.seed,
   });
-  if (eligible.length === 0) {
+  if (rankedCandidates.length === 0) {
     throw new QuestionAvailabilityError("Aucune question disponible pour cette selection.");
   }
 
-  const withoutRecent = eligible.filter((question) => !recent.has(question.id));
-  const pool = withoutRecent.length > 0 ? withoutRecent : eligible;
-  const shuffled = shuffleWithSeed(pool, `${input.seed}:${input.roundKind ?? "all"}:${input.usedQuestionIds.length}`);
+  const bestTier = Math.min(...rankedCandidates.map((candidate) => candidate.tierIndex));
+  const pool = rankedCandidates.filter((candidate) => candidate.tierIndex === bestTier).map((candidate) => candidate.question);
+  const shuffled = shuffleWithSeed(pool, `${input.seed}:${input.roundKind ?? "all"}:${input.usedQuestionIds.length}:${bestTier}`);
   const ranked = [...shuffled].sort((left, right) => {
     const leftScore = (categoryUsage.get(left.categoryId) ?? 0) * 10 + (difficultyUsage.get(left.difficulty) ?? 0) * 6;
     const rightScore = (categoryUsage.get(right.categoryId) ?? 0) * 10 + (difficultyUsage.get(right.difficulty) ?? 0) * 6;
@@ -589,3 +594,5 @@ export function selectWeightedQuestion(input: WeightedQuestionSelectionInput): Q
   }
   return selected;
 }
+
+export { estimateQuestionAvailability };

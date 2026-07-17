@@ -13,6 +13,8 @@ import { assertAllowedWagerAmount, calculateWagerScore, coefficientForWagerDiffi
 import { calculateSynapseScore, correctSynapseOptionId } from "../../rounds/synapse";
 import { advantageById, calculateFinalConvergenceScore, canApplyFinalAdvantageToStep, finalStepForIndex, finalStepForQuestion, type FinalConvergenceAdvantageId } from "../../rounds/final-convergence";
 import { shuffleWithSeed } from "./random";
+import type { RecentQuestionGame } from "./replayability";
+import { rankedReplayabilityCandidates } from "./replayability";
 
 export class GameEngineError extends Error {
   constructor(message: string) {
@@ -24,6 +26,7 @@ export class GameEngineError extends Error {
 export interface CreateGameInput {
   config: GameConfig;
   recentlyPlayedQuestionIds?: QuestionId[] | undefined;
+  recentQuestionHistory?: RecentQuestionGame[] | undefined;
   now?: number | undefined;
 }
 
@@ -101,6 +104,7 @@ function cloneState(state: GameState): GameState {
     lastAnswerResult: state.lastAnswerResult ? { ...state.lastAnswerResult, score: { ...state.lastAnswerResult.score }, usedJokers: [...state.lastAnswerResult.usedJokers] } : undefined,
     usedQuestionIds: [...state.usedQuestionIds],
     recentlyPlayedQuestionIds: [...state.recentlyPlayedQuestionIds],
+    recentQuestionHistory: state.recentQuestionHistory.map((entry) => ({ ...entry, questionIds: [...entry.questionIds] })),
     jokers: {
       available: { ...state.jokers.available },
       used: { ...state.jokers.used },
@@ -433,22 +437,28 @@ function selectQuestion(state: GameState, questions: readonly Question[], questi
   if (!explicitQuestion && definition.kind === "final-convergence") {
     const expectedStep = finalStepForIndex(roundState.currentQuestionIndex);
     candidates = candidates.filter((question) => finalStepForQuestion(question) === expectedStep);
-  }  if (!explicitQuestion && definition.kind === "wager") {
+  }
+  if (!explicitQuestion && definition.kind === "wager") {
     if (!roundState.wagerCategoryId || roundState.wagerDifficulty === undefined || roundState.wagerAmount === undefined) {
       throw new GameEngineError("Le pari doit etre configure avant de charger une question.");
     }
     candidates = candidates.filter((question) => question.categoryId === roundState.wagerCategoryId && question.difficulty === roundState.wagerDifficulty);
   }
-  const used = new Set(state.usedQuestionIds);
-  const recent = new Set(state.recentlyPlayedQuestionIds);
-  const availableCandidates = candidates.filter((question) => !used.has(question.id));
-  const freshCandidates = availableCandidates.filter((question) => !recent.has(question.id));
-  const selectionPool = freshCandidates.length > 0 || !state.config.allowRecentlyPlayedFallback
-    ? freshCandidates
-    : availableCandidates;
+  const rankedCandidates = rankedReplayabilityCandidates({
+    questions: candidates,
+    roundKind: definition.kind,
+    usedQuestionIds: state.usedQuestionIds,
+    recentlyPlayedQuestionIds: state.recentlyPlayedQuestionIds,
+    recentQuestionHistory: state.recentQuestionHistory,
+    seed: state.config.seed,
+  });
+  const maxTier = state.config.allowRecentlyPlayedFallback ? 4 : 2;
+  const eligibleRanked = rankedCandidates.filter((candidate) => candidate.tierIndex <= maxTier);
+  const bestTier = eligibleRanked.length > 0 ? Math.min(...eligibleRanked.map((candidate) => candidate.tierIndex)) : Number.POSITIVE_INFINITY;
+  const selectionPool = eligibleRanked.filter((candidate) => candidate.tierIndex === bestTier).map((candidate) => candidate.question);
   const selected = explicitQuestion ?? shuffleWithSeed(
     selectionPool,
-    `${state.config.seed}:${definition.id}:${roundState.currentQuestionIndex}:${state.recentlyPlayedQuestionIds.length}`,
+    `${state.config.seed}:${definition.id}:${roundState.currentQuestionIndex}:${state.recentlyPlayedQuestionIds.length}:${bestTier}`,
   )[0];
 
   if (!selected) {
@@ -601,6 +611,7 @@ export function createGame(input: CreateGameInput): GameState {
     captainPlayerId: input.config.players[0].id,
     usedQuestionIds: [],
     recentlyPlayedQuestionIds: input.recentlyPlayedQuestionIds ?? [],
+    recentQuestionHistory: input.recentQuestionHistory ?? [],
     jokers: { available: { ...INITIAL_JOKERS }, used: zeroJokers(), disabled: [] },
     jokerEffects: emptyJokerEffects(),
     score: { ...emptyScore },

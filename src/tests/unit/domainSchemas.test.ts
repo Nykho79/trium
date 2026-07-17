@@ -171,6 +171,7 @@ describe("schemas metier centraux", () => {
       captainPlayerId: "player-1",
       usedQuestionIds: [],
       recentlyPlayedQuestionIds: [],
+      recentQuestionHistory: [],
       jokers: { available: jokerInventory, used: jokerInventory, disabled: [] },
       jokerEffects: { eliminatedOptionIds: [], secondChanceActive: false, secondChanceConsumed: false, changedQuestionIds: [] },
       score,

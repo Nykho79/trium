@@ -5,10 +5,12 @@ import type { GameConfig, Player, RoundDefinition } from "../../core/types";
 import {
   buildSavedGameEnvelope,
   clearSavedGame,
+  loadRecentQuestionHistory,
   loadRecentQuestionIds,
   loadSavedGame,
   migrateSavedGame,
   saveGameEnvelope,
+  saveRecentQuestionHistory,
   saveRecentQuestionIds,
 } from "../../app/store/persistence";
 
@@ -88,6 +90,22 @@ describe("local persistence", () => {
       throw new Error("La migration devrait refuser la version inconnue.");
     }
     expect(migrated.error).toContain("non supportee");
+  });
+
+  it("sauvegarde et restaure l'historique recent par partie", () => {
+    const saved = saveRecentQuestionHistory([
+      { seed: "seed-a", questionIds: ["q-1", "q-1", "q-2"], completedAt: "2026-07-16T12:00:00.000Z" },
+    ], localStorage);
+    const loaded = loadRecentQuestionHistory(localStorage);
+
+    expect(saved.ok).toBe(true);
+    expect(loaded.ok).toBe(true);
+    if (!loaded.ok) {
+      throw new Error("L'historique structure devrait etre restaure.");
+    }
+    expect(loaded.value).toEqual([
+      { seed: "seed-a", questionIds: ["q-1", "q-2"], completedAt: "2026-07-16T12:00:00.000Z" },
+    ]);
   });
 
   it("supprime la partie sauvegardee sans effacer l'historique recent", () => {

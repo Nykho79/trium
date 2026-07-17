@@ -2,6 +2,7 @@ import type { Player, PlayerMode, PlayerRoster } from "./player";
 import type { RoundDefinition, RoundState } from "./round";
 import type { AnswerResult, JokerEffectState, JokerState, ScoreBreakdown } from "./scoring";
 import type { GameEvent } from "./event";
+import type { RecentQuestionGame } from "../engine/replayability";
 
 export type RoundKind =
   | "knowledge-grid"
@@ -72,6 +73,7 @@ export interface GameState {
   lastAnswerResult?: AnswerResult | undefined;
   usedQuestionIds: QuestionId[];
   recentlyPlayedQuestionIds: QuestionId[];
+  recentQuestionHistory: RecentQuestionGame[];
   jokers: JokerState;
   jokerEffects: JokerEffectState;
   score: ScoreBreakdown;
