@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { AnswerButton } from "../components/AnswerButton";
 import { Badge } from "../components/Badge";
@@ -10,7 +10,6 @@ import { JokerButton } from "../components/JokerButton";
 import { Panel } from "../components/Panel";
 import { PlayerBadge } from "../components/PlayerBadge";
 import { RoundHeader } from "../components/RoundHeader";
-import { ScoreBoard } from "../components/ScoreBoard";
 import { ScreenFrame } from "../components/ScreenFrame";
 import { Timer } from "../components/Timer";
 import { useAudioStore } from "../../app/store/audioStore";
@@ -115,19 +114,11 @@ export function GameScreen() {
   const [wagerAmount, setWagerAmount] = useState<number | undefined>(undefined);
   const [wagerCustomAmount, setWagerCustomAmount] = useState("");
   const [wagerConfirming, setWagerConfirming] = useState(false);
-  const [revealReady, setRevealReady] = useState(false);
+
   const [now, setNow] = useState(() => Date.now());
   const [expiredQuestionId, setExpiredQuestionId] = useState<string | undefined>(undefined);
+  const answerInFlightRef = useRef(false);
 
-  useEffect(() => {
-    if (gameState?.status !== "answer_locked") {
-      setRevealReady(false);
-      return undefined;
-    }
-    setRevealReady(false);
-    const timeout = window.setTimeout(() => setRevealReady(true), 300);
-    return () => window.clearTimeout(timeout);
-  }, [gameState?.activeQuestionId, gameState?.status]);
   useEffect(() => {
     if (!gameState?.timer || gameState.status !== "question_active") {
       setNow(Date.now());
@@ -164,8 +155,9 @@ export function GameScreen() {
   }, []);
 
   useEffect(() => {
+    answerInFlightRef.current = false;
     setVoteState({ active: false, currentIndex: 0, votes: [] });
-  }, [gameState?.activeQuestionId]);
+  }, [gameState?.activeQuestionId, gameState?.status]);
 
   const round = gameState?.config.rounds[gameState.currentRoundIndex];
   const answeredCount = gameState?.currentRoundState?.answeredQuestionIds.length ?? 0;
@@ -264,10 +256,14 @@ export function GameScreen() {
     loadCurrentQuestion({ questions: wagerQuestions });
   };
 
-  const submitAnswer = () => {
-    if (selectedAnswerId) {
-      submitCurrentAnswer(selectedAnswerId);
+  const answerCurrentQuestion = (answerId: string) => {
+    if (gameState?.status !== "question_active" || answerInFlightRef.current) {
+      return;
     }
+    answerInFlightRef.current = true;
+    selectAnswer(answerId);
+    submitCurrentAnswer(answerId);
+    window.setTimeout(() => revealCurrentAnswer(allQuestions), 220);
   };
 
   const confirmJoker = () => {
@@ -359,7 +355,7 @@ export function GameScreen() {
       <section className={`game-layout knowledge-grid-layout ${isClueRace ? "clue-race-layout" : ""} ${isPressureChoice ? "pressure-choice-layout" : ""} ${isSynapse ? "synapse-layout" : ""} ${isConnections ? "connections-layout" : ""} ${isWager ? "wager-layout" : ""} ${isFinalConvergence ? "final-layout" : ""}`}>
         <Panel className={`game-stage knowledge-grid-stage ${isClueRace ? "clue-race-stage" : ""} ${isPressureChoice ? "pressure-choice-stage" : ""} ${isSynapse ? "synapse-stage" : ""} ${isConnections ? "connections-stage" : ""} ${isWager ? "wager-stage" : ""} ${isFinalConvergence ? "final-stage" : ""}`}>
           <RoundHeader roundLabel={round.label} questionIndex={Math.min(answeredCount + 1, targetCount)} questionCount={targetCount} categoryLabel={isClueRace ? "Indices progressifs" : isPressureChoice ? "Continuer ou securiser" : isSynapse ? "Mini-epreuves ludiques" : isConnections ? "Lien commun progressif" : isWager ? "Categorie, difficulte, mise" : isFinalConvergence ? "Cinq etapes pour conclure" : "Le capitaine choisit une case"} />
-          <ScoreBoard score={session.score.teamScore} streak={session.score.streak} roundLabel={`Question ${Math.min(answeredCount + 1, targetCount)}`} />
+
 
           {loadError ? <FeedbackBanner tone="warning" title="Banque indisponible" message={loadError} /> : null}
           {engineError ? <FeedbackBanner tone="warning" title="Action impossible" message={engineError} /> : null}
@@ -475,7 +471,7 @@ export function GameScreen() {
               totalMs={totalTimerMs}
               canUseHint={canUseFinalHint}
               onUseHint={() => activateFinalHintForCurrentQuestion(finalQuestions)}
-              onSelect={(answerId) => selectAnswer(answerId)}
+              onSelect={answerCurrentQuestion}
             />
           ) : null}
           {isQuestionActive && activeKnowledgeQuestion ? (
@@ -514,7 +510,7 @@ export function GameScreen() {
                     : isLocked
                       ? answer.id === activeKnowledgeQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
                       : selectedAnswerId === answer.id ? "selected" : "idle";
-                  return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => selectAnswer(answer.id)} />;
+                  return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => answerCurrentQuestion(answer.id)} />;
                 })}
               </div>
               {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message={`Revelation prete. Bonne reponse attendue : ${optionLabel(activeKnowledgeQuestion.options, activeKnowledgeQuestion.correctOptionId)}.`} /> : null}
@@ -567,7 +563,7 @@ export function GameScreen() {
                     : isLocked
                       ? answer.id === activePressureQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
                       : selectedAnswerId === answer.id ? "selected" : "idle";
-                  return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => selectAnswer(answer.id)} />;
+                  return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => answerCurrentQuestion(answer.id)} />;
                 })}
               </div>
               {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message={`Revelation prete. Bonne reponse attendue : ${optionLabel(activePressureQuestion.options, activePressureQuestion.correctOptionId)}.`} /> : null}
@@ -598,7 +594,7 @@ export function GameScreen() {
                       : isLocked
                         ? answer.id === activeClueQuestion.correctOptionId ? "correct" : answer.id === selectedAnswerId ? "incorrect" : "disabled"
                         : selectedAnswerId === answer.id ? "selected" : "idle";
-                    return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => selectAnswer(answer.id)} />;
+                    return <AnswerButton key={answer.id} answerId={answer.id} label={answer.label} state={state} disabled={isLocked || eliminated} onClick={() => answerCurrentQuestion(answer.id)} />;
                   })}
                 </div>
               ) : null}
@@ -623,7 +619,7 @@ export function GameScreen() {
                 isLocked={isLocked}
                 selectedAnswerId={selectedAnswerId}
                 eliminatedOptionIds={gameState.jokerEffects.eliminatedOptionIds}
-                onSelect={selectAnswer}
+                onSelect={answerCurrentQuestion}
               />
               {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message="Le resultat du pari sera applique a la revelation." /> : null}
             </>
@@ -640,7 +636,7 @@ export function GameScreen() {
                 selectedAnswerId={selectedAnswerId}
                 eliminatedOptionIds={gameState.jokerEffects.eliminatedOptionIds}
                 points={connectionPoints}
-                onSelect={selectAnswer}
+                onSelect={answerCurrentQuestion}
               />
               <div className="screen-actions connection-actions">
                 <Button variant="secondary" onClick={() => revealNextConnectionItemForCurrentQuestion()} disabled={isLocked || answersVisible || connectionItemIndex >= 3}>Element suivant</Button>
@@ -652,16 +648,16 @@ export function GameScreen() {
           {isQuestionActive && activeSynapseQuestion ? (
             <>
               <Timer remainingMs={remainingTimerMs} totalMs={totalTimerMs} />
-              <SynapseExerciseView question={activeSynapseQuestion} isLocked={isLocked} selectedAnswerId={selectedAnswerId} onSelect={selectAnswer} />
+              <SynapseExerciseView question={activeSynapseQuestion} isLocked={isLocked} selectedAnswerId={selectedAnswerId} onSelect={answerCurrentQuestion} />
               {isLocked ? <FeedbackBanner tone="warning" title="Reponse verrouillee" message="Revelation prete pour cette epreuve Synapse." /> : null}
             </>
           ) : null}
           <div className="screen-actions in-stage knowledge-actions">
             <Button variant="secondary" onClick={() => navigate("home")}>Quitter</Button>
             {!isQuestionActive && answeredCount >= targetCount ? <Button variant="primary" onClick={() => completeCurrentRound()}>Resultat de manche</Button> : null}
-            {gameState.status === "question_active" && isClueRace && answersVisible ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
-            {gameState.status === "question_active" && !isClueRace ? <Button variant="primary" onClick={submitAnswer} disabled={!selectedAnswerId || (isConnections && !answersVisible)} data-testid="lock-answer-button">Verrouiller la reponse</Button> : null}
-            {gameState.status === "answer_locked" ? <Button variant="primary" onClick={() => revealCurrentAnswer(allQuestions)} disabled={!revealReady} data-testid="reveal-answer-button">Reveler la reponse</Button> : null}
+
+
+
           </div>
         </Panel>
         <aside className="side-rail" aria-label="Informations de partie">

@@ -1556,33 +1556,6 @@ body {
   text-transform: uppercase;
 }
 
-.reveal-score-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  width: 100%;
-}
-
-.reveal-score-grid div {
-  display: grid;
-  gap: 6px;
-  border: 1px solid rgba(159, 178, 196, 0.26);
-  border-radius: var(--radius-control);
-  padding: 14px;
-  background: rgba(3, 7, 13, 0.36);
-}
-
-.reveal-score-grid span {
-  color: var(--color-muted);
-  font-size: 18px;
-  font-weight: 850;
-  text-transform: uppercase;
-}
-
-.reveal-score-grid strong {
-  color: var(--color-cyan);
-  font-size: 28px;
-}
 
 @media (max-width: 1200px) {
   .knowledge-grid-layout {
@@ -3004,4 +2977,124 @@ video {
   color: var(--color-text);
   font-size: clamp(24px, 2vw, 36px);
   line-height: 1.25;
+}
+
+/* Fluidite jeu: answers and responsive play area */
+html,
+body,
+#root,
+.app-shell,
+.screen-slot {
+  overflow-x: hidden;
+}
+
+body,
+.app-shell,
+.screen-slot {
+  overflow-y: auto;
+}
+
+.game-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+  align-items: start;
+}
+
+.game-stage {
+  align-content: start;
+}
+
+.answer-grid,
+.answer-grid.live,
+.synapse-answer-grid,
+.connections-answer-grid,
+.final-answer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(12px, 1.8vw, 22px);
+}
+
+.answer-button {
+  min-height: clamp(86px, 10vh, 128px);
+  height: auto;
+  align-items: flex-start;
+  white-space: normal;
+}
+
+.answer-label {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  line-height: 1.18;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.question-live,
+.clue-race-live,
+.pressure-choice-live,
+.knowledge-question-live,
+.connections-live,
+.synapse-live,
+.wager-live,
+.final-live {
+  max-width: 100%;
+  overflow: visible;
+}
+
+.question-live h1,
+.clue-race-live h1,
+.pressure-choice-live h1,
+.knowledge-question-live h1,
+.connections-live h1,
+.synapse-live h1,
+.wager-live h1,
+.final-live h1 {
+  font-size: clamp(30px, 4.2vw, 64px);
+  line-height: 1.04;
+}
+
+.side-rail .panel {
+  overflow: visible;
+}
+
+@media (max-width: 1180px), (max-height: 760px) {
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-rail {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  }
+
+  .screen-frame {
+    min-height: 100dvh;
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --font-body: 18px;
+    --font-answer: 20px;
+    --font-action: 19px;
+  }
+
+  .screen-frame {
+    padding-inline: 12px;
+    padding-top: 74px;
+  }
+
+  .game-stage,
+  .panel,
+  .card {
+    padding: 16px;
+  }
+
+  .answer-button {
+    min-height: 78px;
+    padding: 14px 16px;
+  }
+
+  .screen-actions.in-stage {
+    position: static;
+  }
 }
