@@ -5,6 +5,7 @@ import {
   QuestionAvailabilityError,
   selectWeightedQuestion,
 } from "../../data/localQuestionBank";
+import { finalStepForQuestion } from "../../rounds/final-convergence";
 
 const approvedQuestion = {
   id: "TEST-001",
@@ -14,11 +15,11 @@ const approvedQuestion = {
   difficulty: 1,
   question: "Quelle est la capitale du Japon ?",
   answers: [
-    { id: "a", text: "Tokyo" },
-    { id: "b", text: "Kyoto" },
-    { id: "c", text: "Osaka" },
-    { id: "d", text: "Nagoya" },
-  ],
+          { id: "a", text: "!!!" },
+          { id: "b", text: "???" },
+          { id: "c", text: "///" },
+          { id: "d", text: "***" },
+        ],
   correctAnswerId: "a",
   explanation: "Tokyo est la capitale du Japon.",
   sourceLabel: "Source test",
@@ -74,10 +75,10 @@ describe("localQuestionBank", () => {
         ...approvedQuestion,
         id: "TEST-SYMBOL",
         answers: [
-          { id: "a", text: "▲" },
-          { id: "b", text: "■" },
-          { id: "c", text: "●" },
-          { id: "d", text: "◆" },
+          { id: "a", text: "!!!" },
+          { id: "b", text: "???" },
+          { id: "c", text: "///" },
+          { id: "d", text: "***" },
         ],
         correctAnswerId: "a",
       },
@@ -103,6 +104,37 @@ describe("localQuestionBank", () => {
     expect(bank.report.probableDuplicates.length).toBeGreaterThanOrEqual(1);
   });
 
+
+  it("couvre les manches critiques pour plusieurs parties completes", () => {
+    const bank = loadLocalQuestionBank();
+    const questions = bank.playableQuestions;
+    const count = (predicate: (question: (typeof questions)[number]) => boolean) => questions.filter(predicate).length;
+    const countByFinalStep = new Map<string, number>();
+
+    for (const question of questions) {
+      const step = finalStepForQuestion(question);
+      if (step) {
+        countByFinalStep.set(step, (countByFinalStep.get(step) ?? 0) + 1);
+      }
+    }
+
+    expect(bank.report.totalCount).toBeGreaterThanOrEqual(940);
+    expect(bank.report.validationErrors).toEqual([]);
+    expect(bank.report.exactDuplicates).toEqual([]);
+    expect(count((question) => question.kind === "clue-race")).toBeGreaterThanOrEqual(30);
+    expect(count((question) => question.kind === "connections")).toBeGreaterThanOrEqual(25);
+    expect(count((question) => question.kind === "pressure-choice" && question.difficulty === 3)).toBeGreaterThanOrEqual(8);
+    expect(count((question) => question.kind === "wager" && question.difficulty === 1)).toBeGreaterThanOrEqual(8);
+    expect(count((question) => question.kind === "wager" && question.difficulty === 5)).toBeGreaterThanOrEqual(5);
+    expect(count((question) => question.kind === "synapse" && question.type === "analogy")).toBeGreaterThanOrEqual(10);
+    expect(count((question) => question.kind === "synapse" && question.type === "memory")).toBeGreaterThanOrEqual(8);
+    expect(new Set(questions.filter((question) => question.kind === "synapse").map((question) => question.type)).size).toBeGreaterThanOrEqual(7);
+    expect(countByFinalStep.get("culture") ?? 0).toBeGreaterThanOrEqual(10);
+    expect(countByFinalStep.get("clues") ?? 0).toBeGreaterThanOrEqual(10);
+    expect(countByFinalStep.get("connection") ?? 0).toBeGreaterThanOrEqual(10);
+    expect(countByFinalStep.get("memory") ?? 0).toBeGreaterThanOrEqual(10);
+    expect(countByFinalStep.get("logic") ?? 0).toBeGreaterThanOrEqual(10);
+  });
   it("selectionne de maniere deterministe et rejette une banque vide", () => {
     const bank = compileQuestionBankFromSources([sourceWithQuestions([
       approvedQuestion,

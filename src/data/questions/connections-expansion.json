@@ -1,0 +1,1360 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "connections-expansion-001",
+  "title": "TRIUM connections-expansion",
+  "category": "connections-expansion",
+  "questionType": "connections-expansion",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "CONX-001",
+      "type": "connection",
+      "category": "history",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Tenochtitlan"
+        },
+        {
+          "id": "i2",
+          "text": "Quetzalcoatl"
+        },
+        {
+          "id": "i3",
+          "text": "Codex Mendoza"
+        },
+        {
+          "id": "i4",
+          "text": "Moctezuma"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Civilisation azteque"
+        },
+        {
+          "id": "b",
+          "text": "Empire romain"
+        },
+        {
+          "id": "c",
+          "text": "Egypte antique"
+        },
+        {
+          "id": "d",
+          "text": "Civilisation inca"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces elements renvoient a la civilisation azteque.",
+      "contextualHint": "Cherchez une civilisation mesoamericaine.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-002",
+      "type": "connection",
+      "category": "science-nature",
+      "subcategory": "common-link",
+      "difficulty": 2,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Racine"
+        },
+        {
+          "id": "i2",
+          "text": "Tige"
+        },
+        {
+          "id": "i3",
+          "text": "Feuille"
+        },
+        {
+          "id": "i4",
+          "text": "Fleur"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Parties d une plante"
+        },
+        {
+          "id": "b",
+          "text": "Types de roches"
+        },
+        {
+          "id": "c",
+          "text": "Organes humains"
+        },
+        {
+          "id": "d",
+          "text": "Instruments de musique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des parties d une plante.",
+      "contextualHint": "Le lien est botanique.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-003",
+      "type": "connection",
+      "category": "music",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Soprano"
+        },
+        {
+          "id": "i2",
+          "text": "Alto"
+        },
+        {
+          "id": "i3",
+          "text": "Tenor"
+        },
+        {
+          "id": "i4",
+          "text": "Basse"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Tessitures vocales"
+        },
+        {
+          "id": "b",
+          "text": "Danses baroques"
+        },
+        {
+          "id": "c",
+          "text": "Types de guitares"
+        },
+        {
+          "id": "d",
+          "text": "Modes grecs"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des tessitures ou registres vocaux.",
+      "contextualHint": "Pensez a une chorale.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-004",
+      "type": "connection",
+      "category": "technology",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Python"
+        },
+        {
+          "id": "i2",
+          "text": "JavaScript"
+        },
+        {
+          "id": "i3",
+          "text": "Rust"
+        },
+        {
+          "id": "i4",
+          "text": "C++"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Langages de programmation"
+        },
+        {
+          "id": "b",
+          "text": "Navigateurs web"
+        },
+        {
+          "id": "c",
+          "text": "Systemes d exploitation"
+        },
+        {
+          "id": "d",
+          "text": "Formats audio"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces noms designent des langages de programmation.",
+      "contextualHint": "Le lien est informatique.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-005",
+      "type": "connection",
+      "category": "geography",
+      "subcategory": "common-link",
+      "difficulty": 4,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Andes"
+        },
+        {
+          "id": "i2",
+          "text": "Alpes"
+        },
+        {
+          "id": "i3",
+          "text": "Himalaya"
+        },
+        {
+          "id": "i4",
+          "text": "Atlas"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Chaines de montagnes"
+        },
+        {
+          "id": "b",
+          "text": "Fleuves"
+        },
+        {
+          "id": "c",
+          "text": "Deserts"
+        },
+        {
+          "id": "d",
+          "text": "Capitales"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont de grandes chaines de montagnes.",
+      "contextualHint": "Cherchez un relief.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-006",
+      "type": "connection",
+      "category": "arts-literature",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Hamlet"
+        },
+        {
+          "id": "i2",
+          "text": "Othello"
+        },
+        {
+          "id": "i3",
+          "text": "Macbeth"
+        },
+        {
+          "id": "i4",
+          "text": "Le Roi Lear"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Tragedies de Shakespeare"
+        },
+        {
+          "id": "b",
+          "text": "Romans de Zola"
+        },
+        {
+          "id": "c",
+          "text": "Pieces de Moliere"
+        },
+        {
+          "id": "d",
+          "text": "Operas de Mozart"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des tragedies de Shakespeare.",
+      "contextualHint": "Cherchez un auteur anglais.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-007",
+      "type": "connection",
+      "category": "sports",
+      "subcategory": "common-link",
+      "difficulty": 2,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Papillon"
+        },
+        {
+          "id": "i2",
+          "text": "Brasse"
+        },
+        {
+          "id": "i3",
+          "text": "Crawl"
+        },
+        {
+          "id": "i4",
+          "text": "Dos crawle"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Nages en natation"
+        },
+        {
+          "id": "b",
+          "text": "Figures de patinage"
+        },
+        {
+          "id": "c",
+          "text": "Techniques de boxe"
+        },
+        {
+          "id": "d",
+          "text": "Postes de rugby"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des styles de nage.",
+      "contextualHint": "Le lien est aquatique.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-008",
+      "type": "connection",
+      "category": "gastronomy",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Basilic"
+        },
+        {
+          "id": "i2",
+          "text": "Pignons"
+        },
+        {
+          "id": "i3",
+          "text": "Parmesan"
+        },
+        {
+          "id": "i4",
+          "text": "Huile d olive"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ingredients du pesto"
+        },
+        {
+          "id": "b",
+          "text": "Ingredients du houmous"
+        },
+        {
+          "id": "c",
+          "text": "Epices du curry"
+        },
+        {
+          "id": "d",
+          "text": "Bases du chocolat"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces ingredients composent le pesto genovese.",
+      "contextualHint": "Pensez a une sauce italienne.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-009",
+      "type": "connection",
+      "category": "world-cultures",
+      "subcategory": "common-link",
+      "difficulty": 4,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Tango"
+        },
+        {
+          "id": "i2",
+          "text": "Milonga"
+        },
+        {
+          "id": "i3",
+          "text": "Bandoneon"
+        },
+        {
+          "id": "i4",
+          "text": "Buenos Aires"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Culture du tango argentin"
+        },
+        {
+          "id": "b",
+          "text": "Flamenco espagnol"
+        },
+        {
+          "id": "c",
+          "text": "Samba bresilienne"
+        },
+        {
+          "id": "d",
+          "text": "Fado portugais"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces elements sont lies au tango argentin.",
+      "contextualHint": "Cherchez une danse d Argentine.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-010",
+      "type": "connection",
+      "category": "cinema-series",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Gondor"
+        },
+        {
+          "id": "i2",
+          "text": "Mordor"
+        },
+        {
+          "id": "i3",
+          "text": "Comte"
+        },
+        {
+          "id": "i4",
+          "text": "Rohan"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Lieux du Seigneur des anneaux"
+        },
+        {
+          "id": "b",
+          "text": "Planetes de Star Wars"
+        },
+        {
+          "id": "c",
+          "text": "Royaumes de Westeros"
+        },
+        {
+          "id": "d",
+          "text": "Villes de Harry Potter"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des lieux de l univers du Seigneur des anneaux.",
+      "contextualHint": "Cherchez une saga de fantasy.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-011",
+      "type": "connection",
+      "category": "society-institutions",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Maire"
+        },
+        {
+          "id": "i2",
+          "text": "Conseil municipal"
+        },
+        {
+          "id": "i3",
+          "text": "Commune"
+        },
+        {
+          "id": "i4",
+          "text": "Hotel de ville"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Vie municipale"
+        },
+        {
+          "id": "b",
+          "text": "Justice penale"
+        },
+        {
+          "id": "c",
+          "text": "Union europeenne"
+        },
+        {
+          "id": "d",
+          "text": "Marche financier"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces elements concernent l echelle municipale.",
+      "contextualHint": "Le lien est local et civique.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-012",
+      "type": "connection",
+      "category": "french-language",
+      "subcategory": "common-link",
+      "difficulty": 2,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Mais"
+        },
+        {
+          "id": "i2",
+          "text": "Ou"
+        },
+        {
+          "id": "i3",
+          "text": "Et"
+        },
+        {
+          "id": "i4",
+          "text": "Donc"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Conjonctions de coordination"
+        },
+        {
+          "id": "b",
+          "text": "Pronoms personnels"
+        },
+        {
+          "id": "c",
+          "text": "Temps verbaux"
+        },
+        {
+          "id": "d",
+          "text": "Adverbes de lieu"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces mots appartiennent a la liste des conjonctions de coordination.",
+      "contextualHint": "Pensez a la grammaire francaise.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-013",
+      "type": "connection",
+      "category": "popular-culture",
+      "subcategory": "common-link",
+      "difficulty": 2,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Mario"
+        },
+        {
+          "id": "i2",
+          "text": "Luigi"
+        },
+        {
+          "id": "i3",
+          "text": "Peach"
+        },
+        {
+          "id": "i4",
+          "text": "Bowser"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Univers de Mario"
+        },
+        {
+          "id": "b",
+          "text": "Univers de Zelda"
+        },
+        {
+          "id": "c",
+          "text": "Univers Pokemon"
+        },
+        {
+          "id": "d",
+          "text": "Univers Sonic"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des personnages de l univers Mario.",
+      "contextualHint": "Cherchez un jeu video Nintendo.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-014",
+      "type": "connection",
+      "category": "mythologies",
+      "subcategory": "common-link",
+      "difficulty": 4,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Odin"
+        },
+        {
+          "id": "i2",
+          "text": "Thor"
+        },
+        {
+          "id": "i3",
+          "text": "Loki"
+        },
+        {
+          "id": "i4",
+          "text": "Freyja"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mythologie nordique"
+        },
+        {
+          "id": "b",
+          "text": "Mythologie grecque"
+        },
+        {
+          "id": "c",
+          "text": "Mythologie egyptienne"
+        },
+        {
+          "id": "d",
+          "text": "Mythologie romaine"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces figures appartiennent a la mythologie nordique.",
+      "contextualHint": "Pensez aux dieux scandinaves.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-015",
+      "type": "connection",
+      "category": "science-nature",
+      "subcategory": "common-link",
+      "difficulty": 5,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Mitose"
+        },
+        {
+          "id": "i2",
+          "text": "Meiose"
+        },
+        {
+          "id": "i3",
+          "text": "ADN"
+        },
+        {
+          "id": "i4",
+          "text": "Chromosome"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Division et information genetique"
+        },
+        {
+          "id": "b",
+          "text": "Photosynthese"
+        },
+        {
+          "id": "c",
+          "text": "Meteorologie"
+        },
+        {
+          "id": "d",
+          "text": "Acoustique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces termes relevent de la genetique cellulaire.",
+      "contextualHint": "Le lien est biologique.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-016",
+      "type": "connection",
+      "category": "science-nature",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Evaporation"
+        },
+        {
+          "id": "i2",
+          "text": "Condensation"
+        },
+        {
+          "id": "i3",
+          "text": "Precipitation"
+        },
+        {
+          "id": "i4",
+          "text": "Ruissellement"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Cycle de l eau"
+        },
+        {
+          "id": "b",
+          "text": "Cycle du carbone"
+        },
+        {
+          "id": "c",
+          "text": "Photosynthese"
+        },
+        {
+          "id": "d",
+          "text": "Maree oceanique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces etapes appartiennent au cycle de l eau.",
+      "contextualHint": "Cherchez un cycle naturel.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-017",
+      "type": "connection",
+      "category": "history",
+      "subcategory": "common-link",
+      "difficulty": 4,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Danton"
+        },
+        {
+          "id": "i2",
+          "text": "Robespierre"
+        },
+        {
+          "id": "i3",
+          "text": "Marat"
+        },
+        {
+          "id": "i4",
+          "text": "Desmoulins"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Figures de la Revolution francaise"
+        },
+        {
+          "id": "b",
+          "text": "Empereurs romains"
+        },
+        {
+          "id": "c",
+          "text": "Explorateurs portugais"
+        },
+        {
+          "id": "d",
+          "text": "Philosophes grecs"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces personnages sont lies a la Revolution francaise.",
+      "contextualHint": "Le lien est politique et historique.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-018",
+      "type": "connection",
+      "category": "technology",
+      "subcategory": "common-link",
+      "difficulty": 2,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Clavier"
+        },
+        {
+          "id": "i2",
+          "text": "Souris"
+        },
+        {
+          "id": "i3",
+          "text": "Ecran"
+        },
+        {
+          "id": "i4",
+          "text": "Imprimante"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Peripheriques informatiques"
+        },
+        {
+          "id": "b",
+          "text": "Langages web"
+        },
+        {
+          "id": "c",
+          "text": "Protocoles reseau"
+        },
+        {
+          "id": "d",
+          "text": "Formats video"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des peripheriques informatiques.",
+      "contextualHint": "Cherchez des elements relies a un ordinateur.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-019",
+      "type": "connection",
+      "category": "music",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Bach"
+        },
+        {
+          "id": "i2",
+          "text": "Haendel"
+        },
+        {
+          "id": "i3",
+          "text": "Vivaldi"
+        },
+        {
+          "id": "i4",
+          "text": "Telemann"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Compositeurs baroques"
+        },
+        {
+          "id": "b",
+          "text": "Peintres impressionnistes"
+        },
+        {
+          "id": "c",
+          "text": "Auteurs romantiques"
+        },
+        {
+          "id": "d",
+          "text": "Realisateurs modernes"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces compositeurs appartiennent a la periode baroque.",
+      "contextualHint": "Le lien est musical et historique.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-020",
+      "type": "connection",
+      "category": "geography",
+      "subcategory": "common-link",
+      "difficulty": 4,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Sahara"
+        },
+        {
+          "id": "i2",
+          "text": "Gobi"
+        },
+        {
+          "id": "i3",
+          "text": "Atacama"
+        },
+        {
+          "id": "i4",
+          "text": "Kalahari"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Deserts"
+        },
+        {
+          "id": "b",
+          "text": "Fleuves"
+        },
+        {
+          "id": "c",
+          "text": "Montagnes"
+        },
+        {
+          "id": "d",
+          "text": "Archipels"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont de grands deserts du monde.",
+      "contextualHint": "Cherchez un milieu aride.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-021",
+      "type": "connection",
+      "category": "arts-literature",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Alexandrin"
+        },
+        {
+          "id": "i2",
+          "text": "Rime"
+        },
+        {
+          "id": "i3",
+          "text": "Strophe"
+        },
+        {
+          "id": "i4",
+          "text": "Sonnet"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Vocabulaire de la poesie"
+        },
+        {
+          "id": "b",
+          "text": "Theatre antique"
+        },
+        {
+          "id": "c",
+          "text": "Architecture gothique"
+        },
+        {
+          "id": "d",
+          "text": "Cinema muet"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces mots appartiennent au vocabulaire poetique.",
+      "contextualHint": "Le lien est litteraire.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-022",
+      "type": "connection",
+      "category": "gastronomy",
+      "subcategory": "common-link",
+      "difficulty": 2,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Pois chiche"
+        },
+        {
+          "id": "i2",
+          "text": "Tahini"
+        },
+        {
+          "id": "i3",
+          "text": "Citron"
+        },
+        {
+          "id": "i4",
+          "text": "Ail"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ingredients du houmous"
+        },
+        {
+          "id": "b",
+          "text": "Ingredients du pesto"
+        },
+        {
+          "id": "c",
+          "text": "Bases du pain"
+        },
+        {
+          "id": "d",
+          "text": "Epices du vin chaud"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces ingredients composent le houmous.",
+      "contextualHint": "Pensez a une preparation du Proche-Orient.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-023",
+      "type": "connection",
+      "category": "world-cultures",
+      "subcategory": "common-link",
+      "difficulty": 4,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Sari"
+        },
+        {
+          "id": "i2",
+          "text": "Kimono"
+        },
+        {
+          "id": "i3",
+          "text": "Kilt"
+        },
+        {
+          "id": "i4",
+          "text": "Poncho"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Vetements traditionnels"
+        },
+        {
+          "id": "b",
+          "text": "Danses populaires"
+        },
+        {
+          "id": "c",
+          "text": "Instruments a cordes"
+        },
+        {
+          "id": "d",
+          "text": "Systemes d ecriture"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des vetements associes a des cultures differentes.",
+      "contextualHint": "Le lien est vestimentaire.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-024",
+      "type": "connection",
+      "category": "sports",
+      "subcategory": "common-link",
+      "difficulty": 3,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Judo"
+        },
+        {
+          "id": "i2",
+          "text": "Karate"
+        },
+        {
+          "id": "i3",
+          "text": "Taekwondo"
+        },
+        {
+          "id": "i4",
+          "text": "Aikido"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Arts martiaux"
+        },
+        {
+          "id": "b",
+          "text": "Sports de raquette"
+        },
+        {
+          "id": "c",
+          "text": "Courses cyclistes"
+        },
+        {
+          "id": "d",
+          "text": "Nages olympiques"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ce sont des arts martiaux.",
+      "contextualHint": "Le lien est sportif et technique.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CONX-025",
+      "type": "connection",
+      "category": "society-institutions",
+      "subcategory": "common-link",
+      "difficulty": 5,
+      "question": "Quel lien commun unit ces quatre elements ?",
+      "items": [
+        {
+          "id": "i1",
+          "text": "ONU"
+        },
+        {
+          "id": "i2",
+          "text": "UNESCO"
+        },
+        {
+          "id": "i3",
+          "text": "OMS"
+        },
+        {
+          "id": "i4",
+          "text": "FAO"
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Organisations ou agences des Nations unies"
+        },
+        {
+          "id": "b",
+          "text": "Institutions europeennes"
+        },
+        {
+          "id": "c",
+          "text": "Banques centrales"
+        },
+        {
+          "id": "d",
+          "text": "Partis politiques"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ces organisations appartiennent au systeme des Nations unies.",
+      "contextualHint": "Cherchez une organisation internationale.",
+      "verificationStatus": "verified",
+      "tags": [
+        "connections"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "synapse-expansion-001",
+  "title": "TRIUM synapse-expansion",
+  "category": "synapse-expansion",
+  "questionType": "synapse-expansion",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "SYNX-A01",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 1,
+      "prompt": "plume est a ecriture ce que pinceau est a ...",
+      "left": "plume",
+      "right": "ecriture",
+      "missing": "pinceau",
+      "relation": "outil et usage",
+      "answers": [
+        {
+          "id": "a",
+          "text": "peinture"
+        },
+        {
+          "id": "b",
+          "text": "musique"
+        },
+        {
+          "id": "c",
+          "text": "calcul"
+        },
+        {
+          "id": "d",
+          "text": "navigation"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Une plume sert a ecrire, un pinceau sert a peindre.",
+      "contextualHint": "Gardez la relation: outil et usage.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A02",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 1,
+      "prompt": "cle est a serrure ce que mot de passe est a ...",
+      "left": "cle",
+      "right": "serrure",
+      "missing": "mot de passe",
+      "relation": "moyen d acces et cible",
+      "answers": [
+        {
+          "id": "a",
+          "text": "compte"
+        },
+        {
+          "id": "b",
+          "text": "lampe"
+        },
+        {
+          "id": "c",
+          "text": "route"
+        },
+        {
+          "id": "d",
+          "text": "nuage"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La cle ouvre une serrure, le mot de passe ouvre un compte.",
+      "contextualHint": "Gardez la relation: moyen d acces et cible.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A03",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 2,
+      "prompt": "carte est a territoire ce que partition est a ...",
+      "left": "carte",
+      "right": "territoire",
+      "missing": "partition",
+      "relation": "representation et domaine",
+      "answers": [
+        {
+          "id": "a",
+          "text": "musique"
+        },
+        {
+          "id": "b",
+          "text": "theatre"
+        },
+        {
+          "id": "c",
+          "text": "couleur"
+        },
+        {
+          "id": "d",
+          "text": "jardin"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Une carte represente un territoire, une partition represente de la musique.",
+      "contextualHint": "Gardez la relation: representation et domaine.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A04",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 2,
+      "prompt": "thermometre est a temperature ce que barometre est a ...",
+      "left": "thermometre",
+      "right": "temperature",
+      "missing": "barometre",
+      "relation": "instrument et mesure",
+      "answers": [
+        {
+          "id": "a",
+          "text": "pression atmospherique"
+        },
+        {
+          "id": "b",
+          "text": "altitude"
+        },
+        {
+          "id": "c",
+          "text": "vitesse"
+        },
+        {
+          "id": "d",
+          "text": "lumiere"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le barometre mesure la pression atmospherique.",
+      "contextualHint": "Gardez la relation: instrument et mesure.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A05",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 3,
+      "prompt": "racine est a arbre ce que fondation est a ...",
+      "left": "racine",
+      "right": "arbre",
+      "missing": "fondation",
+      "relation": "base et structure",
+      "answers": [
+        {
+          "id": "a",
+          "text": "batiment"
+        },
+        {
+          "id": "b",
+          "text": "fenetre"
+        },
+        {
+          "id": "c",
+          "text": "peinture"
+        },
+        {
+          "id": "d",
+          "text": "chemin"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La fondation soutient un batiment comme la racine soutient un arbre.",
+      "contextualHint": "Gardez la relation: base et structure.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A06",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 3,
+      "prompt": "scenario est a film ce que recette est a ...",
+      "left": "scenario",
+      "right": "film",
+      "missing": "recette",
+      "relation": "plan de creation et resultat",
+      "answers": [
+        {
+          "id": "a",
+          "text": "plat"
+        },
+        {
+          "id": "b",
+          "text": "menu"
+        },
+        {
+          "id": "c",
+          "text": "four"
+        },
+        {
+          "id": "d",
+          "text": "table"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La recette guide la creation d un plat.",
+      "contextualHint": "Gardez la relation: plan de creation et resultat.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A07",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 4,
+      "prompt": "archive est a memoire ce que boussole est a ...",
+      "left": "archive",
+      "right": "memoire",
+      "missing": "boussole",
+      "relation": "support et fonction",
+      "answers": [
+        {
+          "id": "a",
+          "text": "orientation"
+        },
+        {
+          "id": "b",
+          "text": "distance"
+        },
+        {
+          "id": "c",
+          "text": "temperature"
+        },
+        {
+          "id": "d",
+          "text": "vitesse"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La boussole sert a l orientation.",
+      "contextualHint": "Gardez la relation: support et fonction.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A08",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 4,
+      "prompt": "enzyme est a reaction ce que catalyseur est a ...",
+      "left": "enzyme",
+      "right": "reaction",
+      "missing": "catalyseur",
+      "relation": "element qui facilite un processus",
+      "answers": [
+        {
+          "id": "a",
+          "text": "transformation"
+        },
+        {
+          "id": "b",
+          "text": "volume"
+        },
+        {
+          "id": "c",
+          "text": "surface"
+        },
+        {
+          "id": "d",
+          "text": "couleur"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Un catalyseur facilite une transformation.",
+      "contextualHint": "Gardez la relation: element qui facilite un processus.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A09",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 5,
+      "prompt": "syntaxe est a phrase ce que protocole est a ...",
+      "left": "syntaxe",
+      "right": "phrase",
+      "missing": "protocole",
+      "relation": "regles qui structurent un echange",
+      "answers": [
+        {
+          "id": "a",
+          "text": "communication reseau"
+        },
+        {
+          "id": "b",
+          "text": "poeme"
+        },
+        {
+          "id": "c",
+          "text": "image"
+        },
+        {
+          "id": "d",
+          "text": "batterie"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Un protocole structure une communication reseau.",
+      "contextualHint": "Gardez la relation: regles qui structurent un echange.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-A10",
+      "type": "analogy",
+      "category": "synapse",
+      "subcategory": "analogy-varied",
+      "difficulty": 5,
+      "prompt": "hypothese est a experience ce que question est a ...",
+      "left": "hypothese",
+      "right": "experience",
+      "missing": "question",
+      "relation": "point de depart et verification",
+      "answers": [
+        {
+          "id": "a",
+          "text": "enquete"
+        },
+        {
+          "id": "b",
+          "text": "roman"
+        },
+        {
+          "id": "c",
+          "text": "portrait"
+        },
+        {
+          "id": "d",
+          "text": "frontiere"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Une question lance une enquete.",
+      "contextualHint": "Gardez la relation: point de depart et verification.",
+      "verificationStatus": "verified",
+      "tags": [
+        "synapse",
+        "analogy"
+      ],
+      "estimatedTimeSeconds": 35,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-M01",
+      "type": "memory",
+      "category": "synapse",
+      "subcategory": "memory-varied",
+      "difficulty": 1,
+      "prompt": "Memorisez les couleurs dans l ordre.",
+      "statement": "Quelle sequence etait affichee ?",
+      "sequence": [
+        "rouge",
+        "bleu",
+        "vert"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "rouge - bleu - vert"
+        },
+        {
+          "id": "b",
+          "text": "bleu - rouge - vert"
+        },
+        {
+          "id": "c",
+          "text": "rouge - vert - bleu"
+        },
+        {
+          "id": "d",
+          "text": "vert - bleu - rouge"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La sequence etait rouge, bleu, vert.",
+      "contextualHint": "La sequence contient 3 elements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "memory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-M02",
+      "type": "memory",
+      "category": "synapse",
+      "subcategory": "memory-varied",
+      "difficulty": 2,
+      "prompt": "Memorisez les mots dans l ordre.",
+      "statement": "Quelle sequence etait affichee ?",
+      "sequence": [
+        "lune",
+        "port",
+        "cle",
+        "jardin"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "lune - port - cle - jardin"
+        },
+        {
+          "id": "b",
+          "text": "port - lune - cle - jardin"
+        },
+        {
+          "id": "c",
+          "text": "lune - cle - port - jardin"
+        },
+        {
+          "id": "d",
+          "text": "jardin - cle - port - lune"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Il fallait conserver l ordre exact des mots.",
+      "contextualHint": "La sequence contient 4 elements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "memory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-M03",
+      "type": "memory",
+      "category": "synapse",
+      "subcategory": "reverse-memory",
+      "difficulty": 2,
+      "prompt": "Memorisez puis restituez a l envers.",
+      "statement": "Quelle etait la sequence en ordre inverse ?",
+      "sequence": [
+        "3",
+        "8",
+        "1",
+        "6"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "6 - 1 - 8 - 3"
+        },
+        {
+          "id": "b",
+          "text": "3 - 8 - 1 - 6"
+        },
+        {
+          "id": "c",
+          "text": "6 - 8 - 1 - 3"
+        },
+        {
+          "id": "d",
+          "text": "1 - 6 - 3 - 8"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La restitution inverse etait 6 - 1 - 8 - 3.",
+      "contextualHint": "La sequence contient 4 elements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "memory",
+        "reverse-memory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-M04",
+      "type": "memory",
+      "category": "synapse",
+      "subcategory": "memory-varied",
+      "difficulty": 3,
+      "prompt": "Memorisez les directions.",
+      "statement": "Quelle sequence etait affichee ?",
+      "sequence": [
+        "Nord",
+        "Est",
+        "Sud",
+        "Ouest"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Nord - Est - Sud - Ouest"
+        },
+        {
+          "id": "b",
+          "text": "Nord - Sud - Est - Ouest"
+        },
+        {
+          "id": "c",
+          "text": "Est - Nord - Sud - Ouest"
+        },
+        {
+          "id": "d",
+          "text": "Ouest - Sud - Est - Nord"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La sequence suivait Nord, Est, Sud, Ouest.",
+      "contextualHint": "La sequence contient 4 elements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "memory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-M05",
+      "type": "memory",
+      "category": "synapse",
+      "subcategory": "reverse-memory",
+      "difficulty": 3,
+      "prompt": "Memorisez puis choisissez l ordre inverse.",
+      "statement": "Quelle etait la sequence en ordre inverse ?",
+      "sequence": [
+        "A",
+        "C",
+        "F",
+        "J",
+        "O"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "O - J - F - C - A"
+        },
+        {
+          "id": "b",
+          "text": "A - C - F - J - O"
+        },
+        {
+          "id": "c",
+          "text": "O - F - J - C - A"
+        },
+        {
+          "id": "d",
+          "text": "J - O - F - C - A"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L ordre inverse etait O - J - F - C - A.",
+      "contextualHint": "La sequence contient 5 elements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "memory",
+        "reverse-memory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-M06",
+      "type": "memory",
+      "category": "synapse",
+      "subcategory": "memory-varied",
+      "difficulty": 4,
+      "prompt": "Memorisez les formes.",
+      "statement": "Quelle sequence etait affichee ?",
+      "sequence": [
+        "triangle",
+        "cercle",
+        "carre",
+        "etoile",
+        "losange"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "triangle - cercle - carre - etoile - losange"
+        },
+        {
+          "id": "b",
+          "text": "triangle - carre - cercle - etoile - losange"
+        },
+        {
+          "id": "c",
+          "text": "cercle - triangle - carre - losange - etoile"
+        },
+        {
+          "id": "d",
+          "text": "losange - etoile - carre - cercle - triangle"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La sequence exacte etait triangle, cercle, carre, etoile, losange.",
+      "contextualHint": "La sequence contient 5 elements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "memory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-M07",
+      "type": "memory",
+      "category": "synapse",
+      "subcategory": "reverse-memory",
+      "difficulty": 4,
+      "prompt": "Memorisez les chiffres puis inversez-les.",
+      "statement": "Quelle etait la sequence en ordre inverse ?",
+      "sequence": [
+        "9",
+        "2",
+        "7",
+        "4",
+        "1"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "1 - 4 - 7 - 2 - 9"
+        },
+        {
+          "id": "b",
+          "text": "9 - 2 - 7 - 4 - 1"
+        },
+        {
+          "id": "c",
+          "text": "1 - 7 - 4 - 2 - 9"
+        },
+        {
+          "id": "d",
+          "text": "4 - 1 - 7 - 2 - 9"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L inverse de 9 - 2 - 7 - 4 - 1 est 1 - 4 - 7 - 2 - 9.",
+      "contextualHint": "La sequence contient 5 elements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "memory",
+        "reverse-memory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "SYNX-M08",
+      "type": "memory",
+      "category": "synapse",
+      "subcategory": "memory-varied",
+      "difficulty": 5,
+      "prompt": "Memorisez cette liste de matieres et couleurs.",
+      "statement": "Quelle sequence etait affichee ?",
+      "sequence": [
+        "cuivre",
+        "neon",
+        "jade",
+        "ambre",
+        "ivoire",
+        "cobalt"
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "cuivre - neon - jade - ambre - ivoire - cobalt"
+        },
+        {
+          "id": "b",
+          "text": "cuivre - jade - neon - ambre - ivoire - cobalt"
+        },
+        {
+          "id": "c",
+          "text": "neon - cuivre - jade - ivoire - ambre - cobalt"
+        },
+        {
+          "id": "d",
+          "text": "cobalt - ivoire - ambre - jade - neon - cuivre"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La sequence exacte devait etre conservee.",
+      "contextualHint": "La sequence contient 6 elements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "memory"
+      ],
+      "estimatedTimeSeconds": 40,
+      "status": "approved",
+      "version": 1
+    }
+  ]
+}

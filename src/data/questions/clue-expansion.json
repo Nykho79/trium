@@ -1,0 +1,646 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "clue-expansion-001",
+  "title": "TRIUM clue-expansion",
+  "category": "clue-expansion",
+  "questionType": "clue-expansion",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "CLUX-001",
+      "type": "progressive_clues",
+      "category": "geography",
+      "subcategory": "progressive-identification",
+      "difficulty": 2,
+      "prompt": "Identifiez ce pays.",
+      "clues": [
+        {
+          "text": "Je suis en Europe."
+        },
+        {
+          "text": "Je possede de nombreux lacs."
+        },
+        {
+          "text": "Helsinki est ma capitale."
+        },
+        {
+          "text": "Je partage une longue frontiere avec la Russie."
+        },
+        {
+          "text": "On m appelle souvent le pays des mille lacs."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Finlande"
+        },
+        {
+          "id": "b",
+          "text": "Norvege"
+        },
+        {
+          "id": "c",
+          "text": "Estonie"
+        },
+        {
+          "id": "d",
+          "text": "Suede"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Finlande a Helsinki pour capitale et de nombreux lacs.",
+      "contextualHint": "Helsinki est ma capitale.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-002",
+      "type": "progressive_clues",
+      "category": "science-nature",
+      "subcategory": "progressive-identification",
+      "difficulty": 3,
+      "prompt": "Identifiez cet element chimique.",
+      "clues": [
+        {
+          "text": "Je suis un gaz dans les conditions ordinaires."
+        },
+        {
+          "text": "Je porte le numero atomique 8."
+        },
+        {
+          "text": "Je suis indispensable a la respiration humaine."
+        },
+        {
+          "text": "Je forme environ 21 pour cent de l air."
+        },
+        {
+          "text": "Mon symbole est O."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Oxygene"
+        },
+        {
+          "id": "b",
+          "text": "Azote"
+        },
+        {
+          "id": "c",
+          "text": "Helium"
+        },
+        {
+          "id": "d",
+          "text": "Hydrogene"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L oxygene a pour symbole O et numero atomique 8.",
+      "contextualHint": "Je suis indispensable a la respiration humaine.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-003",
+      "type": "progressive_clues",
+      "category": "history",
+      "subcategory": "progressive-identification",
+      "difficulty": 3,
+      "prompt": "Identifiez cette periode.",
+      "clues": [
+        {
+          "text": "Elle suit le Moyen Age en Europe."
+        },
+        {
+          "text": "Elle voit un essor des arts et des sciences."
+        },
+        {
+          "text": "L Italie y joue un role majeur."
+        },
+        {
+          "text": "Leonard de Vinci y est associe."
+        },
+        {
+          "text": "Son nom evoque une renaissance culturelle."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Renaissance"
+        },
+        {
+          "id": "b",
+          "text": "Baroque"
+        },
+        {
+          "id": "c",
+          "text": "Antiquite"
+        },
+        {
+          "id": "d",
+          "text": "Revolution industrielle"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Renaissance transforme les arts, les sciences et les idees.",
+      "contextualHint": "L Italie y joue un role majeur.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-004",
+      "type": "progressive_clues",
+      "category": "music",
+      "subcategory": "progressive-identification",
+      "difficulty": 2,
+      "prompt": "Identifiez cet instrument.",
+      "clues": [
+        {
+          "text": "Je possede des cordes."
+        },
+        {
+          "text": "On me tient sous le menton."
+        },
+        {
+          "text": "J utilise souvent un archet."
+        },
+        {
+          "text": "Je suis aigu dans ma famille orchestrale."
+        },
+        {
+          "text": "Je suis le violon."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Violon"
+        },
+        {
+          "id": "b",
+          "text": "Alto"
+        },
+        {
+          "id": "c",
+          "text": "Harpe"
+        },
+        {
+          "id": "d",
+          "text": "Clarinette"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le violon est un instrument a cordes frottees aigu.",
+      "contextualHint": "J utilise souvent un archet.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-005",
+      "type": "progressive_clues",
+      "category": "technology",
+      "subcategory": "progressive-identification",
+      "difficulty": 3,
+      "prompt": "Identifiez ce concept.",
+      "clues": [
+        {
+          "text": "Je relie des machines."
+        },
+        {
+          "text": "J utilise des protocoles."
+        },
+        {
+          "text": "Je peux etre local ou mondial."
+        },
+        {
+          "text": "Le Web m utilise mais ne me resume pas."
+        },
+        {
+          "text": "Internet en est l exemple mondial."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Reseau informatique"
+        },
+        {
+          "id": "b",
+          "text": "Base de donnees"
+        },
+        {
+          "id": "c",
+          "text": "Carte graphique"
+        },
+        {
+          "id": "d",
+          "text": "Tableur"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Un reseau informatique relie des machines pour echanger des donnees.",
+      "contextualHint": "Je peux etre local ou mondial.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-006",
+      "type": "progressive_clues",
+      "category": "arts-literature",
+      "subcategory": "progressive-identification",
+      "difficulty": 4,
+      "prompt": "Identifiez cette oeuvre.",
+      "clues": [
+        {
+          "text": "C est un tableau."
+        },
+        {
+          "text": "Il est conserve a Paris."
+        },
+        {
+          "text": "Son sourire est celebre."
+        },
+        {
+          "text": "Leonard de Vinci en est l auteur."
+        },
+        {
+          "text": "On l appelle aussi La Joconde."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Mona Lisa"
+        },
+        {
+          "id": "b",
+          "text": "Guernica"
+        },
+        {
+          "id": "c",
+          "text": "Les Menines"
+        },
+        {
+          "id": "d",
+          "text": "Le Cri"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Joconde est une oeuvre de Leonard de Vinci exposee au Louvre.",
+      "contextualHint": "Son sourire est celebre.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-007",
+      "type": "progressive_clues",
+      "category": "sports",
+      "subcategory": "progressive-identification",
+      "difficulty": 3,
+      "prompt": "Identifiez ce sport.",
+      "clues": [
+        {
+          "text": "Il se joue avec une raquette."
+        },
+        {
+          "text": "La balle peut toucher le sol une fois."
+        },
+        {
+          "text": "On parle de sets."
+        },
+        {
+          "text": "Roland-Garros lui est associe."
+        },
+        {
+          "text": "Il s agit du tennis."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Tennis"
+        },
+        {
+          "id": "b",
+          "text": "Badminton"
+        },
+        {
+          "id": "c",
+          "text": "Squash"
+        },
+        {
+          "id": "d",
+          "text": "Tennis de table"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le tennis se joue en sets avec une raquette.",
+      "contextualHint": "On parle de sets.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-008",
+      "type": "progressive_clues",
+      "category": "world-cultures",
+      "subcategory": "progressive-identification",
+      "difficulty": 4,
+      "prompt": "Identifiez cette tradition.",
+      "clues": [
+        {
+          "text": "Elle est japonaise."
+        },
+        {
+          "text": "Elle implique une boisson chaude."
+        },
+        {
+          "text": "Elle suit des gestes codifies."
+        },
+        {
+          "text": "Le matcha y joue souvent un role."
+        },
+        {
+          "text": "On parle de ceremonie du the."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Ceremonie du the"
+        },
+        {
+          "id": "b",
+          "text": "Hanami"
+        },
+        {
+          "id": "c",
+          "text": "Origami"
+        },
+        {
+          "id": "d",
+          "text": "Kabuki"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La ceremonie du the japonaise est un rituel codifie.",
+      "contextualHint": "Elle suit des gestes codifies.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-009",
+      "type": "progressive_clues",
+      "category": "gastronomy",
+      "subcategory": "progressive-identification",
+      "difficulty": 2,
+      "prompt": "Identifiez ce produit.",
+      "clues": [
+        {
+          "text": "Je suis fermente."
+        },
+        {
+          "text": "Je peux etre au lait de vache, chevre ou brebis."
+        },
+        {
+          "text": "La France en possede de nombreuses varietes."
+        },
+        {
+          "text": "Je peux etre a pate molle ou dure."
+        },
+        {
+          "text": "Je suis le fromage."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Fromage"
+        },
+        {
+          "id": "b",
+          "text": "Pain"
+        },
+        {
+          "id": "c",
+          "text": "Vinaigre"
+        },
+        {
+          "id": "d",
+          "text": "Miel"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le fromage est un produit laitier fermente ou affine.",
+      "contextualHint": "La France en possede de nombreuses varietes.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-010",
+      "type": "progressive_clues",
+      "category": "cinema-series",
+      "subcategory": "progressive-identification",
+      "difficulty": 3,
+      "prompt": "Identifiez ce genre.",
+      "clues": [
+        {
+          "text": "Il imagine souvent le futur."
+        },
+        {
+          "text": "Il explore technologies et mondes possibles."
+        },
+        {
+          "text": "Les voyages spatiaux y sont frequents."
+        },
+        {
+          "text": "Blade Runner et Star Wars y sont associes."
+        },
+        {
+          "text": "C est la science-fiction."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Science-fiction"
+        },
+        {
+          "id": "b",
+          "text": "Comedie musicale"
+        },
+        {
+          "id": "c",
+          "text": "Western"
+        },
+        {
+          "id": "d",
+          "text": "Film noir"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La science-fiction imagine des futurs, technologies ou mondes alternatifs.",
+      "contextualHint": "Les voyages spatiaux y sont frequents.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-011",
+      "type": "progressive_clues",
+      "category": "french-language",
+      "subcategory": "progressive-identification",
+      "difficulty": 2,
+      "prompt": "Identifiez cette figure de style.",
+      "clues": [
+        {
+          "text": "Elle compare sans outil de comparaison."
+        },
+        {
+          "text": "Elle associe deux realites."
+        },
+        {
+          "text": "Dire une mer de foule en est un exemple."
+        },
+        {
+          "text": "Elle est plus directe qu une comparaison."
+        },
+        {
+          "text": "C est une metaphore."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Metaphore"
+        },
+        {
+          "id": "b",
+          "text": "Anaphore"
+        },
+        {
+          "id": "c",
+          "text": "Hyperbole"
+        },
+        {
+          "id": "d",
+          "text": "Litote"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La metaphore rapproche deux elements sans mot comparatif.",
+      "contextualHint": "Dire une mer de foule en est un exemple.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "CLUX-012",
+      "type": "progressive_clues",
+      "category": "society-institutions",
+      "subcategory": "progressive-identification",
+      "difficulty": 3,
+      "prompt": "Identifiez cette institution.",
+      "clues": [
+        {
+          "text": "Elle vote la loi."
+        },
+        {
+          "text": "Elle represente les citoyens."
+        },
+        {
+          "text": "Elle siege au Palais Bourbon."
+        },
+        {
+          "text": "Elle forme avec le Senat le Parlement francais."
+        },
+        {
+          "text": "C est l Assemblee nationale."
+        }
+      ],
+      "answers": [
+        {
+          "id": "a",
+          "text": "Assemblee nationale"
+        },
+        {
+          "id": "b",
+          "text": "Conseil constitutionnel"
+        },
+        {
+          "id": "c",
+          "text": "Cour de cassation"
+        },
+        {
+          "id": "d",
+          "text": "Conseil d Etat"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L Assemblee nationale est une chambre du Parlement francais.",
+      "contextualHint": "Elle siege au Palais Bourbon.",
+      "verificationStatus": "verified",
+      "tags": [
+        "clue-race"
+      ],
+      "estimatedTimeSeconds": 45,
+      "status": "approved",
+      "version": 1
+    }
+  ]
+}

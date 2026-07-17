@@ -1,0 +1,586 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "wager-expansion-001",
+  "title": "TRIUM wager-expansion",
+  "category": "wager-expansion",
+  "questionType": "wager-expansion",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "PARX-001",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "capitals",
+      "difficulty": 1,
+      "question": "Quelle est la capitale de l Italie ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Rome"
+        },
+        {
+          "id": "b",
+          "text": "Milan"
+        },
+        {
+          "id": "c",
+          "text": "Naples"
+        },
+        {
+          "id": "d",
+          "text": "Turin"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Rome est la capitale de l Italie.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a capitals.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-002",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "animals",
+      "difficulty": 1,
+      "question": "Quel animal miaule ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le chat"
+        },
+        {
+          "id": "b",
+          "text": "Le cheval"
+        },
+        {
+          "id": "c",
+          "text": "Le mouton"
+        },
+        {
+          "id": "d",
+          "text": "La poule"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le chat est associe au miaulement.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a animals.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-003",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "football",
+      "difficulty": 1,
+      "question": "Combien de mi-temps compte un match de football ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Deux"
+        },
+        {
+          "id": "b",
+          "text": "Trois"
+        },
+        {
+          "id": "c",
+          "text": "Quatre"
+        },
+        {
+          "id": "d",
+          "text": "Cinq"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Un match standard compte deux mi-temps.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a football.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-004",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "instruments",
+      "difficulty": 1,
+      "question": "Quel instrument se joue avec des baguettes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La batterie"
+        },
+        {
+          "id": "b",
+          "text": "La flute"
+        },
+        {
+          "id": "c",
+          "text": "Le violon"
+        },
+        {
+          "id": "d",
+          "text": "La guitare classique"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La batterie se joue souvent avec des baguettes.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a instruments.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-005",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "general-knowledge",
+      "difficulty": 1,
+      "question": "Quel roi de France est surnomme le Roi-Soleil ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Louis XIV"
+        },
+        {
+          "id": "b",
+          "text": "Louis XVI"
+        },
+        {
+          "id": "c",
+          "text": "Henri IV"
+        },
+        {
+          "id": "d",
+          "text": "Francois Ier"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Louis XIV est surnomme le Roi-Soleil.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a general-knowledge.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-006",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "ingredients",
+      "difficulty": 1,
+      "question": "Quel ingredient est la base du pain traditionnel ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La farine"
+        },
+        {
+          "id": "b",
+          "text": "Le riz"
+        },
+        {
+          "id": "c",
+          "text": "La pomme"
+        },
+        {
+          "id": "d",
+          "text": "Le cacao"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le pain traditionnel utilise principalement de la farine.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a ingredients.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-007",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "authors",
+      "difficulty": 1,
+      "question": "Qui a ecrit Le Petit Prince ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Antoine de Saint-Exupery"
+        },
+        {
+          "id": "b",
+          "text": "Victor Hugo"
+        },
+        {
+          "id": "c",
+          "text": "Moliere"
+        },
+        {
+          "id": "d",
+          "text": "Jules Verne"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Petit Prince est de Saint-Exupery.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a authors.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-008",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "internet",
+      "difficulty": 1,
+      "question": "Quel symbole apparait dans une adresse e-mail ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "@"
+        },
+        {
+          "id": "b",
+          "text": "#"
+        },
+        {
+          "id": "c",
+          "text": "&"
+        },
+        {
+          "id": "d",
+          "text": "%"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le signe arobase separe souvent identifiant et domaine.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a internet.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-009",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "astronomy",
+      "difficulty": 5,
+      "question": "Quel objet est le reste dense d une etoile massive apres certaines supernovas ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Une etoile a neutrons"
+        },
+        {
+          "id": "b",
+          "text": "Une comete"
+        },
+        {
+          "id": "c",
+          "text": "Une naine brune"
+        },
+        {
+          "id": "d",
+          "text": "Une nebuleuse planetaire"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Une etoile a neutrons peut naitre de l effondrement d une etoile massive.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a astronomy.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-010",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "documents",
+      "difficulty": 5,
+      "question": "Quel texte anglais de 1215 limite le pouvoir royal ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Magna Carta"
+        },
+        {
+          "id": "b",
+          "text": "Le Domesday Book"
+        },
+        {
+          "id": "c",
+          "text": "Le Bill of Rights americain"
+        },
+        {
+          "id": "d",
+          "text": "Le Code civil"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Magna Carta est signee en Angleterre en 1215.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a documents.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-011",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "cryptography",
+      "difficulty": 5,
+      "question": "Quel principe permet de verifier un message sans partager la cle privee ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La signature numerique"
+        },
+        {
+          "id": "b",
+          "text": "Le cache navigateur"
+        },
+        {
+          "id": "c",
+          "text": "La compression ZIP"
+        },
+        {
+          "id": "d",
+          "text": "Le rendu vectoriel"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Une signature numerique repose sur une paire de cles asymetriques.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a cryptography.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-012",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "movements",
+      "difficulty": 5,
+      "question": "Quel mouvement artistique privilegie le reve et l inconscient au XXe siecle ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le surrealisme"
+        },
+        {
+          "id": "b",
+          "text": "Le cubisme analytique"
+        },
+        {
+          "id": "c",
+          "text": "Le fauvisme"
+        },
+        {
+          "id": "d",
+          "text": "Le pointillisme"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le surrealisme explore reve, hasard et inconscient.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a movements.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-013",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "climate",
+      "difficulty": 5,
+      "question": "Quel courant oceanique rechauffe l Europe de l Ouest ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Gulf Stream"
+        },
+        {
+          "id": "b",
+          "text": "Le courant de Humboldt"
+        },
+        {
+          "id": "c",
+          "text": "Le courant des Canaries"
+        },
+        {
+          "id": "d",
+          "text": "Le courant circumpolaire"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Gulf Stream contribue a adoucir le climat ouest-europeen.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a climate.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-014",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "classical-music",
+      "difficulty": 5,
+      "question": "Quel compositeur a ecrit Le Sacre du printemps ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Igor Stravinsky"
+        },
+        {
+          "id": "b",
+          "text": "Claude Debussy"
+        },
+        {
+          "id": "c",
+          "text": "Gustav Mahler"
+        },
+        {
+          "id": "d",
+          "text": "Maurice Ravel"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Sacre du printemps est une oeuvre de Stravinsky.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a classical-music.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-015",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "economics",
+      "difficulty": 5,
+      "question": "Quel indicateur mesure la variation moyenne des prix a la consommation ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "L inflation"
+        },
+        {
+          "id": "b",
+          "text": "Le taux de natalite"
+        },
+        {
+          "id": "c",
+          "text": "Le taux de change fixe"
+        },
+        {
+          "id": "d",
+          "text": "Le solde naturel"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "L inflation decrit une hausse generale des prix.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a economics.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PARX-016",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "writing",
+      "difficulty": 5,
+      "question": "Quel systeme d ecriture japonais utilise des caracteres chinois adaptes ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les kanji"
+        },
+        {
+          "id": "b",
+          "text": "Les hiragana"
+        },
+        {
+          "id": "c",
+          "text": "Les katakana"
+        },
+        {
+          "id": "d",
+          "text": "Le hangeul"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Les kanji sont issus des caracteres chinois.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a writing.",
+      "verificationStatus": "verified",
+      "tags": [
+        "wager"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    }
+  ]
+}

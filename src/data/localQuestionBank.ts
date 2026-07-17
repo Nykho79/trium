@@ -1,10 +1,12 @@
 import { z } from "zod";
 import type {
+  AnalogyQuestion,
   ChronologyQuestion,
   ConnectionQuestion,
   Difficulty,
   FourOptions,
   IntruderQuestion,
+  MemoryQuestion,
   MultipleChoiceOption,
   MultipleChoiceQuestion,
   ProgressiveCluesQuestion,
@@ -347,6 +349,36 @@ function convertSequence(question: SourceQuestion, kind: RoundKind): SequenceQue
   };
 }
 
+function convertAnalogy(question: SourceQuestion, kind: RoundKind): AnalogyQuestion {
+  const converted = answersAsOptions(question);
+  return {
+    ...baseFields(question, kind),
+    type: "analogy",
+    left: question.left ?? "",
+    right: question.right ?? "",
+    relation: question.relation ?? "relation a identifier",
+    missing: question.missing ?? "",
+    options: converted.options,
+    correctOptionId: converted.correctOptionId,
+    answer: { accepted: answerAcceptedValues(converted.correctLabel, converted.correctOptionId), display: converted.correctLabel },
+  };
+}
+
+function convertMemory(question: SourceQuestion, kind: RoundKind): MemoryQuestion {
+  const converted = answersAsOptions(question);
+  const items = question.sequence ?? question.clues?.map(clueText) ?? [];
+  return {
+    ...baseFields(question, kind),
+    type: "memory",
+    items,
+    recallPrompt: question.statement ?? "Quelle sequence etait affichee ?",
+    mode: question.tags.includes("reverse-memory") ? "reverse" : "forward",
+    displaySeconds: question.estimatedTimeSeconds ? Math.max(3, Math.min(8, Math.round(question.estimatedTimeSeconds / 10))) : 4,
+    options: converted.options,
+    correctOptionId: converted.correctOptionId,
+    answer: { accepted: answerAcceptedValues(converted.correctLabel, converted.correctOptionId), display: converted.correctLabel },
+  };
+}
 function compactUnknown(value: unknown): string {
   if (typeof value === "string") return value;
   if (typeof value === "number" || typeof value === "boolean") return String(value);
@@ -412,6 +444,8 @@ function convertQuestion(question: SourceQuestion, context: ConversionContext): 
   if (question.type === "conceptual_intruder") return convertIntruder(question);
   if (question.type === "logical_ranking") return convertChronology(question);
   if (question.type === "logical_sequence") return convertSequence(question, context.fileId.includes("final") ? "final-convergence" : "synapse");
+  if (question.type === "analogy") return convertAnalogy(question, context.fileId.includes("final") ? "final-convergence" : "synapse");
+  if (question.type === "memory") return convertMemory(question, context.fileId.includes("final") ? "final-convergence" : "synapse");
   if (question.type === "logic_puzzle") return convertProgressive(question, context.fileId.includes("final") ? "final-convergence" : "clue-race");
   if (question.type === "visual_matrix") return convertVisualMatrix(question);
   if (question.type === "symbol_rule") return convertSymbolRule(question);

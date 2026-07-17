@@ -1,0 +1,551 @@
+{
+  "schemaVersion": "1.0",
+  "fileId": "pressure-expansion-001",
+  "title": "TRIUM pressure-expansion",
+  "category": "pressure-expansion",
+  "questionType": "pressure-expansion",
+  "generatedAt": null,
+  "questions": [
+    {
+      "id": "PREX-001",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "biology",
+      "difficulty": 3,
+      "question": "Quel organe humain produit principalement la bile ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le foie"
+        },
+        {
+          "id": "b",
+          "text": "Le pancreas"
+        },
+        {
+          "id": "c",
+          "text": "La rate"
+        },
+        {
+          "id": "d",
+          "text": "Les reins"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le foie produit la bile, stockee ensuite dans la vesicule biliaire.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a biology.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-002",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "modern-era",
+      "difficulty": 3,
+      "question": "Quel evenement commence en France en 1789 ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "La Revolution francaise"
+        },
+        {
+          "id": "b",
+          "text": "La Commune de Paris"
+        },
+        {
+          "id": "c",
+          "text": "La Renaissance"
+        },
+        {
+          "id": "d",
+          "text": "Le Second Empire"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La Revolution francaise debute en 1789 avec une crise politique majeure.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a modern-era.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-003",
+      "type": "multiple_choice",
+      "category": "geography",
+      "subcategory": "rivers",
+      "difficulty": 3,
+      "question": "Quel fleuve traverse Budapest ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le Danube"
+        },
+        {
+          "id": "b",
+          "text": "Le Rhin"
+        },
+        {
+          "id": "c",
+          "text": "La Vistule"
+        },
+        {
+          "id": "d",
+          "text": "Le Tage"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Budapest est traversee par le Danube.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a rivers.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-004",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "internet",
+      "difficulty": 3,
+      "question": "Que signifie le S dans HTTPS ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Secure"
+        },
+        {
+          "id": "b",
+          "text": "System"
+        },
+        {
+          "id": "c",
+          "text": "Shared"
+        },
+        {
+          "id": "d",
+          "text": "Static"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "HTTPS signifie HyperText Transfer Protocol Secure.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a internet.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-005",
+      "type": "multiple_choice",
+      "category": "music",
+      "subcategory": "instruments",
+      "difficulty": 3,
+      "question": "Quel instrument possede traditionnellement 88 touches ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le piano"
+        },
+        {
+          "id": "b",
+          "text": "La harpe"
+        },
+        {
+          "id": "c",
+          "text": "Le clavecin"
+        },
+        {
+          "id": "d",
+          "text": "Le violoncelle"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le piano moderne standard possede 88 touches.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a instruments.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-006",
+      "type": "multiple_choice",
+      "category": "arts-literature",
+      "subcategory": "painting",
+      "difficulty": 3,
+      "question": "Qui a peint Guernica ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Pablo Picasso"
+        },
+        {
+          "id": "b",
+          "text": "Salvador Dali"
+        },
+        {
+          "id": "c",
+          "text": "Claude Monet"
+        },
+        {
+          "id": "d",
+          "text": "Paul Cezanne"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Guernica est une oeuvre majeure de Pablo Picasso.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a painting.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-007",
+      "type": "multiple_choice",
+      "category": "sports",
+      "subcategory": "rules",
+      "difficulty": 3,
+      "question": "Combien de joueurs une equipe de basket aligne-t-elle sur le terrain ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Cinq"
+        },
+        {
+          "id": "b",
+          "text": "Six"
+        },
+        {
+          "id": "c",
+          "text": "Sept"
+        },
+        {
+          "id": "d",
+          "text": "Onze"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Une equipe de basket joue avec cinq joueurs sur le terrain.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a rules.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-008",
+      "type": "multiple_choice",
+      "category": "world-cultures",
+      "subcategory": "writing",
+      "difficulty": 3,
+      "question": "Quel systeme d ecriture est utilise pour le coreen ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le hangeul"
+        },
+        {
+          "id": "b",
+          "text": "Les kanji"
+        },
+        {
+          "id": "c",
+          "text": "L alphabet cyrillique"
+        },
+        {
+          "id": "d",
+          "text": "Le devanagari"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le hangeul est l alphabet utilise pour ecrire le coreen.",
+      "contextualHint": "Ce systeme est associe a la Coree.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice",
+        "writing"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-009",
+      "type": "multiple_choice",
+      "category": "gastronomy",
+      "subcategory": "techniques",
+      "difficulty": 3,
+      "question": "Que fait-on quand on emulsionne une sauce ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "On melange deux liquides qui se separent normalement"
+        },
+        {
+          "id": "b",
+          "text": "On la fait reduire a sec"
+        },
+        {
+          "id": "c",
+          "text": "On la congele rapidement"
+        },
+        {
+          "id": "d",
+          "text": "On la passe au four"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Une emulsion stabilise un melange comme huile et vinaigre.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a techniques.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-010",
+      "type": "multiple_choice",
+      "category": "cinema-series",
+      "subcategory": "film-language",
+      "difficulty": 3,
+      "question": "Quel plan montre un personnage de tres pres ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le gros plan"
+        },
+        {
+          "id": "b",
+          "text": "Le plan general"
+        },
+        {
+          "id": "c",
+          "text": "Le plan sequence"
+        },
+        {
+          "id": "d",
+          "text": "Le champ contrechamp"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le gros plan cadre fortement le visage ou un detail.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a film-language.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-011",
+      "type": "multiple_choice",
+      "category": "society-institutions",
+      "subcategory": "democracy",
+      "difficulty": 3,
+      "question": "Que designe le suffrage universel ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le droit de vote ouvert a tous les citoyens remplissant les conditions legales"
+        },
+        {
+          "id": "b",
+          "text": "Le vote reserve aux elus"
+        },
+        {
+          "id": "c",
+          "text": "Le vote uniquement local"
+        },
+        {
+          "id": "d",
+          "text": "Le tirage au sort des lois"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le suffrage universel elargit le droit de vote aux citoyens eligibles.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a democracy.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-012",
+      "type": "multiple_choice",
+      "category": "french-language",
+      "subcategory": "grammar",
+      "difficulty": 3,
+      "question": "Dans la phrase \"elle chante\", quel est le verbe ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "chante"
+        },
+        {
+          "id": "b",
+          "text": "elle"
+        },
+        {
+          "id": "c",
+          "text": "la phrase"
+        },
+        {
+          "id": "d",
+          "text": "aucun"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le verbe exprime ici l action: chante.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a grammar.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-013",
+      "type": "multiple_choice",
+      "category": "science-nature",
+      "subcategory": "physics",
+      "difficulty": 4,
+      "question": "Quelle unite mesure la frequence ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le hertz"
+        },
+        {
+          "id": "b",
+          "text": "Le joule"
+        },
+        {
+          "id": "c",
+          "text": "Le watt"
+        },
+        {
+          "id": "d",
+          "text": "Le pascal"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "La frequence se mesure en hertz.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a physics.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-014",
+      "type": "multiple_choice",
+      "category": "history",
+      "subcategory": "antiquity",
+      "difficulty": 4,
+      "question": "Quelle civilisation a construit le Parthenon ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Les Grecs anciens"
+        },
+        {
+          "id": "b",
+          "text": "Les Romains"
+        },
+        {
+          "id": "c",
+          "text": "Les Perses"
+        },
+        {
+          "id": "d",
+          "text": "Les Vikings"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le Parthenon est un temple de l Athenes antique.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a antiquity.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    },
+    {
+      "id": "PREX-015",
+      "type": "multiple_choice",
+      "category": "technology",
+      "subcategory": "hardware",
+      "difficulty": 4,
+      "question": "Quel composant effectue la plupart des calculs generaux d un ordinateur ?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Le processeur"
+        },
+        {
+          "id": "b",
+          "text": "Le disque dur"
+        },
+        {
+          "id": "c",
+          "text": "L ecran"
+        },
+        {
+          "id": "d",
+          "text": "Le routeur"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Le processeur execute les instructions principales.",
+      "contextualHint": "Cherchez l'indice le plus specifique lie a hardware.",
+      "verificationStatus": "verified",
+      "tags": [
+        "pressure-choice"
+      ],
+      "estimatedTimeSeconds": 30,
+      "status": "approved",
+      "version": 1
+    }
+  ]
+}
